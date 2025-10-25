@@ -1,1 +1,1 @@
-# dc_site
+Nextjs Template (BETA)
