@@ -32,30 +32,47 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                     <div className="mega-menu-column">
                                                         <h4>Pre-training</h4>
                                                         <ul>
-                                                            <li><Link href="/LLM-Evals">LLM Evals</Link></li>
+                                                            <li><Link href="/CollectData">Data Collection</Link></li>
                                                             <li><Link href="/Image-Anno">Image Annotation</Link></li>
                                                             <li><Link href="/SFT">Supervised Fine-Tuning</Link></li>
-                                                            <li><Link href="/OCR">OCR /IDP</Link></li>
-                                                            <li><Link href="/CollectData">Data Collection</Link></li>
                                                         </ul>
                                                     </div>
                                                     <div className="mega-menu-column">
                                                         <h4>Post-training</h4>
                                                         <ul>
+                                                            <li><Link href="/HITL">HITL</Link></li>
+                                                            <li><Link href="/RLHF">RLHF</Link></li>
                                                             <li><Link href="/RedTeaming">Red Teaming Services</Link></li>
-                                                            <li><Link href="/GenAI">Generative AI</Link></li>
+                                                            <li><Link href="/LLM-Evals">LLM Evals</Link></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="mega-menu-column">
+                                                        <h4>Cloud</h4>
+                                                        <ul>
+                                                            <li><Link href="/MLOps">MLOps</Link></li>
+                                                            <li><Link href="/DevOps">DevOps</Link></li>
                                                         </ul>
                                                     </div>
                                                     <div className="mega-menu-column">
                                                         <h4>Others</h4>
                                                         <ul>
-                                                            <li><Link href="/index-11">Training as a Service</Link></li>
+                                                            <li><Link href="/ExpertNetwork">Expert Network</Link></li>
                                                             <li><Link href="/Search">Search and Personalization</Link></li>
+                                                            <li><Link href="/OCR">OCR /IDP</Link></li> 
+                                                            <li><Link href="/GenAI">Generative AI</Link></li>                                                          
+                                                            <li><Link href="/index-11">Training as a Service</Link></li>
                                                             <li><Link href="/Content-md">Content Moderation</Link></li>
+                                                            <li><Link href="/Search">Search and Personalization</Link></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </li>
+                                        <li className="has-children"><Link href="#">Product</Link>
+                                            <ul className="sub-menu">
+                                                <li><Link href="/KubeTrace">KubeTrace</Link></li>
+                                                <li><Link href="/HI">Human in the Loop</Link></li>
+                                            </ul>
                                         </li>
                                         <li className="has-children services-mega-menu">
                                             <Link className="active" href="/">Industries</Link>
