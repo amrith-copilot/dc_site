@@ -46,6 +46,13 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                             <li><Link href="/GenAI">Generative AI</Link></li>
                                                         </ul>
                                                     </div>
+                                                                                                        <div className="mega-menu-column">
+                                                        <h4>Cloud</h4>
+                                                        <ul>
+                                                            <li><Link href="/MLOps">MLOps</Link></li>
+                                                            <li><Link href="/DevOps">DevOps</Link></li>
+                                                        </ul>
+                                                    </div>
                                                     <div className="mega-menu-column">
                                                         <h4>Others</h4>
                                                         <ul>
