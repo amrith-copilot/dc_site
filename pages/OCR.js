@@ -19,16 +19,14 @@ const OCR = () => {
                                         Scan → Extract → Validate → Deliver.
                                     </p>
                                 </div>
-                                <div className="col-lg-6 mb-20">
+                                <div className="col-lg-6 mb-70">
                                     <p className="font-lg color-black-text">
-                                        We convert unstructured documents (scanned paper, multi-page PDFs, screenshots, photographs) into structured, usable data. That includes text extraction (printed & handwritten), table extraction (multi-page, nested tables), key–value pair capture, document classification, document verification and secure storage or push to your systems.
+                                        searchable data from any document, at scale.
                                     </p>
                                 </div>
                             </div>
                             
-                            <div className="box-video-banner-responsive">
-                                <ImageSlider />
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -131,6 +129,19 @@ const OCR = () => {
                         }
                     `}</style>
                 </section>
+                <section className="section mt-10 mb-60">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <h2 className="color-brand-1 mb-20">What we do</h2>
+                                <p className="font-lg color-grey-500">
+                                    We convert unstructured documents (scanned paper, multi-page PDFs, screenshots, photographs) into structured, usable data. That includes text extraction (printed & handwritten), table extraction (multi-page, nested tables), key–value pair capture, document classification, document verification and secure storage or push to your systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
                                 <section className="section mb-100">
                     <div className="container">
                         <div className="box-business-rd">
@@ -392,40 +403,92 @@ const OCR = () => {
                 </section>
                 <section className="section mt-100">
                     <div className="container">
-                        <div className="row mt-50 align-items-center card-no-border">
-                            <div className="col-lg-6 mb-30">
-                                <h2 className="color-brand-1">Why choose us</h2>
-                                <div className="title-line mb-10 mt-10 font-md">We support a wide range of data types, annotation types, and services</div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up ">
-                                    <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do3.png" alt="iori" /></div>
-                                    <div className="card-info mt-15">
-                                        <h4 className="color-brand-1 mb-10"><Link className="color-brand-1" href="What makes us different from others? We give holistic solutions with strategy, design & technology.">Data Types</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Proven OCR & IDP playbook used across industries (scanning → OCR → NLP → HITL).</p>
+                        <div className="row mt-50 align-items-start">
+                            {/* Left Column - Header */}
+                            <div className="col-lg-5 mb-30">
+                                <div className="sticky-content" style={{ position: 'sticky', top: '100px' }}>
+                                    <h2 className="color-brand-1 mb-20">Why choose us</h2>
+                                    <div className="title-line font-md color-grey-500">
+                                        We support a wide range of data types, annotation types, and services
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up">
-                                    <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do.png" alt="iori" /></div>
-                                    <div className="card-info mt-15">
-                                        <h4 className="color-brand-1 mb-10"><Link className="color-brand-1" href="No lag time, no lost effort when priorities change, no email black hole. As team collaboration improves">Annotation Types</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Hybrid approach: cloud OCR engines + custom ML models + human quality loops for edge cases.</p>
+
+                            {/* Right Column - Cards */}
+                            <div className="col-lg-7">
+                                <div className="d-flex flex-column gap-4">
+                                    {/* Data Types Card */}
+                                    <div className="card-offer card-we-do hover-up">
+                                        <div className="card-image mt-15">
+                                            <img src="assets/imgs/page/homepage2/we-do3.png" alt="iori" />
+                                        </div>
+                                        <div className="card-info mt-15">
+                                            <h4 className="color-brand-1 mb-10">
+                                                <Link className="color-brand-1" href="#">
+                                                    Data Types
+                                                </Link>
+                                            </h4>
+                                            <p className="font-md color-grey-500 mb-5">
+                                                Proven OCR & IDP playbook used across industries (scanning → OCR → NLP → HITL).
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up">
-                                    <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do4.png" alt="iori" /></div>
-                                    <div className="card-info mt-15">
-                                        <h4 className="color-brand-1 mb-10"><Link className="color-brand-1" href="Share updates instantly within our project management software, and get the entire team collaborating">Additional Services</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Fast POC turnaround so you can measure ROI before committing to scale.</p>
+
+                                    {/* Annotation Types Card */}
+                                    <div className="card-offer card-we-do hover-up">
+                                        <div className="card-image mt-15">
+                                            <img src="assets/imgs/page/homepage2/we-do.png" alt="iori" />
+                                        </div>
+                                        <div className="card-info mt-15">
+                                            <h4 className="color-brand-1 mb-10">
+                                                <Link className="color-brand-1" href="#">
+                                                    Annotation Types
+                                                </Link>
+                                            </h4>
+                                            <p className="font-md color-grey-500 mb-5">
+                                                Hybrid approach: cloud OCR engines + custom ML models + human quality loops for edge cases.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    {/* Additional Services Card */}
+                                    <div className="card-offer card-we-do hover-up">
+                                        <div className="card-image mt-15">
+                                            <img src="assets/imgs/page/homepage2/we-do4.png" alt="iori" />
+                                        </div>
+                                        <div className="card-info mt-15">
+                                            <h4 className="color-brand-1 mb-10">
+                                                <Link className="color-brand-1" href="#">
+                                                    Additional Services
+                                                </Link>
+                                            </h4>
+                                            <p className="font-md color-grey-500 mb-5">
+                                                Fast POC turnaround so you can measure ROI before committing to scale.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <style jsx>{`
+                        .sticky-content {
+                            padding-right: 40px;
+                        }
+                        
+                        .gap-4 {
+                            gap: 1.5rem;
+                        }
+                        
+                        @media (max-width: 991px) {
+                            .sticky-content {
+                                position: static !important;
+                                padding-right: 0;
+                                margin-bottom: 30px;
+                            }
+                        }
+                    `}</style>
                 </section>
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">

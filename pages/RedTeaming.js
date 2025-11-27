@@ -94,8 +94,8 @@ const RedTeaming = () => {
                         </div>
                         <div className="mt-50">
                             <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="card-offer card-offer-2 hover-up">
+                                <div className="col-lg-4" style={{display: 'flex'}}>
+                                    <div className="card-offer card-offer-2 hover-up" style={{display: 'flex', flexDirection: 'column', flex: 1}}>
                                         <div className="card-info">
                                             <h4 className="color-brand-1 mb-15">Large Language Models (LLMs)</h4>
                                             <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
@@ -104,11 +104,11 @@ const RedTeaming = () => {
                                                 <li>Does it give consistent, trustworthy answers under pressure?</li>
                                             </ul>
                                         </div>
-                                        <div className="card-image-bottom mb-35"> <img className="w-100 bd-rd16" src="assets/imgs/page/homepage11/img2.png" alt="iori" /></div>
+                                        <div className="card-image-bottom mb-35" style={{marginTop: 'auto'}}> <img className="w-100 bd-rd16" src="assets/imgs/page/homepage11/img2.png" alt="iori" /></div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
-                                    <div className="card-offer card-offer-2 hover-up">
+                                <div className="col-lg-4" style={{display: 'flex'}}>
+                                    <div className="card-offer card-offer-2 hover-up" style={{display: 'flex', flexDirection: 'column', flex: 1}}>
                                         <div className="card-info">
                                             <h4 className="color-brand-1 mb-15">Computer Vision Systems</h4>
                                             <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
@@ -117,11 +117,11 @@ const RedTeaming = () => {
                                                 <li>Does it make safe decisions in critical use cases like healthcare or autonomous driving?</li>
                                             </ul>
                                         </div>
-                                        <div className="card-image-bottom mb-35"> <img className="w-100 bd-rd16" src="assets/imgs/page/homepage11/img2.png" alt="iori" /></div>
+                                        <div className="card-image-bottom mb-35" style={{marginTop: 'auto'}}> <img className="w-100 bd-rd16" src="assets/imgs/page/homepage11/img2.png" alt="iori" /></div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
-                                    <div className="card-offer card-offer-2 hover-up">
+                                <div className="col-lg-4" style={{display: 'flex'}}>
+                                    <div className="card-offer card-offer-2 hover-up" style={{display: 'flex', flexDirection: 'column', flex: 1}}>
                                         <div className="card-info">
                                             <h4 className="color-brand-1 mb-15">Multimodal AI (text, images, video, audio combined)</h4>
                                             <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
@@ -130,7 +130,7 @@ const RedTeaming = () => {
                                                 <li>Are there mismatches between what it shows and what it says?</li>
                                             </ul>
                                         </div>
-                                        <div className="card-image-bottom mb-35"> <img className="w-100 bd-rd16" src="assets/imgs/page/homepage11/img2.png" alt="iori" /></div>
+                                        <div className="card-image-bottom mb-35" style={{marginTop: 'auto'}}> <img className="w-100 bd-rd16" src="assets/imgs/page/homepage11/img2.png" alt="iori" /></div>
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +191,7 @@ const RedTeaming = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <h2 className="color-brand-1 mb-20">Industries We Help</h2>
                                 <p className="font-lg color-gray-500">
                                     What makes us different from others? We give holistic solutions
                                     <br className="d-none d-lg-block" />
@@ -216,76 +216,68 @@ const RedTeaming = () => {
                                 <p className="font-lg color-gray-500">Updated on September 24, 2023</p>
                             </div>
                         </div>
-                        <div className="table-box-help mt-50">
-                            <div className="table-responsive">
-                                <table className="table table-forum">
-                                    <thead>
-                                        <tr>
-                                            <th className="width-50">Process Structure</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross5.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Understand Your Risks</h4>
-                                                        <p className="font-md color-grey-500">We work with you to define what’s most important to test.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage2/creation.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Run Adversarial Tests</h4>
-                                                        <p className="font-md color-grey-500">We push your AI with real-world scenarios and edge cases.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross4.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Provide Fixes</h4>
-                                                        <p className="font-md color-grey-500">We give clear recommendations to strengthen your AI.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Re-Test & Improve</h4>
-                                                        <p className="font-md color-grey-500">We help you patch issues and confirm improvements.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage3/certification.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">QC & Delivery</h4>
-                                                        <p className="font-md color-grey-500">3-tier quality checks, free rework if needed</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    </div>
+                </section>
+
+                <section className="section mt-100 mb-40 process-section">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center">
+                                <h2 className="color-brand-1 mb-20">Process Structure</h2>
+                                <p className="font-lg color-gray-500">Updated on September 24, 2023</p>
+                            </div>
+                        </div>
+
+                        <div className="process-list mt-60">
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up">
+                                        <div className="process-number">1</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Consultation</h4>
+                                            <p className="font-md color-grey-500">Share your project needs</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.1s" }}>
+                                        <div className="process-number">2</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Free Pilot</h4>
+                                            <p className="font-md color-grey-500">Try us risk-free</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.2s" }}>
+                                        <div className="process-number">3</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Feedback & Optimization</h4>
+                                            <p className="font-md color-grey-500">Align with your expectations</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.3s" }}>
+                                        <div className="process-number">4</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Execution</h4>
+                                            <p className="font-md color-grey-500">Scale with dedicated resources</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.4s" }}>
+                                        <div className="process-number">5</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">QC & Delivery</h4>
+                                            <p className="font-md color-grey-500">3-tier quality checks, free rework if needed</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
@@ -293,9 +285,9 @@ const RedTeaming = () => {
                                 <div className="col-lg-6"><img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
                                 <div className="col-lg-6">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Validate Your AI?</h2>
-                                        <p className="font-md color-grey-500">Let our workforce evaluate your model with precision and care.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
+                                        <h2 className="color-brand-1 mt-15 mb-20">Make Your AI Safer, Smarter, and More Reliable</h2>
+                                        <p className="font-md color-grey-500">Red Teaming is the difference between hoping your AI is safe and knowing it is. With us as your partner, you’ll deploy AI systems that are stronger, more trustworthy, and ready for real-world challenges.</p>
+                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>
