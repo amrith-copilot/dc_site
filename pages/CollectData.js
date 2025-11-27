@@ -14,12 +14,12 @@ const ColectData = () => {
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <span className="color-grey-300">Data Collection</span>
-                                    <h2 className="color-black-text mt-10">
-                                        Bespoke data collection for every model stage
-                                    </h2>
+                                    <h2 className="color-brand-1 mb-10">Data Collection</h2>
+                                    <h4 className="color-black-text mt-10">
+                                        Be spoke data collection for every model stage
+                                    </h4>
                                 </div>
-                                <div className="col-lg-6 mb-20">
+                                <div className="col-lg-8 mb-0">
                                     <p className="font-md color-black-text">
                                         From prototype experiments to production-grade foundation models, we deliver fit-for-purpose datasets that reduce bias, improve performance, and speed time-to-insight.
                                     </p>
@@ -27,13 +27,11 @@ const ColectData = () => {
                             </div>
                             
                             {/* VideoSlider replaces the original video banner */}
-                            <div className="box-video-banner">
-                                <VideoSlider />
-                            </div>
+
                         </div>
                     </div>
                 </section>
-                <section className="section mt-100">
+                <section className="section mt-10">
                     <div className="container">
                         <div className="box-business-rd">
                             <div className="row align-items-center">

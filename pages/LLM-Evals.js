@@ -3,6 +3,7 @@ import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
 import Tab2 from '../components/elements/tab2';
+import Proccess from '../components/elements/Proccess';
 import Offer2 from '../components/slider/Offer2';
 
 const LLMEvals = () => {
@@ -170,61 +171,12 @@ const LLMEvals = () => {
                                 <p className="font-lg color-gray-500">Updated on September 24, 2023</p>
                             </div>
                         </div>
-                        <div className="table-box-help mt-50">
-                            <div className="table-responsive">
-                                <table className="table table-forum">
-                                    <thead>
-                                        <tr>
-                                            <th className="width-50">Process Structure</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross5.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Define goals</h4>
-                                                        <p className="font-ls color-grey-500">Accuracy? Robustness? Safety?</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage2/creation.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Design evals</h4>
-                                                        <p className="font-ls color-grey-500">Benchmarks + custom test sets.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross4.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Run evaluations</h4>
-                                                        <p className="font-ls color-grey-500">Automated checks + human review.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Deliver insights</h4>
-                                                        <p className="font-ls color-grey-500">Reports with actionable recommendations.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div className="mt-50">
+                            <div className="box-process-eval">
+                                <div className="process-eval">
+                                    {/* Proccess component handles the process cards */}
+                                    <Proccess />
+                                </div>
                             </div>
                         </div>
                     </div>

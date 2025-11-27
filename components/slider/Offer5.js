@@ -9,35 +9,50 @@ const Offer5 = () => {
         <>
             <style jsx>{`
                 .card-offer-style-3 {
+                    display: flex;
+                    flex-direction: column;
                     height: 100%;
-                    display: flex;
-                    flex-direction: column;
+                    flex: 1; /* allow the card to grow to fill the slide */
                 }
-                
+
                 .card-offer-style-3 .card-info {
-                    flex: 1;
                     display: flex;
                     flex-direction: column;
-                }
-                
-                .card-offer-style-3 .card-info ul {
                     flex: 1;
-                    margin: 0;
-                    padding-left: 1.2rem;
-                    list-style-type: disc;
                 }
-                
+
+                /* remove bullets and left padding so there is no point symbol */
+                .card-offer-style-3 .card-info ul {
+                    margin: 0;
+                    padding-left: 0;
+                    list-style: none;
+                }
+
                 .card-offer-style-3 .card-info li {
                     margin-bottom: 0.5rem;
                     line-height: 1.5;
                 }
-                
-                .swiper-slide {
-                    height: auto;
+
+                /* ensure all slides stretch to the same height and cards fill them */
+                .swiper-wrapper {
                     display: flex;
+                    align-items: stretch;
+                }
+
+                .swiper-wrapper .swiper-slide {
+                    display: flex;
+                    align-items: stretch;
+                    height: auto;
+                }
+
+                .swiper-slide .card-offer-style-3 {
+                    /* make sure the card uses full available height inside the slide */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                 }
             `}</style>
-            
+
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}
@@ -174,7 +189,7 @@ const Offer5 = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            
+
             <div className="box-button-slider-bottom">
                 <div className="swiper-button-prev swiper-button-prev-group-4">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

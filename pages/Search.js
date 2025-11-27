@@ -33,43 +33,7 @@ const SAP = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-100">
-                    <div className="container">
-                        <div className="row mt-50 align-items-center card-no-border">
-                            <div className="col-lg-6 mb-30">
-                                <h2 className="color-black-text">Personalization Beyond the Algorithm</h2>
-                                <div className="mb-10 mt-10 font-md">Personalization is more than recommending “similar items.” It’s about adapting to user behavior, context, and evolving intent. We support personalization efforts through:</div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up ">
-                                    <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do3.png" alt="iori" /></div>
-                                    <div className="card-info mt-15">
-                                        <h4 className="color-black-text mb-10"><Link className="color-black-text" href="What makes us different from others? We give holistic solutions with strategy, design & technology.">Contextual Understanding</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Labeling datasets with demographic, linguistic, or regional attributes.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up">
-                                    <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do.png" alt="iori" /></div>
-                                    <div className="card-info mt-15">
-                                        <h4 className="color-black-text mb-10"><Link className="color-black-text" href="No lag time, no lost effort when priorities change, no email black hole. As team collaboration improves">Preference Modeling</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Creating datasets that help algorithms predict “next-best” content or product choices.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up">
-                                    <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do4.png" alt="iori" /></div>
-                                    <div className="card-info mt-15">
-                                        <h4 className="color-black-text mb-10"><Link className="color-black-text" href="Share updates instantly within our project management software, and get the entire team collaborating">Behavioral Data Annotation</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Mapping user actions (clicks, dwell time, purchases) to meaningful training signals.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <section className="section mt-100">
                     <div className="container">
                         <div className="box-business-rd">
@@ -124,6 +88,98 @@ const SAP = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Modified section: two-column sticky header + cards */}
+                <section className="section mt-100">
+                    <div className="container">
+                        <div className="row mt-50 align-items-start">
+                            {/* Left Column - Header */}
+                            <div className="col-lg-5 mb-30">
+                                <div className="sticky-content">
+                                    <h2 className="color-brand-1 mb-20">Personalization Beyond the Algorithm</h2>
+                                    <p className="title-line font-md color-grey-500">
+                                        Personalization is more than recommending “similar items.” It’s about adapting to user behavior, context, and evolving intent. We support personalization efforts through:
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Right Column - Cards */}
+                            <div className="col-lg-7">
+                                <div className="d-flex flex-column gap-4">
+                                    {/* Data Types Card */}
+                                    <div className="card-offer card-we-do hover-up">
+                                        <div className="card-image mt-15">
+                                            <img src="assets/imgs/page/homepage2/we-do3.png" alt="iori" />
+                                        </div>
+                                        <div className="card-info mt-15">
+                                            <h4 className="color-brand-1 mb-10">
+                                                <Link className="color-brand-1" href="#">
+                                                    Behavioral Data Annotation
+                                                </Link>
+                                            </h4>
+                                            <p className="font-md color-grey-500 mb-5">
+                                                 Mapping user actions (clicks, dwell time, purchases) to meaningful training signals.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    {/* Annotation Types Card */}
+                                    <div className="card-offer card-we-do hover-up">
+                                        <div className="card-image mt-15">
+                                            <img src="assets/imgs/page/homepage2/we-do.png" alt="iori" />
+                                        </div>
+                                        <div className="card-info mt-15">
+                                            <h4 className="color-brand-1 mb-10">
+                                                <Link className="color-brand-1" href="#">
+                                                    Contextual Understanding
+                                                </Link>
+                                            </h4>
+                                            <p className="font-md color-grey-500 mb-5">
+                                                 Labeling datasets with demographic, linguistic, or regional attributes.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    {/* Additional Services Card */}
+                                    <div className="card-offer card-we-do hover-up">
+                                        <div className="card-image mt-15">
+                                            <img src="assets/imgs/page/homepage2/we-do4.png" alt="iori" />
+                                        </div>
+                                        <div className="card-info mt-15">
+                                            <h4 className="color-brand-1 mb-10">
+                                                <Link className="color-brand-1" href="#">
+                                                   Preference Modeling
+                                                </Link>
+                                            </h4>
+                                            <p className="font-md color-grey-500 mb-5">
+                                                 Creating datasets that help algorithms predict “next-best” content or product choices.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <style jsx>{`
+                        .sticky-content {
+                            padding-right: 40px;
+                        }
+                        
+                        .gap-4 {
+                            gap: 1.5rem;
+                        }
+                        
+                        @media (max-width: 991px) {
+                            .sticky-content {
+                                position: static !important;
+                                padding-right: 0;
+                                margin-bottom: 30px;
+                            }
+                        }
+                    `}</style>
+                </section>
+
                 <section className="section mt-20 mb-40 mt-100">
                     <div className="container">
                         <div className="row">

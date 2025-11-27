@@ -4,6 +4,7 @@ import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
 import Tab2 from '../components/elements/tab2';
 import Offer6 from '../components/slider/Offer6';
+import Partner from '../components/elements/Partner';
 
 const SFT = () => {
     const [isOpen, setOpen] = useState(false)
@@ -208,149 +209,182 @@ const SFT = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-20 mb-40 mt-100">
+
+                <section className="section mt-100 mb-40 process-section">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Our Process</h2>
+                                <h2 className="color-brand-1 mb-20">Process Structure</h2>
                                 <p className="font-lg color-gray-500">Updated on September 24, 2023</p>
                             </div>
                         </div>
-                        <div className="table-box-help mt-50">
-                            <div className="table-responsive">
-                                <table className="table table-forum">
-                                    <thead>
-                                        <tr>
-                                            <th className="width-50">Process Structure</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross5.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Discovery & Scoping</h4>
-                                                        <p className="font-ls color-grey-500">We align on goals, risks, and success metrics.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage2/creation.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Data Curation</h4>
-                                                        <p className="font-ls color-grey-500">We prepare high-quality examples for fine-tuning.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross4.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Fine-Tuning & Testing</h4>
-                                                        <p className="font-ls color-grey-500">We train the model and validate its performance.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Deployment-Ready Delivery</h4>
-                                                        <p className="font-ls color-grey-500"> You receive a refined model with clear evaluation results.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-brand-1 mb-15">Ongoing Support </h4>
-                                                        <p className="font-ls color-grey-500">Continuous monitoring and re-tuning as your data and needs evolve.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+                        <div className="process-list mt-60">
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up">
+                                        <div className="process-number">1</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Consultation</h4>
+                                            <p className="font-md color-grey-500">Share your project needs</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.1s" }}>
+                                        <div className="process-number">2</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Free Pilot</h4>
+                                            <p className="font-md color-grey-500">Try us risk-free</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.2s" }}>
+                                        <div className="process-number">3</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Feedback & Optimization</h4>
+                                            <p className="font-md color-grey-500">Align with your expectations</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.3s" }}>
+                                        <div className="process-number">4</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Execution</h4>
+                                            <p className="font-md color-grey-500">Scale with dedicated resources</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.4s" }}>
+                                        <div className="process-number">5</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">QC & Delivery</h4>
+                                            <p className="font-md color-grey-500">3-tier quality checks, free rework if needed</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
+                {/* Replaced original "Why Partner With Us?" block with a themed, responsive benefits grid */} 
                 <section className="section mt-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Support</h2>
-                                <p className="font-lg color-gray-500">
-                                    What makes us different from others? We give holistic solutions
-                                    <br className="d-none d-lg-block" />
-                                    with strategy, design &amp; technology.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="mt-50">
-                            <div className="box-swiper">
-                                <div className="swiper-container swiper-group-4">
-                                    <Offer6 />
-                                </div>
-                            </div>
-                        </div>
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-lg-12 text-center">
+                        <h2 className="color-brand-1 mb-20">Why Partner With Us?</h2>
+                        <p className="font-lg color-grey-500">
+                          Proven capabilities across modalities, quality-first delivery, and flexible engagement models.
+                        </p>
+                      </div>
                     </div>
-                </section>
-                <section className="section mt-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Why Partner With Us</h2>
-                                <p className="font-lg color-gray-500">We're lively, not corporate. We have the energy and boldness of a startup and <br className="d-none d-lg-block" />the expertise and pragmatism of a scale-up. All in one place.</p>
+
+                    <div className="mt-40">
+                      <div className="grid row gx-4 gy-4">
+                        {/* Use site grid columns (3 across on lg, 2 on md) */}
+                        <div className="col-md-6 col-lg-4">
+                          <div className="box-core-value p-4 rounded-3xl h-100 shadow-sm card-hover">
+                            <div className="d-flex align-items-start mb-3">
+                              <div>
+                                <h5 className="mb-1">Proven expertise in both language and vision models</h5>
+                              </div>
                             </div>
+                          </div>
                         </div>
-                        <div className="row mt-65">
-                            <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="card-small card-small-2">
-                                    <div className="card-info">
-                                        <h6 className="color-brand-1 mb-10">Connected</h6>
-                                        <p className="font-md color-grey-500">Proven expertise in both language and vision models</p>
-                                    </div>
-                                </div>
+
+                        <div className="col-md-6 col-lg-4">
+                          <div className="box-core-value p-4 rounded-3xl h-100 shadow-sm card-hover">
+                            <div className="d-flex align-items-start mb-3">
+                              <div>
+                                <h5 className="mb-1">Human-in-the-loop quality assurance</h5>
+                              </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="card-small card-small-2">
-                                    <div className="card-info">
-                                        <h6 className="color-brand-1 mb-10">Inclusive</h6>
-                                        <p className="font-md color-grey-500">Human-in-the-loop quality assurance</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="card-small card-small-2">
-                                    <div className="card-info">
-                                        <h6 className="color-brand-1 mb-10">Flexible</h6>
-                                        <p className="font-md color-grey-500">Flexible engagement models, from pilots to enterprise rollouts</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="card-small card-small-2">
-                                    <div className="card-info">
-                                        <h6 className="color-brand-1 mb-10">Persuasion</h6>
-                                        <p className="font-md color-grey-500">Actionable insights with clear, easy-to-use reports</p>
-                                    </div>
-                                </div>
-                            </div>
+                          </div>
                         </div>
+
+                        <div className="col-md-6 col-lg-4">
+                          <div className="box-core-value p-4 rounded-3xl h-100 shadow-sm card-hover">
+                            <div className="d-flex align-items-start mb-3">
+                              <div>
+                                <h5 className="mb-1">Flexible engagement models</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="col-md-6 col-lg-4">
+                          <div className="box-core-value p-4 rounded-3xl h-100 shadow-sm card-hover">
+                            <div className="d-flex align-items-start mb-3">
+                              <div>
+                                <h5 className="mb-1">Actionable insights with clear reports</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="col-md-6 col-lg-4">
+                          <div className="box-core-value p-4 rounded-3xl h-100 shadow-sm card-hover">
+                            <div className="d-flex align-items-start mb-3">
+                              <div>
+                                <h5 className="mb-1">Commitment to safety, fairness, and compliance</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                      </div>
                     </div>
+
+                    {/* Hover animations and blue theme for cards & text */} 
+                    <style jsx>{`
+                      .card-hover {
+                        transition: transform .22s cubic-bezier(.2,.9,.3,1), box-shadow .22s cubic-bezier(.2,.9,.3,1), background .22s ease, color .22s ease;
+                        cursor: default;
+                        background: #fff;
+                      }
+                      .card-hover:hover {
+                        transform: translateY(-8px);
+                        box-shadow: 0 14px 40px rgba(2,6,23,0.12);
+                        /* subtle blue glow and tint while animating */
+                        background: linear-gradient(135deg, rgba(37,99,235,0.06), rgba(37,99,235,0.02));
+                      }
+                      .card-hover h5 {
+                        color: #000 !important;
+                        font-weight: 600;
+                        transition: color .22s ease;
+                      }
+                      .card-hover p {
+                        color: #000 !important;
+                        transition: color .22s ease;
+                      }
+                      /* Apply blue accent to text while hovering */
+                      .card-hover:hover h5 {
+                        color: #2563eb !important;
+                      }
+                      .card-hover:hover p {
+                        color: rgba(37,99,235,0.9) !important;
+                      }
+                      /* small accent bar on the left on hover */
+                      .card-hover:hover::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 12px;
+                        bottom: 12px;
+                        width: 6px;
+                        border-radius: 6px;
+                        background: linear-gradient(180deg, #2563eb, rgba(37,99,235,0.6));
+                        box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+                      }
+                      /* ensure positioned parent for pseudo element */
+                      .card-hover { position: relative; overflow: visible; }
+                    `}</style>
                 </section>
+                          
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
