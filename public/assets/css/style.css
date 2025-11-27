@@ -10475,7 +10475,7 @@ footer.footer-4 {
   --footer-text-primary: var(--text-primary);
   --footer-text-secondary: var(--text-secondary);
   --footer-accent-color: var(--color-primary-700);
-  --footer-hover-color: var(--color-gray-700);
+  --footer-hover-color: #ffffff;  /* Changed to white for white hover effect */
   --footer-border-color: var(--border-light);
   --footer-focus-color: var(--border-focus);
   
@@ -10726,7 +10726,7 @@ outline: none;
 .column-title {
   font-size: 21px;
   font-weight: 400;
-  color: var(--footer-accent-color);
+  color: #fff;
   margin: 0 0 24px 0;
   font-family: 'Inter', sans-serif;
   position: relative;
@@ -10783,7 +10783,7 @@ outline: none;
 }
 
 .footer-menu a {
-  color: var(--footer-text-secondary);
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -10824,7 +10824,7 @@ outline: none;
 .service-heading {
   font-size: 16px;
   font-weight: 300;
-  color: var(--footer-hover-color);
+  color: #fff;
   margin: 0 0 12px 0;
   font-family: 'Inter', sans-serif;
   transition: color var(--footer-transition-normal);
@@ -10859,7 +10859,7 @@ outline: none;
 }
 
 .service-submenu a {
-  color: var(--footer-text-secondary);
+  color: #fff;
   text-decoration: none;
   font-size: 15px;
   font-weight: 400;
@@ -10915,7 +10915,7 @@ outline: none;
 }
 
 .legal-link {
-  color: var(--footer-text-secondary);
+  color: #fff;
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
@@ -10940,8 +10940,8 @@ outline: none;
 
 .legal-link:hover,
 .legal-link:focus-visible {
-  color: var(--footer-accent-color);
-  background: var(--color-primary-500-alpha-10);
+  color: var(--color-white);
+  background: var(--color-white-500-alpha-10);
 }
 
 .legal-link:hover::after,
@@ -10955,7 +10955,7 @@ outline: none;
 }
 
 .copyright-text {
-  color: var(--footer-text-secondary);
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   transition: color var(--footer-transition-normal);
@@ -11103,7 +11103,7 @@ outline: none;
     --footer-text-secondary: var(--color-gray-300);
     --footer-border-color: var(--color-gray-600);
     --footer-accent-color: var(--color-primary-400);
-    --footer-hover-color: var(--color-gray-200);
+    --footer-hover-color: #ffffff;  /* Changed to white for consistent white hover effect */
   }
   
   

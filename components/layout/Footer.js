@@ -11,13 +11,14 @@ const Footer = () => {
                             {/* Column 1 - Company Details */}
                             <div className="footer-column company-details">
                                 <div className="company-logo">
-                                    <img alt="dataclap" src="/assets/logo_white-1.svg" />
+                                    <Link href="/index-3">
+                                        <img alt="dataclap" src="/assets/logo_white-1.svg" />
+                                    </Link>
                                 </div>
                                 <div className="company-info">
                                     <div className="social-section">
                                         <div className="social-links">
                                             <Link className="social-icon linkedin" href="#" />
-                                            <Link className="social-icon youtube" href="#" />
                                         </div>
                                     </div>
                                 </div>
