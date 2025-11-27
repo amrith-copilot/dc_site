@@ -8598,7 +8598,7 @@ footer.footer-4 {
   width: 100%;
   height: 450px;
   z-index: 1;
-  background-color: var(--color-accent-gold-300);
+  background-color: transparent;
   background-image: url(../imgs/page/term/bg-right.png);
   background-repeat: no-repeat;
   background-position: top right;
@@ -11509,5 +11509,34 @@ body.mobile-menu-active {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+/* Carreer Page Iframe Styles */
+.career-iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 700px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .career-iframe {
+        height: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .career-iframe {
+        height: 500px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .career-iframe {
+        height: 450px;
     }
 }

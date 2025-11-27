@@ -84,66 +84,24 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Centered & wider contact section */}
                 <section className="section mt-70">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-lg-5">
-                                <h2 className="color-brand-1 mb-15">Get in touch</h2>
-                                <p className="font-sm color-grey-500">Do you want to know more or contact our sales department?</p>
+                        <div className="row justify-content-center">
+                            <div className="col-lg-8 col-md-10">
+                                <h2 className="color-brand-1 mb-15 text-center">Get in touch</h2>
+                                <p className="font-sm color-grey-500 text-center">Do you want to know more or contact our sales department?</p>
+
                                 <div className="mt-50">
-                                    <div className="card-offer card-we-do card-contact hover-up">
-                                        <div className="card-image"><img src="assets/imgs/page/contact/img1.png" alt="iori" /></div>
-                                        <div className="card-info">
-                                            <h6 className="color-brand-1 mb-10">Visit the Knowledge Base</h6>
-                                            <p className="font-md color-grey-500 mb-5">Browse customer support articles and step-by-step instructions for specific features.</p>
+                                    <div className="box-form-contact mx-auto">
+                                        {/* HubSpot form will be injected here */}
+                                        <div id="hubspot-form-container"></div>
+
+                                        {/* Loading message while HubSpot form loads */}
+                                        <div id="form-loading" style={{padding: '20px', textAlign: 'center', color: '#666'}}>
+                                            Loading contact form...
                                         </div>
-                                    </div>
-                                    <div className="card-offer card-we-do card-contact hover-up">
-                                        <div className="card-image"><img src="assets/imgs/page/contact/img2.png" alt="iori" /></div>
-                                        <div className="card-info">
-                                            <h6 className="color-brand-1 mb-10">Watch Product Videos</h6>
-                                            <p className="font-md color-grey-500 mb-5">Watch our video tutorials for visual walkthroughs on how to use our features.</p>
-                                        </div>
-                                    </div>
-                                    <div className="card-offer card-we-do card-contact hover-up">
-                                        <div className="card-image"><img src="assets/imgs/page/contact/img3.png" alt="iori" /></div>
-                                        <div className="card-info">
-                                            <h6 className="color-brand-1 mb-10">Get in touch with Sales</h6>
-                                            <p className="font-md color-grey-500 mb-5">Let us talk about how we can help your enterprise.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-7">
-                                <div className="box-form-contact">
-                                    {/* HubSpot form will be injected here */}
-                                    <div id="hubspot-form-container"></div>
-                                    
-                                    {/* Loading message while HubSpot form loads */}
-                                    <div id="form-loading" style={{padding: '20px', textAlign: 'center', color: '#666'}}>
-                                        Loading contact form...
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section mt-50 mb-100">
-                    <div className="container">
-                        <div className="box-newsletter box-newsletter-2">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6 col-md-7 m-auto text-center"><span className="font-lg color-brand-1">Newsletter</span>
-                                    <h2 className="color-brand-1 mb-15 mt-5">Subcribe our newsletter</h2>
-                                    <p className="font-md color-grey-500">Do not miss the latest information from us about the trending in the market. By clicking the button, you are agreeing with our Term &amp; Conditions</p>
-                                    <div className="form-newsletter mt-30">
-                                        <form action="#">
-                                            <input type="text" placeholder="Enter you mail .." />
-                                            <button className="btn btn-submit-newsletter" type="submit">
-                                                <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                </svg>
-                                            </button>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -152,30 +110,39 @@ const ContactUs = () => {
                 </section>
             </Layout>
 
-            {/* Custom styles for HubSpot form */}
+            {/* Custom styles for HubSpot form and centered wider layout */}
             <style jsx>{`
+                /* Make the centred contact area a bit wider and constrained */
+                .box-form-contact {
+                    width: 100%;
+                    max-width: 900px; /* adjust as needed for "normal viewable size" */
+                    margin: 0 auto;
+                    padding: 20px;
+                    background: transparent;
+                }
+
                 #hubspot-form-container {
                     min-height: 400px;
                 }
-                
+
                 #form-loading {
                     display: block;
                 }
-                
+
                 /* Hide loading message when HubSpot form is loaded */
                 #hubspot-form-container .hbspt-form ~ #form-loading {
                     display: none !important;
                 }
-                
+
                 /* Custom styling for HubSpot form to match your design */
                 #hubspot-form-container .hbspt-form {
                     font-family: inherit;
                 }
-                
+
                 #hubspot-form-container .hs-form-field {
                     margin-bottom: 25px;
                 }
-                
+
                 #hubspot-form-container .hs-input {
                     width: 100% !important;
                     padding: 12px 15px;
@@ -185,13 +152,13 @@ const ContactUs = () => {
                     background: #fff;
                     transition: all 0.3s ease;
                 }
-                
+
                 #hubspot-form-container .hs-input:focus {
                     border-color: #007bff;
                     outline: none;
                     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
                 }
-                
+
                 #hubspot-form-container .hs-submit .hs-button {
                     background: #007bff;
                     color: white;
@@ -203,14 +170,21 @@ const ContactUs = () => {
                     cursor: pointer;
                     transition: all 0.3s ease;
                 }
-                
+
                 #hubspot-form-container .hs-submit .hs-button:hover {
                     background: #0056b3;
                     transform: translateY(-1px);
                 }
-                
+
                 #hubspot-form-container .hs-form fieldset {
                     max-width: none !important;
+                }
+
+                /* Center headings inside the contact block on larger screens */
+                @media (min-width: 768px) {
+                    .box-form-contact + #form-loading {
+                        text-align: center;
+                    }
                 }
             `}</style>
         </>
