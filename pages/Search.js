@@ -14,7 +14,7 @@ const SAP = () => {
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <span className="color-grey-300">SEARCH AND PERSONALISATION</span>
+                                    <span className="title-line color-black-text">Search and Personalization</span>
                                     <h2 className="color-black-text mt-10">
                                         Delivering Relevant Experiences, Every Time
                                     </h2>
@@ -188,61 +188,43 @@ const SAP = () => {
                                 <p className="font-lg color-gray-500">We don’t deliver technology—we deliver processes that make technology smarter. Our services are built around</p>
                             </div>
                         </div>
-                        <div className="table-box-help mt-50">
-                            <div className="table-responsive">
-                                <table className="table table-forum">
-                                    <thead>
-                                        <tr>
-                                            <th className="width-50">Process Structure</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross5.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Data Curation & Enrichment</h4>
-                                                        <p className="font-ls color-grey-500">Preparing structured, bias-free datasets tailored for search and personalization models.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage2/creation.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Scalable Human-in-the-Loop (HITL)</h4>
-                                                        <p className="font-ls color-grey-500">Combining human judgment with automation for ongoing model evaluation.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross4.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Quality Assurance Frameworks</h4>
-                                                        <p className="font-ls color-grey-500">Multi-stage review systems to reduce errors and ensure training data consistency.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Global & Multilingual Coverage</h4>
-                                                        <p className="font-ls color-grey-500">Support for diverse markets and cultural contexts to expand reach and accuracy.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div className="process-list mt-60">
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up">
+                                        <div className="process-number">1</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">Data Curation & Enrichment</h4>
+                                            <p className="font-md color-grey-500">Preparing structured, bias-free datasets tailored for search and personalization models.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.1s" }}>
+                                        <div className="process-number">2</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">Scalable Human-in-the-Loop (HITL)</h4>
+                                            <p className="font-md color-grey-500">Combining human judgment with automation for ongoing model evaluation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.2s" }}>
+                                        <div className="process-number">3</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">Quality Assurance Frameworks</h4>
+                                            <p className="font-md color-grey-500">Multi-stage review systems to reduce errors and ensure training data consistency.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.3s" }}>
+                                        <div className="process-number">4</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">Global & Multilingual Coverage</h4>
+                                            <p className="font-md color-grey-500">Support for diverse markets and cultural contexts to expand reach and accuracy.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

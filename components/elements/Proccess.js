@@ -29,16 +29,9 @@ const Proccess = () => {
     ];
 
     return (
-        <section className="section mt-100 mb-40 process-section">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12 text-start">
-                        <h2 className="color-brand-1 mb-20">Process Structure</h2>
-                        <p className="font-lg color-gray-500">Updated on September 24, 2023</p>
-                    </div>
-                </div>
-
-                <div className="process-list mt-60">
+        <section className="section mt-100 mb-0 process-section">
+            
+                <div className="process-list mt-0">
                     <div className="row justify-content-start">
                         <div className="col-lg-8">
                             {stages.map((stage, idx) => (
@@ -57,7 +50,6 @@ const Proccess = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     );
 };

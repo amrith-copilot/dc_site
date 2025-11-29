@@ -9,34 +9,135 @@ const ColectData = () => {
     return (
         <>
             <Layout>
-            <section className="section banner-5">
+                <section className="section banner-5">
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <h2 className="color-brand-1 mb-10">Data Collection</h2>
-                                    <h4 className="color-black-text mt-10">
-                                        Be spoke data collection for every model stage
-                                    </h4>
+                                    <span className="title-line color-black-text">Data Collection</span>
+                                   <h2 className="color-black-text mt-10">
+                                    Bespoke data collection for every model stage
+                                </h2>
                                 </div>
-                                <div className="col-lg-8 mb-0">
-                                    <p className="font-md color-black-text">
+                                <div className="col-lg-6 mb-70">
+                                    <p className="font-lg color-black-text">
                                         From prototype experiments to production-grade foundation models, we deliver fit-for-purpose datasets that reduce bias, improve performance, and speed time-to-insight.
                                     </p>
                                 </div>
                             </div>
+                            <div className="box-video-banner">
+                                <VideoSlider />
+                            </div>
                             
-                            {/* VideoSlider replaces the original video banner */}
 
                         </div>
                     </div>
+
+                    <style jsx>{`
+                        .box-video-banner-responsive {
+                            width: 100%;
+                            margin: 40px 0 0 0;
+                            padding: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        /* Desktop and tablet */
+                        @media (min-width: 769px) {
+                            .box-video-banner-responsive {
+                                margin: 50px 0 0 0;
+                            }
+                        }
+
+                        /* Mobile devices */
+                        @media (max-width: 768px) {
+                            .section.banner-5 .container {
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+
+                            .box-video-banner-responsive {
+                                margin: 30px 0 0 0;
+                                padding: 0;
+                            }
+
+                            /* Ensure text sections are also responsive */
+                            .col-lg-6.mb-20 {
+                                margin-bottom: 25px !important;
+                            }
+
+                            .mt-65 {
+                                margin-top: 40px !important;
+                            }
+
+                            .mb-100 {
+                                margin-bottom: 60px !important;
+                            }
+                        }
+
+                        /* Small mobile devices */
+                        @media (max-width: 480px) {
+                            .section.banner-5 .container {
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+
+                            .box-video-banner-responsive {
+                                margin: 25px 0 0 0;
+                            }
+
+                            .mt-65 {
+                                margin-top: 30px !important;
+                            }
+
+                            .mb-100 {
+                                margin-bottom: 40px !important;
+                            }
+
+                            .col-lg-6.mb-20 {
+                                margin-bottom: 20px !important;
+                            }
+
+                            /* Adjust text for better mobile readability */
+                            .color-brand-2.mt-10 {
+                                font-size: 1.8rem;
+                                line-height: 1.3;
+                            }
+
+                            .font-md {
+                                font-size: 0.95rem;
+                                line-height: 1.5;
+                            }
+                        }
+
+                        /* Extra small devices */
+                        @media (max-width: 360px) {
+                            .section.banner-5 .container {
+                                padding-left: 8px;
+                                padding-right: 8px;
+                            }
+
+                            .box-video-banner-responsive {
+                                margin: 20px 0 0 0;
+                            }
+
+                            .color-brand-2.mt-10 {
+                                font-size: 1.6rem;
+                            }
+
+                            .font-md {
+                                font-size: 0.9rem;
+                            }
+                        }
+                    `}</style>
                 </section>
                 <section className="section mt-10">
                     <div className="container">
                         <div className="box-business-rd">
                             <div className="row align-items-center">
                                 <div className="col-lg-5">
-                                    <h3 className="color-black-text mt-10 mb-15">What we offer</h3>
+                                    <h3 className="color-black-text mt-10 mb-15">Why us?</h3>
                                     <div className="mt-20">
                                         <p className="font-lg color-grey-400 pt-20">Primary benefits</p>
                                         <ul className="list-ticks pt-15">
@@ -68,6 +169,7 @@ const ColectData = () => {
                                     </div>
                                     <div className="mt-50 ml-20 text-start"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Talk to Our Experts</Link></div>
                                 </div>
+
                                 <div className="col-lg-7">
                                     <div className="box-business-service">
                                         <div className="box-number-1 shape-2">
@@ -86,9 +188,66 @@ const ColectData = () => {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+
+                    <style jsx>{`
+                        /* Right-side single column styling */
+                        .right-single-column {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                        }
+
+                        .right-single-column .single-item {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            padding: 18px;
+                            border: 1px solid #f3f3f3;
+                            border-radius: 8px;
+                            background: #fff;
+                        }
+
+                        .right-single-column .single-item img {
+                            width: 120px;
+                            height: auto;
+                            object-fit: cover;
+                            border-radius: 6px;
+                            flex-shrink: 0;
+                        }
+
+                        .right-single-column .cardNumber {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            padding-left: 6px;
+                        }
+
+                        @media (max-width: 991px) {
+                            .right-single-column .single-item img {
+                                width: 96px;
+                            }
+                        }
+
+                        @media (max-width: 767px) {
+                            .right-single-column {
+                                gap: 16px;
+                            }
+
+                            /* make the right column full width under the left column on small screens */
+                            .col-lg-7 {
+                                width: 100%;
+                            }
+
+                            .right-single-column .single-item {
+                                flex-direction: row;
+                                padding: 12px;
+                            }
+                        }
+                    `}</style>
                 </section>
                 <section className="section mt-110">
                     <div className="container">
@@ -234,85 +393,84 @@ const ColectData = () => {
                             </div>
                         </div>
                     </div>
+
+                    <style jsx>{`
+                        /* Equal height cards styling */
+                        .row.mt-45 {
+                            display:
+                            .row.mt-45 .col-lg-4 {
+                                margin-bottom: 20px;
+                            }
+                            
+                            .image-showcase-card-dynamic {
+                                min-height: auto;
+                            }
+                        }
+                    `}</style>
                 </section>
-                <section className="section mt-20 mb-40 mt-100">
+
+                <section className="section mt-100 mb-40 process-section">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-black-text mb-20">How we work</h2>
-                                <p className="font-lg color-gray-500">Simple, transparent process</p>
+                                <h2 className="color-brand-1 mb-20">How we work</h2>
+                                <p className="font-lg color-gray-500">Simple and transparent process
+</p>
                             </div>
                         </div>
-                        <div className="table-box-help mt-50">
-                            <div className="table-responsive">
-                                <table className="table table-forum">
-                                    <thead>
-                                        <tr>
-                                            <th className="width-50">Process Structure</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross5.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Kickoff & Requirements</h4>
-                                                        <p className="font-ls color-grey-500">Ddefine success metrics, target populations, and constraints.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage2/creation.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Design & Pilot</h4>
-                                                        <p className="font-ls color-grey-500">Create collection instruments, run pilots, measure quality and adjust.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross4.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Scale & Capture</h4>
-                                                        <p className="font-ls color-grey-500">Full launch with monitoring dashboards and live QA.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Validate & Clean</h4>
-                                                        <p className="font-ls color-grey-500">Automated filtering + human review, produce QA reports.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Deliver & Support</h4>
-                                                        <p className="font-ls color-grey-500">Hand off data, integrate into your pipeline, provide follow-up sampling as models evolve.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+                        <div className="process-list mt-60">
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up">
+                                        <div className="process-number">1</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Kickoff & Requirements</h4>
+                                            <p className="font-md color-grey-500"> define success metrics, target populations, and constraints.
+</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.3s" }}>
+                                        <div className="process-number">2</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Design & Pilot</h4>
+                                            <p className="font-md color-grey-500">create collection instruments, run pilots, measure quality and adjust.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.1s" }}>
+                                        <div className="process-number">3</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Scale & Capture</h4>
+                                            <p className="font-md color-grey-500"> full launch with monitoring dashboards and live QA.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.2s" }}>
+                                        <div className="process-number">4</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Validate & Clean</h4>
+                                            <p className="font-md color-grey-500">automated filtering + human review, produce QA reports.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.4s" }}>
+                                        <div className="process-number">5</div>
+                                        <div>
+                                            <h4 className="color-brand-1 mb-5">Deliver & Support</h4>
+                                            <p className="font-md color-grey-500">hand off data, integrate into your pipeline, provide <br></br>follow-up sampling as models evolve.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <section className="section mt-100">
                     <div className="container">
                         <div className="row">
@@ -337,29 +495,25 @@ const ColectData = () => {
                 <section className="section mt-100">
                     <div className="container">
                         <div className="row mt-50 align-items-center card-no-border">
-                            <div className="col-lg-6 mb-30">
+                            <div className="col-lg-6 mb-350">
                                 <h2 className="color-black-text">Quality, compliance & security</h2>
                                 <div className="mb-10 mt-10 font-md">Personalization is more than recommending “similar items.” It’s about adapting to user behavior, context, and evolving intent. We support personalization efforts through:</div>
                             </div>
                             <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up ">
+                                <div className="card-offer card-we-do hover-up mb-20">
                                     <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do3.png" alt="iori" /></div>
                                     <div className="card-info mt-15">
                                         <h4 className="color-black-text mb-10"><Link className="color-black-text" href="What makes us different from others? We give holistic solutions with strategy, design & technology.">Transparent QA metrics :</Link></h4>
                                         <p className="font-md color-grey-500 mb-5">Error rates, agreement scores, coverage reports.</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up">
+                                <div className="card-offer card-we-do hover-up mb-20">
                                     <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do.png" alt="iori" /></div>
                                     <div className="card-info mt-15">
                                         <h4 className="color-black-text mb-10"><Link className="color-black-text" href="No lag time, no lost effort when priorities change, no email black hole. As team collaboration improves">Reproducible pipelines: </Link></h4>
                                         <p className="font-md color-grey-500 mb-5">Capturable provenance, versioning and sample snapshots for audits.</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-6">
                                 <div className="card-offer card-we-do hover-up">
                                     <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do4.png" alt="iori" /></div>
                                     <div className="card-info mt-15">
@@ -380,7 +534,7 @@ const ColectData = () => {
                                     <div className="box-info-video">
                                         <h2 className="color-black-text mt-15 mb-20">Let’s make your search smarter and personalization sharper.</h2>
                                         <p className="font-md color-grey-500">Talk to us about building ML-ready processes that turn relevance into results.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
+                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>
