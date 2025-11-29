@@ -15,13 +15,13 @@ const OCR = () => {
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
                                     <span className="title-line color-black-text">OCR/IDP</span>
-                                    <p className="color-black-text mt-10 mb-40 font-3xl">
-                                        Scan → Extract → Validate → Deliver.
-                                    </p>
+                                    <h3 className="color-black-text mt-10">
+                                    Scan → Extract → Validate → Deliver.
+                                </h3>
                                 </div>
-                                <div className="col-lg-6 mb-70">
+                                <div className="col-lg-6 mb-20">
                                     <p className="font-lg color-black-text">
-                                        searchable data from any document, at scale.
+                                    We convert unstructured documents (scanned paper, multi-page PDFs, screenshots, photographs) into structured, usable data. That includes text extraction (printed & handwritten), table extraction (multi-page, nested tables), key–value pair capture, document classification, document verification and secure storage or push to your systems.
                                     </p>
                                 </div>
                             </div>
@@ -128,21 +128,8 @@ const OCR = () => {
                             }
                         }
                     `}</style>
-                </section>
-                <section className="section mt-10 mb-60">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <h2 className="color-brand-1 mb-20">What we do</h2>
-                                <p className="font-lg color-grey-500">
-                                    We convert unstructured documents (scanned paper, multi-page PDFs, screenshots, photographs) into structured, usable data. That includes text extraction (printed & handwritten), table extraction (multi-page, nested tables), key–value pair capture, document classification, document verification and secure storage or push to your systems.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                                <section className="section mb-100">
+                </section>          
+                <section className="section mb-100">
                     <div className="container">
                         <div className="box-business-rd">
                             <div className="row align-items-center">
@@ -266,145 +253,158 @@ const OCR = () => {
                             </div>
                         </div>
 
-                        {/* Second Row of Cards */}
-                        <div className="row mt-45">
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage12/human1.png" 
-                                            alt="Project Management" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Key-value & table extraction</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
-                                            Robust extraction of fields, key–value pairs and complex table structures (multi-page and nested tables) with confidence scores, coordinates and schema mapping.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage12/human2.png" 
-                                            alt="Customer Support" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Verification & human-in-the-loop (HITL)</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
-                                            Configurable validation workflows where low-confidence items are routed to human reviewers; results feed back to continually retrain models.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage12/human3.png" 
-                                            alt="Data Security" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Post-processing & integrations</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
-                                            Normalization, deduplication, data enrichment, PII redaction, encryption and connectors to ERPs, RPA, DMS, SharePoint, Salesforce, or your APIs.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section mt-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Technologies we use</h2>
-                                <p className="font-xl color-gray-500">We leverage best-of-breed OCR/IDP components and cloud services (examples: Azure Form Recognizer, Google Cloud Vision, AWS Textract) 
-                                    together with custom ML models and Python-based pipelines to reach the right mix of accuracy, atency and cost for your use case.with strategy, design &amp; technology.</p>
-                            </div>
-                            <div className="col-lg-12 text-center pt-100">
-                                <h3 className="color-brand-1 mb-20">Typical IDP workflow Discovery & sample analysis</h3>
-                                <p className="font-xl color-gray-500">We profile your documents and KPIs.</p>
-                            </div>
-                        </div>
-                        <div className="row mt-50">
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up">
-                                    <div className="card-image"><img src="assets/imgs/page/homepage4/offer1.png" alt="iori" /></div>
-                                    <div className="card-info">
-                                        <h4 className="color-brand-1 mb-10"><Link className="color-brand-1" href="Seamless importing and round-tripping of Microsoft Project plans, Excel files & CSV files.">Prototype / POC</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Run a sample set, show extraction accuracy and end-to-end throughput.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up">
-                                    <div className="card-image"><img src="assets/imgs/page/homepage4/offer2.png" alt="iori" /></div>
-                                    <div className="card-info">
-                                        <h4 className="color-brand-1 mb-10"><Link className="color-brand-1" href="What makes us different from others? We give holistic solutions with strategy, design & technology.">Integration & automation</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Build extraction models + business rules + validation thresholds.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up">
-                                    <div className="card-image"><img src="assets/imgs/page/homepage4/offer3.png" alt="iori" /></div>
-                                    <div className="card-info">
-                                        <h4 className="color-brand-1 mb-10"><Link className="color-brand-1" href="No lag time, no lost effort when priorities change, no email black hole. As team collaboration improves">Integration & automation</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Wire outputs to systems, configure error handling and HITL queues.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up">
-                                    <div className="card-image"><img src="assets/imgs/page/homepage4/offer4.png" alt="iori" /></div>
-                                    <div className="card-info">
-                                        <h4 className="color-brand-1 mb-10"><Link className="color-brand-1" href="Share updates instantly within our project management software, and get the entire team collaborating">Go-live & continuous improvement</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Monitored SLAs, retraining pipeline and periodic model audits.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section mt-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
-                                <p className="font-lg color-gray-500">
-                                    What makes us different from others? We give holistic solutions
-                                    <br className="d-none d-lg-block" />
-                                    with strategy, design &amp; technology.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="mt-50">
-                            <div className="box-swiper">
-                                <div className="swiper-container swiper-group-4">
-                                    <Offer7 />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section mt-100">
-                    <div className="container">
-                        <div className="row mt-50 align-items-start">
-                            {/* Left Column - Header */}
+                    
+                                            <div className="row mt-45">
+                                                <div className="col-lg-4">
+                                                    <div className="image-showcase-card-dynamic">
+                                                        <div className="image-showcase-top-dynamic">
+                                                            <img 
+                                                                src="assets/imgs/page/homepage12/human1.png" 
+                                                                alt="Project Management" 
+                                                                className="image-showcase-photo-dynamic"
+                                                            />
+                                                        </div>
+                                                        <div className="image-showcase-content-dynamic">
+                                                            <h4 className="image-showcase-title-dynamic">Key-value & table extraction</h4>
+                                                            <div className="image-showcase-divider-dynamic"></div>
+                                                            <p className="image-showcase-description-dynamic">
+                                                                Robust extraction of fields, key–value pairs and complex table structures (multi-page and nested tables) with confidence scores, coordinates and schema mapping.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div className="col-lg-4">
+                                                    <div className="image-showcase-card-dynamic">
+                                                        <div className="image-showcase-top-dynamic">
+                                                            <img 
+                                                                src="assets/imgs/page/homepage12/human2.png" 
+                                                                alt="Customer Support" 
+                                                                className="image-showcase-photo-dynamic"
+                                                            />
+                                                        </div>
+                                                        <div className="image-showcase-content-dynamic">
+                                                            <h4 className="image-showcase-title-dynamic">Verification & human-in-the-loop (HITL)</h4>
+                                                            <div className="image-showcase-divider-dynamic"></div>
+                                                            <p className="image-showcase-description-dynamic">
+                                                                Configurable validation workflows where low-confidence items are routed to human reviewers; results feed back to continually retrain models.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div className="col-lg-4">
+                                                    <div className="image-showcase-card-dynamic">
+                                                        <div className="image-showcase-top-dynamic">
+                                                            <img 
+                                                                src="assets/imgs/page/homepage12/human3.png" 
+                                                                alt="Data Security" 
+                                                                className="image-showcase-photo-dynamic"
+                                                            />
+                                                        </div>
+                                                        <div className="image-showcase-content-dynamic">
+                                                            <h4 className="image-showcase-title-dynamic">Post-processing & integrations</h4>
+                                                            <div className="image-showcase-divider-dynamic"></div>
+                                                            <p className="image-showcase-description-dynamic">
+                                                                Normalization, deduplication, data enrichment, PII redaction, encryption and connectors to ERPs, RPA, DMS, SharePoint, Salesforce, or your APIs.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section className="section mt-100">
+                                        <div className="container">
+                                            <div className="row">
+                                                <div className="col-lg-12 text-start">
+                                                    <h2 className="color-brand-1 mb-20">Technologies we use</h2>
+                                                    <p className="font-xl color-gray-500">We leverage best-of-breed OCR/IDP components and cloud services (examples: Azure Form Recognizer, Google Cloud Vision, AWS Textract) 
+                                                        together with custom ML models and Python-based pipelines to reach the right mix of accuracy, latency and cost for your use case.</p>
+                                                </div>
+                                                <div className="col-lg-12 text-center pt-100">
+                                                    <h2 className="color-brand-1 mb-20">Typical IDP workflow</h2>
+                                                    <p className="font-lg color-gray-500">Discovery & sample analysis — We profile your documents and KPIs.</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="process-list mt-60">
+                                                <div className="row">
+                                                    <div className="col-lg-6">
+                                                        <div className="process-row fade-up">
+                                                            <div className="process-number">1</div>
+                                                            <div>
+                                                                <h4 className="color-brand-1 mb-5">Discovery & sample analysis</h4>
+                                                                <p className="font-md color-grey-500">We profile your documents and KPIs.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="process-row fade-up" style={{ animationDelay: "0.1s" }}>
+                                                            <div className="process-number">2</div>
+                                                            <div>
+                                                                <h4 className="color-brand-1 mb-5">Prototype / POC</h4>
+                                                                <p className="font-md color-grey-500">Run a sample set, show extraction accuracy and end-to-end throughput.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="process-row fade-up" style={{ animationDelay: "0.2s" }}>
+                                                            <div className="process-number">3</div>
+                                                            <div>
+                                                                <h4 className="color-brand-1 mb-5">Model development & automation</h4>
+                                                                <p className="font-md color-grey-500">Build extraction models + business rules + validation thresholds.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-lg-6">
+                                                        <div className="process-row fade-up" style={{ animationDelay: "0.3s" }}>
+                                                            <div className="process-number">4</div>
+                                                            <div>
+                                                                <h4 className="color-brand-1 mb-5">Integration & automation</h4>
+                                                                <p className="font-md color-grey-500">Wire outputs to systems, configure error handling and HITL queues.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="process-row fade-up" style={{ animationDelay: "0.4s" }}>
+                                                            <div className="process-number">5</div>
+                                                            <div>
+                                                                <h4 className="color-brand-1 mb-5">Go-live & continuous improvement</h4>
+                                                                <p className="font-md color-grey-500">Monitored SLAs, retraining pipeline and periodic model audits.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section className="section mt-100">
+                                        <div className="container">
+                                            <div className="row">
+                                                <div className="col-lg-12 text-start">
+                                                    <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                                    <p className="font-lg color-gray-500">
+                                                        What makes us different from others? We give holistic solutions
+                                                        <br className="d-none d-lg-block" />
+                                                        with strategy, design &amp; technology.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="mt-50">
+                                                <div className="box-swiper">
+                                                    <div className="swiper-container swiper-group-4">
+                                                        <Offer7 />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section className="section mt-100">
+                                        <div className="container">
+                                            <div className="row mt-50 align-items-start">
+                                                {/* Left Column - Header */}
                             <div className="col-lg-5 mb-30">
                                 <div className="sticky-content" style={{ position: 'sticky', top: '100px' }}>
                                     <h2 className="color-brand-1 mb-20">Why choose us</h2>

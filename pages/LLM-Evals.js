@@ -171,9 +171,9 @@ const LLMEvals = () => {
                                 <p className="font-lg color-gray-500">Updated on September 24, 2023</p>
                             </div>
                         </div>
-                        <div className="mt-50">
+                        <div className="mt-10">
                             <div className="box-process-eval">
-                                <div className="process-eval">
+                                <div className="process-eval -center">
                                     {/* Proccess component handles the process cards */}
                                     <Proccess />
                                 </div>

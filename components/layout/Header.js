@@ -62,7 +62,6 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                             <li><Link href="/GenAI">Generative AI</Link></li>                                                          
                                                             <li><Link href="/index-11">Training as a Service</Link></li>
                                                             <li><Link href="/Content-md">Content Moderation</Link></li>
-                                                            <li><Link href="/Search">Search and Personalization</Link></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -92,7 +91,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                             <li><Link href="/industry">Customer Service</Link></li>
                                                             <li><Link href="/industry">RPA</Link></li>
                                                             <li><Link href="/industry">Asset Management</Link></li>
-                                                            <li><Link href="/industry">Physical AI</Link></li>
+                                                            <li><Link href="/industries/physicalai">Physical AI</Link></li>
                                                             <li><Link href="/industry">E-Commerce and Content</Link></li>
                                                         </ul>
                                                     </div>
@@ -107,14 +106,10 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="has-children"><Link href="#">Resources</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link href="/blog">Blog</Link></li>
-                                            </ul>
-                                        </li>
                                         <li className="has-children"><Link href="#">Company</Link>
                                             <ul className="sub-menu">
                                                 <li><Link href="/about">About us</Link></li>
+                                                <li><Link href="/partners">Partners</Link></li>
                                                 <li><Link href="/career">Careers</Link></li>
                                             </ul>
                                         </li>

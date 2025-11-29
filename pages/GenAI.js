@@ -14,7 +14,7 @@ const GenAI = () => {
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <span className="color-grey-300">Generative AI</span>
+                                    <span className="title-line color-black-text">Generative AI</span>
                                     <h2 className="color-black-text mt-10">
                                         Build reliable, productive generative models with human expertise.
                                     </h2>
@@ -103,7 +103,7 @@ const GenAI = () => {
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-6 mb-20">
-                                <h2 className="color-black-text mb-0">Types of Content Moderation We Offer</h2>
+                                <h2 className="color-brand-1 mb-0">Types of Content Moderation We Offer</h2>
                                 <p className="color-grey-500 font-lg mt-20">
                                     Here are some types of image annotations we provide.
                                 </p>
@@ -225,91 +225,68 @@ const GenAI = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-20 mb-40 mt-100">
+                <section className="section mt-100 mb-40 process-section">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-black-text mb-20">Our Process</h2>
-                                <p className="font-lg color-gray-500">We don’t deliver technology—we deliver processes that make technology smarter. Our services are built around</p>
+                                <h2 className="color-brand-1 mb-20">Our Process</h2>
+                                <p className="font-lg color-gray-500">We don't deliver technology—we deliver processes that make technology smarter. Our services are built around</p>
                             </div>
                         </div>
-                        <div className="table-box-help mt-50">
-                            <div className="table-responsive">
-                                <table className="table table-forum">
-                                    <thead>
-                                        <tr>
-                                            <th className="width-50">Process Structure</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross5.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Discovery & goal setting</h4>
-                                                        <p className="font-ls color-grey-500">Define KPIs, personas, safety guardrails.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage2/creation.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Sample design & pilot</h4>
-                                                        <p className="font-ls color-grey-500">Produce a small labeled sample for your review.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross4.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Scale annotation</h4>
-                                                        <p className="font-ls color-grey-500">trained annotators with continuous calibration and QA.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">HITL integration</h4>
-                                                        <p className="font-ls color-grey-500">Plug annotated data into training cycles and model review UI.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Evaluate & iterate</h4>
-                                                        <p className="font-ls color-grey-500">Human + automated evaluation, then refine datasets.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="item-forum">
-                                                    <div className="item-image"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                                    <div className="item-info">
-                                                        <h4 className="color-black-text mb-15">Handover & monitoring</h4>
-                                                        <p className="font-ls color-grey-500">Deliver datasets, documentation, and optional ongoing support.</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+                        <div className="process-list mt-60">
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up">
+                                        <div className="process-number">1</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">Discovery & goal setting</h4>
+                                            <p className="font-md color-grey-500">Define KPIs, personas, safety guardrails.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.1s" }}>
+                                        <div className="process-number">2</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">Sample design & pilot</h4>
+                                            <p className="font-md color-grey-500">Produce a small labeled sample for your review.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.2s" }}>
+                                        <div className="process-number">3</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">Scale annotation</h4>
+                                            <p className="font-md color-grey-500">trained annotators with continuous calibration and QA.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.3s" }}>
+                                        <div className="process-number">4</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">HITL integration</h4>
+                                            <p className="font-md color-grey-500">Plug annotated data into training cycles and model review UI.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.4s" }}>
+                                        <div className="process-number">5</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">Evaluate & iterate</h4>
+                                            <p className="font-md color-grey-500">Human + automated evaluation, then refine datasets.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="process-row fade-up" style={{ animationDelay: "0.5s" }}>
+                                        <div className="process-number">6</div>
+                                        <div>
+                                            <h4 className="color-black-text mb-5">Handover & monitoring</h4>
+                                            <p className="font-md color-grey-500">Deliver datasets, documentation, and optional ongoing support.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -318,7 +295,7 @@ const GenAI = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-black-text mb-20">Use Cases</h2>
+                                <h2 className="color-brand-1 mb-20">Use Cases</h2>
                                 <p className="font-lg color-gray-500">
                                     What makes us different from others? We give holistic solutions
                                     <br className="d-none d-lg-block" />
@@ -357,7 +334,7 @@ const GenAI = () => {
                                     <div className="card-image"><img src="assets/imgs/page/homepage4/offer2.png" alt="iori" /></div>
                                     <div className="card-info">
                                         <h4 className="color-black-text mb-10"><Link className="color-black-text" href="What makes us different from others? We give holistic solutions with strategy, design & technology.">Tight HITL integration</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">We don’t just label — we design feedback loops that make models measurably better</p>
+                                        <p className="font-md color-grey-500 mb-5">We don't just label — we design feedback loops that make models measurably better</p>
                                     </div>
                                 </div>
                             </div>
@@ -389,7 +366,7 @@ const GenAI = () => {
                                 <div className="col-lg-6"><img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
                                 <div className="col-lg-6">
                                     <div className="box-info-video">
-                                        <h2 className="color-black-text mt-15 mb-20">Let’s make your search smarter and personalization sharper.</h2>
+                                        <h2 className="color-black-text mt-15 mb-20">Let's make your search smarter and personalization sharper.</h2>
                                         <p className="font-md color-grey-500">Talk to us about building ML-ready processes that turn relevance into results.</p>
                                         <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
                                     </div>
