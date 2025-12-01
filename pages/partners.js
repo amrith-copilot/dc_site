@@ -215,7 +215,7 @@ const Partners = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 mb-50">
-                                <span className="title-line line-48 color-brand-2">Services</span>
+                                <span className="title-line line-48 color-brand-1">Services</span>
                                 <h2 className="color-brand-1 mt-20 mb-25">Core Annotation Services</h2>
                                 <p className="font-md color-grey-500 mb-35">
                                     Comprehensive data labeling and annotation across all major modalities to power your AI models.
@@ -261,11 +261,8 @@ const Partners = () => {
                         </div>
 
                         <div className="row align-items-center mt-90">
-                            <div className="col-lg-6 mb-50 text-center order-lg-2">
-                                <img src="assets/imgs/page/homepage9/img3.png" alt="Advanced HITL" className="img-fluid" />
-                            </div>
-                            <div className="col-lg-6 mb-50 order-lg-1">
-                                <span className="title-line line-48 color-brand-2">Advanced Capabilities</span>
+                            <div className="col-lg-6 mb-50 order-lg-2">
+                                <span className="title-line line-48 color-brand-1">Advanced Capabilities</span>
                                 <h2 className="color-brand-1 mt-20 mb-25">Human-in-the-Loop (HITL)</h2>
                                 <p className="font-md color-grey-500 mb-35">
                                     Expert-level human feedback and validation to align, evaluate, and continuously improve AI systems.
@@ -304,6 +301,9 @@ const Partners = () => {
                                         <h6 className="text-md neutral-1000 mb-0">Red-teaming, evaluation, bias analysis</h6>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="col-lg-6 mb-50 text-center order-lg-1">
+                                <img src="assets/imgs/page/homepage9/img3.png" alt="Advanced HITL" className="img-fluid" />
                             </div>
                         </div>
                     </div>
