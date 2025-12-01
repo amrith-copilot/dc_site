@@ -79,28 +79,28 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                 <div className="mega-menu-container">
                                                     <div className="mega-menu-column">
                                                         <ul>
-                                                            <li><Link href="/industry">Manufacturing</Link></li>
-                                                            <li><Link href="/industry">Agriculture</Link></li>
-                                                            <li><Link href="/industry">Sports & Media</Link></li>
-                                                            <li><Link href="/industry">Finance & Insurance</Link></li>
-                                                            <li><Link href="/industry">Mapping</Link></li>
+                                                            <li><Link href="/industries/ADAS">ADAS</Link></li>
+                                                            <li><Link href="/industries/Retail">Retail</Link></li>
+                                                            <li><Link href="/industries/Geospatial">Geospatial</Link></li>
+                                                            <li><Link href="/industries/Robotics">Robotics</Link></li>
+                                                            <li><Link href="/industries/Mapping">Mapping</Link></li>
                                                         </ul>
                                                     </div>
                                                     <div className="mega-menu-column">
                                                         <ul>
-                                                            <li><Link href="/industry">Customer Service</Link></li>
-                                                            <li><Link href="/industry">RPA</Link></li>
-                                                            <li><Link href="/industry">Asset Management</Link></li>
-                                                            <li><Link href="/industries/physicalai">Physical AI</Link></li>
-                                                            <li><Link href="/industry">E-Commerce and Content</Link></li>
+                                                            <li><Link href="/industries/Manufacturing">Manufacturing</Link></li>
+                                                            <li><Link href="/industries/Agriculture">Agriculture</Link></li>
+                                                            <li><Link href="/industries/SportsMedia">Sports & Media</Link></li>
+                                                            <li><Link href="/industries/FinanceInsurance">Finance & Insurance</Link></li>
+                                                            <li><Link href="/industries/AssetManagement">Asset Management</Link></li>
                                                         </ul>
                                                     </div>
                                                     <div className="mega-menu-column">
                                                         <ul>
-                                                            <li><Link href="/industry">ADAS</Link></li>
-                                                            <li><Link href="/industry">Retail</Link></li>
-                                                            <li><Link href="/industry">Geospatial</Link></li>
-                                                            <li><Link href="/industry">Robotics</Link></li>
+                                                            <li><Link href="/industries/CustomerService">Customer Service</Link></li>
+                                                            <li><Link href="/industries/RPA">RPA</Link></li>
+                                                            <li><Link href="/industries/PhysicalAI">Physical AI</Link></li>
+                                                            <li><Link href="/industries/ECommerceContent">E-Commerce and Content</Link></li>
                                                         </ul>
                                                     </div>
                                                 </div>

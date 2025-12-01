@@ -16,7 +16,7 @@ const Error = () => {
                             <div className="col-lg-2" />
                             <div className="col-lg-10">
                                 <div className="row align-items-center">
-                                    <div className="col-md-5 col-sm-12 mb-30 text-center text-md-start"><img src="assets/imgs/page/404/404.png" alt="iori" /></div>
+                                    <div className="col-md-5 col-sm-12 mb-30 text-center text-md-start"><img src="/assets/imgs/page/404/404.png" alt="iori" /></div>
                                     <div className="col-md-7 col-sm-12 text-center text-md-start">
                                         <h1 className="color-brand-1 font-84 mb-10">404</h1>
                                         <h3 className="color-brand-1 mb-25">Oops, nothing to see here</h3>

@@ -1,0 +1,199 @@
+import React, { useState } from 'react';
+import Layout from "../../components/layout/Layout";
+import VideoSlider from '../../components/slider/VideoSlider';
+import AgriAnnotationSlider from '../../components/slider/AgriAnnotationSlider';
+const Agriculture = () => {
+    const [isOpen, setOpen] = useState(false)
+    return (
+        <Layout>
+           
+                {/* Hero Section */}
+                <section className="section banner-5">
+                    <div className="container">
+                        <div className="mt-100 mb-100">
+                            <div className="row align-items-start">
+                                <span className="title-line color-black-text mb-10">Agriculture</span>
+                                <div className="col-lg-6 mb-20">
+                                    <h3 className="color-black-text mt-10">
+                                       Agriculture AI Training Data <br />for Crop Intelligence, Field Robotics <br /> and Precision Farming
+                                    </h3>
+                                    <h4 className="color-black-text mt-10 mb-30"></h4>
+                                </div>
+     
+                                <div className="col-lg-6     mb-20">
+                                    <p className="font-lg color-black-text">
+                                        High-accuracy annotations for crop health, yield prediction, weed detection, field mapping, autonomous agri-robotics, aerial imagery, ground sensors, machinery vision and multispectral data. Powering Agriculture AI systems that monitor fields, optimize inputs, automate harvesting and detect issues early.
+                                    </p>
+                                </div>
+                             
+                            </div>
+                            
+                            {/* VideoSlider replaces the original video banner */}
+                            <div className="box-video-banner">
+                                <VideoSlider />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Core Perception Tasks - Image Cards */}
+                <section className="section mt-70 mb-50">
+                    <div className="container">
+                        <div className="text-center mb-50">
+                            <h2 className="color-brand-1 mb-15">Core Agriculture Vision Tasks</h2>
+                            <p className="font-lg color-grey-500">
+                                Comprehensive annotation capabilities for precision agriculture AI systems
+                            </p>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic">
+                                    <div className="image-showcase-top-dynamic">
+                                        <img 
+                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            alt="Crop Health Classification" 
+                                            className="image-showcase-photo-dynamic"
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic">
+                                        <h6 className="color-brand-1 mb-10">Crop Health Classification</h6>
+                                        <p className="font-sm color-grey-500">
+                                            Label disease symptoms, nutrient deficiencies and stress patterns across growth stages.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic">
+                                    <div className="image-showcase-top-dynamic">
+                                        <img 
+                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            alt="Weed Identification" 
+                                            className="image-showcase-photo-dynamic"
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic">
+                                        <h6 className="color-brand-1 mb-10">Weed Identification</h6>
+                                        <p className="font-sm color-grey-500">
+                                            Differentiate weeds from crops for precision spraying and automated weed removal.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic">
+                                    <div className="image-showcase-top-dynamic">
+                                        <img 
+                                            src="/assets/imgs/page/homepage6/human3.png" 
+                                            alt="Fruit & Yield Counting" 
+                                            className="image-showcase-photo-dynamic"
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic">
+                                        <h6 className="color-brand-1 mb-10">Fruit & Yield Counting</h6>
+                                        <p className="font-sm color-grey-500">
+                                            Annotate fruit clusters and density for accurate yield forecasting.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic">
+                                    <div className="image-showcase-top-dynamic">
+                                        <img 
+                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            alt="Plant Growth Stage Detection" 
+                                            className="image-showcase-photo-dynamic"
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic">
+                                        <h6 className="color-brand-1 mb-10">Plant Growth Stage Detection</h6>
+                                        <p className="font-sm color-grey-500">
+                                            Track phenology and developmental stages for optimized interventions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic">
+                                    <div className="image-showcase-top-dynamic">
+                                        <img 
+                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            alt="Field Boundary & Plot Mapping" 
+                                            className="image-showcase-photo-dynamic"
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic">
+                                        <h6 className="color-brand-1 mb-10">Field Boundary & Plot Mapping</h6>
+                                        <p className="font-sm color-grey-500">
+                                            Define plots, borders and management zones using aerial or satellite imagery.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic">
+                                    <div className="image-showcase-top-dynamic">
+                                        <img 
+                                            src="/assets/imgs/page/homepage6/human3.png" 
+                                            alt="Autonomous Tractor Vision" 
+                                            className="image-showcase-photo-dynamic"
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic">
+                                        <h6 className="color-brand-1 mb-10">Autonomous Tractor Vision</h6>
+                                        <p className="font-sm color-grey-500">
+                                            Annotate obstacles, pathways and terrain features for safe navigation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic">
+                                    <div className="image-showcase-top-dynamic">
+                                        <img 
+                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            alt="Multispectral Vegetation Index Labeling" 
+                                            className="image-showcase-photo-dynamic"
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic">
+                                        <h6 className="color-brand-1 mb-10">Multispectral Vegetation Index Labeling</h6>
+                                        <p className="font-sm color-grey-500">
+                                            Attach NDVI, NDRE and spectral signatures for advanced crop monitoring.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic">
+                                    <div className="image-showcase-top-dynamic">
+                                        <img 
+                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            alt="Pest & Damage Spotting" 
+                                            className="image-showcase-photo-dynamic"
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic">
+                                        <h6 className="color-brand-1 mb-10">Pest & Damage Spotting</h6>
+                                        <p className="font-sm color-grey-500">
+                                            Label insect damage, leaf holes and pest infestations at early onset.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <AgriAnnotationSlider />
+        </Layout>
+    );
+};
+
+export default Agriculture;
