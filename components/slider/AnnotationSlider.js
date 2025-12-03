@@ -4,41 +4,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 SwiperCore.use([Autoplay, Navigation]);
 
-const RetailAnnotationSlider = () => {
-    const items = [
-        {
-            title: "Planogram Compliance Scoring",
-            description: "Evaluate adherence to layout, placement rules and brand guidelines."
-        },
-        {
-            title: "Customer–Product Interaction Labeling",
-            description: "Track product pickups, returns, dwell times and engagement levels."
-        },
-        {
-            title: "Fixture & Display Condition Tagging",
-            description: "Record display damage, missing signage and merchandising issues."
-        },
-        {
-            title: "Checkout Behavior Modeling",
-            description: "Label scanning patterns, bagging sequences and checkout anomalies."
-        },
-        {
-            title: "POS Event Correlation Metadata",
-            description: "Map visual events to transaction logs for fraud and shrink analysis."
-        },
-        {
-            title: "Staff Activity Categorization",
-            description: "Classify stocking, cleaning, assisting and operational workflows."
-        },
-        {
-            title: "Environmental Condition Annotation",
-            description: "Note lighting, reflection, occlusion and camera-visibility variations."
-        },
-        {
-            title: "Rare Event & Edge-Case Identification",
-            description: "Tag unusual shopper actions, equipment failures or irregular store events."
-        }
-    ];
+/**
+ * Reusable Annotation Slider Component
+ * @param {Array} items - Array of objects with title and description
+ * @param {string} title - Section title
+ * @param {string} subtitle - Section subtitle/description
+ * @param {string} navId - Unique ID for navigation (default: 'annotation')
+ */
+const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
+    const prevClass = `${navId}-prev`;
+    const nextClass = `${navId}-next`;
 
     return (
         <>
@@ -46,10 +21,8 @@ const RetailAnnotationSlider = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 text-center">
-                            <h2 className="color-brand-1 mb-20">Advanced Retail Annotation Capabilities</h2>
-                            <p className="font-lg color-grey-500 mb-40">
-                                Specialized labeling services for retail operations and store analytics
-                            </p>
+                            <h2 className="color-brand-1 mb-20">{title}</h2>
+                            <p className="font-lg color-grey-500 mb-40">{subtitle}</p>
                         </div>
                     </div>
 
@@ -60,10 +33,11 @@ const RetailAnnotationSlider = () => {
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
+                            reverseDirection: false,
                         }}
                         navigation={{
-                            prevEl: ".annotation-prev",
-                            nextEl: ".annotation-next",
+                            prevEl: `.${prevClass}`,
+                            nextEl: `.${nextClass}`,
                         }}
                         breakpoints={{
                             320: { slidesPerView: 1 },
@@ -80,7 +54,7 @@ const RetailAnnotationSlider = () => {
                                 <div className="annotation-card">
                                     <div className="annotation-card-content">
                                         <h6 className="annotation-card-title">{item.title}</h6>
-                                        <p>{item.description}</p>
+                                        {item.description && <p>{item.description}</p>}
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -88,12 +62,12 @@ const RetailAnnotationSlider = () => {
                     </Swiper>
 
                     <div className="annotation-nav">
-                        <div className="annotation-prev">
+                        <div className={prevClass}>
                             <svg width="26" height="26" fill="none" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                             </svg>
                         </div>
-                        <div className="annotation-next">
+                        <div className={nextClass}>
                             <svg width="26" height="26" fill="none" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                             </svg>
@@ -143,8 +117,8 @@ const RetailAnnotationSlider = () => {
                     gap: 20px;
                     margin-top: 30px;
                 }
-                .annotation-prev,
-                .annotation-next {
+                .${prevClass},
+                .${nextClass} {
                     width: 46px;
                     height: 46px;
                     display: flex;
@@ -156,8 +130,8 @@ const RetailAnnotationSlider = () => {
                     cursor: pointer;
                     transition: 0.2s ease;
                 }
-                .annotation-prev:hover,
-                .annotation-next:hover {
+                .${prevClass}:hover,
+                .${nextClass}:hover {
                     transform: scale(1.1);
                 }
             `}</style>
@@ -165,4 +139,5 @@ const RetailAnnotationSlider = () => {
     );
 };
 
-export default RetailAnnotationSlider;
+export default AnnotationSlider;
+

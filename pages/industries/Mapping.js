@@ -4,19 +4,19 @@ import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 import Link from 'next/link';
 
-const Retail = () => {
+const Mapping = () => {
     const [isOpen, setOpen] = useState(false)
 
-    // Slider data for Retail annotation capabilities
+    // Slider data for Mapping annotation capabilities
     const annotationItems = [
-        { title: "Planogram Compliance Scoring" },
-        { title: "Customer–Product Interaction Labeling" },
-        { title: "Fixture & Display Condition Tagging" },
-        { title: "Checkout Behavior Modeling" },
-        { title: "POS Event Correlation Metadata" },
-        { title: "Staff Activity Categorization" },
-        { title: "Environmental Condition Annotation" },
-        { title: "Rare Event & Edge-Case Identification" }
+        { title: "Speed-Limit Metadata" },
+        { title: "Street-Name OCR" },
+        { title: "Crosswalk Classification" },
+        { title: "Traffic Flow Pattern Tagging" },
+        { title: "Map Update Prioritization" },
+        { title: "Routing Constraints Labeling" },
+        { title: "Visibility & Obstruction Tagging" },
+        { title: "Rare Infrastructure Anomalies" }
     ];
     return (
         <Layout>
@@ -25,24 +25,28 @@ const Retail = () => {
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-100 mb-100">
-                            <div className="row align-items-start">
-                                <span className="title-line color-black-text mb-10">Retail</span>
+                        <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
-                                    <h3 className="color-black-text mt-10">
-                                        AI Training Data for Retail Vision, Store Analytics and Physical Commerce Automation  </h3>
+                                <span className="title-line color-black-text">Mapping</span>
+                                
+                                        
+                               
+                                <h3 className="color-black-text mt-10 mb-30">AI Training Data for Mapping, Navigation and Spatial Intelligence</h3>
                                 </div>
-     
-                                <div className="col-lg-6 mt-0 mb-20">
-                                    <p className="font-lg color-black-text">
-                                    High-accuracy annotations for shopper behavior, shelf intelligence, product detection and in-store automation <br />optimized for retailers across North America, Europe and APAC.                                  
-                                      </p> 
+                 
+                                <div className="col-lg-6 mt-40 mb-20">
+                                <p className="font-lg color-black-text">
+                                     Accurate annotations for road geometry, traffic elements, POI detection and map updates — optimized for global mapping systems.
+
+                                 </p>
                                 </div>
-                            </div>
+                             
+                        </div>
                             
                             {/* VideoSlider replaces the original video banner */}
                             <div className="box-video-banner">
-                                <VideoSlider 
-                                caption={"Structured labeling for CCTV footage, in-store cameras, POS streams and product imagery. Powering Retail AI systems that improve store operations, prevent loss, optimize merchandising and enhance real-world shopper experiences."}
+                                <VideoSlider
+                                caption={"Structured labeling across street-level imagery, aerial surveys and LiDAR for HD maps, navigation apps and geo-aware autonomous systems."}
                                 />
                             </div>
                         </div>
@@ -52,9 +56,9 @@ const Retail = () => {
                 <section className="section mt-70 mb-50">
                     <div className="container">
                         <div className="text-center mb-50">
-                            <h2 className="color-brand-1 mb-15">Core Retail Vision Tasks</h2>
+                            <h2 className="color-brand-1 mb-15">Core Mapping Tasks</h2>
                             <p className="font-lg color-grey-500">
-                                Visually strong annotation capabilities for retail AI systems
+                                Visually strong annotation capabilities for mapping and navigation systems
                             </p>
                         </div>
                         <div className="row">
@@ -63,14 +67,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Product Recognition on Shelves" 
+                                            alt="Road Geometry Extraction" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Product Recognition on Shelves</h6>
+                                        <h6 className="color-brand-1 mb-15">Road Geometry Extraction</h6>
                                         <p className="font-sm color-grey-500">
-                                            Annotate SKU placement, facings and shelf positions for planogram compliance.
+                                            Extract road centerlines, edges and geometry for HD maps.
                                         </p>
                                     </div>
                                 </div>
@@ -81,14 +85,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Out-of-Stock & Empty Shelf Detection" 
+                                            alt="POI Identification" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Out-of-Stock & Empty Shelf Detection</h6>
+                                        <h6 className="color-brand-1 mb-15">POI Identification</h6>
                                         <p className="font-sm color-grey-500">
-                                            Identify missing products and low-stock zones for real-time replenishment.
+                                            Detect and classify points of interest from street imagery.
                                         </p>
                                     </div>
                                 </div>
@@ -99,14 +103,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Shopper Path Tracking" 
+                                            alt="Street Sign Recognition" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Shopper Path Tracking</h6>
+                                        <h6 className="color-brand-1 mb-15">Street Sign Recognition</h6>
                                         <p className="font-sm color-grey-500">
-                                            Map customer movement across aisles to optimize layout and flow.
+                                            Recognize and transcribe street signs and traffic signage.
                                         </p>
                                     </div>
                                 </div>
@@ -117,14 +121,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Queue Monitoring" 
+                                            alt="Intersection Mapping" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Queue Monitoring</h6>
+                                        <h6 className="color-brand-1 mb-15">Intersection Mapping</h6>
                                         <p className="font-sm color-grey-500">
-                                            Detect line length and waiting times for smarter staffing.
+                                            Map complex intersections, turns and junction layouts.
                                         </p>
                                     </div>
                                 </div>
@@ -135,14 +139,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Price Tag & Label Identification" 
+                                            alt="Curb & Sidewalk Detection" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Price Tag & Label Identification</h6>
+                                        <h6 className="color-brand-1 mb-15">Curb & Sidewalk Detection</h6>
                                         <p className="font-sm color-grey-500">
-                                            Recognize price labels, discount tags and mismatched signage.
+                                            Identify curbs, sidewalks and pedestrian infrastructure.
                                         </p>
                                     </div>
                                 </div>
@@ -153,14 +157,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Self-Checkout Vision Support" 
+                                            alt="Map Change Detection" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Self-Checkout Vision Support</h6>
+                                        <h6 className="color-brand-1 mb-15">Map Change Detection</h6>
                                         <p className="font-sm color-grey-500">
-                                            Annotate items, barcodes and bagging area events for automated checkout systems.
+                                            Detect road changes, new construction and map updates.
                                         </p>
                                     </div>
                                 </div>
@@ -171,14 +175,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="In-Store Theft & Anomaly Detection" 
+                                            alt="Street Furniture Segmentation" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">In-Store Theft & Anomaly Detection</h6>
+                                        <h6 className="color-brand-1 mb-15">Street Furniture Segmentation</h6>
                                         <p className="font-sm color-grey-500">
-                                            Label suspicious actions and asset-removal patterns.
+                                            Segment poles, benches, bins and urban infrastructure.
                                         </p>
                                     </div>
                                 </div>
@@ -189,14 +193,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Store Heatmap Generation" 
+                                            alt="Lane-Level Annotation" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Store Heatmap Generation</h6>
+                                        <h6 className="color-brand-1 mb-15">Lane-Level Annotation</h6>
                                         <p className="font-sm color-grey-500">
-                                            Segment high-engagement and low-traffic areas for merchandising decisions.
+                                            Annotate individual lanes, markings and lane attributes.
                                         </p>
                                     </div>
                                 </div>
@@ -206,9 +210,9 @@ const Retail = () => {
                 </section>
                 <AnnotationSlider
                     items={annotationItems}
-                    title="Advanced Retail  Capabilities"
-                    subtitle="Specialized labeling services for retail operations and store analytics"
-                    navId="retail"
+                    title="Advanced Mapping Annotation Capabilities"
+                    subtitle="Specialized labeling services for navigation and spatial intelligence"
+                    navId="mapping"
                 />
 
                 {/* CTA Section */}
@@ -217,13 +221,13 @@ const Retail = () => {
                         <div className="box-cover-border">
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
-                                    <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Retail Solutions" />
+                                    <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Mapping Solutions" />
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Revolutionize Your Retail AI?</h2>
+                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Enhance Your Mapping Data?</h2>
                                         <p className="font-md color-grey-500">
-                                            Partner with us to get high-quality training data for smarter retail analytics and customer insights.
+                                            Partner with us to get high-quality training data for HD maps, navigation and spatial intelligence.
                                         </p>
                                         <div className="box-button text-start mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
@@ -238,4 +242,4 @@ const Retail = () => {
     );
 };
 
-export default Retail;
+export default Mapping;
