@@ -1,9 +1,23 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
-import AgriAnnotationSlider from '../../components/slider/AgriAnnotationSlider';
+import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import Link from 'next/link';
+
 const Agriculture = () => {
     const [isOpen, setOpen] = useState(false)
+
+    // Slider data for Agriculture annotation capabilities
+    const annotationItems = [
+        { title: "Soil Texture & Moisture Condition Tagging" },
+        { title: "Plant Density & Canopy Coverage Analysis" },
+        { title: "Harvest Readiness Assessment" },
+        { title: "Row Alignment & Spacing Validation" },
+        { title: "Machinery Operation State Detection" },
+        { title: "Environmental Condition Annotation" },
+        { title: "Water Stress & Drought Pattern Tagging" },
+        { title: "Edge-Case & Rare Event Identification" }
+    ];
     return (
         <Layout>
            
@@ -191,7 +205,36 @@ const Agriculture = () => {
                         </div>
                     </div>
                 </section>
-                <AgriAnnotationSlider />
+                <AnnotationSlider
+                    items={annotationItems}
+                    title="Advanced Agricultural Annotation Capabilities"
+                    subtitle="Specialized labeling services for precision agriculture and crop management"
+                    navId="agri"
+                />
+
+                {/* CTA Section */}
+                <section className="section mt-50 pt-50 pb-40">
+                    <div className="container">
+                        <div className="box-cover-border">
+                            <div className="row align-items-center">
+                                <div className="col-lg-6">
+                                    <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Agriculture Solutions" />
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="box-info-video">
+                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Transform Your Agricultural AI?</h2>
+                                        <p className="font-md color-grey-500">
+                                            Partner with us to get precision training data that powers smarter farming solutions.
+                                        </p>
+                                        <div className="box-button text-start mt-40">
+                                            <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
         </Layout>
     );
 };

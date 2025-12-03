@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 
-const VideoSlider = () => {
+const VideoSlider = ({ caption }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const videoRefs = useRef([]);
   const containerRef = useRef(null);
@@ -78,29 +78,39 @@ const VideoSlider = () => {
           ))}
         </div>
         
-        {/* Overlay Controls */}
-        <div className="slider-controls-overlay">
-          <button onClick={prevSlide} className="control-btn prev-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </button>
-          
-          <div className="slide-dots">
-            {videos.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`dot ${index === currentSlide ? 'active' : ''}`}
-              />
-            ))}
+        {/* Bottom overlay with caption and controls */}
+        <div className="slider-bottom-overlay">
+          {/* Caption text */}
+          {caption && (
+            <div className="slider-caption">
+              <p>{caption}</p>
+            </div>
+          )}
+
+          {/* Controls */}
+          <div className="slider-controls">
+            <button onClick={prevSlide} className="control-btn prev-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+
+            <div className="slide-dots">
+              {videos.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`dot ${index === currentSlide ? 'active' : ''}`}
+                />
+              ))}
+            </div>
+
+            <button onClick={nextSlide} className="control-btn next-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
           </div>
-          
-          <button onClick={nextSlide} className="control-btn next-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </button>
         </div>
       </div>
 
@@ -142,20 +152,41 @@ const VideoSlider = () => {
           display: block;
         }
 
-        .slider-controls-overlay {
+        .slider-bottom-overlay {
           position: absolute;
-          bottom: 20px;
-          left: 50%;
-          transform: translateX(-50%);
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+          padding: 60px 40px 25px 40px;
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        }
+
+        .slider-caption {
+          width: 100%;
+        }
+
+        .slider-caption p {
+          color: rgba(255, 255, 255, 0.95);
+          font-size: 16px;
+          line-height: 1.7;
+          margin: 0;
+          text-align: center;
+          max-width: 900px;
+          margin: 0 auto;
+          font-weight: 400;
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .slider-controls {
           display: flex;
           justify-content: center;
           align-items: center;
           gap: 25px;
-          padding: 18px 30px;
-          background-color: transparent;
-          border-radius: 50px;
-          width: fit-content;
-          z-index: 10;
         }
 
         .control-btn {
@@ -224,21 +255,27 @@ const VideoSlider = () => {
             max-width: 100%;
             padding: 0 15px;
           }
-          
+
           .video-slider-container {
             height: 400px;
           }
-          
+
           .control-btn {
             width: 45px;
             height: 45px;
           }
-          
-          .slider-controls-overlay {
+
+          .slider-bottom-overlay {
+            padding: 50px 25px 20px 25px;
+            gap: 15px;
+          }
+
+          .slider-controls {
             gap: 20px;
-            background-color: transparent;
-            padding: 15px 25px;
-            bottom: 15px;
+          }
+
+          .slider-caption p {
+            font-size: 14px;
           }
         }
 
@@ -246,19 +283,26 @@ const VideoSlider = () => {
           .video-slider-container {
             height: 300px;
           }
-          
+
           .control-btn {
             width: 40px;
             height: 40px;
           }
-          
-          .slider-controls-overlay {
-            gap: 15px;
-            background-color: transparent;
-            padding: 12px 20px;
-            bottom: 10px;
+
+          .slider-bottom-overlay {
+            padding: 40px 15px 15px 15px;
+            gap: 12px;
           }
-          
+
+          .slider-controls {
+            gap: 15px;
+          }
+
+          .slider-caption p {
+            font-size: 13px;
+            line-height: 1.5;
+          }
+
           .dot {
             width: 12px;
             height: 12px;

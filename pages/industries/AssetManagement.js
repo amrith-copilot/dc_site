@@ -1,9 +1,23 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
-import AssetAnnotationSlider from '../../components/slider/AssetAnnotationSlider';
+import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import Link from 'next/link';
+
 const AssetManagement = () => {
     const [isOpen, setOpen] = useState(false)
+
+    // Slider data for Asset Management annotation capabilities
+    const annotationItems = [
+        { title: "Lifecycle Stage Annotation" },
+        { title: "Asset Utilization Pattern Analysis" },
+        { title: "Risk & Severity Scoring" },
+        { title: "Compliance Documentation Tagging" },
+        { title: "Spatial Localization & Mapping" },
+        { title: "Environmental Impact Metadata" },
+        { title: "Maintenance Workflow Event Tagging" },
+        { title: "Rare Failure & Edge-Case Identification" }
+    ];
     return (
         <Layout>
            
@@ -191,7 +205,36 @@ const AssetManagement = () => {
                         </div>
                     </div>
                 </section>
-                <AssetAnnotationSlider />
+                <AnnotationSlider
+                    items={annotationItems}
+                    title="Advanced Annotation Capabilities"
+                    subtitle="Specialized labeling services for asset management and predictive maintenance"
+                    navId="asset"
+                />
+
+                {/* CTA Section */}
+                <section className="section mt-50 pt-50 pb-40">
+                    <div className="container">
+                        <div className="box-cover-border">
+                            <div className="row align-items-center">
+                                <div className="col-lg-6">
+                                    <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Asset Management Solutions" />
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="box-info-video">
+                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Optimize Your Asset Management?</h2>
+                                        <p className="font-md color-grey-500">
+                                            Partner with us to get high-quality training data for predictive maintenance and asset tracking.
+                                        </p>
+                                        <div className="box-button text-start mt-40">
+                                            <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
         </Layout>
     );
 };

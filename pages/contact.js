@@ -97,11 +97,6 @@ const ContactUs = () => {
                                     <div className="box-form-contact mx-auto">
                                         {/* HubSpot form will be injected here */}
                                         <div id="hubspot-form-container"></div>
-
-                                        {/* Loading message while HubSpot form loads */}
-                                        <div id="form-loading" style={{padding: '20px', textAlign: 'center', color: '#666'}}>
-                                            Loading contact form...
-                                        </div>
                                     </div>
                                 </div>
                             </div>

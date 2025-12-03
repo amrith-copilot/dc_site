@@ -221,32 +221,32 @@ const Partners = () => {
                                     Comprehensive data labeling and annotation across all major modalities to power your AI models.
                                 </p>
                                 <div className="list-icons">
-                                    <div className="item-icon mb-20">
-                                        <span className="icon-left">
+                                    <div className="d-flex align-items-center mb-20">
+                                        <span className="icon-left me-10">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
                                         </span>
                                         <h6 className="text-md neutral-1000 mb-0">Image, video, LiDAR, 3D annotation</h6>
                                     </div>
-                                    <div className="item-icon mb-20">
-                                        <span className="icon-left">
+                                    <div className="d-flex align-items-center mb-20">
+                                        <span className="icon-left me-10">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
                                         </span>
                                         <h6 className="text-md neutral-1000 mb-0">Text and document extraction</h6>
                                     </div>
-                                    <div className="item-icon mb-20">
-                                        <span className="icon-left">
+                                    <div className="d-flex align-items-center mb-20">
+                                        <span className="icon-left me-10">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
                                         </span>
                                         <h6 className="text-md neutral-1000 mb-0">Audio transcription and diarization</h6>
                                     </div>
-                                    <div className="item-icon">
-                                        <span className="icon-left">
+                                    <div className="d-flex align-items-center">
+                                        <span className="icon-left me-10">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
@@ -268,32 +268,32 @@ const Partners = () => {
                                     Expert-level human feedback and validation to align, evaluate, and continuously improve AI systems.
                                 </p>
                                 <div className="list-icons">
-                                    <div className="item-icon mb-20">
-                                        <span className="icon-left">
+                                    <div className="d-flex align-items-center mb-20">
+                                        <span className="icon-left me-10">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
                                         </span>
                                         <h6 className="text-md neutral-1000 mb-0">RLHF, RLAIF, preference ranking</h6>
                                     </div>
-                                    <div className="item-icon mb-20">
-                                        <span className="icon-left">
+                                    <div className="d-flex align-items-center mb-20">
+                                        <span className="icon-left me-10">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
                                         </span>
                                         <h6 className="text-md neutral-1000 mb-0">Real-time human validation for agentic systems</h6>
                                     </div>
-                                    <div className="item-icon mb-20">
-                                        <span className="icon-left">
+                                    <div className="d-flex align-items-center mb-20">
+                                        <span className="icon-left me-10">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
                                         </span>
                                         <h6 className="text-md neutral-1000 mb-0">Expert-level annotation (medical, legal, financial, geospatial)</h6>
                                     </div>
-                                    <div className="item-icon">
-                                        <span className="icon-left">
+                                    <div className="d-flex align-items-center">
+                                        <span className="icon-left me-10">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>

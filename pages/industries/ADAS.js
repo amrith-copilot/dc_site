@@ -1,10 +1,23 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
-import AdvancedAnnotationSlider from '../../components/slider/AdasAnnotationSlider';
+import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import Link from 'next/link';
 
 const ADAS = () => {
     const [isOpen, setOpen] = useState(false)
+
+    // Slider data for ADAS annotation capabilities
+    const annotationItems = [
+        { title: "HD Map Feature Labelling" },
+        { title: "Intersection Complexity Annotation" },
+        { title: "Weather & Illumination Condition Tagging" },
+        { title: "Vehicle Pose & Orientation Estimation" },
+        { title: "Behavior & Intent Tagging" },
+        { title: "Road-Work & Temporary Structure Labelling" },
+        { title: "Occlusion & Visibility Scoring" },
+        { title: "Anomaly & Edge-Case Tagging" }
+    ];
     return (
         <Layout>
            
@@ -14,16 +27,16 @@ const ADAS = () => {
                         <div className="mt-100 mb-100">
                         <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
-                                <span className="title-line color-black-text">High-Precision Training Data for Smart & Autonomous Mobility</span>
+                                <span className="title-line color-black-text">ADAS</span>
                                 
                                         
                                
-                                <h3 className="color-black-text mt-10 mb-30"> Transform raw sensor feeds into reliable perception.Lane detection, Obstacle detection, Object tracking and more</h3>
+                                <h3 className="color-black-text mt-10 mb-30">High-Precision Training Data for Smart <br />and Autonomous Mobility</h3>
                                 </div>
                  
                                 <div className="col-lg-6 mt-40 mb-20">
                                 <p className="font-lg color-black-text">
-                                     Our annotation services — from 2D / 3D bounding boxes and image segmentation to LiDAR point-cloud labelling and sensor fusion — power ADAS & autonomous driving systems. Get a demo and see how we can accelerate your pipeline.
+                                     Transform raw sensor feeds into reliable perception.Lane detection, Obstacle detection, Object tracking and more
 
                                  </p>
                                 </div>
@@ -32,7 +45,9 @@ const ADAS = () => {
                             
                             {/* VideoSlider replaces the original video banner */}
                             <div className="box-video-banner">
-                                <VideoSlider />
+                                <VideoSlider
+                                caption={" Our annotation services — from 2D / 3D bounding boxes and image segmentation to LiDAR point-cloud labelling and sensor fusion — power ADAS & autonomous driving systems. Get a demo and see how we can accelerate your pipeline."}
+                                />
                             </div>
                         </div>
                     </div>
@@ -193,11 +208,36 @@ const ADAS = () => {
                         </div>
                     </div>
                 </section>
-                <AdvancedAnnotationSlider />
+                <AnnotationSlider
+                    items={annotationItems}
+                    title="Advanced Annotation Capabilities"
+                    subtitle="Specialized labeling services for autonomous driving and ADAS systems"
+                    navId="adas"
+                />
 
-
-
-
+                {/* CTA Section */}
+                <section className="section mt-50 pt-50 pb-40">
+                    <div className="container">
+                        <div className="box-cover-border">
+                            <div className="row align-items-center">
+                                <div className="col-lg-6">
+                                    <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" />
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="box-info-video">
+                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Accelerate Your ADAS Development?</h2>
+                                        <p className="font-md color-grey-500">
+                                            Partner with us to get high-quality training data that powers safer, smarter autonomous systems.
+                                        </p>
+                                        <div className="box-button text-start mt-40">
+                                            <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
         </Layout>
     );
 };

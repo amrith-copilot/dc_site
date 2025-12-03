@@ -1,22 +1,23 @@
+
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 import Link from 'next/link';
 
-const Retail = () => {
+const Insurance = () => {
     const [isOpen, setOpen] = useState(false)
 
-    // Slider data for Retail annotation capabilities
+    // Slider data for Insurance annotation capabilities
     const annotationItems = [
-        { title: "Planogram Compliance Scoring" },
-        { title: "Customer–Product Interaction Labeling" },
-        { title: "Fixture & Display Condition Tagging" },
-        { title: "Checkout Behavior Modeling" },
-        { title: "POS Event Correlation Metadata" },
-        { title: "Staff Activity Categorization" },
-        { title: "Environmental Condition Annotation" },
-        { title: "Rare Event & Edge-Case Identification" }
+        { title: "Underwriting Risk Scoring" },
+        { title: "Document Consistency Verification" },
+        { title: "Policy Metadata Extraction" },
+        { title: "Historical Claims Classification" },
+        { title: "Incident Severity Tiering" },
+        { title: "Environmental Hazard Tagging" },
+        { title: "Multimodal Evidence Correlation" },
+        { title: "Rare Insurance Fraud Pattern Detection" }
     ];
     return (
         <Layout>
@@ -24,25 +25,29 @@ const Retail = () => {
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
+                        <div className="mt-100 mb-10">
                             <div className="row align-items-start">
-                                <span className="title-line color-black-text mb-10">Retail</span>
+                                <span className="title-line color-black-text mb-10">Insurance</span>
                                 <div className="col-lg-6 mb-20">
                                     <h3 className="color-black-text mt-10">
-                                        AI Training Data for Retail Vision, Store Analytics and Physical Commerce Automation  </h3>
+                                        AI Training Data for Insurance Claims, Risk Assessment and Fraud Detection</h3>
                                 </div>
      
-                                <div className="col-lg-6 mt-0 mb-20">
+                                <div className="col-lg-6 mt-10 mb-10">
                                     <p className="font-lg color-black-text">
-                                    High-accuracy annotations for shopper behavior, shelf intelligence, product detection and in-store automation <br />optimized for retailers across North America, Europe and APAC.                                  
+                                    High-quality annotations for claims imagery, damage scoring, document intelligence and risk analytics — optimized for insurers across North America, Europe and APAC.                                  
                                       </p> 
+                                    
                                 </div>
                             </div>
-                            
-                            {/* VideoSlider replaces the original video banner */}
+                        </div>
+                    </div>
+                    <div className="banner-video">
+                        <div className="container">
+                            {/* VideoSlider with caption at bottom */}
                             <div className="box-video-banner">
-                                <VideoSlider 
-                                caption={"Structured labeling for CCTV footage, in-store cameras, POS streams and product imagery. Powering Retail AI systems that improve store operations, prevent loss, optimize merchandising and enhance real-world shopper experiences."}
+                                <VideoSlider
+                                    caption="Structured labeling for vehicle damage, property loss, medical claims, documents and customer interactions to improve claim accuracy, reduce fraud and automate underwriting."
                                 />
                             </div>
                         </div>
@@ -52,9 +57,9 @@ const Retail = () => {
                 <section className="section mt-70 mb-50">
                     <div className="container">
                         <div className="text-center mb-50">
-                            <h2 className="color-brand-1 mb-15">Core Retail Vision Tasks</h2>
+                            <h2 className="color-brand-1 mb-15">Core Insurance Vision Tasks</h2>
                             <p className="font-lg color-grey-500">
-                                Visually strong annotation capabilities for retail AI systems
+                                Visually strong annotation capabilities for insurance AI systems
                             </p>
                         </div>
                         <div className="row">
@@ -63,14 +68,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Product Recognition on Shelves" 
+                                            alt="Vehicle Damage Detection" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Product Recognition on Shelves</h6>
+                                        <h6 className="color-brand-1 mb-15">Vehicle Damage Detection</h6>
                                         <p className="font-sm color-grey-500">
-                                            Annotate SKU placement, facings and shelf positions for planogram compliance.
+                                            Annotate dents, cracks and collision severity.
                                         </p>
                                     </div>
                                 </div>
@@ -81,14 +86,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Out-of-Stock & Empty Shelf Detection" 
+                                            alt="Property Loss Assessment" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Out-of-Stock & Empty Shelf Detection</h6>
+                                        <h6 className="color-brand-1 mb-15">Property Loss Assessment</h6>
                                         <p className="font-sm color-grey-500">
-                                            Identify missing products and low-stock zones for real-time replenishment.
+                                            Label roof, water and fire damage.
                                         </p>
                                     </div>
                                 </div>
@@ -99,14 +104,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Shopper Path Tracking" 
+                                            alt="Claims Document OCR" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Shopper Path Tracking</h6>
+                                        <h6 className="color-brand-1 mb-15">Claims Document OCR</h6>
                                         <p className="font-sm color-grey-500">
-                                            Map customer movement across aisles to optimize layout and flow.
+                                            Identify fields, forms and structured data.
                                         </p>
                                     </div>
                                 </div>
@@ -117,14 +122,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Queue Monitoring" 
+                                            alt="Fraud Behavior Indicators" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Queue Monitoring</h6>
+                                        <h6 className="color-brand-1 mb-15">Fraud Behavior Indicators</h6>
                                         <p className="font-sm color-grey-500">
-                                            Detect line length and waiting times for smarter staffing.
+                                            Visual cues linked to suspicious claims.
                                         </p>
                                     </div>
                                 </div>
@@ -135,14 +140,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Price Tag & Label Identification" 
+                                            alt="Storm & Disaster Impact Mapping" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Price Tag & Label Identification</h6>
+                                        <h6 className="color-brand-1 mb-15">Storm & Disaster Impact Mapping</h6>
                                         <p className="font-sm color-grey-500">
-                                            Recognize price labels, discount tags and mismatched signage.
+                                            Classify hail, flood and wind damage.
                                         </p>
                                     </div>
                                 </div>
@@ -153,14 +158,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Self-Checkout Vision Support" 
+                                            alt="Policy Document Classification" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Self-Checkout Vision Support</h6>
+                                        <h6 className="color-brand-1 mb-15">Policy Document Classification</h6>
                                         <p className="font-sm color-grey-500">
-                                            Annotate items, barcodes and bagging area events for automated checkout systems.
+                                            Sort coverage types and sections.
                                         </p>
                                     </div>
                                 </div>
@@ -171,14 +176,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="In-Store Theft & Anomaly Detection" 
+                                            alt="Medical Claim Visual Evidence" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">In-Store Theft & Anomaly Detection</h6>
+                                        <h6 className="color-brand-1 mb-15">Medical Claim Visual Evidence</h6>
                                         <p className="font-sm color-grey-500">
-                                            Label suspicious actions and asset-removal patterns.
+                                            Annotate injury documentation.
                                         </p>
                                     </div>
                                 </div>
@@ -189,14 +194,14 @@ const Retail = () => {
                                     <div className="image-showcase-top-dynamic">
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Store Heatmap Generation" 
+                                            alt="Adjuster Workflow Vision" 
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Store Heatmap Generation</h6>
+                                        <h6 className="color-brand-1 mb-15">Adjuster Workflow Vision</h6>
                                         <p className="font-sm color-grey-500">
-                                            Segment high-engagement and low-traffic areas for merchandising decisions.
+                                            Track inspection steps and evidence capture.
                                         </p>
                                     </div>
                                 </div>
@@ -206,9 +211,9 @@ const Retail = () => {
                 </section>
                 <AnnotationSlider
                     items={annotationItems}
-                    title="Advanced Retail  Capabilities"
-                    subtitle="Specialized labeling services for retail operations and store analytics"
-                    navId="retail"
+                    title="Advanced Insurance Annotation Capabilities"
+                    subtitle="Specialized labeling services for claims processing and risk analytics"
+                    navId="insurance"
                 />
 
                 {/* CTA Section */}
@@ -217,13 +222,13 @@ const Retail = () => {
                         <div className="box-cover-border">
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
-                                    <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Retail Solutions" />
+                                    <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Insurance Solutions" />
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Revolutionize Your Retail AI?</h2>
+                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Transform Your Insurance AI?</h2>
                                         <p className="font-md color-grey-500">
-                                            Partner with us to get high-quality training data for smarter retail analytics and customer insights.
+                                            Partner with us to get high-quality training data for smarter claims processing and fraud detection.
                                         </p>
                                         <div className="box-button text-start mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
@@ -238,4 +243,4 @@ const Retail = () => {
     );
 };
 
-export default Retail;
+export default Insurance;
