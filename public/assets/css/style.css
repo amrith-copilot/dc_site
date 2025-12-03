@@ -10958,7 +10958,7 @@ outline: none;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
-  transition: color var(--footer-transition-normal);
+  transition: #fff var(--footer-transition-normal);
 }
 
 /* Skip to Main Content Link (Accessibility) */

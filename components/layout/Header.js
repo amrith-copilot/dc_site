@@ -111,22 +111,10 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                         <li className="has-children"><Link href="#">Company</Link>
                                             <ul className="sub-menu">
                                                 <li><Link href="/about">About us</Link></li>
-                                                <li><Link href="/partners">Partners</Link></li>
+                                                <li><Link href="/partners">Partner</Link></li>
                                                 <li><Link href="/career">Careers</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="has-children"><Link href="#">Pages</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link href="/register">Register</Link></li>
-                                                <li><Link href="/login">Login</Link></li>
-                                                <li><Link href="/coming-soon">Coming soon</Link></li>
-                                                <li><Link href="/404">Error 404</Link></li>
-                                                <li><Link href="/help.js">Help</Link></li>
-                                                <li><Link href="/term-conditions">Terms and Conditions</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li><Link href="/pricing">Pricing</Link></li>
-                                        <li><Link href="/contact">Contact</Link></li>
                                     </ul>
                                 </nav>
                                 <div className={`burger-icon burger-icon-white ${openClass && "burger-close"}`}
@@ -137,7 +125,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                 </div>
                             </div>
                             <div className="header-right">
-                                <div className="d-none d-sm-inline-block"><Link className="btn btn-brand-1 hover-up" href="register">Get Started</Link></div>
+                                <div className="d-none d-sm-inline-block"><Link className="btn btn-brand-1 hover-up" href="register">Get Demo</Link></div>
                             </div>
                         </div>
                     </div>
