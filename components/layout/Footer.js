@@ -42,13 +42,13 @@ const Footer = () => {
                             <div className="footer-column industries-col">
                                 <h5 className="column-title invisible">Industries</h5>
                                 <ul className="footer-menu">
-                                    <li><Link href="#">Agriculture</Link></li>
+                                    <li><Link href="/industries/Agriculture">Agriculture</Link></li>
                                     <li><Link href="#">News &amp; Events</Link></li>
-                                    <li><Link href="#">Sports &amp; Media</Link></li>
-                                    <li><Link href="#">Retail</Link></li>
-                                    <li><Link href="#">Mapping</Link></li>
+                                    <li><Link href="/industries/Sports">Sports &amp; Media</Link></li>
+                                    <li><Link href="/industries/Retail">Retail</Link></li>
+                                    <li><Link href="/industries/Mapping">Mapping</Link></li>
                                     <li><Link href="#">Robotics</Link></li>
-                                    <li><Link href="#">Geospatial</Link></li>
+                                    <li><Link href="/industries/Geospatial">Geospatial</Link></li>
                                 </ul>
                             </div>
 
@@ -58,7 +58,7 @@ const Footer = () => {
                                 <div className="service-group">
                                     <h6 className="service-heading">Pre-Training</h6>
                                     <ul className="service-submenu">
-                                        <li><Link href="/LLM-Evals">LLM Evals</Link></li>
+                                        <li><Link href="/LLM-Evals">AI Evals</Link></li>
                                         <li><Link href="/Image-Anno">Image Annotation</Link></li>
                                         <li><Link href="/SFT">Supervised Fine-Tuning</Link></li>
                                         <li><Link href="/OCR">OCR /IDP</Link></li>
@@ -106,13 +106,12 @@ const Footer = () => {
                         <div className="bottom-content">
                             <div className="footer-links">
                                 <ul className="legal-menu">
-                                    <li><Link className="legal-link font-md" href="/privacy-policy">Privacy Policy</Link></li>
-                                    <li><Link className="legal-link font-md" href="/terms">Terms of Service</Link></li>
+                                    <li><Link className="legal-link font-md" href="/term-conditions">Privacy and Terms</Link></li>
                                     {/* <li><Link className="legal-link" href="/cookies">Cookies</Link></li> */}
                                 </ul>
                             </div>
                             <div className="copyright">
-                                <span className="copyright-text">©2024-2026 Dataclap. All rights reserved.</span>
+                                <span className="copyright-text">©2024-2026 DATACLAP. All rights reserved.</span>
                             </div>
                         </div>
                     </div>

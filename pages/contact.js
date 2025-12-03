@@ -76,10 +76,15 @@ const ContactUs = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-5 col-lg-5 mb-30">
-                                <h2 className="color-white mb-5">See why we are <br className="d-none d-lg-block" />trusted the world over</h2>
+                                <div className="mb-10" style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                    <span style={{ width: '40px', height: '2px', backgroundColor: 'white' }}></span>
+                                    <span>Contact</span>
+                                </div>
+                                <h2 className="color-white mb-5">Impact you can measure, timelines you can trust<br className="d-none d-lg-block" /></h2>
                             </div>
                             <div className="col-xl-7 col-lg-7 mb-30">
-                                <p className="font-lg color-white mb-20">Et quaerat deserunt et numquam voluptatem et laborum consectetur non consequatur temporibus ea repellat nihil vel consectetur dolores et rerum voluptas. Nam voluptas reiciendis non laborum perspiciatis eum omnis cumque ab impedit earum ex quos porro sit dolorem cupiditate ut ducimus autem.</p>
+                                <p className="font-lg color-white mb-20">Start a conversation with our team and discover how we help companies drive meaningful progress with minimal friction. 
+                                    </p>
                             </div>
                         </div>
                     </div>
