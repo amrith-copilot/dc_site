@@ -222,36 +222,20 @@ const Partners = () => {
                                 </p>
                                 <div className="list-icons">
                                     <div className="d-flex align-items-center mb-20">
-                                        <span className="icon-left me-10">
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </span>
-                                        <h6 className="text-md neutral-1000 mb-0">Image, video, LiDAR, 3D annotation</h6>
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Image, video, LiDAR, 3D annotation</span>
                                     </div>
                                     <div className="d-flex align-items-center mb-20">
-                                        <span className="icon-left me-10">
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </span>
-                                        <h6 className="text-md neutral-1000 mb-0">Text and document extraction</h6>
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Text and document extraction</span>
                                     </div>
                                     <div className="d-flex align-items-center mb-20">
-                                        <span className="icon-left me-10">
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </span>
-                                        <h6 className="text-md neutral-1000 mb-0">Audio transcription and diarization</h6>
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Audio transcription and diarization</span>
                                     </div>
                                     <div className="d-flex align-items-center">
-                                        <span className="icon-left me-10">
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </span>
-                                        <h6 className="text-md neutral-1000 mb-0">Multimodal dataset curation</h6>
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Multimodal dataset curation</span>
                                     </div>
                                 </div>
                             </div>
@@ -269,36 +253,20 @@ const Partners = () => {
                                 </p>
                                 <div className="list-icons">
                                     <div className="d-flex align-items-center mb-20">
-                                        <span className="icon-left me-10">
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </span>
-                                        <h6 className="text-md neutral-1000 mb-0">RLHF, RLAIF, preference ranking</h6>
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">RLHF, RLAIF, preference ranking</span>
                                     </div>
                                     <div className="d-flex align-items-center mb-20">
-                                        <span className="icon-left me-10">
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </span>
-                                        <h6 className="text-md neutral-1000 mb-0">Real-time human validation for agentic systems</h6>
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Real-time human validation for agentic systems</span>
                                     </div>
                                     <div className="d-flex align-items-center mb-20">
-                                        <span className="icon-left me-10">
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </span>
-                                        <h6 className="text-md neutral-1000 mb-0">Expert-level annotation (medical, legal, financial, geospatial)</h6>
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Expert-level annotation (medical, legal, financial, geospatial)</span>
                                     </div>
                                     <div className="d-flex align-items-center">
-                                        <span className="icon-left me-10">
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </span>
-                                        <h6 className="text-md neutral-1000 mb-0">Red-teaming, evaluation, bias analysis</h6>
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Red-teaming, evaluation, bias analysis</span>
                                     </div>
                                 </div>
                             </div>
