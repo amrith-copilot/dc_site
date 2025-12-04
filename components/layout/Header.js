@@ -287,6 +287,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     border: none;
                     z-index: 1002;
                     margin-right: 10px;
+                    margin-top: 2px;
                 }
                 
                 .burger-icon span {
