@@ -2989,7 +2989,7 @@ html {
 .header .main-header .header-left .header-logo {
   max-width: 150px;
   width: 100%;
-  margin-left: -20px;
+  margin-left: 10px;
 }
 .header .main-header .header-left .header-logo a {
   display: block;
