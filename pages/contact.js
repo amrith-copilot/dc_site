@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Accordion from '../components/elements/Accordion';
 import Layout from '../components/layout/Layout';
 import VideoSlider from '../components/slider/VideoSlider';
+import CalBooking from '../components/elements/CalBooking';
 
 const ContactUs = () => {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -11,6 +12,31 @@ const ContactUs = () => {
     const handleOnClick = (index) => {
         setActiveIndex(index);
     };
+        const iframeRef = React.useRef(null);
+        const [iframeHeight, setIframeHeight] = React.useState(1600);
+    
+        React.useEffect(() => {
+            // Listen for postMessage from the embedded page with its content height.
+            // The embedded page must post a message like: { type: 'embedHeight', height: 1200 }
+            function handleMessage(event) {
+                try {
+                    const data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
+                    if (!data) return;
+                    if (data.type === 'embedHeight' && data.height && !isNaN(data.height)) {
+                        setIframeHeight(Number(data.height));
+                    }
+                    // Some embeds might send plain { height: 1234 }
+                    if (data.height && !data.type && !isNaN(data.height)) {
+                        setIframeHeight(Number(data.height));
+                    }
+                } catch (e) {
+                    // ignore non-JSON messages
+                }
+            }
+    
+            window.addEventListener('message', handleMessage);
+            return () => window.removeEventListener('message', handleMessage);
+        }, []);
 
     // HubSpot form integration
     useEffect(() => {
@@ -76,10 +102,6 @@ const ContactUs = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-5 col-lg-5 mb-30">
-                                <div className="mb-10" style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                    <span style={{ width: '40px', height: '2px', backgroundColor: 'white' }}></span>
-                                    <span>Contact</span>
-                                </div>
                                 <h2 className="color-white mb-5">Impact you can measure, timelines you can trust<br className="d-none d-lg-block" /></h2>
                             </div>
                             <div className="col-xl-7 col-lg-7 mb-30">
@@ -108,6 +130,22 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Cal.com Booking Section */}
+                <section className="section mt-70 mb-70">
+                    <div className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-10 col-md-12">
+                                <h2 className="color-brand-1 mb-15 text-center">Schedule a Meeting</h2>
+                                <p className="font-sm color-grey-500 text-center mb-40">Book a 30-minute call with our team to discuss your project needs.</p>
+                                <div className="box-calendar-container" style={{minHeight: '600px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
+                                    <CalBooking />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </Layout>
 
             {/* Custom styles for HubSpot form and centered wider layout */}
