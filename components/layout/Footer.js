@@ -8,23 +8,23 @@ const Footer = () => {
                 <div className="footer-main">
                     <div className="footer-container">
                         <div className="footer-grid">
-                            {/* Column 1 - Company Details */}
-                            <div className="footer-column company-details">
-                                <div className="company-logo">
-                                    <Link href="/index-3">
-                                        <img alt="dataclap" src="/assets/logo_white-1.svg" />
-                                    </Link>
-                                </div>
-                                <div className="company-info">
-                                    <div className="social-section">
-                                        <div className="social-links">
-                                            <Link className="social-icon linkedin" href="#" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                                                        <div className="footer-column company-details">
+                                                            <div className="company-logo">
+                                                                <Link href="/index-3">
+                                                                    <img alt="dataclap" src="/assets/logo_white-1.svg" />
+                                                                </Link>
+                                                            </div>
+                                                            <div className="company-info">
+                                                                <div className="social-section">
+                                                                    <div className="social-links">
+                                                                        <Link className="social-icon linkedin" href="https://www.linkedin.com/company/dataclap/" target="_blank" rel="noopener noreferrer" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-                            {/* Column 2 - Industries (Column 1) */}
+                                                        {/* Column 2 - Industries (Column 1) */}
                             <div className="footer-column industries-col">
                                 <h5 className="column-title">Industries</h5>
                                 <ul className="footer-menu">
