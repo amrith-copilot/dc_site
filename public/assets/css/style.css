@@ -1072,6 +1072,11 @@ body {
   font-style: normal;
   font-weight: 500;
   position: relative;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .btn {

@@ -66,13 +66,16 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     transition: all 0.3s ease;
                     position: relative;
                     z-index: 1000;
+                    width: 100%;
+                    overflow-x: hidden;
                 }
-                
+
                 .header.stick {
                     position: fixed;
                     top: 0;
                     left: 0;
                     right: 0;
+                    width: 100%;
                 }
                 
                 .container {
@@ -674,17 +677,6 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                 <div className="container">
                     <div className="main-header">
                         <div className="header-left">
-                            {/* Mobile Burger Icon - positioned before logo */}
-                            <button
-                                className={`burger-icon ${isMobileMenuOpen ? 'active' : ''}`}
-                                onClick={toggleMobileMenu}
-                                aria-label="Toggle menu"
-                            >
-                                <span className="burger-icon-top" />
-                                <span className="burger-icon-mid" />
-                                <span className="burger-icon-bottom" />
-                            </button>
-
                             <div className="header-logo">
                                 <Link className="d-flex" href="/index-3">
                                     <img alt="Ecom" src="/assets/logo_name.svg" />
@@ -811,7 +803,10 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
             </header>
             
             {/* Mobile Sidebar Navigation */}
-            
+            <div 
+                className={`mobile-sidebar-overlay ${isMobileMenuOpen ? 'active' : ''}`}
+                onClick={closeMobileMenu}
+            />
             
             <div className={`mobile-sidebar ${isMobileMenuOpen ? 'active' : ''}`}>
                 {/* Sidebar Header */}
