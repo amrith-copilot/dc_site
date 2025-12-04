@@ -633,7 +633,7 @@ const HomePage1 = () => {
                                     <div className="box-info-video">
                                         <h2 className="color-brand-1 mt-15 mb-20">Want to talk to a marketing expert?</h2>
                                         <p className="font-md color-grey-500">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla. Interactively transform magnetic growth strategies whereas prospective "outside the box" thinking.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up" href="#">Contact Us</Link></div>
+                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>
