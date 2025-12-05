@@ -3091,6 +3091,7 @@ html {
 .header .main-menu li div.sub-menu {
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   position: absolute;
@@ -3105,7 +3106,7 @@ html {
   border: 1px solid var(--color-primary-200);
   box-shadow: 0px 0px 20px 0px rgba(14, 41, 50, 0.17);
   border-bottom: 8px solid var(--color-accent-teal-300);
-  display: none;
+  display: block;
 }
 .header .main-menu li div.sub-menu .menu-inner {
   display: flex;
@@ -3141,6 +3142,7 @@ html {
 .header .main-menu li ul {
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   position: absolute;
@@ -3153,6 +3155,7 @@ html {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary-200);
   box-shadow: 0px 0px 20px 0px rgba(14, 41, 50, 0.17);
+  display: block;
 }
 .header .main-menu li ul li {
   width: 100%;
@@ -3178,7 +3181,7 @@ html {
 .header .main-menu li:hover > ul, .header .main-menu li:hover > .sub-menu {
   opacity: 1;
   visibility: visible;
-  display: block;
+  pointer-events: auto;
 }
 .header .main-menu li:hover > ul li, .header .main-menu li:hover > .sub-menu li {
   width: 100%;
@@ -3187,7 +3190,7 @@ html {
 .header .main-menu li .sub-menu.active {
   opacity: 1 !important;
   visibility: visible !important;
-  display: block !important;
+  pointer-events: auto !important;
 }
 .header.header2 .header-left .header-right {
   display: flex;
@@ -11168,6 +11171,7 @@ outline: none;
 .header .main-menu li.services-mega-menu .mega-menu-dropdown {
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   position: absolute;
@@ -11181,7 +11185,7 @@ outline: none;
   background-color: var(--color-white);
   border: 1px solid var(--color-primary-200);
   box-shadow: 0px 0px 20px 0px rgba(14, 41, 50, 0.17);
-  display: none;
+  display: block;
 }
 
 /* Main container for the three columns */
@@ -11200,6 +11204,8 @@ outline: none;
   min-width: 180px;
   width: auto !important; /* Override any inherited width */
   padding-right: 0 !important; /* Override inherited padding */
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 /* Column headers */
@@ -11259,23 +11265,23 @@ outline: none;
 }
 
 .header .main-menu li.services-mega-menu .mega-menu-column ul li a:hover {
-  color: var(--color-gray-900) !important;
-  font-weight: 500 !important;
-  padding: 8px 0 !important; /* Prevent padding changes on hover */
+  padding-left: 25px !important;
+  transition: 0.2s !important;
+  cursor: pointer !important;
 }
 
 /* Hover behavior for the services mega menu */
 .header .main-menu li.services-mega-menu:hover > .mega-menu-dropdown {
   opacity: 1 !important;
   visibility: visible !important;
-  display: block !important;
+  pointer-events: auto !important;
 }
 
 /* Active state for click-based toggle */
 .header .main-menu li.services-mega-menu .mega-menu-dropdown.active {
   opacity: 1 !important;
   visibility: visible !important;
-  display: block !important;
+  pointer-events: auto !important;
 }
 
 /* Ensure the dropdown arrow still appears for services menu */
