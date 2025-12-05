@@ -5,6 +5,17 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
     const [scroll, setScroll] = useState(0);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeMobileMenu, setActiveMobileMenu] = useState(null);
+    const [activeDesktopMenu, setActiveDesktopMenu] = useState(null);
+    
+    const handleDesktopMenuClick = (e, menuName) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setActiveDesktopMenu(activeDesktopMenu === menuName ? null : menuName);
+    };
+    
+    const closeDesktopMenu = () => {
+        setActiveDesktopMenu(null);
+    };
     
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -52,22 +63,43 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
         };
     }, []);
     
+    // Close desktop menu when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if (activeDesktopMenu && !e.target.closest('.has-children')) {
+                closeDesktopMenu();
+            }
+        };
+        
+        document.addEventListener('click', handleClickOutside);
+        return () => document.removeEventListener('click', handleClickOutside);
+    }, [activeDesktopMenu]);
+    
     return (
         <>
+            <style jsx global>{`
+                /* Mobile overflow fix - only apply on mobile */
+                @media (max-width: 1024px) {
+                    html, body {
+                        overflow-x: hidden !important;
+                        max-width: 100vw !important;
+                    }
+                }
+            `}</style>
             <style jsx>{`
                 /* Base Styles */
                 * {
                     box-sizing: border-box;
                 }
-                
+
                 .header {
                     background: #fff;
                     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
                     transition: all 0.3s ease;
                     position: relative;
-                    z-index: 1000;
+                    z-index: 9999;
                     width: 100%;
-                    overflow-x: hidden;
+                    max-width: 100vw;
                 }
 
                 .header.stick {
@@ -76,26 +108,31 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     left: 0;
                     right: 0;
                     width: 100%;
+                    z-index: 99999;
                 }
                 
                 .container {
                     max-width: 1200px;
                     margin: 0 auto;
                     padding: 0 20px;
+                    width: 100%;
+                    box-sizing: border-box;
                 }
-                
+
                 .main-header {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     height: 70px;
+                    width: 100%;
                 }
-                
+
                 .header-left {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     width: 100%;
+                    max-width: 100%;
                 }
                 
                 .header-logo {
@@ -143,93 +180,129 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     font-size: 15px;
                     transition: color 0.3s;
                     white-space: nowrap;
+                    cursor: pointer;
                 }
                 
                 .main-menu > li > a:hover,
                 .main-menu > li > a.active {
                     color: #0017e3;
                 }
+
                 
-                /* Mega Menu */
+                .has-children.menu-open > a::after {
+                    transform: rotate(180deg);
+                }
+                
+                /* Mega Menu Dropdown */
                 .mega-menu-dropdown {
                     position: absolute;
                     top: 100%;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    background: #fff;
-                    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-                    border-radius: 12px;
-                    padding: 35px;
-                    min-width: 750px;
+                    left: 100%;
+                    z-index: 999999;
+                    min-width: 720px;
+                    width: 720px;
+                    border-radius: 8px;
+                    padding: 25px 30px;
+                    background-color: #fff;
+                    border: 1px solid #e0e7ff;
+                    box-shadow: 0px 0px 30px 0px rgba(14, 41, 50, 0.25);
                     opacity: 0;
                     visibility: hidden;
-                    margin-top: 10px;
-                    transition: all 0.3s ease;
-                    z-index: 1001;
+                    pointer-events: none;
+                    transition: opacity 0.2s ease, visibility 0.2s ease;
+                    transform: translateZ(0);
+                    -webkit-transform: translateZ(0);
                 }
                 
-                .has-children:hover .mega-menu-dropdown,
-                .has-children:hover .sub-menu {
+                .mega-menu-dropdown.active {
                     opacity: 1;
                     visibility: visible;
-                    margin-top: 0;
+                    pointer-events: auto;
                 }
                 
+                /* Main container for the columns */
                 .mega-menu-container {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    gap: 35px;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    gap: 30px;
+                    position: relative;
+                    width: 100%;
+                    align-items: flex-start;
                 }
                 
+                .mega-menu-inner {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                
+                /* Individual column styling */
+                .mega-menu-column {
+                    flex: 1;
+                    min-width: 150px;
+                }
+                
+                /* Column headers */
                 .mega-menu-column h4 {
-                    margin: 0 0 18px;
-                    font-size: 13px;
-                    font-weight: 700;
+                    font-size: 14px;
+                    font-weight: 600;
                     color: #0017e3;
-                    text-transform: uppercase;
-                    letter-spacing: 0.5px;
+                    margin: 0 0 12px 0;
+                    padding: 0 0 8px 0;
+                    border-bottom: 2px solid #0017e3;
                 }
                 
+                /* Column lists */
                 .mega-menu-column ul {
                     list-style: none;
                     padding: 0;
                     margin: 0;
                 }
                 
+                /* Column list items */
                 .mega-menu-column ul li {
-                    margin-bottom: 12px;
+                    margin: 0 0 4px 0;
                 }
                 
+                /* Column links */
                 .mega-menu-column ul li a {
+                    display: block;
+                    padding: 6px 0;
                     color: #5a6c7d;
                     text-decoration: none;
                     font-size: 14px;
-                    transition: all 0.3s;
-                    display: block;
-                    padding: 3px 0;
+                    transition: color 0.2s ease;
                 }
                 
                 .mega-menu-column ul li a:hover {
                     color: #0017e3;
-                    padding-left: 5px;
                 }
                 
                 /* Sub Menu */
                 .sub-menu {
                     position: absolute;
                     top: 100%;
-                    left: 0;
+                    left: 50%;
+                    transform: translateX(-50%) translateZ(0);
+                    -webkit-transform: translateX(-50%) translateZ(0);
                     background: #fff;
-                    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+                    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
                     border-radius: 12px;
                     padding: 15px 0;
                     min-width: 220px;
                     list-style: none;
-                    margin: 10px 0 0;
+                    margin: 0;
                     opacity: 0;
                     visibility: hidden;
-                    transition: all 0.3s ease;
-                    z-index: 1001;
+                    pointer-events: none;
+                    transition: opacity 0.2s ease, visibility 0.2s ease;
+                    z-index: 999999;
+                }
+                
+                .sub-menu.active {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
                 }
                 
                 .sub-menu li a {
@@ -244,7 +317,6 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                 .sub-menu li a:hover {
                     background: #f0f4ff;
                     color: #0017e3;
-                    padding-left: 30px;
                 }
                 
                 /* Header Right */
@@ -253,6 +325,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     align-items: center;
                     gap: 12px;
                     z-index: 1002;
+                    flex-shrink: 0;
                 }
                 
                 .btn {
@@ -279,7 +352,71 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     box-shadow: 0 5px 15px rgba(0, 23, 227, 0.3);
                 }
                 
-                /* Burger Menu */
+                /* Utility Classes */
+                .d-none {
+                    display: none;
+                }
+                
+                .d-xl-block {
+                    display: block;
+                }
+                
+                /* Desktop Responsive */
+                @media (max-width: 1024px) {
+                    .nav-main-menu {
+                        display: none !important;
+                    }
+                    
+                    .header-nav {
+                        margin: 0 10px;
+                        justify-content: flex-end;
+                        flex: 0;
+                    }
+                    
+                    .header-right {
+                        gap: 8px;
+                    }
+                }
+                
+                @media (max-width: 768px) {
+                    .header-logo img {
+                        height: 38px;
+                    }
+
+                    .main-header {
+                        height: 60px;
+                    }
+
+                    .btn {
+                        padding: 8px 16px;
+                        font-size: 13px;
+                    }
+
+                    .container {
+                        padding: 0 15px;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .container {
+                        padding: 0 12px;
+                    }
+
+                    .header-logo img {
+                        height: 32px;
+                    }
+
+                    .btn {
+                        padding: 7px 12px;
+                        font-size: 12px;
+                    }
+
+                    .header-right {
+                        gap: 6px;
+                    }
+                }
+
+                /* Burger Menu - Mobile Only */
                 .burger-icon {
                     display: none;
                     flex-direction: column;
@@ -292,7 +429,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     margin-right: 10px;
                     margin-top: 2px;
                 }
-                
+
                 .burger-icon span {
                     display: block;
                     width: 24px;
@@ -301,17 +438,17 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     border-radius: 2px;
                     transition: all 0.3s ease;
                 }
-                
+
                 .burger-icon.active .burger-icon-top {
                     transform: rotate(45deg) translate(5px, 5px);
                     background: #0017e3;
                 }
-                
+
                 .burger-icon.active .burger-icon-mid {
                     opacity: 0;
                     transform: translateX(-20px);
                 }
-                
+
                 .burger-icon.active .burger-icon-bottom {
                     transform: rotate(-45deg) translate(5px, -5px);
                     background: #0017e3;
@@ -607,68 +744,21 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     background: #a4baff;
                 }
                 
-                /* Responsive Breakpoints */
+                /* Mobile Responsive Breakpoints */
                 @media (max-width: 1024px) {
-                    .nav-main-menu {
-                        display: none !important;
-                    }
-                    
                     .burger-icon {
                         display: flex;
                     }
-                    
-                    .header-nav {
-                        margin: 0 15px;
-                        justify-content: flex-end;
-                    }
                 }
-                
-                @media (max-width: 768px) {
-                    .header-logo img {
-                        height: 38px;
-                    }
-                    
-                    .main-header {
-                        height: 60px;
-                    }
-                    
-                    .btn {
-                        padding: 8px 16px;
-                        font-size: 13px;
-                    }
-                }
-                
+
                 @media (max-width: 480px) {
-                    .container {
-                        padding: 0 15px;
-                    }
-                    
-                    .header-logo img {
-                        height: 32px;
-                    }
-                    
                     .mobile-sidebar {
                         width: 280px;
                     }
-                    
-                    .btn {
-                        padding: 7px 12px;
-                        font-size: 12px;
-                    }
-                }
-                
-                /* Utility Classes */
-                .d-none {
-                    display: none;
-                }
-                
-                .d-sm-inline-block {
-                    display: inline-block;
-                }
-                
-                @media (min-width: 1200px) {
-                    .d-xl-block {
-                        display: block !important;
+
+                    .burger-icon {
+                        margin-right: 0;
+                        padding: 6px;
                     }
                 }
             `}</style>
@@ -687,93 +777,97 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                 {/* Desktop Navigation */}
                                 <nav className="nav-main-menu d-none d-xl-block">
                                     <ul className="main-menu">
-                                        <li className="has-children services-mega-menu pl-20">
-                                            <Link className="active" href="/">Services</Link>
-                                            <div className="mega-menu-dropdown">
-                                                <div className="mega-menu-container">
-                                                    <div className="mega-menu-column">
-                                                        <h4>Pre-training</h4>
-                                                        <ul>
-                                                            <li><Link href="/CollectData">Data Collection</Link></li>
-                                                            <li><Link href="/Image-Anno">Image Annotation</Link></li>
-                                                            <li><Link href="/SFT">Supervised Fine-Tuning</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="mega-menu-column">
-                                                        <h4>Post-training</h4>
-                                                        <ul>
-                                                            <li><Link href="/HITL">HITL</Link></li>
-                                                            <li><Link href="/RLHF">RLHF</Link></li>
-                                                            <li><Link href="/RedTeaming">Red Teaming Services</Link></li>
-                                                            <li><Link href="/LLM-Evals">AI Evals</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="mega-menu-column">
-                                                        <h4>Cloud</h4>
-                                                        <ul>
-                                                            <li><Link href="/MLOps">MLOps</Link></li>
-                                                            <li><Link href="/DevOps">DevOps</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="mega-menu-column">
-                                                        <h4>Others</h4>
-                                                        <ul>
-                                                            <li><Link href="/ExpertNetwork">Expert Network</Link></li>
-                                                            <li><Link href="/Search">Search and Personalization</Link></li>
-                                                            <li><Link href="/OCR">OCR /IDP</Link></li> 
-                                                            <li><Link href="/GenAI">Generative AI</Link></li>                                                          
-                                                            <li><Link href="/index-11">Training as a Service</Link></li>
-                                                            <li><Link href="/Content-md">Content Moderation</Link></li>
-                                                        </ul>
+                                        <li className={`has-children services-mega-menu pl-20 ${activeDesktopMenu === 'services' ? 'menu-open' : ''}`}>
+                                            <a href="#" >Services</a>
+                                            <div className={`mega-menu-dropdown ${activeDesktopMenu === 'services' ? 'active' : ''}`}>
+                                                <div className="mega-menu-inner">
+                                                    <div className="mega-menu-container">
+                                                        <div className="mega-menu-column">
+                                                            <h4>Pre-training</h4>
+                                                            <ul>
+                                                                <li><Link href="/CollectData">Data Collection</Link></li>
+                                                                <li><Link href="/Image-Anno">Image Annotation</Link></li>
+                                                                <li><Link href="/SFT">Supervised Fine-Tuning</Link></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div className="mega-menu-column">
+                                                            <h4>Post-training</h4>
+                                                            <ul>
+                                                                <li><Link href="/HITL">HITL</Link></li>
+                                                                <li><Link href="/RLHF">RLHF</Link></li>
+                                                                <li><Link href="/RedTeaming">Red Teaming Services</Link></li>
+                                                                <li><Link href="/LLM-Evals">AI Evals</Link></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div className="mega-menu-column">
+                                                            <h4>Cloud</h4>
+                                                            <ul>
+                                                                <li><Link href="/MLOps">MLOps</Link></li>
+                                                                <li><Link href="/DevOps">DevOps</Link></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div className="mega-menu-column">
+                                                            <h4>Others</h4>
+                                                            <ul>
+                                                                <li><Link href="/ExpertNetwork">Expert Network</Link></li>
+                                                                <li><Link href="/Search">Search and Personalization</Link></li>
+                                                                <li><Link href="/OCR">OCR /IDP</Link></li> 
+                                                                <li><Link href="/GenAI">Generative AI</Link></li>                                                          
+                                                                <li><Link href="/index-11">Training as a Service</Link></li>
+                                                                <li><Link href="/Content-md">Content Moderation</Link></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="has-children">
-                                            <Link href="#">Product</Link>
-                                            <ul className="sub-menu">
+                                        <li className={`has-children ${activeDesktopMenu === 'product' ? 'menu-open' : ''}`}>
+                                            <a href="#" onClick={(e) => handleDesktopMenuClick(e, 'product')}>Product</a>
+                                            <ul className={`sub-menu ${activeDesktopMenu === 'product' ? 'active' : ''}`}>
                                                 <li><Link href="https://kubetrace.net/" target="_blank" rel="noopener noreferrer">KubeTrace</Link></li>
                                                 <li><Link href="/HI">Human in the Loop</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="has-children services-mega-menu">
-                                            <Link className="active" href="/">Industries</Link>
-                                            <div className="mega-menu-dropdown">
-                                                <div className="mega-menu-container">
-                                                    <div className="mega-menu-column">
-                                                        <ul>
-                                                            <li><Link href="/industries/ADAS">ADAS</Link></li>
-                                                            <li><Link href="/industries/Retail">Retail</Link></li>
-                                                            <li><Link href="/industries/Geospatial">Geo Spatial</Link></li>
-                                                            <li><Link href="/industries/Mapping">Mapping</Link></li>
-                                                            <li><Link href="/industries/MedicalAI">Medical AI</Link></li>
-                                                            <li><Link href="/industries/VoiceAI">Voice AI</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="mega-menu-column">
-                                                        <ul>
-                                                            <li><Link href="/industries/Manufacturing">Manufacturing</Link></li>
-                                                            <li><Link href="/industries/Agriculture">Agriculture</Link></li>
-                                                            <li><Link href="/industries/SocialMedia">Social Media</Link></li>
-                                                            <li><Link href="/industries/AssetManagement">Asset Management</Link></li>
-                                                            <li><Link href="/industries/Fintech">Fintech</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="mega-menu-column">
-                                                        <ul>
-                                                            <li><Link href="/industries/RPA">RPA</Link></li>
-                                                            <li><Link href="/industries/PhysicalAI">Physical AI</Link></li>
-                                                            <li><Link href="/industries/Ecommerce">E-Commerce and Content</Link></li>
-                                                            <li><Link href="/industries/Insurance">Insurance</Link></li>
-                                                            <li><Link href="/industries/Sports">Sports & Media</Link></li>
-                                                        </ul>
+                                        <li className={`has-children services-mega-menu ${activeDesktopMenu === 'industries' ? 'menu-open' : ''}`}>
+                                            <a href="#" >Industries</a>
+                                            <div className={`mega-menu-dropdown ${activeDesktopMenu === 'industries' ? 'active' : ''}`}>
+                                                <div className="mega-menu-inner">
+                                                    <div className="mega-menu-container">
+                                                        <div className="mega-menu-column">
+                                                            <ul>
+                                                                <li><Link href="/industries/ADAS">ADAS</Link></li>
+                                                                <li><Link href="/industries/Retail">Retail</Link></li>
+                                                                <li><Link href="/industries/Geospatial">Geo Spatial</Link></li>
+                                                                <li><Link href="/industries/Mapping">Mapping</Link></li>
+                                                                <li><Link href="/industries/MedicalAI">Medical AI</Link></li>
+                                                                <li><Link href="/industries/VoiceAI">Voice AI</Link></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div className="mega-menu-column">
+                                                            <ul>
+                                                                <li><Link href="/industries/Manufacturing">Manufacturing</Link></li>
+                                                                <li><Link href="/industries/Agriculture">Agriculture</Link></li>
+                                                                <li><Link href="/industries/SocialMedia">Social Media</Link></li>
+                                                                <li><Link href="/industries/AssetManagement">Asset Management</Link></li>
+                                                                <li><Link href="/industries/Fintech">Fintech</Link></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div className="mega-menu-column">
+                                                            <ul>
+                                                                <li><Link href="/industries/RPA">RPA</Link></li>
+                                                                <li><Link href="/industries/PhysicalAI">Physical AI</Link></li>
+                                                                <li><Link href="/industries/Ecommerce">E-Commerce and Content</Link></li>
+                                                                <li><Link href="/industries/Insurance">Insurance</Link></li>
+                                                                <li><Link href="/industries/Sports">Sports & Media</Link></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="has-children">
-                                            <Link href="#">Company</Link>
-                                            <ul className="sub-menu">
+                                        <li className={`has-children ${activeDesktopMenu === 'company' ? 'menu-open' : ''}`}>
+                                            <a href="#" >Company</a>
+                                            <ul className={`sub-menu ${activeDesktopMenu === 'company' ? 'active' : ''}`}>
                                                 <li><Link href="/about">About us</Link></li>
                                                 <li><Link href="/partners">Partner</Link></li>
                                                 <li><Link href="/career">Careers</Link></li>

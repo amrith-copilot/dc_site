@@ -3050,8 +3050,8 @@ html {
   width: 12px;
   position: absolute;
   top: 50%;
-  right: 0px;
-  margin-top: -4px;
+  right: -20px;
+  margin-top: -2px;
 }
 .header .main-menu li.hr {
   padding: 0px 22px;
@@ -3182,6 +3182,12 @@ html {
 }
 .header .main-menu li:hover > ul li, .header .main-menu li:hover > .sub-menu li {
   width: 100%;
+}
+/* Active state for click-based toggle on sub-menu */
+.header .main-menu li .sub-menu.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
 }
 .header.header2 .header-left .header-right {
   display: flex;
@@ -11265,6 +11271,13 @@ outline: none;
   display: block !important;
 }
 
+/* Active state for click-based toggle */
+.header .main-menu li.services-mega-menu .mega-menu-dropdown.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
 /* Ensure the dropdown arrow still appears for services menu */
 .header .main-menu li.services-mega-menu.has-children > a::after {
   content: "";
@@ -11273,8 +11286,8 @@ outline: none;
   width: 12px;
   position: absolute;
   top: 50%;
-  right: 0px;
-  margin-top: -4px;
+  right: -20px;
+  margin-top: -2px;
 }
 
 /* Override any conflicting hover states from existing CSS */
