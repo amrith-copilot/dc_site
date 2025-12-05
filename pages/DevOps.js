@@ -293,7 +293,7 @@ const DevOps = () => {
                         <div className="row">
                             <div className="col-lg-12 text-center">
                                 <h2 className="color-brand-1 mb-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Our Process</h2>
-                                <p className="font-lg color-gray-500">A systematic approach to implementing DevOps in your organization</p>
+                                <p className="font-lg color-gray-500" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>A systematic approach to implementing DevOps in your organization</p>
                             </div>
                         </div>
 
@@ -304,7 +304,7 @@ const DevOps = () => {
                                         <div className="process-number">1</div>
                                         <div>
                                             <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Assessment</h4>
-                                            <p className="font-md color-grey-500">Evaluate current development and operations processes</p> 
+                                            <p className="font-md color-grey-500" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Evaluate current development and operations processes</p> 
                                         </div>
                                     </div>
 
@@ -312,7 +312,7 @@ const DevOps = () => {
                                         <div className="process-number">2</div>
                                         <div>
                                             <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Strategy Development</h4>
-                                            <p className="font-md color-grey-500">Create a tailored MLOps roadmap aligned with business goals</p>
+                                            <p className="font-md color-grey-500" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Create a tailored MLOps roadmap aligned with business goals</p>
                                         </div>
                                     </div>
 
@@ -320,7 +320,7 @@ const DevOps = () => {
                                         <div className="process-number">3</div>
                                         <div>
                                             <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Implementation</h4>
-                                            <p className="font-md color-grey-500">Deploy automated pipelines and monitoring systems</p>
+                                            <p className="font-md color-grey-500" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Deploy automated pipelines and monitoring systems</p>
                                         </div>
                                     </div>
                                 </div>
@@ -330,7 +330,7 @@ const DevOps = () => {
                                         <div className="process-number">4</div>
                                         <div>
                                             <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Testing & Validation</h4>
-                                            <p className="font-md color-grey-500">Comprehensive testing of ML pipelines and model performance</p>
+                                            <p className="font-md color-grey-500" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Comprehensive testing of ML pipelines and model performance</p>
                                         </div>
                                     </div>
 
@@ -338,7 +338,7 @@ const DevOps = () => {
                                         <div className="process-number">5</div>
                                         <div>
                                             <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Optimization & Support</h4>
-                                            <p className="font-md color-grey-500">Continuous optimization and ongoing support for your MLOps environment</p>
+                                            <p className="font-md color-grey-500" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Continuous optimization and ongoing support for your MLOps environment</p>
                                         </div>
                                     </div>
                                 </div>
@@ -355,8 +355,8 @@ const DevOps = () => {
                                 <div className="col-lg-6">
                                     <div className="box-info-video">
                                         <h2 className="color-brand-1 mt-15 mb-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Accelerate with Automation</h2>
-                                        <p className="font-md color-grey-500">STransform your development pipeline while maximizing your technology investment.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
+                                        <p className="font-md color-grey-500" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>STransform your development pipeline while maximizing your technology investment.</p>
+                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>
