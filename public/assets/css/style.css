@@ -3673,6 +3673,11 @@ html {
   background-color: #fafafa;
   border-radius: 8px;
   margin-top: 8px;
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li ul li {
   padding: 0;
@@ -3717,7 +3722,28 @@ html {
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li ul li ul {
   margin-top: 0;
+  max-height: 40vh;
 }
+
+/* Scrollbar styles for mobile sidebar */
+.mobile-header-wrapper-style .mobile-header-content-area::-webkit-scrollbar,
+.mobile-header-wrapper-style .mobile-menu li ul::-webkit-scrollbar {
+  width: 4px;
+}
+.mobile-header-wrapper-style .mobile-header-content-area::-webkit-scrollbar-track,
+.mobile-header-wrapper-style .mobile-menu li ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+.mobile-header-wrapper-style .mobile-header-content-area::-webkit-scrollbar-thumb,
+.mobile-header-wrapper-style .mobile-menu li ul::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.mobile-header-wrapper-style .mobile-header-content-area::-webkit-scrollbar-thumb:hover,
+.mobile-header-wrapper-style .mobile-menu li ul::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li ul li.has-children.active {
   padding-bottom: 0;
 }
