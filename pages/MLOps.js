@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
@@ -6,6 +6,25 @@ import Offer5 from '../components/slider/Offer5';
 
 const MLOps = () => {
     const [isOpen, setOpen] = useState(false)
+
+    useEffect(() => {
+        // Add custom font face
+        const style = document.createElement('style');
+        style.textContent = `
+            @font-face {
+                font-family: 'Heming Variable';
+                src: url('/assets/fonts/uicons/._Heming Variable.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+        `;
+        document.head.appendChild(style);
+        return () => {
+            document.head.removeChild(style);
+        };
+    }, []);
+
     return (
         <Layout>
             <>
@@ -14,13 +33,13 @@ const MLOps = () => {
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <span className="title-line color-black-text">ML Momentum</span>
-                                    <h2 className="color-black-text mt-10">
+                                    <span className="title-line color-black-text" style={{ fontFamily: "'Heming Variable', sans-serif" }}>ML Momentum</span>
+                                    <h2 className="color-black-text mt-10" style={{ fontFamily: "'Heming Variable', sans-serif" }}>
                                         Streamline Your Machine Learning Lifecycle
                                     </h2>
                                 </div>
                                 <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
+                                    <p className="font-lg color-black-text"style={{ fontFamily: "'Heming Variable', sans-serif" }}>
                                         Turn your ML experiments into production powerhouses. Build, deploy, and scale AI solutions with confidence through automated pipelines and continuous monitoring.
                                     </p>
                                 </div>
@@ -42,8 +61,8 @@ const MLOps = () => {
                                     <div className="row align-items-center">
                                         <div className="col-lg-6">
                                             <div className="box-cover-pd box-cover-pd-3 pt-30 pb-30 mb-30">
-                                                <span className="title-line line-48">MLOps Solutions</span>
-                                                <h2 className="color-brand-1 mt-10 mb-15">
+                                                <span className="title-line line-48" style={{ fontFamily: "'Heming Variable', sans-serif" }}>MLOps Solutions</span>
+                                                <h2 className="color-brand-1 mt-10 mb-15" style={{ fontFamily: "'Heming Variable', sans-serif" }}>
                                                     What is MLOps?
                                                 </h2>
                                                 <p className="font-md color-grey-400">
@@ -94,7 +113,7 @@ const MLOps = () => {
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-6 mb-20">
-                                <h2 className="color-brand-1 mb-0">Core MLOps Services</h2>
+                                <h2 className="color-brand-1 mb-0" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Core MLOps Services</h2>
                                 <p className="color-grey-500 font-lg mt-20">
                                     Comprehensive MLOps solutions to accelerate your machine learning initiatives.
                                 </p>
@@ -113,7 +132,7 @@ const MLOps = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">MLOps Assessment and Strategy</h4>
+                                        <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Heming Variable', sans-serif" }}>MLOps Assessment and Strategy</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
                                             <li>Evaluate current ML development and deployment processes</li>
@@ -134,7 +153,7 @@ const MLOps = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">ML Pipeline Automation</h4>
+                                        <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Heming Variable', sans-serif" }}>ML Pipeline Automation</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
                                             <li>Design and implement end-to-end ML pipelines</li>
@@ -155,7 +174,7 @@ const MLOps = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Model Versioning and Experiment Tracking</h4>
+                                        <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Model Versioning and Experiment Tracking</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
                                             <li>Implement version control for ML models and datasets</li>
@@ -179,7 +198,7 @@ const MLOps = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Model Deployment and Serving</h4>
+                                        <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Model Deployment and Serving</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
                                             <li>Automate model deployment processes</li>
@@ -200,7 +219,7 @@ const MLOps = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">ML Development</h4>
+                                        <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Heming Variable', sans-serif" }}>ML Development</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
                                             <li>Custom Model Development</li>
@@ -219,26 +238,26 @@ const MLOps = () => {
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
                                 <div className="box-core-value">
-                                    <h3 className="color-brand-1 mb-15">Why Companies Choose Us</h3>
+                                    <h3 className="color-brand-1 mb-15" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Why Companies Choose Us</h3>
                                     <p className="font-md color-grey-400">Expert MLOps services that help you build scalable and reliable ML systems in production.</p>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <ul className="list-core-value">
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">End-to-End Automation</h5>
+                                        <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>End-to-End Automation</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-grey-500 mb-20">We automate the entire ML lifecycle from data ingestion to model deployment and monitoring.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Scalable Infrastructure</h5>
+                                        <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Scalable Infrastructure</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-grey-500 mb-20">Our solutions scale with your business needs and handle increasing data volumes.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Continuous Monitoring</h5>
+                                        <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Continuous Monitoring</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-grey-500 mb-20">Real-time monitoring and alerting to ensure your models perform optimally in production.</p>
                                         </div>
@@ -248,19 +267,19 @@ const MLOps = () => {
                             <div className="col-lg-4">
                                 <ul className="list-core-value">
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Industry Expertise</h5>
+                                        <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Industry Expertise</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-grey-500 mb-20">Deep expertise across industries with proven MLOps implementations.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Faster Time to Market</h5>
+                                        <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Faster Time to Market</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-grey-500 mb-20">Accelerate your ML project delivery with proven frameworks and best practices.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Cost Optimization</h5>
+                                        <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Cost Optimization</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-grey-500 mb-20">Optimize infrastructure costs while maintaining high performance and reliability.</p>
                                         </div>
@@ -275,7 +294,7 @@ const MLOps = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <h2 className="color-brand-1 mb-20" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Industries We Serve</h2>
                                 <p className="font-lg color-gray-500">
                                     Comprehensive MLOps solutions across diverse industries, delivering scalable machine learning operations
                                     <br className="d-none d-lg-block" />
@@ -297,7 +316,7 @@ const MLOps = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Our Process</h2>
+                                <h2 className="color-brand-1 mb-20" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Our Process</h2>
                                 <p className="font-lg color-gray-500">A systematic approach to implementing MLOps in your organization</p>
                             </div>
                         </div>
@@ -308,7 +327,7 @@ const MLOps = () => {
                                     <div className="process-row fade-up">
                                         <div className="process-number">1</div>
                                         <div>
-                                            <h4 className="color-brand-1 mb-5">Assessment</h4>
+                                            <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Assessment</h4>
                                             <p className="font-md color-grey-500">Evaluate current ML infrastructure and identify improvement opportunities</p>
                                         </div>
                                     </div>
@@ -316,7 +335,7 @@ const MLOps = () => {
                                     <div className="process-row fade-up" style={{ animationDelay: "0.1s" }}>
                                         <div className="process-number">2</div>
                                         <div>
-                                            <h4 className="color-brand-1 mb-5">Strategy Development</h4>
+                                            <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Strategy Development</h4>
                                             <p className="font-md color-grey-500">Create a tailored MLOps roadmap aligned with business goals</p>
                                         </div>
                                     </div>
@@ -324,7 +343,7 @@ const MLOps = () => {
                                     <div className="process-row fade-up" style={{ animationDelay: "0.2s" }}>
                                         <div className="process-number">3</div>
                                         <div>
-                                            <h4 className="color-brand-1 mb-5">Implementation</h4>
+                                            <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Implementation</h4>
                                             <p className="font-md color-grey-500">Deploy automated pipelines and monitoring systems</p>
                                         </div>
                                     </div>
@@ -334,7 +353,7 @@ const MLOps = () => {
                                     <div className="process-row fade-up" style={{ animationDelay: "0.3s" }}>
                                         <div className="process-number">4</div>
                                         <div>
-                                            <h4 className="color-brand-1 mb-5">Testing & Validation</h4>
+                                            <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Testing & Validation</h4>
                                             <p className="font-md color-grey-500">Comprehensive testing of ML pipelines and model performance</p>
                                         </div>
                                     </div>
@@ -342,7 +361,7 @@ const MLOps = () => {
                                     <div className="process-row fade-up" style={{ animationDelay: "0.4s" }}>
                                         <div className="process-number">5</div>
                                         <div>
-                                            <h4 className="color-brand-1 mb-5">Optimization & Support</h4>
+                                            <h4 className="color-brand-1 mb-5" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Optimization & Support</h4>
                                             <p className="font-md color-grey-500">Continuous optimization and ongoing support for your MLOps environment</p>
                                         </div>
                                     </div>
@@ -359,7 +378,7 @@ const MLOps = () => {
                                 <div className="col-lg-6"><img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
                                 <div className="col-lg-6">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Transform Your ML Development into Production-Ready Systems</h2>
+                                        <h2 className="color-brand-1 mt-15 mb-20" style={{ fontFamily: "'Heming Variable', sans-serif" }}>Transform Your ML Development into Production-Ready Systems</h2>
                                         <p className="font-md color-grey-500">MLOps is the key to scaling your machine learning initiatives. Build robust, automated, and reliable ML systems that deliver consistent business value.</p>
                                         <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                                     </div>
