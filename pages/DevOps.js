@@ -39,7 +39,7 @@ const DevOps = () => {
                                     </h2>
                                 </div>
                                 <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
+                                    <p className="font-lg color-black-text" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                         Experience the power of automated workflows, seamless collaboration, and continuous innovation with enterprise-grade DevOps solutions. Transform your software delivery from months to minutes.
                                     </p>
                                 </div>
@@ -65,11 +65,11 @@ const DevOps = () => {
                                                 <h2 className="color-brand-1 mt-10 mb-15" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                                     DevOps without the hassle
                                                 </h2>
-                                                <p className="font-md color-grey-400">
+                                                <p className="font-md color-grey-400" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                                     Let our DevOps and SRE experts handle your infrastructure, operations, and CI/CD pipeline. We provide a custom-built Kubernetes platform, fully managed services, 24/7 support, and guaranteed SLAs.<br /><br />This means you get a reliable, high-performing development environment with constant support.
                                                 </p>
                                                 <div className="mt-40 text-start">
-                                                    <Link className="btn btn-brand-1 hover-up font-md" href="/help">Talk to our Experts</Link>
+                                                    <Link className="btn btn-brand-1 hover-up font-md" href="/help" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Talk to our Experts</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -90,7 +90,7 @@ const DevOps = () => {
                         <div className="row align-items-end">
                             <div className="col-lg-6 mb-20">
                                 <h2 className="color-brand-1 mb-0" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>DevOps Services</h2>
-                                <p className="color-grey-500 font-lg mt-20">
+                                <p className="color-grey-500 font-lg mt-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                     Comprehensive DevOps solutions to accelerate your software delivery.
                                 </p>
                             </div>
@@ -110,7 +110,7 @@ const DevOps = () => {
                                     <div className="image-showcase-content-dynamic">
                                         <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>DevOps Assessment and Strategy</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                             <li>Evaluate current development and operations processes</li>
                                             <li>Identify bottlenecks and areas for improvement</li>
                                             <li>Develop a customized DevOps roadmap aligned with business goals</li>
@@ -131,7 +131,7 @@ const DevOps = () => {
                                     <div className="image-showcase-content-dynamic">
                                         <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Continuous Integration and Continuous Deployment (CI/CD)</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                             <li>Design and implement automated CI/CD pipelines</li>
                                             <li>Set up version control and code review processes</li>
                                             <li>Integrate automated testing and quality assurance</li>
@@ -152,7 +152,7 @@ const DevOps = () => {
                                     <div className="image-showcase-content-dynamic">
                                         <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Infrastructure as Code (IaC)</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                             <li>Develop and maintain infrastructure templates</li>
                                             <li>Implement version control for infrastructure</li>
                                             <li>Automate provisioning and configuration of cloud resources</li>
@@ -176,7 +176,7 @@ const DevOps = () => {
                                     <div className="image-showcase-content-dynamic">
                                         <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Monitoring and Observability</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                             <li>Implement comprehensive monitoring solutions</li>
                                             <li>Set up log aggregation and analysis</li>
                                             <li>Create custom dashboards for real-time insights</li>
@@ -197,7 +197,7 @@ const DevOps = () => {
                                     <div className="image-showcase-content-dynamic">
                                         <h4 className="image-showcase-title-dynamic" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Cloud Migration and Optimization</h4>
                                         <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                             <li>Assess and plan cloud migration strategies</li>
                                             <li>Execute seamless migrations to cloud platforms</li>
                                             <li>Optimize cloud infrastructure for cost and performance</li>
@@ -215,7 +215,7 @@ const DevOps = () => {
                             <div className="col-lg-4 mb-70">
                                 <div className="box-core-value">
                                     <h3 className="color-brand-1 mb-15" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Advantages of adopting DevOps</h3>
-                                    <p className="font-md color-grey-400">Transform your software delivery with proven DevOps practices that accelerate innovation and improve quality.</p>
+                                    <p className="font-md color-grey-400" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Transform your software delivery with proven DevOps practices that accelerate innovation and improve quality.</p>
                                 </div>
                             </div>
                             <div className="col-lg-4">
@@ -223,19 +223,19 @@ const DevOps = () => {
                                     <li> <span className="ticked" />
                                         <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Faster Deployment</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Automated deployment pipelines significantly reduce release cycles, allowing teams to push updates to production with minimal manual intervention.</p>
+                                            <p className="font-md color-grey-500 mb-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Automated deployment pipelines significantly reduce release cycles, allowing teams to push updates to production with minimal manual intervention.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
                                         <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Enhanced Collaboration</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Breaking down silos between development and operations teams fosters better communication, shared responsibility, and improved problem-solving across organizations.</p>
+                                            <p className="font-md color-grey-500 mb-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Breaking down silos between development and operations teams fosters better communication, shared responsibility, and improved problem-solving across organizations.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
                                         <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Continuous Integration</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Regular code integration and automated testing catch bugs early, reducing debugging time and ensuring higher quality software releases.</p>
+                                            <p className="font-md color-grey-500 mb-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Regular code integration and automated testing catch bugs early, reducing debugging time and ensuring higher quality software releases.</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -245,19 +245,19 @@ const DevOps = () => {
                                     <li> <span className="ticked" />
                                         <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Infrastructure Automation</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Standardized infrastructure configuration through code eliminates manual setup errors and enables consistent environments across development, testing, and production.</p>
+                                            <p className="font-md color-grey-500 mb-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Standardized infrastructure configuration through code eliminates manual setup errors and enables consistent environments across development, testing, and production.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
                                         <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Rapid Recovery</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Automated monitoring and incident response systems help teams quickly identify, isolate, and resolve issues before they impact users.</p>
+                                            <p className="font-md color-grey-500 mb-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Automated monitoring and incident response systems help teams quickly identify, isolate, and resolve issues before they impact users.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
                                         <h5 className="color-brand-1 mb-5" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Cost Optimization</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Efficient resource utilization, automated scaling, and streamlined processes reduce operational costs while maintaining high service quality standards.</p>
+                                            <p className="font-md color-grey-500 mb-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Efficient resource utilization, automated scaling, and streamlined processes reduce operational costs while maintaining high service quality standards.</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -271,7 +271,7 @@ const DevOps = () => {
                         <div className="row">
                             <div className="col-lg-12 text-center">
                                 <h2 className="color-brand-1 mb-20" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>Industries that we serve</h2>
-                                <p className="font-lg color-gray-500">
+                                <p className="font-lg color-gray-500" style={{ fontFamily: "'Projekt Blackbird', sans-serif" }}>
                                     Comprehensive DevOps solutions across diverse industries, delivering seamless software delivery
                                     <br className="d-none d-lg-block" />
                                     with automation, collaboration &amp; innovation.
