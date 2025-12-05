@@ -56,7 +56,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross2.png" alt="Cross Platform" />
+                                                <img src="/assets/imgs/page/homepage1/cross2.png" alt="Cross Platform" />
                                             </div>
                                             <h4 className="left-card-title">Cross-Platform</h4>
                                             <div className="left-card-divider"></div>
@@ -79,7 +79,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross.png" alt="Social Media" />
+                                                <img src="/assets/imgs/page/homepage1/cross.png" alt="Social Media" />
                                             </div>
                                             <h4 className="left-card-title">Social Media</h4>
                                             <div className="left-card-divider"></div>
@@ -102,7 +102,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage2/identity.png" alt="Brand Identity" />
+                                                <img src="/assets/imgs/page/homepage2/identity.png" alt="Brand Identity" />
                                             </div>
                                             <h4 className="left-card-title">Brand Identity</h4>
                                             <div className="left-card-divider"></div>
@@ -125,7 +125,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross4.png" alt="Customer Service" />
+                                                <img src="/assets/imgs/page/homepage1/cross4.png" alt="Customer Service" />
                                             </div>
                                             <h4 className="left-card-title">Customer Service</h4>
                                             <div className="left-card-divider"></div>
@@ -148,7 +148,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross5.png" alt="Analytics & Insights" />
+                                                <img src="/assets/imgs/page/homepage1/cross5.png" alt="Analytics & Insights" />
                                             </div>
                                             <h4 className="left-card-title">Analytics & Insights</h4>
                                             <div className="left-card-divider"></div>
@@ -171,7 +171,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage2/creation.png" alt="Content Planning" />
+                                                <img src="/assets/imgs/page/homepage2/creation.png" alt="Content Planning" />
                                             </div>
                                             <h4 className="left-card-title">Content Planning</h4>
                                             <div className="left-card-divider"></div>
@@ -196,7 +196,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage2/creation.png" alt="Team Collaboration" />
+                                                <img src="/assets/imgs/page/homepage2/creation.png" alt="Team Collaboration" />
                                             </div>
                                             <h4 className="left-card-title">Team Collaboration</h4>
                                             <div className="left-card-divider"></div>
@@ -220,7 +220,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross4.png" alt="Multi-Brand Management" />
+                                                <img src="/assets/imgs/page/homepage1/cross4.png" alt="Multi-Brand Management" />
                                             </div>
                                             <h4 className="left-card-title">Multi-Brand Management</h4>
                                             <div className="left-card-divider"></div>
@@ -242,7 +242,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross.png" alt="Social Media" />
+                                                <img src="/assets/imgs/page/homepage1/cross.png" alt="Social Media" />
                                             </div>
                                             <h4 className="left-card-title">Social Media</h4>
                                             <div className="left-card-divider"></div>
@@ -265,7 +265,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage2/identity.png" alt="Brand Identity" />
+                                                <img src="/assets/imgs/page/homepage2/identity.png" alt="Brand Identity" />
                                             </div>
                                             <h4 className="left-card-title">Brand Identity</h4>
                                             <div className="left-card-divider"></div>
@@ -288,7 +288,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross4.png" alt="Customer Service" />
+                                                <img src="/assets/imgs/page/homepage1/cross4.png" alt="Customer Service" />
                                             </div>
                                             <h4 className="left-card-title">Customer Service</h4>
                                             <div className="left-card-divider"></div>
@@ -311,7 +311,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross5.png" alt="Analytics & Insights" />
+                                                <img src="/assets/imgs/page/homepage1/cross5.png" alt="Analytics & Insights" />
                                             </div>
                                             <h4 className="left-card-title">Analytics & Insights</h4>
                                             <div className="left-card-divider"></div>
@@ -337,7 +337,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross4.png" alt="Enterprise Security" />
+                                                <img src="/assets/imgs/page/homepage1/cross4.png" alt="Enterprise Security" />
                                             </div>
                                             <h4 className="left-card-title">Enterprise Security</h4>
                                             <div className="left-card-divider"></div>
@@ -359,7 +359,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross.png" alt="Social Media" />
+                                                <img src="/assets/imgs/page/homepage1/cross.png" alt="Social Media" />
                                             </div>
                                             <h4 className="left-card-title">Social Media</h4>
                                             <div className="left-card-divider"></div>
@@ -382,7 +382,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage2/identity.png" alt="Brand Identity" />
+                                                <img src="/assets/imgs/page/homepage2/identity.png" alt="Brand Identity" />
                                             </div>
                                             <h4 className="left-card-title">Brand Identity</h4>
                                             <div className="left-card-divider"></div>
@@ -405,7 +405,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross4.png" alt="Customer Service" />
+                                                <img src="/assets/imgs/page/homepage1/cross4.png" alt="Customer Service" />
                                             </div>
                                             <h4 className="left-card-title">Customer Service</h4>
                                             <div className="left-card-divider"></div>
@@ -428,7 +428,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage1/cross5.png" alt="Analytics & Insights" />
+                                                <img src="/assets/imgs/page/homepage1/cross5.png" alt="Analytics & Insights" />
                                             </div>
                                             <h4 className="left-card-title">Analytics & Insights</h4>
                                             <div className="left-card-divider"></div>
@@ -451,7 +451,7 @@ const HomePage3 = () => {
                                     <div className="left-aligned-card-wrapper">
                                         <div className="left-aligned-card-container">
                                             <div className="left-card-icon">
-                                                <img src="assets/imgs/page/homepage2/creation.png" alt="Content Planning" />
+                                                <img src="/assets/imgs/page/homepage2/creation.png" alt="Content Planning" />
                                             </div>
                                             <h4 className="left-card-title">Content Planning</h4>
                                             <div className="left-card-divider"></div>
@@ -626,7 +626,7 @@ const HomePage3 = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-6"><img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
+                                <div className="col-lg-6"><img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
                                 <div className="col-lg-6">
                                     <div className="box-info-video">
                                         <h2 className="color-brand-1 mt-15 mb-20">Want to talk to a marketing expert?</h2>

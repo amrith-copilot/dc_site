@@ -7386,12 +7386,20 @@ footer a {
 .banner-11 .swiper-slide > img {
   display: block;
 }
+.banner-11 .swiper-slide {
+  height: auto !important;
+}
+.banner-11 .swiper-wrapper {
+  align-items: stretch;
+}
 
 .banner-slide-11 {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 780px;
+  width: 100%;
+  height: 100%;
 }
 
 .banner-12 {
@@ -11276,13 +11284,17 @@ outline: none;
 
 /* Services Mega Menu Styles - Fixed version with proper overrides */
 
-/* Base mega menu dropdown container */
+/* Ensure the menu item has position relative for absolute dropdown positioning */
+.header .main-menu li.services-mega-menu {
+  position: relative;
+}
+
+/* Base mega menu dropdown container - completely hidden when not active */
 .header .main-menu li.services-mega-menu .mega-menu-dropdown {
+  display: none;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
   position: absolute;
   top: 100%;
   left: 0px;
@@ -11294,7 +11306,14 @@ outline: none;
   background-color: var(--color-white);
   border: 1px solid var(--color-primary-200);
   box-shadow: 0px 0px 20px 0px rgba(14, 41, 50, 0.17);
+}
+
+/* Show dropdown only when menu-active class is present (controlled by JS) */
+.header .main-menu li.services-mega-menu.menu-active .mega-menu-dropdown {
   display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /* Main container for the three columns */
@@ -11384,15 +11403,9 @@ outline: none;
   cursor: pointer !important;
 }
 
-/* Hover behavior for the services mega menu */
-.header .main-menu li.services-mega-menu:hover > .mega-menu-dropdown {
-  opacity: 1 !important;
-  visibility: visible !important;
-  pointer-events: auto !important;
-}
-
 /* Active state for click-based toggle */
 .header .main-menu li.services-mega-menu .mega-menu-dropdown.active {
+  display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
