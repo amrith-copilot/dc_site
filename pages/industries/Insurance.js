@@ -53,155 +53,125 @@ const Insurance = () => {
                         </div>
                     </div>
                 </section>
-                {/* Core Perception Tasks - Image Cards */}
+                {/* Computer Vision Use Cases */}
                 <section className="section mt-70 mb-50">
                     <div className="container">
                         <div className="text-center mb-50">
-                            <h2 className="color-brand-1 mb-15">Core Insurance Vision Tasks</h2>
+                            <h2 className="color-brand-1 mb-15">Computer Vision Use Cases</h2>
                             <p className="font-lg color-grey-500">
-                                Visually strong annotation capabilities for insurance AI systems
+                                AI-powered visual analysis for insurance claims, damage assessment and risk evaluation
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic">
                                     <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Vehicle Damage Detection" 
+                                        <img
+                                            src="/assets/imgs/page/homepage6/human1.png"
+                                            alt="Annotated image showing vehicle exterior damage detection for auto insurance claims"
+                                            title="Annotated image showing vehicle exterior damage detection for auto insurance claims"
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Vehicle Damage Detection</h6>
+                                        <h6 className="color-brand-1 mb-15">Vehicle Exterior Damage Detection</h6>
                                         <p className="font-sm color-grey-500">
-                                            Annotate dents, cracks and collision severity.
+                                            High-precision visual detection of dents, scratches, and collision damage for faster auto-claim assessments across North America, Europe, and APAC.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic">
                                     <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Property Loss Assessment" 
+                                        <img
+                                            src="/assets/imgs/page/homepage6/human2.png"
+                                            alt="Annotated windshield crack detection for auto insurance analysis"
+                                            title="Annotated windshield crack detection for auto insurance analysis"
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Property Loss Assessment</h6>
+                                        <h6 className="color-brand-1 mb-15">Windshield Crack & Glass Damage Analysis</h6>
                                         <p className="font-sm color-grey-500">
-                                            Label roof, water and fire damage.
+                                            AI-powered crack and glass damage detection enabling accurate repair cost estimation for global auto insurance providers.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic">
                                     <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Claims Document OCR" 
+                                        <img
+                                            src="/assets/imgs/page/homepage6/human3.png"
+                                            alt="Annotated drone roof inspection for property insurance assessments"
+                                            title="Annotated drone roof inspection for property insurance assessments"
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Claims Document OCR</h6>
+                                        <h6 className="color-brand-1 mb-15">Property Roof Condition Assessment (Drone Imagery)</h6>
                                         <p className="font-sm color-grey-500">
-                                            Identify fields, forms and structured data.
+                                            Drone-based roof damage analysis providing insurers with rapid, accurate assessments of hail, wind, and aging-related risks worldwide.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic">
                                     <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Fraud Behavior Indicators" 
+                                        <img
+                                            src="/assets/imgs/page/homepage6/human1.png"
+                                            alt="Annotated water and flood damage detection for home insurance claims"
+                                            title="Annotated water and flood damage detection for home insurance claims"
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Fraud Behavior Indicators</h6>
+                                        <h6 className="color-brand-1 mb-15">Water/Flood Damage Segmentation in Homes</h6>
                                         <p className="font-sm color-grey-500">
-                                            Visual cues linked to suspicious claims.
+                                            Automated visual mapping of flood and water damage patterns for faster claim validation in global flood-prone regions.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic">
                                     <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Storm & Disaster Impact Mapping" 
+                                        <img
+                                            src="/assets/imgs/page/homepage6/human2.png"
+                                            alt="Annotated fire and smoke damage classification for property insurance"
+                                            title="Annotated fire and smoke damage classification for property insurance"
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Storm & Disaster Impact Mapping</h6>
+                                        <h6 className="color-brand-1 mb-15">Fire & Smoke Damage Classification</h6>
                                         <p className="font-sm color-grey-500">
-                                            Classify hail, flood and wind damage.
+                                            Computer-vision–based detection of burn marks, soot, and fire patterns to accelerate property damage evaluation in international markets.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic">
                                     <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Policy Document Classification" 
+                                        <img
+                                            src="/assets/imgs/page/homepage6/human3.png"
+                                            alt="Annotated vehicle part recognition for insurance repair estimation"
+                                            title="Annotated vehicle part recognition for insurance repair estimation"
                                             className="image-showcase-photo-dynamic"
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Policy Document Classification</h6>
+                                        <h6 className="color-brand-1 mb-15">Vehicle Part Recognition for Repair Estimation</h6>
                                         <p className="font-sm color-grey-500">
-                                            Sort coverage types and sections.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Medical Claim Visual Evidence" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Medical Claim Visual Evidence</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Annotate injury documentation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Adjuster Workflow Vision" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h6 className="color-brand-1 mb-15">Adjuster Workflow Vision</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Track inspection steps and evidence capture.
+                                            AI-driven identification of vehicle components to streamline repair planning for auto insurers across global repair networks.
                                         </p>
                                     </div>
                                 </div>
