@@ -13,7 +13,7 @@ const MLOps = () => {
         style.textContent = `
             @font-face {
                 font-family: 'Heming Variable';
-                src: url('/assets/fonts/uicons/._Heming Variable.ttf') format('truetype');
+                src: url('/assets/fonts/uicons/heming-variable.ttf') format('truetype');
                 font-weight: normal;
                 font-style: normal;
                 font-display: swap;
