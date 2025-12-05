@@ -29,17 +29,47 @@ const Sidebar = ({ openClass, handleRemove }) => {
             }
         };
 
+        // Prevent touch move on body when sidebar is open
+        const preventTouchMove = (e) => {
+            // Allow scrolling inside the sidebar content area
+            const sidebarContent = document.querySelector('.mobile-header-content-area');
+            if (sidebarContent && sidebarContent.contains(e.target)) {
+                return; // Allow scroll inside sidebar
+            }
+            e.preventDefault();
+        };
+
         if (openClass === "sidebar-visible") {
             document.addEventListener('keydown', handleEscape);
             // Prevent body scroll when sidebar is open
             document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+            document.body.style.width = '100%';
+            document.body.style.top = `-${window.scrollY}px`;
+            document.addEventListener('touchmove', preventTouchMove, { passive: false });
         } else {
-            document.body.style.overflow = 'unset';
+            // Restore scroll position
+            const scrollY = document.body.style.top;
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.width = '';
+            document.body.style.top = '';
+            if (scrollY) {
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
         }
 
         return () => {
             document.removeEventListener('keydown', handleEscape);
-            document.body.style.overflow = 'unset';
+            document.removeEventListener('touchmove', preventTouchMove);
+            const scrollY = document.body.style.top;
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.width = '';
+            document.body.style.top = '';
+            if (scrollY) {
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
         };
     }, [openClass, handleRemove]);
 
