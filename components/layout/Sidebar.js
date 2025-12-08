@@ -192,8 +192,8 @@ const Sidebar = ({ openClass, handleRemove }) => {
 
                                 {/* CTA Button */}
                                 <div className="mobile-menu-cta">
-                                    <Link className="btn btn-brand-1 btn-full" href="/register" onClick={handleRemove}>
-                                        Get a Demo
+                                    <Link className="btn btn-brand-1 btn-full" href="/contact" onClick={handleRemove}>
+                                        Get a demo
                                     </Link>
                                 </div>
                             </div>

@@ -54,7 +54,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                 <div className="container">
                     <div className="main-header">
                         <div className="header-left">
-                            <div className="header-logo"><Link className="d-flex" href="/index-3"><img alt="Ecom" src="/assets/logo_name.svg" /></Link></div>
+                            <div className="header-logo"><Link className="d-flex" href="/index-3"><img alt="Ecom" src="/assets/DC_Full_B.svg" /></Link></div>
                             <div className="header-nav">
                                 <nav className="nav-main-menu d-none d-xl-block">
                                     <ul className="main-menu">
@@ -170,7 +170,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                 </nav>
                             </div>
                             <div className="header-right">
-                                <div className="d-none d-sm-inline-block"><Link className="btn btn-brand-1 hover-up" href="register">Get a Demo</Link></div>
+                                <div className="d-none d-sm-inline-block"><Link className="btn btn-brand-1 hover-up" href="/contact">Get a demo</Link></div>
                                 <div className={`burger-icon burger-icon-white ${openClass && "burger-close"}`}
                                     onClick={() => { handleOpen(); handleRemove() }}>
                                     <span className="burger-icon-top" />

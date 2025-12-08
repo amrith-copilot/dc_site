@@ -12,19 +12,15 @@ const Partners = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-7">
-                                <span className="title-line color-brand-1">Partner </span>
                                 <h1 className="color-brand-1 mt-20 mb-30">
                                     Amplify Your AI Capabilities
                                 </h1>
                                 <p className="font-lg color-grey-500 mb-35">
-                                    A partnership program built for AI agencies, AI labs, and AI/ML platforms that want to extend their capabilities with scalable data annotation and human-in-the-loop services. Partners can refer, resell, or integrate our delivery pipelines and earn revenue through referral fees, revenue share, or white-label models.
+                                    A partnership program built for AI agencies, AI labs, and AI/ML platforms that want to extend their capabilities with scalable data annotation and Human In The Loop. Partners can refer, resell, or integrate our delivery pipelines and earn revenue through referral fees, revenue share, or white-label models.
                                 </p>
                                 <div className="mt-45">
                                     <Link className="btn btn-brand-1 hover-up mr-20" href="/contact">
                                         Become a Partner
-                                    </Link>
-                                    <Link className="btn btn-default hover-up" href="/help">
-                                        Learn More
                                     </Link>
                                 </div>
                             </div>
@@ -47,11 +43,6 @@ const Partners = () => {
                         <div className="row">
                             <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="card-small card-small-2 h-100">
-                                    <div className="card-image">
-                                        <div className="box-image">
-                                            <img src="assets/imgs/page/homepage1/market.svg" alt="AI Agencies" />
-                                        </div>
-                                    </div>
                                     <div className="card-info">
                                         <h6 className="color-brand-1 mb-15">AI Agencies</h6>
                                         <p className="font-xs color-grey-500">Building custom AI products for enterprise clients</p>
@@ -60,11 +51,6 @@ const Partners = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="card-small card-small-2 h-100">
-                                    <div className="card-image">
-                                        <div className="box-image">
-                                            <img src="assets/imgs/page/homepage1/development.svg" alt="AI Labs" />
-                                        </div>
-                                    </div>
                                     <div className="card-info">
                                         <h6 className="color-brand-1 mb-15">AI Labs</h6>
                                         <p className="font-xs color-grey-500">Requiring human feedback for RLHF/RLAIF or evaluation</p>
@@ -73,11 +59,6 @@ const Partners = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="card-small card-small-2 h-100">
-                                    <div className="card-image">
-                                        <div className="box-image">
-                                            <img src="assets/imgs/page/homepage1/analysis.svg" alt="ML Platforms" />
-                                        </div>
-                                    </div>
                                     <div className="card-info">
                                         <h6 className="color-brand-1 mb-15">AI/ML Platforms</h6>
                                         <p className="font-xs color-grey-500">Need annotation capacity without managing workforce operations</p>
@@ -86,11 +67,6 @@ const Partners = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="card-small card-small-2 h-100">
-                                    <div className="card-image">
-                                        <div className="box-image">
-                                            <img src="assets/imgs/page/homepage1/mobile.svg" alt="Tech Companies" />
-                                        </div>
-                                    </div>
                                     <div className="card-info">
                                         <h6 className="color-brand-1 mb-15">Tech Companies</h6>
                                         <p className="font-xs color-grey-500">Scaling AI/ML initiatives across multiple products</p>
@@ -210,26 +186,25 @@ const Partners = () => {
                     </div>
                 </section>
 
-                {/* Services Available */}
+                {/* Core Services */}
                 <section className="section mt-90 mb-70">
                     <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-lg-6 mb-50">
-                                <span className="title-line line-48 color-brand-1">Services</span>
-                                <h2 className="color-brand-1 mt-20 mb-25">Core Annotation Services</h2>
+                        <div className="row">
+                            <div className="col-lg-4 mb-40">
+                                <h3 className="color-brand-1 mt-20 mb-25">Core Annotation Services</h3>
                                 <p className="font-md color-grey-500 mb-35">
                                     Comprehensive data labeling and annotation across all major modalities to power your AI models.
                                 </p>
                                 <div className="list-icons">
-                                    <div className="d-flex align-items-center mb-20">
+                                    <div className="d-flex align-items-center mb-15">
                                         <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
                                         <span className="font-md color-grey-500 mb-0">Image, video, LiDAR, 3D annotation</span>
                                     </div>
-                                    <div className="d-flex align-items-center mb-20">
+                                    <div className="d-flex align-items-center mb-15">
                                         <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
                                         <span className="font-md color-grey-500 mb-0">Text and document extraction</span>
                                     </div>
-                                    <div className="d-flex align-items-center mb-20">
+                                    <div className="d-flex align-items-center mb-15">
                                         <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
                                         <span className="font-md color-grey-500 mb-0">Audio transcription and diarization</span>
                                     </div>
@@ -239,30 +214,23 @@ const Partners = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6 mb-50 text-center">
-                                <img src="assets/imgs/page/homepage2/img-marketing.png" alt="Core Annotation" className="img-fluid" />
-                            </div>
-                        </div>
-
-                        <div className="row align-items-center mt-90">
-                            <div className="col-lg-6 mb-50 order-lg-2">
-                                <span className="title-line line-48 color-brand-1">Advanced Capabilities</span>
-                                <h2 className="color-brand-1 mt-20 mb-25">Human-in-the-Loop (HITL)</h2>
+                            <div className="col-lg-4 mb-40">
+                                <h3 className="color-brand-1 mt-20 mb-25">Human-in-the-Loop (HITL)</h3>
                                 <p className="font-md color-grey-500 mb-35">
                                     Expert-level human feedback and validation to align, evaluate, and continuously improve AI systems.
                                 </p>
                                 <div className="list-icons">
-                                    <div className="d-flex align-items-center mb-20">
+                                    <div className="d-flex align-items-center mb-15">
                                         <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
                                         <span className="font-md color-grey-500 mb-0">RLHF, RLAIF, preference ranking</span>
                                     </div>
-                                    <div className="d-flex align-items-center mb-20">
+                                    <div className="d-flex align-items-center mb-15">
                                         <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
                                         <span className="font-md color-grey-500 mb-0">Real-time human validation for agentic systems</span>
                                     </div>
-                                    <div className="d-flex align-items-center mb-20">
+                                    <div className="d-flex align-items-center mb-15">
                                         <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
-                                        <span className="font-md color-grey-500 mb-0">Expert-level annotation (medical, legal, financial, geospatial)</span>
+                                        <span className="font-md color-grey-500 mb-0">Expert-level annotation (medical, legal, financial)</span>
                                     </div>
                                     <div className="d-flex align-items-center">
                                         <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
@@ -270,108 +238,174 @@ const Partners = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6 mb-50 text-center order-lg-1">
-                                <img src="assets/imgs/page/homepage9/img3.png" alt="Advanced HITL" className="img-fluid" />
+                            <div className="col-lg-4 mb-40">
+                                <h3 className="color-brand-1 mt-20 mb-25">Cloud & Platform Engineering</h3>
+                                <p className="font-md color-grey-500 mb-35">
+                                    Build and manage reliable, cost-efficient cloud foundations for high-growth teams.
+                                </p>
+                                <div className="list-icons">
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Scalable VPC/network design</span>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Multi-account governance, IAM, and policy automation</span>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Cost optimization and cloud efficiency audits</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Managed Kubernetes platform setup</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row">
+                            <div className="col-lg-4 mb-40">
+                                <h3 className="color-brand-1 mt-20 mb-25">Core DevOps Services</h3>
+                                <p className="font-md color-grey-500 mb-35">
+                                    End-to-end infrastructure automation and operational support for scalable software delivery.
+                                </p>
+                                <div className="list-icons">
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">CI/CD pipeline design and optimization</span>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Infrastructure-as-code (Terraform, CloudFormation)</span>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Cloud provisioning and hardening (AWS, GCP, Azure)</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Containerization (Docker, Kubernetes)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 mb-40">
+                                <h3 className="color-brand-1 mt-20 mb-25">Core MLOps Services</h3>
+                                <p className="font-md color-grey-500 mb-35">
+                                    Full lifecycle support for training, deploying, and maintaining production-grade ML systems.
+                                </p>
+                                <div className="list-icons">
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">ML pipeline design (Airflow, Kubeflow, Prefect)</span>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Model deployment automation (batch, realtime, edge)</span>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Feature store setup and data workflow automation</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Model performance tracking and drift detection</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 mb-40">
+                                <h3 className="color-brand-1 mt-20 mb-25">Reliability & Security Engineering</h3>
+                                <p className="font-md color-grey-500 mb-35">
+                                    Increase uptime, resilience, and compliance for critical infrastructure and ML systems.
+                                </p>
+                                <div className="list-icons">
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">SRE framework (SLIs/SLOs/SLA definitions)</span>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Observability stack (Prometheus, Grafana, Datadog)</span>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-15">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Automated backup, disaster recovery, and failover</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <span className="color-brand-1" style={{marginRight: '15px', fontWeight: 'bold'}}>•</span>
+                                        <span className="font-md color-grey-500 mb-0">Compliance hardening (SOC2, HIPAA, GDPR)</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 {/* Partner Benefits */}
-                <section className="section mt-70 pt-80 pb-80 bg-brand-1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center mb-60">
-                                <h2 className="color-white mb-20">Partner Benefits</h2>
-                                <p className="font-lg color-white max-width-600 mx-auto">
-                                    What you gain by partnering with us
-                                </p>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="card-feature-2 h-100">
-                                    <div className="card-image">
-                                        <img src="/assets/imgs/page/homepage1/market.svg" alt="Expand Offerings" />
+                <section className="section mt-70 pt-80 pb-80 bg-brand-2">
+                                    <div className="container">
+                                        <div className="row">
+                                            <div className="col-lg-12 text-center mb-60">
+                                                <h2 className="color-brand-1 mb-20">Partner Benefits</h2>
+                                                <p className="font-lg color-brand-1 max-width-600 mx-auto">
+                                                    What you gain by partnering with us
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-lg-4 col-md-6 mb-30">
+                                                <div className="card-feature-2 h-100">
+                                                    <h5 className="color-brand-1 mb-20">Expand Your Offerings</h5>
+                                                    <p className="font-sm color-black mb-0">
+                                                        Add enterprise-grade annotation and HITL services <br />without hiring or managing annotation staff.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 col-md-6 mb-30">
+                                                <div className="card-feature-2 h-100">
+                                                    <h5 className="color-brand-1 mb-20">Priority Capacity</h5>
+                                                    <p className="font-sm color-black mb-0">
+                                                        Priority capacity allocation and SLA-backed delivery <br /> for your clients' projects.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 col-md-6 mb-30">
+                                                <div className="card-feature-2 h-100">
+                                                    <h5 className="color-brand-1 mb-20">Dedicated Support</h5>
+                                                    <p className="font-sm color-black mb-0">
+                                                        Dedicated partner manager and technical onboarding <br /> to ensure smooth collaboration.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 col-md-6 mb-30">
+                                                <div className="card-feature-2 h-100">
+                                                    <h5 className="color-brand-1 mb-20">Co-Marketing Support</h5>
+                                                    <p className="font-sm color-black mb-0">
+                                                        Co-marketing opportunities, case studies, and <br />sales enablement materials.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 col-md-6 mb-30">
+                                                <div className="card-feature-2 h-100">
+                                                    <h5 className="color-brand-1 mb-20">Flexible Commercial Terms</h5>
+                                                    <p className="font-sm color-black mb-0">
+                                                        Flexible commercial structures for recurring or <br /> project-based work arrangements.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 col-md-6 mb-30">
+                                                <div className="card-feature-2 h-100">
+                                                    <h5 className="color-brand-1 mb-20">Revenue Growth</h5>
+                                                    <p className="font-sm color-black mb-0">
+                                                        Unlock new revenue streams without capital investment <br /> in annotation infrastructure.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="card-info">
-                                        <h5 className="color-white mb-20">Expand Your Offerings</h5>
-                                        <p className="font-sm color-white mb-0">
-                                            Add enterprise-grade annotation and HITL services without hiring or managing annotation staff.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="card-feature-2 h-100">
-                                    <div className="card-image">
-                                        <img src="/assets/imgs/page/homepage1/development.svg" alt="Priority Capacity" />
-                                    </div>
-                                    <div className="card-info">
-                                        <h5 className="color-white mb-20">Priority Capacity</h5>
-                                        <p className="font-sm color-white mb-0">
-                                            Priority capacity allocation and SLA-backed delivery for your clients' projects.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="card-feature-2 h-100">
-                                    <div className="card-image">
-                                        <img src="/assets/imgs/page/homepage1/analysis.svg" alt="Dedicated Support" />
-                                    </div>
-                                    <div className="card-info">
-                                        <h5 className="color-white mb-20">Dedicated Support</h5>
-                                        <p className="font-sm color-white mb-0">
-                                            Dedicated partner manager and technical onboarding to ensure smooth collaboration.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="card-feature-2 h-100">
-                                    <div className="card-image">
-                                        <img src="/assets/imgs/page/homepage1/mobile.svg" alt="Co-Marketing" />
-                                    </div>
-                                    <div className="card-info">
-                                        <h5 className="color-white mb-20">Co-Marketing Support</h5>
-                                        <p className="font-sm color-white mb-0">
-                                            Co-marketing opportunities, case studies, and sales enablement materials.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="card-feature-2 h-100">
-                                    <div className="card-image">
-                                        <img src="/assets/imgs/page/homepage1/market.svg" alt="Flexible Terms" />
-                                    </div>
-                                    <div className="card-info">
-                                        <h5 className="color-white mb-20">Flexible Commercial Terms</h5>
-                                        <p className="font-sm color-white mb-0">
-                                            Flexible commercial structures for recurring or project-based work arrangements.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="card-feature-2 h-100">
-                                    <div className="card-image">
-                                        <img src="/assets/imgs/page/homepage1/development.svg" alt="Revenue Growth" />
-                                    </div>
-                                    <div className="card-info">
-                                        <h5 className="color-white mb-20">Revenue Growth</h5>
-                                        <p className="font-sm color-white mb-0">
-                                            Unlock new revenue streams without capital investment in annotation infrastructure.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                                </section>
 
-                {/* End-Client Benefits */}
+                                {/* End-Client Benefits */}
                 <section className="section mt-90 mb-90">
                     <div className="container">
                         <div className="text-center mb-60">
@@ -434,18 +468,15 @@ const Partners = () => {
                     <div className="container">
                         <div className="box-cover-border-2 p-60">
                             <div className="row align-items-center">
-                                <div className="col-lg-8 mb-30 mb-lg-0">
+                                <div className="col-lg-6 mb-30 mb-lg-0 text-center">
+                                    <img src="assets/imgs/page/homepage2/img-marketing.png" alt="Core Annotation" className="img-fluid" />
+                                </div>
+                                <div className="col-lg-6">
                                     <h2 className="color-brand-1 mb-25">Ready to Partner With Us?</h2>
-                                    <p className="font-lg color-grey-500 mb-0">
+                                    <p className="font-lg color-grey-500 mb-25">
                                         Join our partner ecosystem and unlock new revenue opportunities while delivering world-class AI solutions to your clients. Let's discuss how we can collaborate to accelerate your growth.
                                     </p>
-                                </div>
-                                <div className="col-lg-4 text-lg-end text-start">
-                                    <Link className="btn btn-brand-1 hover-up mb-20 d-inline-block" href="/contact">
-                                        Apply Now
-                                    </Link>
-                                    <br />
-                                    <Link className="btn btn-default hover-up d-inline-block" href="/help">
+                                    <Link className="btn btn-brand-1 hover-up d-inline-block" href="/contact">
                                         Schedule a Call
                                     </Link>
                                 </div>
