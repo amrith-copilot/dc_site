@@ -181,36 +181,14 @@ const pageAbout = () => {
                             <div className="row align-items-center">
                                 <div className="col-lg-6"><img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
                                 <div className="col-lg-6">
-                                    <div className="box-info-video"><span className="btn btn-tag">Get in touch</span>
-                                        <h2 className="color-brand-1 mt-15 mb-20">Want to talk to a marketing expert?</h2>
+                                    <h2 className="color-brand-1 mt-15 mb-20">Want to talk to a marketing expert?</h2>
                                         <p className="font-md color-grey-500">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla. Interactively transform magnetic growth strategies whereas prospective "outside the box" thinking.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up" href="#">Contact Us</Link><Link className="btn btn-default font-sm-bold hover-up" href="#">
-                                            Support Center
-                                            <svg className="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                            </svg></Link></div>
+                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section className="section mt-50">
-                    <div className="container">
-                        <div className="box-newsletter">
-                            <div className="row align-items-center">
-                                <div className="col-lg-5 col-md-12">
-                                    <div className="box-image-newsletter"> <img className="img-main" src="assets/imgs/template/newsletter_img.png" alt="iori" />
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-12"><span className="font-lg color-brand-1">Newsletter</span>
-                                    <h2 className="color-brand-1 mb-15 mt-5">Subcribe our newsletter</h2>
-                                    <p className="font-md color-grey-500">By clicking the button, you are agreeing with our Term &amp; Conditions</p>
-                                    <button class="contact-button">Contact Us</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </section>
             </Layout>
 
