@@ -174,12 +174,17 @@ const pageAbout = () => {
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/opencv.svg" alt="iori" /></div>
+                                    <div className="card-image"><img src="assets/images/tools/opencv.png" alt="iori" style={{maxWidth: '50%', margin: '0 auto'}} /></div>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/geti.svg" alt="iori" /></div>
+                                    <div className="card-image"><img src="assets/images/tools/geti.png" alt="iori" style={{maxWidth: '100%', height: 'auto'}} /></div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-sm-6">
+                                <div className="card-team mb-30">
+                                    <div className="card-image"><img src="assets/images/tools/Voxel51.png" alt="iori" style={{maxWidth: '100%', height: 'auto'}} /></div>
                                 </div>
                             </div>
                         </div>
