@@ -172,6 +172,16 @@ const pageAbout = () => {
                                     <div className="card-image"><img src="assets/images/tools/supervisely.png" alt="iori" /></div>
                                 </div>
                             </div>
+                            <div className="col-lg-3 col-md-4 col-sm-6">
+                                <div className="card-team mb-30">
+                                    <div className="card-image"><img src="assets/images/tools/opencv.svg" alt="iori" /></div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-sm-6">
+                                <div className="card-team mb-30">
+                                    <div className="card-image"><img src="assets/images/tools/geti.svg" alt="iori" /></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
