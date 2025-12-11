@@ -260,134 +260,172 @@ const ColectData = () => {
                             </div>
                         </div>
 
-                        {/* First Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="Cross Platform" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card">
+                                    <div className="card-header">
+                                        <div className="card-icon-inline">
+                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h5 className="color-brand-1 mb-15">Custom data collection programs</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-black-text mb-15">Custom data collection programs</h4>
-                                        <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                            <li>Design and execute end-to-end collection plans: target profile, recruitment, scripts/instruments, pilot runs, full capture and handoff.</li>
-                                        </ul>
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15 pl-15">
+                                            Design and execute end-to-end collection plans:
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15"style={{marginBottom: '15px', marginLeft: '15px'}}>
+                                            <li>Target profile definition</li>
+                                            <li>Recruitment</li>
+                                            <li>Scripts/instruments</li>
+                                            <li>Pilot runs</li>
+                                            <li>Full capture and handoff</li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage12/human1.png" 
-                                            alt="Project Management" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card">
+                                    <div className="card-header">
+                                        <div className="card-icon-inline">
+                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h5 className="color-brand-1 mb-15">Multimodal capture</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-black-text mb-15">Multimodal capture</h4>
-                                        <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
+                                    <div className="card-content">
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15">
                                             <li><strong>Text: </strong> web scraping, curated corpora, conversational transcripts, domain-specific corpora</li>
                                             <li><strong>Speech & audio: </strong> scripted/natural speech, environmental sounds, speaker metadata</li>
                                             <li><strong>Image & video: </strong>controlled shoots, crowdsourced capture, dashcam/robotics feeds</li>
                                             <li><strong>Sensor & telemetry: </strong>LIDAR, IMU, CANbus, time-series from industrial/automotive devices.</li>
-                                        </ul>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human3.png" 
-                                            alt="Analytics Dashboard" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card">
+                                    <div className="card-header">
+                                        <div className="card-icon-inline">
+                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h5 className="color-brand-1 mb-15">Panel & participant recruitment</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-black-text mb-15">Panel & participant recruitment</h4>
-                                        <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                            <li>Targeted recruitment for demographic, geographic and behavioral cohorts — screening, consent, incentives and scheduling.</li>
-                                        </ul>
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15 pl-15">
+                                            Targeted recruitment for demographic, geographic and behavioral cohorts
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text  mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
+                                            <li>Screening</li>
+                                            <li>Consent</li>
+                                            <li>Incentives</li>
+                                            <li>Scheduling</li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human2.png" 
-                                            alt="Team Collaboration" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card">
+                                    <div className="card-header">
+                                        <div className="card-icon-inline">
+                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h5 className="color-brand-1 mb-15">Annotation-ready collection</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-black-text mb-15">Annotation-ready collection</h4>
-                                        <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                            <li>Collect with annotation in mind: bounding boxes, segmentation masks, multi-label taxonomies, speaker timestamps, intent/slot markers.</li>
-                                        </ul>
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15 pl-15">
+                                            Collect with annotation in mind:
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
+                                            <li>Bounding boxes</li>
+                                            <li>Segmentation masks</li>
+                                            <li>Multi-label taxonomies</li>
+                                            <li>Speaker timestamps</li>
+                                            <li>Intent/slot markers</li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage12/human2.png" 
-                                            alt="Customer Support" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card">
+                                    <div className="card-header">
+                                        <div className="card-icon-inline">
+                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h5 className="color-brand-1 mb-15">Privacy-first data handling</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-black-text mb-15">Privacy-first data handling</h4>
-                                        <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                            <li>Consent management, PII minimization, secure storage, and options for differential privacy or on-prem/air-gapped transfers.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage12/human2.png" 
-                                            alt="Customer Support" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-black-text mb-15">Quality assurance & validation</h4>
-                                        <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                            <li>Multi-tier QA (automated checks + human review), inter-annotator agreement monitoring, sample audits and statistical validation reports.</li>
-                                        </ul>
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15 pl-15">
+                                            Privacy-first approach includes:
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
+                                            <li>Consent management</li>
+                                            <li>PII minimization</li>
+                                            <li>Secure storage</li>
+                                            <li>Differential privacy options</li>
+                                            <li>On-prem/air-gapped transfers</li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage12/human2.png" 
-                                            alt="Customer Support" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card">
+                                    <div className="card-header">
+                                        <div className="card-icon-inline">
+                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h5 className="color-brand-1 mb-15">Quality assurance & validation</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-black-text mb-15">Delivery & integration</h4>
-                                        <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                            <li>Custom formats, sample indices, metadata, API access, and integration support for ML pipelines and MLOps tools.</li>
-                                        </ul>
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15 pl-15">
+                                            Multi-tier quality assurance:
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
+                                            <li>Automated checks + human review</li>
+                                            <li>Inter-annotator agreement monitoring</li>
+                                            <li>Sample audits</li>
+                                            <li>Statistical validation reports</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4">
+                                <div className="text-showcase-card">
+                                    <div className="card-header">
+                                        <div className="card-icon-inline">
+                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h5 className="color-brand-1 mb-15">Delivery & integration</h5>
+                                    </div>
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15 pl-15">
+                                            Seamless delivery and support:
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
+                                            <li>Custom formats</li>
+                                            <li>Sample indices and metadata</li>
+                                            <li>API access</li>
+                                            <li>ML pipeline integration</li>
+                                            <li>MLOps tools </li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -395,15 +433,105 @@ const ColectData = () => {
                     </div>
 
                     <style jsx>{`
-                        /* Equal height cards styling */
-                        .row.mt-45 {
-                            display:
-                            .row.mt-45 .col-lg-4 {
-                                margin-bottom: 20px;
+                        /* Text-based cards styling */
+                        .text-showcase-card {
+                            background: #ffffff;
+                            border: 1px solid #e5e7eb;
+                            border-radius: 12px;
+                            padding: 24px;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+                        }
+
+                        .text-showcase-card:hover {
+                            transform: translateY(-4px);
+                            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+                            border-color: #2563eb;
+                        }
+
+                        .card-header {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                            margin-bottom: 0;
+                        }
+
+                        .card-icon-inline {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+                            background: rgba(37, 99, 235, 0.1);
+                            border-radius: 8px;
+                            flex-shrink: 0;
+                        }
+
+                        .card-header h5 {
+                            margin: 0;
+                            flex: 1;
+                        }
+
+                        .icon-blue {
+                            color: #2563eb;
+                        }
+
+                        .card-content {
+                            flex: 1;
+                            margin-top: 0;
+                        }
+
+                        .row.mt-45 .col-lg-4 {
+                            margin-bottom: 20px;
+                            display: flex;
+                            min-height: 100%;
+                        }
+
+                        .row.mt-45 .col-lg-4 .text-showcase-card {
+                            width: 100%;
+                        }
+
+                        @media (max-width: 991px) {
+                            .text-showcase-card {
+                                padding: 20px;
                             }
                             
-                            .image-showcase-card-dynamic {
-                                min-height: auto;
+                            .card-icon-inline {
+                                width: 36px;
+                                height: 36px;
+                            }
+                            
+                            .icon-blue {
+                                width: 20px;
+                                height: 20px;
+                            }
+                            
+                            .card-header {
+                                gap: 10px;
+                            }
+                        }
+
+                        @media (max-width: 767px) {
+                            .text-showcase-card {
+                                padding: 18px;
+                                margin-bottom: 16px;
+                            }
+                            
+                            .card-icon-inline {
+                                width: 32px;
+                                height: 32px;
+                            }
+                            
+                            .icon-blue {
+                                width: 18px;
+                                height: 18px;
+                            }
+                            
+                            .card-header {
+                                gap: 8px;
                             }
                         }
                     `}</style>
