@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import React from 'react';
+import Image from 'next/image';
 import Layout from '../components/layout/Layout';
 
 const pageAbout = () => {
@@ -174,7 +175,15 @@ const pageAbout = () => {
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/opencv.png" alt="iori" style={{maxWidth: '50%', margin: 'auto'}} /></div>
+                                    <div className="card-image">
+                                        <Image
+                                            src="/assets/images/tools/opencv.png"
+                                            alt="iori"
+                                            width={100}
+                                            height={100}
+                                            style={{ maxWidth: '50%', margin: 'auto' }}
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
