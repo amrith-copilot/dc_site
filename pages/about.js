@@ -11,40 +11,11 @@ const pageAbout = () => {
                 <title>iori - About Us</title>
             </Head>
             <Layout>
-                <section className="section pt-90 banner-about">
+                <section className="section pt-90 banner-about" >
                     <div className="container text-center">
                         <h6 className="color-grey-400 mb-15">Who we are</h6>
-                        <h2 className="color-brand-1 mb-15">We are a data-driven AI partner that solves the toughest data challenges<br className="d-none d-lg-block" /></h2>
-                        <p className="font-md color-grey-400 mb-30">High-quality training data powers true AI, <br className="d-none d-lg-block" /> and we make it accessible, reliable, and impactful.</p>
-                        <div className="box-radius-border mt-50">
-                            <div className="box-list-numbers">
-                                <div className="item-list-number">
-                                    <div className="box-image-bg"> <img src="assets/imgs/page/homepage3/dispersal.png" alt="iori" /></div>
-                                    <h2 className="color-brand-1">10M+</h2>
-                                    <p className="color-brand-1 font-lg">Annotations created</p>
-                                </div>
-                                <div className="item-list-number">
-                                    <div className="box-image-bg"> <img src="assets/imgs/page/homepage3/certification.png" alt="iori" /></div>
-                                    <h2 className="color-brand-1">5M+</h2>
-                                    <p className="color-brand-1 font-lg">Frames Annotated</p>
-                                </div>
-                                <div className="item-list-number">
-                                    <div className="box-image-bg"> <img src="assets/imgs/page/homepage1/cross2.png" alt="iori" /></div>
-                                    <h2 className="color-brand-1">60+</h2>
-                                    <p className="color-brand-1 font-lg">Team Members</p>
-                                </div>
-                                <div className="item-list-number">
-                                    <div className="box-image-bg"> <img src="assets/imgs/page/homepage3/research.png" alt="iori" /></div>
-                                    <h2 className="color-brand-1">4.7/5</h2>
-                                    <p className="color-brand-1 font-lg">Rating by Clients</p>
-                                </div>
-                                <div className="item-list-number">
-                                    <div className="box-image-bg"> <img src="assets/imgs/page/homepage3/conference.png" alt="iori" /></div>
-                                    <h2 className="color-brand-1">80+</h2>
-                                    <p className="color-brand-1 font-lg">Happy Clients</p>
-                                </div>
-                            </div>
-                        </div>
+                        <h2 className="color-brand-1 mb-15">We are a data-driven AI partner<br /> that solves the toughest data challenges<br className="d-none d-lg-block" /></h2>
+                        <p className="font-md color-grey-400 mb-30">We support teams building computer vision, NLP, and multimodal systems with precise annotation, rigorous QA, and efficient Human-in-the-Loop workflows. Our specialists, tools, and processes are designed to eliminate bottlenecks, increase data quality, and help you ship reliable models faster. Whether you're scaling a new dataset or refining an existing pipeline, <br />we provide the expertise and infrastructure to keep your AI moving forward.</p>
                     </div>
                 </section>
                 <section className="section mt-90 pb-50 bg-core-value">
@@ -52,8 +23,7 @@ const pageAbout = () => {
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
                                 <div className="box-core-value">
-                                    <div className="shape-left shape-1" />
-                                    <h3 className="color-brand-1 mb-15">Core values</h3>
+                                    <h2 className="color-brand-1 mb-15">Core values</h2>
                                     <p className="font-md color-grey-400">With transparent processes and human-powered augmentation, we build the data foundation for world-class AI.</p>
                                 </div>
                             </div>
@@ -107,9 +77,9 @@ const pageAbout = () => {
                 <section className="section mt-90">
                     <div className="container">
                         <div className="row align-items-start">
-                            <div className="col-lg-6">
+                            <div className="col-lg-8">
                                 <h2 className="color-brand-1 mb-50">Our toolstack </h2>
-                                <h6 className="color-brand-1 mb-20">We work with a number of opensource, 3rd party tools and our in house systems for annottions and Human in the Loop operations.</h6>
+                                <h6 className="color-brand-1 mb-20">We use a mix of open-source platforms, trusted third-party tools, and our own internal systems to support data annotation workflows and Human-in-the-Loop operations.</h6>
                             </div>
                         </div>
                         <div className="row align-items-start">
@@ -125,7 +95,7 @@ const pageAbout = () => {
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/argilla.png" alt="iori" /></div>
+                                    <div className="card-image"><img src="assets/images/tools/argilla.png" alt="iori" style={{ position: 'relative', top: '50px' }} /></div>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
@@ -175,25 +145,17 @@ const pageAbout = () => {
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="card-team mb-30">
-                                    <div className="card-image">
-                                        <Image
-                                            src="/assets/images/tools/opencv.png"
-                                            alt="iori"
-                                            width={100}
-                                            height={100}
-                                            style={{ maxWidth: '50%', margin: 'auto' }}
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-4 col-sm-6">
-                                <div className="card-team mb-30">
                                     <div className="card-image"><img src="assets/images/tools/geti.png" alt="iori" style={{maxWidth: '100%', height: 'auto'}} /></div>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="card-team mb-30">
                                     <div className="card-image"><img src="assets/images/tools/Voxel51.png" alt="iori" style={{maxWidth: '100%', height: 'auto'}} /></div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-sm-6">
+                                <div className="card-team mb-30">
+                                    <div className="card-image"><img src="assets/images/tools/Opencv.png" alt="iori" style={{maxWidth: '50%', height: '20', transform: 'translateY(-10px)'}} /></div>
                                 </div>
                             </div>
                         </div>
@@ -205,8 +167,8 @@ const pageAbout = () => {
                             <div className="row align-items-center">
                                 <div className="col-lg-6"><img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
                                 <div className="col-lg-6">
-                                    <h2 className="color-brand-1 mt-15 mb-20">Want to talk to a marketing expert?</h2>
-                                        <p className="font-md color-grey-500">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla. Interactively transform magnetic growth strategies whereas prospective "outside the box" thinking.</p>
+                                    <h2 className="color-brand-1 mt-15 mb-20">Unlock Higher-Quality Training Data</h2>
+                                        <p className="font-md color-grey-500">From one-off projects to fully managed pipelines, our specialists help you scale with precision and speed. Contact us to explore how we can support your AI initiatives</p>
                                         <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>

@@ -86,7 +86,7 @@ const Sidebar = ({ openClass, handleRemove }) => {
                     {/* Close button */}
                     <div className="mobile-header-top">
                         <div className="mobile-header-logo">
-                            <Link href="/"><img alt="Logo" src="/assets/logo_name.svg" style={{ height: '28px', width: 'auto' }} /></Link>
+                            <Link href="/"><img alt="Logo" src="/assets/DC_Full_B.svg" style={{ height: '28px', width: 'auto' }} /></Link>
                         </div>
                         <button className="mobile-menu-close" onClick={handleRemove} aria-label="Close menu">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
