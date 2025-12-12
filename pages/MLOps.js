@@ -15,9 +15,9 @@ const MLOps = () => {
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <span className="title-line color-black-text">ML Momentum</span>
+                                    <span className="title-line color-black-text">MLOps</span>
                                     <h2 className="color-black-text mt-10">
-                                        Streamline Your Machine Learning Lifecycle
+                                        ML Momentum
                                     </h2>
                                 </div>
                                 <div className="col-lg-6 mb-20">
@@ -105,64 +105,55 @@ const MLOps = () => {
                         {/* First Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="MLOps Assessment" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div className="card-header" style={{ marginBottom: '20px' }}>
+                                        <h5 className="color-brand-1 mb-15">MLOps Assessment and Strategy</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">MLOps Assessment and Strategy</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15">
+                                            Evaluate and optimize your ML development and deployment processes
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                             <li>Evaluate current ML development and deployment processes</li>
                                             <li>Identify gaps in the ML lifecycle management</li>
                                             <li>Develop a tailored MLOps implementation plan</li>
-                                        </ul>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human2.png" 
-                                            alt="ML Pipeline Automation" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div className="card-header" style={{ marginBottom: '20px' }}>
+                                        <h5 className="color-brand-1 mb-15">ML Pipeline Automation</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">ML Pipeline Automation</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15">
+                                            Design and implement end-to-end automated ML pipelines
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                             <li>Design and implement end-to-end ML pipelines</li>
                                             <li>Automate data preprocessing, feature engineering, and model training</li>
                                             <li>Set up continuous integration for ML models</li>
-                                        </ul>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human3.png" 
-                                            alt="Model Versioning" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div className="card-header" style={{ marginBottom: '20px' }}>
+                                        <h5 className="color-brand-1 mb-15">Model Versioning and Experiment Tracking</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Model Versioning and Experiment Tracking</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15">
+                                            Implement version control and experiment tracking for ML models
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                             <li>Implement version control for ML models and datasets</li>
                                             <li>Set up experiment tracking and management systems</li>
                                             <li>Enable reproducibility of ML experiments</li>
-                                        </ul>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -171,44 +162,124 @@ const MLOps = () => {
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Model Deployment" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div className="card-header" style={{ marginBottom: '20px' }}>
+                                        <h5 className="color-brand-1 mb-15">Model Deployment and Serving</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Model Deployment and Serving</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15">
+                                            Automate and scale model deployment processes
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                             <li>Automate model deployment processes</li>
                                             <li>Implement scalable model serving solutions</li>
                                             <li>Set up A/B testing and canary deployments for ML models</li>
-                                        </ul>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="ML Development" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
+                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div className="card-header" style={{ marginBottom: '20px' }}>
+                                        <h5 className="color-brand-1 mb-15">ML Development</h5>
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">ML Development</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                    <div className="card-content">
+                                        <div className="font-md color-black-text mb-15">
+                                            Custom ML model development and optimization
+                                        </div>
+                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                             <li>Custom Model Development</li>
                                             <li>ML Model Optimization</li>
                                             <li>ML Model Integration, Training & Validation</li>
-                                        </ul>
+                                        </ol>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="section mt-70 pt-60 pb-60 ">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center mb-40">
+                                <h2 className="color-brand-1 mb-20">Advantages of Adopting MLOps</h2>
+                                <p className="font-lg max-width-600 mx-auto color-grey-500">
+                                    Unlock the full potential of your machine learning systems
+                                </p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            {/* Card 1 */}
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div style={{marginBottom: '15px'}}>
+                                        <img src="/assets/images/tools/pipe.svg" alt="Automated Pipeline" style={{width: '32px', height: '32px'}} />
+                                    </div>
+                                    <h5 className="color-brand-1 mb-15">Automated Pipeline</h5>
+                                    <p className="font-md color-black-text">
+                                        Streamlined machine learning pipelines automate data preprocessing, model training, and deployment processes, significantly reducing manual intervention and errors.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* Card 2 */}
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div style={{marginBottom: '15px'}}>
+                                        <img src="/assets/images/tools/monitor.svg" alt="Model Monitoring" style={{width: '32px', height: '32px'}} />
+                                    </div>
+                                    <h5 className="color-brand-1 mb-15">Model Monitoring</h5>
+                                    <p className="font-md color-black-text">
+                                        Continuous tracking of model performance and data drift ensures AI systems maintain accuracy and reliability in production environments.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* Card 3 */}
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div style={{marginBottom: '15px'}}>
+                                        <img src="/assets/images/tools/version.svg" alt="Version Control" style={{width: '32px', height: '32px'}} />
+                                    </div>
+                                    <h5 className="color-brand-1 mb-15">Version Control</h5>
+                                    <p className="font-md color-black-text">
+                                        Systematic tracking of datasets, model parameters, and code versions enables reproducible experiments and efficient collaboration among data scientists.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* Card 4 */}
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div style={{marginBottom: '15px'}}>
+                                        <img src="/assets/images/tools/expand.svg" alt="Scalable Infrastructure" style={{width: '32px', height: '32px'}} />
+                                    </div>
+                                    <h5 className="color-brand-1 mb-15">Scalable Infrastructure</h5>
+                                    <p className="font-md color-black-text">
+                                        Dynamic resource allocation and containerized environments support efficient model training and serving across different computing infrastructures.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* Card 5 */}
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div style={{marginBottom: '15px'}}>
+                                        <img src="/assets/images/tools/account.svg" alt="Data Governance" style={{width: '32px', height: '32px'}} />
+                                    </div>
+                                    <h5 className="color-brand-1 mb-15">Data Governance</h5>
+                                    <p className="font-md color-black-text">
+                                        Automated data validation, lineage tracking, and quality checks ensure models are trained on reliable, consistent, and compliant datasets.
+                                    </p>
+                                </div>
+                            </div>
+                            {/* Card 6 */}
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                                    <div style={{marginBottom: '15px'}}>
+                                        <img src="/assets/images/tools/continous.svg" alt="Continuous Training" style={{width: '32px', height: '32px'}} />
+                                    </div>
+                                    <h5 className="color-brand-1 mb-15">Continuous Training</h5>
+                                    <p className="font-md color-black-text">
+                                        Automated retraining pipelines keep models updated with fresh data, maintaining optimal performance and adapting to changing patterns.
+                                    </p>
                                 </div>
                             </div>
                         </div>

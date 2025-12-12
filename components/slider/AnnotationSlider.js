@@ -28,7 +28,7 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
 
                     <Swiper
                         slidesPerView={4}
-                        spaceBetween={30}
+                        spaceBetween={20}
                         loop={true}
                         autoplay={{
                             delay: 2500,
@@ -40,12 +40,12 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                             nextEl: `.${nextClass}`,
                         }}
                         breakpoints={{
-                            320: { slidesPerView: 1 },
-                            575: { slidesPerView: 1 },
-                            767: { slidesPerView: 1 },
-                            991: { slidesPerView: 2 },
-                            1199: { slidesPerView: 3 },
-                            1350: { slidesPerView: 4 },
+                            320: { slidesPerView: 1, spaceBetween: 20 },
+                            575: { slidesPerView: 1, spaceBetween: 20 },
+                            767: { slidesPerView: 1, spaceBetween: 20 },
+                            991: { slidesPerView: 2, spaceBetween: 20 },
+                            1199: { slidesPerView: 3, spaceBetween: 20 },
+                            1350: { slidesPerView: 4, spaceBetween: 20 },
                         }}
                         className="swiper-annotation"
                     >
@@ -77,8 +77,15 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
             </section>
 
             <style jsx>{`
+                .swiper-annotation {
+                    padding: 0 !important;
+                }
+                .swiper-annotation .swiper-slide {
+                    display: flex;
+                    align-items: stretch;
+                }
                 .annotation-card {
-                    min-height: 200px;
+                    height: 140px;
                     padding: 30px;
                     background: white;
                     border-radius: 14px;
@@ -88,11 +95,13 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     justify-content: center;
                     text-align: center;
                     transition: 0.3s ease;
+                    width: 100%;
                 }
                 .annotation-card-content {
                     display: flex;
                     flex-direction: column;
                     gap: 12px;
+                    width: 100%;
                 }
                 .annotation-card-title {
                     color: #0017e3;
