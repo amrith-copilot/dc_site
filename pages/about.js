@@ -174,7 +174,7 @@ const pageAbout = () => {
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/opencv.png" alt="iori" style={{maxWidth: '50%', margin: '0 auto'}} /></div>
+                                    <div className="card-image"><img src="assets/images/tools/opencv.png" alt="iori" style={{maxWidth: '50%', margin: 'auto'}} /></div>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
