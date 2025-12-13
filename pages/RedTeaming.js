@@ -282,8 +282,12 @@ const RedTeaming = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-6"><img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-4">
+                                    <div className="image-container">
+                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" />
+                                    </div>
+                                </div>
+                                <div className="col-lg-8">
                                     <div className="box-info-video">
                                         <h2 className="color-brand-1 mt-15 mb-20">Make Your AI Safer, Smarter, and More Reliable</h2>
                                         <p className="font-md color-grey-500">Red Teaming is the difference between hoping your AI is safe and knowing it is. With us as your partner, you’ll deploy AI systems that are stronger, more trustworthy, and ready for real-world challenges.</p>

@@ -220,8 +220,12 @@ const RLHF = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-6"><img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-4">
+                                    <div className="image-container">
+                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" />
+                                    </div>
+                                </div>
+                                <div className="col-lg-8">
                                     <div className="box-info-video">
                                         <h2 className="color-brand-1 mt-15 mb-20">Align Your AI Models with Human Values</h2>
                                         <p className="font-md color-grey-500">Build safer, more reliable AI systems with our scalable RLHF pipelines. From preference ranking to policy shaping, we provide the human feedback your models need to align with your safety and compliance requirements.</p>

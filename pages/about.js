@@ -165,8 +165,12 @@ const pageAbout = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-6"><img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" /></div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-4">
+                                    <div className="image-container">
+                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" />
+                                    </div>
+                                </div>
+                                <div className="col-lg-8">
                                     <h2 className="color-brand-1 mt-15 mb-20">Unlock Higher-Quality Training Data</h2>
                                         <p className="font-md color-grey-500">From one-off projects to fully managed pipelines, our specialists help you scale with precision and speed. Contact us to explore how we can support your AI initiatives</p>
                                         <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
