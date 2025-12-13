@@ -9,14 +9,38 @@ const ADAS = () => {
 
     // Slider data for ADAS annotation capabilities
     const annotationItems = [
-        { title: "HD Map Feature Labelling" },
-        { title: "Intersection Complexity Annotation" },
-        { title: "Weather & Illumination Condition Tagging" },
-        { title: "Vehicle Pose & Orientation Estimation" },
-        { title: "Behavior & Intent Tagging" },
-        { title: "Road-Work & Temporary Structure Labelling" },
-        { title: "Occlusion & Visibility Scoring" },
-        { title: "Anomaly & Edge-Case Tagging" }
+        { 
+            title: "HD Map Feature Labelling",
+            description: "Extract curbs, poles, barriers and road geometry for HD map creation."
+        },
+        { 
+            title: "Intersection Complexity Annotation",
+            description: "Tag merging paths, turn pockets and crossing zones."
+        },
+        { 
+            title: "Weather & Illumination Condition Tagging",
+            description: "Classify rain, fog, night, glare and low-visibility conditions."
+        },
+        { 
+            title: "Vehicle Pose & Orientation Estimation",
+            description: "Annotate heading, rotation and spatial alignment for 3D understanding."
+        },
+        { 
+            title: "Behavior & Intent Tagging",
+            description: "Label cues for predicting actions of VRUs and vehicles."
+        },
+        { 
+            title: "Road-Work & Temporary Structure Labelling",
+            description: "Identify cones, barricades, temporary lanes and work-zone layouts."
+        },
+        { 
+            title: "Occlusion & Visibility Scoring",
+            description: "Mark partial, full or dynamic occlusions across objects and scenes."
+        },
+        { 
+            title: "Anomaly & Edge-Case Tagging",
+            description: "Surface rare events like unusual objects, unpredictable behavior or sensor irregularities."
+        }
     ];
     return (
         <Layout>
@@ -26,11 +50,7 @@ const ADAS = () => {
                     <div className="container">
                         <div className="mt-100 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                <span className="title-line color-black-text">ADAS</span>
-                                
-                                        
-                               
+                                <div className="col-lg-6 mb-20">                               
                                 <h3 className="color-black-text mt-10 mb-30">High-Precision Training Data for Smart <br />and Autonomous Mobility</h3>
                                 </div>
                  
@@ -66,7 +86,7 @@ const ADAS = () => {
                                 <div className="image-showcase-card-dynamic">
                                     <div className="image-showcase-top-dynamic">
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/imgs/page/homepage6/adas-pedestrian.jpg" 
                                             alt="Lane Detection" 
                                             className="image-showcase-photo-dynamic"
                                         />
