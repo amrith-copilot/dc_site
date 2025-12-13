@@ -104,7 +104,7 @@ const ADAS = () => {
                                 <div className="image-showcase-card-dynamic">
                                     <div className="image-showcase-top-dynamic">
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/imgs/page/homepage6/adas-pedestrian.jpg" 
                                             alt="Vehicle Detection" 
                                             className="image-showcase-photo-dynamic"
                                         />

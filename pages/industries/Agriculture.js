@@ -9,14 +9,14 @@ const Agriculture = () => {
 
     // Slider data for Agriculture annotation capabilities
     const annotationItems = [
-        { title: "Soil Texture & Moisture Condition Tagging" },
-        { title: "Plant Density & Canopy Coverage Analysis" },
-        { title: "Harvest Readiness Assessment" },
-        { title: "Row Alignment & Spacing Validation" },
-        { title: "Machinery Operation State Detection" },
-        { title: "Environmental Condition Annotation" },
-        { title: "Water Stress & Drought Pattern Tagging" },
-        { title: "Edge-Case & Rare Event Identification" }
+        { title: "Soil Texture & Moisture Condition Tagging", description: "Qualify soil type, compaction, wetness and irrigation status." },
+        { title: "Plant Density & Canopy Coverage Analysis", description: "Measure stand count and canopy spread for seeding and spacing optimization." },
+        { title: "Harvest Readiness Assessment", description: "Determine ripeness levels and maturity thresholds for various crops." },
+        { title: "Row Alignment & Spacing Validation", description: "Verify planting uniformity and detect row deviations." },
+        { title: "Machinery Operation State Detection", description: "Identify implement engagement, working states and mechanical anomalies." },
+        { title: "Environmental Condition Annotation", description: "Record sunlight, cloud cover, dust levels and field microclimates." },
+        { title: "Water Stress & Drought Pattern Tagging", description: "Label dry patches and irrigation inefficiencies." },
+        { title: "Edge-Case & Rare Event Identification", description: "Flag atypical crop behavior, equipment failures and environmental abnormalities." }
     ];
     return (
         <Layout>
@@ -26,7 +26,6 @@ const Agriculture = () => {
                     <div className="container">
                         <div className="mt-100 mb-100">
                             <div className="row align-items-start">
-                                <span className="title-line color-black-text mb-10">Agriculture</span>
                                 <div className="col-lg-6 mb-20">
                                     <h3 className="color-black-text mt-10">
                                        Agriculture AI Training Data <br />for Crop Intelligence, Field Robotics <br /> and Precision Farming

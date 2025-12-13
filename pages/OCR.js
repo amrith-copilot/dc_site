@@ -14,7 +14,7 @@ const OCR = () => {
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <span className="title-line color-black-text">OCR/IDP</span>
+
                                     <h3 className="color-black-text mt-10">
                                     Scan → Extract → Validate → Deliver.
                                 </h3>

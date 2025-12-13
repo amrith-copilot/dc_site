@@ -9,14 +9,14 @@ const AssetManagement = () => {
 
     // Slider data for Asset Management annotation capabilities
     const annotationItems = [
-        { title: "Lifecycle Stage Annotation" },
-        { title: "Asset Utilization Pattern Analysis" },
-        { title: "Risk & Severity Scoring" },
-        { title: "Compliance Documentation Tagging" },
-        { title: "Spatial Localization & Mapping" },
-        { title: "Environmental Impact Metadata" },
-        { title: "Maintenance Workflow Event Tagging" },
-        { title: "Rare Failure & Edge-Case Identification" }
+        { title: "Lifecycle Stage Annotation", description: "Tag commissioning, active use, maintenance, and end-of-life phases." },
+        { title: "Asset Utilization Pattern Analysis", description: "Map usage cycles, idle patterns and operational intensity." },
+        { title: "Risk & Severity Scoring", description: "Classify potential impact levels for defect categories." },
+        { title: "Compliance Documentation Tagging", description: "Organize inspection logs, audit events and regulatory checkpoints." },
+        { title: "Spatial Localization & Mapping", description: "Associate assets with GPS coordinates, zones or facility sections." },
+        { title: "Environmental Impact Metadata", description: "Capture temperature, humidity, dust and external exposure conditions." },
+        { title: "Maintenance Workflow Event Tagging", description: "Label repair actions, follow-ups and scheduling dependencies." },
+        { title: "Rare Failure & Edge-Case Identification", description: "Flag unusual operational anomalies and abnormal behavior patterns." }
     ];
     return (
         <Layout>
@@ -26,7 +26,6 @@ const AssetManagement = () => {
                     <div className="container">
                         <div className="mt-100 mb-100">
                             <div className="row align-items-start">
-                                <span className="title-line color-black-text mb-10">Asset management</span>
                                 <div className="col-lg-6 mb-20">
                                     <h4 className="color-black-text mt-10">
                                        AI Training Data for Asset Management, Predictive Maintenance and Infrastructure Monitoring

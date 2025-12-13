@@ -85,7 +85,7 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     align-items: stretch;
                 }
                 .annotation-card {
-                    height: 140px;
+                    height: 155px;
                     padding: 30px;
                     background: white;
                     border-radius: 14px;

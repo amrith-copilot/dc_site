@@ -9,14 +9,14 @@ const Retail = () => {
 
     // Slider data for Retail annotation capabilities
     const annotationItems = [
-        { title: "Planogram Compliance Scoring" },
-        { title: "Customer–Product Interaction Labeling" },
-        { title: "Fixture & Display Condition Tagging" },
-        { title: "Checkout Behavior Modeling" },
-        { title: "POS Event Correlation Metadata" },
-        { title: "Staff Activity Categorization" },
-        { title: "Environmental Condition Annotation" },
-        { title: "Rare Event & Edge-Case Identification" }
+        { title: "Planogram Compliance Scoring", description: "Evaluate adherence to layout, placement rules and brand guidelines." },
+        { title: "Customer–Product Interaction Labeling", description: "Track product pickups, returns, dwell times and engagement levels." },
+        { title: "Fixture & Display Condition Tagging", description: "Record display damage, missing signage and merchandising issues." },
+        { title: "Checkout Behavior Modeling", description: "Label scanning patterns, bagging sequences and checkout anomalies." },
+        { title: "POS Event Correlation Metadata", description: "Map visual events to transaction logs for fraud and shrink analysis." },
+        { title: "Staff Activity Categorization", description: "Classify stocking, cleaning, assisting and operational workflows." },
+        { title: "Environmental Condition Annotation", description: "Note lighting, reflection, occlusion and camera-visibility variations." },
+        { title: "Rare Event & Edge-Case Identification", description: "Tag unusual shopper actions, equipment failures or irregular store events." }
     ];
     return (
         <Layout>
@@ -26,7 +26,6 @@ const Retail = () => {
                     <div className="container">
                         <div className="mt-100 mb-100">
                             <div className="row align-items-start">
-                                <span className="title-line color-black-text mb-10">Retail</span>
                                 <div className="col-lg-6 mb-20">
                                     <h3 className="color-black-text mt-10">
                                         AI Training Data for Retail Vision, Store Analytics and Physical Commerce Automation  </h3>
