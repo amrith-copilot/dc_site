@@ -220,8 +220,8 @@ const VoiceAI = () => {
                         <div className="box-cover-border">
                             <div className="row align-items-center">
                                 <div className="col-lg-4">
-                                    <div className="image-container">
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Voice AI Solutions" />
+                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
+                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Voice AI Solutions" style={{width: '100%', height: 'auto'}} />
                                     </div>
                                 </div>
                                 <div className="col-lg-8">

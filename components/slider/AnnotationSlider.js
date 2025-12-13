@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 SwiperCore.use([Autoplay, Navigation]);
+
+/**
+ * Auto-adjusts text size based on content length and available space
+ */
+const useAutoTextSize = () => {
+    const adjustTextSize = (element) => {
+        if (!element) return;
+        
+        const textLength = element.textContent.length;
+        let fontSize;
+        
+        if (textLength <= 20) {
+            fontSize = '16px';
+        } else if (textLength <= 40) {
+            fontSize = '15px';
+        } else if (textLength <= 60) {
+            fontSize = '14px';
+        } else {
+            fontSize = '13px';
+        }
+        
+        element.style.fontSize = fontSize;
+    };
+    
+    return adjustTextSize;
+};
 
 /**
  * Reusable Annotation Slider Component
@@ -14,10 +40,25 @@ SwiperCore.use([Autoplay, Navigation]);
 const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
     const prevClass = `${navId}-prev`;
     const nextClass = `${navId}-next`;
+    const adjustTextSize = useAutoTextSize();
+    const swiperRef = useRef(null);
+    
+    useEffect(() => {
+        // Auto-adjust text sizes after component mounts
+        const timer = setTimeout(() => {
+            const titles = document.querySelectorAll(`.${navId} .annotation-card-title`);
+            const descriptions = document.querySelectorAll(`.${navId} .annotation-card p`);
+            
+            titles.forEach(adjustTextSize);
+            descriptions.forEach(adjustTextSize);
+        }, 100);
+        
+        return () => clearTimeout(timer);
+    }, [adjustTextSize, navId]);
 
     return (
         <>
-            <section className="section mt-100 pt-60 pb-60 bg-grey-60">
+            <section className={`section mt-100 pt-60 pb-60 ${navId}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 text-center">
@@ -85,7 +126,7 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     align-items: stretch;
                 }
                 .annotation-card {
-                    height: 155px;
+                    height: 180px;
                     padding: 30px;
                     background: white;
                     border-radius: 14px;

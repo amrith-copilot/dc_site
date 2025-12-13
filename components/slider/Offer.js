@@ -1,9 +1,46 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 SwiperCore.use([Autoplay, Navigation]);
+
+/**
+ * Auto-adjusts text size based on content length and available space
+ */
+const useAutoTextSize = () => {
+    const adjustTextSize = (element) => {
+        if (!element) return;
+        
+        const textLength = element.textContent.length;
+        let fontSize;
+        
+        if (textLength <= 20) {
+            fontSize = '16px';
+        } else if (textLength <= 40) {
+            fontSize = '15px';
+        } else if (textLength <= 60) {
+            fontSize = '14px';
+        } else {
+            fontSize = '13px';
+        }
+        
+        element.style.fontSize = fontSize;
+    };
+    
+    return adjustTextSize;
+};
+
 const Offer = () => {
+    const adjustTextSize = useAutoTextSize();
+    
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            const titles = document.querySelectorAll('.offer1 .annotation-card-title');
+            titles.forEach(adjustTextSize);
+        }, 100);
+        
+        return () => clearTimeout(timer);
+    }, [adjustTextSize]);
 
     const data = [
         {
@@ -30,62 +67,36 @@ const Offer = () => {
 
 
     return (
-        <>
+        <div className="offer1">
             <Swiper
                 slidesPerView={4}
-                spaceBetween={30}
+                spaceBetween={20}
                 loop={true}
                 autoplay={{
                     delay: 2500,
-                    disableOnInteraction: false
+                    disableOnInteraction: false,
+                    reverseDirection: false,
                 }}
                 navigation={{
-                    prevEl: ".swiper-button-prev",
-                    nextEl: ".swiper-button-next",
+                    prevEl: ".offer1-prev",
+                    nextEl: ".offer1-next",
                 }}
                 breakpoints={{
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 30,
-                    },
-                    575: {
-                        slidesPerView: 1,
-                        spaceBetween: 30,
-                    },
-                    767: {
-                        slidesPerView: 1,
-                        spaceBetween: 30,
-                    },
-                    991: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
-                    },
-                    1199: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
-                    1350: {
-                        slidesPerView: 4,
-                        spaceBetween: 30,
-                    },
+                    320: { slidesPerView: 1, spaceBetween: 20 },
+                    575: { slidesPerView: 1, spaceBetween: 20 },
+                    767: { slidesPerView: 1, spaceBetween: 20 },
+                    991: { slidesPerView: 2, spaceBetween: 20 },
+                    1199: { slidesPerView: 3, spaceBetween: 20 },
+                    1350: { slidesPerView: 4, spaceBetween: 20 },
                 }}
-                className="swiper-wrapper"
+                className="swiper-annotation"
             >
                 {data.map((item, i) => (
-                    <SwiperSlide className={`swiper-slide ${item.color}`}>
-                        <div className="card-offer-style-3">
-                            <div className="card-head">
-                                <div className="card-image"><img src={`assets/imgs/page/homepage1/${item.img}`} alt="iori" /></div>
-                                <div className="carrd-title">
-                                    <h4 className="color-brand-1">{item.title}</h4>
-                                </div>
-                            </div>
-                            <div className="card-info">
-                                <p className="font-sm color-grey-500 mb-15">Discover powerful features to boost your productivit. You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.</p>
-                                <div className="box-button-offer"><a className="btn btn-default font-sm-bold pl-0 color-brand-1 hover-up">Learn More
-                                    <svg className="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg></a></div>
+                    <SwiperSlide key={i}>
+                        <div className="annotation-card">
+                            <div className="annotation-card-content">
+                                <h6 className="annotation-card-title">{item.title}</h6>
+                                <p>Discover powerful features to boost your productivity. You are always welcome to visit our little den. Professional in their craft! All products were super amazing with strong attention to details, comps and overall vibe.</p>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -93,20 +104,89 @@ const Offer = () => {
 
 
             </Swiper>
-            <div className="box-button-slider-bottom">
-                <div className="swiper-button-prev swiper-button-prev-group-4">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            <div className="annotation-nav">
+                <div className="offer1-prev">
+                    <svg width="26" height="26" fill="none" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                     </svg>
                 </div>
-                <div className="swiper-button-next swiper-button-next-group-4">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                <div className="offer1-next">
+                    <svg width="26" height="26" fill="none" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                     </svg>
                 </div>
             </div>
 
-        </>
+            <style jsx>{`
+                .swiper-annotation {
+                    padding: 0 !important;
+                }
+                .swiper-annotation .swiper-slide {
+                    display: flex;
+                    align-items: stretch;
+                }
+                .annotation-card {
+                    height: 200px;
+                    padding: 30px;
+                    background: white;
+                    border-radius: 14px;
+                    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    text-align: left;
+                    transition: 0.3s ease;
+                    width: 100%;
+                }
+                .annotation-card-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    width: 100%;
+                }
+                .annotation-card-title {
+                    color: #0017e3;
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin: 0;
+                    line-height: 1.4;
+                }
+                .annotation-card p {
+                    margin: 0;
+                    color: #666;
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+                .annotation-card:hover {
+                    transform: translateY(-6px);
+                    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+                }
+                .annotation-nav {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    margin-top: 30px;
+                }
+                .offer1-prev,
+                .offer1-next {
+                    width: 46px;
+                    height: 46px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background: white;
+                    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+                .offer1-prev:hover,
+                .offer1-next:hover {
+                    transform: scale(1.1);
+                }
+            `}</style>
+
+        </div>
     );
 };
 
