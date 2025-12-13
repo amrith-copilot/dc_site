@@ -382,7 +382,7 @@ const OCR = () => {
                                     <section className="section mt-100">
                                         <div className="container">
                                             <div className="row">
-                                                <div className="col-lg-12 text-start">
+                                                <div className="col-lg-12 text-center">
                                                     <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
                                                     <p className="font-lg color-gray-500">
                                                         What makes us different from others? We give holistic solutions
@@ -495,8 +495,8 @@ const OCR = () => {
                         <div className="box-cover-border">
                             <div className="row align-items-center">
                                 <div className="col-lg-4">
-                                    <div className="image-container">
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" />
+                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
+                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
                                     </div>
                                 </div>
                                 <div className="col-lg-8">

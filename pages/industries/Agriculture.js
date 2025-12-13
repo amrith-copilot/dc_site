@@ -217,7 +217,9 @@ const Agriculture = () => {
                         <div className="box-cover-border">
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
-                                    <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Agriculture Solutions" />
+                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
+                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Agriculture Solutions" style={{width: '100%', height: 'auto'}} />
+                                    </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="box-info-video">

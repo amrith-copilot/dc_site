@@ -333,8 +333,8 @@ const DevOps = () => {
                         <div className="box-cover-border">
                             <div className="row align-items-center">
                                 <div className="col-lg-4">
-                                    <div className="image-container">
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" />
+                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
+                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
                                     </div>
                                 </div>
                                 <div className="col-lg-8">
