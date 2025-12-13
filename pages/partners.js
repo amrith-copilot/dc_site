@@ -25,7 +25,7 @@ const Partners = () => {
                                 </div>
                             </div>
                             <div className="col-lg-5 text-center mt-50 mt-lg-0">
-                                <img src="assets/imgs/page/homepage1/banner.png" alt="Partners" className="img-fluid" />
+                                <img src="/assets/imgs/page/partner/handshake.jpg" alt="Partners" className="img-fluid" />
                             </div>
                         </div>
                     </div>
