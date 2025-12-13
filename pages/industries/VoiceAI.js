@@ -9,30 +9,14 @@ const VoiceAI = () => {
 
     // Slider data for Voice AI annotation capabilities
     const annotationItems = [
-        {
-            title: "Accent/Dialect Tagging"
-        },
-        {
-            title: "Prompt/Response Linking"
-        },
-        {
-            title: "Topic Clustering"
-        },
-        {
-            title: "Context Window Labeling"
-        },
-        {
-            title: "Call Outcome Metadata"
-        },
-        {
-            title: "Multilingual Utterance Classification"
-        },
-        {
-            title: "Acoustic Feature Tagging"
-        },
-        {
-            title: "Rare Speech Anomalies"
-        }
+        { title: "Accent/Dialect Tagging", description: "Capture variations across regional accents (e.g., Southern US, Scottish, Singaporean English)." },
+        { title: "Prompt/Response Linking", description: "Map user queries to system replies for conversational context training." },
+        { title: "Topic Clustering", description: "Group utterances under domains like banking, travel, healthcare, or support." },
+        { title: "Context Window Labeling", description: "Annotate dependencies across multiple turns in a conversation." },
+        { title: "Call Outcome Metadata", description: "Tag resolution outcomes (successful, escalated, unresolved)." },
+        { title: "Multilingual Utterance Classification", description: "Identify language switches and code-mixing (e.g., Hinglish, Spanglish)." },
+        { title: "Acoustic Feature Tagging", description: "Label pitch, intensity, background hum, and other acoustic signatures." },
+        { title: "Rare Speech Anomalies", description: "Capture stutters, clipped audio, overlapping speech or microphone distortion." }
     ];
     return (
         <Layout>
@@ -43,7 +27,6 @@ const VoiceAI = () => {
                         <div className="mt-100 mb-100">
                         <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
-                                <span className="title-line color-black-text">Voice AI</span>
                                 
                                         
                                

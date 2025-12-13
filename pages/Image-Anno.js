@@ -14,7 +14,6 @@ const ImageAnno = () => {
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <span className="title-line color-black-text">Image Annotation</span>
                                     <h2 className="color-black-text mt-10">
                                         Make the most of your <br />Image Data
                                     </h2>

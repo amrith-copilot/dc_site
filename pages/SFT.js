@@ -16,7 +16,6 @@ const SFT = () => {
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <span className="title-line color-black-text">Supervised Fine-Tuning (SFT) Services</span>
                                     <h2 className="color-black-text mt-10">
                                         Transform Pre-Trained AI Models Into Domain-Ready Solutions
                                     </h2>

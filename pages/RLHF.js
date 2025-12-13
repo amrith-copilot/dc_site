@@ -14,7 +14,6 @@ const RLHF = () => {
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
-                                    <span className="title-line color-black-text">RLHF</span>
                                     <h2 className="color-black-text mt-10">
                                         Aligned Models Through Human-Driven Reinforcement
                                     </h2>

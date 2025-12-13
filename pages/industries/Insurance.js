@@ -10,14 +10,22 @@ const Insurance = () => {
 
     // Slider data for Insurance annotation capabilities
     const annotationItems = [
-        { title: "Underwriting Risk Scoring" },
-        { title: "Document Consistency Verification" },
-        { title: "Policy Metadata Extraction" },
-        { title: "Historical Claims Classification" },
-        { title: "Incident Severity Tiering" },
-        { title: "Environmental Hazard Tagging" },
-        { title: "Multimodal Evidence Correlation" },
-        { title: "Rare Insurance Fraud Pattern Detection" }
+        { title: "Automated Vehicle Damage Region Tagging", description: "Identify specific damaged areas such as bumpers, fenders, headlights, quarter panels." },
+        { title: "Pre- vs Post-Incident Image Comparison", description: "Detect discrepancies by comparing historical vehicle photos with claim images." },
+        { title: "Part-Level Classification for Repair Estimates", description: "Tag components like doors, mirrors, grills, tires, and windshields." },
+        { title: "Impact Direction & Collision Pattern Recognition", description: "Label collision patterns (front impact, side swipe, rear-end)." },
+        { title: "Environmental Context Identification", description: "Detect weather (rain, snow), lighting, and background elements in accident photos." },
+        { title: "Vehicle Position & Orientation Detection", description: "Annotate how the vehicle rests after an incident (angled, overturned, displaced)." },
+        { title: "License Plate Visibility & OCR Checks", description: "Validate plate clarity, integrity, and match against policy records." },
+        { title: "Tow & Recovery Scene Classification", description: "Identify towing trucks, recovery equipment, and accident-scene setups." },
+        { title: "Underwriting Risk Scoring", description: "Tag historical patterns that influence risk profiles (property age, claim frequency)." },
+        { title: "Document Consistency Verification", description: "Identify mismatches across submitted forms, IDs, or claim narratives." },
+        { title: "Policy Metadata Extraction", description: "Extract coverage limits, exclusions, dates and policyholder details." },
+        { title: "Historical Claims Classification", description: "Group prior claims into categories like collision, natural disaster, liability." },
+        { title: "Incident Severity Tiering", description: "Tag severity levels (minor, moderate, major)." },
+        { title: "Environmental Hazard Tagging", description: "Label risks such as flood zones, wildfire regions or coastal exposure." },
+        { title: "Multimodal Evidence Correlation", description: "Link images, documents and written narratives to a single claim event." },
+        { title: "Rare Insurance Fraud Pattern Detection", description: "Identify forged documents, repeated claim artifacts or staged accidents." }
     ];
     return (
         <Layout>
@@ -27,7 +35,6 @@ const Insurance = () => {
                     <div className="container">
                         <div className="mt-100 mb-10">
                             <div className="row align-items-start">
-                                <span className="title-line color-black-text mb-10">Insurance</span>
                                 <div className="col-lg-6 mb-20">
                                     <h3 className="color-black-text mt-10">
                                         AI Training Data for Insurance Claims, Risk Assessment and Fraud Detection</h3>

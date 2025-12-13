@@ -27,7 +27,6 @@ const Mapping = () => {
                         <div className="mt-100 mb-100">
                         <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
-                                <span className="title-line color-black-text">Mapping</span>
                                 
                                         
                                
