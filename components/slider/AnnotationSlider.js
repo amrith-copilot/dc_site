@@ -91,9 +91,9 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     border-radius: 14px;
                     box-shadow: 0 4px 14px rgba(0,0,0,0.08);
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    text-align: left;
                     transition: 0.3s ease;
                     width: 100%;
                 }
