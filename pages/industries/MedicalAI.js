@@ -9,14 +9,86 @@ const MedicalAI = () => {
 
     // Slider data for Medical AI annotation capabilities
     const annotationItems = [
-        { title: "Clinical Workflow Tagging" },
-        { title: "Medical Terminology Normalization" },
-        { title: "Patient Risk Score Metadata" },
-        { title: "Medication & Dosage Extraction" },
-        { title: "Device/Monitoring State Labeling" },
-        { title: "Diagnostic Outcome Mapping" },
-        { title: "Lab Value Classification" },
-        { title: "Rare Clinical Edge Cases" }
+        {
+            title: "Clinical Workflow Tagging",
+            description: [
+                "Triage / diagnosis / treatment labels",
+                "Workflow-step IDs",
+                "Care-stage markers"
+            ]
+        },
+        {
+            title: "Medical Terminology Normalization",
+            description: [
+                "Synonym mapping tags",
+                "Standard-term labels",
+                "Term-linkage IDs"
+            ]
+        },
+        {
+            title: "Patient Risk Score Metadata",
+            description: [
+                "Risk-tier labels",
+                "Severity-category markers",
+                "Probability-score tokens"
+            ]
+        },
+        {
+            title: "Medication & Dosage Extraction",
+            description: [
+                "Drug-name tokens",
+                "Dosage-value labels",
+                "Administration-route tags"
+            ]
+        },
+        {
+            title: "Device / Monitoring State Labeling",
+            description: [
+                "Alert-state tags",
+                "Sensor-status markers",
+                "Measurement-mode labels"
+            ]
+        },
+        {
+            title: "Diagnostic Outcome Mapping",
+            description: [
+                "Diagnosis-ID labels",
+                "Outcome-category tags",
+                "Result-severity markers"
+            ]
+        },
+        {
+            title: "Lab Value Classification",
+            description: [
+                "Normal / abnormal flags",
+                "Critical-range labels",
+                "Reference-range IDs"
+            ]
+        },
+        {
+            title: "Rare Clinical Edge Cases (CV)",
+            description: [
+                "Unusual-lesion masks",
+                "Atypical-pattern tags",
+                "Low-frequency anomaly markers"
+            ]
+        },
+        {
+            title: "Anatomical Landmark Detection (CV)",
+            description: [
+                "Keypoint coordinate labels",
+                "Landmark-region masks",
+                "Skeleton-structure tags"
+            ]
+        },
+        {
+            title: "Medical Image Quality Assurance (CV)",
+            description: [
+                "Motion-blur flags",
+                "Low-contrast markers",
+                "Cropping-issue tags"
+            ]
+        }
     ];
     return (
         <Layout>

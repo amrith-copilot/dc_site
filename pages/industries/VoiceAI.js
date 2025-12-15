@@ -7,16 +7,72 @@ import Link from 'next/link';
 const VoiceAI = () => {
     const [isOpen, setOpen] = useState(false)
 
-    // Slider data for Voice AI annotation capabilities
+    // Slider data for Voice AI annotation capabilities (point-wise descriptions)
     const annotationItems = [
-        { title: "Accent/Dialect Tagging", description: "Capture variations across regional accents (e.g., Southern US, Scottish, Singaporean English)." },
-        { title: "Prompt/Response Linking", description: "Map user queries to system replies for conversational context training." },
-        { title: "Topic Clustering", description: "Group utterances under domains like banking, travel, healthcare, or support." },
-        { title: "Context Window Labeling", description: "Annotate dependencies across multiple turns in a conversation." },
-        { title: "Call Outcome Metadata", description: "Tag resolution outcomes (successful, escalated, unresolved)." },
-        { title: "Multilingual Utterance Classification", description: "Identify language switches and code-mixing (e.g., Hinglish, Spanglish)." },
-        { title: "Acoustic Feature Tagging", description: "Label pitch, intensity, background hum, and other acoustic signatures." },
-        { title: "Rare Speech Anomalies", description: "Capture stutters, clipped audio, overlapping speech or microphone distortion." }
+        {
+            title: "Accent/Dialect Tagging",
+            description: [
+                "Accent-ID labels",
+                "Dialect-variant tokens",
+                "Pronunciation-shift markers"
+            ]
+        },
+        {
+            title: "Prompt/Response Linking",
+            description: [
+                "Query–reply pair IDs",
+                "Turn-level link markers",
+                "Context-chain labels"
+            ]
+        },
+        {
+            title: "Topic Clustering",
+            description: [
+                "Topic-category tags",
+                "Conversation-domain IDs",
+                "Cluster-membership markers"
+            ]
+        },
+        {
+            title: "Context Window Labeling",
+            description: [
+                "Multi-turn dependency IDs",
+                "Context-span markers",
+                "Utterance-linkage labels"
+            ]
+        },
+        {
+            title: "Call Outcome Metadata",
+            description: [
+                "Resolution-status tags",
+                "Escalation flags",
+                "Outcome-category markers"
+            ]
+        },
+        {
+            title: "Multilingual Utterance Classification",
+            description: [
+                "Language-ID tokens",
+                "Code-switch segments",
+                "Multilingual phrase labels"
+            ]
+        },
+        {
+            title: "Acoustic Feature Tagging",
+            description: [
+                "Pitch contour labels",
+                "Background-noise classes",
+                "Energy-intensity markers"
+            ]
+        },
+        {
+            title: "Rare Speech Anomalies",
+            description: [
+                "Overlap-speech markers",
+                "Stutter-segment labels",
+                "Audio-distortion tags"
+            ]
+        }
     ];
     return (
         <Layout>

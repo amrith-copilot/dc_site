@@ -9,14 +9,78 @@ const Ecommerce = () => {
 
     // Slider data for E-Commerce annotation capabilities
     const annotationItems = [
-        { title: "Category Taxonomy Mapping" },
-        { title: "Search Intent Classification" },
-        { title: "Review Sentiment Labeling" },
-        { title: "Attribute Conflict Detection" },
-        { title: "Pricing Metadata Extraction" },
-        { title: "Product Comparison Tagging" },
-        { title: "Seasonal Trend Annotation" },
-        { title: "Rare Catalog Inconsistencies" }
+        {
+            title: "Category Taxonomy Mapping",
+            description: [
+                "Category-level tags",
+                "Hierarchy-position markers",
+                "Subcategory-ID labels"
+            ]
+        },
+        {
+            title: "Search Intent Classification",
+            description: [
+                "Transactional / Informational tags",
+                "Query-topic labels",
+                "Buyer-stage markers"
+            ]
+        },
+        {
+            title: "Review Sentiment Labeling",
+            description: [
+                "Positive / Negative opinion tokens",
+                "Emotion-class labels",
+                "Intensity-score tags"
+            ]
+        },
+        {
+            title: "Attribute Conflict Detection",
+            description: [
+                "Inconsistent-attribute flags",
+                "Mismatch markers",
+                "Contradiction-label tokens"
+            ]
+        },
+        {
+            title: "Pricing Metadata Extraction",
+            description: [
+                "Price OCR tokens",
+                "Currency labels",
+                "Discount-percentage tags"
+            ]
+        },
+        {
+            title: "Product Comparison Tagging",
+            description: [
+                "Similarity-score labels",
+                "Feature-difference markers",
+                "Alternative-product flags"
+            ]
+        },
+        {
+            title: "Seasonal Trend Annotation",
+            description: [
+                "Holiday-timing tags",
+                "Seasonality classes",
+                "Event-cycle markers"
+            ]
+        },
+        {
+            title: "Rare Catalog Inconsistencies (CV)",
+            description: [
+                "Wrong-product image flags",
+                "Duplicate-listing markers",
+                "Image–SKU mismatch tags"
+            ]
+        },
+        {
+            title: "UGC Visual Quality Filtering (CV)",
+            description: [
+                "Blur-detection masks",
+                "Low-light classification",
+                "Noise-level tags"
+            ]
+        }
     ];
     return (
         <Layout>

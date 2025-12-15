@@ -9,14 +9,86 @@ const Geospatial = () => {
 
     // Slider data for Geospatial annotation capabilities
     const annotationItems = [
-        { title: "Soil Moisture Tagging" },
-        { title: "Urban Density Measurement" },
-        { title: "Elevation Metadata Extraction" },
-        { title: "Boundary & Parcel Classification" },
-        { title: "Cloud & Shadow Masking" },
-        { title: "Crop-Type Prediction Data" },
-        { title: "Infrastructure Lifecycle Scoring" },
-        { title: "Rare Terrain Anomalies" }
+        {
+            title: "Soil Moisture Tagging (CV)",
+            description: [
+                "Dry/wet pixel masks",
+                "Irrigation-zone polygons",
+                "Moisture-level class labels"
+            ]
+        },
+        {
+            title: "Urban Density Measurement (CV)",
+            description: [
+                "Building-density heatmaps",
+                "Urban-core boundary lines",
+                "Population-density tiers"
+            ]
+        },
+        {
+            title: "Elevation Metadata Extraction (CV)",
+            description: [
+                "Slope-grade classes",
+                "Elevation-band labels",
+                "Contour-line polylines"
+            ]
+        },
+        {
+            title: "Boundary & Parcel Classification (CV)",
+            description: [
+                "Property-line polylines",
+                "Zoning-type polygons",
+                "Parcel-ID markers"
+            ]
+        },
+        {
+            title: "Cloud & Shadow Masking (CV)",
+            description: [
+                "Cloud-cover segmentation",
+                "Shadow-region masks",
+                "Haze-layer detection tags"
+            ]
+        },
+        {
+            title: "Crop-Type Prediction Data (CV)",
+            description: [
+                "Crop-species polygons",
+                "Field-level ID tags",
+                "Growth-stage classification"
+            ]
+        },
+        {
+            title: "Infrastructure Lifecycle Scoring (CV)",
+            description: [
+                "Crack-density masks",
+                "Erosion hotspot labels",
+                "Surface-wear polygons"
+            ]
+        },
+        {
+            title: "Rare Terrain Anomalies (CV)",
+            description: [
+                "Landslide polygons",
+                "Sinkhole region masks",
+                "Flooded-area overlays"
+            ]
+        },
+        {
+            title: "Spectral Feature Extraction (CV)",
+            description: [
+                "NDVI-class labels",
+                "NDWI-region maps",
+                "Red-edge vegetation bands"
+            ]
+        },
+        {
+            title: "Object Detection in Aerial Imagery (CV)",
+            description: [
+                "Vehicle bounding boxes",
+                "Rooftop segmentation masks",
+                "Construction-site polygons"
+            ]
+        }
     ];
     return (
         <Layout>

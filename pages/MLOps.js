@@ -27,8 +27,8 @@ const MLOps = () => {
                             </div>
                             
                             {/* VideoSlider replaces the original video banner */}
-                            <div className="box-video-banner">
-                                <VideoSlider />
+                            <div className="box-video-banner mt-50 text-center">
+                                 <img src="/assets/imgs/page/MLOps/MLOps.png" alt="MLOps" style={{width: '80%', height: 'auto'}} />
                             </div>
                         </div>
                     </div>

@@ -9,14 +9,78 @@ const Sports = () => {
 
     // Slider data for Sports & Media annotation capabilities
     const annotationItems = [
-        { title: "Play-by-Play Sequence Tagging" },
-        { title: "Athlete Fatigue Indicators" },
-        { title: "Team Formation Classification" },
-        { title: "Broadcast Metadata Extraction" },
-        { title: "Audience Engagement Patterning" },
-        { title: "Referee Decision Labeling" },
-        { title: "Sound Event Annotation" },
-        { title: "Rare Sports Anomalies" }
+        {
+            title: "Play-by-Play Sequence Tagging — we can handle",
+            description: [
+                "Action-event markers",
+                "Play-sequence IDs",
+                "Possession-shift labels"
+            ]
+        },
+        {
+            title: "Athlete Fatigue Indicators (CV)",
+            description: [
+                "Posture-deviation labels",
+                "Reduced-velocity markers",
+                "Stride-variation tags"
+            ]
+        },
+        {
+            title: "Team Formation Classification (CV)",
+            description: [
+                "Formation-shape polylines",
+                "Player-position grids",
+                "Formation-transition markers"
+            ]
+        },
+        {
+            title: "Broadcast Metadata Extraction (CV)",
+            description: [
+                "Scoreboard OCR boxes",
+                "Overlay-region masks",
+                "Timer-digit bounding boxes"
+            ]
+        },
+        {
+            title: "Audience Engagement Patterning (CV)",
+            description: [
+                "Crowd-reaction heatmaps",
+                "Applause-intensity markers",
+                "Cheer-source localization tags"
+            ]
+        },
+        {
+            title: "Referee Decision Labeling — we can handle",
+            description: [
+                "Foul-type tags",
+                "Offside-event markers",
+                "Penalty-call labels"
+            ]
+        },
+        {
+            title: "Sound Event Annotation — we can handle",
+            description: [
+                "Whistle-event timestamps",
+                "Crowd-cheer segments",
+                "Commentary-excitement markers"
+            ]
+        },
+        {
+            title: "Rare Sports Anomalies (CV)",
+            description: [
+                "Ball-trajectory deviation maps",
+                "Injury-event region tags",
+                "Unexpected-object detection"
+            ]
+        },
+        {
+            title: "Player Identity Recognition (CV)",
+            description: [
+                "Jersey-number OCR boxes",
+                "Player-ID instance labels",
+                "Face-embedding reference tags"
+            ]
+        }
     ];
     return (
         <Layout>

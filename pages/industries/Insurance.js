@@ -10,22 +10,126 @@ const Insurance = () => {
 
     // Slider data for Insurance annotation capabilities
     const annotationItems = [
-        { title: "Automated Vehicle Damage Region Tagging", description: "Identify specific damaged areas such as bumpers, fenders, headlights, quarter panels." },
-        { title: "Pre- vs Post-Incident Image Comparison", description: "Detect discrepancies by comparing historical vehicle photos with claim images." },
-        { title: "Part-Level Classification for Repair Estimates", description: "Tag components like doors, mirrors, grills, tires, and windshields." },
-        { title: "Impact Direction & Collision Pattern Recognition", description: "Label collision patterns (front impact, side swipe, rear-end)." },
-        { title: "Environmental Context Identification", description: "Detect weather (rain, snow), lighting, and background elements in accident photos." },
-        { title: "Vehicle Position & Orientation Detection", description: "Annotate how the vehicle rests after an incident (angled, overturned, displaced)." },
-        { title: "License Plate Visibility & OCR Checks", description: "Validate plate clarity, integrity, and match against policy records." },
-        { title: "Tow & Recovery Scene Classification", description: "Identify towing trucks, recovery equipment, and accident-scene setups." },
-        { title: "Underwriting Risk Scoring", description: "Tag historical patterns that influence risk profiles (property age, claim frequency)." },
-        { title: "Document Consistency Verification", description: "Identify mismatches across submitted forms, IDs, or claim narratives." },
-        { title: "Policy Metadata Extraction", description: "Extract coverage limits, exclusions, dates and policyholder details." },
-        { title: "Historical Claims Classification", description: "Group prior claims into categories like collision, natural disaster, liability." },
-        { title: "Incident Severity Tiering", description: "Tag severity levels (minor, moderate, major)." },
-        { title: "Environmental Hazard Tagging", description: "Label risks such as flood zones, wildfire regions or coastal exposure." },
-        { title: "Multimodal Evidence Correlation", description: "Link images, documents and written narratives to a single claim event." },
-        { title: "Rare Insurance Fraud Pattern Detection", description: "Identify forged documents, repeated claim artifacts or staged accidents." }
+        {
+            title: "Underwriting Risk Scoring",
+            description: [
+                "Vehicle age tier labels — Vehicle year, Type",
+                "Driver-risk category tags — Depend on Age, Experience, Violations",
+                "Usage-intensity class markers — Odometer reading"
+            ]
+        },
+        {
+            title: "Document Consistency Verification",
+            description: [
+                "Form-field mismatch flags — Person info, Policy info",
+                "ID–claim text discrepancy tags",
+                "Signature–photo mismatch markers — Missing photo, mismatch"
+            ]
+        },
+        {
+            title: "Policy Metadata Extraction",
+            description: [
+                "Coverage-limit field labels — Coverage type, Amount",
+                "Deductible-type markers — Deductible type/amount",
+                "Policy-period tags — Policy start date, End date, Duration"
+            ]
+        },
+        {
+            title: "Historical Claims Classification",
+            description: [
+                "Collision-type classes — Claim ID, Date of claim, Location",
+                "Weather-loss category tags — Type of damage, Date of incident",
+                "Theft-event labels — Date of theft, Location"
+            ]
+        },
+        {
+            title: "Incident Severity Tiering",
+            description: [
+                "Minor / Moderate / Major impact labels — Severity type",
+                "Repair-intensity tiers",
+                "Cost-bracket markers"
+            ]
+        },
+        {
+            title: "Environmental Hazard Tagging (CV)",
+            description: [
+                "Flood-zone grid tags",
+                "Wildfire-risk polygon labels",
+                "Storm-exposure overlays"
+            ]
+        },
+        {
+            title: "Multimodal Evidence Correlation",
+            description: [
+                "Image–document pairing IDs",
+                "Timestamp alignment markers",
+                "Source-type linkage tags"
+            ]
+        },
+        {
+            title: "Rare Insurance Fraud Pattern Detection",
+            description: [
+                "Duplicate-image hash flags",
+                "Manipulated-photo artifact tags",
+                "Reused-damage pattern labels"
+            ]
+        },
+        {
+            title: "Automated Vehicle Damage Region Tagging (CV)",
+            description: [
+                "Bumper-damage polygons",
+                "Door-panel dent masks",
+                "Headlight-crack masks"
+            ]
+        },
+        {
+            title: "Pre- vs Post-Accident Comparison (CV)",
+            description: [
+                "Damage-delta pixel maps",
+                "Pre-existing-scratch indicators",
+                "New-impact region clusters"
+            ]
+        },
+        {
+            title: "Part-Level Classification (CV)",
+            description: [
+                "Headlight bounding boxes",
+                "Mirror segmentation masks",
+                "Tire-damage polygons"
+            ]
+        },
+        {
+            title: "Impact Pattern Recognition (CV)",
+            description: [
+                "Front-impact class labels",
+                "Side-swipe pattern masks",
+                "Rear-impact shape clusters"
+            ]
+        },
+        {
+            title: "Vehicle Position & Orientation (CV)",
+            description: [
+                "Axial rotation markers",
+                "Tilt-angle labels",
+                "Wheel-direction vectors"
+            ]
+        },
+        {
+            title: "License Plate OCR Integrity (CV)",
+            description: [
+                "Plate-character boxes",
+                "Visibility-score tags",
+                "Plate-alignment markers"
+            ]
+        },
+        {
+            title: "Tow & Recovery Scene Classification (CV)",
+            description: [
+                "Tow-truck instance masks",
+                "Hook/chain detection boxes",
+                "Winch-line region labels"
+            ]
+        }
     ];
     return (
         <Layout>

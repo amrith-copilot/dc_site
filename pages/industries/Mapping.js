@@ -9,14 +9,70 @@ const Mapping = () => {
 
     // Slider data for Mapping annotation capabilities
     const annotationItems = [
-        { title: "Speed-Limit Metadata" },
-        { title: "Street-Name OCR" },
-        { title: "Crosswalk Classification" },
-        { title: "Traffic Flow Pattern Tagging" },
-        { title: "Map Update Prioritization" },
-        { title: "Routing Constraints Labeling" },
-        { title: "Visibility & Obstruction Tagging" },
-        { title: "Rare Infrastructure Anomalies" }
+        {
+            title: "Speed-Limit Metadata (CV)",
+            description: [
+                "Speed-limit OCR boxes — we can handle",
+                "Regulatory-sign class labels — we can handle",
+                "Overposted-limit flags — doubt"
+            ]
+        },
+        {
+            title: "Street-Name OCR (CV)",
+            description: [
+                "Text-region bounding boxes — we can handle",
+                "Street-name character tokens — attribute tags (street name, area, postal code) — we can handle",
+                "Word-segmentation masks — doubt"
+            ]
+        },
+        {
+            title: "Crosswalk Classification (CV)",
+            description: [
+                "Zebra-crossing masks — we can handle",
+                "Ladder-crosswalk polylines — yes",
+                "Faded-crosswalk detection tags — yes"
+            ]
+        },
+        {
+            title: "Traffic Flow Pattern Tagging (CV)",
+            description: [
+                "Congestion-density heatmaps",
+                "Lane-occupancy labels — yes",
+                "Stop-and-go segment markers — yes"
+            ]
+        },
+        {
+            title: "Map Update Prioritization (CV)",
+            description: [
+                "Change-detection polygons",
+                "Outdated-feature flags",
+                "New-construction markers"
+            ]
+        },
+        {
+            title: "Routing Constraint Labeling (CV)",
+            description: [
+                "One-way arrow markers",
+                "Restricted-zone polygons",
+                "Height-clearance tags"
+            ]
+        },
+        {
+            title: "Visibility & Obstruction Tagging (CV)",
+            description: [
+                "Occlusion masks",
+                "Blocked-sign instance tags",
+                "Visibility-range circles"
+            ]
+        },
+        {
+            title: "Rare Infrastructure Anomalies (CV)",
+            description: [
+                "Broken-sign masks",
+                "Road-collapse polygons",
+                "Temporary-detour markers"
+            ]
+        }
     ];
     return (
         <Layout>

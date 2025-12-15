@@ -42,24 +42,62 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
     const nextClass = `${navId}-next`;
     const adjustTextSize = useAutoTextSize();
     const swiperRef = useRef(null);
+    const containerRef = useRef(null);
     
     useEffect(() => {
-        // Auto-adjust text sizes after component mounts
-        const timer = setTimeout(() => {
+        // Auto-adjust text sizes and then normalize card heights so all cards match the tallest
+        let resizeTimer;
+
+        const adjustCardHeights = () => {
+            const root = containerRef.current || document;
+            const cards = root.querySelectorAll(`.${navId} .annotation-card`);
+            if (!cards || cards.length === 0) return;
+
+            // reset heights so measurement is natural
+            cards.forEach((c) => (c.style.height = 'auto'));
+
+            let max = 0;
+            cards.forEach((c) => {
+                const h = c.offsetHeight;
+                if (h > max) max = h;
+            });
+
+            if (max > 0) cards.forEach((c) => (c.style.height = `${max}px`));
+        };
+
+        const runAdjustments = () => {
             const titles = document.querySelectorAll(`.${navId} .annotation-card-title`);
-            const descriptions = document.querySelectorAll(`.${navId} .annotation-card p`);
-            
+            const descriptions = document.querySelectorAll(`.${navId} .annotation-card p, .${navId} .annotation-card-list`);
+
             titles.forEach(adjustTextSize);
             descriptions.forEach(adjustTextSize);
-        }, 100);
-        
-        return () => clearTimeout(timer);
-    }, [adjustTextSize, navId]);
+
+            // allow browser to paint after font size change
+            setTimeout(adjustCardHeights, 80);
+        };
+
+        const timer = setTimeout(runAdjustments, 120);
+
+        const onResize = () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                runAdjustments();
+            }, 150);
+        };
+
+        window.addEventListener('resize', onResize);
+
+        return () => {
+            clearTimeout(timer);
+            clearTimeout(resizeTimer);
+            window.removeEventListener('resize', onResize);
+        };
+    }, [adjustTextSize, navId, items]);
 
     return (
         <>
             <section className={`section mt-100 pt-60 pb-60 ${navId}`}>
-                <div className="container">
+                <div className="container" ref={containerRef}>
                     <div className="row">
                         <div className="col-lg-12 text-center">
                             <h2 className="color-brand-1 mb-20">{title}</h2>
@@ -95,7 +133,17 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                                 <div className="annotation-card">
                                     <div className="annotation-card-content">
                                         <h6 className="annotation-card-title">{item.title}</h6>
-                                        {item.description && <p>{item.description}</p>}
+                                        {item.description && (
+                                            Array.isArray(item.description) ? (
+                                                <ul className="annotation-card-list">
+                                                    {item.description.map((point, idx) => (
+                                                        <li key={idx}>{point}</li>
+                                                    ))}
+                                                </ul>
+                                            ) : (
+                                                <p>{item.description}</p>
+                                            )
+                                        )}
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -126,7 +174,7 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     align-items: stretch;
                 }
                 .annotation-card {
-                    height: 180px;
+                    min-height: 140px;
                     padding: 30px;
                     background: white;
                     border-radius: 14px;
@@ -156,6 +204,26 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     color: #666;
                     font-size: 14px;
                     line-height: 1.5;
+                }
+                .annotation-card-list {
+                    margin: 0;
+                    padding-left: 20px;
+                    list-style: none;
+                }
+                .annotation-card-list li {
+                    color: #666;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    margin-bottom: 8px;
+                    position: relative;
+                    padding-left: 16px;
+                }
+                .annotation-card-list li::before {
+                    content: '▸';
+                    position: absolute;
+                    left: 0;
+                    color: #0017e3;
+                    font-weight: bold;
                 }
                 .annotation-card:hover {
                     transform: translateY(-6px);

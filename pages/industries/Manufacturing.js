@@ -9,14 +9,78 @@ const Manufacturing = () => {
 
     // Slider data for Manufacturing annotation capabilities
     const annotationItems = [
-        { title: "Production Step Metadata" },
-        { title: "Batch Quality Scoring" },
-        { title: "Calibration Pattern Tagging" },
-        { title: "Equipment Behavior Annotation" },
-        { title: "Workflow Efficiency Mapping" },
-        { title: "Thermal Anomaly Tagging" },
-        { title: "Process Drift Detection" },
-        { title: "Rare Mechanical Fault Cases" }
+        {
+            title: "Production Step Metadata (CV)",
+            description: [
+                "Step-sequence labels",
+                "Workstation-ID tags",
+                "Stage-status markers"
+            ]
+        },
+        {
+            title: "Batch Quality Scoring",
+            description: [
+                "Pass/fail batch tags",
+                "Quality-tier labels",
+                "Defect-rate markers"
+            ]
+        },
+        {
+            title: "Calibration Pattern Tagging (CV)",
+            description: [
+                "Checkerboard corner points",
+                "Target-pattern masks",
+                "Intrinsic-calibration anchors"
+            ]
+        },
+        {
+            title: "Equipment Behavior Annotation",
+            description: [
+                "Machine-state labels",
+                "Operation-mode tags",
+                "Load-level markers"
+            ]
+        },
+        {
+            title: "Workflow Efficiency Mapping",
+            description: [
+                "Station-occupancy heatmaps",
+                "Bottleneck region markers",
+                "Cycle-time class labels"
+            ]
+        },
+        {
+            title: "Thermal Anomaly Tagging (CV)",
+            description: [
+                "Hotspot masks",
+                "Temperature-zone classes",
+                "Cooling-failure tags"
+            ]
+        },
+        {
+            title: "Process Drift Detection",
+            description: [
+                "Drift-index labels",
+                "Step-deviation markers",
+                "Out-of-tolerance flags"
+            ]
+        },
+        {
+            title: "Rare Mechanical Fault Cases (CV)",
+            description: [
+                "Broken-part segmentation",
+                "Misalignment detection boxes",
+                "Loose-component markers"
+            ]
+        },
+        {
+            title: "Surface Imperfection Recognition (CV)",
+            description: [
+                "Scratch masks",
+                "Dent instance segmentation",
+                "Texture-deviation labels"
+            ]
+        }
     ];
     return (
         <Layout>

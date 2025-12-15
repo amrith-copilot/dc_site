@@ -9,14 +9,86 @@ const SocialMedia = () => {
 
     // Slider data for Social Media annotation capabilities
     const annotationItems = [
-        { title: "Sentiment Analysis Labeling" },
-        { title: "Topic Clustering" },
-        { title: "Engagement Behavior Tagging" },
-        { title: "Virality Trend Annotation" },
-        { title: "Creator Profile Categorization" },
-        { title: "Multilingual Text Classification" },
-        { title: "Community Guideline Metadata" },
-        { title: "Edge-Case Harmful Content Tagging" }
+        {
+            title: "Sentiment Analysis Labeling",
+            description: [
+                "Positive/negative sentiment tokens",
+                "Emotion-class labels",
+                "Sarcasm flags — need to check"
+            ]
+        },
+        {
+            title: "Topic Clustering",
+            description: [
+                "Theme-category tags",
+                "Conversation-topic IDs",
+                "Content-domain labels"
+            ]
+        },
+        {
+            title: "Engagement Behavior Tagging",
+            description: [
+                "Dwell-time buckets",
+                "Scroll-depth markers",
+                "Repeat-view flags"
+            ]
+        },
+        {
+            title: "Virality Trend Annotation",
+            description: [
+                "Meme-template IDs",
+                "Rapid-growth content flags",
+                "Trend-seed markers"
+            ]
+        },
+        {
+            title: "Creator Profile Categorization",
+            description: [
+                "Creator-niche tags",
+                "Audience-type labels",
+                "Influencer-tier tags"
+            ]
+        },
+        {
+            title: "Multilingual Text Classification",
+            description: [
+                "Language ID tokens",
+                "Code-switch segments",
+                "Dialect-level labels"
+            ]
+        },
+        {
+            title: "Community Guideline Metadata",
+            description: [
+                "Risk-level labels",
+                "Violation-likelihood tags",
+                "Content-sensitivity scores"
+            ]
+        },
+        {
+            title: "Edge-Case Harmful Content Tagging (CV)",
+            description: [
+                "Deepfake detection masks",
+                "Violence-probability score tags",
+                "Weapon-region bounding boxes"
+            ]
+        },
+        {
+            title: "Face/Entity Blurring (CV)",
+            description: [
+                "Face bounding boxes",
+                "Sensitive-entity masks",
+                "Identity-obfuscation markers"
+            ]
+        },
+        {
+            title: "Meme Template Detection (CV)",
+            description: [
+                "Meme-layout region masks",
+                "Image-template IDs",
+                "Text-region metadata tags"
+            ]
+        }
     ];
     return (
         <Layout>

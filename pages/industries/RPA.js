@@ -9,14 +9,78 @@ const RPA = () => {
 
     // Slider data for RPA annotation capabilities
     const annotationItems = [
-        { title: "Automation Handoff Metadata" },
-        { title: "Business Rule Categorization" },
-        { title: "Data Validation Tagging" },
-        { title: "Exception Path Identification" },
-        { title: "Multistep Workflow Grouping" },
-        { title: "Compliance Constraint Tagging" },
-        { title: "Human-in-Loop Trigger Detection" },
-        { title: "Rare UI Edge Cases" }
+        {
+            title: "Automation Handoff Metadata",
+            description: [
+                "Approval-required markers",
+                "Human-review flags",
+                "Manual-verification tags"
+            ]
+        },
+        {
+            title: "Business Rule Categorization",
+            description: [
+                "Decision-rule tags",
+                "Conditional-logic markers",
+                "Trigger-condition labels"
+            ]
+        },
+        {
+            title: "Data Validation Tagging",
+            description: [
+                "Invalid-field flags",
+                "Mismatch indicators",
+                "Malformed-input labels"
+            ]
+        },
+        {
+            title: "Exception Path Identification",
+            description: [
+                "Non-standard flow IDs",
+                "Exception-branch labels",
+                "Alternate-path tags"
+            ]
+        },
+        {
+            title: "Multistep Workflow Grouping",
+            description: [
+                "Step-cluster tags",
+                "Sequence-ID markers",
+                "Flow-group identifiers"
+            ]
+        },
+        {
+            title: "Compliance Constraint Tagging",
+            description: [
+                "Audit-required step tags",
+                "Regulatory-rule markers",
+                "Compliance-tier labels"
+            ]
+        },
+        {
+            title: "Human-in-Loop Trigger Detection",
+            description: [
+                "Manual-intervention flags",
+                "Verification-required labels",
+                "Approval-gate markers"
+            ]
+        },
+        {
+            title: "Rare UI Edge Cases (CV)",
+            description: [
+                "Popup-window boxes",
+                "Overlay-region masks",
+                "Unexpected-dialog tags"
+            ]
+        },
+        {
+            title: "Screen State Similarity Detection (CV)",
+            description: [
+                "State-variant labels",
+                "UI-change markers",
+                "Near-duplicate screen IDs"
+            ]
+        }
     ];
     return (
         <Layout>

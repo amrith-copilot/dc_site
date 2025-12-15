@@ -9,14 +9,78 @@ const Fintech = () => {
 
     // Slider data for Fintech annotation capabilities
     const annotationItems = [
-        { title: "Risk Score Labeling" },
-        { title: "Spending Pattern Tagging" },
-        { title: "Chargeback Classification" },
-        { title: "Merchant Category Modeling" },
-        { title: "Compliance Event Tagging" },
-        { title: "Time-Series Anomaly Detection" },
-        { title: "User Intent Metadata" },
-        { title: "Rare Fraud Case Identification" }
+        {
+            title: "Risk Score Labeling",
+            description: [
+                "High / Medium / Low risk tags",
+                "Risk-factor category labels",
+                "Exposure-tier markers"
+            ]
+        },
+        {
+            title: "Spending Pattern Tagging",
+            description: [
+                "Merchant-category ID tags",
+                "Purchase-cluster labels",
+                "Recurring-transaction markers"
+            ]
+        },
+        {
+            title: "Chargeback Classification",
+            description: [
+                "Fraud vs dispute classes",
+                "Reason-code labels",
+                "Transaction-type flags"
+            ]
+        },
+        {
+            title: "Merchant Category Modeling",
+            description: [
+                "MCC-code tokens",
+                "Merchant-type labels",
+                "Industry-segment tags"
+            ]
+        },
+        {
+            title: "Compliance Event Tagging",
+            description: [
+                "AML-flag tokens",
+                "KYC-event markers",
+                "Sanction-screening flags"
+            ]
+        },
+        {
+            title: "Time-Series Anomaly Detection",
+            description: [
+                "Spike / dip markers",
+                "Irregular-pattern flags",
+                "Volatility-zone labels"
+            ]
+        },
+        {
+            title: "User Intent Metadata",
+            description: [
+                "Intent labels (transfer, refund)",
+                "Action-category tags",
+                "Goal-state markers"
+            ]
+        },
+        {
+            title: "Rare Fraud Case Identification (CV)",
+            description: [
+                "Forgery artifact masks",
+                "Synthetic-document flags",
+                "Tampered-field regions"
+            ]
+        },
+        {
+            title: "Document Tampering Detection (CV)",
+            description: [
+                "Cropping-boundary masks",
+                "Manipulated-text regions",
+                "Overlay-layer detection tags"
+            ]
+        }
     ];
     return (
         <Layout>
