@@ -297,4 +297,4 @@ const Offer8 = () => {
     );
 };
 
-export default Offer4;
+export default Offer8;

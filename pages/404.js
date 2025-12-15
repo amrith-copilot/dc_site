@@ -29,7 +29,6 @@ const Error = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="border-bottom bd-grey-80 mt-110 mb-0" />
                     </div>
                 </section>
             </Layout>

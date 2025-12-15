@@ -112,7 +112,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                         <li className="has-children"><Link href="#">Product</Link>
                                             <ul className="sub-menu">
                                                 <li><Link href="/KubeTrace">KubeTrace</Link></li>
-                                                <li><Link href="/HITL">Human in the Loop</Link></li>
+                                                <li><Link href="/PHITL">Human in the Loop</Link></li>
                                             </ul>
                                         </li>
                                         <li className={`has-children services-mega-menu ${activeMenu === 'industries' ? 'menu-active' : ''}`}>

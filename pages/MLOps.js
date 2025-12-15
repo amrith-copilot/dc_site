@@ -103,101 +103,88 @@ const MLOps = () => {
 
                         {/* First Row of Cards */}
                         <div className="row mt-45">
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div className="card-header" style={{ marginBottom: '20px' }}>
-                                        <h5 className="color-brand-1 mb-15">MLOps Assessment and Strategy</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15">
-                                            Evaluate and optimize your ML development and deployment processes
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="MLOps Assessment" />
                                         </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Evaluate current ML development and deployment processes</li>
-                                            <li>Identify gaps in the ML lifecycle management</li>
-                                            <li>Develop a tailored MLOps implementation plan</li>
-                                        </ol>
+                                        <h4 className="left-card-title">MLOps Assessment and Strategy</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Evaluate and optimize your ML development and deployment processes. Identify gaps in the ML lifecycle management and develop a tailored MLOps implementation plan.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div className="card-header" style={{ marginBottom: '20px' }}>
-                                        <h5 className="color-brand-1 mb-15">ML Pipeline Automation</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15">
-                                            Design and implement end-to-end automated ML pipelines
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross.png" alt="ML Pipeline Automation" />
                                         </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Design and implement end-to-end ML pipelines</li>
-                                            <li>Automate data preprocessing, feature engineering, and model training</li>
-                                            <li>Set up continuous integration for ML models</li>
-                                        </ol>
+                                        <h4 className="left-card-title">ML Pipeline Automation</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Design and implement end-to-end automated ML pipelines. Automate data preprocessing, feature engineering, model training and set up continuous integration for ML models.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div className="card-header" style={{ marginBottom: '20px' }}>
-                                        <h5 className="color-brand-1 mb-15">Model Versioning and Experiment Tracking</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15">
-                                            Implement version control and experiment tracking for ML models
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage2/identity.png" alt="Model Versioning" />
                                         </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Implement version control for ML models and datasets</li>
-                                            <li>Set up experiment tracking and management systems</li>
-                                            <li>Enable reproducibility of ML experiments</li>
-                                        </ol>
+                                        <h4 className="left-card-title">Model Versioning and Experiment Tracking</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Implement version control and experiment tracking for ML models. Set up experiment tracking and management systems to enable reproducibility of ML experiments.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         {/* Second Row of Cards */}
-                        <div className="row mt-45">
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div className="card-header" style={{ marginBottom: '20px' }}>
-                                        <h5 className="color-brand-1 mb-15">Model Deployment and Serving</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15">
-                                            Automate and scale model deployment processes
+                        <div className="row mt-0">
+                            <div className="col-lg-4 col-md-6 mb-20">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross4.png" alt="Model Deployment" />
                                         </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Automate model deployment processes</li>
-                                            <li>Implement scalable model serving solutions</li>
-                                            <li>Set up A/B testing and canary deployments for ML models</li>
-                                        </ol>
+                                        <h4 className="left-card-title">Model Deployment and Serving</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Automate and scale model deployment processes. Implement scalable model serving solutions and set up A/B testing and canary deployments for ML models.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card" style={{ background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div className="card-header" style={{ marginBottom: '20px' }}>
-                                        <h5 className="color-brand-1 mb-15">ML Development</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15">
-                                            Custom ML model development and optimization
+                            <div className="col-lg-4 col-md-6 mb-20">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross5.png" alt="ML Development" />
                                         </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Custom Model Development</li>
-                                            <li>ML Model Optimization</li>
-                                            <li>ML Model Integration, Training & Validation</li>
-                                        </ol>
+                                        <h4 className="left-card-title">ML Development</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Custom ML model development and optimization. ML Model Optimization and ML Model Integration, Training & Validation for your specific business needs.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
+
                 <section className="section mt-70 pt-60 pb-60 ">
                     <div className="container">
                         <div className="row">
@@ -208,81 +195,132 @@ const MLOps = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="row">
+                        {/* First Row */}
+                        <div className="row mlops-advantages-row">
                             {/* Card 1 */}
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div style={{marginBottom: '15px'}}>
-                                        <img src="/assets/images/tools/pipe.svg" alt="Automated Pipeline" style={{width: '32px', height: '32px'}} />
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/images/tools/pipe.svg" alt="Automated Pipeline" />
+                                        </div>
+                                        <h4 className="left-card-title">Automated Pipeline</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Streamlined machine learning pipelines automate data preprocessing, model training, and deployment processes, significantly reducing manual intervention and errors.
+                                        </p>
                                     </div>
-                                    <h5 className="color-brand-1 mb-15">Automated Pipeline</h5>
-                                    <p className="font-md color-black-text">
-                                        Streamlined machine learning pipelines automate data preprocessing, model training, and deployment processes, significantly reducing manual intervention and errors.
-                                    </p>
                                 </div>
                             </div>
                             {/* Card 2 */}
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div style={{marginBottom: '15px'}}>
-                                        <img src="/assets/images/tools/monitor.svg" alt="Model Monitoring" style={{width: '32px', height: '32px'}} />
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/images/tools/monitor.svg" alt="Model Monitoring" />
+                                        </div>
+                                        <h4 className="left-card-title">Model Monitoring</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Continuous tracking of model performance and data drift ensures AI systems maintain accuracy and reliability in production environments.
+                                        </p>
                                     </div>
-                                    <h5 className="color-brand-1 mb-15">Model Monitoring</h5>
-                                    <p className="font-md color-black-text">
-                                        Continuous tracking of model performance and data drift ensures AI systems maintain accuracy and reliability in production environments.
-                                    </p>
                                 </div>
                             </div>
                             {/* Card 3 */}
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div style={{marginBottom: '15px'}}>
-                                        <img src="/assets/images/tools/version.svg" alt="Version Control" style={{width: '32px', height: '32px'}} />
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/images/tools/version.svg" alt="Version Control" />
+                                        </div>
+                                        <h4 className="left-card-title">Version Control</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Systematic tracking of datasets, model parameters, and code versions enables reproducible experiments and efficient collaboration among data scientists.
+                                        </p>
                                     </div>
-                                    <h5 className="color-brand-1 mb-15">Version Control</h5>
-                                    <p className="font-md color-black-text">
-                                        Systematic tracking of datasets, model parameters, and code versions enables reproducible experiments and efficient collaboration among data scientists.
-                                    </p>
                                 </div>
                             </div>
+                        </div>
+
+                        {/* Second Row */}
+                        <div className="row mlops-advantages-row" style={{marginTop: '0px'}}>
                             {/* Card 4 */}
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div style={{marginBottom: '15px'}}>
-                                        <img src="/assets/images/tools/expand.svg" alt="Scalable Infrastructure" style={{width: '32px', height: '32px'}} />
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/images/tools/expand.svg" alt="Scalable Infrastructure" />
+                                        </div>
+                                        <h4 className="left-card-title">Scalable Infrastructure</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Dynamic resource allocation and containerized environments support efficient model training and serving across different computing infrastructures.
+                                        </p>
                                     </div>
-                                    <h5 className="color-brand-1 mb-15">Scalable Infrastructure</h5>
-                                    <p className="font-md color-black-text">
-                                        Dynamic resource allocation and containerized environments support efficient model training and serving across different computing infrastructures.
-                                    </p>
                                 </div>
                             </div>
                             {/* Card 5 */}
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div style={{marginBottom: '15px'}}>
-                                        <img src="/assets/images/tools/account.svg" alt="Data Governance" style={{width: '32px', height: '32px'}} />
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/images/tools/account.svg" alt="Data Governance" />
+                                        </div>
+                                        <h4 className="left-card-title">Data Governance</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Automated data validation, lineage tracking, and quality checks ensure models are trained on reliable, consistent, and compliant datasets.
+                                        </p>
                                     </div>
-                                    <h5 className="color-brand-1 mb-15">Data Governance</h5>
-                                    <p className="font-md color-black-text">
-                                        Automated data validation, lineage tracking, and quality checks ensure models are trained on reliable, consistent, and compliant datasets.
-                                    </p>
                                 </div>
                             </div>
                             {/* Card 6 */}
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{background: 'transparent', border: '2px solid #e5e7eb', padding: '24px', borderRadius: '12px', transition: 'all 0.3s ease', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column'}} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#2563eb'; e.currentTarget.style.boxShadow = '0 8px 16px rgba(37, 99, 235, 0.15)'; e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e5e7eb'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                                    <div style={{marginBottom: '15px'}}>
-                                        <img src="/assets/images/tools/continous.svg" alt="Continuous Training" style={{width: '32px', height: '32px'}} />
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/images/tools/continous.svg" alt="Continuous Training" />
+                                        </div>
+                                        <h4 className="left-card-title">Continuous Training</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description">
+                                            Automated retraining pipelines keep models updated with fresh data, maintaining optimal performance and adapting to changing patterns.
+                                        </p>
                                     </div>
-                                    <h5 className="color-brand-1 mb-15">Continuous Training</h5>
-                                    <p className="font-md color-black-text">
-                                        Automated retraining pipelines keep models updated with fresh data, maintaining optimal performance and adapting to changing patterns.
-                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <style jsx>{`
+                        .mlops-advantages-row .left-aligned-card-wrapper {
+                            height: auto;
+                        }
+                        
+                        .mlops-advantages-row .left-aligned-card-container {
+                            height: auto;
+                            min-height: 280px;
+                            max-height: 320px;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        
+                        .mlops-advantages-row .left-card-description {
+                            flex-grow: 1;
+                            overflow: hidden;
+                        }
+                        
+                        .mlops-advantages-row {
+                            display: flex;
+                            align-items: flex-start;
+                        }
+                        
+                        .mlops-advantages-row [class*="col-"] {
+                            display: flex;
+                        }
+                    `}</style>
                 </section>
 
                 <section className="section mt-30 pb-50 bg-core-value">

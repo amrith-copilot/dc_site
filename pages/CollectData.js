@@ -253,7 +253,7 @@ const ColectData = () => {
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-6 mb-20">
-                                <h2 className="color-black-text mb-0">What We Offer</h2>
+                                <h2 className="color-brand-1 mb-0">What We Offer</h2>
                                 <p className="color-grey-500 font-lg mt-20">
                                     Here are some types of image annotations we provide.
                                 </p>
@@ -433,46 +433,71 @@ const ColectData = () => {
                     </div>
 
                     <style jsx>{`
-                        /* Text-based cards styling */
+                        /* Left-aligned card styling (applied to text-showcase-card) */
                         .text-showcase-card {
-                            background: #ffffff;
-                            border: 1px solid #e5e7eb;
-                            border-radius: 12px;
-                            padding: 24px;
+                            margin-bottom: 30px;
+                            border-radius: 16px;
+                            overflow: hidden;
+                            transition: all 0.3s ease;
+                            background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+                            border: 1px solid #e8f2ff;
+                            padding: 32px 28px;
                             height: 100%;
                             display: flex;
                             flex-direction: column;
-                            transition: all 0.3s ease;
-                            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+                            position: relative;
                         }
 
                         .text-showcase-card:hover {
-                            transform: translateY(-4px);
-                            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
-                            border-color: #2563eb;
+                            transform: translateY(-8px);
+                            box-shadow: 0 20px 40px rgba(0, 123, 255, 0.15);
                         }
 
                         .card-header {
-                            display: flex;
-                            align-items: center;
-                            gap: 12px;
-                            margin-bottom: 0;
+                            display: contents;
+                            margin: 0;
+                            padding: 0;
+                            border: none;
                         }
 
                         .card-icon-inline {
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 40px;
-                            height: 40px;
-                            background: rgba(37, 99, 235, 0.1);
-                            border-radius: 8px;
+                            width: 48px;
+                            height: 48px;
+                            background: transparent;
+                            border-radius: 0;
                             flex-shrink: 0;
+                            margin-bottom: 20px;
+                        }
+
+                        .card-icon-inline svg {
+                            width: 24px;
+                            height: 24px;
                         }
 
                         .card-header h5 {
-                            margin: 0;
-                            flex: 1;
+                            margin: 0 0 16px 0 !important;
+                            padding: 0 !important;
+                            font-size: 22px !important;
+                            font-weight: 700 !important;
+                            line-height: 1.3 !important;
+                            text-align: left !important;
+                            color: #2563eb !important;
+                            position: relative;
+                            padding-bottom: 20px !important;
+                        }
+
+                        .card-header h5::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 40px;
+                            height: 3px;
+                            background: linear-gradient(90deg, #2563eb, #3b82f6);
+                            border-radius: 2px;
                         }
 
                         .icon-blue {
@@ -482,6 +507,46 @@ const ColectData = () => {
                         .card-content {
                             flex: 1;
                             margin-top: 0;
+                            margin-left: 25px;
+                        }
+
+                        .card-content .font-md {
+                            font-size: 15px !important;
+                            font-weight: 400 !important;
+                            line-height: 1.6 !important;
+                            color: #6b7280 !important;
+                            margin-bottom: 24px !important;
+                            text-align: left !important;
+                            padding-left: 0 !important;
+                            margin-left: 0 !important;
+                        }
+
+                        .card-content .custom-bullets {
+                            font-size: 15px !important;
+                            font-weight: 400 !important;
+                            line-height: 1.6 !important;
+                            color: #6b7280 !important;
+                            text-align: left !important;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                            list-style: none;
+                            margin-left: 0 !important;
+                        }
+
+                        .card-content .custom-bullets li {
+                            text-align: left !important;
+                            margin-bottom: 8px !important;
+                            font-size: 15px !important;
+                            font-weight: 400 !important;
+                            line-height: 1.6 !important;
+                            color: #6b7280 !important;
+                            padding-left: 0 !important;
+                            margin-left: 0 !important;
+                        }
+
+                        .card-content .custom-bullets li::before {
+                            content: '•';
+                            margin-right: 8px;
                         }
 
                         .row.mt-45 .col-lg-4 {
@@ -496,54 +561,37 @@ const ColectData = () => {
 
                         @media (max-width: 991px) {
                             .text-showcase-card {
-                                padding: 20px;
+                                padding: 28px 24px;
                             }
                             
-                            .card-icon-inline {
-                                width: 36px;
-                                height: 36px;
-                            }
-                            
-                            .icon-blue {
-                                width: 20px;
-                                height: 20px;
-                            }
-                            
-                            .card-header {
-                                gap: 10px;
+                            .card-header h5 {
+                                font-size: 20px !important;
                             }
                         }
 
-                        @media (max-width: 767px) {
+                        @media (max-width: 768px) {
                             .text-showcase-card {
-                                padding: 18px;
-                                margin-bottom: 16px;
+                                padding: 24px 20px;
                             }
                             
-                            .card-icon-inline {
-                                width: 32px;
-                                height: 32px;
+                            .card-header h5 {
+                                font-size: 18px !important;
                             }
-                            
-                            .icon-blue {
-                                width: 18px;
-                                height: 18px;
-                            }
-                            
-                            .card-header {
-                                gap: 8px;
+                        }
+
+                        @media (max-width: 480px) {
+                            .text-showcase-card {
+                                padding: 20px 16px;
                             }
                         }
                     `}</style>
                 </section>
-
                 <section className="section mt-100 mb-40 process-section">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
                                 <h2 className="color-brand-1 mb-20">How we work</h2>
-                                <p className="font-lg color-gray-500">Simple and transparent process
-</p>
+                                <p className="font-lg color-gray-500">Simple and transparent process</p>
                             </div>
                         </div>
 
@@ -554,8 +602,7 @@ const ColectData = () => {
                                         <div className="process-number">1</div>
                                         <div>
                                             <h4 className="color-brand-1 mb-5">Kickoff & Requirements</h4>
-                                            <p className="font-md color-grey-500"> define success metrics, target populations, and constraints.
-</p>
+                                            <p className="font-md color-grey-500"> define success metrics, target populations, and constraints.</p>
                                         </div>
                                     </div>
 
@@ -603,7 +650,7 @@ const ColectData = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-black-text mb-20">Use Cases</h2>
+                                <h2 className="color-brand-1 mb-20">Use Cases</h2>
                                 <p className="font-lg color-gray-500">
                                     What makes us different from others? We give holistic solutions
                                     <br className="d-none d-lg-block" />
@@ -624,7 +671,7 @@ const ColectData = () => {
                     <div className="container">
                         <div className="row mt-50 align-items-center card-no-border">
                             <div className="col-lg-6 mb-350">
-                                <h2 className="color-black-text">Quality, compliance & security</h2>
+                                <h2 className="color-brand-1">Quality, compliance & security</h2>
                                 <div className="mb-10 mt-10 font-md">Personalization is more than recommending “similar items.” It’s about adapting to user behavior, context, and evolving intent. We support personalization efforts through:</div>
                             </div>
                             <div className="col-lg-6">
