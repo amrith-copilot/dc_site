@@ -10655,12 +10655,12 @@ footer.footer-4 {
   --footer-transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   
   /* Spacing Variables */
-  --footer-padding-mobile: 40px 20px 30px;
-  --footer-padding-tablet: 50px 24px 35px;
-  --footer-padding-desktop: 60px 0 40px;
-  --footer-gap-mobile: 32px;
-  --footer-gap-tablet: 40px;
-  --footer-gap-desktop: 60px;
+  --footer-padding-mobile: 20px 20px 15px;
+  --footer-padding-tablet: 25px 24px 20px;
+  --footer-padding-desktop: 30px 0 20px;
+  --footer-gap-mobile: 20px;
+  --footer-gap-tablet: 24px;
+  --footer-gap-desktop: 36px;
 }
 
 /* Modern Footer with Enhanced Accessibility */
@@ -10897,31 +10897,15 @@ outline: none;
   font-size: 21px;
   font-weight: 400;
   color: #fff;
-  margin: 0 0 24px 0;
+  margin: 0 0 12px 0;
   font-family: 'Inter', sans-serif;
   position: relative;
   transition: all var(--footer-transition-normal);
 }
 
-.column-title::after {
-  content: '';
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  background: var(--footer-accent-color);
-  transition: all var(--footer-transition-normal);
-}
-
-.column-title:hover::after {
-  width: 50px;
-  background: var(--footer-hover-color);
-}
-
 .column-title.invisible {
   visibility: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 /* Enhanced Menu with Better Hover Effects */
@@ -10932,24 +10916,9 @@ outline: none;
 }
 
 .footer-menu li {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
   overflow: hidden;
-}
-
-.footer-menu li::before {
-  content: '';
-  position: absolute;
-  left: -100%;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, var(--color-transparent), var(--color-primary-500-alpha-10), var(--color-transparent));
-  transition: left var(--footer-transition-slow);
-}
-
-.footer-menu li:hover::before {
-  left: 100%;
 }
 
 .footer-menu a {
@@ -10981,7 +10950,7 @@ outline: none;
 
 /* Service Groups with Enhanced Styling */
 .service-group {
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   padding: 0;
   border-radius: 8px;
   /* Removed background hover effect */
@@ -10995,7 +10964,7 @@ outline: none;
   font-size: 16px;
   font-weight: 300;
   color: #fff;
-  margin: 0 0 12px 0;
+  margin: 0 0 8px 0;
   font-family: 'Inter', sans-serif;
   transition: color var(--footer-transition-normal);
 }
@@ -11007,25 +10976,8 @@ outline: none;
 }
 
 .service-submenu li {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   position: relative;
-  padding-left: 20px;
-}
-
-.service-submenu li::before {
-  content: "→";
-  color: var(--footer-accent-color);
-  position: absolute;
-  left: 0;
-  font-weight: 600;
-  font-size: 12px;
-  transition: all var(--footer-transition-normal);
-  opacity: 0.6;
-}
-
-.service-submenu li:hover::before {
-  transform: translateX(2px);
-  opacity: 1;
 }
 
 .service-submenu a {
@@ -11057,7 +11009,7 @@ outline: none;
 .footer-bottom {
   background: var(--color-black);
   border-top: 1px solid var(--color-black);
-  padding: 24px 0;
+  padding: 16px 0;
   position: relative;
 }
 
@@ -11096,27 +11048,10 @@ outline: none;
   outline: none;
 }
 
-.legal-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: var(--footer-accent-color);
-  transform: translateX(-50%);
-  transition: width var(--footer-transition-normal);
-}
-
 .legal-link:hover,
 .legal-link:focus-visible {
   color: var(--color-white);
   background: var(--color-white-500-alpha-10);
-}
-
-.legal-link:hover::after,
-.legal-link:focus-visible::after {
-  width: 80%;
 }
 
 .legal-link:focus-visible {
