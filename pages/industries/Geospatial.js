@@ -134,15 +134,16 @@ const Geospatial = () => {
                         </div>
                         <div className="row">
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/geo-land use.jpg" 
                                             alt="Land-Use Classification" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Land-Use Classification</h6>
                                         <p className="font-sm color-grey-500">
                                             Classify agricultural, urban, forest and industrial land types.
@@ -152,15 +153,16 @@ const Geospatial = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/geo-road and pathway.jpg" 
                                             alt="Road & Pathway Extraction" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Road & Pathway Extraction</h6>
                                         <p className="font-sm color-grey-500">
                                             Extract road networks, trails and transportation infrastructure.
@@ -170,15 +172,16 @@ const Geospatial = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
                                             alt="Vegetation Health Mapping" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Vegetation Health Mapping</h6>
                                         <p className="font-sm color-grey-500">
                                             Annotate vegetation indices and forest health patterns.
@@ -188,15 +191,16 @@ const Geospatial = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/geo-water.jpg" 
                                             alt="Water Body Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Water Body Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Identify rivers, lakes, wetlands and flood zones.
@@ -206,15 +210,16 @@ const Geospatial = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Building Footprint Segmentation" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Building Footprint Segmentation</h6>
                                         <p className="font-sm color-grey-500">
                                             Segment building outlines and structural footprints.
@@ -224,15 +229,16 @@ const Geospatial = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
+                                            src="/assets/images/industry/geo-topo.jpg" 
                                             alt="Topographic Change Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Topographic Change Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Track terrain changes over time from multi-temporal imagery.
@@ -242,15 +248,16 @@ const Geospatial = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/geo-disaster.jpg" 
                                             alt="Disaster Impact Mapping" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Disaster Impact Mapping</h6>
                                         <p className="font-sm color-grey-500">
                                             Map flood, fire and earthquake damage zones.
@@ -260,15 +267,16 @@ const Geospatial = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/geo-mining.jpg" 
                                             alt="Mining & Quarry Monitoring" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Mining & Quarry Monitoring</h6>
                                         <p className="font-sm color-grey-500">
                                             Track extraction sites and mining activity changes.

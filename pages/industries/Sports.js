@@ -126,15 +126,16 @@ const Sports = () => {
                         </div>
                         <div className="row">
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
                                             alt="Player Tracking" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Player Tracking</h6>
                                         <p className="font-sm color-grey-500">
                                             Track athlete positions and movements across frames.
@@ -144,15 +145,16 @@ const Sports = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Ball Tracking" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Ball Tracking</h6>
                                         <p className="font-sm color-grey-500">
                                             Detect and track ball position, trajectory and speed.
@@ -162,15 +164,16 @@ const Sports = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
                                             alt="Event Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Event Detection (Goals, Fouls, Plays)</h6>
                                         <p className="font-sm color-grey-500">
                                             Identify key game events and moments automatically.
@@ -180,15 +183,16 @@ const Sports = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
                                             alt="Pose & Motion Analysis" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Pose & Motion Analysis</h6>
                                         <p className="font-sm color-grey-500">
                                             Annotate body poses and biomechanical movements.
@@ -198,15 +202,16 @@ const Sports = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Broadcast Camera Recognition" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Broadcast Camera Recognition</h6>
                                         <p className="font-sm color-grey-500">
                                             Classify camera angles and broadcast shot types.
@@ -216,15 +221,16 @@ const Sports = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
                                             alt="Sponsorship Logo Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Sponsorship Logo Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Detect sponsor logos and brand placements.
@@ -234,15 +240,16 @@ const Sports = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
                                             alt="Field Boundary Mapping" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Field Boundary Mapping</h6>
                                         <p className="font-sm color-grey-500">
                                             Map playing field lines, zones and boundaries.
@@ -252,15 +259,16 @@ const Sports = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Crowd Behavior Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Crowd Behavior Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Analyze crowd reactions and fan behavior patterns.

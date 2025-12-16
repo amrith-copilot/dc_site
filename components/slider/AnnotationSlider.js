@@ -98,7 +98,7 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
         <>
             <section className={`section mt-100 pt-60 pb-60 ${navId}`}>
                 <div className="container" ref={containerRef}>
-                    <div className="row">
+                    <div className="row ">
                         <div className="col-lg-12 text-center">
                             <h2 className="color-brand-1 mb-20">{title}</h2>
                             <p className="font-lg color-grey-500 mb-40">{subtitle}</p>
@@ -172,19 +172,21 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                 .swiper-annotation .swiper-slide {
                     display: flex;
                     align-items: stretch;
+                    padding: 8px;
                 }
                 .annotation-card {
                     min-height: 140px;
                     padding: 30px;
                     background: white;
                     border-radius: 14px;
-                    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+                    box-shadow: 0 0 20px rgba(0,0,0,0.1);
                     display: flex;
                     align-items: flex-start;
                     justify-content: flex-start;
                     text-align: left;
                     transition: 0.3s ease;
                     width: 100%;
+                    border: none;
                 }
                 .annotation-card-content {
                     display: flex;
@@ -233,7 +235,7 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     display: flex;
                     justify-content: center;
                     gap: 20px;
-                    margin-top: 30px;
+                    margin-top: 40px;
                 }
                 .${prevClass},
                 .${nextClass} {

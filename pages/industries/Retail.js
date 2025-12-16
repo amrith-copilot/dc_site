@@ -58,15 +58,16 @@ const Retail = () => {
                         </div>
                         <div className="row">
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/retail-product recognition.jpg" 
                                             alt="Product Recognition on Shelves" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Product Recognition on Shelves</h6>
                                         <p className="font-sm color-grey-500">
                                             Annotate SKU placement, facings and shelf positions for planogram compliance.
@@ -76,15 +77,16 @@ const Retail = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Out-of-Stock & Empty Shelf Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Out-of-Stock & Empty Shelf Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Identify missing products and low-stock zones for real-time replenishment.
@@ -94,15 +96,16 @@ const Retail = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
                                             alt="Shopper Path Tracking" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Shopper Path Tracking</h6>
                                         <p className="font-sm color-grey-500">
                                             Map customer movement across aisles to optimize layout and flow.
@@ -112,15 +115,16 @@ const Retail = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
                                             alt="Queue Monitoring" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Queue Monitoring</h6>
                                         <p className="font-sm color-grey-500">
                                             Detect line length and waiting times for smarter staffing.
@@ -130,15 +134,16 @@ const Retail = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/Retail-price tag.jpg" 
                                             alt="Price Tag & Label Identification" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Price Tag & Label Identification</h6>
                                         <p className="font-sm color-grey-500">
                                             Recognize price labels, discount tags and mismatched signage.
@@ -148,15 +153,16 @@ const Retail = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
                                             alt="Self-Checkout Vision Support" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Self-Checkout Vision Support</h6>
                                         <p className="font-sm color-grey-500">
                                             Annotate items, barcodes and bagging area events for automated checkout systems.
@@ -166,15 +172,16 @@ const Retail = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
                                             alt="In-Store Theft & Anomaly Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">In-Store Theft & Anomaly Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Label suspicious actions and asset-removal patterns.
@@ -184,15 +191,16 @@ const Retail = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Store Heatmap Generation" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Store Heatmap Generation</h6>
                                         <p className="font-sm color-grey-500">
                                             Segment high-engagement and low-traffic areas for merchandising decisions.

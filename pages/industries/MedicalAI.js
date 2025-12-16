@@ -134,15 +134,16 @@ const MedicalAI = () => {
                         </div>
                         <div className="row">
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
                                             alt="Lesion & Tumor Segmentation" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Lesion & Tumor Segmentation</h6>
                                         <p className="font-sm color-grey-500">
                                             Segment lesions, tumors and abnormal tissue regions.
@@ -152,15 +153,16 @@ const MedicalAI = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Organ & Structure Labeling" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Organ & Structure Labeling</h6>
                                         <p className="font-sm color-grey-500">
                                             Label anatomical organs and body structures.
@@ -170,15 +172,16 @@ const MedicalAI = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
+                                            src="/assets/images/industry/med-fracture.jpg" 
                                             alt="Bone Fracture Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Bone Fracture Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Detect and classify bone fractures in X-rays.
@@ -188,15 +191,16 @@ const MedicalAI = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/med-ultra.jpg" 
                                             alt="Ultrasound Anatomy Annotation" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Ultrasound Anatomy Annotation</h6>
                                         <p className="font-sm color-grey-500">
                                             Annotate anatomical features in ultrasound imagery.
@@ -206,15 +210,16 @@ const MedicalAI = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/med-pathology.jpg" 
                                             alt="Pathology Cell Classification" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Pathology Cell Classification</h6>
                                         <p className="font-sm color-grey-500">
                                             Classify cell types in pathology slides.
@@ -224,15 +229,16 @@ const MedicalAI = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
                                             alt="Radiology Report Linking" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Radiology Report Linking</h6>
                                         <p className="font-sm color-grey-500">
                                             Link imaging findings to radiology reports.
@@ -242,15 +248,16 @@ const MedicalAI = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
                                             alt="Vitals & Waveform Event Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Vitals & Waveform Event Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Detect events in ECG, EEG and vital waveforms.
@@ -260,15 +267,16 @@ const MedicalAI = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Surgical Video Action Recognition" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Surgical Video Action Recognition</h6>
                                         <p className="font-sm color-grey-500">
                                             Recognize surgical actions and instrument usage.

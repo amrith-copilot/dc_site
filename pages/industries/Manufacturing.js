@@ -126,15 +126,16 @@ const Manufacturing = () => {
                         </div>
                         <div className="row">
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
                                             alt="Surface Defect Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Surface Defect Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Identify scratches, dents, cracks and surface anomalies.
@@ -144,15 +145,16 @@ const Manufacturing = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Assembly Verification" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Assembly Verification</h6>
                                         <p className="font-sm color-grey-500">
                                             Verify correct assembly and detect missing components.
@@ -162,15 +164,16 @@ const Manufacturing = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human3.png" 
                                             alt="Component Classification" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Component Classification</h6>
                                         <p className="font-sm color-grey-500">
                                             Classify parts, materials and component types.
@@ -180,15 +183,16 @@ const Manufacturing = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human1.png" 
                                             alt="Robotic Grasp Point Annotation" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Robotic Grasp Point Annotation</h6>
                                         <p className="font-sm color-grey-500">
                                             Label optimal grip points for robotic manipulation.
@@ -198,15 +202,16 @@ const Manufacturing = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Tool & Machine State Detection" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Tool & Machine State Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             Detect tool wear, machine status and operational states.
@@ -216,15 +221,16 @@ const Manufacturing = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
+                                            src="/assets/images/industry/manufac-conveyor tracking.webp" 
                                             alt="Conveyor Object Tracking" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Conveyor Object Tracking</h6>
                                         <p className="font-sm color-grey-500">
                                             Track items moving through production lines.
@@ -234,15 +240,16 @@ const Manufacturing = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/manufac-package.jpg" 
                                             alt="Packaging Quality Check" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Packaging Quality Check</h6>
                                         <p className="font-sm color-grey-500">
                                             Inspect packaging integrity and label accuracy.
@@ -252,15 +259,16 @@ const Manufacturing = () => {
                             </div>
 
                             <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="/assets/imgs/page/homepage6/human2.png" 
                                             alt="Industrial Safety Monitoring" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Industrial Safety Monitoring</h6>
                                         <p className="font-sm color-grey-500">
                                             Detect PPE compliance and safety zone violations.

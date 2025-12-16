@@ -175,16 +175,17 @@ const Insurance = () => {
                         </div>
                         <div className="row">
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
                                             src="/assets/imgs/page/homepage6/human1.png"
                                             alt="Annotated image showing vehicle exterior damage detection for auto insurance claims"
                                             title="Annotated image showing vehicle exterior damage detection for auto insurance claims"
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Vehicle Exterior Damage Detection</h6>
                                         <p className="font-sm color-grey-500">
                                             High-precision visual detection of dents, scratches, and collision damage for faster auto-claim assessments across North America, Europe, and APAC.
@@ -194,16 +195,17 @@ const Insurance = () => {
                             </div>
 
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
                                             src="/assets/imgs/page/homepage6/human2.png"
                                             alt="Annotated windshield crack detection for auto insurance analysis"
                                             title="Annotated windshield crack detection for auto insurance analysis"
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Windshield Crack & Glass Damage Analysis</h6>
                                         <p className="font-sm color-grey-500">
                                             AI-powered crack and glass damage detection enabling accurate repair cost estimation for global auto insurance providers.
@@ -213,16 +215,17 @@ const Insurance = () => {
                             </div>
 
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
                                             src="/assets/imgs/page/homepage6/human3.png"
                                             alt="Annotated drone roof inspection for property insurance assessments"
                                             title="Annotated drone roof inspection for property insurance assessments"
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Property Roof Condition Assessment (Drone Imagery)</h6>
                                         <p className="font-sm color-grey-500">
                                             Drone-based roof damage analysis providing insurers with rapid, accurate assessments of hail, wind, and aging-related risks worldwide.
@@ -232,16 +235,17 @@ const Insurance = () => {
                             </div>
 
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
                                             src="/assets/imgs/page/homepage6/human1.png"
                                             alt="Annotated water and flood damage detection for home insurance claims"
                                             title="Annotated water and flood damage detection for home insurance claims"
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Water/Flood Damage Segmentation in Homes</h6>
                                         <p className="font-sm color-grey-500">
                                             Automated visual mapping of flood and water damage patterns for faster claim validation in global flood-prone regions.
@@ -251,16 +255,17 @@ const Insurance = () => {
                             </div>
 
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
                                             src="/assets/imgs/page/homepage6/human2.png"
                                             alt="Annotated fire and smoke damage classification for property insurance"
                                             title="Annotated fire and smoke damage classification for property insurance"
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Fire & Smoke Damage Classification</h6>
                                         <p className="font-sm color-grey-500">
                                             Computer-vision–based detection of burn marks, soot, and fire patterns to accelerate property damage evaluation in international markets.
@@ -270,16 +275,17 @@ const Insurance = () => {
                             </div>
 
                             <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
                                             src="/assets/imgs/page/homepage6/human3.png"
                                             alt="Annotated vehicle part recognition for insurance repair estimation"
                                             title="Annotated vehicle part recognition for insurance repair estimation"
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Vehicle Part Recognition for Repair Estimation</h6>
                                         <p className="font-sm color-grey-500">
                                             AI-driven identification of vehicle components to streamline repair planning for auto insurers across global repair networks.

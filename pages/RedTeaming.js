@@ -27,8 +27,8 @@ const RedTeaming = () => {
                             </div>
                             
                             {/* VideoSlider replaces the original video banner */}
-                            <div className="box-video-banner">
-                                <VideoSlider />
+                            <div className="box-video-banner align-items-center d-flex justify-content-center">
+                               <img src="/assets/images/industry/RedTeaming.png" alt="Red Teaming hero" style={{ width: '80%', height: 'auto'}} />
                             </div>
                             </div>
                         </div>
@@ -94,43 +94,61 @@ const RedTeaming = () => {
                         </div>
                         <div className="mt-50">
                             <div className="row">
-                                <div className="col-lg-4" style={{display: 'flex'}}>
-                                    <div className="card-offer card-offer-2 hover-up" style={{display: 'flex', flexDirection: 'column', flex: 1}}>
-                                        <div className="card-info">
-                                            <h4 className="color-brand-1 mb-15">Large Language Models (LLMs)</h4>
-                                            <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
-                                                <li>Can the model be tricked into saying something unsafe or biased?</li>
-                                                <li>Does it accidentally leak sensitive information?</li>
-                                                <li>Does it give consistent, trustworthy answers under pressure?</li>
-                                            </ul>
+                                <div className="col-lg-4 col-md-6 social-media">
+                                    <div className="left-aligned-card-wrapper">
+                                        <div className="left-aligned-card-container">
+                                            <h4 className="left-card-title color-brand-1">Large Language Models (LLMs)</h4>
+                                            <div className="left-card-divider"></div>
+                                            <p className="left-card-description font-md color-grey-500">
+                                                Can the model be tricked into saying something unsafe or biased? Does it accidentally leak sensitive information? Does it give consistent, trustworthy answers under pressure?
+                                            </p>
+                                            <div className="left-card-button-wrapper">
+                                                <a className="left-card-learn-more">
+                                                    Learn More
+                                                    <svg className="left-card-arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div className="card-image-bottom mb-35" style={{marginTop: 'auto'}}> <img className="w-100 bd-rd16" src="assets/imgs/page/homepage11/img2.png" alt="iori" /></div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4" style={{display: 'flex'}}>
-                                    <div className="card-offer card-offer-2 hover-up" style={{display: 'flex', flexDirection: 'column', flex: 1}}>
-                                        <div className="card-info">
-                                            <h4 className="color-brand-1 mb-15">Computer Vision Systems</h4>
-                                            <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
-                                                <li>Can the system be fooled by changes in images or environments?</li>
-                                                <li>Is it fair across different demographics and conditions?</li>
-                                                <li>Does it make safe decisions in critical use cases like healthcare or autonomous driving?</li>
-                                            </ul>
+                                <div className="col-lg-4 col-md-6 social-media">
+                                    <div className="left-aligned-card-wrapper">
+                                        <div className="left-aligned-card-container">
+                                            <h4 className="left-card-title color-brand-1">Computer Vision Systems</h4>
+                                            <div className="left-card-divider"></div>
+                                            <p className="left-card-description font-md color-grey-500">
+                                                Can the system be fooled by changes in images or environments? Is it fair across different demographics and conditions? Does it make safe decisions in critical use cases like healthcare or autonomous driving?
+                                            </p>
+                                            <div className="left-card-button-wrapper">
+                                                <a className="left-card-learn-more">
+                                                    Learn More
+                                                    <svg className="left-card-arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div className="card-image-bottom mb-35" style={{marginTop: 'auto'}}> <img className="w-100 bd-rd16" src="assets/imgs/page/homepage11/img2.png" alt="iori" /></div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4" style={{display: 'flex'}}>
-                                    <div className="card-offer card-offer-2 hover-up" style={{display: 'flex', flexDirection: 'column', flex: 1}}>
-                                        <div className="card-info">
-                                            <h4 className="color-brand-1 mb-15">Multimodal AI (text, images, video, audio combined)</h4>
-                                            <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
-                                                <li>Do different inputs (text + images) work together safely?</li>
-                                                <li>Could the system generate harmful or inappropriate content?</li>
-                                                <li>Are there mismatches between what it shows and what it says?</li>
-                                            </ul>
+                                <div className="col-lg-4 col-md-6 social-media">
+                                    <div className="left-aligned-card-wrapper">
+                                        <div className="left-aligned-card-container">
+                                            <h4 className="left-card-title color-brand-1">Multimodal AI (text, images, video, audio combined)</h4>
+                                            <div className="left-card-divider"></div>
+                                            <p className="left-card-description font-md color-grey-500">
+                                                Do different inputs (text + images) work together safely? Could the system generate harmful or inappropriate content? Are there mismatches between what it shows and what it says?
+                                            </p>
+                                            <div className="left-card-button-wrapper">
+                                                <a className="left-card-learn-more">
+                                                    Learn More
+                                                    <svg className="left-card-arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div className="card-image-bottom mb-35" style={{marginTop: 'auto'}}> <img className="w-100 bd-rd16" src="assets/imgs/page/homepage11/img2.png" alt="iori" /></div>
                                     </div>
                                 </div>
                             </div>
@@ -208,76 +226,6 @@ const RedTeaming = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-20 mb-40 mt-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Our Process</h2>
-                                <p className="font-lg color-gray-500">Updated on September 24, 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="section mt-100 mb-40 process-section">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Process Structure</h2>
-                                <p className="font-lg color-gray-500">Updated on September 24, 2023</p>
-                            </div>
-                        </div>
-
-                        <div className="process-list mt-60">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <div className="process-row fade-up">
-                                        <div className="process-number">1</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">Consultation</h4>
-                                            <p className="font-md color-grey-500">Share your project needs</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="process-row fade-up" style={{ animationDelay: "0.1s" }}>
-                                        <div className="process-number">2</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">Free Pilot</h4>
-                                            <p className="font-md color-grey-500">Try us risk-free</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="process-row fade-up" style={{ animationDelay: "0.2s" }}>
-                                        <div className="process-number">3</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">Feedback & Optimization</h4>
-                                            <p className="font-md color-grey-500">Align with your expectations</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6">
-                                    <div className="process-row fade-up" style={{ animationDelay: "0.3s" }}>
-                                        <div className="process-number">4</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">Execution</h4>
-                                            <p className="font-md color-grey-500">Scale with dedicated resources</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="process-row fade-up" style={{ animationDelay: "0.4s" }}>
-                                        <div className="process-number">5</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">QC & Delivery</h4>
-                                            <p className="font-md color-grey-500">3-tier quality checks, free rework if needed</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">

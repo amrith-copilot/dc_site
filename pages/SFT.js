@@ -28,8 +28,8 @@ const SFT = () => {
                             </div>
                             
                             {/* VideoSlider replaces the original video banner */}
-                            <div className="box-video-banner">
-                                <VideoSlider />
+                            <div className="box-video-banner align-items-center d-flex justify-content-center">
+                               <img src="/assets/images/industry/SFT.png" alt="SFT hero" style={{ width: '80%', height: 'auto'}} />
                             </div>
                         </div>
                     </div>

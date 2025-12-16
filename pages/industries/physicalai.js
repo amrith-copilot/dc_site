@@ -130,15 +130,16 @@ const PhysicalAI = () => {
                                                     {/* First Row of Cards - 4 in a row */}
                                                     <div className="row mt-45">
                                                         <div className="col-lg-3">
-                                                            <div className="image-showcase-card-dynamic">
-                                                                <div className="image-showcase-top-dynamic">
+                                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                                                     <img 
                                                                         src="/assets/imgs/page/homepage6/human2.png" 
                                                                         alt="Data Annotation Services" 
                                                                         className="image-showcase-photo-dynamic"
+                                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                                                     />
                                                                 </div>
-                                                                <div className="image-showcase-content-dynamic">
+                                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                                                     <h4 className="color-brand-1 mb-15">Data Annotation Services</h4>
                                                                     <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
                                                                         <li className="mb-8">2D & 3D Bounding Boxes, Segmentation</li>
@@ -151,15 +152,16 @@ const PhysicalAI = () => {
                                                         </div>
                                                         
                                                         <div className="col-lg-3">
-                                                            <div className="image-showcase-card-dynamic">
-                                                                <div className="image-showcase-top-dynamic">
+                                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                                                     <img 
                                                                         src="/assets/imgs/page/homepage12/human2.png" 
                                                                         alt="Human-in-the-Loop" 
                                                                         className="image-showcase-photo-dynamic"
+                                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                                                     />
                                                                 </div>
-                                                                <div className="image-showcase-content-dynamic">
+                                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                                                     <h4 className="color-brand-1 mb-15">Human-in-the-Loop (HITL)</h4>
                                                                     <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
                                                                         <li className="mb-8">Continuous quality checks during training</li>
@@ -171,15 +173,16 @@ const PhysicalAI = () => {
                                                         </div>
                                                         
                                                         <div className="col-lg-3">
-                                                            <div className="image-showcase-card-dynamic">
-                                                                <div className="image-showcase-top-dynamic">
+                                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                                                     <img 
                                                                         src="/assets/imgs/page/homepage12/human2.png" 
                                                                         alt="RLHF" 
                                                                         className="image-showcase-photo-dynamic"
+                                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                                                     />
                                                                 </div>
-                                                                <div className="image-showcase-content-dynamic">
+                                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                                                     <h4 className="color-brand-1 mb-15">Reinforcement Learning with Human Feedback</h4>
                                                                     <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
                                                                         <li className="mb-8">Teaching robots "preferred" actions through feedback loops</li>
@@ -190,15 +193,16 @@ const PhysicalAI = () => {
                                                         </div>
 
                                                         <div className="col-lg-3">
-                                                            <div className="image-showcase-card-dynamic">
-                                                                <div className="image-showcase-top-dynamic">
+                                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                                                     <img 
                                                                         src="/assets/imgs/page/homepage6/human2.png" 
                                                                         alt="Supervised Fine-Tuning" 
                                                                         className="image-showcase-photo-dynamic"
+                                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                                                     />
                                                                 </div>
-                                                                <div className="image-showcase-content-dynamic">
+                                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                                                     <h4 className="color-brand-1 mb-15">Supervised Fine-Tuning (SFT)</h4>
                                                                     <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
                                                                         <li className="mb-8">Adapting foundation models for task-specific use (industrial robots, healthcare assistants, AR/VR avatars)</li>

@@ -14,7 +14,7 @@ const LLMEvals = () => {
             <section className="section banner-5">
                     <div className="container">
                         <div className="mt-65 mb-100">
-                            <div className="row align-items-end">
+                            <div className="row align-items-center">
                                 <div className="col-lg-6 mb-20">
                                     <h2 className="color-black-text mt-10">
                                         Trusted Human Evaluation for Safer, Smarter AI
@@ -28,8 +28,8 @@ const LLMEvals = () => {
                             </div>
                             
                             {/* VideoSlider replaces the original video banner */}
-                            <div className="box-video-banner">
-                                <VideoSlider />
+                            <div className="box-video-banner align-items-center d-flex justify-content-center">
+                               <img src="/assets/images/industry/AI Evals- hero.png" alt="AI Evals hero" style={{ width: '80%', height: 'auto'}} />
                             </div>
                         </div>
                     </div>
