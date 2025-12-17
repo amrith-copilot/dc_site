@@ -13,14 +13,14 @@ const SFT = () => {
             <Layout>
                 <style jsx global>{`
                     @font-face {
-                        font-family: 'VerdanaItalic';
-                        src: url('/assets/fonts/uicons/VERDANAI.TTF') format('truetype');
+                        font-family: 'Verdana';
+                        src: url('/assets/fonts/uicons/verdana.ttf') format('truetype');
                         font-weight: 400;
-                        font-style: italic;
+                        font-style: normal;
                         font-display: swap;
                     }
                     body, .sft-root, .sft-root * {
-                        font-family: 'VerdanaItalic', Verdana, Arial, sans-serif;
+                        font-family: 'Verdana', Verdana, Arial, sans-serif;
                     }
                     .card-hover {
                         transition: transform .22s cubic-bezier(.2,.9,.3,1), box-shadow .22s cubic-bezier(.2,.9,.3,1), background .22s ease, color .22s ease;
