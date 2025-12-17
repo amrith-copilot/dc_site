@@ -179,14 +179,13 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     padding: 30px;
                     background: white;
                     border-radius: 14px;
-                    box-shadow: 0 0 20px rgba(0,0,0,0.1);
                     display: flex;
                     align-items: flex-start;
                     justify-content: flex-start;
                     text-align: left;
                     transition: 0.3s ease;
                     width: 100%;
-                    border: none;
+                    border: 1px solid #e5e7eb;
                 }
                 .annotation-card-content {
                     display: flex;
@@ -228,8 +227,8 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     font-weight: bold;
                 }
                 .annotation-card:hover {
-                    transform: translateY(-6px);
-                    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+                    background: var(--color-primary-100);
+                    color: white;
                 }
                 .annotation-nav {
                     display: flex;
@@ -246,13 +245,14 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     justify-content: center;
                     border-radius: 50%;
                     background: white;
-                    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
                     cursor: pointer;
                     transition: 0.2s ease;
+                    border: 1px solid var(--border-light);
                 }
                 .${prevClass}:hover,
                 .${nextClass}:hover {
                     transform: scale(1.1);
+                    border: 1px solid var(--border-light);
                 }
             `}</style>
         </>

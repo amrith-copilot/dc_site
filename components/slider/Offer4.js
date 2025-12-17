@@ -131,7 +131,7 @@ const Offer4 = () => {
                         <div className="annotation-card">
                             <div className="annotation-card-content">
                                 <h6 className="annotation-card-title">{item.title}</h6>
-                                <ul>
+                                <ul className="annotation-card-list">
                                     {item.items.map((listItem, index) => (
                                         <li key={index}>{listItem}</li>
                                     ))}
@@ -162,19 +162,20 @@ const Offer4 = () => {
                 .swiper-annotation .swiper-slide {
                     display: flex;
                     align-items: stretch;
+                    padding: 8px;
                 }
                 .annotation-card {
-                    height: 180px;
+                    min-height: 140px;
                     padding: 30px;
                     background: white;
                     border-radius: 14px;
-                    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
                     display: flex;
                     align-items: flex-start;
                     justify-content: flex-start;
                     text-align: left;
                     transition: 0.3s ease;
                     width: 100%;
+                    border: 1px solid #e5e7eb;
                 }
                 .annotation-card-content {
                     display: flex;
@@ -189,26 +190,46 @@ const Offer4 = () => {
                     margin: 0;
                     line-height: 1.4;
                 }
-                .annotation-card ul {
+                .annotation-card p {
                     margin: 0;
-                    padding-left: 1.2rem;
-                    list-style-type: disc;
                     color: #666;
                     font-size: 14px;
                     line-height: 1.5;
                 }
-                .annotation-card li {
-                    margin-bottom: 0.5rem;
+                .annotation-card-list {
+                    margin: 0;
+                    padding-left: 20px;
+                    list-style: none;
+                }
+                .annotation-card-list li {
+                    color: #666;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    margin-bottom: 8px;
+                    position: relative;
+                    padding-left: 16px;
+                }
+                .annotation-card-list li::before {
+                    content: '▸';
+                    position: absolute;
+                    left: 0;
+                    color: #0017e3;
+                    font-weight: bold;
                 }
                 .annotation-card:hover {
-                    transform: translateY(-6px);
-                    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+                    background: var(--color-primary-100);
+                }
+                /* Keep text readable on hover: force title, paragraphs and list items to black */
+                .annotation-card:hover .annotation-card-content ul,
+                .annotation-card:hover .annotation-card-content li,
+                .annotation-card:hover .annotation-card-content p {
+                    color: #000 !important;
                 }
                 .annotation-nav {
                     display: flex;
                     justify-content: center;
                     gap: 20px;
-                    margin-top: 30px;
+                    margin-top: 40px;
                 }
                 .offer4-prev,
                 .offer4-next {
@@ -219,13 +240,14 @@ const Offer4 = () => {
                     justify-content: center;
                     border-radius: 50%;
                     background: white;
-                    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
                     cursor: pointer;
                     transition: 0.2s ease;
+                    border: 1px solid var(--border-light);
                 }
                 .offer4-prev:hover,
                 .offer4-next:hover {
                     transform: scale(1.1);
+                    border: 1px solid var(--border-light);
                 }
             `}</style>
         </div>

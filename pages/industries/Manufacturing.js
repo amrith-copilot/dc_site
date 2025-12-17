@@ -129,7 +129,7 @@ const Manufacturing = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/man_safety.png" 
                                             alt="Surface Defect Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -148,7 +148,7 @@ const Manufacturing = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/man_assembly.png" 
                                             alt="Assembly Verification" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -167,7 +167,7 @@ const Manufacturing = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
+                                            src="/assets/images/industry/man_defect.png" 
                                             alt="Component Classification" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -186,7 +186,7 @@ const Manufacturing = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/man_inspect.png" 
                                             alt="Robotic Grasp Point Annotation" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -205,7 +205,7 @@ const Manufacturing = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/lidar.jpg" 
                                             alt="Tool & Machine State Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

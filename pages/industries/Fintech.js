@@ -129,7 +129,7 @@ const Fintech = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/fin_claim.png" 
                                             alt="Document OCR & KYC Extraction" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -148,7 +148,7 @@ const Fintech = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/fin_asset.png" 
                                             alt="Check & Receipt Recognition" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -167,7 +167,7 @@ const Fintech = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
+                                            src="/assets/images/industry/fin_damage.png" 
                                             alt="ID Verification Annotation" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -186,7 +186,7 @@ const Fintech = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/fin_fraud.jpg" 
                                             alt="Transaction Behavior Patterns" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -205,7 +205,7 @@ const Fintech = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/fin_invoice.png" 
                                             alt="Fraud Trigger Visual Evidence" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

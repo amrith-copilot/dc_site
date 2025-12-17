@@ -9,31 +9,20 @@ const ColectData = () => {
     return (
         <>
             <Layout>
-                <section className="section banner-5">
-                    <div className="container">
-                        <div className="mt-65 mb-100">
-                            <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
+                <div className="collectdata-root">
+                    <style jsx global>{`
+                        @font-face {
+                            font-family: 'MontserratCustom';
+                            src: url('/assets/fonts/uicons/Montserrat-Regular.ttf') format('truetype');
+                            font-weight: 400;
+                            font-style: normal;
+                            font-display: swap;
+                        }
+                        body, .collectdata-root, .collectdata-root * {
+                            font-family: 'MontserratCustom', Arial, sans-serif;
+                        }
 
-                                   <h2 className="color-black-text mt-10">
-                                    Bespoke data collection for every model stage
-                                </h2>
-                                </div>
-                                <div className="col-lg-6 mb-70">
-                                    <p className="font-lg color-black-text">
-                                        From prototype experiments to production-grade foundation models, we deliver fit-for-purpose datasets that reduce bias, improve performance, and speed time-to-insight.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="box-video-banner">
-                                <VideoSlider />
-                            </div>
-                            
-
-                        </div>
-                    </div>
-
-                    <style jsx>{`
+                        /* Box video banner responsive styles */
                         .box-video-banner-responsive {
                             width: 100%;
                             margin: 40px 0 0 0;
@@ -130,14 +119,188 @@ const ColectData = () => {
                                 font-size: 0.9rem;
                             }
                         }
+
+                        /* Right-side single column styling */
+                        .right-single-column {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                        }
+
+                        .right-single-column .single-item {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            padding: 18px;
+                            border: 1px solid #f3f3f3;
+                            border-radius: 8px;
+                            background: #fff;
+                        }
+
+                        .right-single-column .single-item img {
+                            width: 120px;
+                            height: auto;
+                            object-fit: cover;
+                            border-radius: 6px;
+                            flex-shrink: 0;
+                        }
+
+                        .right-single-column .cardNumber {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            padding-left: 6px;
+                        }
+
+                        @media (max-width: 991px) {
+                            .right-single-column .single-item img {
+                                width: 96px;
+                            }
+                        }
+
+                        @media (max-width: 767px) {
+                            .right-single-column {
+                                gap: 16px;
+                            }
+
+                            /* make the right column full width under the left column on small screens */
+                            .col-lg-7 {
+                                width: 100%;
+                            }
+
+                            .right-single-column .single-item {
+                                flex-direction: row;
+                                padding: 12px;
+                            }
+                        }
+
+                        /* Left-aligned card styling (applied to text-showcase-card) */
+                        /* Left-aligned card styles (new design) */
+                        .left-aligned-card-wrapper {
+                            margin-bottom: 30px;
+                        }
+
+                        .left-aligned-card-container {
+                            background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+                            border: 1px solid #e8f2ff;
+                            border-radius: 12px;
+                            padding: 26px;
+                            height: 100%;
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+
+                        .left-aligned-card-container:hover {
+                            transform: translateY(-6px);
+                            box-shadow: 0 12px 30px rgba(37,99,235,0.12);
+                        }
+
+                        .left-card-icon {
+                            width: 64px;
+                            height: 64px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: #ffffff;
+                            border-radius: 10px;
+                            border: 1px solid #eef6ff;
+                            margin-bottom: 16px;
+                        }
+
+                        .left-card-icon img { width: 36px; height: 36px; object-fit: contain; }
+
+                        .left-card-title {
+                            font-size: 20px;
+                            font-weight: 700;
+                            color: #0f172a;
+                            margin: 0 0 10px 0;
+                        }
+
+                        .left-card-divider { width: 46px; height: 4px; background: #2563eb; border-radius: 4px; margin-bottom: 12px; }
+
+                        .left-card-description {
+                            font-size: 15px;
+                            color: #6b7280;
+                            line-height: 1.6;
+                            margin: 0;
+                        }
+
+                        @media (max-width: 991px) {
+                            .left-card-icon { width: 56px; height: 56px; }
+                            .left-card-icon img { width: 32px; height: 32px; }
+                            .left-card-title { font-size: 18px; }
+                        }
+
+                        .row.mt-45 .col-lg-4 {
+                            margin-bottom: 20px;
+                            display: flex;
+                            min-height: 100%;
+                        }
+
+                        .row.mt-45 .col-lg-4 .text-showcase-card {
+                            width: 100%;
+                        }
+
+                        @media (max-width: 991px) {
+                            .text-showcase-card {
+                                padding: 28px 24px;
+                            }
+                            
+                            .card-header h5 {
+                                font-size: 20px !important;
+                            }
+                        }
+
+                        @media (max-width: 768px) {
+                            .text-showcase-card {
+                                padding: 24px 20px;
+                            }
+                            
+                            .card-header h5 {
+                                font-size: 18px !important;
+                            }
+                        }
+
+                        @media (max-width: 480px) {
+                            .text-showcase-card {
+                                padding: 20px 16px;
+                            }
+                        }
                     `}</style>
+                <section className="section banner-5">
+                    <div className="container">
+                        <div className="mt-65 mb-100">
+                            <div className="row align-items-end">
+                                <div className="col-lg-6 mb-20">
+
+                                   <h2 className="color-black-text mt-10">
+                                    Bespoke data collection for every model stage
+                                </h2>
+                                </div>
+                                <div className="col-lg-6 mb-70">
+                                    <p className="font-lg color-black-text">
+                                        From prototype experiments to production-grade foundation models, we deliver fit-for-purpose datasets that reduce bias, improve performance, and speed time-to-insight.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="box-video-banner">
+                                <VideoSlider />
+                            </div>
+                            
+
+                        </div>
+                    </div>
+
+                    
                 </section>
                 <section className="section mt-10">
                     <div className="container">
                         <div className="box-business-rd">
                             <div className="row align-items-center">
                                 <div className="col-lg-5">
-                                    <h3 className="color-black-text mt-10 mb-15">Why us?</h3>
+                                    <h2 className="color-brand-1 mt-10 mb-15">Why us?</h2>
                                     <div className="mt-20">
                                         <p className="font-lg color-grey-400 pt-20">Primary benefits</p>
                                         <ul className="list-ticks pt-15">
@@ -193,61 +356,7 @@ const ColectData = () => {
                         </div>
                     </div>
 
-                    <style jsx>{`
-                        /* Right-side single column styling */
-                        .right-single-column {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 24px;
-                        }
-
-                        .right-single-column .single-item {
-                            display: flex;
-                            align-items: center;
-                            gap: 20px;
-                            padding: 18px;
-                            border: 1px solid #f3f3f3;
-                            border-radius: 8px;
-                            background: #fff;
-                        }
-
-                        .right-single-column .single-item img {
-                            width: 120px;
-                            height: auto;
-                            object-fit: cover;
-                            border-radius: 6px;
-                            flex-shrink: 0;
-                        }
-
-                        .right-single-column .cardNumber {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            padding-left: 6px;
-                        }
-
-                        @media (max-width: 991px) {
-                            .right-single-column .single-item img {
-                                width: 96px;
-                            }
-                        }
-
-                        @media (max-width: 767px) {
-                            .right-single-column {
-                                gap: 16px;
-                            }
-
-                            /* make the right column full width under the left column on small screens */
-                            .col-lg-7 {
-                                width: 100%;
-                            }
-
-                            .right-single-column .single-item {
-                                flex-direction: row;
-                                padding: 12px;
-                            }
-                        }
-                    `}</style>
+                    
                 </section>
                 <section className="section mt-110">
                     <div className="container">
@@ -261,330 +370,93 @@ const ColectData = () => {
                         </div>
 
                         <div className="row mt-45">
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card">
-                                    <div className="card-header">
-                                        <div className="card-icon-inline">
-                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                            </svg>
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Custom data collection programs" />
                                         </div>
-                                        <h5 className="color-brand-1 mb-15">Custom data collection programs</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15 pl-15">
-                                            Design and execute end-to-end collection plans:
-                                        </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15"style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Target profile definition</li>
-                                            <li>Recruitment</li>
-                                            <li>Scripts/instruments</li>
-                                            <li>Pilot runs</li>
-                                            <li>Full capture and handoff</li>
-                                        </ol>
+                                        <h4 className="left-card-title">Custom data collection programs</h4>
+                                        <p className="left-card-description">Design and execute end-to-end collection plans including target profiling, recruitment, scripts, pilot runs and full capture handoff.</p>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card">
-                                    <div className="card-header">
-                                        <div className="card-icon-inline">
-                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                            </svg>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Multimodal capture" />
                                         </div>
-                                        <h5 className="color-brand-1 mb-15">Multimodal capture</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                            <li><strong>Text: </strong> web scraping, curated corpora, conversational transcripts, domain-specific corpora</li>
-                                            <li><strong>Speech & audio: </strong> scripted/natural speech, environmental sounds, speaker metadata</li>
-                                            <li><strong>Image & video: </strong>controlled shoots, crowdsourced capture, dashcam/robotics feeds</li>
-                                            <li><strong>Sensor & telemetry: </strong>LIDAR, IMU, CANbus, time-series from industrial/automotive devices.</li>
-                                        </ol>
+                                        <h4 className="left-card-title">Multimodal capture</h4>
+                                        <p className="left-card-description">Support for text, speech & audio, image & video, and sensor & telemetry capture — from web scraping and curated corpora to controlled shoots, crowdsourced feeds and LIDAR/IMU streams.</p>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card">
-                                    <div className="card-header">
-                                        <div className="card-icon-inline">
-                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                            </svg>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Panel & participant recruitment" />
                                         </div>
-                                        <h5 className="color-brand-1 mb-15">Panel & participant recruitment</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15 pl-15">
-                                            Targeted recruitment for demographic, geographic and behavioral cohorts
-                                        </div>
-                                        <ol className="custom-bullets font-md color-black-text  mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Screening</li>
-                                            <li>Consent</li>
-                                            <li>Incentives</li>
-                                            <li>Scheduling</li>
-                                        </ol>
+                                        <h4 className="left-card-title">Panel & participant recruitment</h4>
+                                        <p className="left-card-description">Targeted recruitment for demographic, geographic and behavioral cohorts, including screening, consent, incentives and scheduling.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card">
-                                    <div className="card-header">
-                                        <div className="card-icon-inline">
-                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                            </svg>
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Annotation-ready collection" />
                                         </div>
-                                        <h5 className="color-brand-1 mb-15">Annotation-ready collection</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15 pl-15">
-                                            Collect with annotation in mind:
-                                        </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Bounding boxes</li>
-                                            <li>Segmentation masks</li>
-                                            <li>Multi-label taxonomies</li>
-                                            <li>Speaker timestamps</li>
-                                            <li>Intent/slot markers</li>
-                                        </ol>
+                                        <h4 className="left-card-title">Annotation-ready collection</h4>
+                                        <p className="left-card-description">Collect with annotation formats in mind such as bounding boxes, segmentation masks, multi-label taxonomies, speaker timestamps and intent/slot markers.</p>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card">
-                                    <div className="card-header">
-                                        <div className="card-icon-inline">
-                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                            </svg>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Privacy-first data handling" />
                                         </div>
-                                        <h5 className="color-brand-1 mb-15">Privacy-first data handling</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15 pl-15">
-                                            Privacy-first approach includes:
-                                        </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Consent management</li>
-                                            <li>PII minimization</li>
-                                            <li>Secure storage</li>
-                                            <li>Differential privacy options</li>
-                                            <li>On-prem/air-gapped transfers</li>
-                                        </ol>
+                                        <h4 className="left-card-title">Privacy-first data handling</h4>
+                                        <p className="left-card-description">Privacy-first approach including consent management, PII minimization, secure storage, differential privacy options and on-prem/air-gapped transfers.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card">
-                                    <div className="card-header">
-                                        <div className="card-icon-inline">
-                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                            </svg>
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Quality assurance & validation" />
                                         </div>
-                                        <h5 className="color-brand-1 mb-15">Quality assurance & validation</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15 pl-15">
-                                            Multi-tier quality assurance:
-                                        </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Automated checks + human review</li>
-                                            <li>Inter-annotator agreement monitoring</li>
-                                            <li>Sample audits</li>
-                                            <li>Statistical validation reports</li>
-                                        </ol>
+                                        <h4 className="left-card-title">Quality assurance & validation</h4>
+                                        <p className="left-card-description">Multi-tier QA with automated checks, human review, inter-annotator agreement monitoring, sample audits and statistical validation reports.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
-                                <div className="text-showcase-card">
-                                    <div className="card-header">
-                                        <div className="card-icon-inline">
-                                            <svg className="icon-blue" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                            </svg>
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <div className="left-card-icon">
+                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Delivery & integration" />
                                         </div>
-                                        <h5 className="color-brand-1 mb-15">Delivery & integration</h5>
-                                    </div>
-                                    <div className="card-content">
-                                        <div className="font-md color-black-text mb-15 pl-15">
-                                            Seamless delivery and support:
-                                        </div>
-                                        <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
-                                            <li>Custom formats</li>
-                                            <li>Sample indices and metadata</li>
-                                            <li>API access</li>
-                                            <li>ML pipeline integration</li>
-                                            <li>MLOps tools </li>
-                                        </ol>
+                                        <h4 className="left-card-title">Delivery & integration</h4>
+                                        <p className="left-card-description">Seamless delivery and support with custom formats, sample indices and metadata, API access, ML pipeline integration and MLOps tools.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <style jsx>{`
-                        /* Left-aligned card styling (applied to text-showcase-card) */
-                        .text-showcase-card {
-                            margin-bottom: 30px;
-                            border-radius: 16px;
-                            overflow: hidden;
-                            transition: all 0.3s ease;
-                            background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
-                            border: 1px solid #e8f2ff;
-                            padding: 32px 28px;
-                            height: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            position: relative;
-                        }
-
-                        .text-showcase-card:hover {
-                            transform: translateY(-8px);
-                            box-shadow: 0 20px 40px rgba(0, 123, 255, 0.15);
-                        }
-
-                        .card-header {
-                            display: contents;
-                            margin: 0;
-                            padding: 0;
-                            border: none;
-                        }
-
-                        .card-icon-inline {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 48px;
-                            height: 48px;
-                            background: transparent;
-                            border-radius: 0;
-                            flex-shrink: 0;
-                            margin-bottom: 20px;
-                        }
-
-                        .card-icon-inline svg {
-                            width: 24px;
-                            height: 24px;
-                        }
-
-                        .card-header h5 {
-                            margin: 0 0 16px 0 !important;
-                            padding: 0 !important;
-                            font-size: 22px !important;
-                            font-weight: 700 !important;
-                            line-height: 1.3 !important;
-                            text-align: left !important;
-                            color: #2563eb !important;
-                            position: relative;
-                            padding-bottom: 20px !important;
-                        }
-
-                        .card-header h5::after {
-                            content: '';
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            width: 40px;
-                            height: 3px;
-                            background: linear-gradient(90deg, #2563eb, #3b82f6);
-                            border-radius: 2px;
-                        }
-
-                        .icon-blue {
-                            color: #2563eb;
-                        }
-
-                        .card-content {
-                            flex: 1;
-                            margin-top: 0;
-                            margin-left: 25px;
-                        }
-
-                        .card-content .font-md {
-                            font-size: 15px !important;
-                            font-weight: 400 !important;
-                            line-height: 1.6 !important;
-                            color: #6b7280 !important;
-                            margin-bottom: 24px !important;
-                            text-align: left !important;
-                            padding-left: 0 !important;
-                            margin-left: 0 !important;
-                        }
-
-                        .card-content .custom-bullets {
-                            font-size: 15px !important;
-                            font-weight: 400 !important;
-                            line-height: 1.6 !important;
-                            color: #6b7280 !important;
-                            text-align: left !important;
-                            margin: 0 !important;
-                            padding: 0 !important;
-                            list-style: none;
-                            margin-left: 0 !important;
-                        }
-
-                        .card-content .custom-bullets li {
-                            text-align: left !important;
-                            margin-bottom: 8px !important;
-                            font-size: 15px !important;
-                            font-weight: 400 !important;
-                            line-height: 1.6 !important;
-                            color: #6b7280 !important;
-                            padding-left: 0 !important;
-                            margin-left: 0 !important;
-                        }
-
-                        .card-content .custom-bullets li::before {
-                            content: '•';
-                            margin-right: 8px;
-                        }
-
-                        .row.mt-45 .col-lg-4 {
-                            margin-bottom: 20px;
-                            display: flex;
-                            min-height: 100%;
-                        }
-
-                        .row.mt-45 .col-lg-4 .text-showcase-card {
-                            width: 100%;
-                        }
-
-                        @media (max-width: 991px) {
-                            .text-showcase-card {
-                                padding: 28px 24px;
-                            }
-                            
-                            .card-header h5 {
-                                font-size: 20px !important;
-                            }
-                        }
-
-                        @media (max-width: 768px) {
-                            .text-showcase-card {
-                                padding: 24px 20px;
-                            }
-                            
-                            .card-header h5 {
-                                font-size: 18px !important;
-                            }
-                        }
-
-                        @media (max-width: 480px) {
-                            .text-showcase-card {
-                                padding: 20px 16px;
-                            }
-                        }
-                    `}</style>
+                    
                 </section>
                 <section className="section mt-100 mb-40 process-section">
                     <div className="container">
@@ -720,6 +592,7 @@ const ColectData = () => {
                         </div>
                     </div>
                 </section>
+                </div>
             </Layout>
         </>
     );

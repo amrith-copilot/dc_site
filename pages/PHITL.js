@@ -10,25 +10,39 @@ const PHITL = () => {
     return (
         <Layout>
             <>
-                <section className="section banner-5 pt-100 pb-100">
+           <section className="section banner-5">
+                    <div className="container">
+                        <div className="mt-65 mb-100">
+                            <div className="row align-items-end">
+                                <div className="col-lg-6 mb-20">
+                                    <h2 className="color-black-text mt-10"> Human-in-the-Loop <br />AI Validation
+                                    </h2>
+                                </div>
+                                <div className="col-lg-6 mb-20">
+                                    <p className="font-lg color-black-text">
+                                        Insert expert human review and correction directly into live AI workflows before predictions, decisions, or actions are finalized.
+                                        Built for LLMs, computer vision, NLP, decision systems, and generative AI—scalable across industries and geographies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="section banner-5 pt-10 pb-50">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-lg-7">
-                                <h2 className="color-brand-1 mt-20 mb-30">
+                            <div className="col-lg-10 mx-auto">
+                                <h2 className="color-brand-1 mt-20 mb-30 text-start">
                                   Validate AI Predictions with Human Intelligence
                                 </h2>
-                                <p className="font-lg color-grey-500 mb-35">
-                                    This is a Human-in-the-Loop (HITL) validation platform for AI and machine learning systems.<br /> It allows organizations to insert human review and correction into AI prediction workflows before decisions are finalized or actions are taken.<br /><br />
+                                <p className="font-lg color-grey-500 mb-35 text-start">
+                                    This is a Human-in-the-Loop (HITL) validation platform for AI and machine learning systems. It allows organizations to insert human review and correction into AI prediction workflows before decisions are finalized or actions are taken.<br /><br />
                                     The platform supports LLMs, computer vision models, NLP pipelines, decision engines, and generative AI systems across industries and geographies.
                                 </p>
-                                <div className="mt-45">
-                                    <Link className="btn btn-brand-1 hover-up mr-20" href="/contact">
+                                <div className="mt-45 text-center">
+                                    <Link className="btn btn-brand-1 hover-up" href="/contact" style={{padding: '12px 32px', fontSize: '16px', marginLeft: '500px'}}>
                                         Validate AI Predictions
                                     </Link>
                                 </div>
-                            </div>
-                            <div className="col-lg-5 text-center mt-50 mt-lg-0">
-                                <img src="/assets/imgs/page/partner/handshake.jpg" alt="Partners" className="img-fluid" />
                             </div>
                         </div>
                     </div>
@@ -72,10 +86,8 @@ const PHITL = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-6 text-center position-relative">
-                                            <div className="box-circle-image">
-                                                <img className="d-block m-auto" src="/assets/imgs/page/homepage9/img3.png" alt="HITL Validation" />
-                                            </div>
+                                        <div className="col-lg-6 text-center md-50 mt-50 mt-lg-0 mb-30">
+                                            <img src="/assets/imgs/page/phitl/hitl-how.jpg" alt="HITL" className="img-fluid" style={{maxWidth: '80%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '-20px 15px 35px rgba(0, 0, 0, 0.12), -8px 8px 16px rgba(0, 0, 0, 0.08)', border: '1px solid rgba(255, 255, 255, 0.8)', marginLeft: 'auto', marginRight: '30px', marginTop: '-30px'}} />
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +113,7 @@ const PHITL = () => {
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
                                         <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Validation Interface" />
+                                            <img src="/assets/imgs/page/phitl/drag-and-drop.png" alt="Validation Interface" style={{width: '100%', height: 'auto'}} />
                                         </div>
                                         <h4 className="left-card-title">Drag-and-Drop Validation Interface Builder</h4>
                                         <div className="left-card-divider"></div>
@@ -116,7 +128,7 @@ const PHITL = () => {
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
                                         <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross.png" alt="API-First Platform" />
+                                            <img src="/assets/imgs/page/phitl/api.png" alt="API-First Platform" style={{width: '100%', height: 'auto'}} />
                                         </div>
                                         <h4 className="left-card-title">API-First Human-in-the-Loop Platform</h4>
                                         <div className="left-card-divider"></div>
@@ -131,7 +143,7 @@ const PHITL = () => {
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
                                         <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage2/identity.png" alt="Webhooks & Automation" />
+                                            <img src="/assets/imgs/page/phitl/webhook.png" alt="Webhooks & Automation" style={{width: '100%', height: 'auto'}} />
                                         </div>
                                         <h4 className="left-card-title">Webhooks & Workflow Automation</h4>
                                         <div className="left-card-divider"></div>
@@ -149,7 +161,7 @@ const PHITL = () => {
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
                                         <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross4.png" alt="Review Routing" />
+                                            <img src="/assets/imgs/page/phitl/routing.png" alt="Review Routing" style={{width: '100%', height: 'auto'}} />
                                         </div>
                                         <h4 className="left-card-title">Intelligent Review Routing</h4>
                                         <div className="left-card-divider"></div>
@@ -164,7 +176,7 @@ const PHITL = () => {
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
                                         <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross5.png" alt="Audit Logs" />
+                                            <img src="/assets/imgs/page/phitl/logs.png" alt="Audit Logs" style={{width: '100%', height: 'auto'}} />
                                         </div>
                                         <h4 className="left-card-title">Audit Logs & Feedback Data</h4>
                                         <div className="left-card-divider"></div>
@@ -249,8 +261,6 @@ const PHITL = () => {
                     </div>
                 </section>
 
-
-
                 <section className="section mt-50 pt-60 pb-60 bg-core-value">
                     <div className="container">
                         <div className="row box-list-core-value">
@@ -312,9 +322,9 @@ const PHITL = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="HITL Validation" style={{width: '100%', height: 'auto'}} />
+                                <div className="col-lg-4 mb-40">
+                                    <div className="image-container">
+                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="HITL Validation" style={{width: '100%', height: 'auto', display: 'block'}} />
                                     </div>
                                 </div>
                                 <div className="col-lg-8">

@@ -143,57 +143,57 @@ const ImageAnno = () => {
 
                         {/* First Row of Cards */}
                         <div className="row mt-45">
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="Cross Platform" 
+                                            alt="Bounding Boxes" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Bounding Boxes</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Bounding Boxes</h6>
+                                        <p className="font-sm color-grey-500">
                                             Discover powerful features to boost your productivity. You are always welcome to visit our little den.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="assets/imgs/page/homepage6/human2.png" 
-                                            alt="Team Collaboration" 
+                                            alt="Image Segmentation" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Image Segmentation</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Image Segmentation</h6>
+                                        <p className="font-sm color-grey-500">
                                             Streamline your team's workflow with advanced collaboration tools and seamless integration.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="assets/imgs/page/homepage6/human3.png" 
-                                            alt="Analytics Dashboard" 
+                                            alt="Semantic Segmentation" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Semantic Segmentation</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Semantic Segmentation</h6>
+                                        <p className="font-sm color-grey-500">
                                             Get comprehensive insights with detailed reporting and real-time performance metrics.
                                         </p>
                                     </div>
@@ -203,57 +203,57 @@ const ImageAnno = () => {
 
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="assets/imgs/page/homepage12/human1.png" 
-                                            alt="Project Management" 
+                                            alt="Cuboids" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Cuboids</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Cuboids</h6>
+                                        <p className="font-sm color-grey-500">
                                             Organize and track your projects with powerful management tools and intuitive workflows.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="assets/imgs/page/homepage12/human2.png" 
-                                            alt="Customer Support" 
+                                            alt="Key Points" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Key Points</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Key Points</h6>
+                                        <p className="font-sm color-grey-500">
                                             Deliver exceptional customer experiences with comprehensive support and communication tools.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="assets/imgs/page/homepage12/human3.png" 
-                                            alt="Data Security" 
+                                            alt="Lines and splines" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Lines and splines</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Lines and splines</h6>
+                                        <p className="font-sm color-grey-500">
                                             Protect your valuable data with enterprise-grade security and compliance features.
                                         </p>
                                     </div>

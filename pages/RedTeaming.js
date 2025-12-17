@@ -41,7 +41,6 @@ const RedTeaming = () => {
                                         <div className="row align-items-center">
                                             <div className="col-lg-6">
                                                 <div className="box-cover-pd box-cover-pd-3 pt-30 pb-30 mb-30">
-                                                    <span className="title-line line-48">Red Teaming for AI</span>
                                                     <h2 className="color-brand-1 mt-10 mb-15">
                                                         What is Red Teaming <br className="d-none d-lg-block" />for AI?
                                                     </h2>
@@ -68,9 +67,7 @@ const RedTeaming = () => {
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div className="mt-40 text-start">
-                                                        <Link className="btn btn-brand-1 hover-up font-md" href="/help">Talk to our Experts</Link>
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 text-center position-relative">
@@ -102,15 +99,7 @@ const RedTeaming = () => {
                                             <p className="left-card-description font-md color-grey-500">
                                                 Can the model be tricked into saying something unsafe or biased? Does it accidentally leak sensitive information? Does it give consistent, trustworthy answers under pressure?
                                             </p>
-                                            <div className="left-card-button-wrapper">
-                                                <a className="left-card-learn-more">
-                                                    Learn More
-                                                    <svg className="left-card-arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        </div>    
                                     </div>
                                 </div>
                                 <div className="col-lg-4 col-md-6 social-media">
@@ -121,14 +110,6 @@ const RedTeaming = () => {
                                             <p className="left-card-description font-md color-grey-500">
                                                 Can the system be fooled by changes in images or environments? Is it fair across different demographics and conditions? Does it make safe decisions in critical use cases like healthcare or autonomous driving?
                                             </p>
-                                            <div className="left-card-button-wrapper">
-                                                <a className="left-card-learn-more">
-                                                    Learn More
-                                                    <svg className="left-card-arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -140,14 +121,6 @@ const RedTeaming = () => {
                                             <p className="left-card-description font-md color-grey-500">
                                                 Do different inputs (text + images) work together safely? Could the system generate harmful or inappropriate content? Are there mismatches between what it shows and what it says?
                                             </p>
-                                            <div className="left-card-button-wrapper">
-                                                <a className="left-card-learn-more">
-                                                    Learn More
-                                                    <svg className="left-card-arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

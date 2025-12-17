@@ -11,6 +11,59 @@ const SFT = () => {
     return (
         <>
             <Layout>
+                <style jsx global>{`
+                    @font-face {
+                        font-family: 'VerdanaItalic';
+                        src: url('/assets/fonts/uicons/VERDANAI.TTF') format('truetype');
+                        font-weight: 400;
+                        font-style: italic;
+                        font-display: swap;
+                    }
+                    body, .sft-root, .sft-root * {
+                        font-family: 'VerdanaItalic', Verdana, Arial, sans-serif;
+                    }
+                    .card-hover {
+                        transition: transform .22s cubic-bezier(.2,.9,.3,1), box-shadow .22s cubic-bezier(.2,.9,.3,1), background .22s ease, color .22s ease;
+                        cursor: default;
+                        background: #fff;
+                    }
+                    .card-hover:hover {
+                        transform: translateY(-8px);
+                        box-shadow: 0 14px 40px rgba(2,6,23,0.12);
+                        background: linear-gradient(135deg, rgba(37,99,235,0.06), rgba(37,99,235,0.02));
+                    }
+                    .card-hover h5 {
+                        color: #000 !important;
+                        font-weight: 600;
+                        transition: color .22s ease;
+                    }
+                    .card-hover p {
+                        color: #000 !important;
+                        transition: color .22s ease;
+                    }
+                    .card-hover:hover h5 {
+                        color: #2563eb !important;
+                    }
+                    .card-hover:hover p {
+                        color: rgba(37,99,235,0.9) !important;
+                    }
+                    .card-hover:hover::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 12px;
+                        bottom: 12px;
+                        width: 6px;
+                        border-radius: 6px;
+                        background: linear-gradient(180deg, #2563eb, rgba(37,99,235,0.6));
+                        box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+                    }
+                    .card-hover {
+                        position: relative;
+                        overflow: visible;
+                    }
+                `}</style>
+                <div className="sft-root">
             <section className="section banner-5">
                     <div className="container">
                         <div className="mt-65 mb-100">
@@ -145,19 +198,20 @@ const SFT = () => {
 
                         {/* First Row of Cards */}
                         <div className="row mt-45">
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="Cross Platform" 
+                                            alt="Large Language Models" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-brand-1 mb-15">Large Language Models (LLMs)</h4>
-                                        <p className='pb-10 font-xl'>We fine-tune models for:</p>
-                                        <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Large Language Models (LLMs)</h6>
+                                        <p className='pb-10 font-sm color-grey-500'>We fine-tune models for:</p>
+                                        <ul className="custom-bullets font-sm color-grey-500 mb-15 pl-15">
                                             <li>Customer support and virtual assistants</li>
                                             <li>Summarization and knowledge management</li>
                                             <li>Industry-specific applications (finance, healthcare, legal, retail)</li>
@@ -166,19 +220,20 @@ const SFT = () => {
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="assets/imgs/page/homepage6/human2.png" 
-                                            alt="Team Collaboration" 
+                                            alt="Computer Vision Systems" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-brand-1 mb-15">Computer Vision Systems</h4>
-                                        <p className='pb-10 font-xl'>We adapt vision models for:</p>
-                                        <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Computer Vision Systems</h6>
+                                        <p className='pb-10 font-sm color-grey-500'>We adapt vision models for:</p>
+                                        <ul className="custom-bullets font-sm color-grey-500 mb-15 pl-15">
                                             <li>Quality inspection in manufacturing</li>
                                             <li>Medical imaging analysis</li>
                                             <li>Autonomous navigation and robotics</li>
@@ -188,18 +243,19 @@ const SFT = () => {
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
                                             src="assets/imgs/page/homepage6/human3.png" 
-                                            alt="Analytics Dashboard" 
+                                            alt="Multimodal AI" 
                                             className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-brand-1 mb-15">Multimodal AI</h4>
-                                        <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Multimodal AI</h6>
+                                        <ul className="custom-bullets font-sm color-grey-500 mb-15 pl-15">
                                             <li>For systems that combine text, images, and video, we fine-tune models to keep results safe, consistent, and aligned across multiple input types.</li>
                                         </ul>
                                     </div>
@@ -337,51 +393,6 @@ const SFT = () => {
                       
                       </div>
                     </div>
-
-                    {/* Hover animations and blue theme for cards & text */} 
-                    <style jsx>{`
-                      .card-hover {
-                        transition: transform .22s cubic-bezier(.2,.9,.3,1), box-shadow .22s cubic-bezier(.2,.9,.3,1), background .22s ease, color .22s ease;
-                        cursor: default;
-                        background: #fff;
-                      }
-                      .card-hover:hover {
-                        transform: translateY(-8px);
-                        box-shadow: 0 14px 40px rgba(2,6,23,0.12);
-                        /* subtle blue glow and tint while animating */
-                        background: linear-gradient(135deg, rgba(37,99,235,0.06), rgba(37,99,235,0.02));
-                      }
-                      .card-hover h5 {
-                        color: #000 !important;
-                        font-weight: 600;
-                        transition: color .22s ease;
-                      }
-                      .card-hover p {
-                        color: #000 !important;
-                        transition: color .22s ease;
-                      }
-                      /* Apply blue accent to text while hovering */
-                      .card-hover:hover h5 {
-                        color: #2563eb !important;
-                      }
-                      .card-hover:hover p {
-                        color: rgba(37,99,235,0.9) !important;
-                      }
-                      /* small accent bar on the left on hover */
-                      .card-hover:hover::before {
-                        content: "";
-                        position: absolute;
-                        left: 0;
-                        top: 12px;
-                        bottom: 12px;
-                        width: 6px;
-                        border-radius: 6px;
-                        background: linear-gradient(180deg, #2563eb, rgba(37,99,235,0.6));
-                        box-shadow: 0 6px 18px rgba(37,99,235,0.12);
-                      }
-                      /* ensure positioned parent for pseudo element */
-                      .card-hover { position: relative; overflow: visible; }
-                    `}</style>
                 </section>
                           
                 <section className="section mt-50 pt-50 pb-40">
@@ -404,6 +415,7 @@ const SFT = () => {
                         </div>
                     </div>
                 </section>
+                </div>
             </Layout>
         </>
     );

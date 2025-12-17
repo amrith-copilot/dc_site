@@ -129,7 +129,7 @@ const Sports = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/spo_player.png" 
                                             alt="Player Tracking" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -148,7 +148,7 @@ const Sports = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/spo_ball.png" 
                                             alt="Ball Tracking" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -167,7 +167,7 @@ const Sports = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
+                                            src="/assets/images/industry/spo_ref.png" 
                                             alt="Event Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -186,7 +186,7 @@ const Sports = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/spo_crowd.png" 
                                             alt="Pose & Motion Analysis" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -205,7 +205,7 @@ const Sports = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/spo_track.png" 
                                             alt="Broadcast Camera Recognition" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

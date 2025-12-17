@@ -61,7 +61,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/retail-product recognition.jpg" 
+                                            src="/assets/images/industry/retail_shelf.png" 
                                             alt="Product Recognition on Shelves" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -80,7 +80,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/retail_shoplift.png" 
                                             alt="Out-of-Stock & Empty Shelf Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -99,7 +99,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
+                                            src="/assets/images/industry/retail_signage.png" 
                                             alt="Shopper Path Tracking" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -118,7 +118,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
+                                            src="/assets/images/industry/retail_intent.png" 
                                             alt="Queue Monitoring" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -137,7 +137,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Retail-price tag.jpg" 
+                                            src="/assets/images/industry/retail_people.png" 
                                             alt="Price Tag & Label Identification" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

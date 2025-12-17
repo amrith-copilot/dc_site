@@ -98,7 +98,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                     <div className="mega-menu-column">
                                                         <h4>Others</h4>
                                                         <ul>
-                                                            <li><Link href="/ExpertNetwork">Expert Network</Link></li>
+                                                            <li><Link href="/expert">Expert Network</Link></li>
                                                             <li><Link href="/Search">Search and Personalization</Link></li>
                                                             <li><Link href="/OCR">OCR / IDP</Link></li>
                                                             <li><Link href="/GenAI">Generative AI</Link></li>

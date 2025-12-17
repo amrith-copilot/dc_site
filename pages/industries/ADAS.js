@@ -105,7 +105,7 @@ const ADAS = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/adas-pedestrian.jpg" 
+                                            src="/assets/images/industry/ADAS_obj.png" 
                                             alt="Vehicle Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -124,7 +124,7 @@ const ADAS = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/adas-road-signal.jpg" 
+                                            src="/assets/images/industry/ADAS_event.png" 
                                             alt="Traffic Signs" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -143,7 +143,7 @@ const ADAS = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/adas-road-damage.jpg" 
+                                            src="/assets/images/industry/ADAS_track.png" 
                                             alt="Free Space" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -162,7 +162,7 @@ const ADAS = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/images/industry/ADAS_cs.png" 
                                             alt="LiDAR Annotation" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

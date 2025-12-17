@@ -178,7 +178,7 @@ const Insurance = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
-                                            src="/assets/imgs/page/homepage6/human1.png"
+                                            src="/assets/images/industry/fin_damage.png"
                                             alt="Annotated image showing vehicle exterior damage detection for auto insurance claims"
                                             title="Annotated image showing vehicle exterior damage detection for auto insurance claims"
                                             className="image-showcase-photo-dynamic"
@@ -198,7 +198,7 @@ const Insurance = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
-                                            src="/assets/imgs/page/homepage6/human2.png"
+                                            src="/assets/images/industry/media.png"
                                             alt="Annotated windshield crack detection for auto insurance analysis"
                                             title="Annotated windshield crack detection for auto insurance analysis"
                                             className="image-showcase-photo-dynamic"
@@ -218,7 +218,7 @@ const Insurance = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
-                                            src="/assets/imgs/page/homepage6/human3.png"
+                                            src="/assets/images/industry/doc_hand.png"
                                             alt="Annotated drone roof inspection for property insurance assessments"
                                             title="Annotated drone roof inspection for property insurance assessments"
                                             className="image-showcase-photo-dynamic"
@@ -238,7 +238,7 @@ const Insurance = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img
-                                            src="/assets/imgs/page/homepage6/human1.png"
+                                            src="/assets/images/industry/doc_data.png"
                                             alt="Annotated water and flood damage detection for home insurance claims"
                                             title="Annotated water and flood damage detection for home insurance claims"
                                             className="image-showcase-photo-dynamic"

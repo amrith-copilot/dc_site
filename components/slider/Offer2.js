@@ -93,13 +93,13 @@ const Offer2 = () => {
                     padding: 30px;
                     background: white;
                     border-radius: 14px;
-                    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
                     display: flex;
                     align-items: flex-start;
                     justify-content: flex-start;
                     text-align: left;
                     transition: 0.3s ease;
                     width: 100%;
+                    border: 1px solid #e5e7eb;
                 }
                 .annotation-card-content {
                     display: flex;
@@ -121,8 +121,7 @@ const Offer2 = () => {
                     line-height: 1.5;
                 }
                 .annotation-card:hover {
-                    transform: translateY(-6px);
-                    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+                    background: var(--color-primary-100);
                 }
                 .annotation-nav {
                     display: flex;
@@ -139,9 +138,9 @@ const Offer2 = () => {
                     justify-content: center;
                     border-radius: 50%;
                     background: white;
-                    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
                     cursor: pointer;
                     transition: 0.2s ease;
+                    border: 1px solid #e5e7eb;
                 }
                 .offer2-prev:hover,
                 .offer2-next:hover {
