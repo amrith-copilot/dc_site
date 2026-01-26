@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import React from 'react';
 
@@ -9,37 +8,16 @@ const Footer = () => {
                 <div className="footer-main">
                     <div className="footer-container">
                         <div className="footer-grid">
-                            {/* Company Details */}
-                            <div className="footer-column company-details">
-                                <div className="company-logo">
-                                    <Link href="/index-3">
-                                        <img alt="dataclap" src="/assets/logo_white-1.svg" />
-                                    </Link>
-                                </div>
-                                <div className="company-info">
-                                    <div className="social-section">
-                                        <div className="social-links">
-                                            <Link
-                                                className="social-icon linkedin"
-                                                href="https://www.linkedin.com/company/dataclap/"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Column 2 - Industries (Column 1) */}
+                            {/* Column 1 - Industries */}
                             <div className="footer-column industries-col">
                                 <h5 className="column-title">INDUSTRIES</h5>
                                 <ul className="footer-menu">
-                                    <li><Link href="#">ADAS</Link></li>
-                                    <li><Link href="#">RPA</Link></li>
-                                    <li><Link href="#">Manufacturing</Link></li>
-                                    <li><Link href="#">Geospatial</Link></li>
-                                    <li><Link href="#">Customer Services</Link></li>
-                                    <li><Link href="#">Social Media</Link></li>
+                                    <li><Link href="/industries/ADAS">ADAS</Link></li>
+                                    <li><Link href="/industries/RPA">RPA</Link></li>
+                                    <li><Link href="/industries/Manufacturing">Manufacturing</Link></li>
+                                    <li><Link href="/industries/Geospatial">Geospatial</Link></li>
+                                    <li><Link href="/industries/CustomerServices">Customer Services</Link></li>
+                                    <li><Link href="/industries/SocialMedia">Social Media</Link></li>
                                 </ul>
                             </div>
 
@@ -76,7 +54,7 @@ const Footer = () => {
                                 </div>
                             </div>
 
-                            {/* Column 5 - Services: Post-Training & Others */}
+                            {/* Column 5 - Services: Post-Training */}
                             <div className="footer-column services-col">
                                 <h5 className="column-title invisible">SERVICES</h5>
                                 <div className="service-group">
@@ -88,6 +66,11 @@ const Footer = () => {
                                         <li><Link href="/LLM-Evals">AI Evals</Link></li>
                                     </ul>
                                 </div>
+                            </div>
+
+                            {/* Column 6 - Others */}
+                            <div className="footer-column services-col">
+                                <h5 className="column-title invisible">SERVICES</h5>
                                 <div className="service-group">
                                     <h6 className="service-heading">OTHERS</h6>
                                     <ul className="service-submenu">
@@ -101,7 +84,7 @@ const Footer = () => {
                                 </div>
                             </div>
 
-                            {/* Column 6 - Resources */}
+                            {/* Column 7 - Resources */}
                             <div className="footer-column resources-col">
                                 <h5 className="column-title">RESOURCES</h5>
                                 <ul className="footer-menu">
@@ -119,20 +102,36 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <div className="footer-container">
                         <div className="bottom-content">
-                            <div className="footer-links">
-                                <ul className="legal-menu">
-                                    <li>
-                                        <Link className="legal-link font-md" href="/term-conditions">
-                                            Privacy and Terms
-                                        </Link>
-                                        {/* <li><Link className="legal-link" href="/cookies">Cookies</Link></li> */}
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="copyright">
-                                <span className="copyright-text">
-                                    ©2024-2026 DATACLAP. All rights reserved.
-                                </span>
+                            
+                           <div className="footer-brand" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.25rem' }}>
+                                <div className="company-logo" style={{ marginTop: '10px' }}>
+                                    <Link href="/index-3">
+                                        <img alt="Dataclap" src="/assets/logo_white-1.svg" />
+                                    </Link>
+                                </div>
+                                <div className="legal-links" style={{ marginTop: '5px' }}>
+                                    <Link className="legal-link font-md" href="/term-conditions" style={{  marginTop: '15px' }}>
+                                           Privacy and Terms
+                                    </Link>
+                                </div>
+                                    <div className="copyright" style={{ textAlign: 'center' }}>
+                                         <span className="copyright-text font-md">
+                                           © 2024-2026 DATACLAP. All rights reserved.
+                                         </span>
+                                      </div>
+                                </div>
+
+                             {/* Right side - Social Icons */}
+                            <div className="footer-social">
+                                <div className="social-links">
+                                    <Link
+                                        className="social-icon linkedin"
+                                        href="https://www.linkedin.com/company/dataclap/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    />
+                                    {/* Add more social icons here if needed */}
+                                </div>
                             </div>
                         </div>
                     </div>

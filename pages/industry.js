@@ -17,7 +17,7 @@ const Industry = () => {
     return (
         <>
             <Head>
-                <title>iori - Multipurpose Startup & SaaS Template</title>
+                <title>DataClap Digital</title>
             </Head>
 
             <Layout>
@@ -26,7 +26,7 @@ const Industry = () => {
                         <div className="box-create-account">
                             <div className="row align-items-center">
                                 <div className="col-lg-6 position-relative mb-30">
-                                    <div className="box-image-account"><img className="d-block" src="assets/imgs/page/homepage3/img4.png" alt="iori" /></div>
+                                    <div className="box-image-account"><img className="d-block" src="assets/imgs/page/homepage3/img4.png" alt="DataClap Digital" /></div>
                                 </div>
                                 <div className="col-lg-6"><span className="title-line line-48">Take the control</span>
                                     <h2 className="color-brand-1 mb-20 mt-10">AI in the<br className="d-none d-lg-block" />industry name</h2>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import Offer3 from '../components/slider/Offer3';
 
 const Expert = () => {
     const [isOpen, setOpen] = useState(false)
@@ -35,7 +34,7 @@ const Expert = () => {
                                         <div className="col-lg-6">
                                             <div className="box-cover-pd box-cover-pd-3 pt-30 pb-30 mb-30">
                                                 <h2 className="color-brand-1 mt-10 mb-15">
-                                                    What We Do <br className="d-none d-lg-block" />for High-Stakes AI
+                                                    What We Do 
                                                 </h2>
                                                 <p className="font-md color-grey-400">
                                                     We provide expert-led data annotation and evaluation for AI systems that cannot rely on generic labeling. Our workflows combine subject-matter expertise, Human-in-the-Loop (HITL) processes, and rigorous quality controls to support production-grade AI.<br /><br />Designed for:
@@ -74,9 +73,129 @@ const Expert = () => {
                     </div>
                 </section>
 
+                <section className="section mt-30">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center mb-40">
+                                <h2 className="color-brand-1 mb-20">Core Use Cases We Support</h2>
+                            </div>
+                        </div>
 
+                        <div className="row mt-30">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                        <img 
+                                            src="assets/imgs/page/homepage6/human1.png" 
+                                            alt="Human-in-the-Loop" 
+                                            className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Human-in-the-Loop (HITL)</h6>
+                                        <p className="font-md color-grey-500 mb-15">Insert expert human review directly into model workflows to validate, correct, and approve AI outputs before deployment or downstream actions. Ideal for production AI, decision systems, and continuous learning loops.</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                <section className="section mt-70 pt-60 pb-60">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                        <img 
+                                            src="assets/imgs/page/homepage6/human1.png" 
+                                            alt="RLHF" 
+                                            className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Reinforcement Learning from Human Feedback (RLHF)</h6>
+                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
+                                            <li>Preference ranking</li>
+                                            <li>Comparative evaluations</li>
+                                            <li>Instruction tuning</li>
+                                            <li>Output quality scoring</li>
+                                            <li>Safety and policy alignment</li>
+                                        </ul>
+                                        <p className="font-md color-grey-500">Performed by trained evaluators and domain experts to improve model behavior, reasoning, and reliability.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                        <img 
+                                            src="assets/imgs/page/homepage6/human1.png" 
+                                            alt="Red Teaming" 
+                                            className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Red Teaming & AI Safety Evaluation</h6>
+                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
+                                            <li>Adversarial prompt generation</li>
+                                            <li>Jailbreak detection</li>
+                                            <li>Hallucination identification</li>
+                                            <li>Bias, toxicity, and misuse analysis</li>
+                                            <li>Failure mode discovery</li>
+                                        </ul>
+                                        <p className="font-md color-grey-500">Used to stress-test LLMs and generative systems before public or enterprise release.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                        <img 
+                                            src="assets/imgs/page/homepage6/human1.png" 
+                                            alt="Model Evaluation" 
+                                            className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Model Evaluation & Benchmarking</h6>
+                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
+                                            <li>Ground truth creation</li>
+                                            <li>Accuracy and relevance scoring</li>
+                                            <li>Domain-specific evaluation sets</li>
+                                            <li>Regression testing across model versions</li>
+                                            <li>Gold-standard dataset creation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                        <img 
+                                            src="assets/imgs/page/homepage6/human1.png" 
+                                            alt="Expert Labeling" 
+                                            className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Expert Labeling for Training Data</h6>
+                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
+                                            <li>Complex text, image, video, audio, and multimodal datasets</li>
+                                            <li>Edge-case and long-tail scenario annotation</li>
+                                            <li>High-context and subjective labeling tasks</li>
+                                            <li>Low-resource and specialized domains</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="section mt-50 pt-60 pb-60">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
@@ -187,7 +306,7 @@ const Expert = () => {
                                         </div>
                                         <h4 className="left-card-title">Business & Industry Specialists</h4>
                                         <div className="left-card-divider"></div>
-                                  
+                                        <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                                 <li>Finance & fintech</li>
                                                 <li>Insurance</li>
@@ -197,7 +316,7 @@ const Expert = () => {
                                                 <li>Real estate</li>
                                                 <li>Customer support & CX</li>
                                             </ol>
-                                      
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -205,42 +324,50 @@ const Expert = () => {
                     </div>
                 </section>
 
-                <section className="section mt-100">
+                <section className="section mt-70 pt-90 pb-90 bg-grey-60">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center mb-40">
-                                <h2 className="color-brand-1 mb-20">Why Expert Annotation Matters</h2>
-                                <p className="font-lg max-width-600 mx-auto color-grey-500">
-                                    Generic labeling fails in complex scenarios. Our expert-driven approach delivers superior results.
-                                </p>
-                            </div>
+                        <div className="text-center mb-70">
+                            <h2 className="color-brand-1 mb-20">Why Expert Annotation Matters</h2>
                         </div>
-                        
-                        <div className="row mt-45">
-                            <div className="col-lg-6">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-brand-1 mb-15">Generic Labeling Fails When:</h4>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft:"10px"}}>
-                                            <li>Context is critical</li>
-                                            <li>Decisions have legal, medical, or financial impact</li>
-                                            <li>Models must align with human judgment</li>
-                                            <li>Edge cases drive real-world performance</li>
-                                        </ul>
+                        <div className="row">
+                            <div className="col-lg-6 mb-40">
+                                <div className="box-border-single hover-up-2 h-100">
+                                    <div className="box-border-inner">
+                                        <div className="d-flex align-items-start">
+                                            <div className="box-border-number">
+                                                <span className="number-fixed color-brand-2">01</span>
+                                            </div>
+                                            <div className="ml-20">
+                                                <h5 className="color-brand-1 mb-20">Generic labeling fails when:</h5>
+                                                <ul className="list-dots font-md color-grey-500 mb-0">
+                                                    <li className="mb-10">Domain expertise is essential</li>
+                                                    <li className="mb-10">Mistakes carry significant consequences</li>
+                                                    <li className='mb-10'>Nuance and interpretation are required</li>
+                                                    <li>Rare scenarios determine real-world success</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div className="col-lg-6">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-brand-1 mb-15">Our Expert-Driven Approach Delivers:</h4>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15"style={{marginLeft:"10px"}}>
-                                            <li>Higher signal-to-noise training data</li>
-                                            <li>Better alignment for LLMs and agents</li>
-                                            <li>Reduced hallucinations and failure modes</li>
-                                            <li>Faster iteration with reliable feedback loops</li>
-                                        </ul>
+
+                            <div className="col-lg-6 mb-40">
+                                <div className="box-border-single hover-up-2 h-100">
+                                    <div className="box-border-inner">
+                                        <div className="d-flex align-items-start">
+                                            <div className="box-border-number">
+                                                <span className="number-fixed color-brand-2">02</span>
+                                            </div>
+                                            <div className="ml-20">
+                                                <h5 className="color-brand-1 mb-20">Revenue Share</h5>
+                                                <ul className="list-dots font-md color-grey-500 mb-0">
+                                                    <li className='mb-10'>Higher signal-to-noise training data</li>
+                                                    <li className='mb-10'>Better alignment for LLMs and agents</li>
+                                                    <li className='mb-10'>Reduced hallucinations and failure modes</li>
+                                                    <li className='mb-10'>Faster iteration with reliable feedback loops</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -248,33 +375,81 @@ const Expert = () => {
                     </div>
                 </section>
 
-                <section className="section mt-50 pt-60 pb-60 bg-core-value">
+                <section className="section mt-90 mb-90">
+                    <div className="container">
+                        <div className="text-center mb-60">
+                            <h2 className="color-brand-1 mb-20">Who This Is For</h2>
+
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="box-step step-1 h-100">
+                                    <div className="number-box">
+                                    </div>
+                                    <h5 className="color-brand-1 mb-20 mt-25">AI Startups</h5>
+                                    <p className="font-md color-grey-500 mb-0">
+                                         Training foundation or vertical models
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="box-step step-2 h-100">
+                                    <div className="number-box">
+                                    </div>
+                                    <h5 className="color-brand-1 mb-20 mt-25">Enterprises </h5>
+                                    <p className="font-md color-grey-500 mb-0">
+                                        Deploying AI in production
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="box-step step-3 h-100">
+                                    <div className="number-box">
+                                    </div>
+                                    <h5 className="color-brand-1 mb-20 mt-25">Research Labs</h5>
+                                    <p className="font-md color-grey-500 mb-0">
+                                        Applied AI teams and research projects
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="box-step step-4 h-100">
+                                    <div className="number-box">
+                                    </div>
+                                    <h5 className="color-brand-1 mb-20 mt-25">LLM-Powered Products</h5>
+                                    <p className="font-md color-grey-500 mb-0">
+                                        Teams prioritizing safety, accuracy, and trust
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                                <section className="section mt-30 pb-50 bg-core-value">
                     <div className="container">
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
                                 <div className="box-core-value">
-                                    <h4 className="color-brand-1 mb-15">Quality, Security & Scale</h4>
-                                    <p className="font-md color-grey-400">Enterprise-grade annotation workflows with expert oversight and rigorous quality controls.</p>
-                                </div>
+                                    <h3 className="color-brand-1 mb-15">Quality, Security and Scale</h3>                                </div>
                             </div>
                             <div className="col-lg-4">
                                 <ul className="list-core-value">
                                     <li> <span className="ticked" />
-                                        <h6 className="color-black-text mb-5">Multi-pass Expert Review</h6>
+                                        <h5 className="color-brand-1 mb-5">Multi-pass expert review</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Rigorous quality assurance with expert validation at every stage of the annotation process.</p>
+                                            <p className="font-md color-grey-500 mb-20">Multiple expert review layers ensure consistent quality, accuracy, and compliance across all deliverables.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h6 className="color-black-text mb-5">Agreement Tracking</h6>
+                                        <h5 className="color-brand-1 mb-5">Inter-annotator agreement tracking</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Inter-annotator agreement monitoring and custom guidelines per project for consistent results.</p>
+                                            <p className="font-md color-grey-500 mb-20">Quantitative agreement metrics are used to measure consistency and improve annotation reliability.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h6 className="color-black-text mb-5">Secure Workflows</h6>
+                                        <h5 className="color-brand-1 mb-5">Custom guidelines per project</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Access-controlled, GDPR-compliant processes with enterprise-ready security protocols.</p>
+                                            <p className="font-md color-grey-500 mb-20">Project-specific guidelines are defined to align outputs with model objectives and domain requirements.</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -282,15 +457,21 @@ const Expert = () => {
                             <div className="col-lg-4">
                                 <ul className="list-core-value">
                                     <li> <span className="ticked" />
-                                        <h6 className="color-black-text mb-5">Flexible Scale</h6>
+                                        <h5 className="color-brand-1 mb-5">Secure, access-controlled workflows</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Scale from pilot projects to millions of data points with consistent quality and turnaround.</p>
+                                            <p className="font-md color-grey-500 mb-20">Role-based access and controlled environments protect sensitive data throughout execution.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h6 className="color-black-text mb-5">Who This Is For</h6>
+                                        <h5 className="color-brand-1 mb-5">GDPR and enterprise-ready processes</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">AI startups, enterprises, research labs, and teams building LLM-powered products prioritizing safety and accuracy.</p>
+                                            <p className="font-md color-grey-500 mb-20">Processes are designed to meet GDPR requirements and enterprise compliance standards.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Flexible scale from pilot to millions of data points</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Engagements scale seamlessly from small pilots to large, production-scale datasets.</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -298,8 +479,7 @@ const Expert = () => {
                         </div>
                     </div>
                 </section>
-
-                <section className="section mt-50 pt-50 pb-40">
+                <section className="section mt-30 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
@@ -310,9 +490,9 @@ const Expert = () => {
                                 </div>
                                 <div className="col-lg-8">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Get Started with Expert <br />Annotation Services</h2>
-                                        <p className="font-md color-grey-500">Whether you need expert RLHF, red teaming, HITL validation, or high-precision training data, we build annotation workflows tailored to your model, domain, and risk profile. Our expert-driven approach ensures your AI systems meet the highest standards of accuracy, safety, and reliability.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Our Experts</Link></div>
+                                        <h2 className="color-brand-1 mt-15 mb-20">Get Started</h2>
+                                        <p className="font-md color-grey-500">Whether you need expert RLHF, red teaming, HITL validation, or high-precision training data, we build annotation workflows tailored to your model, domain, and risk profile.</p>
+                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact us</Link></div>
                                     </div>
                                 </div>
                             </div>

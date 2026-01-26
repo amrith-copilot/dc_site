@@ -10761,7 +10761,7 @@ footer.footer-4 {
 }
 
 .company-logo {
-  margin-bottom: 32px;
+  margin-bottom: 2px;
   transition: transform var(--footer-transition-normal);
 }
 
@@ -11008,7 +11008,6 @@ outline: none;
 .service-submenu a:hover,
 .service-submenu a:focus-visible {
   color: var(--footer-hover-color);
-  background: var(--color-primary-500-alpha-10);
   padding-left: 8px;
 }
 
@@ -11054,7 +11053,7 @@ outline: none;
   font-size: 14px;
   font-weight: 400;
   transition: all var(--footer-transition-normal);
-  padding: 4px 8px;
+  padding: 4px 2px;
   border-radius: 4px;
   position: relative;
   outline: none;
