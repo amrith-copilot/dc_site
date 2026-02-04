@@ -11,15 +11,8 @@ const ColectData = () => {
             <Layout>
                 <div className="collectdata-root">
                     <style jsx global>{`
-                        @font-face {
-                            font-family: 'MontserratCustom';
-                            src: url('/assets/fonts/uicons/Montserrat-Regular.ttf') format('truetype');
-                            font-weight: 400;
-                            font-style: normal;
-                            font-display: swap;
-                        }
                         body, .collectdata-root, .collectdata-root * {
-                            font-family: 'MontserratCustom', Arial, sans-serif;
+                            font-family: 'Manrope', sans-serif;
                         }
 
                         /* Box video banner responsive styles */

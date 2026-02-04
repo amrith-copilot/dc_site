@@ -165,12 +165,12 @@ const Sidebar = ({ openClass, handleRemove }) => {
                                                 <li><Link href="/industries/VoiceAI" onClick={handleRemove}>Customer Service</Link></li>
                                                 <li><Link href="/industries/RPA" onClick={handleRemove}>RPA</Link></li>
                                                 <li><Link href="/industries/AssetManagement" onClick={handleRemove}>Asset Management</Link></li>
-                                                <li><Link href="/industries/PhysicalAI" onClick={handleRemove}>Physical AI</Link></li>
+                                                <li><Link href="/industries/physicalai" onClick={handleRemove}>Physical AI</Link></li>
                                                 <li><Link href="/industries/Ecommerce" onClick={handleRemove}>E-Commerce and Content</Link></li>
                                                 <li><Link href="/industries/ADAS" onClick={handleRemove}>ADAS</Link></li>
                                                 <li><Link href="/industries/Retail" onClick={handleRemove}>Retail</Link></li>
                                                 <li><Link href="/industries/Geospatial" onClick={handleRemove}>Geospatial</Link></li>
-                                                <li><Link href="/industries/PhysicalAI" onClick={handleRemove}>Robotics</Link></li>
+                                                <li><Link href="/industries/physicalai" onClick={handleRemove}>Robotics</Link></li>
                                             </ul>
                                         </li>
 

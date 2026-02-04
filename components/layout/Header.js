@@ -98,7 +98,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                     <div className="mega-menu-column">
                                                         <h4>Others</h4>
                                                         <ul>
-                                                            <li><Link href="/expert">Expert Network</Link></li>
+                                                            {/* <li><Link href="/expert">Expert Network</Link></li> */}
                                                             <li><Link href="/Search">Search and Personalization</Link></li>
                                                             <li><Link href="/OCR">OCR / IDP</Link></li>
                                                             <li><Link href="/GenAI">Generative AI</Link></li>
@@ -109,12 +109,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="has-children"><Link href="#">Product</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link href="/KubeTrace">KubeTrace</Link></li>
-                                                <li><Link href="/PHITL">Human in the Loop</Link></li>
-                                            </ul>
-                                        </li>
+                                        {/* Product menu removed per request */}
                                         <li className={`has-children services-mega-menu ${activeMenu === 'industries' ? 'menu-active' : ''}`}>
                                             <Link 
                                                 className="active" 
@@ -150,7 +145,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                     <div className="mega-menu-column">
                                                         <ul>
                                                             <li><Link href="/industries/RPA">RPA</Link></li>
-                                                            <li><Link href="/industries/PhysicalAI">Physical AI</Link></li>
+                                                            <li><Link href="/industries/physicalai">Physical AI</Link></li>
                                                             <li><Link href="/industries/Ecommerce">E-Commerce and Content</Link></li>
                                                             <li><Link href="/industries/Insurance">Insurance</Link></li>
                                                             <li><Link href="/industries/Sports">Sports & Media</Link></li>
@@ -170,7 +165,10 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                 </nav>
                             </div>
                             <div className="header-right">
-                                <div className="d-none d-sm-inline-block"><Link className="btn btn-brand-1 hover-up" href="/contact">Get a demo</Link></div>
+                                <div className="d-none d-sm-inline-block">
+                                    <Link className="btn btn-outline me-3 hover-up" href="/expert">Expert marketplace</Link>
+                                    <Link className="btn btn-brand-1 hover-up" href="/contact">Get a demo</Link>
+                                </div>
                                 <div className={`burger-icon burger-icon-white ${openClass && "burger-close"}`}
                                     onClick={() => { handleOpen(); handleRemove() }}>
                                     <span className="burger-icon-top" />

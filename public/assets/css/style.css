@@ -771,7 +771,7 @@ a:hover {
 }
 
 .font-shippori {
-  font-family: "shippori-mincho", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .table-responsive {
@@ -2285,7 +2285,7 @@ html {
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
-  font-family: "chivo", sans-serif;
+  font-family: "Manrope", sans-serif;
   color: var(--color-primary-700);
 }
 .card-product .card-info a:hover, .card-product .card-info a:hover h6 {
@@ -2883,8 +2883,7 @@ html {
   background-size: contain;
 }
 
-.banner-about {
-}
+/* .banner-about was intentionally left empty and removed to avoid empty ruleset lint warnings */
 
 @keyframes hero-thumb-animation {
   0% {
@@ -2949,6 +2948,10 @@ html {
   -moz-animation: hero-thumb-sm-animation 4s linear infinite alternate;
   -o-animation: hero-thumb-sm-animation 4s linear infinite alternate;
   animation: hero-thumb-sm-animation 4s linear infinite alternate;
+  position: absolute !important;
+  bottom: 40px !important;
+  right: 40px !important;
+  top: auto !important;
 }
 
 .shape-3 {
@@ -6379,7 +6382,7 @@ footer a {
   padding: 10px 20px;
 }
 .tabs-plan li a:hover, .tabs-plan li a.active {
-  background-color: var(--color-accent-teal-300);
+  background-color: #e0f0ff;
   border-radius: 6px;
 }
 
@@ -10679,9 +10682,14 @@ footer.footer-4 {
 .modern-footer {
   background: var(--footer-bg-primary);
   color: var(--footer-text-primary);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   position: relative;
   overflow: hidden;
+}
+
+/* Ensure all text inside footer inherits the same font */
+.modern-footer, .modern-footer * {
+  font-family: inherit !important;
 }
 
 /* Subtle Background Animation */
@@ -10732,7 +10740,29 @@ footer.footer-4 {
   grid-template-columns: 1.2fr repeat(5, 1.1fr);
   gap: 48px;
   align-items: start;
+  grid-auto-rows: minmax(0, auto);
   animation: fadeInUp 0.8s ease-out;
+}
+
+/* Ensure all footer columns start at the same vertical position */
+.footer-grid > .footer-column {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Normalize column title spacing for consistent alignment */
+.footer-column .column-title {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+}
+
+/* Normalize list spacing */
+.footer-column .footer-menu,
+.footer-column .service-submenu {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 @keyframes fadeInUp {
@@ -10761,7 +10791,7 @@ footer.footer-4 {
 }
 
 .company-logo {
-  margin-bottom: 2px;
+  margin-bottom: 0;
   transition: transform var(--footer-transition-normal);
 }
 
@@ -10769,8 +10799,17 @@ footer.footer-4 {
 .company-logo img {
   max-height: 45px;
   width: auto;
+  display: block;
   filter: drop-shadow(0 2px 4px var(--color-black-alpha-10));
   transition: filter var(--footer-transition-normal);
+}
+
+/* Ensure centered legal block is vertically aligned with logo and social icons */
+.footer-bottom .footer-legal-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-2px);
 }
 
 .company-logo img:hover {
@@ -10884,10 +10923,10 @@ outline: none;
 }
 
 /* Social Icon Content with Better Typography */
-.social-icon.facebook::after { content: "f"; font-family: 'Inter', sans-serif; font-weight: 600; }
+.social-icon.facebook::after { content: "f"; font-family: 'Manrope', sans-serif; font-weight: 600; }
 .social-icon.instagram::after { content: "📷"; }
 .social-icon.twitter::after { content: "𝕏"; font-weight: 900; }
-.social-icon.linkedin::after { content: "in"; font-family: 'Inter', sans-serif; font-weight: 600; }
+.social-icon.linkedin::after { content: "in"; font-family: 'Manrope', sans-serif; font-weight: 600; }
 .social-icon.youtube::after { content: "▶"; }
 
 .social-icon::after {
@@ -10906,11 +10945,14 @@ outline: none;
 
 /* Enhanced Column Titles */
 .column-title {
-  font-size: 21px;
-  font-weight: 400;
+  font-size: 16px; /* unified size */
+  font-weight: 600;
   color: #fff;
   margin: 0 0 12px 0;
-  font-family: 'Inter', sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-family: 'Manrope', sans-serif;
   position: relative;
   transition: all var(--footer-transition-normal);
 }
@@ -10973,11 +11015,11 @@ outline: none;
 }
 
 .service-heading {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 600;
   color: #fff;
   margin: 0 0 8px 0;
-  font-family: 'Inter', sans-serif;
+  font-family: inherit;
   transition: color var(--footer-transition-normal);
 }
 
@@ -11003,6 +11045,38 @@ outline: none;
   padding: 2px 0;
   border-radius: 4px;
   outline: none;
+}
+
+/* Enforce same font-family and sizing for all footer text */
+.modern-footer, .modern-footer * {
+  font-family: inherit !important;
+}
+
+.modern-footer .footer-menu a,
+.modern-footer .service-submenu a,
+.modern-footer .legal-link,
+.modern-footer .copyright-text,
+.modern-footer .column-title {
+  font-family: inherit !important;
+  color: #fff !important;
+}
+
+.modern-footer .footer-menu a,
+.modern-footer .service-submenu a {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+
+.modern-footer .legal-link,
+.modern-footer .copyright-text {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+/* Make legal links and copyright text a subdued gray to match design */
+.modern-footer .legal-link,
+.modern-footer .copyright-text {
+  color: #9b9b9b !important;
 }
 
 .service-submenu a:hover,
@@ -11048,8 +11122,7 @@ outline: none;
 }
 
 .legal-link {
-  color: #fff;
-  text-decoration: none;
+  margin-top: 0;
   font-size: 14px;
   font-weight: 400;
   transition: all var(--footer-transition-normal);
@@ -11057,6 +11130,23 @@ outline: none;
   border-radius: 4px;
   position: relative;
   outline: none;
+}
+
+/* Put Privacy and copyright on same line and reduce size */
+.footer-legal-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-legal-row .legal-link {
+  font-size: 13px;
+  color: #fff;
+}
+
+.footer-legal-row .copyright-text {
+  font-size: 13px;
+  color: #fff;
 }
 
 .legal-link:hover,
@@ -11599,11 +11689,11 @@ body.mobile-menu-active {
 }
 
 .process-row {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 25px 10px;
-    border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 12px;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .process-number {
@@ -11617,6 +11707,8 @@ body.mobile-menu-active {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
+    flex-shrink: 0;
 }
 
 .process-card-split {
@@ -11633,6 +11725,43 @@ body.mobile-menu-active {
     width: 60px;
     height: 60px;
     font-size: 24px;
+    line-height: 1;
+}
+/* Center the two-column process list and constrain column width for a balanced layout */
+.process-list .row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.process-list .col-lg-6 {
+  flex: 0 0 520px;
+  max-width: 520px;
+}
+.process-row {
+  padding: 18px 12px;
+}
+
+.process-number {
+  margin-top: 6px; /* nudge the circle down to align with the heading */
+}
+
+@media (max-width: 1199px) {
+  .process-list .col-lg-6 {
+    flex: 0 0 46%;
+    max-width: 46%;
+  }
+}
+
+@media (max-width: 991px) {
+  .process-list .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .process-list .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .fade-up {
@@ -11751,4 +11880,65 @@ body.mobile-menu-active {
         padding: 15px 8px !important;
         min-height: 100px;
     }
+}
+
+/* Overrides for footer: remove decorative line and align social icon */
+.modern-footer.no-line::before {
+  display: none !important;
+}
+
+.modern-footer.no-line .footer-bottom {
+  border-top: 0 !important;
+}
+
+/* Ensure brand row and social icon align on a single baseline */
+.modern-footer .brand-row {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.modern-footer .company-logo img {
+  vertical-align: middle;
+  height: 40px; /* enforce same visual height as social icon */
+  max-height: 40px;
+  width: auto;
+}
+
+.modern-footer .footer-social {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.modern-footer .social-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: none; /* ensure no vertical nudge */
+}
+
+/* Fix: ensure industry/offer swiper cards are top-aligned and text shows
+   Prevents vertical-centering gaps and ensures descriptions don't get
+   awkwardly spaced inside .swiper-annotation slides */
+.swiper-annotation .swiper-slide {
+  display: flex;
+  align-items: flex-start;
+}
+.swiper-annotation .annotation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+.swiper-annotation .annotation-card .card-body,
+.swiper-annotation .annotation-card .card-content {
+  flex: 1 1 auto;
+}
+.swiper-annotation .annotation-card p {
+  margin-top: 8px;
+  margin-bottom: 0;
+  word-break: break-word;
 }

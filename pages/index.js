@@ -50,7 +50,7 @@ const HomePage3 = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="row mt-50">
+                        <div className="row mt-50 justify-content-center">
                             {social == 1 && <>
                                 <Link href="/CollectData" className="col-lg-3 col-md-6 social-media">
                                     <div>

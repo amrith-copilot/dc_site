@@ -70,7 +70,7 @@ const Offer = () => {
         <div className="offer1">
             <Swiper
                 slidesPerView={4}
-                spaceBetween={20}
+                spaceBetween={16}
                 loop={true}
                 autoplay={{
                     delay: 2500,
@@ -82,12 +82,12 @@ const Offer = () => {
                     nextEl: ".offer1-next",
                 }}
                 breakpoints={{
-                    320: { slidesPerView: 1, spaceBetween: 20 },
-                    575: { slidesPerView: 1, spaceBetween: 20 },
-                    767: { slidesPerView: 1, spaceBetween: 20 },
-                    991: { slidesPerView: 2, spaceBetween: 20 },
-                    1199: { slidesPerView: 3, spaceBetween: 20 },
-                    1350: { slidesPerView: 4, spaceBetween: 20 },
+                    320: { slidesPerView: 1, spaceBetween: 16 },
+                    575: { slidesPerView: 1, spaceBetween: 16 },
+                    767: { slidesPerView: 1, spaceBetween: 16 },
+                    991: { slidesPerView: 2, spaceBetween: 16 },
+                    1199: { slidesPerView: 3, spaceBetween: 16 },
+                    1350: { slidesPerView: 4, spaceBetween: 16 },
                 }}
                 className="swiper-annotation"
             >
@@ -120,17 +120,21 @@ const Offer = () => {
             <style jsx>{`
                 .swiper-annotation {
                     padding: 0 !important;
+                    max-width: 1200px;
+                    margin: 0 auto;
                 }
                 .swiper-annotation .swiper-slide {
                     display: flex;
                     align-items: stretch;
                 }
                 .annotation-card {
-                    height: 200px;
-                    padding: 30px;
+                    height: auto;
+                    min-height: 200px;
+                    padding: 24px;
                     background: white;
                     border-radius: 14px;
                     display: flex;
+                    flex-direction: column;
                     align-items: flex-start;
                     justify-content: flex-start;
                     text-align: left;
@@ -149,13 +153,16 @@ const Offer = () => {
                     font-weight: 600;
                     font-size: 16px;
                     margin: 0;
-                    line-height: 1.4;
+                    line-height: 1.3;
+                    text-align: left;
                 }
                 .annotation-card p {
                     margin: 0;
                     color: #666;
                     font-size: 14px;
-                    line-height: 1.5;
+                    line-height: 1.6;
+                    text-align: left;
+                    word-wrap: break-word;
                 }
                 .annotation-card:hover {
                     background: var(--color-primary-100);
@@ -164,7 +171,7 @@ const Offer = () => {
                     display: flex;
                     justify-content: center;
                     gap: 20px;
-                    margin-top: 30px;
+                    margin-top: 20px;
                 }
                 .offer1-prev,
                 .offer1-next {

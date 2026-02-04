@@ -12,15 +12,8 @@ const SFT = () => {
         <>
             <Layout>
                 <style jsx global>{`
-                    @font-face {
-                        font-family: 'Verdana';
-                        src: url('/assets/fonts/uicons/verdana.ttf') format('truetype');
-                        font-weight: 400;
-                        font-style: normal;
-                        font-display: swap;
-                    }
                     body, .sft-root, .sft-root * {
-                        font-family: 'Verdana', Verdana, Arial, sans-serif;
+                        font-family: 'Manrope', sans-serif;
                     }
                     .card-hover {
                         transition: transform .22s cubic-bezier(.2,.9,.3,1), box-shadow .22s cubic-bezier(.2,.9,.3,1), background .22s ease, color .22s ease;
