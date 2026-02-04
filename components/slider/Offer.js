@@ -44,22 +44,98 @@ const Offer = () => {
 
     const data = [
         {
-            title: "Cross-Platform",
+            title: "ADAS",
+            description: "Enterprise-grade perception and sensor data supporting driver assistance systems, safety validation, and autonomous capabilities.",
             color: "head-bg-2",
             img: "cross.png",
         },
         {
-            title: "Business strategy",
+            title: "Retail",
+            description: "Structured and enriched data enabling personalization, inventory optimization, order lifecycle tracking, and customer engagement at scale.",
             color: "head-bg-5",
             img: "cross2.png",
         },
         {
-            title: "Local Marketing",
+            title: "Geo Spatial",
+            description: "High-fidelity geospatial data for mapping, change detection, infrastructure planning, and location intelligence.",
             color: "head-bg-3",
             img: "business.svg",
         },
         {
+            title: "Mapping",
+            description: "Curated spatial datasets supporting navigation, routing, localization, and enterprise mapping platforms.",
+            color: "head-bg-4",
+            img: "cross4.png",
+        },
+        {
+            title: "Medical AI",
+            description: "Clinically relevant, expert-labeled data supporting diagnostics, medical imaging, documentation, and compliant AI development.",
+            color: "head-bg-2",
+            img: "cross.png",
+        },
+        {
+            title: "Voice AI",
+            description: "Enterprise speech and language datasets enabling transcription, conversational interfaces, and multilingual voice systems.",
+            color: "head-bg-5",
+            img: "cross2.png",
+        },
+        {
+            title: "Manufacturing",
+            description: "Operational and visual data supporting quality inspection, defect detection, predictive maintenance, and process optimization.",
+            color: "head-bg-3",
+            img: "business.svg",
+        },
+        {
+            title: "Agriculture",
+            description: "Remote sensing and field data supporting crop monitoring, yield forecasting, disease detection, and precision agriculture systems.",
+            color: "head-bg-4",
+            img: "cross4.png",
+        },
+        {
             title: "Social Media",
+            description: "Multimodal content data supporting moderation, sentiment analysis, compliance, and recommendation systems.",
+            color: "head-bg-2",
+            img: "cross.png",
+        },
+        {
+            title: "Asset Management",
+            description: "Structured financial and alternative datasets supporting portfolio analysis, risk modeling, reporting, and decision workflows.",
+            color: "head-bg-5",
+            img: "cross2.png",
+        },
+        {
+            title: "Fintech",
+            description: "Transaction, document, and behavioral data supporting fraud detection, credit assessment, regulatory compliance, and automation.",
+            color: "head-bg-3",
+            img: "business.svg",
+        },
+        {
+            title: "RPA",
+            description: "Document and workflow intelligence enabling automated processing, exception handling, and AI-assisted operations.",
+            color: "head-bg-4",
+            img: "cross4.png",
+        },
+        {
+            title: "Physical AI",
+            description: "Sensor, vision, and simulation data supporting robotics, autonomous systems, and real-world interaction modeling.",
+            color: "head-bg-2",
+            img: "cross.png",
+        },
+        {
+            title: "E-Commerce",
+            description: "Multimodal data enabling search, recommendations, catalog intelligence, content generation, and lifecycle management.",
+            color: "head-bg-5",
+            img: "cross2.png",
+        },
+        {
+            title: "Insurance",
+            description: "Claims, document, and image data supporting underwriting, risk assessment, fraud detection, and operational efficiency.",
+            color: "head-bg-3",
+            img: "business.svg",
+        },
+        {
+            title: "Sports & Media",
+            description: "Video, audio, and text data supporting analytics, content indexing, personalization, and audience engagement.",
             color: "head-bg-4",
             img: "cross4.png",
         },
@@ -96,7 +172,7 @@ const Offer = () => {
                         <div className="annotation-card">
                             <div className="annotation-card-content">
                                 <h6 className="annotation-card-title">{item.title}</h6>
-                                <p>Discover powerful features to boost your productivity. You are always welcome to visit our little den. Professional in their craft! All products were super amazing with strong attention to details, comps and overall vibe.</p>
+                                <p>{item.description}</p>
                             </div>
                         </div>
                     </SwiperSlide>

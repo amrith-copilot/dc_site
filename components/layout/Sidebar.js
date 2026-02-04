@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { useRouter } from 'next/router';
 
 const Sidebar = ({ openClass, handleRemove }) => {
     const [isActive, setIsActive] = useState({
@@ -73,6 +74,18 @@ const Sidebar = ({ openClass, handleRemove }) => {
         };
     }, [openClass, handleRemove]);
 
+    const router = useRouter();
+
+    const handleNavClick = (e, href) => {
+        if (router && router.pathname === href) {
+            // already on this page — just close sidebar and prevent navigation
+            handleRemove();
+            e.preventDefault();
+            return;
+        }
+        handleRemove();
+    };
+
     return (
         <>
             {/* Overlay */}
@@ -110,43 +123,31 @@ const Sidebar = ({ openClass, handleRemove }) => {
                                             <span className="menu-title" onClick={() => handleToggle("services")}>Services</span>
                                             <ul className={isActive.key === "services" ? "sub-menu d-block" : "sub-menu d-none"}>
                                                 <li className="menu-section-title">Pre-training</li>
-                                                <li><Link href="/CollectData" onClick={handleRemove}>Data Collection</Link></li>
-                                                <li><Link href="/Image-Anno" onClick={handleRemove}>Image Annotation</Link></li>
-                                                <li><Link href="/SFT" onClick={handleRemove}>Supervised Fine-Tuning</Link></li>
+                                                <li><Link legacyBehavior href="/CollectData"><a onClick={handleRemove}>Data Collection</a></Link></li>
+                                                <li><Link legacyBehavior href="/Image-Anno"><a onClick={handleRemove}>Image Annotation</a></Link></li>
+                                                <li><Link legacyBehavior href="/SFT"><a onClick={handleRemove}>Supervised Fine-Tuning</a></Link></li>
                                                 
                                                 <li className="menu-section-title">Post-training</li>
-                                                <li><Link href="/HITL" onClick={handleRemove}>HITL</Link></li>
-                                                <li><Link href="/RLHF" onClick={handleRemove}>RLHF</Link></li>
-                                                <li><Link href="/RedTeaming" onClick={handleRemove}>Red Teaming Services</Link></li>
-                                                <li><Link href="/LLM-Evals" onClick={handleRemove}>LLM Evals</Link></li>
+                                                <li><Link legacyBehavior href="/HITL"><a onClick={handleRemove}>HITL</a></Link></li>
+                                                <li><Link legacyBehavior href="/RLHF"><a onClick={handleRemove}>RLHF</a></Link></li>
+                                                <li><Link legacyBehavior href="/RedTeaming"><a onClick={handleRemove}>Red Teaming Services</a></Link></li>
+                                                <li><Link legacyBehavior href="/LLM-Evals"><a onClick={handleRemove}>LLM Evals</a></Link></li>
                                                 
                                                 <li className="menu-section-title">Cloud</li>
-                                                <li><Link href="/MLOps" onClick={handleRemove}>MLOps</Link></li>
-                                                <li><Link href="/DevOps" onClick={handleRemove}>DevOps</Link></li>
+                                                <li><Link legacyBehavior href="/MLOps"><a onClick={handleRemove}>MLOps</a></Link></li>
+                                                <li><Link legacyBehavior href="/DevOps"><a onClick={handleRemove}>DevOps</a></Link></li>
                                                 
                                                 <li className="menu-section-title">Others</li>
-                                                <li><Link href="/ExpertNetwork" onClick={handleRemove}>Expert Network</Link></li>
-                                                <li><Link href="/Search" onClick={handleRemove}>Search and Personalization</Link></li>
-                                                <li><Link href="/OCR" onClick={handleRemove}>OCR / IDP</Link></li>
-                                                <li><Link href="/GenAI" onClick={handleRemove}>Generative AI</Link></li>
-                                                <li><Link href="/index-11" onClick={handleRemove}>Training as a Service</Link></li>
-                                                <li><Link href="/Content-md" onClick={handleRemove}>Content Moderation</Link></li>
+                                                
+                                                <li><Link legacyBehavior href="/Search"><a onClick={handleRemove}>Search and Personalization</a></Link></li>
+                                                <li><Link legacyBehavior href="/OCR"><a onClick={handleRemove}>OCR / IDP</a></Link></li>
+                                                <li><Link legacyBehavior href="/GenAI"><a onClick={handleRemove}>Generative AI</a></Link></li>
+                                                <li><Link legacyBehavior href="/index-11"><a onClick={(e) => handleNavClick(e, '/index-11')}>Training as a Service</a></Link></li>
+                                                <li><Link legacyBehavior href="/Content-md"><a onClick={handleRemove}>Content Moderation</a></Link></li>
                                             </ul>
                                         </li>
 
-                                        {/* Product Menu */}
-                                        <li className={isActive.key === "product" ? "has-children active" : "has-children"}>
-                                            <span className="menu-expand" onClick={() => handleToggle("product")}>
-                                                <svg className="icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isActive.key === "product" ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
-                                                </svg>
-                                            </span>
-                                            <span className="menu-title" onClick={() => handleToggle("product")}>Product</span>
-                                            <ul className={isActive.key === "product" ? "sub-menu d-block" : "sub-menu d-none"}>
-                                                <li><Link href="/KubeTrace" onClick={handleRemove}>KubeTrace</Link></li>
-                                                <li><Link href="/HI" onClick={handleRemove}>Human in the Loop</Link></li>
-                                            </ul>
-                                        </li>
+                                        
 
                                         {/* Industries Menu */}
                                         <li className={isActive.key === "industries" ? "has-children active" : "has-children"}>
@@ -157,20 +158,24 @@ const Sidebar = ({ openClass, handleRemove }) => {
                                             </span>
                                             <span className="menu-title" onClick={() => handleToggle("industries")}>Industries</span>
                                             <ul className={isActive.key === "industries" ? "sub-menu d-block" : "sub-menu d-none"}>
-                                                <li><Link href="/industries/Manufacturing" onClick={handleRemove}>Manufacturing</Link></li>
-                                                <li><Link href="/industries/Agriculture" onClick={handleRemove}>Agriculture</Link></li>
-                                                <li><Link href="/industries/Sports" onClick={handleRemove}>Sports & Media</Link></li>
-                                                <li><Link href="/industries/Fintech" onClick={handleRemove}>Finance & Insurance</Link></li>
-                                                <li><Link href="/industries/Mapping" onClick={handleRemove}>Mapping</Link></li>
-                                                <li><Link href="/industries/VoiceAI" onClick={handleRemove}>Customer Service</Link></li>
-                                                <li><Link href="/industries/RPA" onClick={handleRemove}>RPA</Link></li>
-                                                <li><Link href="/industries/AssetManagement" onClick={handleRemove}>Asset Management</Link></li>
-                                                <li><Link href="/industries/physicalai" onClick={handleRemove}>Physical AI</Link></li>
-                                                <li><Link href="/industries/Ecommerce" onClick={handleRemove}>E-Commerce and Content</Link></li>
-                                                <li><Link href="/industries/ADAS" onClick={handleRemove}>ADAS</Link></li>
-                                                <li><Link href="/industries/Retail" onClick={handleRemove}>Retail</Link></li>
-                                                <li><Link href="/industries/Geospatial" onClick={handleRemove}>Geospatial</Link></li>
-                                                <li><Link href="/industries/physicalai" onClick={handleRemove}>Robotics</Link></li>
+                                                <li><Link legacyBehavior href="/industries/ADAS"><a onClick={handleRemove}>ADAS</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/Retail"><a onClick={handleRemove}>Retail</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/Geospatial"><a onClick={handleRemove}>Geo Spatial</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/Mapping"><a onClick={handleRemove}>Mapping</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/MedicalAI"><a onClick={handleRemove}>Medical AI</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/VoiceAI"><a onClick={handleRemove}>Voice AI</a></Link></li>
+
+                                                <li><Link legacyBehavior href="/industries/Manufacturing"><a onClick={handleRemove}>Manufacturing</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/Agriculture"><a onClick={handleRemove}>Agriculture</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/SocialMedia"><a onClick={handleRemove}>Social Media</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/AssetManagement"><a onClick={handleRemove}>Asset Management</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/Fintech"><a onClick={handleRemove}>Fintech</a></Link></li>
+
+                                                <li><Link legacyBehavior href="/industries/RPA"><a onClick={handleRemove}>RPA</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/physicalai"><a onClick={handleRemove}>Physical AI</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/Ecommerce"><a onClick={handleRemove}>E-Commerce and Content</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/Insurance"><a onClick={handleRemove}>Insurance</a></Link></li>
+                                                <li><Link legacyBehavior href="/industries/Sports"><a onClick={handleRemove}>Sports & Media</a></Link></li>
                                             </ul>
                                         </li>
 
@@ -183,18 +188,21 @@ const Sidebar = ({ openClass, handleRemove }) => {
                                             </span>
                                             <span className="menu-title" onClick={() => handleToggle("company")}>Company</span>
                                             <ul className={isActive.key === "company" ? "sub-menu d-block" : "sub-menu d-none"}>
-                                                <li><Link href="/about" onClick={handleRemove}>About us</Link></li>
-                                                <li><Link href="/career" onClick={handleRemove}>Careers</Link></li>
+                                                <li><Link legacyBehavior href="/about"><a onClick={handleRemove}>About us</a></Link></li>
+                                                <li><Link legacyBehavior href="/career"><a onClick={handleRemove}>Careers</a></Link></li>
+                                                <li><Link legacyBehavior href="/partners"><a onClick={handleRemove}>Partner</a></Link></li>
                                             </ul>
+                                        </li>
+                                        {/* Expert marketplace (separate item below Company) */}
+                                        <li>
+                                            <a href="https://experts.dataclap.digital/signin" onClick={handleRemove}>Expert marketplace</a>
                                         </li>
                                     </ul>
                                 </nav>
 
                                 {/* CTA Button */}
                                 <div className="mobile-menu-cta">
-                                    <Link className="btn btn-brand-1 btn-full" href="/contact" onClick={handleRemove}>
-                                        Get a demo
-                                    </Link>
+                                    <Link legacyBehavior href="/contact"><a className="btn btn-brand-1 btn-full" onClick={handleRemove}>Get a demo</a></Link>
                                 </div>
                             </div>
                         </div>

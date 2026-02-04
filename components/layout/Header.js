@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect, useState, useRef } from 'react';
+import { useRouter } from 'next/router';
 
 const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
     const [scroll, setScroll] = useState(0)
@@ -32,6 +33,13 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
     
     const handleDropdownLeave = () => {
         setActiveMenu(null);
+    };
+    const router = useRouter();
+    const handleNavClick = (e, href) => {
+        if (router && router.pathname === href) {
+            e.preventDefault();
+            return;
+        }
     };
     
     useEffect(() => {
@@ -166,7 +174,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                             </div>
                             <div className="header-right">
                                 <div className="d-none d-sm-inline-block">
-                                    <Link className="btn btn-outline me-3 hover-up" href="/expert">Expert marketplace</Link>
+                                    <Link className="btn btn-outline me-3 hover-up" href="https://experts.dataclap.digital/signin">Expert marketplace</Link>
                                     <Link className="btn btn-brand-1 hover-up" href="/contact">Get a demo</Link>
                                 </div>
                                 <div className={`burger-icon burger-icon-white ${openClass && "burger-close"}`}

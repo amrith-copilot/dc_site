@@ -72,7 +72,7 @@ const Footer = () => {
                             <div className="footer-column services-col">
                                 <h5 className="column-title">OTHERS</h5>
                                 <ul className="footer-menu">
-                                    <li><Link href="/ExpertNetwork">Expert Network</Link></li>
+                                    {/* <li><Link href="/ExpertNetwork">Expert Network</Link></li> */}
                                     <li><Link href="/Search">Search and Personalization</Link></li>
                                     <li><Link href="/OCR">OCR / IDP</Link></li>
                                     <li><Link href="/GenAI">Generative AI</Link></li>
