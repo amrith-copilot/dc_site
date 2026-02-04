@@ -50,7 +50,7 @@ const HomePage3 = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="row mt-50">
+                        <div className="row mt-50 justify-content-center">
                             {social == 1 && <>
                                 <Link href="/CollectData" className="col-lg-3 col-md-6 social-media">
                                     <div>
@@ -225,6 +225,93 @@ const HomePage3 = () => {
                         </div>
                     </div>
                 </section>
+                <section className="section mt-50 pb-50 bg-brand-1 partner-benefits">
+                    <div className="container">
+                        <div className="row box-list-core-value">
+                            <div className="col-lg-4 mb-70">
+                                <div className="box-core-value">
+                                    <h3 className="color-white mb-15">Built for Enterprise AI Delivery</h3>
+                                        <p className="font-md color-white"> Our services are designed for organizations that require scale, reliability, and control. We combine certified expertise, governed operations, and enterprise-grade security to deliver predictable outcomes across the AI lifecycle.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9.5 13.5l1.8 1.8L15.5 11" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Certified Delivery Standards</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-white mb-20">Teams operate under structured certification and internal qualification programs aligned with enterprise AI and data operations.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="9" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Fully Governed Operations</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-white mb-20">End-to-end service delivery with centralized management, accountability, and execution oversight.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8M8 16h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Industry Aligned Expertise</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-white mb-20">Practitioners with hands-on experience across domain-specific AI use cases and regulatory environments.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Deep Technical Capability</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-white mb-20">Proven expertise across computer vision, large language models, and generative AI workflows</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Centralized Innovation Teams</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-white mb-20">Dedicated groups focused on process optimization, tooling efficiency, and continuous improvement.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8M8 16h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Flexible Engagement Framework</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-white mb-20">A modular service model combining expert networks, managed delivery, and scalable capacity.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Operational Transparency</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-white mb-20">Clear reporting on progress, quality metrics, throughput, and cost throughout the engagement.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <style jsx>{`
+                    .partner-benefits {
+                        padding-top: 40px;
+                        padding-bottom: 40px;
+                    }
+                    .partner-benefits .box-core-value h3,
+                    .partner-benefits .box-core-value p,
+                    .partner-benefits .list-core-value h5,
+                    .partner-benefits .list-core-value p {
+                        color: #ffffff;
+                    }
+                    .benefit-icon {
+                        width: 36px;
+                        height: 36px;
+                        flex: 0 0 36px;
+                        margin-right: 12px;
+                        display: inline-block;
+                    }
+                    .partner-benefits .box-border-dashed {
+                        border-top: 1px dashed rgba(255,255,255,0.15);
+                        padding-top: 12px;
+                        margin-top: 12px;
+                    }
+                    .partner-benefits .ticked { display: none; }
+                `}</style>
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">

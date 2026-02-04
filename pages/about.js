@@ -78,9 +78,9 @@ const pageAbout = () => {
                     <div className="container">
                         <div className="row align-items-start">
                             <div className="col-lg-8">
-                                <h2 className="color-brand-1 mb-50">Our toolstack </h2>
-                                <h6 className="color-brand-1 mb-20">We use a mix of open-source platforms, trusted third-party tools, and our own internal systems to support data annotation workflows and Human-in-the-Loop operations.</h6>
-                            </div>
+                               <h2 className="mb-50" style={{ color: '#000' }}>Our toolstack </h2>
+                                <h6 className="mb-20" style={{ color: '#000' }}>We use a mix of open-source platforms, trusted third-party tools, and our own internal systems to support data annotation workflows and Human-in-the-Loop operations.</h6>
+                              </div>
                         </div>
                         <div className="row align-items-start">
                             <div className="col-lg-2 col-md-2 col-sm-4">

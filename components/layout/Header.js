@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect, useState, useRef } from 'react';
+import { useRouter } from 'next/router';
 
 const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
     const [scroll, setScroll] = useState(0)
@@ -32,6 +33,13 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
     
     const handleDropdownLeave = () => {
         setActiveMenu(null);
+    };
+    const router = useRouter();
+    const handleNavClick = (e, href) => {
+        if (router && router.pathname === href) {
+            e.preventDefault();
+            return;
+        }
     };
     
     useEffect(() => {
@@ -75,7 +83,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                         <h4>Pre-training</h4>
                                                         <ul>
                                                             <li><Link href="/CollectData">Data Collection</Link></li>
-                                                            <li><Link href="/Image-Anno">Image Annotation</Link></li>
+                                                            <li><Link href="/Image-Anno">Data Annotation</Link></li>
                                                             <li><Link href="/SFT">Supervised Fine-Tuning</Link></li>
                                                         </ul>
                                                     </div>
@@ -98,7 +106,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                     <div className="mega-menu-column">
                                                         <h4>Others</h4>
                                                         <ul>
-                                                            <li><Link href="/expert">Expert Network</Link></li>
+                                                            {/* <li><Link href="/expert">Expert Network</Link></li> */}
                                                             <li><Link href="/Search">Search and Personalization</Link></li>
                                                             <li><Link href="/OCR">OCR / IDP</Link></li>
                                                             <li><Link href="/GenAI">Generative AI</Link></li>
@@ -109,12 +117,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="has-children"><Link href="#">Product</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link href="/KubeTrace">KubeTrace</Link></li>
-                                                <li><Link href="/PHITL">Human in the Loop</Link></li>
-                                            </ul>
-                                        </li>
+                                        {/* Product menu removed per request */}
                                         <li className={`has-children services-mega-menu ${activeMenu === 'industries' ? 'menu-active' : ''}`}>
                                             <Link 
                                                 className="active" 
@@ -150,7 +153,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                     <div className="mega-menu-column">
                                                         <ul>
                                                             <li><Link href="/industries/RPA">RPA</Link></li>
-                                                            <li><Link href="/industries/PhysicalAI">Physical AI</Link></li>
+                                                            <li><Link href="/industries/physicalai">Physical AI</Link></li>
                                                             <li><Link href="/industries/Ecommerce">E-Commerce and Content</Link></li>
                                                             <li><Link href="/industries/Insurance">Insurance</Link></li>
                                                             <li><Link href="/industries/Sports">Sports & Media</Link></li>
@@ -170,7 +173,10 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                 </nav>
                             </div>
                             <div className="header-right">
-                                <div className="d-none d-sm-inline-block"><Link className="btn btn-brand-1 hover-up" href="/contact">Get a demo</Link></div>
+                                <div className="d-none d-sm-inline-block">
+                                    <Link className="btn btn-outline me-3 hover-up" href="https://experts.dataclap.digital/signin">Expert marketplace</Link>
+                                    <Link className="btn btn-brand-1 hover-up" href="/contact">Get a demo</Link>
+                                </div>
                                 <div className={`burger-icon burger-icon-white ${openClass && "burger-close"}`}
                                     onClick={() => { handleOpen(); handleRemove() }}>
                                     <span className="burger-icon-top" />

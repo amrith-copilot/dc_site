@@ -106,9 +106,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="MLOps Assessment" />
-                                        </div>
                                         <h4 className="left-card-title">MLOps Assessment and Strategy</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -121,9 +118,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross.png" alt="ML Pipeline Automation" />
-                                        </div>
                                         <h4 className="left-card-title">ML Pipeline Automation</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -136,9 +130,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage2/identity.png" alt="Model Versioning" />
-                                        </div>
                                         <h4 className="left-card-title">Model Versioning and Experiment Tracking</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -154,9 +145,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-20">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross4.png" alt="Model Deployment" />
-                                        </div>
                                         <h4 className="left-card-title">Model Deployment and Serving</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -169,9 +157,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-20">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross5.png" alt="ML Development" />
-                                        </div>
                                         <h4 className="left-card-title">ML Development</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -201,9 +186,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/images/tools/pipe.svg" alt="Automated Pipeline" />
-                                        </div>
                                         <h4 className="left-card-title">Automated Pipeline</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -216,9 +198,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/images/tools/monitor.svg" alt="Model Monitoring" />
-                                        </div>
                                         <h4 className="left-card-title">Model Monitoring</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -231,9 +210,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/images/tools/version.svg" alt="Version Control" />
-                                        </div>
                                         <h4 className="left-card-title">Version Control</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -250,9 +226,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/images/tools/expand.svg" alt="Scalable Infrastructure" />
-                                        </div>
                                         <h4 className="left-card-title">Scalable Infrastructure</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -265,9 +238,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/images/tools/account.svg" alt="Data Governance" />
-                                        </div>
                                         <h4 className="left-card-title">Data Governance</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">
@@ -280,9 +250,6 @@ const MLOps = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/images/tools/continous.svg" alt="Continuous Training" />
-                                        </div>
                                         <h4 className="left-card-title">Continuous Training</h4>
                                         <div className="left-card-divider"></div>
                                         <p className="left-card-description">

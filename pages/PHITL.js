@@ -39,7 +39,7 @@ const PHITL = () => {
                                     The platform supports LLMs, computer vision models, NLP pipelines, decision engines, and generative AI systems across industries and geographies.
                                 </p>
                                 <div className="mt-45 text-center">
-                                    <Link className="btn btn-brand-1 hover-up" href="/contact" style={{padding: '12px 32px', fontSize: '16px', marginLeft: '500px'}}>
+                                    <Link className="btn btn-brand-1 hover-up" href="/contact">
                                         Validate AI Predictions
                                     </Link>
                                 </div>
