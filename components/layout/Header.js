@@ -83,7 +83,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                         <h4>Pre-training</h4>
                                                         <ul>
                                                             <li><Link href="/CollectData">Data Collection</Link></li>
-                                                            <li><Link href="/Image-Anno">Image Annotation</Link></li>
+                                                            <li><Link href="/Image-Anno">Data Annotation</Link></li>
                                                             <li><Link href="/SFT">Supervised Fine-Tuning</Link></li>
                                                         </ul>
                                                     </div>
