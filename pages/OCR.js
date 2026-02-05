@@ -315,7 +315,7 @@ const OCR = () => {
                                         </div>
                                     </section>
 
-                                    <section className="section mt-100">
+                                    {/* <section className="section mt-100">
                                         <div className="container">
                                             <div className="row">
                                                 <div className="col-lg-12 text-start">
@@ -377,29 +377,9 @@ const OCR = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </section>
+                                    </section> */}
 
-                                    <section className="section mt-100">
-                                        <div className="container">
-                                            <div className="row">
-                                                <div className="col-lg-12 text-center">
-                                                    <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
-                                                    <p className="font-lg color-gray-500">
-                                                        What makes us different from others? We give holistic solutions
-                                                        <br className="d-none d-lg-block" />
-                                                        with strategy, design &amp; technology.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="mt-50">
-                                                <div className="box-swiper">
-                                                    <div className="swiper-container swiper-group-4">
-                                                        <Offer7 />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
+                                  
 
                                     <section className="section mt-100">
                                         <div className="container">
@@ -490,6 +470,84 @@ const OCR = () => {
                         }
                     `}</style>
                 </section>
+                 <section className="section mt-30 pb-50 bg-core-value">
+                    <div className="container">
+                        <div className="row box-list-core-value">
+                            <div className="col-lg-4 mb-70">
+                                <div className="box-core-value">
+                                    <h3 className="color-brand-1 mb-15">Advantages of adopting DevOps</h3>
+                                    <p className="font-md color-grey-400">Transform your software delivery with proven DevOps practices that accelerate innovation and improve quality.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Faster Deployment</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Automated deployment pipelines significantly reduce release cycles, allowing teams to push updates to production with minimal manual intervention.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Enhanced Collaboration</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Breaking down silos between development and operations teams fosters better communication, shared responsibility, and improved problem-solving across organizations.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Continuous Integration</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Regular code integration and automated testing catch bugs early, reducing debugging time and ensuring higher quality software releases.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Infrastructure Automation</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Standardized infrastructure configuration through code eliminates manual setup errors and enables consistent environments across development, testing, and production.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Rapid Recovery</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Automated monitoring and incident response systems help teams quickly identify, isolate, and resolve issues before they impact users.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Cost Optimization</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Efficient resource utilization, automated scaling, and streamlined processes reduce operational costs while maintaining high service quality standards.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                  <section className="section mt-100">
+                                        <div className="container">
+                                            <div className="row">
+                                                <div className="col-lg-12 text-center">
+                                                    <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                                    <p className="font-lg color-gray-500">
+                                                        What makes us different from others? We give holistic solutions
+                                                        <br className="d-none d-lg-block" />
+                                                        with strategy, design &amp; technology.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="mt-50">
+                                                <div className="box-swiper">
+                                                    <div className="swiper-container swiper-group-4">
+                                                        <Offer7 />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">

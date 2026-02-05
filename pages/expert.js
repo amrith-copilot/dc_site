@@ -15,10 +15,14 @@ const Expert = () => {
                                 <div className="col-lg-6 mb-20">
                                     <h2 className="color-black-text mt-10">Expert Data Annotation Services for High-Stakes AI</h2>
                                 </div>
+                                
                                 <div className="col-lg-6 mb-20">
                                     <p className="font-lg color-black-text">
                                         Precision annotation powered by domain experts for training, validating, and aligning advanced AI systems. Built for LLMs, computer vision, multimodal models, and mission-critical AI workflows where accuracy, context, and judgment matter.
                                     </p>
+                                       <div className="box-button text-end mt-10">
+                                           <a className="btn btn-brand-1 hover-up font-md" href="https://experts.dataclap.digital/signin" target="_blank" rel="noopener noreferrer">Explore</a>
+                                       </div>
                                 </div>
                             </div>
                         </div>
@@ -492,7 +496,10 @@ const Expert = () => {
                                     <div className="box-info-video">
                                         <h2 className="color-brand-1 mt-15 mb-20">Get Started</h2>
                                         <p className="font-md color-grey-500">Whether you need expert RLHF, red teaming, HITL validation, or high-precision training data, we build annotation workflows tailored to your model, domain, and risk profile.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact us</Link></div>
+                                        <div className="box-button text-start mt-65"> 
+                                            <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact us</Link>
+                                            {/* <a className="btn btn-outline hover-up font-md ms-3" href="https://experts.dataclap.digital/signin" target="_blank" rel="noopener noreferrer">Explore</a> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

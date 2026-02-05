@@ -110,7 +110,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                                                             <li><Link href="/Search">Search and Personalization</Link></li>
                                                             <li><Link href="/OCR">OCR / IDP</Link></li>
                                                             <li><Link href="/GenAI">Generative AI</Link></li>
-                                                            <li><Link href="/index-11">Training as a Service</Link></li>
+                                                            {/* <li><Link href="/index-11">Training as a Service</Link></li> */}
                                                             <li><Link href="/Content-md">Content Moderation</Link></li>
                                                         </ul>
                                                     </div>
@@ -174,7 +174,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                             </div>
                             <div className="header-right">
                                 <div className="d-none d-sm-inline-block">
-                                    <Link className="btn btn-outline me-3 hover-up" href="https://experts.dataclap.digital/signin">Expert marketplace</Link>
+                                    <Link className="btn btn-outline me-3 hover-up" href="/expert">Expert marketplace</Link>
                                     <Link className="btn btn-brand-1 hover-up" href="/contact">Get a demo</Link>
                                 </div>
                                 <div className={`burger-icon burger-icon-white ${openClass && "burger-close"}`}

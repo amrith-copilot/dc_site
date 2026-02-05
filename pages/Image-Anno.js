@@ -15,12 +15,12 @@ const ImageAnno = () => {
                             <div className="row align-items-end">
                                 <div className="col-lg-6 mb-20">
                                     <h2 className="color-black-text mt-10">
-                                        Make the most of your <br />Image Data
+                                        Make the most of your data <br /> across every modality Image
                                     </h2>
                                 </div>
                                 <div className="col-lg-6 mb-20">
                                     <p className="font-lg color-black-text">
-                                        We have worked on more than a million images and tens of thousands of hours of video data providing annotations for some of the most advanced applications of computer vision. DataClap's goal for consistent data handling will make your machine learning classifiers more accurate.
+                                     We provide high-quality data annotation across image, video, text, audio, LLM, LiDAR, and time-series data. Our workflows are built to support training, evaluation, and production deployment for modern AI systems.
                                     </p>
                                 </div>
                             </div>
@@ -131,19 +131,56 @@ const ImageAnno = () => {
                     `}</style>
                 </section>
                 <section className="section mt-110">
+                    <style jsx>{`
+                        .image-showcase-content-dynamic {
+                            padding: 18px 16px;
+                        }
+                        .image-showcase-content-dynamic h6 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            margin: 0 0 10px 0;
+                            line-height: 1.4;
+                        }
+                        .image-showcase-content-dynamic > p:first-of-type {
+                            margin: 0 0 10px 0;
+                            font-size: 13px;
+                        }
+                        .image-showcase-content-dynamic > p:nth-of-type(2) {
+                            margin: 8px 0 6px 0;
+                            font-size: 13px;
+                            font-weight: 600;
+                        }
+                        .annotation-methods {
+                            margin: 0 0 0 1.1rem;
+                            padding: 0;
+                            list-style-type: disc;
+                            color: #6b7280;
+                            line-height: 1.5;
+                            font-size: 13px;
+                        }
+                        .annotation-methods li {
+                            margin-bottom: 4px;
+                        }
+                        @media (max-width: 991px) {
+                            .image-showcase-content-dynamic {
+                                padding: 16px 14px;
+                            }
+                            .image-showcase-content-dynamic h6 {
+                                font-size: 15px;
+                            }
+                        }
+                    `}</style>
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-6 mb-20">
                                 <h2 className="color-brand-1 mb-0">Annotation Types</h2>
-                                <p className="color-grey-500 font-lg mt-20">
-                                    Here are some types of image annotations we provide.
-                                </p>
+                                <p className="color-grey-500 font-lg mt-20"> </p>
                             </div>
                         </div>
 
                         {/* First Row of Cards */}
                         <div className="row mt-45">
-                            <div className="col-lg-4 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -154,15 +191,23 @@ const ImageAnno = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Bounding Boxes</h6>
+                                        <h6 className="color-brand-1 mb-15">Image Annotation</h6>
                                         <p className="font-sm color-grey-500">
-                                            Discover powerful features to boost your productivity. You are always welcome to visit our little den.
+                                            Pixel-accurate and object-level annotations for computer vision models across structured and unstructured imagery.
                                         </p>
+                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p>
+                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                            <li>Bounding Boxes</li>
+                                            <li>Polygons</li>
+                                            <li>Semantic Segmentation</li>
+                                            <li>Keypoints And Landmarks</li>
+                                            <li>Lines, Splines And Contours</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -173,15 +218,22 @@ const ImageAnno = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Image Segmentation</h6>
+                                        <h6 className="color-brand-1 mb-15">Video Annotation</h6>
                                         <p className="font-sm color-grey-500">
-                                            Streamline your team's workflow with advanced collaboration tools and seamless integration.
+                                            Frame-level and temporal annotations for motion-aware and sequence-based models.
                                         </p>
+                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p>
+                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                            <li>Object tracking across frames</li>
+                                            <li>Action and activity recognition</li>
+                                            <li>Event detection with timestamps</li>
+                                            <li>Frame-by-frame segmentation</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -192,10 +244,41 @@ const ImageAnno = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Semantic Segmentation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Get comprehensive insights with detailed reporting and real-time performance metrics.
+                                        <h6 className="color-brand-1 mb-15">Text Annotation (NLP)</h6>
+                                          <p className="font-sm color-grey-500">
+                                            Structured labeling for training and evaluating NLP and language understanding models.
                                         </p>
+                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p>
+                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                            <li>Named entity recognition</li>
+                                            <li>Intent & slot labeling</li>
+                                            <li>Relation extraction</li>
+                                            <li>Document-level classification</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                        <img 
+                                            src="assets/imgs/page/homepage6/human1.png" 
+                                            alt="Depth & 3D" 
+                                            className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                        />
+                                    </div>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">LLM Data Annotation & Evaluation</h6>
+                                        <p className="font-sm color-grey-500">Human-in-the-loop data creation and evaluation for large language models and generative systems.                                        </p>
+                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
+                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                            <li>Prompt–response labeling</li>
+                                            <li>Preference ranking</li>
+                                            <li>Instruction tuning datasets</li>
+                                            <li>Safety, bias, and policy evaluation</li>
+                                        </ul>                  
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +286,7 @@ const ImageAnno = () => {
 
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
-                            <div className="col-lg-4 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -214,15 +297,20 @@ const ImageAnno = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Cuboids</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Organize and track your projects with powerful management tools and intuitive workflows.
-                                        </p>
+                                        <h6 className="color-brand-1 mb-15">Audio & Speech Annotation</h6>
+                                        <p className="font-sm color-grey-500"> Speech and audio labeling for ASR, TTS, and audio intelligence systems.</p>
+                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
+                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                            <li>Transcription (verbatim, clean, phonetic)</li>
+                                            <li>Speaker diarization</li>
+                                            <li>Intent and emotion tagging</li>
+                                            <li>Noise and acoustic event labeling</li>
+                                        </ul>                  
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className="col-lg-4 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -232,16 +320,21 @@ const ImageAnno = () => {
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Key Points</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Deliver exceptional customer experiences with comprehensive support and communication tools.
-                                        </p>
+                                       <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">iDAR & Point Cloud Annotation</h6>
+                                        <p className="font-sm color-grey-500"> 3D annotation for spatial understanding in autonomous and robotics systems.</p>
+                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
+                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                            <li>3D bounding boxes</li>
+                                            <li>Point-wise segmentation</li>
+                                            <li>Object classification</li>
+                                            <li>Sensor fusion (camera + LiDAR)</li>
+                                        </ul>                  
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
                             
-                            <div className="col-lg-4 col-md-6 mb-30">
+                             <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -251,35 +344,43 @@ const ImageAnno = () => {
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                         />
                                     </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Lines and splines</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Protect your valuable data with enterprise-grade security and compliance features.
-                                        </p>
+                                       <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Time-Series Annotation</h6>
+                                        <p className="font-sm color-grey-500">Labeling of sequential and sensor-based data for forecasting, anomaly detection, and monitoring models.</p>
+                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
+                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                            <li>Event tagging</li>
+                                            <li>Anomaly labeling</li>
+                                            <li>Change-point detection</li>
+                                            <li>Window-based classification</li>
+                                        </ul>                  
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section mt-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
-                                <p className="font-lg color-gray-500">
-                                    What makes us different from others? We give holistic solutions
-                                    <br className="d-none d-lg-block" />
-                                    with strategy, design &amp; technology.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="mt-50">
-                            <div className="box-swiper">
-                                <div className="swiper-container swiper-group-4">
-                                    <Offer3 />
+                             
+                             <div className="col-lg-3 col-md-6 mb-30">
+                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                        <img 
+                                            src="assets/imgs/page/homepage12/human1.png" 
+                                            alt="Thermal & Multispectral" 
+                                            className="image-showcase-photo-dynamic"
+                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                        />
+                                    </div>
+                                       <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                        <h6 className="color-brand-1 mb-15">Multimodal Annotation (Often Overlooked)</h6>
+                                        <p className="font-sm color-grey-500"> Cross-modal annotation where multiple data types must align. </p>
+                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
+                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                            <li>Image + text grounding</li>
+                                            <li>Video + audio synchronization</li>
+                                            <li>Sensor + visual data alignment</li>
+                                            <li>Multimodal prompt-response datasets</li>
+                                        </ul>                  
+                                    </div>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </section>
@@ -339,6 +440,29 @@ const ImageAnno = () => {
                         </div>
                     </div>
                 </section>
+                <section className="section mt-100">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center">
+                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <p className="font-lg color-gray-500">
+                                    What makes us different from others? We give holistic solutions
+                                    <br className="d-none d-lg-block" />
+                                    with strategy, design &amp; technology.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="mt-50">
+                            <div className="box-swiper">
+                                <div className="swiper-container swiper-group-4">
+                                    <Offer3 />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">

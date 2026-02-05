@@ -3,6 +3,7 @@ import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
 import Offer10 from '../components/slider/Offer10';
+import Offer3 from '../components/slider/Offer3';
 
 const ColectData = () => {
     const [isOpen, setOpen] = useState(false)
@@ -236,6 +237,16 @@ const ColectData = () => {
                             width: 100%;
                         }
 
+                        /* Reduce vertical gap when two mt-45 rows are stacked in this section */
+                        .section.mt-110 .row.mt-45 + .row.mt-45 {
+                            margin-top: 12px !important;
+                        }
+
+                        /* Also reduce bottom margin of columns in the first row to tighten the gap */
+                        .section.mt-110 .row.mt-45:first-of-type .col-lg-4 {
+                            margin-bottom: 12px !important;
+                        }
+
                         @media (max-width: 991px) {
                             .text-showcase-card {
                                 padding: 28px 24px;
@@ -274,7 +285,7 @@ const ColectData = () => {
                                 </div>
                                 <div className="col-lg-6 mb-70">
                                     <p className="font-lg color-black-text">
-                                        From prototype experiments to production-grade foundation models, we deliver fit-for-purpose datasets that reduce bias, improve performance, and speed time-to-insight.
+                                    From early prototypes to production-grade foundation models, we design and execute data collection programs that reduce bias, improve model performance, and accelerate time-to-deployment.
                                     </p>
                                 </div>
                             </div>
@@ -295,7 +306,7 @@ const ColectData = () => {
                                 <div className="col-lg-5">
                                     <h2 className="color-brand-1 mt-10 mb-15">Why us?</h2>
                                     <div className="mt-20">
-                                        <p className="font-lg color-grey-400 pt-20">Primary benefits</p>
+                                        <p className="font-lg color-grey-400 pt-20">We design data collection programs that are scalable, compliant, and purpose-built for ML workloads - without unnecessary overhead.</p>
                                         <ul className="list-ticks pt-15">
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -313,7 +324,7 @@ const ColectData = () => {
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                                 </svg>
-                                                <p className="font-md color-grey-400">Strong QA, audit trails and compliance (GDPR, CCPA, HIPAA where needed)</p>
+                                                <p className="font-md color-grey-400">Strong QA, audit trails, and privacy-aware data handling</p>
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -354,10 +365,10 @@ const ColectData = () => {
                 <section className="section mt-110">
                     <div className="container">
                         <div className="row align-items-end">
-                            <div className="col-lg-6 mb-20">
+                            <div className="col-lg-12 mb-20 text-center">
                                 <h2 className="color-brand-1 mb-0">What We Offer</h2>
                                 <p className="color-grey-500 font-lg mt-20">
-                                    Here are some types of image annotations we provide.
+                                   Modular data collection services designed to fit different model requirements and maturity levels.
                                 </p>
                             </div>
                         </div>
@@ -366,9 +377,6 @@ const ColectData = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Custom data collection programs" />
-                                        </div>
                                         <h4 className="left-card-title">Custom data collection programs</h4>
                                         <p className="left-card-description">Design and execute end-to-end collection plans including target profiling, recruitment, scripts, pilot runs and full capture handoff.</p>
                                     </div>
@@ -378,35 +386,34 @@ const ColectData = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Multimodal capture" />
-                                        </div>
                                         <h4 className="left-card-title">Multimodal capture</h4>
                                         <p className="left-card-description">Support for text, speech & audio, image & video, and sensor & telemetry capture — from web scraping and curated corpora to controlled shoots, crowdsourced feeds and LIDAR/IMU streams.</p>
                                     </div>
                                 </div>
                             </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
+                              <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Panel & participant recruitment" />
-                                        </div>
+                                        
+                                        <h4 className="left-card-title">Delivery & integration</h4>
+                                        <p className="left-card-description">Seamless delivery and support with custom formats, sample indices and metadata, API access, ML pipeline integration and MLOps tools.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
                                         <h4 className="left-card-title">Panel & participant recruitment</h4>
                                         <p className="left-card-description">Targeted recruitment for demographic, geographic and behavioral cohorts, including screening, consent, incentives and scheduling.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Annotation-ready collection" />
-                                        </div>
                                         <h4 className="left-card-title">Annotation-ready collection</h4>
                                         <p className="left-card-description">Collect with annotation formats in mind such as bounding boxes, segmentation masks, multi-label taxonomies, speaker timestamps and intent/slot markers.</p>
                                     </div>
@@ -416,9 +423,6 @@ const ColectData = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Privacy-first data handling" />
-                                        </div>
                                         <h4 className="left-card-title">Privacy-first data handling</h4>
                                         <p className="left-card-description">Privacy-first approach including consent management, PII minimization, secure storage, differential privacy options and on-prem/air-gapped transfers.</p>
                                     </div>
@@ -427,31 +431,18 @@ const ColectData = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Quality assurance & validation" />
-                                        </div>
                                         <h4 className="left-card-title">Quality assurance & validation</h4>
                                         <p className="left-card-description">Multi-tier QA with automated checks, human review, inter-annotator agreement monitoring, sample audits and statistical validation reports.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross2.png" alt="Delivery & integration" />
-                                        </div>
-                                        <h4 className="left-card-title">Delivery & integration</h4>
-                                        <p className="left-card-description">Seamless delivery and support with custom formats, sample indices and metadata, API access, ML pipeline integration and MLOps tools.</p>
-                                    </div>
-                                </div>
-                            </div>
+                          
                         </div>
                     </div>
 
                     
                 </section>
-                <section className="section mt-100 mb-40 process-section">
+                {/* <section className="section mt-100 mb-40 process-section">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
@@ -509,7 +500,7 @@ const ColectData = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section className="section mt-100">
                     <div className="container">
@@ -517,9 +508,7 @@ const ColectData = () => {
                             <div className="col-lg-12 text-center">
                                 <h2 className="color-brand-1 mb-20">Use Cases</h2>
                                 <p className="font-lg color-gray-500">
-                                    What makes us different from others? We give holistic solutions
-                                    <br className="d-none d-lg-block" />
-                                    with strategy, design &amp; technology.
+                                        Where structured data collection directly impacts model accuracy and reliability.
                                 </p>
                             </div>
                         </div>
@@ -532,39 +521,138 @@ const ColectData = () => {
                         </div>
                     </div>
                 </section>
+                
+                {/* Inserted Annotation Types, Our Advantages and Industries sections from Image-Anno */}
+                {/* <section className="section mt-110">
+                    <div className="container">
+                        <div className="row align-items-end">
+                            <div className="col-lg-6 mb-20">
+                                <h2 className="color-brand-1 mb-0">Annotation Types</h2>
+                                <p className="color-grey-500 font-lg mt-20">
+                                    (Placeholder cards)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="row mt-45">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row mt-45">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+                <section className="section mt-30 pb-50 bg-core-value">
+                    <div className="container">
+                        <div className="row box-list-core-value">
+                            <div className="col-lg-4 mb-70">
+                                <div className="box-core-value">
+                                    <h3 className="color-brand-1 mb-15">Our Advantages</h3>
+                                    <p className="font-md color-grey-400">Understand why our clients choose to work with us</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Optimized for Quality</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">End to End Solutions</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Cost Efficient</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Completely Managed</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Scalable Workforce</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Start with a single person and grow with us. We scale up our team based on your demands.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Data Security</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section className="section mt-100">
                     <div className="container">
-                        <div className="row mt-50 align-items-center card-no-border">
-                            <div className="col-lg-6 mb-350">
-                                <h2 className="color-brand-1">Quality, compliance & security</h2>
-                                <div className="mb-10 mt-10 font-md">Personalization is more than recommending “similar items.” It’s about adapting to user behavior, context, and evolving intent. We support personalization efforts through:</div>
+                        <div className="row">
+                            <div className="col-lg-12 text-center">
+                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <p className="font-lg color-gray-500">
+                                    What makes us different from others? We give holistic solutions
+                                    <br className="d-none d-lg-block" />
+                                    with strategy, design &amp; technology.
+                                </p>
                             </div>
-                            <div className="col-lg-6">
-                                <div className="card-offer card-we-do hover-up mb-20">
-                                    <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do3.png" alt="iori" /></div>
-                                    <div className="card-info mt-15">
-                                        <h4 className="color-black-text mb-10"><Link className="color-black-text" href="What makes us different from others? We give holistic solutions with strategy, design & technology.">Transparent QA metrics :</Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Error rates, agreement scores, coverage reports.</p>
-                                    </div>
-                                </div>
-                                <div className="card-offer card-we-do hover-up mb-20">
-                                    <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do.png" alt="iori" /></div>
-                                    <div className="card-info mt-15">
-                                        <h4 className="color-black-text mb-10"><Link className="color-black-text" href="No lag time, no lost effort when priorities change, no email black hole. As team collaboration improves">Reproducible pipelines: </Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Capturable provenance, versioning and sample snapshots for audits.</p>
-                                    </div>
-                                </div>
-                                <div className="card-offer card-we-do hover-up">
-                                    <div className="card-image mt-15"><img src="assets/imgs/page/homepage2/we-do4.png" alt="iori" /></div>
-                                    <div className="card-info mt-15">
-                                        <h4 className="color-black-text mb-10"><Link className="color-black-text" href="Share updates instantly within our project management software, and get the entire team collaborating">Regulatory alignment: </Link></h4>
-                                        <p className="font-md color-grey-500 mb-5">Flexible privacy controls, exportable consent records, ability to work under NDAs and DPA terms.</p>
-                                    </div>
+                        </div>
+                        <div className="mt-50">
+                            <div className="box-swiper">
+                                <div className="swiper-container swiper-group-4">
+                                    <Offer3 />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
@@ -576,8 +664,10 @@ const ColectData = () => {
                                 </div>
                                 <div className="col-lg-8">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Let’s make your search smarter and personalization sharper.</h2>
-                                        <p className="font-md color-grey-500">Talk to us about building ML-ready processes that turn relevance into results.</p>
+                                        <h2 className="color-brand-1 mt-15 mb-20">Structured data, ready for training</h2>
+                                        <p className="font-md color-grey-500">Talk to us about building reliable data collection pipelines 
+                                            <br className="d-none d-lg-block" />
+                                             that convert raw inputs into model-ready datasets.</p>
                                         <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                                     </div>
                                 </div>

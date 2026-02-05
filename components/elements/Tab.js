@@ -38,42 +38,42 @@ const Tab = () => {
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="box-business-tab">
-                                    <span className="btn btn-tag">Business</span>
+                                    {/* <span className="btn btn-tag">Annotaion</span> */}
                                     <h3 className="color-brand-1 mt-10 mb-15">
-                                        Integrate with over 1,000 project management apps
+                                        High-quality labeled data, at scale
                                     </h3>
                                     <p className="font-md color-grey-400">
-                                        Excepteur sint occaecat cupidatat non proident, sunt
-                                        in culpa qui officia deserunt mollit laborum — semper
-                                        quis lectus nulla. Interactively transform magnetic
-                                        growth strategies whereas prospective "outside
-                                        the box" thinking.
+                                       We deliver production-ready annotations across vision, text, audio, and multimodal datasets, built to match your exact specs and downstream model requirements. Our workflows are designed for consistency, traceability, and long-term scalability across use cases.
                                     </p>
                                     <div className="mt-20">
                                         <ul className="list-ticks">
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task tracking
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Image, video, text, audio annotation
+
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Create task dependencies
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Custom taxonomies & guidelines
+
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task visualization
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>QA-led workflows with SLAs
+
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>hare files, discuss
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Scales from pilots to millions of tasks
+
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Meet deadlines faster
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Multi-level review and inter-annotator agreement
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Track time spent on each project
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Secure data handling and access controls
                                             </li>
                                         </ul>
                                     </div>
@@ -90,42 +90,38 @@ const Tab = () => {
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="box-business-tab">
-                                    <span className="btn btn-tag">Business</span>
+                                    {/* <span className="btn btn-tag">LLM Evaluations</span> */}
                                     <h3 className="color-brand-1 mt-10 mb-15">
-                                        Integrate with over 1,000 project management apps
+                                       Measure what actually matters
                                     </h3>
                                     <p className="font-md color-grey-400">
-                                        Excepteur sint occaecat cupidatat non proident, sunt
-                                        in culpa qui officia deserunt mollit laborum — semper
-                                        quis lectus nulla. Interactively transform magnetic
-                                        growth strategies whereas prospective "outside
-                                        the box" thinking.
+                                        We help teams evaluate LLMs on real-world tasks that reflect production behavior, not synthetic benchmarks. Our evaluation frameworks surface performance gaps, regressions, and failure modes across model versions
                                     </p>
                                     <div className="mt-20">
                                         <ul className="list-ticks">
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task tracking
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task-based and rubric-driven evaluations
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Create task dependencies
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Human + automated scoring
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task visualization
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Bias, safety, and failure analysis
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>hare files, discuss
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Continuous eval pipelines
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Meet deadlines faster
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Model-to-model and version comparisons
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Track time spent on each project
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Custom metrics aligned to business outcomes
                                             </li>
                                         </ul>
                                     </div>
@@ -142,42 +138,42 @@ const Tab = () => {
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="box-business-tab">
-                                    <span className="btn btn-tag">Business</span>
+                                    {/* <span className="btn btn-tag">Supervised FT</span> */}
                                     <h3 className="color-brand-1 mt-10 mb-15">
-                                        Integrate with over 1,000 project management apps
+                                        Fine-tuning data you can trust
                                     </h3>
                                     <p className="font-md color-grey-400">
-                                        Excepteur sint occaecat cupidatat non proident, sunt
-                                        in culpa qui officia deserunt mollit laborum — semper
-                                        quis lectus nulla. Interactively transform magnetic
-                                        growth strategies whereas prospective "outside
-                                        the box" thinking.
+                                       We prepare clean, instruction-aligned datasets for supervised fine-tuning, enabling faster iteration and more stable model behavior. Data is structured to reduce noise, improve generalization, and support repeated training cycles.
+
                                     </p>
                                     <div className="mt-20">
                                         <ul className="list-ticks">
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task tracking
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Instruction / response pairs
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Create task dependencies
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Domain-specific data creation
+
+
+
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task visualization
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Data cleaning & validation
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>hare files, discuss
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Iteration-friendly workflows
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Meet deadlines faster
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Consistency checks across prompts and outputs
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Track time spent on each project
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Support for multi-turn and conversational formats
                                             </li>
                                         </ul>
                                     </div>
@@ -194,42 +190,38 @@ const Tab = () => {
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="box-business-tab">
-                                    <span className="btn btn-tag">Business</span>
+                                    {/* <span className="btn btn-tag">OCR and IDP</span> */}
                                     <h3 className="color-brand-1 mt-10 mb-15">
-                                        Integrate with over 1,000 project management apps
+                                       Turn documents into structured data
                                     </h3>
                                     <p className="font-md color-grey-400">
-                                        Excepteur sint occaecat cupidatat non proident, sunt
-                                        in culpa qui officia deserunt mollit laborum — semper
-                                        quis lectus nulla. Interactively transform magnetic
-                                        growth strategies whereas prospective "outside
-                                        the box" thinking.
+                                       We support OCR and intelligent document processing for complex, noisy, real-world documents, including edge cases that automated systems struggle with. Our workflows combine automation with human review to ensure accuracy.
                                     </p>
                                     <div className="mt-20">
                                         <ul className="list-ticks">
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task tracking
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Invoices, receipts, forms, contracts
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Create task dependencies
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Field extraction & validation
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task visualization
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Handwritten and low-quality scans
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>hare files, discuss
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Human-in-the-loop review
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Meet deadlines faster
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Schema normalization and post-processing
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Track time spent on each project
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Confidence scoring and exception handling
                                             </li>
                                         </ul>
                                     </div>
@@ -246,42 +238,42 @@ const Tab = () => {
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="box-business-tab">
-                                    <span className="btn btn-tag">Business</span>
+                                    {/* <span className="btn btn-tag">Generative AI</span> */}
                                     <h3 className="color-brand-1 mt-10 mb-15">
-                                        Integrate with over 1,000 project management apps
+                                        Human feedback for generative systems
                                     </h3>
                                     <p className="font-md color-grey-400">
-                                        Excepteur sint occaecat cupidatat non proident, sunt
-                                        in culpa qui officia deserunt mollit laborum — semper
-                                        quis lectus nulla. Interactively transform magnetic
-                                        growth strategies whereas prospective "outside
-                                        the box" thinking.
+                                       We support generative AI teams with high-quality human feedback loops that improve output quality, relevance, and reliability over time. Our processes are designed to integrate cleanly into training and evaluation pipelines.
+
                                     </p>
                                     <div className="mt-20">
                                         <ul className="list-ticks">
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task tracking
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Prompt-response evaluation
+
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Create task dependencies
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>RLHF / preference data
+
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task visualization
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Content quality & relevance checks
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>hare files, discuss
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Domain expert reviews
+
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Meet deadlines faster
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Style, tone, and factuality assessments
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Track time spent on each project
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Feedback datasets for continuous improvement
                                             </li>
                                         </ul>
                                     </div>
@@ -298,42 +290,39 @@ const Tab = () => {
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="box-business-tab">
-                                    <span className="btn btn-tag">Business</span>
+                                    {/* <span className="btn btn-tag">Content Moderation</span> */}
                                     <h3 className="color-brand-1 mt-10 mb-15">
-                                        Integrate with over 1,000 project management apps
+                                        Policy-aligned, consistent decisions
                                     </h3>
                                     <p className="font-md color-grey-400">
-                                        Excepteur sint occaecat cupidatat non proident, sunt
-                                        in culpa qui officia deserunt mollit laborum — semper
-                                        quis lectus nulla. Interactively transform magnetic
-                                        growth strategies whereas prospective "outside
-                                        the box" thinking.
+                                        We help platforms enforce policies at scale while maintaining accuracy, context awareness, and reviewer consistency. Our moderation workflows are built to adapt as policies, platforms, and risk profiles evolve
                                     </p>
                                     <div className="mt-20">
                                         <ul className="list-ticks">
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task tracking
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Text, image, and video moderation
+
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Create task dependencies
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Custom policy training
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Task visualization
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Edge-case escalation flows
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>hare files, discuss
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>24/7 moderation support
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Meet deadlines faster
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Reviewer calibration and quality audits
                                             </li>
                                             <li>
                                                 <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Track time spent on each project
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Detailed reporting and audit trails
                                             </li>
                                         </ul>
                                     </div>

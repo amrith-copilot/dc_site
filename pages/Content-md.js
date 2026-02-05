@@ -376,29 +376,7 @@ const ContentMd = () => {
             `}</style>
         </section>
     );
-    const IndustriesSection = () => (
-        <section className="section mt-100">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12 text-center">
-                        <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
-                        <p className="font-lg color-gray-500">
-                            What makes us different from others? We give holistic solutions
-                            <br className="d-none d-lg-block" />
-                            with strategy, design &amp; technology.
-                        </p>
-                    </div>
-                </div>
-                <div className="mt-50">
-                    <div className="box-swiper">
-                        <div className="swiper-container swiper-group-4">
-                            <Offer4 />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+    
 
     const WorkflowsSection = () => {
     const workflows = [
@@ -580,7 +558,29 @@ const ContentMd = () => {
             </div>
         </section>
     );
-
+const IndustriesSection = () => (
+        <section className="section mt-100">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 text-center">
+                        <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                        <p className="font-lg color-gray-500">
+                            What makes us different from others? We give holistic solutions
+                            <br className="d-none d-lg-block" />
+                            with strategy, design &amp; technology.
+                        </p>
+                    </div>
+                </div>
+                <div className="mt-50">
+                    <div className="box-swiper">
+                        <div className="swiper-container swiper-group-4">
+                            <Offer4 />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
     const CTASection = () => (
         <section className="section mt-50 pt-50 pb-40">
             <div className="container">
@@ -611,9 +611,9 @@ const ContentMd = () => {
                 <Hero />
                 <ModerationTypes />
                 <ContentTypesSection />
-                <IndustriesSection />
                 <WorkflowsSection />
                 <CoreValuesSection />
+                <IndustriesSection />
                 <CTASection />
             </Layout>
         </>

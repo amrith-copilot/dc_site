@@ -11942,3 +11942,29 @@ body.mobile-menu-active {
   margin-bottom: 0;
   word-break: break-word;
 }
+
+/* Light-blue style for non-active tabs when Annotations is selected */
+.list-buttons a.light-blue,
+.list-buttons .light-blue a,
+.list-buttons .light-blue {
+  background-color: #e6f7ff !important;
+  color: #0b3a66 !important;
+  border-color: transparent !important;
+}
+
+/* Override active / hover tab styles to match image-1 light-blue */
+.list-buttons-circle li a.active,
+.list-buttons li a.active,
+.list-buttons li a:hover,
+.list-buttons-circle li a:hover {
+  background-color: #e6f7ff !important;
+  color: #0b3a66 !important;
+  border: 1px solid rgba(11,58,102,0.06) !important;
+  box-shadow: 0 2px 0 rgba(11,58,102,0.04) inset !important;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+/* Ensure text column aligns to top of the image in .box-tab-32 */
+.box-tab-32 .row.align-items-center {
+  align-items: flex-start !important;
+}

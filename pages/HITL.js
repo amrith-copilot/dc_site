@@ -3,6 +3,7 @@ import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
 import Offer5 from '../components/slider/Offer5';
+import Offer3 from '../components/slider/Offer3';
 
 const HITL = () => {
     const [isOpen, setOpen] = useState(false)
@@ -204,7 +205,138 @@ const HITL = () => {
                     </div>
                 </section>
 
+              
+
+                {/* <section className="section mt-110">
+                    <div className="container">
+                        <div className="row align-items-end">
+                            <div className="col-lg-6 mb-20">
+                                <h2 className="color-brand-1 mb-0">Annotation Types</h2>
+                                <p className="color-grey-500 font-lg mt-20">
+                                    (Placeholder cards)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="row mt-45">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row mt-45">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div style={{height: '100%'}}>
+                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+                <section className="section mt-30 pb-50 bg-core-value">
+                    <div className="container">
+                        <div className="row box-list-core-value">
+                            <div className="col-lg-4 mb-70">
+                                <div className="box-core-value">
+                                    <h3 className="color-brand-1 mb-15">Our Advantages</h3>
+                                    <p className="font-md color-grey-400">Understand why our clients choose to work with us</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Optimized for Quality</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">End to End Solutions</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Cost Efficient</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Completely Managed</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Scalable Workforce</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Start with a single person and grow with us. We scale up our team based on your demands.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Data Security</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section className="section mt-100">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center">
+                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <p className="font-lg color-gray-500">
+                                    What makes us different from others? We give holistic solutions
+                                    <br className="d-none d-lg-block" />
+                                    with strategy, design &amp; technology.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="mt-50">
+                            <div className="box-swiper">
+                                <div className="swiper-container swiper-group-4">
+                                    <Offer3 />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+  {/* <section className="section mt-100">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
@@ -224,8 +356,7 @@ const HITL = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-
+                </section> */}
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">

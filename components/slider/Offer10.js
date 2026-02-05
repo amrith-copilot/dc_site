@@ -29,8 +29,8 @@ const Offer10 = () => {
     return (
         <div className="offer10">
             <Swiper
-                slidesPerView={4}
-                spaceBetween={20}
+                slidesPerView={3}
+                spaceBetween={30}
                 loop={true}
                 autoplay={{
                     delay: 2500,
@@ -56,7 +56,10 @@ const Offer10 = () => {
                         <div className="annotation-card-content">
                             <h6 className="annotation-card-title">Healthcare</h6>
                             <ul>
-                                <li>Clinical notes, speech for telehealth, medical imaging (with strict compliance).</li>
+                                <li>Clinical text, structured records, and medical imaging metadata</li>
+                                <li>De-identified datasets for research and model development</li>
+                                <li>Domain-reviewed data capture aligned to clinical workflows</li>
+                                <li>High-accuracy validation for sensitive and high-impact use cases</li>
                             </ul>
                         </div>
                     </div>
@@ -89,7 +92,11 @@ const Offer10 = () => {
                         <div className="annotation-card-content">
                             <h6 className="annotation-card-title">Finance & Insurance</h6>
                             <ul>
-                                <li>Transactional text, claims audio, document capture (secure handling).</li>
+                                <li>Transaction records, claims data, and supporting documents</li>
+                                <li>  Structured extraction from PDFs, forms, and scanned records</li>   
+                                <li>Fraud signals, anomaly-focused sampling, and edge-case coverage</li>
+                                <li>Historical + real-time data collection for model training and validation</li>
+
                             </ul>
                         </div>
                     </div>
@@ -100,7 +107,10 @@ const Offer10 = () => {
                         <div className="annotation-card-content">
                             <h6 className="annotation-card-title">Telecom & IoT</h6>
                             <ul>
-                                <li>Network telemetry, device logs, acoustic monitoring.</li>
+                                <li>Network logs, device telemetry, and sensor streams</li>
+                                <li>Time-series data collection with labeling-ready structure</li>
+                                <li>Edge-device data capture across geographies and environments</li>
+                                <li>Noise handling, signal normalization, and data validation workflows</li>
                             </ul>
                         </div>
                     </div>
@@ -111,7 +121,10 @@ const Offer10 = () => {
                         <div className="annotation-card-content">
                             <h6 className="annotation-card-title">Consumer AI</h6>
                             <ul>
-                                <li>Chat/corpus collection, voice assistants, multi-language support.</li>
+                                <li>Voice, image, and interaction data reflecting real user behavior</li>
+                                <li>Multilingual and accent-diverse speech collection</li>
+                                <li>Prompt–response and interaction trace datasets</li>
+                                <li>Continuous data refresh to reduce model drift</li>
                             </ul>
                         </div>
                     </div>
@@ -140,10 +153,10 @@ const Offer10 = () => {
                     align-items: stretch;
                 }
                 .annotation-card {
-                    height: 180px;
-                    padding: 30px;
+                    height: 280px;
+                    padding: 36px;
                     background: white;
-                    border-radius: 14px;
+                    border-radius: 18px;
                     display: flex;
                     align-items: flex-start;
                     justify-content: flex-start;
@@ -161,17 +174,17 @@ const Offer10 = () => {
                 .annotation-card-title {
                     color: #0017e3;
                     font-weight: 600;
-                    font-size: 16px;
+                    font-size: 18px;
                     margin: 0;
-                    line-height: 1.4;
+                    line-height: 1.3;
                 }
                 .annotation-card ul {
                     margin: 0;
                     padding-left: 1.2rem;
                     list-style-type: disc;
                     color: #666;
-                    font-size: 14px;
-                    line-height: 1.5;
+                    font-size: 15px;
+                    line-height: 1.6;
                 }
                 .annotation-card li {
                     margin-bottom: 0.5rem;

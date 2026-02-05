@@ -124,7 +124,7 @@ const Sidebar = ({ openClass, handleRemove }) => {
                                             <ul className={isActive.key === "services" ? "sub-menu d-block" : "sub-menu d-none"}>
                                                 <li className="menu-section-title">Pre-training</li>
                                                 <li><Link legacyBehavior href="/CollectData"><a onClick={handleRemove}>Data Collection</a></Link></li>
-                                                <li><Link legacyBehavior href="/Image-Anno"><a onClick={handleRemove}>Image Annotation</a></Link></li>
+                                                <li><Link legacyBehavior href="/Image-Anno"><a onClick={handleRemove}>Data Annotation</a></Link></li>
                                                 <li><Link legacyBehavior href="/SFT"><a onClick={handleRemove}>Supervised Fine-Tuning</a></Link></li>
                                                 
                                                 <li className="menu-section-title">Post-training</li>

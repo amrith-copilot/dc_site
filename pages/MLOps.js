@@ -170,6 +170,64 @@ const MLOps = () => {
                 </section>
 
 
+                
+
+                <section className="section mt-30 pb-50 bg-core-value">
+                    <div className="container">
+                        <div className="row box-list-core-value">
+                            <div className="col-lg-4 mb-70">
+                                <div className="box-core-value">
+                                    <h3 className="color-brand-1 mb-15">Why Companies Choose Us</h3>
+                                    <p className="font-md color-grey-400">Expert MLOps services that help you build scalable and reliable ML systems in production.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">End-to-End Automation</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">We automate the entire ML lifecycle from data ingestion to model deployment and monitoring.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Scalable Infrastructure</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Our solutions scale with your business needs and handle increasing data volumes.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Continuous Monitoring</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Real-time monitoring and alerting to ensure your models perform optimally in production.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-lg-4">
+                                <ul className="list-core-value">
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Industry Expertise</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Deep expertise across industries with proven MLOps implementations.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Faster Time to Market</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Accelerate your ML project delivery with proven frameworks and best practices.</p>
+                                        </div>
+                                    </li>
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-brand-1 mb-5">Cost Optimization</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-grey-500 mb-20">Optimize infrastructure costs while maintaining high performance and reliability.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section className="section mt-70 pt-60 pb-60 ">
                     <div className="container">
                         <div className="row">
@@ -289,64 +347,6 @@ const MLOps = () => {
                         }
                     `}</style>
                 </section>
-
-                <section className="section mt-30 pb-50 bg-core-value">
-                    <div className="container">
-                        <div className="row box-list-core-value">
-                            <div className="col-lg-4 mb-70">
-                                <div className="box-core-value">
-                                    <h3 className="color-brand-1 mb-15">Why Companies Choose Us</h3>
-                                    <p className="font-md color-grey-400">Expert MLOps services that help you build scalable and reliable ML systems in production.</p>
-                                </div>
-                            </div>
-                            <div className="col-lg-4">
-                                <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">End-to-End Automation</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">We automate the entire ML lifecycle from data ingestion to model deployment and monitoring.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Scalable Infrastructure</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Our solutions scale with your business needs and handle increasing data volumes.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Continuous Monitoring</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Real-time monitoring and alerting to ensure your models perform optimally in production.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col-lg-4">
-                                <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Industry Expertise</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Deep expertise across industries with proven MLOps implementations.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Faster Time to Market</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Accelerate your ML project delivery with proven frameworks and best practices.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Cost Optimization</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Optimize infrastructure costs while maintaining high performance and reliability.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 <section className="section mt-100">
                     <div className="container">
                         <div className="row">
@@ -369,7 +369,7 @@ const MLOps = () => {
                     </div>
                 </section>
 
-                <section className="section mt-100 mb-40 process-section">
+                {/* <section className="section mt-100 mb-40 process-section">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
@@ -426,7 +426,7 @@ const MLOps = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">

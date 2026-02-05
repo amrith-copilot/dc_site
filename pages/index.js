@@ -38,7 +38,7 @@ const HomePage3 = () => {
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Take your social media marketing <br className="d-none d-lg-block" />prowess to the next level</h2>
+                                <h2 className="color-brand-1 mb-20">Take your social media marketing <br className="d-none d-lg-block" />process to the next level</h2>
                             </div>
                         </div>
                         <div className="text-center mt-25 mb-65">
@@ -70,7 +70,7 @@ const HomePage3 = () => {
                                     <div>
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
-                                                <h4 className="left-card-title">Image Annotation</h4>
+                                                <h4 className="left-card-title">Data Annotation</h4>
                                                 <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     High-accuracy visual labeling delivered with defined schemas and quality assurance.
@@ -208,11 +208,12 @@ const HomePage3 = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">What We Offer</h2>
+                                <h2 className="color-brand-1 mb-20">Built for Teams Across Industries</h2>
                                 <p className="font-lg color-gray-500">
-                                    What makes us different from others? We give holistic solutions
+                                   We partner with teams in high-impact industries to solve 
+
                                     <br className="d-none d-lg-block" />
-                                    with strategy, design &amp; technology.
+                                   data and infrastructure challenges.
                                 </p>
                             </div>
                         </div>
@@ -236,12 +237,12 @@ const HomePage3 = () => {
                             </div>
                             <div className="col-lg-4">
                                 <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9.5 13.5l1.8 1.8L15.5 11" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Certified Delivery Standards</h5>
+                                   <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Deep Technical Capability</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-white mb-20">Teams operate under structured certification and internal qualification programs aligned with enterprise AI and data operations.</p>
+                                            <p className="font-md color-white mb-20">Proven expertise across computer vision, large language models, and generative AI workflows</p>
                                         </div>
-                                    </li>
+                                    </li> 
                                     <li> <span className="ticked" />
                                         <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="9" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Fully Governed Operations</h5>
                                         <div className="box-border-dashed">
@@ -258,12 +259,7 @@ const HomePage3 = () => {
                             </div>
                             <div className="col-lg-4">
                                 <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Deep Technical Capability</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-white mb-20">Proven expertise across computer vision, large language models, and generative AI workflows</p>
-                                        </div>
-                                    </li>
+                                    
                                     <li> <span className="ticked" />
                                         <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Centralized Innovation Teams</h5>
                                         <div className="box-border-dashed">

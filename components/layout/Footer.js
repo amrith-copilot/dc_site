@@ -41,7 +41,7 @@ const Footer = () => {
                                     <h6 className="service-heading">PRE-TRAINING</h6>
                                     <ul className="service-submenu">
                                         <li><Link href="/CollectData">Data Collection</Link></li>
-                                        <li><Link href="/Image-Anno">Image Annotation</Link></li>
+                                        <li><Link href="/Image-Anno">Data Annotation</Link></li>
                                         <li><Link href="/SFT">Supervised Fine-Tuning</Link></li>
                                     </ul>
                                 </div>
