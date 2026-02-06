@@ -73,16 +73,16 @@ const ADAS = () => {
                     </div>
                 </section>
                 {/* Core Perception Tasks - Image Cards */}
-                <section className="section mt-70 mb-50">
+                <section className="section mt-20 mb-0">
                     <div className="container">
-                        <div className="text-center mb-50">
+                        <div className="text-center mb-20">
                             <h2 className="color-brand-1 mb-15">Core Perception Tasks</h2>
                             <p className="font-lg color-grey-500">
                                 Visually strong annotation capabilities for autonomous driving systems
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-20">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -101,7 +101,7 @@ const ADAS = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-20">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -120,7 +120,7 @@ const ADAS = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-20">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -139,7 +139,7 @@ const ADAS = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-20">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -158,7 +158,7 @@ const ADAS = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-20">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -177,7 +177,7 @@ const ADAS = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-20">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -196,7 +196,7 @@ const ADAS = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-20">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -215,7 +215,7 @@ const ADAS = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
+                            <div className="col-lg-3 col-md-6 mb-20">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
@@ -236,15 +236,68 @@ const ADAS = () => {
                         </div>
                     </div>
                 </section>
+                <section className="section mt-10 pb-0 bg-core-value">
+            <div className="container">
+                <div className="row box-list-core-value">
+                    <div className="col-lg-4 mb-70">
+                        <div className="box-core-value">
+                            <h3 className="color-brand-1 mb-15">Why Choose Us</h3>
+                            <p className="font-md color-grey-400">Hear from our users who have saved thousands on their Startup and SaaS solution spend.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <ul className="list-core-value">
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Scalable</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Handle millions of content items daily.</p>
+                                </div>
+                            </li>
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Accurate</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">AI trained on diverse datasets, reducing bias and false positives.</p>
+                                </div>
+                            </li>
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Compliant</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Stay aligned with global and regional regulations.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-lg-4">
+                        <ul className="list-core-value">
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Flexible</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Custom workflows tailored to your platform’s risk profile.</p>
+                                </div>
+                            </li>
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Human-Centric</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Expert moderators ensure nuanced understanding and fairness.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                </section>
+                <div style={{marginTop: '-40px'}}>
                 <AnnotationSlider
                     items={annotationItems}
                     title="Advanced Annotation Capabilities"
                     subtitle="Specialized labeling services for autonomous driving and ADAS systems"
                     navId="adas"
                 />
+                </div>
+                
 
                 {/* CTA Section */}
-                <section className="section mt-50 pt-50 pb-40">
+                <section className="section mt-20 pt-30 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
@@ -255,7 +308,7 @@ const ADAS = () => {
                                 </div>
                                 <div className="col-lg-8">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Accelerate Your ADAS Development?</h2>
+                                        <h2 >Ready to Accelerate Your ADAS Development?</h2>
                                         <p className="font-md color-grey-500">
                                             Partner with us to get high-quality training data that powers safer, smarter autonomous systems.
                                         </p>

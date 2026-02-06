@@ -381,10 +381,10 @@ const OCR = () => {
 
                                   
 
-                                    <section className="section mt-100">
+                                    {/* <section className="section mt-100">
                                         <div className="container">
                                             <div className="row mt-50 align-items-start">
-                                                {/* Left Column - Header */}
+                                                {/* Left Column - Header 
                             <div className="col-lg-5 mb-30">
                                 <div className="sticky-content" style={{ position: 'sticky', top: '100px' }}>
                                     <h2 className="color-brand-1 mb-20">Why choose us</h2>
@@ -394,10 +394,10 @@ const OCR = () => {
                                 </div>
                             </div>
 
-                            {/* Right Column - Cards */}
+                            {/* Right Column - Cards *
                             <div className="col-lg-7">
                                 <div className="d-flex flex-column gap-4">
-                                    {/* Data Types Card */}
+                                    {/* Data Types Card *
                                     <div className="card-offer card-we-do hover-up">
                                         <div className="card-image mt-15">
                                             <img src="assets/imgs/page/homepage2/we-do3.png" alt="iori" />
@@ -414,7 +414,7 @@ const OCR = () => {
                                         </div>
                                     </div>
 
-                                    {/* Annotation Types Card */}
+                                    {/* Annotation Types Card *
                                     <div className="card-offer card-we-do hover-up">
                                         <div className="card-image mt-15">
                                             <img src="assets/imgs/page/homepage2/we-do.png" alt="iori" />
@@ -431,7 +431,7 @@ const OCR = () => {
                                         </div>
                                     </div>
 
-                                    {/* Additional Services Card */}
+                                    {/* Additional Services Card *
                                     <div className="card-offer card-we-do hover-up">
                                         <div className="card-image mt-15">
                                             <img src="assets/imgs/page/homepage2/we-do4.png" alt="iori" />
@@ -469,59 +469,89 @@ const OCR = () => {
                             }
                         }
                     `}</style>
-                </section>
-                 <section className="section mt-30 pb-50 bg-core-value">
+                </section> */}
+                  <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
-                        <div className="row box-list-core-value">
-                            <div className="col-lg-4 mb-70">
-                                <div className="box-core-value">
-                                    <h3 className="color-brand-1 mb-15">Advantages of adopting DevOps</h3>
-                                    <p className="font-md color-grey-400">Transform your software delivery with proven DevOps practices that accelerate innovation and improve quality.</p>
+                        <div className="row">
+                            <div className="col-lg-12 text-center mb-40">
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Advantages of adopting DevOps</h2>
+                                <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
+                                    Transform your software delivery with proven DevOps practices that accelerate innovation and improve quality.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            {/* Card 1 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Faster Deployment</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Automated deployment pipelines significantly reduce release cycles, allowing teams to push updates to production with minimal manual intervention.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
-                                <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Faster Deployment</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Automated deployment pipelines significantly reduce release cycles, allowing teams to push updates to production with minimal manual intervention.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Enhanced Collaboration</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Breaking down silos between development and operations teams fosters better communication, shared responsibility, and improved problem-solving across organizations.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Continuous Integration</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Regular code integration and automated testing catch bugs early, reducing debugging time and ensuring higher quality software releases.</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                            {/* Card 2 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Enhanced Collaboration</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Breaking down silos between development and operations teams fosters better communication, shared responsibility, and improved problem-solving across organizations.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="col-lg-4">
-                                <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Infrastructure Automation</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Standardized infrastructure configuration through code eliminates manual setup errors and enables consistent environments across development, testing, and production.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Rapid Recovery</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Automated monitoring and incident response systems help teams quickly identify, isolate, and resolve issues before they impact users.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Cost Optimization</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Efficient resource utilization, automated scaling, and streamlined processes reduce operational costs while maintaining high service quality standards.</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                            {/* Card 3 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Continuous Integration</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Regular code integration and automated testing catch bugs early, reducing debugging time and ensuring higher quality software releases.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 4 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Infrastructure Automation</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Standardized infrastructure configuration through code eliminates manual setup errors and enables consistent environments across development, testing, and production.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 5 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Rapid Recovery</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Automated monitoring and incident response systems help teams quickly identify, isolate, and resolve issues before they impact users.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 6 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost Optimization</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Efficient resource utilization, automated scaling, and streamlined processes reduce operational costs while maintaining high service quality standards.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -559,7 +589,7 @@ const OCR = () => {
                                 </div>
                                 <div className="col-lg-8">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to make your documents work smarter?</h2>
+                                        <h2>Ready to make your documents work smarter?</h2>
                                         <p className="font-lg color-grey-500">Contact us today to learn how we can help.</p>
                                         <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
                                     </div>

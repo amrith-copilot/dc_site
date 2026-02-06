@@ -113,15 +113,8 @@ const GenAI = () => {
                         {/* First Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/images/tools/gai_3.png" 
-                                            alt="Cross Platform" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Instruction Tuning & Supervised Fine-Tuning (SFT)</h4>
                                         <p className='pb-10 font-lg'>We design and annotate instruction-response pairs tailored to your model objective:</p>
                                         <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
@@ -135,15 +128,8 @@ const GenAI = () => {
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/images/tools/gai_3.png" 
-                                            alt="Project Management" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Evaluation, QA & Red-teaming</h4>
                                         <p className='pb-10 font-lg'>Measure and harden model behavior:</p>
                                         <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
@@ -157,15 +143,8 @@ const GenAI = () => {
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/images/tools/gai_3.png" 
-                                            alt="Analytics Dashboard" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Annotation & Data Labeling</h4>
                                         <p className='pb-10 font-lg'>High-accuracy annotation across modalities:</p>
                                         <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
@@ -182,15 +161,8 @@ const GenAI = () => {
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human2.png" 
-                                            alt="Team Collaboration" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Human-in-the-Loop (HITL)</h4>
                                         <p className='pb-10 font-lg'>Embed humans where models fail or where high-stakes decisions matter:</p>
                                         <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
@@ -203,15 +175,8 @@ const GenAI = () => {
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage12/human2.png" 
-                                            alt="Customer Support" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Synthetic Data & Augmentation</h4>
                                         <p className='pb-10 font-lg'>Generate controlled synthetic examples and validate them:</p>
                                         <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
@@ -291,28 +256,8 @@ const GenAI = () => {
                         </div>
                     </div>
                 </section> */}
-                                <section className="section mt-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Use Cases</h2>
-                                <p className="font-lg color-gray-500">
-                                    What makes us different from others? We give holistic solutions
-                                    <br className="d-none d-lg-block" />
-                                    with strategy, design &amp; technology.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="mt-50">
-                            <div className="box-swiper">
-                                <div className="swiper-container swiper-group-4">
-                                    <Offer9 />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section mt-100">
+               
+                {/* <section className="section mt-100">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
@@ -358,7 +303,7 @@ const GenAI = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
 
                 <section className="section mt-30 pb-50 bg-core-value">
@@ -417,11 +362,11 @@ const GenAI = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-100">
+                                <section className="section mt-100">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <h2 className="color-brand-1 mb-20">Use Cases</h2>
                                 <p className="font-lg color-gray-500">
                                     What makes us different from others? We give holistic solutions
                                     <br className="d-none d-lg-block" />
@@ -432,7 +377,7 @@ const GenAI = () => {
                         <div className="mt-50">
                             <div className="box-swiper">
                                 <div className="swiper-container swiper-group-4">
-                                    <Offer3 />
+                                    <Offer9 />
                                 </div>
                             </div>
                         </div>

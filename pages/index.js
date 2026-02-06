@@ -244,13 +244,13 @@ const HomePage3 = () => {
                                         </div>
                                     </li> 
                                     <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="9" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Fully Governed Operations</h5>
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Fully Governed Operations</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">End-to-end service delivery with centralized management, accountability, and execution oversight.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8M8 16h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Industry Aligned Expertise</h5>
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Industry Aligned Expertise</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">Practitioners with hands-on experience across domain-specific AI use cases and regulatory environments.</p>
                                         </div>
@@ -261,13 +261,13 @@ const HomePage3 = () => {
                                 <ul className="list-core-value">
                                     
                                     <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Centralized Innovation Teams</h5>
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Centralized Innovation Teams</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">Dedicated groups focused on process optimization, tooling efficiency, and continuous improvement.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="rgba(255,255,255,0.12)"/><path d="M8 12h8M8 16h8" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Flexible Engagement Framework</h5>
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Flexible Engagement Framework</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">A modular service model combining expert networks, managed delivery, and scalable capacity.</p>
                                         </div>
@@ -308,20 +308,28 @@ const HomePage3 = () => {
                     }
                     .partner-benefits .ticked { display: none; }
                 `}</style>
+                <style jsx>{`
+                    .box-cover-border .row { gap: 20px; }
+                    .box-cover-border .image-container { max-width: 420px; }
+                    @media (max-width: 991px) {
+                        .box-cover-border .image-container { max-width: 100%; }
+                    }
+                `}</style>
+
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
-                        <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4 mb-40">
-                                    <div className="image-container">
+                        <div className="box-cover-border" >
+                            <div className="row align-items-center" style={{gap: '40px'}}>
+                                <div style={{flex: '0 0 auto', width: '420px'}}>
+                                    <div className="image-container" style={{width: '100%' , maxWidth: '430px'}}>
                                         <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="AI Data Services" style={{width: '100%', height: 'auto', display: 'block'}} />
                                     </div>
                                 </div>
-                                <div className="col-lg-8">
+                                <div style={{flex: '1'}}>
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Scale Your AI?</h2>
-                                        <p className="font-md color-grey-500">From data collection and annotation to model training and deployment, we provide end-to-end AI services tailored to your business needs. Whether you're building foundation models or deploying production AI systems, our expert teams deliver the quality and scale you need.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Get a demo</Link></div>
+                                        <h2 >Ready to Scale Your AI?</h2>
+                                        <p className="font-md color-grey-500" >From data collection and annotation to model training and deployment, we provide end-to-end AI services tailored to your business needs. Whether you're building foundation models or deploying production AI systems, our expert teams deliver the quality and scale you need.</p>
+                                        <div className="box-button text-start mt-25"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Get a demo</Link></div>
                                     </div>
                                 </div>
                             </div>

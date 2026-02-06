@@ -105,10 +105,10 @@ const MLOps = () => {
                         <div className="row mt-45">
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">MLOps Assessment and Strategy</h4>
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>MLOps Assessment and Strategy</h4>
                                         <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
                                             Evaluate and optimize your ML development and deployment processes. Identify gaps in the ML lifecycle management and develop a tailored MLOps implementation plan.
                                         </p>
                                     </div>
@@ -117,10 +117,10 @@ const MLOps = () => {
                             
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">ML Pipeline Automation</h4>
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>ML Pipeline Automation</h4>
                                         <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
                                             Design and implement end-to-end automated ML pipelines. Automate data preprocessing, feature engineering, model training and set up continuous integration for ML models.
                                         </p>
                                     </div>
@@ -129,10 +129,10 @@ const MLOps = () => {
                             
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">Model Versioning and Experiment Tracking</h4>
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>Model Versioning and Experiment Tracking</h4>
                                         <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
                                             Implement version control and experiment tracking for ML models. Set up experiment tracking and management systems to enable reproducibility of ML experiments.
                                         </p>
                                     </div>
@@ -144,10 +144,10 @@ const MLOps = () => {
                         <div className="row mt-0">
                             <div className="col-lg-4 col-md-6 mb-20">
                                 <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">Model Deployment and Serving</h4>
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>Model Deployment and Serving</h4>
                                         <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
                                             Automate and scale model deployment processes. Implement scalable model serving solutions and set up A/B testing and canary deployments for ML models.
                                         </p>
                                     </div>
@@ -156,10 +156,10 @@ const MLOps = () => {
                             
                             <div className="col-lg-4 col-md-6 mb-20">
                                 <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">ML Development</h4>
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>ML Development</h4>
                                         <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
                                             Custom ML model development and optimization. ML Model Optimization and ML Model Integration, Training & Validation for your specific business needs.
                                         </p>
                                     </div>
@@ -228,89 +228,83 @@ const MLOps = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-70 pt-60 pb-60 ">
+                <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="color-brand-1 mb-20">Advantages of Adopting MLOps</h2>
-                                <p className="font-lg max-width-600 mx-auto color-grey-500">
-                                    Unlock the full potential of your machine learning systems
-                                </p>
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Advantages of Adopting MLOps</h2>
+                                <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
+                                  Unlock the full potential for your machine learning system                              </p>
                             </div>
                         </div>
-                        {/* First Row */}
-                        <div className="row mlops-advantages-row">
+                        <div className="row">
                             {/* Card 1 */}
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">Automated Pipeline</h4>
-                                        <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '16px'}}>
+                                    <img src="assets/imgs/page/partner/expand.svg" alt="Automated Pipeline" style={{width: '28px', height: '28px', marginRight: '12px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff", fontSize: '18px' }}>Automated Pipeline</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff", fontSize: '14px' }}>
                                             Streamlined machine learning pipelines automate data preprocessing, model training, and deployment processes, significantly reducing manual intervention and errors.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             {/* Card 2 */}
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">Model Monitoring</h4>
-                                        <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '16px'}}>
+                                    <img src="assets/imgs/page/partner/prioritycapacity.svg" alt="Model Monitoring" style={{width: '28px', height: '28px', marginRight: '12px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff", fontSize: '18px' }}>Model Monitoring</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff", fontSize: '14px' }}>
                                             Continuous tracking of model performance and data drift ensures AI systems maintain accuracy and reliability in production environments.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             {/* Card 3 */}
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">Version Control</h4>
-                                        <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '16px'}}>
+                                    <img src="assets/imgs/page/partner/support.svg" alt="Version Control" style={{width: '28px', height: '28px', marginRight: '12px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff", fontSize: '18px' }}>Version Control</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff", fontSize: '14px' }}>
                                             Systematic tracking of datasets, model parameters, and code versions enables reproducible experiments and efficient collaboration among data scientists.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        {/* Second Row */}
-                        <div className="row mlops-advantages-row" style={{marginTop: '0px'}}>
                             {/* Card 4 */}
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">Scalable Infrastructure</h4>
-                                        <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '16px'}}>
+                                    <img src="assets/imgs/page/partner/comarketing.svg" alt="Scalable Infrastructure" style={{width: '28px', height: '28px', marginRight: '12px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff", fontSize: '18px' }}>Scalable Infrastructure</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff", fontSize: '14px' }}>
                                             Dynamic resource allocation and containerized environments support efficient model training and serving across different computing infrastructures.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             {/* Card 5 */}
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">Data Governance</h4>
-                                        <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '16px'}}>
+                                    <img src="assets/imgs/page/partner/flexible.svg" alt="Data Governance" style={{width: '28px', height: '28px', marginRight: '12px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff", fontSize: '18px' }}>Data Governance</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff", fontSize: '14px' }}>
                                             Automated data validation, lineage tracking, and quality checks ensure models are trained on reliable, consistent, and compliant datasets.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             {/* Card 6 */}
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">Continuous Training</h4>
-                                        <div className="left-card-divider"></div>
-                                        <p className="left-card-description">
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '16px'}}>
+                                    <img src="assets/imgs/page/partner/revgrowth.svg" alt="Continuous Training" style={{width: '28px', height: '28px', marginRight: '12px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff", fontSize: '18px' }}>Continuous Training</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff", fontSize: '14px' }}>
                                             Automated retraining pipelines keep models updated with fresh data, maintaining optimal performance and adapting to changing patterns.
                                         </p>
                                     </div>
@@ -318,34 +312,6 @@ const MLOps = () => {
                             </div>
                         </div>
                     </div>
-
-                    <style jsx>{`
-                        .mlops-advantages-row .left-aligned-card-wrapper {
-                            height: auto;
-                        }
-                        
-                        .mlops-advantages-row .left-aligned-card-container {
-                            height: auto;
-                            min-height: 280px;
-                            max-height: 320px;
-                            display: flex;
-                            flex-direction: column;
-                        }
-                        
-                        .mlops-advantages-row .left-card-description {
-                            flex-grow: 1;
-                            overflow: hidden;
-                        }
-                        
-                        .mlops-advantages-row {
-                            display: flex;
-                            align-items: flex-start;
-                        }
-                        
-                        .mlops-advantages-row [class*="col-"] {
-                            display: flex;
-                        }
-                    `}</style>
                 </section>
                 <section className="section mt-100">
                     <div className="container">
@@ -439,7 +405,7 @@ const MLOps = () => {
                                 </div>
                                 <div className="col-lg-8">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Transform Your ML Development into Production-Ready Systems</h2>
+                                        <h2>Transform Your ML Development into Production-Ready Systems</h2>
                                         <p className="font-md color-grey-500">MLOps is the key to scaling your machine learning initiatives. Build robust, automated, and reliable ML systems that deliver consistent business value.</p>
                                         <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                                     </div>

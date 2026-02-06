@@ -88,12 +88,90 @@ const SAP = () => {
                         </div>
                     </div>
                 </section>
+                   <section className="section mt-110">
+                    <div className="container">
+                        <div className="row align-items-end">
+                            <div className="col-lg-6 mb-20">
+                                <h2 className="color-brand-1 mb-0">Core MLOps Services</h2>
+                                <p className="color-grey-500 font-lg mt-20">
+                                    Comprehensive MLOps solutions to accelerate your machine learning initiatives.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* First Row of Cards */}
+                        <div className="row mt-45">
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>MLOps Assessment and Strategy</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
+                                            Evaluate and optimize your ML development and deployment processes. Identify gaps in the ML lifecycle management and develop a tailored MLOps implementation plan.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>ML Pipeline Automation</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
+                                            Design and implement end-to-end automated ML pipelines. Automate data preprocessing, feature engineering, model training and set up continuous integration for ML models.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="col-lg-4 col-md-6 mb-30">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>Model Versioning and Experiment Tracking</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
+                                            Implement version control and experiment tracking for ML models. Set up experiment tracking and management systems to enable reproducibility of ML experiments.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Second Row of Cards */}
+                        <div className="row mt-0">
+                            <div className="col-lg-4 col-md-6 mb-20">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>Model Deployment and Serving</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
+                                            Automate and scale model deployment processes. Implement scalable model serving solutions and set up A/B testing and canary deployments for ML models.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="col-lg-4 col-md-6 mb-20">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container" style={{padding: '18px'}}>
+                                        <h4 className="left-card-title color-black-text" style={{fontSize: '20px', marginBottom: '10px'}}>ML Development</h4>
+                                        <div className="left-card-divider"></div>
+                                        <p className="left-card-description" style={{fontSize: '15px'}}>
+                                            Custom ML model development and optimization. ML Model Optimization and ML Model Integration, Training & Validation for your specific business needs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 {/* Modified section: two-column sticky header + cards */}
-                <section className="section mt-100">
+                {/* <section className="section mt-100">
                     <div className="container">
                         <div className="row mt-50 align-items-start">
-                            {/* Left Column - Header */}
+                            {/* Left Column - Header 
                             <div className="col-lg-5 mb-30">
                                 <div className="sticky-content">
                                     <h2 className="color-brand-1 mb-20">Personalization Beyond the Algorithm</h2>
@@ -103,10 +181,10 @@ const SAP = () => {
                                 </div>
                             </div>
 
-                            {/* Right Column - Cards */}
+                            {/* Right Column - Cards *
                             <div className="col-lg-7">
                                 <div className="d-flex flex-column gap-4">
-                                    {/* Data Types Card */}
+                                    {/* Data Types Card *
                                     <div className="card-offer card-we-do hover-up">
                                         <div className="card-image mt-15">
                                             <img src="assets/imgs/page/homepage2/we-do3.png" alt="iori" />
@@ -123,7 +201,7 @@ const SAP = () => {
                                         </div>
                                     </div>
 
-                                    {/* Annotation Types Card */}
+                                    {/* Annotation Types Card 
                                     <div className="card-offer card-we-do hover-up">
                                         <div className="card-image mt-15">
                                             <img src="assets/imgs/page/homepage2/we-do.png" alt="iori" />
@@ -140,7 +218,7 @@ const SAP = () => {
                                         </div>
                                     </div>
 
-                                    {/* Additional Services Card */}
+                                    {/* Additional Services Card 
                                     <div className="card-offer card-we-do hover-up">
                                         <div className="card-image mt-15">
                                             <img src="assets/imgs/page/homepage2/we-do4.png" alt="iori" />
@@ -178,7 +256,7 @@ const SAP = () => {
                             }
                         }
                     `}</style>
-                </section>
+                </section> */}
 {/* 
                 <section className="section mt-20 mb-40 mt-100">
                     <div className="container">
@@ -251,7 +329,7 @@ const SAP = () => {
                     </div>
                 </section> */}
                 
-                <section className="section mt-100">
+                {/* <section className="section mt-100">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
@@ -297,61 +375,83 @@ const SAP = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 
-               
-                <section className="section mt-30 pb-50 bg-core-value">
+               <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
-                        <div className="row box-list-core-value">
-                            <div className="col-lg-4 mb-70">
-                                <div className="box-core-value">
-                                    <h3 className="color-brand-1 mb-15">Our Advantages</h3>
-                                    <p className="font-md color-grey-400">Understand why our clients choose to work with us</p>
+                        <div className="row">
+                            <div className="col-lg-12 text-center mb-40">
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages</h2>
+                                <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
+                                    Understand why our clients choose to work with us                                </p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            {/* Card 1 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/expand.svg" alt="Expand" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Quality</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                           We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.                            </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
-                                <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Optimized for Quality</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">End to End Solutions</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Cost Efficient</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                            {/* Card 2 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/prioritycapacity.svg" alt="Priority Capacity" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>End to End Solutions</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="col-lg-4">
-                                <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Completely Managed</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Scalable Workforce</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Start with a single person and grow with us. We scale up our team based on your demands.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Data Security</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                            {/* Card 3 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/support.svg" alt="Support" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost Efficient</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                        Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.            </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 4 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/comarketing.svg" alt="Co-Marketing" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Completely Managed</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                        Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 5 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/flexible.svg" alt="Flexible" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Scalable Workforce</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                        Start with a single person and grow with us. We scale up our team based on your demands.                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 6 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/revgrowth.svg" alt="Revenue Growth" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Data Security</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                         Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.                                                </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

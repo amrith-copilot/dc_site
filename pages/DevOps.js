@@ -9,6 +9,7 @@ const DevOps = () => {
 
     return (
         <Layout>
+            <div style={{ fontFamily: 'inherit' }}>
             <>
                 <section className="section banner-5">
                     <div className="container">
@@ -69,7 +70,7 @@ const DevOps = () => {
                 <section className="section mt-110">
                     <div className="container">
                         <div className="row align-items-end">
-                            <div className="col-lg-6 mb-20">
+                            <div className="col-lg-6 mb-20 mx-auto text-center">
                                 <h2 className="color-brand-1 mb-0">DevOps Services</h2>
                                 <p className="color-grey-500 font-lg mt-20">
                                     Comprehensive DevOps solutions to accelerate your software delivery.
@@ -80,18 +81,10 @@ const DevOps = () => {
                         {/* First Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="DevOps Assessment" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic h-100 d-flex flex-column" style={{fontFamily: 'inherit'}}>
+                                    <div className="image-showcase-content-dynamic" style={{paddingTop: '20px', paddingBottom: '20px', display: 'flex', flexDirection: 'column'}}>
                                         <h4 className="image-showcase-title-dynamic">DevOps Assessment and Strategy</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-0 pl-15 pb-0" style={{flex: 0}}>
                                             <li>Evaluate current development and operations processes</li>
                                             <li>Identify bottlenecks and areas for improvement</li>
                                             <li>Develop a customized DevOps roadmap aligned with business goals</li>
@@ -99,20 +92,12 @@ const DevOps = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human2.png" 
-                                            alt="CI/CD Pipeline" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic h-100 d-flex flex-column" style={{fontFamily: 'inherit'}}>
+                                    <div className="image-showcase-content-dynamic" style={{paddingTop: '20px', paddingBottom: '20px', display: 'flex', flexDirection: 'column'}}>
                                         <h4 className="image-showcase-title-dynamic">Continuous Integration and Continuous Deployment (CI/CD)</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-0 pl-15 pb-0" style={{flex: 0}}>
                                             <li>Design and implement automated CI/CD pipelines</li>
                                             <li>Set up version control and code review processes</li>
                                             <li>Integrate automated testing and quality assurance</li>
@@ -120,20 +105,12 @@ const DevOps = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human3.png" 
-                                            alt="Infrastructure as Code" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic h-100 d-flex flex-column" style={{fontFamily: 'inherit'}}>
+                                    <div className="image-showcase-content-dynamic" style={{paddingTop: '20px', paddingBottom: '20px', display: 'flex', flexDirection: 'column'}}>
                                         <h4 className="image-showcase-title-dynamic">Infrastructure as Code (IaC)</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-0 pl-15 pb-0" style={{flex: 0}}>
                                             <li>Develop and maintain infrastructure templates</li>
                                             <li>Implement version control for infrastructure</li>
                                             <li>Automate provisioning and configuration of cloud resources</li>
@@ -146,18 +123,10 @@ const DevOps = () => {
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Monitoring and Observability" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic h-100 d-flex flex-column" style={{fontFamily: 'inherit'}}>
+                                    <div className="image-showcase-content-dynamic" style={{paddingTop: '20px', paddingBottom: '20px', display: 'flex', flexDirection: 'column'}}>
                                         <h4 className="image-showcase-title-dynamic">Monitoring and Observability</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-0 pl-15 pb-0" style={{flex: 0}}>
                                             <li>Implement comprehensive monitoring solutions</li>
                                             <li>Set up log aggregation and analysis</li>
                                             <li>Create custom dashboards for real-time insights</li>
@@ -165,20 +134,12 @@ const DevOps = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic">
-                                    <div className="image-showcase-top-dynamic">
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Cloud Migration" 
-                                            className="image-showcase-photo-dynamic"
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic">
+                                <div className="image-showcase-card-dynamic h-100 d-flex flex-column" style={{fontFamily: 'inherit'}}>
+                                    <div className="image-showcase-content-dynamic" style={{paddingTop: '20px', paddingBottom: '20px', display: 'flex', flexDirection: 'column'}}>
                                         <h4 className="image-showcase-title-dynamic">Cloud Migration and Optimization</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15 pb-15">
+                                        <ul className="custom-bullets font-md color-grey-500 mb-0 pl-15 pb-0" style={{flex: 0}}>
                                             <li>Assess and plan cloud migration strategies</li>
                                             <li>Execute seamless migrations to cloud platforms</li>
                                             <li>Optimize cloud infrastructure for cost and performance</li>
@@ -189,8 +150,95 @@ const DevOps = () => {
                         </div>
                     </div>
                 </section>
-
-                <section className="section mt-30 pb-50 bg-core-value">
+                
+                <section className="section mt-70 pt-60 pb-60 bg-brand-1">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center mb-40">
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Advantages of adopting DevOps</h2>
+                                <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
+                                    Transform your software delivery with proven DevOps practices that accelerate innovation and improve quality.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            {/* Card 1 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Faster Deployment</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Automated deployment pipelines significantly reduce release cycles, allowing teams to push updates to production with minimal manual intervention.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 2 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Enhanced Collaboration</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Breaking down silos between development and operations teams fosters better communication, shared responsibility, and improved problem-solving across organizations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 3 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Continuous Integration</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Regular code integration and automated testing catch bugs early, reducing debugging time and ensuring higher quality software releases.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 4 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Infrastructure Automation</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Standardized infrastructure configuration through code eliminates manual setup errors and enables consistent environments across development, testing, and production.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 5 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Rapid Recovery</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Automated monitoring and incident response systems help teams quickly identify, isolate, and resolve issues before they impact users.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 6 */}
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost Optimization</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Efficient resource utilization, automated scaling, and streamlined processes reduce operational costs while maintaining high service quality standards.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                {/* <section className="section mt-30 pb-50 bg-core-value">
                     <div className="container">
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
@@ -245,7 +293,7 @@ const DevOps = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section className="section mt-100">
                     <div className="container">
@@ -328,27 +376,8 @@ const DevOps = () => {
                     </div>
                 </section> */}
 
-                <section className="section mt-50 pt-50 pb-40">
-                    <div className="container">
-                        <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Accelerate with Automation</h2>
-                                        <p className="font-md color-grey-500">STransform your development pipeline while maximizing your technology investment.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </>
+            </div>
         </Layout>
     );
 };

@@ -195,7 +195,6 @@ const ImageAnno = () => {
                                         <p className="font-sm color-grey-500">
                                             Pixel-accurate and object-level annotations for computer vision models across structured and unstructured imagery.
                                         </p>
-                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p>
                                         <ul className="font-sm color-grey-500 annotation-methods">
                                             <li>Bounding Boxes</li>
                                             <li>Polygons</li>
@@ -222,7 +221,6 @@ const ImageAnno = () => {
                                         <p className="font-sm color-grey-500">
                                             Frame-level and temporal annotations for motion-aware and sequence-based models.
                                         </p>
-                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p>
                                         <ul className="font-sm color-grey-500 annotation-methods">
                                             <li>Object tracking across frames</li>
                                             <li>Action and activity recognition</li>
@@ -244,11 +242,10 @@ const ImageAnno = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Text Annotation (NLP)</h6>
+                                        <h6 className="color-brand-1 mb-15">Text Annotation </h6>
                                           <p className="font-sm color-grey-500">
                                             Structured labeling for training and evaluating NLP and language understanding models.
                                         </p>
-                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p>
                                         <ul className="font-sm color-grey-500 annotation-methods">
                                             <li>Named entity recognition</li>
                                             <li>Intent & slot labeling</li>
@@ -272,7 +269,6 @@ const ImageAnno = () => {
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">LLM Data Annotation & Evaluation</h6>
                                         <p className="font-sm color-grey-500">Human-in-the-loop data creation and evaluation for large language models and generative systems.                                        </p>
-                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
                                         <ul className="font-sm color-grey-500 annotation-methods">
                                             <li>Prompt–response labeling</li>
                                             <li>Preference ranking</li>
@@ -298,9 +294,7 @@ const ImageAnno = () => {
                                     </div>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Audio & Speech Annotation</h6>
-                                        <p className="font-sm color-grey-500"> Speech and audio labeling for ASR, TTS, and audio intelligence systems.</p>
-                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
-                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                        <p className="font-sm color-grey-500"> Speech and audio labeling for ASR, TTS, and audio intelligence systems.</p>                                        <ul className="font-sm color-grey-500 annotation-methods">
                                             <li>Transcription (verbatim, clean, phonetic)</li>
                                             <li>Speaker diarization</li>
                                             <li>Intent and emotion tagging</li>
@@ -323,7 +317,6 @@ const ImageAnno = () => {
                                        <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">iDAR & Point Cloud Annotation</h6>
                                         <p className="font-sm color-grey-500"> 3D annotation for spatial understanding in autonomous and robotics systems.</p>
-                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
                                         <ul className="font-sm color-grey-500 annotation-methods">
                                             <li>3D bounding boxes</li>
                                             <li>Point-wise segmentation</li>
@@ -347,7 +340,6 @@ const ImageAnno = () => {
                                        <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
                                         <h6 className="color-brand-1 mb-15">Time-Series Annotation</h6>
                                         <p className="font-sm color-grey-500">Labeling of sequential and sensor-based data for forecasting, anomaly detection, and monitoring models.</p>
-                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
                                         <ul className="font-sm color-grey-500 annotation-methods">
                                             <li>Event tagging</li>
                                             <li>Anomaly labeling</li>
@@ -369,9 +361,8 @@ const ImageAnno = () => {
                                         />
                                     </div>
                                        <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Multimodal Annotation (Often Overlooked)</h6>
+                                        <h6 className="color-brand-1 mb-15">Multimodal Annotation </h6>
                                         <p className="font-sm color-grey-500"> Cross-modal annotation where multiple data types must align. </p>
-                                        <p className="font-sm color-grey-500"><strong>Annotation methods:</strong></p> 
                                         <ul className="font-sm color-grey-500 annotation-methods">
                                             <li>Image + text grounding</li>
                                             <li>Video + audio synchronization</li>
@@ -384,7 +375,7 @@ const ImageAnno = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-30 pb-50 bg-core-value">
+                {/* <section className="section mt-30 pb-50 bg-core-value">
                     <div className="container">
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
@@ -439,6 +430,85 @@ const ImageAnno = () => {
                             </div>
                         </div>
                     </div>
+                </section> */}
+                 <section className="section mt-70 pt-60 pb-60 bg-brand-1">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center mb-40">
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages</h2>
+                                <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
+                                    Understand why our clients choose to work with us                                </p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            {/* Card 1 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/expand.svg" alt="Expand" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Quality</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                           We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 2 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/prioritycapacity.svg" alt="Priority Capacity" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>End to End Solutions</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 3 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/support.svg" alt="Support" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost Efficient</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                        Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.            </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 4 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/comarketing.svg" alt="Co-Marketing" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Completely Managed</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                        Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 5 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/flexible.svg" alt="Flexible" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Scalable Workforce</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                        Start with a single person and grow with us. We scale up our team based on your demands.                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 6 */}
+                            <div className="col-lg-4 col-md-6 mb-25">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
+                                    <img src="assets/imgs/page/partner/revgrowth.svg" alt="Revenue Growth" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Data Security</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                         Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.                                                </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section className="section mt-100">
                     <div className="container">
@@ -474,7 +544,7 @@ const ImageAnno = () => {
                                 </div>
                                 <div className="col-lg-8">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Validate Your AI?</h2>
+                                        <h2>Ready to Validate Your AI?</h2>
                                         <p className="font-md color-grey-500">Let our workforce evaluate your model with precision and care.</p>
                                         <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up" href="#">Contact Us</Link></div>
                                     </div>

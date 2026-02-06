@@ -147,15 +147,8 @@ const ContentMd = () => {
                 <div className="row mt-45">
                     <div className="col-lg-4">
                         <div className="image-showcase-card-dynamic">
-                            <div className="image-showcase-top-dynamic">
-                                <img 
-                                    src="assets/imgs/page/homepage6/human1.png" 
-                                    alt="Text Moderation" 
-                                    className="image-showcase-photo-dynamic"
-                                />
-                            </div>
                             <div className="image-showcase-content-dynamic">
-                                <h4 className="color-brand-1 mb-15">Text Moderation</h4>
+                                        <h4 className="color-black-text mb-15">Text Moderation</h4>
                                 <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                     <li>Profanity filtering</li>
                                     <li>Hate speech & harassment detection</li>
@@ -169,15 +162,8 @@ const ContentMd = () => {
                     
                     <div className="col-lg-4">
                         <div className="image-showcase-card-dynamic">
-                            <div className="image-showcase-top-dynamic">
-                                <img 
-                                    src="assets/imgs/page/homepage6/human2.png" 
-                                    alt="Image Moderation" 
-                                    className="image-showcase-photo-dynamic"
-                                />
-                            </div>
                             <div className="image-showcase-content-dynamic">
-                                <h4 className="color-brand-1 mb-15">Image Moderation</h4>
+                                        <h4 className="color-black-text mb-15">Image Moderation</h4>
                                 <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                     <li>Nudity & sexual content detection</li>
                                     <li>Graphic violence identification</li>
@@ -189,15 +175,8 @@ const ContentMd = () => {
                     </div>
                     <div className="col-lg-4">
                         <div className="image-showcase-card-dynamic">
-                            <div className="image-showcase-top-dynamic">
-                                <img 
-                                    src="assets/imgs/page/homepage6/human3.png" 
-                                    alt="Video Moderation" 
-                                    className="image-showcase-photo-dynamic"
-                                />
-                            </div>
                             <div className="image-showcase-content-dynamic">
-                                <h4 className="color-brand-1 mb-15">Video Moderation</h4>
+                                        <h4 className="color-black-text mb-15">Video Moderation</h4>
                                 <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                     <li>Frame-by-frame analysis for explicit or violent content</li>
                                     <li>Contextual detection of unsafe scenes</li>
@@ -212,15 +191,8 @@ const ContentMd = () => {
                 <div className="row mt-45">
                     <div className="col-lg-4">
                         <div className="image-showcase-card-dynamic">
-                            <div className="image-showcase-top-dynamic">
-                                <img 
-                                    src="assets/imgs/page/homepage12/human1.png" 
-                                    alt="Audio Moderation" 
-                                    className="image-showcase-photo-dynamic"
-                                />
-                            </div>
                             <div className="image-showcase-content-dynamic">
-                                <h4 className="color-brand-1 mb-15">Audio Moderation</h4>
+                                        <h4 className="color-black-text mb-15">Audio Moderation</h4>
                                 <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                     <li>Transcription & profanity filtering</li>
                                     <li>Hate speech, extremism, and harassment detection</li>
@@ -232,15 +204,8 @@ const ContentMd = () => {
                     
                     <div className="col-lg-4">
                         <div className="image-showcase-card-dynamic">
-                            <div className="image-showcase-top-dynamic">
-                                <img 
-                                    src="assets/imgs/page/homepage12/human2.png" 
-                                    alt="Profile Moderation" 
-                                    className="image-showcase-photo-dynamic"
-                                />
-                            </div>
                             <div className="image-showcase-content-dynamic">
-                                <h4 className="color-brand-1 mb-15">Profile & Metadata Moderation</h4>
+                                        <h4 className="color-black-text mb-15">Profile & Metadata Moderation</h4>
                                 <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                     <li>Username, bio, and profile picture <br />checks</li>
                                     <li>Hashtag and metadata analysis</li>
@@ -252,15 +217,8 @@ const ContentMd = () => {
                     
                     <div className="col-lg-4">
                         <div className="image-showcase-card-dynamic">
-                            <div className="image-showcase-top-dynamic">
-                                <img 
-                                    src="assets/imgs/page/homepage12/human3.png" 
-                                    alt="Live Moderation" 
-                                    className="image-showcase-photo-dynamic"
-                                />
-                            </div>
                             <div className="image-showcase-content-dynamic">
-                                <h4 className="color-brand-1 mb-15">Live Content Moderation</h4>
+                                        <h4 className="color-black-text mb-15">Live Content Moderation</h4>
                                 <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                     <li>Real-time monitoring for live streams and voice chats</li>
                                     <li>Instant flagging of violations</li>
@@ -593,7 +551,7 @@ const IndustriesSection = () => (
                         </div>
                         <div className="col-lg-8">
                             <div className="box-info-video">
-                                <h2 className="color-brand-1 mt-15 mb-20">Build Safer Digital Communities, Today.</h2>
+                                <h2>Build Safer Digital Communities, Today.</h2>
                                 <p className="font-md color-grey-500"> Let us help you create an online environment that’s secure, inclusive, and trusted by your users.</p>
                                 <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                             </div>
