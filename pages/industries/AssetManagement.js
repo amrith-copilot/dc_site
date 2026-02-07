@@ -157,7 +157,7 @@ const AssetManagement = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/asset-inventory.jpg" 
+                                            src="/assets/images/industry/Inventory & Asset Identification.png"
                                             alt="Inventory & Asset Identification" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -195,7 +195,7 @@ const AssetManagement = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/asset-drone.jpg" 
+                                            src="/assets/images/industry/Drone-Based Visual Inspection.png" 
                                             alt="Drone-Based Visual Inspection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

@@ -272,6 +272,32 @@ const ColectData = () => {
                                 padding: 20px 16px;
                             }
                         }
+                        /* Partner benefits (white-on-blue) layout tweaks */
+                        .partner-benefits {
+                            padding-top: 24px;
+                            padding-bottom: 24px;
+                        }
+                        .partner-benefits .box-core-value h3,
+                        .partner-benefits .box-core-value p,
+                        .partner-benefits h5,
+                        .partner-benefits p {
+                            color: #fff;
+                        }
+                        .partner-benefits .benefit-icon {
+                            width: 36px;
+                            height: 36px;
+                            margin-right: 12px;
+                            flex-shrink: 0;
+                            display: inline-block;
+                        }
+                        .partner-benefits .box-border-dashed {
+                            border-bottom: 1px dashed rgba(255,255,255,0.08);
+                            padding: 14px;
+                            border-radius: 8px;
+                        }
+                        .partner-benefits .ticked {
+                            display: none;
+                        }
                     `}</style>
                 <section className="section banner-5">
                     <div className="container">
@@ -400,14 +426,6 @@ const ColectData = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="left-aligned-card-wrapper">
-                                    <div className="left-aligned-card-container">
-                                        <h4 className="left-card-title">Panel & participant recruitment</h4>
-                                        <p className="left-card-description">Targeted recruitment for demographic, geographic and behavioral cohorts, including screening, consent, incentives and scheduling.</p>
-                                    </div>
-                                </div>
-                            </div> */}
                         </div>
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
@@ -442,194 +460,80 @@ const ColectData = () => {
 
                     
                 </section>
-                {/* <section className="section mt-100 mb-40 process-section">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">How we work</h2>
-                                <p className="font-lg color-gray-500">Simple and transparent process</p>
-                            </div>
-                        </div>
-
-                        <div className="process-list mt-60">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <div className="process-row fade-up">
-                                        <div className="process-number">1</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">Kickoff & Requirements</h4>
-                                            <p className="font-md color-grey-500"> define success metrics, target populations, and constraints.</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="process-row fade-up" style={{ animationDelay: "0.3s" }}>
-                                        <div className="process-number">2</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">Design & Pilot</h4>
-                                            <p className="font-md color-grey-500">create collection instruments, run pilots, measure quality and adjust.</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="process-row fade-up" style={{ animationDelay: "0.1s" }}>
-                                        <div className="process-number">3</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">Scale & Capture</h4>
-                                            <p className="font-md color-grey-500"> full launch with monitoring dashboards and live QA.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6">
-                                    <div className="process-row fade-up" style={{ animationDelay: "0.2s" }}>
-                                        <div className="process-number">4</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">Validate & Clean</h4>
-                                            <p className="font-md color-grey-500">automated filtering + human review, produce QA reports.</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="process-row fade-up" style={{ animationDelay: "0.4s" }}>
-                                        <div className="process-number">5</div>
-                                        <div>
-                                            <h4 className="color-brand-1 mb-5">Deliver & Support</h4>
-                                            <p className="font-md color-grey-500">hand off data, integrate into your pipeline, provide <br></br>follow-up sampling as models evolve.</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
-
-                
-                
-                {/* Inserted Annotation Types, Our Advantages and Industries sections from Image-Anno */}
-                {/* <section className="section mt-110">
-                    <div className="container">
-                        <div className="row align-items-end">
-                            <div className="col-lg-6 mb-20">
-                                <h2 className="color-brand-1 mb-0">Annotation Types</h2>
-                                <p className="color-grey-500 font-lg mt-20">
-                                    (Placeholder cards)
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="row mt-45">
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{height: '100%'}}>
-                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{height: '100%'}}>
-                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{height: '100%'}}>
-                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="row mt-45">
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{height: '100%'}}>
-                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{height: '100%'}}>
-                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div style={{height: '100%'}}>
-                                    <div style={{width: '100%', height: '480px', border: '1px dashed #e6eef8', borderRadius: 8, background: '#fff'}}></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
                 <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages</h2>
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Advantages of Our Data Collection</h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
-                                    Understand why our clients choose to work with us                                </p>
+                                    Understand how our data collection approach improves model quality, compliance, and time-to-market.
+                                </p>
                             </div>
                         </div>
                         <div className="row">
-                            {/* Card 1 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/expand.svg" alt="Expand" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Quality</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                           We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.                            </p>
+                                            We have a two-layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 2 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/prioritycapacity.svg" alt="Priority Capacity" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>End to End Solutions</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.                                        </p>
+                                            From data collection and cleaning to data annotation, we offer end-to-end solutions for your training data needs.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 3 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/support.svg" alt="Support" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Cost Efficient</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                        Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.            </p>
+                                            Our pricing is transparent and economical. We are more cost-effective than contract workers and large annotation platforms.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 4 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/comarketing.svg" alt="Co-Marketing" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Completely Managed</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                        Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
+                                            Our services are fully managed with dedicated account managers to ensure smooth operations.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 5 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/flexible.svg" alt="Flexible" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Scalable Workforce</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                        Start with a single person and grow with us. We scale up our team based on your demands.                                        </p>
+                                            Start with a single person and grow with us. We scale our team based on your demands.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 6 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/revgrowth.svg" alt="Revenue Growth" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Data Security</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                         Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.                                                </p>
+                                            Data security is paramount. We are GDPR compliant and ISO 27001 certified.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -678,7 +582,7 @@ const ColectData = () => {
                     </div>
                 </section> */}
 
-                <section className="section mt-50 pt-50 pb-40">
+                <section className="section mt-0 pt-30 pb-30">
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">

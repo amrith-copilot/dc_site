@@ -182,12 +182,12 @@ const OCR = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-110">
+                <section className="section mt-50">
                     <div className="container">
                         <div className="row align-items-end">
-                            <div className="col-lg-6 mb-20">
-                                <h2 className="color-brand-1 mb-0">Core services we offer</h2>
-                                <p className="color-grey-500 font-lg mt-20">
+                            <div className="col-lg-12 text-center mb-20">
+                                <h2 className="color-brand-1 mb-0 text-center">Core services we offer</h2>
+                                <p className="color-grey-500 font-lg mt-20 text-center max-width-600 mx-auto">
                                     Here are some types of image annotations we provide.
                                 </p>
                             </div>
@@ -205,9 +205,8 @@ const OCR = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Document capture & pre-processing</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
+                                        <h4 className="image-showcase-title-dynamic color-brand-1">Document capture & pre-processing</h4>
+                                        <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
                                             High-quality scanning, image de-skew, noise removal, image enhancement, multi-format ingestion (PDF, TIFF, JPG, PNG) and OCR pre-checks to boost extraction accuracy.
                                         </p>
                                     </div>
@@ -224,9 +223,8 @@ const OCR = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">OCR (printed + handwritten)</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
+                                        <h4 className="image-showcase-title-dynamic color-brand-1">OCR (printed + handwritten)</h4>
+                                        <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
                                             Accurate extraction of printed and handwritten text using configurable OCR engines and model ensembles; outputs as searchable PDF, Word, CSV, JSON, or database-ready records.
                                         </p>
                                     </div>
@@ -243,9 +241,8 @@ const OCR = () => {
                                         />
                                     </div>
                                     <div className="image-showcase-content-dynamic">
-                                        <h4 className="image-showcase-title-dynamic">Document classification & routing (IDP)</h4>
-                                        <div className="image-showcase-divider-dynamic"></div>
-                                        <p className="image-showcase-description-dynamic">
+                                        <h4 className="image-showcase-title-dynamic color-brand-1">Document classification & routing (IDP)</h4>
+                                        <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
                                             Automatic classification (invoices, receipts, claims, contracts, letters, forms) and routing to the correct business process or user queue using ML and NLP.
                                         </p>
                                     </div>
@@ -265,9 +262,8 @@ const OCR = () => {
                                                             />
                                                         </div>
                                                         <div className="image-showcase-content-dynamic">
-                                                            <h4 className="image-showcase-title-dynamic">Key-value & table extraction</h4>
-                                                            <div className="image-showcase-divider-dynamic"></div>
-                                                            <p className="image-showcase-description-dynamic">
+                                                            <h4 className="image-showcase-title-dynamic color-brand-1">Key-value & table extraction</h4>
+                                                            <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
                                                                 Robust extraction of fields, key–value pairs and complex table structures (multi-page and nested tables) with confidence scores, coordinates and schema mapping.
                                                             </p>
                                                         </div>
@@ -284,9 +280,8 @@ const OCR = () => {
                                                             />
                                                         </div>
                                                         <div className="image-showcase-content-dynamic">
-                                                            <h4 className="image-showcase-title-dynamic">Verification & human-in-the-loop (HITL)</h4>
-                                                            <div className="image-showcase-divider-dynamic"></div>
-                                                            <p className="image-showcase-description-dynamic">
+                                                            <h4 className="image-showcase-title-dynamic color-brand-1">Verification & human-in-the-loop (HITL)</h4>
+                                                            <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
                                                                 Configurable validation workflows where low-confidence items are routed to human reviewers; results feed back to continually retrain models.
                                                             </p>
                                                         </div>
@@ -303,9 +298,8 @@ const OCR = () => {
                                                             />
                                                         </div>
                                                         <div className="image-showcase-content-dynamic">
-                                                            <h4 className="image-showcase-title-dynamic">Post-processing & integrations</h4>
-                                                            <div className="image-showcase-divider-dynamic"></div>
-                                                            <p className="image-showcase-description-dynamic">
+                                                            <h4 className="image-showcase-title-dynamic color-brand-1">Post-processing & integrations</h4>
+                                                            <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
                                                                 Normalization, deduplication, data enrichment, PII redaction, encryption and connectors to ERPs, RPA, DMS, SharePoint, Salesforce, or your APIs.
                                                             </p>
                                                         </div>

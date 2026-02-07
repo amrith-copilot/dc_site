@@ -136,11 +136,13 @@ const ContentMd = () => {
         <section className="section mt-110">
             <div className="container">
                 <div className="row align-items-end">
-                    <div className="col-lg-6 mb-20">
-                        <h2 className="color-brand-1 mb-0">Types of Content Moderation We Offer</h2>
-                        <p className="color-grey-500 font-lg mt-20">
-                            Here are some types of image annotations we provide.
-                        </p>
+                    <div className="col-lg-12 text-center mb-20">
+                        <div style={{ maxWidth: 760, margin: '0 auto' }}>
+                            <h2 className="color-brand-1 mb-0">Types of Content Moderation We Offer</h2>
+                            <p className="color-grey-500 font-lg mt-20">
+                                Here are some types of image annotations we provide.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -362,160 +364,132 @@ const ContentMd = () => {
             description: 'Continuous improvement of AI models using annotated data from real cases.',
             color: 'teal'
         },
-        { 
-            icon: 'cross5.png', 
-            title: 'Multilingual Support', 
-            description: 'Moderation across 20+ languages and dialects.',
-            color: 'green'
+        {
+            icon: 'fast.png',
+            title: 'Fast Deployment',
+            description: 'Go live quickly with minimal setup. Our ready-to-integrate solutions help you launch moderation workflows in days, not weeks.',
+            color: 'blue'
         },
+        {
+            icon: 'cost.png',
+            title: 'Cost-Effective',
+            description: 'Reduce operational costs without compromising quality. Pay only for what you use and scale as your business grows.',
+            color: 'purple'
+        },
+      
     ];
-
     return (
-        <section className="workflows-section py-5">
+
+        <section className="section mt-50 pb-50 bg-brand-1 partner-benefits" style={{paddingTop: '80px'}}>
             <div className="container">
-                {/* Header */}
-                                <div className="row mb-25 header-row">
-                                    <div className="col-lg-8">
-                                        <h2 className="display-5 fw-bold color-brand-1 mb-3">
-                                            Custom Workflows & <br />
-                                            Human-in-the-Loop (HITL)
-                                        </h2>
-                                        <p className="lead color-grey-500">
-                                            We understand no two platforms are alike. That's why we provide{' '}
-                                            <strong>custom workflows</strong>
-                                        </p>
-                                    </div>
-                                </div>
+                <div className="row">
+                    <div className="col-lg-12 text-center mb-40 mt-40">
+                        <h2 className="mb-20 color-white">Custom Workflows</h2>
+                        <p className="font-lg max-width-800 mx-auto color-white">Human-in-the-loop tooling and workflows tailored to your platform.</p>
+                    </div>
+                </div>
 
-                                {/* Workflow Cards Grid */}
-                <div className="row g-4">
-                    {workflows.map((workflow, index) => (
-                        <div 
-                            className="col-lg-4 col-md-" 
-                            key={index}
-                        >
-                            <div className="workflow-card h-100 p-4 rounded-3 border border-light shadow-sm hover-lift transition">
-                                {/* Icon */}
-                                <div className="icon-wrapper mb-3">
-                                    <img 
-                                        src={`assets/imgs/page/homepage1/${workflow.icon}`}
-                                        alt={workflow.title}
-                                        className="workflow-icon"
-                                        width="64"
-                                        height="64"
-                                    />
+                <div className="row">
+                    {workflows.map((w, idx) => (
+                        <div className="col-lg-4 col-md-6 mb-25 d-flex" key={idx}>
+                            <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                <div>
+                                    <h5 className="mb-25" style={{ color: '#fff' }}>{w.title}</h5>
+                                    <p className="font-sm mb-0" style={{ color: '#fff' }}>{w.description}</p>
                                 </div>
-
-                                {/* Content */}
-                                <h4 className="h5 fw-bold text-dark mb-3">
-                                    {workflow.title}
-                                </h4>
-                                <p className="text-muted mb-0">
-                                    {workflow.description}
-                                </p>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-
-            <style jsx>{`
-                .workflows-section {
-                    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
-                }
-
-                /* Make exactly 2px space between header and the card grid */
-                .workflows-section .header-row {
-                    margin-bottom: 2px;
-                }
-
-                .workflow-card {
-                    background: white;
-                    transition: all 0.3s ease;
-                    cursor: default;
-                }
-
-                .workflow-card:hover {
-                    transform: translateY(-8px);
-                    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
-                }
-
-                .icon-wrapper {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 80px;
-                    height: 80px;
-                    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-                    border-radius: 16px;
-                }
-
-                .workflow-icon {
-                    object-fit: contain;
-                }
-
-                @media (max-width: 768px) {
-                    .display-5 {
-                        font-size: 2rem;
-                    }
-                }
-            `}</style>
         </section>
+    //         <div className="container">
+    //             {/* Header */}
+    //                             <div className="row mb-25 header-row">
+    //                                 <div className="col-lg-12 text-center">
+    //                                     <div style={{ maxWidth: 900, margin: '0 auto' }}>
+    //                                         <h2 className="display-5 fw-bold color-brand-1 mb-3">
+    //                                             Custom Workflows & <br />
+    //                                             Human-in-the-Loop (HITL)
+    //                                         </h2>
+    //                                         <p className="lead color-grey-500">
+    //                                             We understand no two platforms are alike. That's why we provide{' '}
+    //                                             <strong>custom workflows</strong>
+    //                                         </p>
+    //                                     </div>
+    //                                 </div>
+    //                             </div>
+
+    //                             {/* Workflow Cards Grid */}
+    //             <div className="row g-4">
+    //                 {workflows.map((workflow, index) => (
+    //                     <div 
+    //                         className="col-lg-4 col-md-6" 
+    //                         key={index}
+    //                     >
+    //                         <div className="workflow-card h-100 p-4 rounded-3 border border-light shadow-sm hover-lift transition">
+    //                             {/* Content without image */}
+    //                             <h4 className="h5 fw-bold text-dark mb-3">
+    //                                 {workflow.title}
+    //                             </h4>
+    //                             <p className="text-muted mb-0">
+    //                                 {workflow.description}
+    //                             </p>
+    //                         </div>
+    //                     </div>
+    //                 ))}
+    //             </div>
+    //         </div>
+
+    //         <style jsx>{`
+    //             .workflows-section {
+    //                 background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+    //             }
+
+    //             /* Make exactly 2px space between header and the card grid */
+    //             .workflows-section .header-row {
+    //                 margin-bottom: 2px;
+    //             }
+
+    //             .workflow-card {
+    //                 background: white;
+    //                 transition: all 0.3s ease;
+    //                 cursor: default;
+    //             }
+
+    //             .workflow-card:hover {
+    //                 transform: translateY(-8px);
+    //                 box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+    //             }
+
+    //             .icon-wrapper {
+    //                 display: inline-flex;
+    //                 align-items: center;
+    //                 justify-content: center;
+    //                 width: 80px;
+    //                 height: 80px;
+    //                 background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    //                 border-radius: 16px;
+    //             }
+
+    //             .workflow-icon {
+    //                 object-fit: contain;
+    //             }
+
+    //             @media (max-width: 768px) {
+    //                 .display-5 {
+    //                     font-size: 2rem;
+    //                 }
+    //             }
+    //         `}</style>
+    //     </section>
+
+
     );
 };
 
-    const CoreValuesSection = () => (
-        <section className="section mt-30 pb-50 bg-core-value">
-            <div className="container">
-                <div className="row box-list-core-value">
-                    <div className="col-lg-4 mb-70">
-                        <div className="box-core-value">
-                            <h3 className="color-brand-1 mb-15">Why Choose Us</h3>
-                            <p className="font-md color-grey-400">Hear from our users who have saved thousands on their Startup and SaaS solution spend.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <ul className="list-core-value">
-                            <li> <span className="ticked" />
-                                <h5 className="color-brand-1 mb-5">Scalable</h5>
-                                <div className="box-border-dashed">
-                                    <p className="font-md color-grey-500 mb-20">Handle millions of content items daily.</p>
-                                </div>
-                            </li>
-                            <li> <span className="ticked" />
-                                <h5 className="color-brand-1 mb-5">Accurate</h5>
-                                <div className="box-border-dashed">
-                                    <p className="font-md color-grey-500 mb-20">AI trained on diverse datasets, reducing bias and false positives.</p>
-                                </div>
-                            </li>
-                            <li> <span className="ticked" />
-                                <h5 className="color-brand-1 mb-5">Compliant</h5>
-                                <div className="box-border-dashed">
-                                    <p className="font-md color-grey-500 mb-20">Stay aligned with global and regional regulations.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="col-lg-4">
-                        <ul className="list-core-value">
-                            <li> <span className="ticked" />
-                                <h5 className="color-brand-1 mb-5">Flexible</h5>
-                                <div className="box-border-dashed">
-                                    <p className="font-md color-grey-500 mb-20">Custom workflows tailored to your platform’s risk profile.</p>
-                                </div>
-                            </li>
-                            <li> <span className="ticked" />
-                                <h5 className="color-brand-1 mb-5">Human-Centric</h5>
-                                <div className="box-border-dashed">
-                                    <p className="font-md color-grey-500 mb-20">Expert moderators ensure nuanced understanding and fairness.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+// CoreValuesSection intentionally removed per request
 const IndustriesSection = () => (
         <section className="section mt-100">
             <div className="container">
@@ -570,7 +544,6 @@ const IndustriesSection = () => (
                 <ModerationTypes />
                 <ContentTypesSection />
                 <WorkflowsSection />
-                <CoreValuesSection />
                 <IndustriesSection />
                 <CTASection />
             </Layout>

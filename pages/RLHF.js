@@ -42,7 +42,6 @@ const RLHF = () => {
                                     <div className="row align-items-center">
                                         <div className="col-lg-6">
                                             <div className="box-cover-pd box-cover-pd-3 pt-30 pb-30 mb-30">
-                                                <span className="title-line line-48">RLHF Solutions</span>
                                                 <h2 className="color-brand-1 mt-10 mb-15">
                                                     What We Provide
                                                 </h2>
@@ -103,39 +102,44 @@ const RLHF = () => {
                 <section className="section mt-110">
                     <div className="container">
                         <div className="row align-items-end">
-                            <div className="col-lg-6 mb-20">
+                            <div className="col-lg-12 text-center mb-20">
                                 <h2 className="color-brand-1 mb-0">Types of Data & Tasks We Handle</h2>
-                                <p className="color-grey-500 font-lg mt-20">
+                                <p className="color-grey-500 font-lg mt-20 text-center">
                                     Comprehensive RLHF services across all AI modalities
                                 </p>
                             </div>
                         </div>
 
                         <style jsx>{`
-                            .text-only-card {
-                                padding: 28px 26px;
-                                border: 1px solid #eef2f7;
+                            /* Left-aligned card styles (matching CollectData "What We Offer") */
+                            .left-aligned-card-wrapper { margin-bottom: 20px; width: 100%; display: flex; }
+                            .left-aligned-card-container {
+                                background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+                                border: 1px solid #e8f2ff;
                                 border-radius: 12px;
-                                background: #ffffff;
-                                min-height: 160px;
+                                padding: 26px;
+                                height: 100%;
+                                transition: transform 0.3s ease, box-shadow 0.3s ease;
                                 display: flex;
                                 flex-direction: column;
-                                justify-content: flex-start;
-                                align-items: stretch;
-                                width: 100%;
+                                align-items: flex-start;
                             }
-                            .row.mt-45 .col-lg-4 { display: flex; }
-                            .text-only-card .image-showcase-content-dynamic { padding: 0; width: 100%; }
-                            .text-only-card h4 { margin-bottom: 12px; }
-                            .text-only-card .custom-bullets { padding-left: 1.1rem; margin: 0; }
-                            .text-only-card .custom-bullets li { margin-bottom: 10px; }
+                            .left-aligned-card-container:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(37,99,235,0.12); }
+                            .left-card-title { font-size: 20px; font-weight: 700; color: #0f172a; margin: 0 0 10px 0; }
+                            .left-card-description { font-size: 15px; color: #6b7280; line-height: 1.6; margin: 0; }
+                            .row.mt-45 .col-lg-6 { display: flex; }
+                            .custom-bullets { padding-left: 1.1rem; margin: 0 0 8px 0; }
+                            .custom-bullets li { margin-bottom: 8px; font-size: 15px; color: #4b5563; }
+                            @media (max-width: 991px) {
+                                .left-card-title { font-size: 17px; }
+                            }
                         `}</style>
 
                         <div className="row mt-45">
-                            <div className="col-lg-6 col-md-6">
-                                <div className="text-only-card">
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-brand-1 mb-15">LLM Text Outputs</h4>
+                            <div className="col-lg-4 col-md-4">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <h4 className="left-card-title">LLM Text Outputs</h4>
                                         <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                             <li>Reasoning traces and logical flows</li>
                                             <li>Summaries and abstracts</li>
@@ -144,11 +148,11 @@ const RLHF = () => {
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div className="col-lg-6 col-md-6">
-                                <div className="text-only-card">
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-brand-1 mb-15">Vision-Language Outputs</h4>
+
+                            <div className="col-lg-4 col-md-4">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <h4 className="left-card-title">Vision-Language Outputs</h4>
                                         <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                             <li>Captioning and object reasoning</li>
                                             <li>Multi-step visual decisions</li>
@@ -158,10 +162,10 @@ const RLHF = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-6 col-md-6">
-                                <div className="text-only-card">
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-brand-1 mb-15">Multimodal Models</h4>
+                            <div className="col-lg-4 col-md-4">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <h4 className="left-card-title">Multimodal Models</h4>
                                         <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                             <li>Combined image-text outputs</li>
                                             <li>Audio-text integration</li>
@@ -170,11 +174,11 @@ const RLHF = () => {
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div className="col-lg-6 col-md-6">
-                                <div className="text-only-card">
-                                    <div className="image-showcase-content-dynamic">
-                                        <h4 className="color-brand-1 mb-15">Agentic Workflows</h4>
+
+                            <div className="col-lg-4 col-md-4">
+                                <div className="left-aligned-card-wrapper">
+                                    <div className="left-aligned-card-container">
+                                        <h4 className="left-card-title">Agentic Workflows</h4>
                                         <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
                                             <li>Tool-use chains and sequences</li>
                                             <li>Planning and decision sequences</li>
@@ -189,79 +193,81 @@ const RLHF = () => {
 
                
 
-                <section className="section mt-70 pt-60 pb-60 bg-brand-1">
+                 
+              <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages</h2>
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
-                                    Understand why our clients choose to work with us                                </p>
+                                    Understand how our data collection approach improves model quality, compliance, and time-to-market.
+                                </p>
                             </div>
                         </div>
                         <div className="row">
-                            {/* Card 1 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/expand.svg" alt="Expand" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Quality</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                           We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.                            </p>
+                                            We have a two-layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 2 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/prioritycapacity.svg" alt="Priority Capacity" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>End to End Solutions</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.                                        </p>
+                                            From data collection and cleaning to data annotation, we offer end-to-end solutions for your training data needs.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 3 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/support.svg" alt="Support" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Cost Efficient</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                        Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.            </p>
+                                            Our pricing is transparent and economical. We are more cost-effective than contract workers and large annotation platforms.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 4 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/comarketing.svg" alt="Co-Marketing" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Completely Managed</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                        Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
+                                            Our services are fully managed with dedicated account managers to ensure smooth operations.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 5 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/flexible.svg" alt="Flexible" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Scalable Workforce</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                        Start with a single person and grow with us. We scale up our team based on your demands.                                        </p>
+                                            Start with a single person and grow with us. We scale our team based on your demands.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 6 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/revgrowth.svg" alt="Revenue Growth" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Data Security</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                         Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.                                                </p>
+                                            Data security is paramount. We are GDPR compliant and ISO 27001 certified.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

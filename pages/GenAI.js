@@ -102,7 +102,7 @@ const GenAI = () => {
                 <section className="section mt-110">
                     <div className="container">
                         <div className="row align-items-end">
-                            <div className="col-lg-6 mb-20">
+                            <div className="col-lg-12 text-center mb-20">
                                 <h2 className="color-brand-1 mb-0">Types of Content Moderation We Offer</h2>
                                 <p className="color-grey-500 font-lg mt-20">
                                     Here are some types of image annotations we provide.
@@ -113,7 +113,7 @@ const GenAI = () => {
                         {/* First Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                <div className="image-showcase-card-dynamic" style={{height: '100%', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Instruction Tuning & Supervised Fine-Tuning (SFT)</h4>
                                         <p className='pb-10 font-lg'>We design and annotate instruction-response pairs tailored to your model objective:</p>
@@ -128,7 +128,7 @@ const GenAI = () => {
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                <div className="image-showcase-card-dynamic" style={{height: '100%', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Evaluation, QA & Red-teaming</h4>
                                         <p className='pb-10 font-lg'>Measure and harden model behavior:</p>
@@ -143,7 +143,7 @@ const GenAI = () => {
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                <div className="image-showcase-card-dynamic" style={{height: '100%', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Annotation & Data Labeling</h4>
                                         <p className='pb-10 font-lg'>High-accuracy annotation across modalities:</p>
@@ -161,7 +161,7 @@ const GenAI = () => {
                         {/* Second Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                <div className="image-showcase-card-dynamic" style={{height: '100%', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Human-in-the-Loop (HITL)</h4>
                                         <p className='pb-10 font-lg'>Embed humans where models fail or where high-stakes decisions matter:</p>
@@ -175,7 +175,7 @@ const GenAI = () => {
                             </div>
                             
                             <div className="col-lg-4">
-                                <div className="image-showcase-card-dynamic" style={{height: '360px', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
+                                <div className="image-showcase-card-dynamic" style={{height: '100%', display: 'flex', flexDirection: 'column', overflow: 'auto'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1}}>
                                         <h4 className="color-black-text mb-15">Synthetic Data & Augmentation</h4>
                                         <p className='pb-10 font-lg'>Generate controlled synthetic examples and validate them:</p>
@@ -306,58 +306,82 @@ const GenAI = () => {
                 </section> */}
 
 
-                <section className="section mt-30 pb-50 bg-core-value">
+<section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
-                        <div className="row box-list-core-value">
-                            <div className="col-lg-4 mb-70">
-                                <div className="box-core-value">
-                                    <h3 className="color-brand-1 mb-15">Our Advantages</h3>
-                                    <p className="font-md color-grey-400">Understand why our clients choose to work with us</p>
+                        <div className="row">
+                            <div className="col-lg-12 text-center mb-40">
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
+                                <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
+                                    Understand how our data collection approach improves model quality, compliance, and time-to-market.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Quality</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            We have a two-layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
-                                <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Optimized for Quality</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">End to End Solutions</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Cost Efficient</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>End to End Solutions</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            From data collection and cleaning to data annotation, we offer end-to-end solutions for your training data needs.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="col-lg-4">
-                                <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Completely Managed</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Scalable Workforce</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Start with a single person and grow with us. We scale up our team based on your demands.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Data Security</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost Efficient</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Our pricing is transparent and economical. We are more cost-effective than contract workers and large annotation platforms.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Completely Managed</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Our services are fully managed with dedicated account managers to ensure smooth operations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Scalable Workforce</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Start with a single person and grow with us. We scale our team based on your demands.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Data Security</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Data security is paramount. We are GDPR compliant and ISO 27001 certified.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

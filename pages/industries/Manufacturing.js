@@ -224,7 +224,7 @@ const Manufacturing = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/manufac-conveyor tracking.webp" 
+                                            src="/assets/images/industry/Conveyor Object Tracking.png" 
                                             alt="Conveyor Object Tracking" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -243,7 +243,7 @@ const Manufacturing = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/manufac-package.jpg" 
+                                            src="/assets/images/industry/Packaging Quality Check.png" 
                                             alt="Packaging Quality Check" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

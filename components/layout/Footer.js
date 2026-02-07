@@ -76,7 +76,7 @@ const Footer = () => {
                                     <li><Link href="/Search">Search and Personalization</Link></li>
                                     <li><Link href="/OCR">OCR / IDP</Link></li>
                                     <li><Link href="/GenAI">Generative AI</Link></li>
-                                    <li><Link href="/index-11">Training as a Service</Link></li>
+                                    {/* <li><Link href="/index-11">Training as a Service</Link></li> */}
                                     <li><Link href="/Content-md">Content Moderation</Link></li>
                                 </ul>
                             </div>

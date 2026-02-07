@@ -30,149 +30,11 @@ const ImageAnno = () => {
                             </div>
                         </div>
                     </div>
-
-                    <style jsx>{`
-                        .box-video-banner-responsive {
-                            width: 100%;
-                            margin: 40px 0 0 0;
-                            padding: 0;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-
-                        /* Desktop and tablet */
-                        @media (min-width: 769px) {
-                            .box-video-banner-responsive {
-                                margin: 50px 0 0 0;
-                            }
-                        }
-
-                        /* Mobile devices */
-                        @media (max-width: 768px) {
-                            .section.banner-5 .container {
-                                padding-left: 15px;
-                                padding-right: 15px;
-                            }
-
-                            .box-video-banner-responsive {
-                                margin: 30px 0 0 0;
-                                padding: 0;
-                            }
-
-                            /* Ensure text sections are also responsive */
-                            .col-lg-6.mb-20 {
-                                margin-bottom: 25px !important;
-                            }
-
-                            .mt-65 {
-                                margin-top: 40px !important;
-                            }
-
-                            .mb-100 {
-                                margin-bottom: 60px !important;
-                            }
-                        }
-
-                        /* Small mobile devices */
-                        @media (max-width: 480px) {
-                            .section.banner-5 .container {
-                                padding-left: 10px;
-                                padding-right: 10px;
-                            }
-
-                            .box-video-banner-responsive {
-                                margin: 25px 0 0 0;
-                            }
-
-                            .mt-65 {
-                                margin-top: 30px !important;
-                            }
-
-                            .mb-100 {
-                                margin-bottom: 40px !important;
-                            }
-
-                            .col-lg-6.mb-20 {
-                                margin-bottom: 20px !important;
-                            }
-
-                            /* Adjust text for better mobile readability */
-                            .color-brand-2.mt-10 {
-                                font-size: 1.8rem;
-                                line-height: 1.3;
-                            }
-
-                            .font-md {
-                                font-size: 0.95rem;
-                                line-height: 1.5;
-                            }
-                        }
-
-                        /* Extra small devices */
-                        @media (max-width: 360px) {
-                            .section.banner-5 .container {
-                                padding-left: 8px;
-                                padding-right: 8px;
-                            }
-
-                            .box-video-banner-responsive {
-                                margin: 20px 0 0 0;
-                            }
-
-                            .color-brand-2.mt-10 {
-                                font-size: 1.6rem;
-                            }
-
-                            .font-md {
-                                font-size: 0.9rem;
-                            }
-                        }
-                    `}</style>
                 </section>
                 <section className="section mt-110">
-                    <style jsx>{`
-                        .image-showcase-content-dynamic {
-                            padding: 18px 16px;
-                        }
-                        .image-showcase-content-dynamic h6 {
-                            font-size: 16px;
-                            font-weight: 700;
-                            margin: 0 0 10px 0;
-                            line-height: 1.4;
-                        }
-                        .image-showcase-content-dynamic > p:first-of-type {
-                            margin: 0 0 10px 0;
-                            font-size: 13px;
-                        }
-                        .image-showcase-content-dynamic > p:nth-of-type(2) {
-                            margin: 8px 0 6px 0;
-                            font-size: 13px;
-                            font-weight: 600;
-                        }
-                        .annotation-methods {
-                            margin: 0 0 0 1.1rem;
-                            padding: 0;
-                            list-style-type: disc;
-                            color: #6b7280;
-                            line-height: 1.5;
-                            font-size: 13px;
-                        }
-                        .annotation-methods li {
-                            margin-bottom: 4px;
-                        }
-                        @media (max-width: 991px) {
-                            .image-showcase-content-dynamic {
-                                padding: 16px 14px;
-                            }
-                            .image-showcase-content-dynamic h6 {
-                                font-size: 15px;
-                            }
-                        }
-                    `}</style>
                     <div className="container">
                         <div className="row align-items-end">
-                            <div className="col-lg-6 mb-20">
+                            <div className="col-lg-12 mb-20 text-center">
                                 <h2 className="color-brand-1 mb-0">Annotation Types</h2>
                                 <p className="color-grey-500 font-lg mt-20"> </p>
                             </div>
@@ -431,79 +293,136 @@ const ImageAnno = () => {
                         </div>
                     </div>
                 </section> */}
-                 <section className="section mt-70 pt-60 pb-60 bg-brand-1">
+             <style jsx>{`
+                    /* Banner responsive */
+                    .box-video-banner-responsive {
+                        width: 100%;
+                        margin: 40px 0 0 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    @media (min-width: 769px) {
+                        .box-video-banner-responsive { margin: 50px 0 0 0; }
+                    }
+                    @media (max-width: 768px) {
+                        .section.banner-5 .container { padding-left: 15px; padding-right: 15px; }
+                        .box-video-banner-responsive { margin: 30px 0 0 0; padding: 0; }
+                        .col-lg-6.mb-20 { margin-bottom: 25px !important; }
+                        .mt-65 { margin-top: 40px !important; }
+                        .mb-100 { margin-bottom: 60px !important; }
+                    }
+                    @media (max-width: 480px) {
+                        .section.banner-5 .container { padding-left: 10px; padding-right: 10px; }
+                        .box-video-banner-responsive { margin: 25px 0 0 0; }
+                        .mt-65 { margin-top: 30px !important; }
+                        .mb-100 { margin-bottom: 40px !important; }
+                        .col-lg-6.mb-20 { margin-bottom: 20px !important; }
+                        .color-brand-2.mt-10 { font-size: 1.8rem; line-height: 1.3; }
+                        .font-md { font-size: 0.95rem; line-height: 1.5; }
+                    }
+                    @media (max-width: 360px) {
+                        .section.banner-5 .container { padding-left: 8px; padding-right: 8px; }
+                        .box-video-banner-responsive { margin: 20px 0 0 0; }
+                        .color-brand-2.mt-10 { font-size: 1.6rem; }
+                        .font-md { font-size: 0.9rem; }
+                    }
+
+                    /* Image showcase content */
+                    .image-showcase-content-dynamic { padding: 18px 16px; }
+                    .image-showcase-content-dynamic h6 { font-size: 16px; font-weight: 700; margin: 0 0 10px 0; line-height: 1.4; }
+                    .image-showcase-content-dynamic > p:first-of-type { margin: 0 0 10px 0; font-size: 13px; }
+                    .image-showcase-content-dynamic > p:nth-of-type(2) { margin: 8px 0 6px 0; font-size: 13px; font-weight: 600; }
+                    .annotation-methods { margin: 0 0 0 1.1rem; padding: 0; list-style-type: disc; color: #6b7280; line-height: 1.5; font-size: 13px; }
+                    .annotation-methods li { margin-bottom: 4px; }
+                    @media (max-width: 991px) {
+                        .image-showcase-content-dynamic { padding: 16px 14px; }
+                        .image-showcase-content-dynamic h6 { font-size: 15px; }
+                    }
+
+                    /* Partner benefits */
+                    .partner-benefits{padding-top:40px;padding-bottom:40px}
+                    .partner-benefits .box-core-value h3,.partner-benefits .box-core-value p,.partner-benefits h5,.partner-benefits p{color:#fff}
+                    .partner-benefits .benefit-icon{width:36px;height:36px;margin-right:12px;flex-shrink:0;display:inline-block}
+                    .partner-benefits .box-border-dashed{border-bottom:1px dashed rgba(255,255,255,0.08);padding:14px;border-radius:8px}
+                    .partner-benefits .ticked{display:none}
+                `}</style>
+               
+              <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages</h2>
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
-                                    Understand why our clients choose to work with us                                </p>
+                                    Understand how our data collection approach improves model quality, compliance, and time-to-market.
+                                </p>
                             </div>
                         </div>
                         <div className="row">
-                            {/* Card 1 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/expand.svg" alt="Expand" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Quality</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                           We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.                            </p>
+                                            We have a two-layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 2 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/prioritycapacity.svg" alt="Priority Capacity" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>End to End Solutions</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.                                        </p>
+                                            From data collection and cleaning to data annotation, we offer end-to-end solutions for your training data needs.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 3 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/support.svg" alt="Support" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Cost Efficient</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                        Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.            </p>
+                                            Our pricing is transparent and economical. We are more cost-effective than contract workers and large annotation platforms.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 4 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/comarketing.svg" alt="Co-Marketing" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Completely Managed</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                        Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
+                                            Our services are fully managed with dedicated account managers to ensure smooth operations.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 5 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/flexible.svg" alt="Flexible" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Scalable Workforce</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                        Start with a single person and grow with us. We scale up our team based on your demands.                                        </p>
+                                            Start with a single person and grow with us. We scale our team based on your demands.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            {/* Card 6 */}
-                            <div className="col-lg-4 col-md-6 mb-25">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px'}}>
-                                    <img src="assets/imgs/page/partner/revgrowth.svg" alt="Revenue Growth" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
                                         <h5 className="mb-25" style={{ color: "#fff" }}>Data Security</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                         Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.                                                </p>
+                                            Data security is paramount. We are GDPR compliant and ISO 27001 certified.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

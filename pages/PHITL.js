@@ -318,55 +318,56 @@ const PHITL = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-30 pb-50 bg-core-value">
+                <section className="section mt-50 pb-50 bg-brand-1 partner-benefits">
                     <div className="container">
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
                                 <div className="box-core-value">
-                                    <h3 className="color-brand-1 mb-15">Our Advantages</h3>
-                                    <p className="font-md color-grey-400">Understand why our clients choose to work with us</p>
+                                    <h3 className="color-white mb-15">Our Advantages</h3>
+                                        <p className="font-md color-white">Understand why our clients choose to work with us</p>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <ul className="list-core-value">
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Optimized for Quality</h5>
+                                   <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Optimized for Quality</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.</p>
+                                            <p className="font-md color-white mb-20">We have a two layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.</p>
+                                        </div>
+                                    </li> 
+                                    <li> <span className="ticked" />
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>End to End Solutions</h5>
+                                        <div className="box-border-dashed">
+                                            <p className="font-md color-white mb-20">From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">End to End Solutions</h5>
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Cost Efficient</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">From data collection and cleaning to data annotation, we offer ened to end solutions for your training data needs.</p>
-                                        </div>
-                                    </li>
-                                    <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Cost Efficient</h5>
-                                        <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.</p>
+                                            <p className="font-md color-white mb-20">Our pricing is transparent and economical. We are more economical thatn contract workers and large annotation platforms.</p>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                             <div className="col-lg-4">
                                 <ul className="list-core-value">
+                                    
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Completely Managed</h5>
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Completely Managed</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
+                                            <p className="font-md color-white mb-20">Our services are completely managed with dedicated account managers to ensure smooth operations.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Scalable Workforce</h5>
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Scalable Workforce</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Start with a single person and grow with us. We scale up our team based on your demands.</p>
+                                            <p className="font-md color-white mb-20">Start with a single person and grow with us. We scale up our team based on your demands.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Data Security</h5>
+                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Data Security</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.</p>
+                                            <p className="font-md color-white mb-20">Data security is of paramount importance. We are GDPR compliant and are ISO 27001 certified.</p>
                                         </div>
                                     </li>
                                 </ul>

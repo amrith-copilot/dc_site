@@ -4,7 +4,7 @@ import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
 import Tab2 from '../components/elements/tab2';
 import Offer6 from '../components/slider/Offer6';
-import Partner from '../components/elements/Partner';
+// Partner component not used on this page
 import Offer3 from '../components/slider/Offer3';
 
 const SFT = () => {
@@ -132,7 +132,7 @@ const SFT = () => {
                 <section className="section mt-110">
                     <div className="container">
                         <div className="row align-items-end">
-                            <div className="col-lg-6 mb-20">
+                            <div className="col-lg-12 mb-20 text-center">
                                 <h2 className="color-brand-1 mb-0">Our SFT Services</h2>
                                 <p className="color-grey-500 font-lg mt-20">
                                     Here are some types of SFT services we provide.
@@ -144,16 +144,9 @@ const SFT = () => {
                         <div className="row mt-45">
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="Large Language Models" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
+                                    
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Large Language Models (LLMs)</h6>
+                                        <h6 className="color-black-text mb-15">Large Language Models (LLMs)</h6>
                                         <p className='pb-10 font-sm color-grey-500'>We fine-tune models for:</p>
                                         <ul className="custom-bullets font-sm color-grey-500 mb-15 pl-15">
                                             <li>Customer support and virtual assistants</li>
@@ -166,16 +159,9 @@ const SFT = () => {
                             
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human2.png" 
-                                            alt="Computer Vision Systems" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
+                                
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Computer Vision Systems</h6>
+                                        <h6 className="color-black-text mb-15">Computer Vision Systems</h6>
                                         <p className='pb-10 font-sm color-grey-500'>We adapt vision models for:</p>
                                         <ul className="custom-bullets font-sm color-grey-500 mb-15 pl-15">
                                             <li>Quality inspection in manufacturing</li>
@@ -189,16 +175,9 @@ const SFT = () => {
                             
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human3.png" 
-                                            alt="Multimodal AI" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
+                                   
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Multimodal AI</h6>
+                                        <h6 className="color-black-text mb-15">Multimodal AI</h6>
                                         <ul className="custom-bullets font-sm color-grey-500 mb-15 pl-15">
                                             <li>For systems that combine text, images, and video, we fine-tune models to keep results safe, consistent, and aligned across multiple input types.</li>
                                         </ul>
@@ -208,7 +187,7 @@ const SFT = () => {
                         </div>
                     </div>
                 </section>
-                  <section className="section pt-0 pb-50 bg-core-value mb-30 mt-50">
+                  <section className="section pt-0 pb-50 bg-core-value mb-30 mt-20">
                     <div className="container">
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
@@ -388,7 +367,87 @@ const SFT = () => {
                       </div>
                     </div> */}
                 {/* </section> */} 
-
+              
+              <section className="section mt-70 pt-60 pb-60 bg-brand-1">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center mb-40">
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
+                                <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
+                                    Understand how our data collection approach improves model quality, compliance, and time-to-market.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Quality</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            We have a two-layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>End to End Solutions</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            From data collection and cleaning to data annotation, we offer end-to-end solutions for your training data needs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost Efficient</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Our pricing is transparent and economical. We are more cost-effective than contract workers and large annotation platforms.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Completely Managed</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Our services are fully managed with dedicated account managers to ensure smooth operations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Scalable Workforce</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Start with a single person and grow with us. We scale our team based on your demands.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Data Security</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Data security is paramount. We are GDPR compliant and ISO 27001 certified.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                
                 <section className="section mt-100">
                     <div className="container">

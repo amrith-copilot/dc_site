@@ -150,8 +150,94 @@ const DevOps = () => {
                         </div>
                     </div>
                 </section>
-                
+{/*                 
                 <section className="section mt-70 pt-60 pb-60 bg-brand-1">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center mb-40">
+                                <h2 className="mb-20" style={{ color: "#fff" }}>Advantages of adopting DevOps</h2>
+                                <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
+                                    Transform your software delivery with proven DevOps practices that accelerate innovation and improve quality.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            {/* Card 1 
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Faster Deployment</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Automated deployment pipelines significantly reduce release cycles, allowing teams to push updates to production with minimal manual intervention.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Enhanced Collaboration</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Breaking down silos between development and operations teams fosters better communication, shared responsibility, and improved problem-solving across organizations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 3 
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Continuous Integration</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Regular code integration and automated testing catch bugs early, reducing debugging time and ensuring higher quality software releases.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 4 
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Infrastructure Automation</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Standardized infrastructure configuration through code eliminates manual setup errors and enables consistent environments across development, testing, and production.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 5 *
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Rapid Recovery</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Automated monitoring and incident response systems help teams quickly identify, isolate, and resolve issues before they impact users.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Card 6 *
+                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
+                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <div>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost Optimization</h5>
+                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
+                                            Efficient resource utilization, automated scaling, and streamlined processes reduce operational costs while maintaining high service quality standards.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+
+                  <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
@@ -294,7 +380,7 @@ const DevOps = () => {
                         </div>
                     </div>
                 </section> */}
-
+{/* 
                 <section className="section mt-100">
                     <div className="container">
                         <div className="row">
@@ -315,7 +401,7 @@ const DevOps = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* <section className="section mt-100 mb-40 process-section">
                     <div className="container">
