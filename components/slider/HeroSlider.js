@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import SwiperCore, { Autoplay, Navigation,Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/components/pagination/pagination.min.css";
@@ -6,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Autoplay, Navigation,Pagination]);
 
 const HeroSlider = () => {
-
+    const router = useRouter();
     const [mounted, setMounted] = useState(false);
     useEffect(() => {
         setMounted(true);
@@ -112,7 +113,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }}>Get Started</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Get Started</button>
                                         </div>
                                     </div>
                                 </div>
@@ -166,7 +167,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }}>Start Collaborating</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Build Now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -220,7 +221,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }}>Build Now</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Build Now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -274,7 +275,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }}>Try Flex</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Try Flex</button>
                                         </div>
                                     </div>
                                 </div>
@@ -326,7 +327,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }}>Get Started</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Get Started</button>
                                         </div>
                                     </div>
                                 </div>

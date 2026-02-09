@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
+import Tab from '../components/elements/Tab';
+import Tab1 from '../components/elements/Tab1';
 import Tab2 from '../components/elements/tab2';
 import Proccess from '../components/elements/Proccess';
 import Offer2 from '../components/slider/Offer2';
@@ -10,7 +13,14 @@ import Offer3 from '../components/slider/Offer3';
 const LLMEvals = () => {
     const [isOpen, setOpen] = useState(false)
     return (
-        <>
+        <>  
+            <Head>
+                <title>LLM Evaluation-as-a-Service | Professional AI & RAG Benchmarking</title>
+                <meta name="description" content="Stop guessing and start shipping. We provide decision-ready evaluations for LLMs, RAG pipelines, and Agents using your data. Get objective benchmarks, safety audits, and performance reports to deploy with confidence." />
+                <meta name="keywords" content="LLM Evaluation-as-a-Service, RAG Benchmarking, AI Agent Testing, Prompt Optimization, Model Comparison, AI Safety Audits, LLM-as-a-Judge" />
+                <meta property="og:title" content="LLM Evaluation-as-a-Service | Professional AI & RAG Benchmarking" />
+                <meta property="og:description" content="Stop guessing and start shipping. We provide decision-ready evaluations for LLMs, RAG pipelines, and Agents using your data. Get objective benchmarks, safety audits, and performance reports to deploy with confidence." />
+            </Head>
             <Layout>
             <section className="section banner-5">
                     <div className="container">
@@ -18,13 +28,12 @@ const LLMEvals = () => {
                             <div className="row align-items-center">
                                 <div className="col-lg-6 mb-20">
                                     <h2 className="color-black-text mt-10">
-                                        Trusted Human Evaluation for Safer, Smarter AI
+                                        Eliminate Uncertainty in Your AI Development Lifecycle.
                                     </h2>
                                 </div>
                                 <div className="col-lg-6 mb-20">
                                     <p className="font-lg color-black-text ">
-                                        We provide expert, workforce-driven evaluations for LLMs and Computer Vision models — powered by human judgment, guided by open-source benchmarks, and scaled for enterprise needs.
-                                    </p>
+                                       Quantify the performance of your LLMs, RAG systems, and Agents. Our rigorous evaluation framework ensures your AI solutions meet enterprise standards for accuracy and reliability.</p>
                                 </div>
                             </div>
                             
@@ -32,6 +41,19 @@ const LLMEvals = () => {
                             <div className="box-video-banner align-items-center d-flex justify-content-center">
                                <img src="/assets/images/industry/AI Evals- hero.png" alt="AI Evals hero" style={{ width: '80%', height: 'auto'}} />
                             </div>
+                        </div>
+                    </div>
+                </section>
+              <section className="section mt-100 mb-50 bg-brand-1 pt-100 pb-100 bg-explore">
+                    <div className="container">
+                        <div className="text-center">
+                            <h2 className="font-xl-bold color-white text-uppercase">Custom Evaluation Frameworks</h2>
+                            <h6 className="color-brand-2 mb-60 mt-15">
+                                Every AI architecture demands a unique validation strategy. We move beyond generic benchmarks to stress-test your specific models and RAG pipelines against your real-world data and custom performance requirements.
+                            </h6>
+                        </div>
+                        <div className="mt-30 mb-60">
+                            <Tab1/>
                         </div>
                     </div>
                 </section>
@@ -94,7 +116,59 @@ const LLMEvals = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-50 mb-30 bg-brand-1 pt-100 pb-100 bg-explore">
+             
+                 
+
+                {/* <section className="section mt-100 mb-50 bg-brand-1 pt-100 pb-100" style={{backgroundColor: '#0052CC'}}>
+                    <div className="container">
+                        <div className="text-center mb-80">
+                            <h2 className="color-white mb-40" style={{fontSize: '42px', fontWeight: 700}}>The Evaluation Journey</h2>
+                            <p className="color-white" style={{fontSize: '16px', lineHeight: '1.6', maxWidth: '900px', margin: '0 auto'}}>
+                                Enterprise-Grade Validation Without the Engineering Overhead You shouldn't have to divert your core team to build complex internal benchmarking tools. We provide the infrastructure, the expertise, and the objective analysis, combining high-speed automated judging with expert human oversight to deliver decision-ready insights.
+                            </p>
+                        </div>
+                        
+                        <div className="row" style={{gap: '40px', maxWidth: '1200px', margin: '0 auto'}}>
+                            <div className="col-lg-4" style={{display: 'flex', flexDirection: 'column'}}>
+                                <div style={{display: 'flex', alignItems: 'center', marginBottom: '20px'}}>
+                                    <span style={{color: '#4ADE80', fontSize: '24px', fontWeight: 'bold', marginRight: '12px'}}>✓</span>
+                                    <h3 className="color-white mb-0" style={{fontSize: '18px', fontWeight: 700}}>Scenario Definition & Data<br />Integration</h3>
+                                </div>
+                                <p className="color-white" style={{fontSize: '14px', lineHeight: '1.6', marginBottom: 0}}>
+                                    Define your objectives. We begin by identifying the specific components of your stack you wish to validate—whether it is a complex RAG pipeline, multi-step autonomous agents, or a side-by-side comparison of evaluation models. The Input: You provide your target workflows, representative user queries, and any existing "Golden Sets" (ground-truth data).
+                                    The Goal: We ensure the evaluation framework is perfectly aligned with your actual production environment.
+                                </p>
+                            </div>
+                            
+                            <div className="col-lg-4" style={{display: 'flex', flexDirection: 'column'}}>
+                                <div style={{display: 'flex', alignItems: 'center', marginBottom: '20px'}}>
+                                    <span style={{color: '#4ADE80', fontSize: '24px', fontWeight: 'bold', marginRight: '12px'}}>✓</span>
+                                    <h3 className="color-white mb-0" style={{fontSize: '18px', fontWeight: 700}}>Calibrated Review & Methodology<br />Selection</h3>
+                                </div>
+                                <p className="color-white" style={{fontSize: '14px', lineHeight: '1.6', marginBottom: 0}}>
+                                    Customize your level of rigor. Accuracy requirements vary by use case. We offer a tiered approach to validation so you can balance speed with precision.
+                                    LLM-as-a-Judge: Rapid, scalable scoring using advanced, proprietary evaluation prompts to detect hallucinations and relevance at scale.
+                                    Expert Human Review: High-fidelity manual auditing for nuanced tasks where human judgment, empathy, unspecialized domain knowledge are non-negotiable.
+                                    Hybrid validation: The gold standard—automated broad-spectrum testing verified by human-in-the-loop spot checks.
+                                </p>
+                            </div>
+                            
+                            <div className="col-lg-4" style={{display: 'flex', flexDirection: 'column'}}>
+                                <div style={{display: 'flex', alignItems: 'center', marginBottom: '20px'}}>
+                                    <span style={{color: '#4ADE80', fontSize: '24px', fontWeight: 'bold', marginRight: '12px'}}>✓</span>
+                                    <h3 className="color-white mb-0" style={{fontSize: '18px', fontWeight: 700}}>Decision-Ready Reporting &<br />Strategy</h3>
+                                </div>
+                                <p className="color-white" style={{fontSize: '14px', lineHeight: '1.6', marginBottom: 0}}>
+                                    Identify the clear winner. We move beyond raw data to provide a comprehensive Evaluation Report that translates metrics into action.
+                                    The Output: A clear, comparative analysis that identifies which model, prompt, or retrieval strategy outperformed the rest.
+                                    Strategic Support: We don't just hand over a spreadsheet; we provide a post-evaluation consultation to help you interpret the results and optimize your next deployment phase.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+
+                {/* <section className="section mt-50 mb-30 bg-brand-1 pt-100 pb-100 bg-explore">
                     <div className="container">
                         <div className="text-center">
                             <span className="font-xl-bold color-white text-uppercase">What We Offer</span>
@@ -106,14 +180,14 @@ const LLMEvals = () => {
                             <Tab2 />
                         </div>
                     </div>
-                </section>
-                <section className="section mt-30 pb-50 bg-core-value">
+                </section> */}
+                {/* <section className="section mt-30 pb-50 bg-core-value">
                     <div className="container">
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
                                 <div className="box-core-value">
                                     <h3 className="color-brand-1 mb-15">Why Choose Us?</h3>
-                                    <p className="font-md color-grey-400">We break down barriers so teams can focus on what matters – working together to create products their customers love.</p>
+                                    <p className="font-md color-grey-400">We eliminate the technical friction of benchmarking so your team can focus on what matters, deploying AI products that your users can actually trust.</p>
                                 </div>
                             </div>
                             <div className="col-lg-4">
@@ -162,7 +236,7 @@ const LLMEvals = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 {/* <section className="section mt-20 mb-40 mt-100">
                     <div className="container">
                         <div className="row">
@@ -182,82 +256,63 @@ const LLMEvals = () => {
                     </div>
                 </section>
                 */}
-
+                
                 
               <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
+                                <h2 className="mb-20" style={{ color: "#fff" }}>The Evaluation Journey</h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
-                                    Understand how our data collection approach improves model quality, compliance, and time-to-market.
+                                   Enterprise-Grade Validation Without the Engineering Overhead
+                                    You shouldn’t have to divert your core team to build complex internal benchmarking tools. We provide the infrastructure, the expertise, and the objective analysis, combining high-speed automated judging with expert human oversight to deliver decision-ready insights.
                                 </p>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-4 col-md-6 mb-25 d-flex">
                                 <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
-                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                    <span style={{width: '36px', height: '36px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%', background: '#fff', color: '#3819a7', fontWeight: 700, marginRight: '15px', marginTop: '3px', flexShrink: 0}}>1</span>
                                     <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Quality</h5>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}> Scenario Definition & Data Integration</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            We have a two-layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.
+                                            Define your objectives. We begin by identifying the specific components of your stack you wish to validate—whether it is a complex RAG pipeline, multi-step autonomous agents, or a side-by-side comparison of foundation models.
                                         </p>
+                                        <ul style={{ color: "#fff" }}>
+                                            <li><strong>The Input:</strong> You provide your target workflows, representative user queries, and any existing "Golden Sets" (ground-truth data).</li>
+                                            <li><strong>The Goal:</strong> We ensure the evaluation framework is perfectly aligned with your actual production environment. </li>  
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 mb-25 d-flex">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
-                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                 <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <span style={{width: '36px', height: '36px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%', background: '#fff', color: '#3819a7', fontWeight: 700, marginRight: '15px', marginTop: '3px', flexShrink: 0}}>2</span>
                                     <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>End to End Solutions</h5>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>  Calibrated Review & Methodology Selection</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            From data collection and cleaning to data annotation, we offer end-to-end solutions for your training data needs.
+                                            Customize your level of rigor. Accuracy requirements vary by use case. We offer a tiered approach to validation so you can balance speed with precision.
                                         </p>
+                                        <ul style={{ color: "#fff" }}>
+                                            <li><strong>LLM-as-a-Judge:</strong> Rapid, scalable scoring using advanced, proprietary evaluation prompts to detect hallucinations and relevance at scale.</li>
+                                            <li><strong>Expert Human Review:</strong> High-fidelity manual auditing for nuanced tasks where human judgment, empathy, and specialized domain knowledge are non-negotiable.</li>  
+                                            <li><strong>Hybrid Validation:</strong>  The gold standard—automated broad-spectrum testing verified by human-in-the-loop spot checks.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 mb-25 d-flex">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
-                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
+                                  <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
+                                    <span style={{width: '36px', height: '36px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%', background: '#fff', color: '#3819a7', fontWeight: 700, marginRight: '15px', marginTop: '3px', flexShrink: 0}}>3</span>
                                     <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost Efficient</h5>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>  Decision-Ready Reporting & Strategy</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            Our pricing is transparent and economical. We are more cost-effective than contract workers and large annotation platforms.
+                                        Identify the clear winner. We move beyond raw data to provide a comprehensive Evaluation Report that translates metrics into action.
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
-                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
-                                    <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Completely Managed</h5>
-                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            Our services are fully managed with dedicated account managers to ensure smooth operations.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
-                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
-                                    <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Scalable Workforce</h5>
-                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            Start with a single person and grow with us. We scale our team based on your demands.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-25 d-flex">
-                                <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
-                                    <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
-                                    <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Data Security</h5>
-                                        <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            Data security is paramount. We are GDPR compliant and ISO 27001 certified.
-                                        </p>
+                                        <ul style={{ color: "#fff" }}>
+                                            <li><strong>The Output:</strong> A clear, comparative analysis that identifies which model, prompt, or retrieval strategy outperformed the rest.</li>
+                                            <li><strong>Strategic Support: </strong>We don’t just hand over a spreadsheet; we provide a post-evaluation consultation to help you interpret the results and optimize your next deployment phase.</li>  
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -271,19 +326,20 @@ const LLMEvals = () => {
                             <div className="col-lg-12 text-center">
                                 <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
                                 <p className="font-lg color-gray-500">
-                                    What makes us different from others? We give holistic solutions
-                                    <br className="d-none d-lg-block" />
-                                    with strategy, design &amp; technology.
+                                    Precision-engineered evaluations for high-stakes environments. We translate complex industry requirements into objective benchmarks, ensuring your AI solutions meet the specific safety, accuracy, and compliance standards of your sector.
                                 </p>
                             </div>
                         </div>
-                        <div className="mt-50">
-                            <div className="box-swiper">
-                                <div className="swiper-container swiper-group-4">
-                                    <Offer2 />
-                                </div>
+                        <section className="section mt-30 mb-60">
+                    <div className="container">
+                        <div className="row justify-content-center mb-30">
+                            <div className="col-12">
+                                {/* Slider: shows 4 cards at a time, auto-advances every 1s */}
+                                <SliderBlock />
                             </div>
                         </div>
+                    </div>
+                </section>
                     </div>
                 </section>
                 <section className="section mt-50 pt-50 pb-40">
@@ -306,9 +362,155 @@ const LLMEvals = () => {
                         </div>
                     </div>
                 </section>
+
             </Layout>
         </>
     );
 };
 
 export default LLMEvals;
+
+// SliderBlock component
+function SliderBlock(){
+    const cards = [
+        {
+            title: 'Automotive & Infrastructure',
+            bullets: [
+                {strong: 'ADAS:', text: ' Edge-case validation for computer vision models and sensor fusion reliability under diverse weather and lighting conditions.'},
+                {strong: 'Mapping:', text: ' Precision audits for autonomous navigation, ensuring sub-centimeter accuracy in spatial data and real-time attribute labeling.'},
+                {strong: 'Geo Spatial:', text: ' Validation of change-detection algorithms for satellite imagery, focusing on rural vs. urban classification accuracy.'}
+            ]
+        },
+        {
+            title: 'Heavy Industry & Operations',
+            bullets: [
+                {strong: 'Manufacturing:', text: ' Stress-testing predictive maintenance models to reduce false-positive downtime alerts in high-throughput environments.'},
+                {strong: 'Agriculture:', text: ' Accuracy checks for crop-yield forecasting and pest-detection models using multi-spectral imagery.'},
+                {strong: 'RPA :', text: ' Logic-validation for document-processing agents to ensure 100% grounding in automated financial or data-entry workflows.'}
+            ]
+        },
+        {
+            title: 'Consumer & Digital Services',
+            bullets: [
+                {strong: 'Retail:', text: ' A/B testing recommendation engines to measure "discoverability" and the reduction of search friction for end consumers.'},
+                {strong: 'Social Media:', text: ' Moderation audits for toxicity, bias, and multi-modal content safety (text, image, and video) across global dialects.'},
+                {strong: 'E-Commerce and Content:', text: ' Evaluated "helpfulness" scores for AI-generated product descriptions and SEO-optimized marketing copy.'}
+            ]
+        },
+        {
+            title: 'Healthcare & Finance',
+            bullets: [
+                {strong: 'Medical AI:', text: ' Rigorous factuality and compliance audits for clinical summarization tools, ensuring zero hallucination in patient data processing.'},
+                {strong: 'Fintech:', text: ' Robustness testing for credit-scoring models and fraud-detection agents, focused on removing algorithmic bias and ensuring regulatory alignment.'},
+                {strong: 'Insurance:', text: ' Validation of automated claims-processing agents for policy grounding and accurate damage assessment from user-submitted photos.'}
+            ]
+        },
+        {
+            title: 'Emerging Tech',
+            bullets: [
+                {strong: 'Physical AI :', text: ' Benchmarking "sim-to-real" transfer success rates for robotic manipulation and spatial reasoning in unstructured environments.'},
+                {strong: 'Voice AI:', text: ' Linguistic accuracy and emotional resonance testing for conversational IVR and real-time translation services.'},
+                {strong: 'Sports & Media:', text: ' Precision audits for automated player-tracking data and real-time highlight generation algorithms.'},
+                {strong: 'Asset Management:', text: ' Stress-testing LLM-driven market sentiment analysis tools against historical volatility sets to ensure reliable investment signaling.'}
+            ]
+        }
+    ];
+
+    const visible = 4;
+    const origLen = cards.length;
+    // Prepend last `visible` and append first `visible` for seamless bidirectional loop
+    const slides = [...cards.slice(-visible), ...cards, ...cards.slice(0, visible)];
+
+    // start at the first real slide position
+    const startIndex = visible;
+    const [index, setIndex] = useState(startIndex);
+    const [withTransition, setWithTransition] = useState(true);
+    const indexRef = React.useRef(index);
+    indexRef.current = index;
+
+    const [selectedCard, setSelectedCard] = useState(null);
+
+    useEffect(()=>{
+        const id = setInterval(()=>{
+            setIndex(prev => prev + 1);
+        }, 3000);
+        return ()=> clearInterval(id);
+    }, []);
+
+    function handleTransitionEnd(){
+        // moved past the end clones
+        if(indexRef.current >= origLen + startIndex){
+            setWithTransition(false);
+            setIndex(startIndex);
+            requestAnimationFrame(()=> setTimeout(()=> setWithTransition(true), 20));
+        }
+        // moved before the start clones
+        if(indexRef.current < startIndex){
+            setWithTransition(false);
+            setIndex(indexRef.current + origLen);
+            requestAnimationFrame(()=> setTimeout(()=> setWithTransition(true), 20));
+        }
+    }
+
+    function prev(){
+        setIndex(prev => prev - 1);
+    }
+    function next(){
+        setIndex(prev => prev + 1);
+    }
+
+    const trackStyle = {
+        display: 'flex',
+        transition: withTransition ? 'transform 480ms ease' : 'none',
+        transform: `translateX(-${(index * 25)}%)`
+    };
+
+    const cardStyle = {
+        flex: '0 0 25%',
+        boxSizing: 'border-box',
+        padding: '0 12px',
+        display: 'flex'
+    };
+
+    const innerCardStyle = {padding: '28px', border: '1px solid #e6eef6', borderRadius: '14px', background: '#fff', minHeight: '220px', boxShadow: '0 4px 12px rgba(16,24,40,0.06)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', height: '100%'};
+
+    return (
+        <div style={{position: 'relative'}}>
+            <div style={{overflow: 'hidden'}}>
+                <div style={trackStyle} onTransitionEnd={handleTransitionEnd}>
+                    {slides.map((c, i) => {
+                        const origIdx = ((i - startIndex) + origLen) % origLen;
+                        const isSelected = selectedCard === origIdx;
+                        const mergedInner = Object.assign({}, innerCardStyle, isSelected ? {background: '#1e3bf8', color: '#fff', borderColor: 'transparent'} : {});
+                        return (
+                        <div key={i} style={cardStyle}>
+                            <div style={mergedInner} onClick={()=> setSelectedCard(origIdx)}>
+                                <h4 style={{color: isSelected ? '#fff' : '#1e3bf8', fontWeight: 700, marginBottom: '10px'}}>{c.title}</h4>
+                                <ul className="font-sm" style={{paddingLeft: '0', marginTop: '6px', color: isSelected ? '#fff' : '#6b7280', listStyle: 'none'}}>
+                                    {c.bullets.map((b, j)=> (
+                                        <li key={j} style={{marginBottom: '10px', display: 'flex', gap: '10px', alignItems: 'flex-start'}}>
+                                            <span style={{width: '6px', height: '6px', borderRadius: '50%', background: isSelected ? '#fff' : '#6b7280', marginTop: '7px', flexShrink: 0}} />
+                                            <div>
+                                                <strong style={{color: isSelected ? '#fff' : 'inherit'}}>{b.strong}</strong>{b.text}
+                                            </div>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                        )
+                    })}
+                </div>
+            </div>
+
+            <div style={{position: 'absolute', left: '50%', transform: 'translateX(-50%)', bottom: '-48px', display: 'flex', gap: '20px'}}>
+                <button onClick={prev} aria-label="prev" className="slider-nav-btn" style={{width: '40px', height: '40px', borderRadius: '50%', border: '1px solid #d1dae5', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#111827', fontWeight: 700, lineHeight: 1, padding: 0, transition: 'all 0.3s ease', fontSize: '22px'}}>
+                    ←
+                </button>
+                <button onClick={next} aria-label="next" className="slider-nav-btn" style={{width: '40px', height: '40px', borderRadius: '50%', border: '1px solid #d1dae5', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#111827', fontWeight: 700, lineHeight: 1, padding: 0, transition: 'all 0.3s ease', fontSize: '22px'}}>
+                    →
+                </button>
+            </div>
+        </div>
+    );
+}

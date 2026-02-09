@@ -61,7 +61,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Product Recognition on Shelves.png" 
+                                            src="/assets/image/Product Recognition on Shelves.webp" 
                                             alt="Product Recognition on Shelves" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -80,7 +80,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Out-of-Stock & Empty Shelf Detection.png" 
+                                            src="/assets/image/Out-of-Stock & Empty Shelf Detection.webp" 
                                             alt="Out-of-Stock & Empty Shelf Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -99,7 +99,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Shopper Path Tracking.png" 
+                                            src="/assets/image/Shopper Path Tracking.webp" 
                                             alt="Shopper Path Tracking" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -118,7 +118,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Queue Monitoring.png" 
+                                            src="/assets/image/Queue Monitoring.webp" 
                                             alt="Queue Monitoring" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -137,7 +137,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Price Tag & Label Identification.png" 
+                                            src="/assets/image/Price Tag & Label Identification.webp" 
                                             alt="Price Tag & Label Identification" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -156,7 +156,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Self-Checkout Vision Support.png" 
+                                            src="/assets/image/Self-Checkout Vision Support.webp" 
                                             alt="Self-Checkout Vision Support" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -175,7 +175,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/In-Store Theft & Anomaly Detection.png" 
+                                            src="/assets/image/In-Store Theft & Anomaly Detection.webp" 
                                             alt="In-Store Theft & Anomaly Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -194,7 +194,7 @@ const Retail = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
+                                            src="/assets/image/Store Heatmap Generation.webp" 
                                             alt="Store Heatmap Generation" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import HeroSlider from '../components/slider/HeroSlider';
@@ -23,6 +24,13 @@ const HomePage3 = () => {
 
     return (
         <>
+            <Head>
+                <title>DATACLAP  | Enterprise Data Foundations & End-to-End AI Solutions</title>
+                <meta name="description" content="Accelerate your AI journey with DATACLAP. We provide enterprise-grade data collection, high-accuracy annotation, RLHF, and LLM evaluation services across 15+ industries. Scale your models with production-ready datasets and expert human-in-the-loop workflows." />
+                <meta name="keywords" content="Enterprise AI Solutions, Data Annotation Services, Supervised Fine-Tuning (SFT), RLHF Services, LLM Evaluation-as-a-Service, Computer Vision Data, AI Data Foundations" />
+                <meta property="og:title" content="DATACLAP  | Enterprise Data Foundations & End-to-End AI Solutions" />
+                <meta property="og:description" content="Accelerate your AI journey with DATACLAP. We provide enterprise-grade data collection, high-accuracy annotation, RLHF, and LLM evaluation services across 15+ industries. Scale your models with production-ready datasets and expert human-in-the-loop workflows." />
+            </Head>
             <Layout>
                 <section className="section banner-11">
                     <div className="box-banner-home11">

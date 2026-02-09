@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
+import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 import Link from 'next/link';
@@ -133,6 +134,11 @@ const Insurance = () => {
     ];
     return (
         <Layout>
+            <Head>
+                <title>Insurance — AI Training Data for Claims, Risk & Fraud Detection | DataClap</title>
+                <meta name="description" content="High-quality labeled data for insurance AI: claims imagery annotation, damage segmentation, document parsing, fraud pattern detection, and risk scoring. Scalable, privacy-aware annotation for insurers." />
+                <meta name="keywords" content="insurance AI, claims annotation, damage detection dataset, fraud detection training data, risk scoring annotation" />
+            </Head>
            
                 {/* Hero Section */}
                 <section className="section banner-5">

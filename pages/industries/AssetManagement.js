@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
+import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 import Link from 'next/link';
@@ -20,6 +21,11 @@ const AssetManagement = () => {
     ];
     return (
         <Layout>
+            <Head>
+                <title>Asset Management — AI Training Data & Predictive Maintenance | DataClap</title>
+                <meta name="description" content="AI-ready labeled data for asset management and predictive maintenance: defect detection, lifecycle tagging, sensor metadata, and geospatial mapping. Scalable annotation pipelines for reliable operational insights." />
+                <meta name="keywords" content="asset management AI, predictive maintenance data, defect detection annotation, asset lifecycle labeling, IoT sensor annotation" />
+            </Head>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -157,7 +163,7 @@ const AssetManagement = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Inventory & Asset Identification.png"
+                                            src="/assets/image/Inventory & Asset Identification.webp"
                                             alt="Inventory & Asset Identification" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -195,7 +201,7 @@ const AssetManagement = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Drone-Based Visual Inspection.png" 
+                                            src="/assets/image/Drone-Based Visual Inspection.webp" 
                                             alt="Drone-Based Visual Inspection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

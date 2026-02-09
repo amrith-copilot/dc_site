@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
+import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 import Link from 'next/link';
@@ -84,6 +85,11 @@ const Ecommerce = () => {
     ];
     return (
         <Layout>
+            <Head>
+                <title>E-Commerce — AI Training Data for Product Vision & Search | DataClap</title>
+                <meta name="description" content="High-quality training data for e-commerce: product attribute tagging, SKU recognition, UGC filtering, and content moderation. Scalable annotation pipelines to improve search, personalization and conversion." />
+                <meta name="keywords" content="ecommerce AI, product image annotation, SKU recognition dataset, product attribute tagging, UGC filtering" />
+            </Head>
            
                 {/* Hero Section */}
                 <section className="section banner-5">

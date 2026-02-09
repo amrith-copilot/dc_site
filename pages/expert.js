@@ -88,15 +88,7 @@ const Expert = () => {
                         <div className="row mt-30">
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="Human-in-the-Loop" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
                                         <h6 className="color-brand-1 mb-15">Human-in-the-Loop (HITL)</h6>
                                         <p className="font-md color-grey-500 mb-15">Insert expert human review directly into model workflows to validate, correct, and approve AI outputs before deployment or downstream actions. Ideal for production AI, decision systems, and continuous learning loops.</p>
                                     </div>
@@ -105,15 +97,7 @@ const Expert = () => {
 
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="RLHF" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
                                         <h6 className="color-brand-1 mb-15">Reinforcement Learning from Human Feedback (RLHF)</h6>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
                                             <li>Preference ranking</li>
@@ -129,15 +113,7 @@ const Expert = () => {
 
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="Red Teaming" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
                                         <h6 className="color-brand-1 mb-15">Red Teaming & AI Safety Evaluation</h6>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
                                             <li>Adversarial prompt generation</li>
@@ -153,15 +129,7 @@ const Expert = () => {
 
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="Model Evaluation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
                                         <h6 className="color-brand-1 mb-15">Model Evaluation & Benchmarking</h6>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
                                             <li>Ground truth creation</li>
@@ -176,15 +144,7 @@ const Expert = () => {
 
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="assets/imgs/page/homepage6/human1.png" 
-                                            alt="Expert Labeling" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
                                         <h6 className="color-brand-1 mb-15">Expert Labeling for Training Data</h6>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
                                             <li>Complex text, image, video, audio, and multimodal datasets</li>
@@ -218,7 +178,6 @@ const Expert = () => {
                                             <img src="/assets/imgs/page/homepage1/cross.png" alt="STEM & Technical" />
                                         </div>
                                         <h4 className="left-card-title">STEM & Technical</h4>
-                                        <div className="left-card-divider"></div>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                                 <li>Computer science</li>
@@ -242,7 +201,6 @@ const Expert = () => {
                                             <img src="/assets/imgs/page/homepage1/cross.png" alt="Medical & Life Sciences" />
                                         </div>
                                         <h4 className="left-card-title">Medical & Life Sciences</h4>
-                                        <div className="left-card-divider"></div>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                                 <li>Physicians & clinicians</li>
@@ -265,7 +223,6 @@ const Expert = () => {
                                             <img src="/assets/imgs/page/homepage1/cross.png" alt="Legal & Regulatory" />
                                         </div>
                                         <h4 className="left-card-title">Legal & Regulatory</h4>
-                                        <div className="left-card-divider"></div>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                                 <li>Contract analysis</li>
@@ -287,7 +244,6 @@ const Expert = () => {
                                             <img src="/assets/imgs/page/homepage1/cross.png" alt="Linguistic & Language Expertise" />
                                         </div>
                                         <h4 className="left-card-title">Linguistic & Language Expertise</h4>
-                                        <div className="left-card-divider"></div>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                                 <li>Native-level annotators</li>
@@ -309,7 +265,6 @@ const Expert = () => {
                                             <img src="/assets/imgs/page/homepage1/cross.png" alt="Business & Industry Specialists" />
                                         </div>
                                         <h4 className="left-card-title">Business & Industry Specialists</h4>
-                                        <div className="left-card-divider"></div>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
                                                 <li>Finance & fintech</li>

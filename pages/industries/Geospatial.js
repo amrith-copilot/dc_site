@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
+import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 import Link from 'next/link';
@@ -92,6 +93,11 @@ const Geospatial = () => {
     ];
     return (
         <Layout>
+            <Head>
+                <title>Geospatial — Satellite & Aerial Training Data | DataClap</title>
+                <meta name="description" content="Geospatial training data and annotations for satellite and aerial imagery: land use, parcel mapping, elevation extraction, cloud masking, and crop classification. Scalable datasets for remote sensing ML workflows." />
+                <meta name="keywords" content="geospatial AI, satellite imagery annotation, parcel mapping dataset, land use classification, remote sensing training data" />
+            </Head>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -137,7 +143,7 @@ const Geospatial = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Land-Use Classification.png"
+                                            src="/assets/image/Land-Use Classification.webp"
                                             alt="Land-Use Classification" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -156,7 +162,7 @@ const Geospatial = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="\assets\images\industry\Road & Pathway Extraction.png"
+                                            src="/assets/image/Road & Pathway Extraction.webp"
                                             alt="Road & Pathway Extraction" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -175,7 +181,7 @@ const Geospatial = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/geo_dis.png" 
+                                            src="/assets/image/geo_dis.webp"
                                             alt="Vegetation Health Mapping" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -194,7 +200,7 @@ const Geospatial = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="\assets\images\industry\Water Body Detection.png"
+                                            src="/assets/image/Water Body Detection.webp"
                                             alt="Water Body Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -213,7 +219,7 @@ const Geospatial = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/geo_impact.png" 
+                                            src="/assets/image/geo_impact.webp" 
                                             alt="Building Footprint Segmentation" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -232,7 +238,7 @@ const Geospatial = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Topographic Change Detection.png" 
+                                            src="/assets/image/Topographic Change Detection.webp" 
                                             alt="Topographic Change Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -251,7 +257,7 @@ const Geospatial = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/Disaster Impact Mapping.png" 
+                                            src="/assets/image/Disaster Impact Mapping.webp" 
                                             alt="Disaster Impact Mapping" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

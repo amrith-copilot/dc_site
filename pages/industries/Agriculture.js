@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
+import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 import Link from 'next/link';
@@ -20,6 +21,11 @@ const Agriculture = () => {
     ];
     return (
         <Layout>
+            <Head>
+                <title>Agriculture — AI Training Data for Crop Intelligence | DataClap</title>
+                <meta name="description" content="High-accuracy annotation and training datasets for agriculture: crop health, weed detection, yield prediction, field mapping, and precision farming AI. Partner with DataClap for scalable, production-ready labeled data." />
+                <meta name="keywords" content="agriculture AI, crop health annotation, weed detection dataset, yield prediction data, field mapping, precision farming annotation" />
+            </Head>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -62,7 +68,7 @@ const Agriculture = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/agri_health.png" 
+                                            src="/assets/image/agri_health.webp" 
                                             alt="Crop Health Classification" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -81,7 +87,7 @@ const Agriculture = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/agri_weed.png" 
+                                            src="/assets/image/agri_weed.webp" 
                                             alt="Weed Identification" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -100,7 +106,7 @@ const Agriculture = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/agri_yield.png" 
+                                            src="/assets/image/agri_yield.webp" 
                                             alt="Fruit & Yield Counting" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -119,7 +125,7 @@ const Agriculture = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/agri_growth.png" 
+                                            src="/assets/image/agri_growth.webp" 
                                             alt="Plant Growth Stage Detection" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -138,7 +144,7 @@ const Agriculture = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/agri_id_soy_beans.png" 
+                                            src="/assets/image/agri_id_soy_beans.webp" 
                                             alt="Field Boundary & Plot Mapping" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -157,7 +163,7 @@ const Agriculture = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/agri_pest.png" 
+                                            src="/assets/image/agri_pest.webp" 
                                             alt="Autonomous Tractor Vision" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}

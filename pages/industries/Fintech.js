@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
+import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 import Link from 'next/link';
@@ -84,6 +85,11 @@ const Fintech = () => {
     ];
     return (
         <Layout>
+            <Head>
+                <title>Fintech — AI Training Data for Financial Services | DataClap</title>
+                <meta name="description" content="Specialized training data for fintech AI: fraud detection, risk scoring, transaction classification, and document parsing. Scalable annotation for financial ML systems with privacy-aware workflows." />
+                <meta name="keywords" content="fintech AI, fraud detection dataset, risk scoring annotation, transaction classification, financial document parsing" />
+            </Head>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -148,7 +154,7 @@ const Fintech = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/fin_asset.png" 
+                                            src="/assets/image/Check & Receipt Recognition.webp" 
                                             alt="Check & Receipt Recognition" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -167,7 +173,7 @@ const Fintech = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/fin_damage.png" 
+                                            src="/assets/image/ID Verification Annotation.webp" 
                                             alt="ID Verification Annotation" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
@@ -186,7 +192,7 @@ const Fintech = () => {
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
                                         <img 
-                                            src="/assets/images/industry/fin_fraud.jpg" 
+                                            src="/assets/images/industry/fin_fraud.webp" 
                                             alt="Transaction Behavior Patterns" 
                                             className="image-showcase-photo-dynamic"
                                             style={{width: '100%', height: '100%', objectFit: 'cover'}}
