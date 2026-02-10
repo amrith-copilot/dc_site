@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import Link from 'next/link';
 
 const Sports = () => {
     const [isOpen, setOpen] = useState(false)
+
+    const cardItems = [{"title": "Player Tracking", "description": "Track athlete positions and movements across frames.", "img": "/assets/image/Player Tracking.webp", "alt": "Player Tracking"}, {"title": "Ball Tracking", "description": "Detect and track ball position, trajectory and speed.", "img": "/assets/image/Ball Tracking.webp", "alt": "Ball Tracking"}, {"title": "Event Detection (Goals, Fouls, Plays)", "description": "Identify key game events and moments automatically.", "img": "/assets/image/Event Detection.webp", "alt": "Event Detection"}, {"title": "Pose & Motion Analysis", "description": "Annotate body poses and biomechanical movements.", "img": "/assets/image/Pose & Motion Analysis.webp", "alt": "Pose & Motion Analysis"}, {"title": "Broadcast Camera Recognition", "description": "Classify camera angles and broadcast shot types.", "img": "/assets/images/industry/spo_track.webp", "alt": "Broadcast Camera Recognition"}, {"title": "Sponsorship Logo Detection", "description": "Detect sponsor logos and brand placements.", "img": "/assets/imgs/page/homepage6/human3.png", "alt": "Sponsorship Logo Detection"}, {"title": "Field Boundary Mapping", "description": "Map playing field lines, zones and boundaries.", "img": "/assets/imgs/page/homepage6/human1.png", "alt": "Field Boundary Mapping"}, {"title": "Crowd Behavior Detection", "description": "Analyze crowd reactions and fan behavior patterns.", "img": "/assets/imgs/page/homepage6/human2.png", "alt": "Crowd Behavior Detection"}];
 
     // Slider data for Sports & Media annotation capabilities
     const annotationItems = [
@@ -88,16 +91,16 @@ const Sports = () => {
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
+                        <div className="mt-25 mb-100">
                         <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
                                 
                                         
                                
-                                <h3 className="color-black-text mt-10 mb-30">AI Training Data for Sports Analytics, Broadcast Automation and Athlete Performance</h3>
+                                <h3 className="color-black-text mt-10 mb-20">AI Training Data for Sports Analytics, Broadcast Automation and Athlete Performance</h3>
                                 </div>
                  
-                                <div className="col-lg-6 mt-40 mb-20">
+                                <div className="col-lg-6 mt-10 mb-20">
                                 <p className="font-lg color-black-text">
                                      Accurate annotations for player tracking, event detection, motion analytics and content automation — used worldwide.
 
@@ -125,157 +128,7 @@ const Sports = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Player Tracking.webp" 
-                                            alt="Player Tracking" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Player Tracking</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Track athlete positions and movements across frames.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Ball Tracking.webp" 
-                                            alt="Ball Tracking" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Ball Tracking</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect and track ball position, trajectory and speed.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Event Detection.webp" 
-                                            alt="Event Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Event Detection (Goals, Fouls, Plays)</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Identify key game events and moments automatically.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Pose & Motion Analysis.webp" 
-                                            alt="Pose & Motion Analysis" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Pose & Motion Analysis</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Annotate body poses and biomechanical movements.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/spo_track.webp" 
-                                            alt="Broadcast Camera Recognition" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Broadcast Camera Recognition</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Classify camera angles and broadcast shot types.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Sponsorship Logo Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Sponsorship Logo Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect sponsor logos and brand placements.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Field Boundary Mapping" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Field Boundary Mapping</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Map playing field lines, zones and boundaries.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Crowd Behavior Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Crowd Behavior Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Analyze crowd reactions and fan behavior patterns.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardSlider cards={cardItems} pageId="sports" />
                         </div>
                     </div>
                 </section>
@@ -343,17 +196,12 @@ const Sports = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Power Your Sports AI?</h2>
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Power Your Sports AI?</h2>
                                         <p className="font-md color-grey-500">
                                             Partner with us to get high-quality training data for sports analytics, broadcast automation and athlete performance.</p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>

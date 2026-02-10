@@ -168,6 +168,10 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
             <style jsx>{`
                 .swiper-annotation {
                     padding: 0 !important;
+                    cursor: grab;
+                }
+                .swiper-annotation.swiper-grabbing {
+                    cursor: grabbing;
                 }
                 .swiper-annotation .swiper-slide {
                     display: flex;
@@ -220,14 +224,20 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     padding-left: 16px;
                 }
                 .annotation-card-list li::before {
-                    content: '▸';
+                    content: '';
                     position: absolute;
                     left: 0;
-                    color: #0017e3;
-                    font-weight: bold;
+                    top: 8px;
+                    width: 4px;
+                    height: 4px;
+                    background-color: #000;
+                    border-radius: 50%;
+                    display: block;
                 }
                 .annotation-card:hover {
-                    background: var(--color-primary-100);
+                    background: white !important;
+                    box-shadow: 0 8px 24px rgba(11, 95, 255, 0.15) !important;
+                    transform: translateY(-4px);
                     color: white;
                 }
                 .annotation-nav {

@@ -158,6 +158,14 @@ const Offer4 = () => {
             <style jsx>{`
                 .swiper-annotation {
                     padding: 0 !important;
+                    cursor: grab !important;
+                    user-select: none;
+                }
+                .swiper-annotation:active {
+                    cursor: grabbing !important;
+                }
+                .swiper-annotation.swiper-grabbing {
+                    cursor: grabbing !important;
                 }
                 .swiper-annotation .swiper-slide {
                     display: flex;
@@ -210,20 +218,26 @@ const Offer4 = () => {
                     padding-left: 16px;
                 }
                 .annotation-card-list li::before {
-                    content: '▸';
+                    content: '•';
                     position: absolute;
                     left: 0;
-                    color: #0017e3;
-                    font-weight: bold;
+                    color: #000000;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 1;
+                    display: flex;
+                    align-items: center;
                 }
                 .annotation-card:hover {
-                    background: var(--color-primary-100);
+                    background: white !important;
+                    box-shadow: 0 8px 24px rgba(11, 95, 255, 0.15) !important;
+                    transform: translateY(-4px);
                 }
-                /* Keep text readable on hover: force title, paragraphs and list items to black */
+                /* Keep text readable on hover: force title, paragraphs and list items to current color */
                 .annotation-card:hover .annotation-card-content ul,
                 .annotation-card:hover .annotation-card-content li,
                 .annotation-card:hover .annotation-card-content p {
-                    color: #000 !important;
+                    color: #666 !important;
                 }
                 .annotation-nav {
                     display: flex;

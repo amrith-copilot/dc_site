@@ -228,6 +228,35 @@ const Tab2 = () => {
                     </div>
                 </div>
             </div>
+
+            <style jsx>{`
+                .list-buttons { padding: 0; margin: 0 0 20px 0; display:flex; gap:8px; flex-wrap:wrap; list-style:none; }
+                .list-buttons li { list-style: none; margin: 0; }
+                .list-buttons li a {
+                    display: inline-block;
+                    padding: 10px 18px;
+                    background: #0b5fff !important; /* primary blue */
+                    color: #fff !important;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: all 150ms ease;
+                    cursor: pointer;
+                    border: none !important;
+                }
+                .list-buttons li a:hover { 
+                    transform: translateY(-1px); 
+                    box-shadow: 0 6px 18px rgba(11,95,255,0.2) !important;
+                }
+                .list-buttons li a.active {
+                    background: #ffffff !important; /* white when active */
+                    color: #0b5fff !important; /* blue text when active */
+                    box-shadow: 0 0 0 2px rgba(11,95,255,0.2) inset !important;
+                }
+                @media (max-width: 576px) {
+                    .list-buttons li a { padding: 8px 12px; font-size: 14px; }
+                }
+            `}</style>
         </>
     );
 };

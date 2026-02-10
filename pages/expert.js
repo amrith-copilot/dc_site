@@ -21,7 +21,7 @@ const Expert = () => {
                                         Precision annotation powered by domain experts for training, validating, and aligning advanced AI systems. Built for LLMs, computer vision, multimodal models, and mission-critical AI workflows where accuracy, context, and judgment matter.
                                     </p>
                                        <div className="box-button text-end mt-10">
-                                           <a className="btn btn-brand-1 hover-up font-md" href="https://experts.dataclap.digital/signin" target="_blank" rel="noopener noreferrer">Explore</a>
+                                           <a className="btn btn-brand-1 hover-up font-md" href="https://experts.dataclap.digital/signin" target="_blank" rel="noopener noreferrer">Sign in</a>
                                        </div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
-                                        <h6 className="color-brand-1 mb-15">Human-in-the-Loop (HITL)</h6>
+                                        <h6 className="color-black-text mb-15">Human-in-the-Loop (HITL)</h6>
                                         <p className="font-md color-grey-500 mb-15">Insert expert human review directly into model workflows to validate, correct, and approve AI outputs before deployment or downstream actions. Ideal for production AI, decision systems, and continuous learning loops.</p>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
-                                        <h6 className="color-brand-1 mb-15">Reinforcement Learning from Human Feedback (RLHF)</h6>
+                                        <h6 className="color-black-text mb-15">Reinforcement Learning from Human Feedback (RLHF)</h6>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
                                             <li>Preference ranking</li>
                                             <li>Comparative evaluations</li>
@@ -114,7 +114,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
-                                        <h6 className="color-brand-1 mb-15">Red Teaming & AI Safety Evaluation</h6>
+                                        <h6 className="color-black-text mb-15">Red Teaming & AI Safety Evaluation</h6>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
                                             <li>Adversarial prompt generation</li>
                                             <li>Jailbreak detection</li>
@@ -130,7 +130,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
-                                        <h6 className="color-brand-1 mb-15">Model Evaluation & Benchmarking</h6>
+                                        <h6 className="color-black-text mb-15">Model Evaluation & Benchmarking</h6>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
                                             <li>Ground truth creation</li>
                                             <li>Accuracy and relevance scoring</li>
@@ -145,7 +145,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column', padding: '28px'}}>
-                                        <h6 className="color-brand-1 mb-15">Expert Labeling for Training Data</h6>
+                                        <h6 className="color-black-text mb-15">Expert Labeling for Training Data</h6>
                                         <ul className="custom-bullets font-md color-grey-500 mb-15 pl-15" style={{marginLeft: '15px'}}>
                                             <li>Complex text, image, video, audio, and multimodal datasets</li>
                                             <li>Edge-case and long-tail scenario annotation</li>
@@ -174,9 +174,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross.png" alt="STEM & Technical" />
-                                        </div>
+                                       
                                         <h4 className="left-card-title">STEM & Technical</h4>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
@@ -197,9 +195,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross.png" alt="Medical & Life Sciences" />
-                                        </div>
+                                        
                                         <h4 className="left-card-title">Medical & Life Sciences</h4>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
@@ -219,9 +215,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross.png" alt="Legal & Regulatory" />
-                                        </div>
+                                      
                                         <h4 className="left-card-title">Legal & Regulatory</h4>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
@@ -240,9 +234,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross.png" alt="Linguistic & Language Expertise" />
-                                        </div>
+                                        
                                         <h4 className="left-card-title">Linguistic & Language Expertise</h4>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
@@ -261,9 +253,7 @@ const Expert = () => {
                             <div className="col-lg-4 col-md-6 mb-30">
                                 <div className="left-aligned-card-wrapper">
                                     <div className="left-aligned-card-container">
-                                        <div className="left-card-icon">
-                                            <img src="/assets/imgs/page/homepage1/cross.png" alt="Business & Industry Specialists" />
-                                        </div>
+                                        
                                         <h4 className="left-card-title">Business & Industry Specialists</h4>
                                         <div className="left-card-description">
                                             <ol className="custom-bullets font-md color-black-text mb-15 pl-15" style={{marginBottom: '15px', marginLeft: '15px'}}>
@@ -441,19 +431,13 @@ const Expert = () => {
                 <section className="section mt-30 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4 mb-40">
-                                    <div className="image-container">
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="Expert Annotation Services" style={{width: '100%', height: 'auto', display: 'block'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
+                            <div className="row align-items-center justify-content-center">
+                                <div className="col-lg-8 text-center">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Get Started</h2>
+                                        <h2 className="color-black-text mt-15 mb-20">Get Started</h2>
                                         <p className="font-md color-grey-500">Whether you need expert RLHF, red teaming, HITL validation, or high-precision training data, we build annotation workflows tailored to your model, domain, and risk profile.</p>
-                                        <div className="box-button text-start mt-65"> 
+                                        <div className="box-button text-center mt-65"> 
                                             <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact us</Link>
-                                            {/* <a className="btn btn-outline hover-up font-md ms-3" href="https://experts.dataclap.digital/signin" target="_blank" rel="noopener noreferrer">Explore</a> */}
                                         </div>
                                     </div>
                                 </div>

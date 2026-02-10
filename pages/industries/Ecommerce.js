@@ -3,10 +3,13 @@ import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import Link from 'next/link';
 
 const Ecommerce = () => {
     const [isOpen, setOpen] = useState(false)
+
+    const cardItems = [{"title": "Product Attribute Tagging", "description": "Tag colors, sizes, materials and product features.", "img": "/assets/imgs/page/homepage6/human1.png", "alt": "Product Attribute Tagging"}, {"title": "SKU Variant Recognition", "description": "Identify product variants and SKU relationships.", "img": "/assets/imgs/page/homepage6/human2.png", "alt": "SKU Variant Recognition"}, {"title": "Lifestyle Image Analysis", "description": "Analyze lifestyle imagery and scene context.", "img": "/assets/imgs/page/homepage6/human3.png", "alt": "Lifestyle Image Analysis"}, {"title": "Model & Apparel Detection", "description": "Detect clothing items and fashion elements on models.", "img": "/assets/imgs/page/homepage6/human1.png", "alt": "Model & Apparel Detection"}, {"title": "Beauty & Cosmetic Swatch Mapping", "description": "Map color swatches and cosmetic product variations.", "img": "/assets/imgs/page/homepage6/human2.png", "alt": "Beauty & Cosmetic Swatch Mapping"}, {"title": "UGC Quality Filtering", "description": "Filter and classify user-generated content quality.", "img": "/assets/imgs/page/homepage6/human3.png", "alt": "UGC Quality Filtering"}, {"title": "Content Moderation", "description": "Moderate product listings and user content.", "img": "/assets/imgs/page/homepage6/human1.png", "alt": "Content Moderation"}, {"title": "Brand & Logo Detection", "description": "Detect and identify brand logos in product images.", "img": "/assets/imgs/page/homepage6/human2.png", "alt": "Brand & Logo Detection"}];
 
     // Slider data for E-Commerce annotation capabilities
     const annotationItems = [
@@ -94,16 +97,16 @@ const Ecommerce = () => {
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
+                        <div className="mt-25 mb-100">
                         <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
                                 
                                         
                                
-                                <h3 className="color-black-text mt-10 mb-30">AI Training Data for E-Commerce Search, Product Vision and Content Intelligence</h3>
+                                <h3 className="color-black-text mt-10 mb-20">AI Training Data for E-Commerce Search, Product Vision and Content Intelligence</h3>
                                 </div>
                  
-                                <div className="col-lg-6 mt-40 mb-20">
+                                <div className="col-lg-6 mt-10 mb-20">
                                 <p className="font-lg color-black-text">
                                      Accurate annotations for SKUs, attributes, content categorization and recommendations for global marketplaces.
 
@@ -131,157 +134,7 @@ const Ecommerce = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Product Attribute Tagging" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Product Attribute Tagging</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Tag colors, sizes, materials and product features.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="SKU Variant Recognition" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">SKU Variant Recognition</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Identify product variants and SKU relationships.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Lifestyle Image Analysis" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Lifestyle Image Analysis</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Analyze lifestyle imagery and scene context.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Model & Apparel Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Model & Apparel Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect clothing items and fashion elements on models.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Beauty & Cosmetic Swatch Mapping" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Beauty & Cosmetic Swatch Mapping</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Map color swatches and cosmetic product variations.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="UGC Quality Filtering" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">UGC Quality Filtering</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Filter and classify user-generated content quality.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Content Moderation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Content Moderation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Moderate product listings and user content.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Brand & Logo Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Brand & Logo Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect and identify brand logos in product images.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardSlider cards={cardItems} pageId="ecommerce" />
                         </div>
                     </div>
                 </section>
@@ -349,18 +202,13 @@ const Ecommerce = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Power Your E-Commerce AI?</h2>
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Power Your E-Commerce AI?</h2>
                                         <p className="font-md color-grey-500">
                                             Partner with us to get high-quality training data for product search, content intelligence and personalization.
                                         </p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>

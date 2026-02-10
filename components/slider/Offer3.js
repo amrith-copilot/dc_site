@@ -118,6 +118,10 @@ const Offer3 = () => {
             <style jsx>{`
                 .swiper-annotation {
                     padding: 0 !important;
+                    cursor: grab;
+                }
+                .swiper-annotation.swiper-grabbing {
+                    cursor: grabbing;
                 }
                 .swiper-annotation .swiper-slide {
                     display: flex;
@@ -155,8 +159,21 @@ const Offer3 = () => {
                     font-size: 14px;
                     line-height: 1.5;
                 }
+                /* Prevent blue highlight but keep hover effect */
+                .annotation-card,
+                .annotation-card:active,
+                .annotation-card.active,
+                .annotation-card:focus,
+                .swiper-slide-active .annotation-card {
+                    background: white !important;
+                    box-shadow: none !important;
+                }
+                
+                /* Add hover effect for user feedback */
                 .annotation-card:hover {
-                    background: var(--color-primary-100);
+                    background: white !important;
+                    box-shadow: 0 8px 24px rgba(11, 95, 255, 0.15) !important;
+                    transform: translateY(-4px);
                 }
                 .annotation-nav {
                     display: flex;

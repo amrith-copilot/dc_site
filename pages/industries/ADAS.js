@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 import Link from 'next/link';
 
@@ -43,6 +44,19 @@ const ADAS = () => {
             description: "Surface rare events like unusual objects, unpredictable behavior or sensor irregularities."
         }
     ];
+
+    // Card data for the card grid slider
+    const cardItems = [
+        { title: "Lane & Road Marking Detection", description: "Identify lanes, edges and markings for lane-keeping and path planning.", img: "/assets/image/Lane & Road Marking Detection.webp", alt: "Lane Detection" },
+        { title: "Vehicle / Pedestrian / Cyclist Detection", description: "Detect and classify all dynamic road users for collision avoidance.", img: "/assets/image/Vehicle  Pedestrian  Cyclist Detection.webp", alt: "Vehicle Detection" },
+        { title: "Traffic Light & Sign Recognition", description: "Label signal states and road signs for rule-based driving.", img: "/assets/images/industry/Traffic Light & Sign Recognition.png", alt: "Traffic Signs" },
+        { title: "Free-Space Segmentation", description: "Map drivable areas in complex environments.", img: "/assets/images/industry/Object Tracking.png", alt: "Free Space" },
+        { title: "LiDAR 3D Object Annotation", description: "Cluster and classify objects in point-clouds for long-range perception.", img: "/assets/images/industry/LiDAR 3D Object Annotation.jpeg", alt: "LiDAR Annotation" },
+        { title: "Object Tracking", description: "Track motion trajectories across video frames.", img: "/assets/images/industry/Object Tracking.png", alt: "Object Tracking" },
+        { title: "Road Surface Hazard Detection", description: "Spot potholes, debris and surface anomalies.", img: "/assets/images/industry/Road Surface Hazard Detection.png", alt: "Hazard Detection" },
+        { title: "Sensor Fusion Alignment", description: "Synchronize LiDAR–camera–radar for unified perception.", img: "/assets/images/industry/ADAS_cs.png", alt: "Sensor Fusion" },
+    ];
+
     return (
         <Layout>
             <Head>
@@ -50,20 +64,20 @@ const ADAS = () => {
                 <meta name="description" content="High-precision training data for ADAS and autonomous vehicles — lane detection, object tracking, LiDAR annotation, sensor fusion. Partner with DataClap for production-ready datasets and annotation workflows." />
                 <meta name="keywords" content="ADAS training data, autonomous vehicles, lane detection annotation, LiDAR annotation, object tracking, sensor fusion" />
             </Head>
-           
+
+            <div className="adas-page">
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
+                        <div className="mt-25 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">                               
-                                <h3 className="color-black-text mt-10 mb-30">High-Precision Training Data for Smart <br />and Autonomous Mobility</h3>
+                                <div className="col-lg-6 mt-10 mb-10">                            
+                                <h3 className="color-black-text">High-Precision Training Data for 
+                                     <br />Smartand Autonomous Mobility</h3>
                                 </div>
-                 
-                                <div className="col-lg-6 mt-40 mb-20">
+                                <div className="col-lg-6 mt-20 mb-10">
                                 <p className="font-lg color-black-text">
                                      Transform raw sensor feeds into reliable perception.Lane detection, Obstacle detection, Object tracking and more
-
                                  </p>
                                 </div>
                              
@@ -87,159 +101,7 @@ const ADAS = () => {
                                 Visually strong annotation capabilities for autonomous driving systems
                             </p>
                         </div>
-                        <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-20">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Lane & Road Marking Detection.webp" 
-                                            alt="Lane Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Lane & Road Marking Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Identify lanes, edges and markings for lane-keeping and path planning.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-20">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="\assets\image\Vehicle  Pedestrian  Cyclist Detection.webp"
-                                            alt="Vehicle Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Vehicle / Pedestrian / Cyclist Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect and classify all dynamic road users for collision avoidance.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-20">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/Traffic Light & Sign Recognition.png" 
-                                            alt="Traffic Signs" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Traffic Light & Sign Recognition</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Label signal states and road signs for rule-based driving.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-20">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/Object Tracking.png" 
-                                            alt="Free Space" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Free-Space Segmentation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Map drivable areas in complex environments.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-20">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/LiDAR 3D Object Annotation.jpeg" 
-                                            alt="LiDAR Annotation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">LiDAR 3D Object Annotation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Cluster and classify objects in point-clouds for long-range perception.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-20">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/Object Tracking.png" 
-                                            alt="Object Tracking" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Object Tracking</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Track motion trajectories across video frames.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-20">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/Road Surface Hazard Detection.png" 
-                                            alt="Hazard Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Road Surface Hazard Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Spot potholes, debris and surface anomalies.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-20">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/ADAS_cs.png" 
-                                            alt="Sensor Fusion" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Sensor Fusion Alignment</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Synchronize LiDAR–camera–radar for unified perception.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <CardSlider cards={cardItems} pageId="adas" />
                     </div>
                 </section>
                 <section className="section mt-10 pb-0 bg-core-value">
@@ -307,18 +169,13 @@ const ADAS = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Accelerate Your ADAS Development?</h2>
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Accelerate Your ADAS Development?</h2>
                                         <p className="font-md color-grey-500">
                                             Partner with us to get high-quality training data that powers safer, smarter autonomous systems.
                                         </p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>
@@ -327,6 +184,90 @@ const ADAS = () => {
                         </div>
                     </div>
                 </section>
+
+                <style jsx>{`
+                    /* remove banner pseudo-element on all viewports to eliminate white boxed area */
+                    .adas-page .banner-5::before,
+                    .adas-page .banner-5::after {
+                        background: transparent !important;
+                        height: 0 !important;
+                        display: none !important;
+                    }
+
+                @media (max-width: 768px) {
+                    /* remove ALL borders, outlines, shadows globally */
+                    .adas-page * {
+                        border: none !important;
+                        outline: none !important;
+                        box-shadow: none !important;
+                    }
+
+                    /* general container/layout fixes */
+                    .adas-page .container,
+                    .adas-page .box-cover-border,
+                    .adas-page .box-video-banner,
+                    .adas-page .box-radius-16,
+                    .adas-page .box-container {
+                        background: transparent !important;
+                        border-radius: 0 !important;
+                        box-shadow: none !important;
+                        border: none !important;
+                        max-width: 100% !important;
+                        padding-left: 12px !important;
+                        padding-right: 12px !important;
+                        overflow: visible !important;
+                    }
+
+                    .adas-page .section {
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                        background: transparent !important;
+                        border: none !important;
+                        overflow: visible !important;
+                    }
+
+                    /* remove banner pseudo background that creates white blocks on mobile */
+                    .adas-page .banner-5::before,
+                    .adas-page .banner-5::after {
+                        background: transparent !important;
+                        height: 0 !important;
+                        display: none !important;
+                    }
+
+                    /* remove card backgrounds that may overlap hero */
+                    .adas-page .box-info-video-banner .card-small,
+                    .adas-page .image-banner-5,
+                    .adas-page .image-banner-5 img,
+                    .adas-page .box-info-video-banner,
+                    .adas-page .card-plan,
+                    .adas-page .card-testimonial-list {
+                        background: transparent !important;
+                        border-radius: 0 !important;
+                        box-shadow: none !important;
+                        border: none !important;
+                    }
+
+                    /* make sure full-width visuals use available space */
+                    .adas-page .video-slider-wrapper,
+                    .adas-page .video-slider-container {
+                        max-width: 100% !important;
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                        border: none !important;
+                        outline: none !important;
+                    }
+                    /* restore CTA box styling to match desktop */
+                    .adas-page .box-cover-border {
+                        background-color: var(--color-primary-100) !important;
+                        border: 1px solid var(--color-gray-100) !important;
+                        border-radius: 8px !important;
+                        padding: 25px 10px !important;
+                        overflow: hidden !important;
+                    }
+                }
+                `}</style>
+
+            </div>
         </Layout>
     );
 };

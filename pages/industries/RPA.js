@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import Link from 'next/link';
 
 const RPA = () => {
     const [isOpen, setOpen] = useState(false)
+
+    const cardItems = [{"title": "UI Element Detection", "description": "Detect buttons, fields, menus and interactive elements.", "img": "/assets/image/UI Element Detection.webp", "alt": "UI Element Detection"}, {"title": "Document Field Extraction", "description": "Extract and label fields from forms and documents.", "img": "/assets/image/Document Field Extraction.webp", "alt": "Document Field Extraction"}, {"title": "Workflow Path Tracking", "description": "Map process flows and decision pathways.", "img": "/assets/image/Workflow Path Tracking.webp", "alt": "Workflow Path Tracking"}, {"title": "Cursor & Keystroke Annotation", "description": "Label mouse movements and keyboard interactions.", "img": "/assets/image/Cursor & Keystroke Annotation.webp", "alt": "Cursor & Keystroke Annotation"}, {"title": "Screen State Recognition", "description": "Classify application states and screen contexts.", "img": "/assets/image/Screen State Recognition.webp", "alt": "Screen State Recognition"}, {"title": "Application Navigation Mapping", "description": "Map navigation paths across applications.", "img": "/assets/imgs/page/homepage6/human3.png", "alt": "Application Navigation Mapping"}, {"title": "Form Completion Events", "description": "Tag form fill sequences and submission actions.", "img": "/assets/imgs/page/homepage6/human1.png", "alt": "Form Completion Events"}, {"title": "Process Error Detection", "description": "Identify error states and process failures.", "img": "/assets/imgs/page/homepage6/human2.png", "alt": "Process Error Detection"}];
 
     // Slider data for RPA annotation capabilities
     const annotationItems = [
@@ -88,16 +91,16 @@ const RPA = () => {
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
+                        <div className="mt-25 mb-100">
                         <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
                                 
                                         
                                
-                                <h3 className="color-black-text mt-10 mb-30">AI Training Data for Robotic Process Automation and Intelligent Workflows</h3>
+                                <h3 className="color-black-text mt-10 mb-20">AI Training Data for Robotic Process Automation and Intelligent Workflows</h3>
                                 </div>
                  
-                                <div className="col-lg-6 mt-40 mb-20">
+                                <div className="col-lg-6 mt-10 mb-20">
                                 <p className="font-lg color-black-text">
                                      Annotations for document parsing, UI interactions, workflows and process agents — built for enterprises worldwide.
 
@@ -125,157 +128,7 @@ const RPA = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/UI Element Detection.webp"
-                                            alt="UI Element Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">UI Element Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect buttons, fields, menus and interactive elements.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Document Field Extraction.webp" 
-                                            alt="Document Field Extraction" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Document Field Extraction</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Extract and label fields from forms and documents.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Workflow Path Tracking.webp" 
-                                            alt="Workflow Path Tracking" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Workflow Path Tracking</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Map process flows and decision pathways.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Cursor & Keystroke Annotation.webp" 
-                                            alt="Cursor & Keystroke Annotation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Cursor & Keystroke Annotation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Label mouse movements and keyboard interactions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Screen State Recognition.webp" 
-                                            alt="Screen State Recognition" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Screen State Recognition</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Classify application states and screen contexts.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Application Navigation Mapping" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Application Navigation Mapping</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Map navigation paths across applications.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Form Completion Events" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Form Completion Events</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Tag form fill sequences and submission actions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Process Error Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Process Error Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Identify error states and process failures.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardSlider cards={cardItems} pageId="rpa" />
                         </div>
                     </div>
                 </section>
@@ -343,17 +196,12 @@ const RPA = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Power Your RPA Systems?</h2>
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Power Your RPA Systems?</h2>
                                         <p className="font-md color-grey-500">
                                             Partner with us to get high-quality training data for process automation, document parsing and intelligent workflows.</p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>

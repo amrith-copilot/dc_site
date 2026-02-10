@@ -10,18 +10,18 @@ const Tab = () => {
     return (
         <div className="row mt-45 justify-content-center">
             <div style={{maxWidth: '1100px', width: '100%'}}>
-                <ul className="list-buttons list-buttons-circle nav nav-tabs" role="tablist" style={{display: 'flex', justifyContent: 'center', gap: '28px', listStyle: 'none', padding: 0, margin: '40px 0 20px', flexWrap: 'nowrap', overflowX: 'auto'}}>
+                <ul className="list-buttons list-buttons-circle nav nav-tabs" role="tablist" style={{display: 'flex', justifyContent: 'center', gap: '18px', listStyle: 'none', padding: '0 12px', margin: '24px 0 20px', flexWrap: 'wrap', overflowX: 'visible'}}>
                 <li onClick={() => handleOnClick(1)} style={{display: 'inline-block'}}>
-                    <a className={activeIndex === 1 ? "active" : ""} style={{display: 'inline-block', background: '#ffffff', padding: '12px 26px', borderRadius: '50px', color: '#0C3A7F', fontWeight: 600, fontSize: '15px', cursor: 'pointer', border: 'none', transition: 'all 0.3s'}}>RAG & Search Quality</a>
+                    <a className={activeIndex === 1 ? "active" : ""}>RAG & Search Quality</a>
                 </li>
                 <li onClick={() => handleOnClick(2)} style={{display: 'inline-block'}}>
-                    <a className={activeIndex === 2 ? "active" : ""} style={{display: 'inline-block', background: '#ffffff', padding: '12px 26px', borderRadius: '50px', color: '#0C3A7F', fontWeight: 600, fontSize: '15px', cursor: 'pointer', border: 'none', transition: 'all 0.3s'}}>Model & Prompt Performance</a>
+                    <a className={activeIndex === 2 ? "active" : ""}>Model & Prompt Performance</a>
                 </li>
                 <li onClick={() => handleOnClick(3)} style={{display: 'inline-block'}}>
-                    <a className={activeIndex === 3 ? "active" : ""} style={{display: 'inline-block', background: '#ffffff', padding: '12px 26px', borderRadius: '50px', color: '#0C3A7F', fontWeight: 600, fontSize: '15px', cursor: 'pointer', border: 'none', transition: 'all 0.3s'}}>Agentic Robustness</a>
+                    <a className={activeIndex === 3 ? "active" : ""}>Agentic Robustness</a>
                 </li>
                 <li onClick={() => handleOnClick(4)} style={{display: 'inline-block'}}>
-                    <a className={activeIndex === 4 ? "active" : ""} style={{display: 'inline-block', background: '#ffffff', padding: '12px 26px', borderRadius: '50px', color: '#0C3A7F', fontWeight: 600, fontSize: '15px', cursor: 'pointer', border: 'none', transition: 'all 0.3s'}}>Safety, Alignment & Trust</a>
+                    <a className={activeIndex === 4 ? "active" : ""}>Safety, Alignment & Trust</a>
                 </li>
             </ul>
                 <div className="tab-content" style={{margin: '10px 0 0'}}>
@@ -160,6 +160,35 @@ const Tab = () => {
 
             </div>
             </div>
+
+            <style jsx>{`
+                .list-buttons { padding: 0; margin: 0 0 20px 0; display:flex; gap:8px; flex-wrap:wrap; list-style:none; }
+                .list-buttons li { list-style: none; margin: 0; }
+                .list-buttons li a {
+                    display: inline-block;
+                    padding: 10px 18px;
+                    background: #0b5fff !important; /* primary blue */
+                    color: #fff !important;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: all 150ms ease;
+                    cursor: pointer;
+                    border: none !important;
+                }
+                .list-buttons li a:hover { 
+                    transform: translateY(-1px); 
+                    box-shadow: 0 6px 18px rgba(11,95,255,0.2) !important;
+                }
+                .list-buttons li a.active {
+                    background: #ffffff !important; /* white when active */
+                    color: #0b5fff !important; /* blue text when active */
+                    box-shadow: 0 0 0 2px rgba(11,95,255,0.2) inset !important;
+                }
+                @media (max-width: 576px) {
+                    .list-buttons li a { padding: 8px 12px; font-size: 14px; }
+                }
+            `}</style>
         </div>
     );
 };

@@ -192,7 +192,7 @@ const Partners = () => {
                         <div className="row">
                             <div className="col-lg-4 mb-40 core-service-col">
                                 <div className="core-service-card">
-                                    <h3 className="color-brand-1 mt-20 mb-25">Core Annotation Services</h3>
+                                    <h3 className="color-black-text mt-20 mb-25">Core Annotation Services</h3>
                                     <p className="font-md color-grey-500 mb-35">
                                         Comprehensive data labeling and annotation across all major modalities to power your AI models.
                                     </p>
@@ -218,7 +218,7 @@ const Partners = () => {
                             </div>
                             <div className="col-lg-4 mb-40 core-service-col">
                                 <div className="core-service-card">
-                                    <h3 className="color-brand-1 mt-20 mb-25">Human-in-the-Loop (HITL)</h3>
+                                    <h3 className="color-black-text mt-20 mb-25">Human-in-the-Loop (HITL)</h3>
                                     <p className="font-md color-grey-500 mb-35">
                                         Expert-level human feedback and validation to align, evaluate, and continuously improve AI systems.
                                     </p>
@@ -244,7 +244,7 @@ const Partners = () => {
                             </div>
                             <div className="col-lg-4 mb-40 core-service-col">
                                 <div className="core-service-card">
-                                    <h3 className="color-brand-1 mt-20 mb-25">Cloud & Platform Engineering</h3>
+                                    <h3 className="color-black-text mt-20 mb-25">Cloud & Platform Engineering</h3>
                                     <p className="font-md color-grey-500 mb-35">
                                         Build and manage reliable, cost-efficient cloud foundations for high-growth teams.
                                     </p>
@@ -273,7 +273,7 @@ const Partners = () => {
                         <div className="row">
                             <div className="col-lg-4 mb-40 core-service-col">
                                 <div className="core-service-card">
-                                    <h3 className="color-brand-1 mt-20 mb-25">Core DevOps Services</h3>
+                                    <h3 className="color-black-text mt-20 mb-25">Core DevOps Services</h3>
                                     <p className="font-md color-grey-500 mb-35">
                                         End-to-end infrastructure automation and operational support for scalable software delivery.
                                     </p>
@@ -305,7 +305,7 @@ const Partners = () => {
                             </div>
                             <div className="col-lg-4 mb-40 core-service-col">
                                 <div className="core-service-card">
-                                    <h3 className="color-brand-1 mt-20 mb-25">Core MLOps Services</h3>
+                                    <h3 className="color-black-text mt-20 mb-25">Core MLOps Services</h3>
                                     <p className="font-md color-grey-500 mb-35">
                                         Full lifecycle support for training, deploying, and maintaining production-grade ML systems.
                                     </p>
@@ -337,7 +337,7 @@ const Partners = () => {
                             </div>
                             <div className="col-lg-4 mb-40 core-service-col">
                                 <div className="core-service-card">
-                                    <h3 className="color-brand-1 mt-20 mb-25">Reliability & Security Engineering</h3>
+                                    <h3 className="color-black-text mt-20 mb-25">Reliability & Security Engineering</h3>
                                     <p className="font-md color-grey-500 mb-25">
                                         Increase uptime, resilience, and compliance for critical infrastructure and ML systems.
                                     </p>
@@ -399,7 +399,7 @@ const Partners = () => {
                             font-size: 22px !important;
                             font-weight: 700 !important;
                             line-height: 1.3 !important;
-                            color: #2563eb !important;
+                            color: #000000 !important;
                             margin-top: 0 !important;
                             margin-bottom: 16px !important;
                             position: relative;
@@ -411,10 +411,11 @@ const Partners = () => {
                             position: absolute;
                             bottom: 0;
                             left: 0;
-                            width: 40px;
+                            width: 0px;
                             height: 3px;
                             background: linear-gradient(90deg, #2563eb, #3b82f6);
                             border-radius: 2px;
+                            display: none;
                         }
 
                         .core-service-card p {
@@ -613,7 +614,7 @@ const Partners = () => {
                                 </div>
                                 <div className="col-lg-8">
                                     <div className="box-info-video">
-                                        <h2 className="color-brand-1 mt-15 mb-20">Ready to Partner With Us?</h2>
+                                        <h2 className="color-black-text mt-15 mb-20">Ready to Partner With Us?</h2>
                                         <p className="font-md color-grey-500">Join our partner ecosystem and unlock new revenue opportunities while delivering world-class AI solutions to your clients. Let's discuss how we can collaborate to accelerate your growth.</p>
                                         <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                                     </div>

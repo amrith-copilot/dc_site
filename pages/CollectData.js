@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
@@ -7,6 +7,11 @@ import Offer3 from '../components/slider/Offer3';
 
 const ColectData = () => {
     const [isOpen, setOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     return (
         <>
             <Layout>
@@ -298,6 +303,26 @@ const ColectData = () => {
                         .partner-benefits .ticked {
                             display: none;
                         }
+
+                        /* CTA fullwidth styles (moved here to avoid nested styled-jsx) */
+                        .cta-fullwidth{ 
+                            width: 100%;
+                            background: #e9efff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 80px 0;
+                            box-sizing: border-box;
+                            min-height: 60vh;
+                        }
+                        .cta-fullwidth-inner{ max-width: 1120px; }
+                        .cta-fullwidth h2{ font-size: 44px; margin-bottom: 12px; }
+                        .cta-fullwidth p{ color: #4b5563; margin: 0 auto 18px; max-width: 820px; }
+                        @media (max-width: 768px){
+                            .cta-fullwidth{ padding: 48px 16px; min-height: 40vh; }
+                            .cta-fullwidth h2{ font-size: 26px; }
+                            .cta-fullwidth p{ font-size: 15px; }
+                        }
                     `}</style>
                 <section className="section banner-5">
                     <div className="container">
@@ -581,29 +606,24 @@ const ColectData = () => {
                         </div>
                     </div>
                 </section> */}
-
-                <section className="section mt-0 pt-30 pb-30">
+                
+                    <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
-                        <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
+                        <div className="box-cover-border" >
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 text-center">
                                     <div className="box-info-video">
-                                        <h2 className="color-black-text mt-15 mb-20">Structured data, ready for training</h2>
-                                        <p className="font-md color-grey-500">Talk to us about building reliable data collection pipelines 
-                                            <br className="d-none d-lg-block" />
-                                             that convert raw inputs into model-ready datasets.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
+                                        <h2 >Structured data, ready for training</h2>
+                                        <p className="font-md color-grey-500" >
+                                            Talk to us about building reliable data collection pipelines<br />that convert raw inputs into model-ready datasets.</p>
+                                        <div className="box-button text-center mt-25"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Get a demo</Link></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                
                 </div>
             </Layout>
         </>

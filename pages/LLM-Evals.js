@@ -46,14 +46,18 @@ const LLMEvals = () => {
                 </section>
               <section className="section mt-100 mb-50 bg-brand-1 pt-100 pb-100 bg-explore">
                     <div className="container">
-                        <div className="text-center">
-                            <h2 className="font-xl-bold color-white text-uppercase">Custom Evaluation Frameworks</h2>
-                            <h6 className="color-brand-2 mb-60 mt-15">
-                                Every AI architecture demands a unique validation strategy. We move beyond generic benchmarks to stress-test your specific models and RAG pipelines against your real-world data and custom performance requirements.
-                            </h6>
+                        <div className="d-flex justify-content-center">
+                            <div className="text-center text-lg-start" style={{maxWidth: 920}}>
+                                <h1 className="font-xl-bold color-white text-uppercase text-center">Custom Evaluation Frameworks</h1>
+                                <h6 className="color-brand-2 mb-10 mt-15">
+                                    Every AI architecture demands a unique validation strategy. We move beyond generic benchmarks to stress-test your specific models and RAG pipelines against your real-world data and custom performance requirements.
+                                </h6>
+                            </div>
                         </div>
-                        <div className="mt-30 mb-60">
-                            <Tab1/>
+                        <div className=" mb-60 d-flex justify-content-center">
+                            <div style={{width: '100%', maxWidth: 1100}}>
+                                <Tab1/>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -416,8 +420,21 @@ function SliderBlock(){
         }
     ];
 
-    const visible = 4;
     const origLen = cards.length;
+    const getVisible = () => {
+        if (typeof window === 'undefined') return 4;
+        const w = window.innerWidth;
+        if (w < 576) return 1;
+        if (w < 992) return 2;
+        return 4;
+    };
+    const [visible, setVisible] = useState(getVisible());
+    useEffect(() => {
+        const onResize = () => setVisible(getVisible());
+        window.addEventListener('resize', onResize);
+        return () => window.removeEventListener('resize', onResize);
+    }, []);
+
     // Prepend last `visible` and append first `visible` for seamless bidirectional loop
     const slides = [...cards.slice(-visible), ...cards, ...cards.slice(0, visible)];
 
@@ -429,13 +446,21 @@ function SliderBlock(){
     indexRef.current = index;
 
     const [selectedCard, setSelectedCard] = useState(null);
+    const [hoveredCard, setHoveredCard] = useState(null);
 
     useEffect(()=>{
         const id = setInterval(()=>{
             setIndex(prev => prev + 1);
         }, 3000);
         return ()=> clearInterval(id);
-    }, []);
+    }, [visible]);
+
+    // when visible changes (responsive), reset index to the new start
+    useEffect(()=>{
+        setWithTransition(false);
+        setIndex(visible);
+        requestAnimationFrame(()=> setTimeout(()=> setWithTransition(true), 20));
+    }, [visible]);
 
     function handleTransitionEnd(){
         // moved past the end clones
@@ -459,39 +484,52 @@ function SliderBlock(){
         setIndex(prev => prev + 1);
     }
 
+    const cardPercent = 100 / visible;
     const trackStyle = {
         display: 'flex',
         transition: withTransition ? 'transform 480ms ease' : 'none',
-        transform: `translateX(-${(index * 25)}%)`
+        transform: `translateX(-${(index * cardPercent)}%)`
     };
 
     const cardStyle = {
-        flex: '0 0 25%',
+        flex: `0 0 ${cardPercent}%`,
         boxSizing: 'border-box',
         padding: '0 12px',
         display: 'flex'
     };
 
-    const innerCardStyle = {padding: '28px', border: '1px solid #e6eef6', borderRadius: '14px', background: '#fff', minHeight: '220px', boxShadow: '0 4px 12px rgba(16,24,40,0.06)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', height: '100%'};
+    const innerCardStyle = {padding: '28px', border: '1px solid #e6eef6', borderRadius: '14px', background: '#fff', minHeight: '220px', boxShadow: '0 4px 12px rgba(16,24,40,0.06)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', height: '100%', transition: 'all 0.3s ease', cursor: 'pointer'};
 
+    // Add dragging state for cursor
+    const [isDragging, setIsDragging] = useState(false);
     return (
         <div style={{position: 'relative'}}>
-            <div style={{overflow: 'hidden'}}>
+            <div
+                style={{overflow: 'hidden', cursor: isDragging ? 'grabbing' : 'grab'}}
+                onMouseDown={() => setIsDragging(true)}
+                onMouseUp={() => setIsDragging(false)}
+                onMouseLeave={() => setIsDragging(false)}
+            >
                 <div style={trackStyle} onTransitionEnd={handleTransitionEnd}>
                     {slides.map((c, i) => {
                         const origIdx = ((i - startIndex) + origLen) % origLen;
                         const isSelected = selectedCard === origIdx;
-                        const mergedInner = Object.assign({}, innerCardStyle, isSelected ? {background: '#1e3bf8', color: '#fff', borderColor: 'transparent'} : {});
+                        const isHovered = hoveredCard === origIdx;
+                        const mergedInner = Object.assign({}, innerCardStyle, isHovered ? {boxShadow: '0 8px 24px rgba(11, 95, 255, 0.15)', transform: 'translateY(-4px)'} : {});
                         return (
                         <div key={i} style={cardStyle}>
-                            <div style={mergedInner} onClick={()=> setSelectedCard(origIdx)}>
-                                <h4 style={{color: isSelected ? '#fff' : '#1e3bf8', fontWeight: 700, marginBottom: '10px'}}>{c.title}</h4>
-                                <ul className="font-sm" style={{paddingLeft: '0', marginTop: '6px', color: isSelected ? '#fff' : '#6b7280', listStyle: 'none'}}>
+                            <div style={mergedInner} 
+                                onClick={()=> setSelectedCard(origIdx)}
+                                onMouseEnter={() => setHoveredCard(origIdx)}
+                                onMouseLeave={() => setHoveredCard(null)}
+                            >
+                                <h4 style={{color: '#1e3bf8', fontWeight: 700, marginBottom: '10px'}}>{c.title}</h4>
+                                <ul className="font-sm" style={{paddingLeft: '0', marginTop: '6px', color: '#6b7280', listStyle: 'none'}}>
                                     {c.bullets.map((b, j)=> (
                                         <li key={j} style={{marginBottom: '10px', display: 'flex', gap: '10px', alignItems: 'flex-start'}}>
-                                            <span style={{width: '6px', height: '6px', borderRadius: '50%', background: isSelected ? '#fff' : '#6b7280', marginTop: '7px', flexShrink: 0}} />
+                                            <span style={{width: '5px', height: '5px', borderRadius: '50%', background: '#000000', marginTop: '8px', flexShrink: 0}} />
                                             <div>
-                                                <strong style={{color: isSelected ? '#fff' : 'inherit'}}>{b.strong}</strong>{b.text}
+                                                <strong style={{color: 'inherit'}}>{b.strong}</strong>{b.text}
                                             </div>
                                         </li>
                                     ))}

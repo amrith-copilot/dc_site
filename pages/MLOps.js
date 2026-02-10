@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
@@ -6,6 +6,10 @@ import Offer5 from '../components/slider/Offer5';
 
 const MLOps = () => {
     const [isOpen, setOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     // Workflows used by the "Custom Workflows" partner-benefits block
     const workflows = [
         {
@@ -69,7 +73,6 @@ const MLOps = () => {
                                     <div className="row align-items-center">
                                         <div className="col-lg-6">
                                             <div className="box-cover-pd box-cover-pd-3 pt-30 pb-30 mb-30">
-                                                <span className="title-line line-48">MLOps Solutions</span>
                                                 <h2 className="color-brand-1 mt-10 mb-15">
                                                     What is MLOps?
                                                 </h2>

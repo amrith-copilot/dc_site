@@ -112,8 +112,8 @@ const HeroSlider = () => {
                             <div className="container-fluid">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Get Started</button>
+                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '25px' }}>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
                                         </div>
                                     </div>
                                 </div>
@@ -166,8 +166,8 @@ const HeroSlider = () => {
                             <div className="container-fluid">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Build Now</button>
+                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '45px' }}>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
                                         </div>
                                     </div>
                                 </div>
@@ -220,8 +220,8 @@ const HeroSlider = () => {
                             <div className="container-fluid">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Build Now</button>
+                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
                                         </div>
                                     </div>
                                 </div>
@@ -274,8 +274,8 @@ const HeroSlider = () => {
                             <div className="container-fluid">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Try Flex</button>
+                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
                                         </div>
                                     </div>
                                 </div>
@@ -326,8 +326,8 @@ const HeroSlider = () => {
                             <div className="container-fluid">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Get Started</button>
+                                        <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
                                         </div>
                                     </div>
                                 </div>
@@ -345,7 +345,7 @@ const HeroSlider = () => {
                 <style jsx>{`
                     :global(.hero-pagination) {
                         position: relative;
-                        margin-top: 0px;
+                        margin-top: -50px;
                         display: flex !important;
                         justify-content: center !important;
                         gap: 8px !important;
@@ -358,7 +358,7 @@ const HeroSlider = () => {
                         :global(.hero-pagination) {
                             position: absolute !important;
                             left: 50% !important;
-                            bottom: 120px !important;
+                            bottom: 180px !important;
                             transform: translateX(-50%) !important;
                             margin: 0 !important;
                             z-index: 120 !important;

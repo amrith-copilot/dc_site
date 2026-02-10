@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import VideoSlider from '../components/slider/VideoSlider';
-import Offer5 from '../components/slider/Offer5';
-import Offer3 from '../components/slider/Offer3';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const Offer5 = dynamic(() => import('../components/slider/Offer5'), { ssr: false });
+const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 
 const RedTeaming = () => {
     const [isOpen, setOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     return (
         <>
             <Layout>
@@ -129,8 +135,8 @@ const RedTeaming = () => {
                 <section className="section mt-30 pb-50 bg-core-value">
                     <div className="container">
                         <div className="row box-list-core-value">
-                            <div className="col-lg-4 mb-70">
-                                <div className="box-core-value">
+                            <div className="col-lg-4 mb-70 d-flex justify-content-center justify-content-lg-start">
+                                <div className="box-core-value text-lg-start">
                                     <h3 className="color-brand-1 mb-15">Why Companies Choose Us</h3>
                                     <p className="font-md color-grey-400">Hear from our users who have saved thousands on their Startup and SaaS solution spend.</p>
                                 </div>

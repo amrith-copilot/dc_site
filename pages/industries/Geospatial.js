@@ -3,6 +3,7 @@ import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import Link from 'next/link';
 
 const Geospatial = () => {
@@ -91,6 +92,57 @@ const Geospatial = () => {
             ]
         }
     ];
+
+    const cardItems = [
+        { 
+            title: "Land-Use Classification", 
+            description: "Classify agricultural, urban, forest and industrial land types.",
+            img: "/assets/image/Land-Use Classification.webp",
+            alt: "Land-Use Classification"
+        },
+        { 
+            title: "Road & Pathway Extraction", 
+            description: "Extract road networks, trails and transportation infrastructure.",
+            img: "/assets/image/Road & Pathway Extraction.webp",
+            alt: "Road & Pathway Extraction"
+        },
+        { 
+            title: "Vegetation Health Mapping", 
+            description: "Annotate vegetation indices and forest health patterns.",
+            img: "/assets/image/geo_dis.webp",
+            alt: "Vegetation Health Mapping"
+        },
+        { 
+            title: "Water Body Detection", 
+            description: "Identify rivers, lakes, wetlands and flood zones.",
+            img: "/assets/image/Water Body Detection.webp",
+            alt: "Water Body Detection"
+        },
+        { 
+            title: "Building Footprint Segmentation", 
+            description: "Segment building outlines and structural footprints.",
+            img: "/assets/image/geo_impact.webp",
+            alt: "Building Footprint Segmentation"
+        },
+        { 
+            title: "Topographic Change Detection", 
+            description: "Track terrain changes over time from multi-temporal imagery.",
+            img: "/assets/image/Topographic Change Detection.webp",
+            alt: "Topographic Change Detection"
+        },
+        { 
+            title: "Disaster Impact Mapping", 
+            description: "Map flood, fire and earthquake damage zones.",
+            img: "/assets/image/Disaster Impact Mapping.webp",
+            alt: "Disaster Impact Mapping"
+        },
+        { 
+            title: "Mining & Quarry Monitoring", 
+            description: "Track extraction sites and mining activity changes.",
+            img: "/assets/images/industry/geo-mining.jpg",
+            alt: "Mining & Quarry Monitoring"
+        }
+    ];
     return (
         <Layout>
             <Head>
@@ -102,22 +154,15 @@ const Geospatial = () => {
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
+                        <div className="mt-25 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                
-                                        
-                               
-                                <h3 className="color-black-text mt-10 mb-30">Training Data for Geospatial Intelligence, Remote Sensing and Terrain Analytics</h3>
+                                <div className="col-lg-6 mb-10">
+                                <h3 className="color-black-text mt-10 mb-20">Training Data for Geospatial Intelligence, Remote Sensing and Terrain Analytics</h3>
                                 </div>
-                 
-                                <div className="col-lg-6 mt-40 mb-20">
+                                <div className="col-lg-6 mt-10 mb-20">
                                 <p className="font-lg color-black-text">
-                                     High-accuracy annotations for satellite, drone and aerial imagery — supporting infrastructure planning, environmental monitoring and land-use analysis globally.
-
-                                 </p>
+                                     High-accuracy annotations for satellite, drone and aerial imagery — supporting infrastructure planning, environmental monitoring and land-use analysis globally. </p>
                                 </div>
-                             
                         </div>
                             
                             {/* VideoSlider replaces the original video banner */}
@@ -139,157 +184,7 @@ const Geospatial = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Land-Use Classification.webp"
-                                            alt="Land-Use Classification" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Land-Use Classification</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Classify agricultural, urban, forest and industrial land types.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Road & Pathway Extraction.webp"
-                                            alt="Road & Pathway Extraction" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Road & Pathway Extraction</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Extract road networks, trails and transportation infrastructure.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/geo_dis.webp"
-                                            alt="Vegetation Health Mapping" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Vegetation Health Mapping</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Annotate vegetation indices and forest health patterns.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Water Body Detection.webp"
-                                            alt="Water Body Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Water Body Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Identify rivers, lakes, wetlands and flood zones.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/geo_impact.webp" 
-                                            alt="Building Footprint Segmentation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Building Footprint Segmentation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Segment building outlines and structural footprints.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Topographic Change Detection.webp" 
-                                            alt="Topographic Change Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Topographic Change Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Track terrain changes over time from multi-temporal imagery.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Disaster Impact Mapping.webp" 
-                                            alt="Disaster Impact Mapping" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Disaster Impact Mapping</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Map flood, fire and earthquake damage zones.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/geo-mining.jpg" 
-                                            alt="Mining & Quarry Monitoring" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Mining & Quarry Monitoring</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Track extraction sites and mining activity changes.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardSlider cards={cardItems} pageId="geospatial" />
                         </div>
                     </div>
                 </section>
@@ -357,18 +252,13 @@ const Geospatial = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Power Your Geospatial?</h2>
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Power Your Geospatial?</h2>
                                         <p className="font-md color-grey-500">
                                             Partner with us to get high-quality training data for satellite, drone and aerial imagery analysis.
                                         </p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>

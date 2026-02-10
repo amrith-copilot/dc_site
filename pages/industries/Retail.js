@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import Link from 'next/link';
 
 const Retail = () => {
@@ -18,23 +19,76 @@ const Retail = () => {
         { title: "Environmental Condition Annotation", description: "Note lighting, reflection, occlusion and camera-visibility variations." },
         { title: "Rare Event & Edge-Case Identification", description: "Tag unusual shopper actions, equipment failures or irregular store events." }
     ];
+
+    const cardItems = [
+        { 
+            title: "Product Recognition on Shelves", 
+            description: "Annotate SKU placement, facings and shelf positions for planogram compliance.",
+            img: "/assets/image/Product Recognition on Shelves.webp",
+            alt: "Product Recognition on Shelves"
+        },
+        { 
+            title: "Out-of-Stock & Empty Shelf Detection", 
+            description: "Identify missing products and low-stock zones for real-time replenishment.",
+            img: "/assets/image/Out-of-Stock & Empty Shelf Detection.webp",
+            alt: "Out-of-Stock & Empty Shelf Detection"
+        },
+        { 
+            title: "Shopper Path Tracking", 
+            description: "Map customer movement across aisles to optimize layout and flow.",
+            img: "/assets/image/Shopper Path Tracking.webp",
+            alt: "Shopper Path Tracking"
+        },
+        { 
+            title: "Queue Monitoring", 
+            description: "Detect line length and waiting times for smarter staffing.",
+            img: "/assets/image/Queue Monitoring.webp",
+            alt: "Queue Monitoring"
+        },
+        { 
+            title: "Price Tag & Label Identification", 
+            description: "Recognize price labels, discount tags and mismatched signage.",
+            img: "/assets/image/Price Tag & Label Identification.webp",
+            alt: "Price Tag & Label Identification"
+        },
+        { 
+            title: "Self-Checkout Vision Support", 
+            description: "Annotate items, barcodes and bagging area events for automated checkout systems.",
+            img: "/assets/image/Self-Checkout Vision Support.webp",
+            alt: "Self-Checkout Vision Support"
+        },
+        { 
+            title: "In-Store Theft & Anomaly Detection", 
+            description: "Label suspicious actions and asset-removal patterns.",
+            img: "/assets/image/In-Store Theft & Anomaly Detection.webp",
+            alt: "In-Store Theft & Anomaly Detection"
+        },
+        { 
+            title: "Store Heatmap Generation", 
+            description: "Segment high-engagement and low-traffic areas for merchandising decisions.",
+            img: "/assets/image/Store Heatmap Generation.webp",
+            alt: "Store Heatmap Generation"
+        }
+    ];
     return (
         <Layout>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
-                            <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
+                        <div className="mt-25 mb-100">
+                            <div className="row">
+                                <div className="col-12 mb-20">
                                     <h3 className="color-black-text mt-10">
-                                        AI Training Data for Retail Vision, Store Analytics and Physical Commerce Automation  </h3>
+                                        AI Training Data for Retail Vision,Store Analytics<br/> and Physical Commerce Automation
+                                    </h3>
                                 </div>
-     
+                            </div>
+                            <div className="row align-items-start">
                                 <div className="col-lg-6 mt-0 mb-20">
                                     <p className="font-lg color-black-text">
-                                    High-accuracy annotations for shopper behavior, shelf intelligence, product detection and in-store automation <br />optimized for retailers across North America, Europe and APAC.                                  
-                                      </p> 
+                                    High-accuracy annotations for shopper behavior, shelf intelligence, product detection and in-store automation <br />optimized for retailers across North America, Europe and APAC.
+                                    </p>
                                 </div>
                             </div>
                             
@@ -57,157 +111,7 @@ const Retail = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Product Recognition on Shelves.webp" 
-                                            alt="Product Recognition on Shelves" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Product Recognition on Shelves</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Annotate SKU placement, facings and shelf positions for planogram compliance.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Out-of-Stock & Empty Shelf Detection.webp" 
-                                            alt="Out-of-Stock & Empty Shelf Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Out-of-Stock & Empty Shelf Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Identify missing products and low-stock zones for real-time replenishment.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Shopper Path Tracking.webp" 
-                                            alt="Shopper Path Tracking" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Shopper Path Tracking</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Map customer movement across aisles to optimize layout and flow.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Queue Monitoring.webp" 
-                                            alt="Queue Monitoring" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Queue Monitoring</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect line length and waiting times for smarter staffing.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Price Tag & Label Identification.webp" 
-                                            alt="Price Tag & Label Identification" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Price Tag & Label Identification</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Recognize price labels, discount tags and mismatched signage.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Self-Checkout Vision Support.webp" 
-                                            alt="Self-Checkout Vision Support" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Self-Checkout Vision Support</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Annotate items, barcodes and bagging area events for automated checkout systems.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/In-Store Theft & Anomaly Detection.webp" 
-                                            alt="In-Store Theft & Anomaly Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">In-Store Theft & Anomaly Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Label suspicious actions and asset-removal patterns.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Store Heatmap Generation.webp" 
-                                            alt="Store Heatmap Generation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Store Heatmap Generation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Segment high-engagement and low-traffic areas for merchandising decisions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardSlider cards={cardItems} pageId="retail" />
                         </div>
                     </div>
                 </section>
@@ -270,21 +174,17 @@ const Retail = () => {
                 />
                 <div style={{marginTop: '-70px'}}></div>
                 {/* CTA Section */}
+                <div className="retail-cta">
                    <section className="section mt-20 pt-30 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Revolutionize Your Retail AI?</h2>
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Revolutionize Your Retail AI?</h2>
                                         <p className="font-md color-grey-500">
                                         Partner with us to get high-quality training data for smarter retail analytics and customer insights.</p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>
@@ -293,6 +193,36 @@ const Retail = () => {
                         </div>
                     </div>
                 </section>
+
+                <style jsx>{`
+                @media (max-width: 992px) {
+                    .retail-cta .box-cover-border {
+                        background: var(--color-primary-700) !important;
+                        color: #ffffff !important;
+                        border: none !important;
+                        box-shadow: none !important;
+                        border-radius: 12px !important;
+                        padding: 18px !important;
+                    }
+                    .retail-cta .box-info-video h2,
+                    .retail-cta .box-info-video p {
+                        color: #ffffff !important;
+                    }
+                    .retail-cta .image-container img {
+                        filter: brightness(0.7) saturate(0.9) !important;
+                        border-radius: 12px !important;
+                        box-shadow: none !important;
+                    }
+                    /* invert button on mobile so it remains visible */
+                    .retail-cta .btn-brand-1 {
+                        background: #ffffff !important;
+                        color: var(--color-primary-700) !important;
+                        border: none !important;
+                    }
+                }
+                `}</style>
+
+                </div>
 
              
         </Layout>

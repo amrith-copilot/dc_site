@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
 import Offer5 from '../components/slider/Offer5';
 import Offer3 from '../components/slider/Offer3';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+SwiperCore.use([Autoplay, Navigation]);
 
 const HITL = () => {
     const [isOpen, setOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+    const swiperRef = useRef(null);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     return (
         <Layout>
             <>
@@ -99,6 +112,174 @@ const HITL = () => {
                             </div>
                         </div>
 
+                        {/* Mobile Slider View */}
+                        {mounted && (
+                        <div className="mobile-card-slider d-lg-none">
+                            <div style={{position: 'relative', marginBottom: '20px'}}>
+                                <Swiper
+                                    ref={swiperRef}
+                                    modules={[Autoplay, Navigation]}
+                                    slidesPerView={1}
+                                    loop={true}
+                                    spaceBetween={20}
+                                    autoplay={{
+                                        delay: 3000,
+                                        disableOnInteraction: false,
+                                        pauseOnMouseEnter: false,
+                                        waitForTransition: true,
+                                        reverseDirection: false
+                                    }}
+                                    navigation={{
+                                        nextEl: '.swiper-button-next-cards',
+                                        prevEl: '.swiper-button-prev-cards',
+                                    }}
+                                    className="swiper-container"
+                                >
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human1.png" 
+                                                    alt="Image & Video" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="color-brand-1 mb-15">Image & Video</h4>
+                                                <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
+                                                    <li>Bounding boxes, polygons, instance & semantic segmentation</li>
+                                                    <li>Keypoints/pose, temporal tracking, activity/event tagging</li>
+                                                    <li>Video frame sequencing, interpolation checks, per-frame QA</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human2.png" 
+                                                    alt="3D & Sensor" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="color-brand-1 mb-15">3D & Sensor</h4>
+                                                <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
+                                                    <li>LiDAR point cloud labeling, voxelization</li>
+                                                    <li>Sensor fusion alignment</li>
+                                                    <li>3D bounding boxes and segmentation</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human3.png" 
+                                                    alt="Text & NLP" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="color-brand-1 mb-15">Text & NLP</h4>
+                                                <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
+                                                    <li>Named entity recognition (NER), intent labeling</li>
+                                                    <li>Pairwise comparison, summarization verification</li>
+                                                    <li>Prompt-response evaluation, content classification, hallucination checks</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human1.png" 
+                                                    alt="Audio" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="color-brand-1 mb-15">Audio</h4>
+                                                <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
+                                                    <li>Transcription, speaker diarization</li>
+                                                    <li>Keyword spotting, sound event labeling</li>
+                                                    <li>Multi-language support</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human2.png" 
+                                                    alt="Documents" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="color-brand-1 mb-15">Documents</h4>
+                                                <ul className="custom-bullets font-lg color-grey-500 mb-15 pl-15">
+                                                    <li>OCR correction, form field extraction</li>
+                                                    <li>Table parsing, semantic restructuring</li>
+                                                    <li>Redaction and data masking</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                </Swiper>
+
+                                {/* Slider Controls */}
+                                <div className="slider-controls-mobile" style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '20px', alignItems: 'center'}}>
+                                    <button 
+                                        className="swiper-button-prev-cards slider-btn"
+                                        style={{
+                                            background: '#f0f0f0',
+                                            border: 'none',
+                                            width: '40px',
+                                            height: '40px',
+                                            borderRadius: '50%',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '18px'
+                                        }}
+                                    >
+                                        ←
+                                    </button>
+                                    
+                                    <button 
+                                        className="swiper-button-next-cards slider-btn"
+                                        style={{
+                                            background: '#f0f0f0',
+                                            border: 'none',
+                                            width: '40px',
+                                            height: '40px',
+                                            borderRadius: '50%',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '18px'
+                                        }}
+                                    >
+                                        →
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        )}
+
+                        {/* Desktop Grid View */}
+                        <div className="desktop-card-grid d-none d-lg-block">
                         <div className="row mt-45">
                             <div className="col-lg-4">
                                 <div className="image-showcase-card-dynamic">
@@ -201,6 +382,7 @@ const HITL = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </section>
@@ -385,24 +567,88 @@ const HITL = () => {
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 text-center">
                                     <div className="box-info-video">
                                         <h2>Deploy HITL safeguards in minutes.</h2>
                                         <p className="font-md color-grey-500">Get high-quality labeled data at scale with our Human-in-the-Loop annotation services. From pilot projects to production-scale pipelines, we deliver accurate annotations with guaranteed SLAs.</p>
                                         <p className="font-md color-grey-500 mt-20">Our multi-pass workflow ensures every annotation meets your quality standards, so you can train better models faster.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact</Link></div>
+                                        <div className="box-button text-center mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact</Link></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
+            <style jsx>{`
+                @media (min-width: 992px) {
+                    .mobile-card-slider {
+                        display: none !important;
+                    }
+                }
+
+                @media (max-width: 991px) {
+                    .desktop-card-grid {
+                        display: none !important;
+                    }
+                }
+
+                    .mobile-card-slider {
+                        padding: 20px 15px 20px 0;
+                    }
+
+                    .mobile-card-slider .swiper-container {
+                        margin: 0 -15px;
+                        padding: 0 15px;
+                    }
+
+                    .mobile-card-slider .image-showcase-top-dynamic {
+                        width: 100% !important;
+                        height: 480px !important;
+                        overflow: hidden;
+                    }
+
+                    .mobile-card-slider .image-showcase-content-dynamic {
+                        padding: 14px 12px !important;
+                        max-height: 280px;
+                        overflow-y: auto;
+                    }
+
+                    .mobile-card-slider .image-showcase-content-dynamic h4,
+                    .mobile-card-slider .image-showcase-content-dynamic h6 {
+                        font-size: 14px !important;
+                        margin-bottom: 10px !important;
+                    }
+
+                    .mobile-card-slider .custom-bullets {
+                        font-size: 12px !important;
+                        margin: 0 0 0 1rem !important;
+                        line-height: 1.4;
+                    }
+
+                    .mobile-card-slider .custom-bullets li {
+                        margin-bottom: 3px !important;
+                    }
+
+                    .slider-controls-mobile {
+                        padding: 20px 0;
+                    }
+
+                    .slider-btn {
+                        transition: all 0.3s ease !important;
+                    }
+
+                    .slider-btn:hover {
+                        background: #265bda !important;
+                        color: #fff !important;
+                    }
+
+                    .swiper-button-prev-cards:after,
+                    .swiper-button-next-cards:after {
+                        display: none;
+                    }
+            `}</style>
             </>
         </Layout>
     );

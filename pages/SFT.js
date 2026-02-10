@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
@@ -9,6 +9,11 @@ import Offer3 from '../components/slider/Offer3';
 
 const SFT = () => {
     const [isOpen, setOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     return (
         <>
             <Layout>
@@ -84,8 +89,8 @@ const SFT = () => {
                 <section className="section">
                     <div className="container">
                         <div className="box-business-rd">
-                            <div className="row align-items-center">
-                                <div className="col-lg-5">
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 col-md-10 mx-auto">
                                     <h3 className="color-brand-1 mt-10 mb-15">What is SFT?</h3>
                                     <p className="font-lg color-grey-400">Supervised Fine-Tuning is the process of training an existing AI model on curated, labeled examples relevant to your business. <br /><br />By showing the model how it should behave in your context, SFT makes it more accurate, safer, and aligned with your goals.</p>
                                     <div className="mt-20">
@@ -104,25 +109,7 @@ const SFT = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <div className="mt-50 ml-20 text-start"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Talk to Our Experts</Link></div>
-                                </div>
-                                <div className="col-lg-7">
-                                    <div className="box-business-service">
-                                        <div className="box-number-1 shape-2">
-                                            <div className="cardNumber bg-white">
-                                                <h3>25k+</h3>
-                                                <p className="font-xs color-brand-1">Happy Clients</p>
-                                            </div>
-                                        </div>
-                                        <div className="box-image-1 shape-3"> <img src="assets/imgs/page/service/img1.png" alt="iori" /></div>
-                                        <div className="box-image-2 shape-2"> <img src="assets/imgs/page/service/img2.png" alt="iori" /></div>
-                                        <div className="box-image-3 shape-1"> <img src="assets/imgs/page/service/img4.png" alt="iori" />
-                                            <div className="cardNumber bg-white">
-                                                <h2 className="color-brand-1">469k</h2>
-                                                <p className="font-lg color-brand-1">Social followers</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div className="mt-50 text-center"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Talk to Our Experts</Link></div>
                                 </div>
                             </div>
                         </div>
@@ -193,28 +180,31 @@ const SFT = () => {
                             <div className="col-lg-4 mb-70">
                                 <div className="box-core-value pl-0">
                                     <h1 className="color-brand-1 mb-15">Why SFT Matters</h1>
-                                    <p className="font-md color-grey-400">We break down barriers so teams can focus on what matters – working together to create products their customers love.</p>
+                                    <p className="font-md color-grey-400">Super-Fine-Tuning (SFT) is the bridge between a "smart but unfocused" base model and a "specialized expert" that actually works for your business.</p>
                                     <div className="mt-30"></div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <ul className="list-core-value list-core-value-white">
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Domain Expertise</h5>
+                                        <h5 className="color-brand-1 mb-5">Precision Instruction Following: </h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Adapt models to your industry vocabulary, workflows, and standards.</p>
+                                            <p className="font-md color-grey-500 mb-20">
+                                            Transforms "autocomplete" models into goal-oriented assistants that respect complex prompts, personas, and constraints.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Reliability</h5>
+                                        <h5 className="color-brand-1 mb-5"> Deep Domain Expertise:</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Reduce errors, hallucinations, or misclassifications in production.</p>
+                                            <p className="font-md color-grey-500 mb-20">
+                                               Injects specialized knowledge—from legal jargon to medical codes—enabling the model to speak your industry’s specific language.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Compliance & Safety</h5>
+                                        <h5 className="color-brand-1 mb-5"> Reliable Output Structure: </h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Ensure outputs meet regulatory and ethical standards.</p>
+                                            <p className="font-md color-grey-500 mb-20">
+                                            Ensures consistent formatting (like JSON or code), eliminating the parsing errors that break production pipelines.</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -222,15 +212,17 @@ const SFT = () => {
                             <div className="col-lg-4">
                                 <ul className="list-core-value list-core-value-white">
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Efficiency</h5>
+                                        <h5 className="color-brand-1 mb-5"> Efficiency & Cost Savings:</h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Save time and costs by fine-tuning existing models instead of building from scratch.</p>
+                                            <p className="font-md color-grey-500 mb-20">
+                                            Enables smaller, faster models to outperform "frontier" models on specific tasks, slashing your long-term inference costs.Fact-Anchored Responses: By training on curated ground truth, you significantly reduce hallucinations and ground the model in your company's reality.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5">Do the right thing</h5>
+                                        <h5 className="color-brand-1 mb-5"></h5>
                                         <div className="box-border-dashed">
-                                            <p className="font-md color-grey-500 mb-20">Integrity is the foundation for everything we do. We are admired and respected for our commitment to honesty, trust, and transparency. </p>
+                                            <p className="font-md color-grey-500 mb-20">
+                                            Allows you to bake safety and compliance directly into the model’s weights rather than relying solely on external filters. </p>
                                         </div>
                                     </li>
                                 </ul>
@@ -374,8 +366,7 @@ const SFT = () => {
                             <div className="col-lg-12 text-center mb-40">
                                 <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
-                                    Understand how our data collection approach improves model quality, compliance, and time-to-market.
-                                </p>
+                                    Understand how our specialized SFT approach enhances model alignment, reliability, and deployment speed.                                </p>
                             </div>
                         </div>
                         <div className="row">
@@ -383,10 +374,9 @@ const SFT = () => {
                                 <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
                                     <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Quality</h5>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Optimized for Accuracy</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            We have a two-layer QC process that ensures the quality of the output. This is enabled by a short feedback loop process.
-                                        </p>
+                                        We utilize a two-layer Quality Control (QC) process to ensure every fine-tuning example is technically accurate and instructionally sound. This high-fidelity feedback loop guarantees that your model learns from "Golden Datasets," not noise.                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -394,10 +384,9 @@ const SFT = () => {
                                 <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
                                     <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>End to End Solutions</h5>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>End-to-End Fine-Tuning</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            From data collection and cleaning to data annotation, we offer end-to-end solutions for your training data needs.
-                                        </p>
+                                            From raw data curation and formatting to the final SFT run, we provide a comprehensive pipeline. We handle the heavy lifting of data preparation so you can focus on model architecture and evaluation.                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -405,10 +394,9 @@ const SFT = () => {
                                 <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
                                     <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost Efficient</h5>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Cost-Effective Scaling</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            Our pricing is transparent and economical. We are more cost-effective than contract workers and large annotation platforms.
-                                        </p>
+                                            Our engagement models are designed to be more economical than internal labeling teams or massive, impersonal platforms. You get specialized ML expertise at a fraction of the cost of scaling an in-house data science team.                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -416,10 +404,9 @@ const SFT = () => {
                                 <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
                                     <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Completely Managed</h5>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Fully Managed SFT Operations</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            Our services are fully managed with dedicated account managers to ensure smooth operations.
-                                        </p>
+                                            Our services are completely managed, providing you with dedicated project leads who understand the nuances of LLM training. We oversee the entire lifecycle to ensure smooth integration into your existing MLOps stack.                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -427,10 +414,9 @@ const SFT = () => {
                                 <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
                                     <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Scalable Workforce</h5>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Elastic Expert Workforce</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            Start with a single person and grow with us. We scale our team based on your demands.
-                                        </p>
+                                            Whether you need a niche domain expert for a pilot or a 50-person team for massive scale, our workforce adapts to your sprint cycle. We scale our human-in-the-loop resources based on your model's evolving complexity.                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -438,10 +424,9 @@ const SFT = () => {
                                 <div className="card-feature-2 h-100 d-flex align-items-start" style={{padding: '25px', fontFamily: 'inherit'}}>
                                     <img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0}} />
                                     <div>
-                                        <h5 className="mb-25" style={{ color: "#fff" }}>Data Security</h5>
+                                        <h5 className="mb-25" style={{ color: "#fff" }}>Enterprise-Grade Security</h5>
                                         <p className="font-sm mb-0" style={{ color: "#fff" }}>
-                                            Data security is paramount. We are GDPR compliant and ISO 27001 certified.
-                                        </p>
+                                        Data integrity and privacy are non-negotiable. We are GDPR compliant and ISO 27001 certified, ensuring that your proprietary training data and model weights remain secure and confidential at every stage.                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -470,27 +455,23 @@ const SFT = () => {
                         </div>
                     </div>
                 </section>
-
-                <section className="section mt-50 pt-50 pb-40">
+                   <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
-                        <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
+                        <div className="box-cover-border" >
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 text-center">
                                     <div className="box-info-video">
-                                        <h2>Make Your AI Work For You</h2>
-                                        <p className="font-md color-grey-500">Generic AI is a starting point. Supervised Fine-Tuning makes it your competitive advantage. With our SFT services, you can trust that your models will be safer, more reliable, and better aligned with your business goals.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
+                                        <h2 >Make Your AI Work For You</h2>
+                                        <p className="font-md color-grey-500" >
+                                  Generic AI is a starting point. Supervised Fine-Tuning makes it your competitive advantage. With our SFT services, you can trust that your models will be safer, more reliable, and better aligned with your business goals.</p>
+                                        <div className="box-button text-center mt-25"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Get a demo</Link></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+               
                 </div>
             </Layout>
         </>

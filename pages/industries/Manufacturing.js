@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import Link from 'next/link';
 
 const Manufacturing = () => {
     const [isOpen, setOpen] = useState(false)
+
+    const cardItems = [{"title": "Surface Defect Detection", "description": "Identify scratches, dents, cracks and surface anomalies.", "img": "/assets/image/man_safety.webp", "alt": "Surface Defect Detection"}, {"title": "Assembly Verification", "description": "Verify correct assembly and detect missing components.", "img": "/assets/image/manufac_assembly.webp", "alt": "Assembly Verification"}, {"title": "Component Classification", "description": "Classify parts, materials and component types.", "img": "/assets/image/manufac_defect.webp", "alt": "Component Classification"}, {"title": "Robotic Grasp Point Annotation", "description": "Label optimal grip points for robotic manipulation.", "img": "/assets/image/manufac_inspection.webp", "alt": "Robotic Grasp Point Annotation"}, {"title": "Tool & Machine State Detection", "description": "Detect tool wear, machine status and operational states.", "img": "/assets/image/man_inventory.webp", "alt": "Tool & Machine State Detection"}, {"title": "Conveyor Object Tracking", "description": "Track items moving through production lines.", "img": "/assets/image/Conveyor Object Tracking.webp", "alt": "Conveyor Object Tracking"}, {"title": "Packaging Quality Check", "description": "Inspect packaging integrity and label accuracy.", "img": "/assets/image/Packaging Quality Check.webp", "alt": "Packaging Quality Check"}, {"title": "Industrial Safety Monitoring", "description": "Detect PPE compliance and safety zone violations.", "img": "/assets/image/man_safety.webp", "alt": "Industrial Safety Monitoring"}];
 
     // Slider data for Manufacturing annotation capabilities
     const annotationItems = [
@@ -88,16 +91,16 @@ const Manufacturing = () => {
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
+                        <div className="mt-25 mb-100">
                         <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
                                 
                                         
                                
-                                <h3 className="color-black-text mt-10 mb-30">Training Data for Manufacturing Vision, Quality Control and Industrial Automation</h3>
+                                <h3 className="color-black-text mt-10 mb-20">Training Data for Manufacturing Vision, Quality Control and Industrial Automation</h3>
                                 </div>
                  
-                                <div className="col-lg-6 mt-40 mb-20">
+                                <div className="col-lg-6 mt-10 mb-20">
                                 <p className="font-lg color-black-text">
                                      High-accuracy annotations for defect detection, assembly verification and robotic automation — trusted across factories in North America, Europe and APAC.
 
@@ -125,157 +128,7 @@ const Manufacturing = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/man_safety.webp" 
-                                            alt="Surface Defect Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Surface Defect Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Identify scratches, dents, cracks and surface anomalies.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/man_assembly.webp" 
-                                            alt="Assembly Verification" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Assembly Verification</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Verify correct assembly and detect missing components.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/man_defect.webp" 
-                                            alt="Component Classification" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Component Classification</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Classify parts, materials and component types.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/man_inspect.webp" 
-                                            alt="Robotic Grasp Point Annotation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Robotic Grasp Point Annotation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Label optimal grip points for robotic manipulation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/lidar.webp" 
-                                            alt="Tool & Machine State Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Tool & Machine State Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect tool wear, machine status and operational states.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Conveyor Object Tracking.webp" 
-                                            alt="Conveyor Object Tracking" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Conveyor Object Tracking</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Track items moving through production lines.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Packaging Quality Check.webp" 
-                                            alt="Packaging Quality Check" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Packaging Quality Check</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Inspect packaging integrity and label accuracy.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Industrial Safety Monitoring.webp" 
-                                            alt="Industrial Safety Monitoring" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Industrial Safety Monitoring</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect PPE compliance and safety zone violations.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardSlider cards={cardItems} pageId="manufacturing" />
                         </div>
                     </div>
                 </section>
@@ -316,55 +169,109 @@ const Manufacturing = () => {
                             <li> <span className="ticked" />
                                 <h5 className="color-brand-1 mb-5">Flexible</h5>
                                 <div className="box-border-dashed">
-                                    <p className="font-md color-grey-500 mb-20">Custom workflows tailored to your platform’s risk profile.</p>
+                                    <p className="font-md color-grey-500 mb-20">Tailor solutions for specific use cases and domains.</p>
                                 </div>
                             </li>
                             <li> <span className="ticked" />
-                                <h5 className="color-brand-1 mb-5">Human-Centric</h5>
+                                <h5 className="color-brand-1 mb-5">Expert Review</h5>
                                 <div className="box-border-dashed">
-                                    <p className="font-md color-grey-500 mb-20">Expert moderators ensure nuanced understanding and fairness.</p>
+                                    <p className="font-md color-grey-500 mb-20">Domain experts ensure relevance and accuracy.</p>
+                                </div>
+                            </li>
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Security</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Enterprise-grade data protection and compliance.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-                </section>
-                <div style={{marginTop: '-40px'}}></div>
-                <AnnotationSlider
-                    items={annotationItems}
-                    title="Advanced Manufacturing Capabilities"
-                    subtitle="Specialized labeling services for quality control and industrial automation"
-                    navId="manufacturing"
-                />
-                <div style={{marginTop: '-70px'}}></div>
-                {/* CTA Section */}
-                     <section className="section mt-20 pt-30 pb-40">
-                    <div className="container">
-                        <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
+        </section>
+
+        {/* Annotation Slider - Advanced Manufacturing Capabilities */}
+        <AnnotationSlider 
+            items={annotationItems}
+            title="Advanced Manufacturing Capabilities"
+            subtitle="Specialized labeling services for quality control and industrial automation"
+            navId="manufacturing"
+        />
+
+        
+                 <section className="section mt-10 pb-0 bg-core-value">
+            <div className="container">
+                <div className="row box-list-core-value">
+                    <div className="col-lg-4 mb-70">
+                        <div className="box-core-value">
+                            <h3 className="color-brand-1 mb-15">Why Choose Us</h3>
+                            <p className="font-md color-grey-400">Hear from our users who have saved thousands on their Startup and SaaS solution spend.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <ul className="list-core-value">
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Scalable</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Handle millions of content items daily.</p>
                                 </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Power Your Manufacturing AI?</h2>
-                                        <p className="font-md color-grey-500">
-                                            Partner with us to get high-quality training data for quality control, defect detection and industrial automation.
-                                        </p>
-                                        <div className="box-button text-start mt-40">
-                                            <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
-                                        </div>
-                                    </div>
+                            </li>
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Accurate</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">AI trained on diverse datasets, reducing bias and false positives.</p>
                                 </div>
+                            </li>
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Compliant</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Stay aligned with global and regional regulations.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-lg-4">
+                        <ul className="list-core-value">
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Flexible</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Tailor solutions for specific use cases and domains.</p>
+                                </div>
+                            </li>
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Expert Review</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Domain experts ensure relevance and accuracy.</p>
+                                </div>
+                            </li>
+                            <li> <span className="ticked" />
+                                <h5 className="color-brand-1 mb-5">Security</h5>
+                                <div className="box-border-dashed">
+                                    <p className="font-md color-grey-500 mb-20">Enterprise-grade data protection and compliance.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+                         <section className="section mt-0">
+            <div className=" bg-core-value">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="box-contact-form">
+                                <h2 className="color-white mb-30">Get Started Today</h2>
+                                <p className="font-lg color-white">Partner with us for high-quality labeled data</p>
                             </div>
                         </div>
                     </div>
-                </section>
-        </Layout>
+                </div>
+            </div>
+        </section>
+    </Layout>
     );
 };
-
-export default Manufacturing;
+export default Manufacturing; 

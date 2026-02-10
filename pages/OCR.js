@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import ImageSlider from '../components/slider/ImageSlider';
 import Offer7 from '../components/slider/Offer7';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+SwiperCore.use([Autoplay, Navigation]);
 
 const OCR = () => {
     const [isOpen, setOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+    const swiperRef = useRef(null);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     return (
         <>
             <Layout>
@@ -127,6 +140,69 @@ const OCR = () => {
                                 font-size: 0.9rem;
                             }
                         }
+
+                        /* Mobile Slider Styles */
+                        @media (min-width: 992px) {
+                            .mobile-card-slider {
+                                display: none !important;
+                            }
+                        }
+
+                        @media (max-width: 991px) {
+                            .desktop-card-grid {
+                                display: none !important;
+                            }
+                        }
+
+                        .mobile-card-slider {
+                            padding: 20px 15px 20px 0;
+                        }
+
+                        .mobile-card-slider .swiper-container {
+                            margin: 0 -15px;
+                            padding: 0 15px;
+                        }
+
+                        .mobile-card-slider .image-showcase-top-dynamic {
+                            width: 100% !important;
+                            height: 480px !important;
+                            overflow: hidden;
+                        }
+
+                        .mobile-card-slider .image-showcase-content-dynamic {
+                            padding: 14px 12px !important;
+                            max-height: 280px;
+                            overflow-y: auto;
+                        }
+
+                        .mobile-card-slider .image-showcase-content-dynamic h4,
+                        .mobile-card-slider .image-showcase-content-dynamic h6 {
+                            font-size: 14px !important;
+                            margin-bottom: 10px !important;
+                        }
+
+                        .mobile-card-slider .image-showcase-description-dynamic {
+                            font-size: 13px !important;
+                            line-height: 1.4;
+                        }
+
+                        .slider-controls-mobile {
+                            padding: 20px 0;
+                        }
+
+                        .slider-btn {
+                            transition: all 0.3s ease !important;
+                        }
+
+                        .slider-btn:hover {
+                            background: #265bda !important;
+                            color: #fff !important;
+                        }
+
+                        .swiper-button-prev-cards:after,
+                        .swiper-button-next-cards:after {
+                            display: none;
+                        }
                     `}</style>
                 </section>          
                 <section className="section mb-100">
@@ -193,6 +269,182 @@ const OCR = () => {
                             </div>
                         </div>
 
+                        {/* Mobile Slider View */}
+                        {mounted && (
+                        <div className="mobile-card-slider d-lg-none">
+                            <div style={{position: 'relative', marginBottom: '20px'}}>
+                                <Swiper
+                                    ref={swiperRef}
+                                    modules={[Autoplay, Navigation]}
+                                    slidesPerView={1}
+                                    loop={true}
+                                    spaceBetween={20}
+                                    autoplay={{
+                                        delay: 3000,
+                                        disableOnInteraction: false,
+                                        pauseOnMouseEnter: false,
+                                        waitForTransition: true,
+                                        reverseDirection: false
+                                    }}
+                                    navigation={{
+                                        nextEl: '.swiper-button-next-cards',
+                                        prevEl: '.swiper-button-prev-cards',
+                                    }}
+                                    className="swiper-container"
+                                >
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human1.png" 
+                                                    alt="Cross Platform" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="image-showcase-title-dynamic color-brand-1">Document capture & pre-processing</h4>
+                                                <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
+                                                    High-quality scanning, image de-skew, noise removal, image enhancement, multi-format ingestion (PDF, TIFF, JPG, PNG) and OCR pre-checks to boost extraction accuracy.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human2.png" 
+                                                    alt="Team Collaboration" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="image-showcase-title-dynamic color-brand-1">OCR (printed + handwritten)</h4>
+                                                <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
+                                                    Accurate extraction of printed and handwritten text using configurable OCR engines and model ensembles; outputs as searchable PDF, Word, CSV, JSON, or database-ready records.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human3.png" 
+                                                    alt="Analytics Dashboard" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="image-showcase-title-dynamic color-brand-1">Document classification & routing (IDP)</h4>
+                                                <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
+                                                    Automatic classification (invoices, receipts, claims, contracts, letters, forms) and routing to the correct business process or user queue using ML and NLP.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage12/human1.png" 
+                                                    alt="Project Management" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="image-showcase-title-dynamic color-brand-1">Key-value & table extraction</h4>
+                                                <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
+                                                    Robust extraction of fields, key–value pairs and complex table structures (multi-page and nested tables) with confidence scores, coordinates and schema mapping.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage12/human2.png" 
+                                                    alt="Customer Support" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="image-showcase-title-dynamic color-brand-1">Verification & human-in-the-loop (HITL)</h4>
+                                                <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
+                                                    Configurable validation workflows where low-confidence items are routed to human reviewers; results feed back to continually retrain models.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic">
+                                            <div className="image-showcase-top-dynamic">
+                                                <img 
+                                                    src="assets/imgs/page/homepage12/human3.png" 
+                                                    alt="Data Security" 
+                                                    className="image-showcase-photo-dynamic"
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic">
+                                                <h4 className="image-showcase-title-dynamic color-brand-1">Data security & compliance</h4>
+                                                <p className="image-showcase-description-dynamic" style={{fontSize: '15px'}}>
+                                                    Encrypted data transit and storage, role-based access, comprehensive audit logs, and GDPR/HIPAA-ready controls for regulated data.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                </Swiper>
+
+                                {/* Slider Controls */}
+                                <div className="slider-controls-mobile" style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '20px', alignItems: 'center'}}>
+                                    <button 
+                                        className="swiper-button-prev-cards slider-btn"
+                                        style={{
+                                            background: '#f0f0f0',
+                                            border: 'none',
+                                            width: '40px',
+                                            height: '40px',
+                                            borderRadius: '50%',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '18px'
+                                        }}
+                                    >
+                                        ←
+                                    </button>
+                                    
+                                    <button 
+                                        className="swiper-button-next-cards slider-btn"
+                                        style={{
+                                            background: '#f0f0f0',
+                                            border: 'none',
+                                            width: '40px',
+                                            height: '40px',
+                                            borderRadius: '50%',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '18px'
+                                        }}
+                                    >
+                                        →
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        )}
+
+                        {/* Desktop Grid View */}
+                        <div className="desktop-card-grid d-none d-lg-block">
                         {/* First Row of Cards */}
                         <div className="row mt-45">
                             <div className="col-lg-4">
@@ -307,6 +559,7 @@ const OCR = () => {
                                                 </div>
                                             </div>
                                         </div>
+                        </div>
                                     </section>
 
                                     {/* <section className="section mt-100">
@@ -575,17 +828,12 @@ const OCR = () => {
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 text-center">
                                     <div className="box-info-video">
                                         <h2>Ready to make your documents work smarter?</h2>
                                         <p className="font-lg color-grey-500">Contact us today to learn how we can help.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
+                                        <div className="box-button text-center mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>

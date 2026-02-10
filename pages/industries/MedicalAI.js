@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from "../../components/layout/Layout";
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
@@ -6,6 +6,8 @@ import Link from 'next/link';
 
 const MedicalAI = () => {
     const [isOpen, setOpen] = useState(false)
+    const [cardSlideIndex, setCardSlideIndex] = useState(0)
+    const [cardsPerSlide, setCardsPerSlide] = useState(4)
 
     // Slider data for Medical AI annotation capabilities
     const annotationItems = [
@@ -90,22 +92,72 @@ const MedicalAI = () => {
             ]
         }
     ];
+
+    // Card data for the card grid slider
+    const cardItems = [
+        { title: "Lesion & Tumor Segmentation", description: "Segment lesions, tumors and abnormal tissue regions.", img: "/assets/imgs/page/homepage6/human1.png", alt: "Lesion & Tumor Segmentation" },
+        { title: "Organ & Structure Labeling", description: "Label anatomical organs and body structures.", img: "/assets/imgs/page/homepage6/human2.png", alt: "Organ & Structure Labeling" },
+        { title: "Bone Fracture Detection", description: "Detect and classify bone fractures in X-rays.", img: "/assets/image/Bone Fracture Detection.webp", alt: "Bone Fracture Detection" },
+        { title: "Ultrasound Anatomy Annotation", description: "Annotate anatomical features in ultrasound imagery.", img: "/assets/image/Ultrasound Anatomy Annotation.webp", alt: "Ultrasound Anatomy Annotation" },
+        { title: "Pathology Cell Classification", description: "Classify cell types in pathology slides.", img: "/assets/image/Pathology Cell Classification.webp", alt: "Pathology Cell Classification" },
+        { title: "Radiology Report Linking", description: "Link imaging findings to radiology reports.", img: "/assets/imgs/page/homepage6/human3.png", alt: "Radiology Report Linking" },
+        { title: "Vitals & Waveform Event Detection", description: "Detect events in ECG, EEG and vital waveforms.", img: "/assets/imgs/page/homepage6/human1.png", alt: "Vitals & Waveform Event Detection" },
+        { title: "Surgical Video Action Recognition", description: "Recognize surgical actions and instrument usage.", img: "/assets/imgs/page/homepage6/human2.png", alt: "Surgical Video Action Recognition" },
+    ];
+
+    // Handle window resize to update cardsPerSlide
+    useEffect(() => {
+        const handleResize = () => {
+            if (typeof window !== 'undefined') {
+                setCardsPerSlide(window.innerWidth <= 768 ? 2 : 4);
+            }
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // Auto-slide effect
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNextCardSlide();
+        }, 5000); // Auto-slide every 5 seconds
+        return () => clearInterval(interval);
+    }, [cardsPerSlide]);
+
+    // Navigate to next slide
+    const handleNextCardSlide = () => {
+        const maxSlide = Math.ceil(cardItems.length / cardsPerSlide);
+        setCardSlideIndex((prev) => (prev + 1) % maxSlide);
+    };
+
+    // Navigate to previous slide
+    const handlePrevCardSlide = () => {
+        const maxSlide = Math.ceil(cardItems.length / cardsPerSlide);
+        setCardSlideIndex((prev) => (prev - 1 + maxSlide) % maxSlide);
+    };
+
+    // Get cards for current slide (2 rows of 2 = 4 cards on mobile, all on desktop)
+    const getCurrentSlideCards = () => {
+        const start = cardSlideIndex * cardsPerSlide;
+        return cardItems.slice(start, start + cardsPerSlide);
+    };
     return (
         <Layout>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
+                        <div className="mt-25 mb-100">
                         <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
                                 
                                         
                                
-                                <h3 className="color-black-text mt-10 mb-30">Training Data for Medical AI, Diagnostics and Clinical Automation</h3>
+                                <h3 className="color-black-text mt-10 mb-20">Training Data for Medical AI, Diagnostics and Clinical Automation</h3>
                                 </div>
                  
-                                <div className="col-lg-6 mt-40 mb-20">
+                                <div className="col-lg-6 mt-10 mb-20">
                                 <p className="font-lg color-black-text">
                                      High-accuracy annotations for imaging, pathology, patient monitoring and clinical workflows — supporting healthcare systems globally.
 
@@ -133,160 +185,139 @@ const MedicalAI = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Lesion & Tumor Segmentation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Lesion & Tumor Segmentation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Segment lesions, tumors and abnormal tissue regions.
-                                        </p>
-                                    </div>
+                            {/* Desktop Grid (always show all) */}
+                            <div className="card-grid" style={{display: 'none', width: '100%'}}>
+                                <div className="row">
+                                    {cardItems.map((card, idx) => (
+                                        <div key={idx} className="col-lg-3 col-md-6 mb-30">
+                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                                    <img 
+                                                        src={card.img} 
+                                                        alt={card.alt} 
+                                                        className="image-showcase-photo-dynamic"
+                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                    />
+                                                </div>
+                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                    <h6 className="color-brand-1 mb-15">{card.title}</h6>
+                                                    <p className="font-sm color-grey-500">{card.description}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Organ & Structure Labeling" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Organ & Structure Labeling</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Label anatomical organs and body structures.
-                                        </p>
-                                    </div>
+                            {/* Mobile Slider (2 rows × 1 col = 2 cards per slide with auto-slide) */}
+                            <div className="medical-card-slider" style={{display: 'none', flexDirection: 'column', width: '100%'}}>
+                                <div style={{display: 'grid', gridTemplateColumns: '1fr', gap: '20px', width: '100%'}}>
+                                    {getCurrentSlideCards().map((card, idx) => (
+                                        <div key={idx}>
+                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '250px', overflow: 'hidden'}}>
+                                                    <img 
+                                                        src={card.img} 
+                                                        alt={card.alt} 
+                                                        className="image-showcase-photo-dynamic"
+                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                    />
+                                                </div>
+                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                    <h6 className="color-brand-1 mb-15">{card.title}</h6>
+                                                    <p className="font-sm color-grey-500">{card.description}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
-                            </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Bone Fracture Detection.webp" 
-                                            alt="Bone Fracture Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
+                                {/* Slider Navigation Controls */}
+                                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px', marginTop: '30px'}}>
+                                    <button 
+                                        onClick={handlePrevCardSlide}
+                                        style={{
+                                            width: '45px',
+                                            height: '45px',
+                                            borderRadius: '50%',
+                                            border: '2px solid black',
+                                            background: 'white',
+                                            color: 'black',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '20px',
+                                            fontWeight: 'bold'
+                                        }}
+                                    >
+                                        ‹
+                                    </button>
+                                    
+                                    <div style={{display: 'flex', gap: '8px'}}>
+                                        {Array.from({ length: Math.ceil(cardItems.length / cardsPerSlide) }).map((_, idx) => (
+                                            <button
+                                                key={idx}
+                                                onClick={() => setCardSlideIndex(idx)}
+                                                style={{
+                                                    width: '12px',
+                                                    height: '12px',
+                                                    borderRadius: '50%',
+                                                    border: '1px solid black',
+                                                    background: idx === cardSlideIndex ? 'black' : 'white',
+                                                    cursor: 'pointer'
+                                                }}
+                                            />
+                                        ))}
                                     </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Bone Fracture Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect and classify bone fractures in X-rays.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Ultrasound Anatomy Annotation.webp" 
-                                            alt="Ultrasound Anatomy Annotation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Ultrasound Anatomy Annotation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Annotate anatomical features in ultrasound imagery.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Pathology Cell Classification.webp" 
-                                            alt="Pathology Cell Classification" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Pathology Cell Classification</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Classify cell types in pathology slides.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Radiology Report Linking" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Radiology Report Linking</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Link imaging findings to radiology reports.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Vitals & Waveform Event Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Vitals & Waveform Event Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Detect events in ECG, EEG and vital waveforms.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Surgical Video Action Recognition" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Surgical Video Action Recognition</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Recognize surgical actions and instrument usage.
-                                        </p>
-                                    </div>
+                                    <button 
+                                        onClick={handleNextCardSlide}
+                                        style={{
+                                            width: '45px',
+                                            height: '45px',
+                                            borderRadius: '50%',
+                                            border: '2px solid black',
+                                            background: 'white',
+                                            color: 'black',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '20px',
+                                            fontWeight: 'bold'
+                                        }}
+                                    >
+                                        ›
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
+                <style jsx>{`
+                    @media (min-width: 769px) {
+                        /* Show desktop grid on larger screens */
+                        .card-grid {
+                            display: block !important;
+                        }
+                        /* Hide mobile slider on larger screens */
+                        .medical-card-slider {
+                            display: none !important;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        /* Hide desktop grid on mobile */
+                        .card-grid {
+                            display: none !important;
+                        }
+                        /* Show mobile slider only on small screens */
+                        .medical-card-slider {
+                            display: flex !important;
+                        }
+                    }
+                `}</style>
                 
                  <section className="section mt-10 pb-0 bg-core-value">
             <div className="container">
@@ -351,18 +382,13 @@ const MedicalAI = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Enhance Your Medical AI?</h2>
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Enhance Your Medical AI?</h2>
                                         <p className="font-md color-grey-500">
                                             Partner with us to get high-quality training data for diagnostics, imaging analysis and clinical automation.
                                         </p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>

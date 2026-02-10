@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../components/slider/VideoSlider';
@@ -7,6 +7,10 @@ import Offer3 from '../components/slider/Offer3';
 
 const RLHF = () => {
     const [isOpen, setOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     return (
         <Layout>
             <>
@@ -82,7 +86,7 @@ const RLHF = () => {
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div className="mt-40 text-start">
+                                                <div className="mt-40 text-center">
                                                     <Link className="btn btn-brand-1 hover-up font-md" href="/help">Talk to our Experts</Link>
                                                 </div>
                                             </div>
@@ -295,6 +299,24 @@ const RLHF = () => {
                         </div>
                     </div>
                 </section>
+                         <section className="section mt-50 pt-50 pb-40">
+                    <div className="container">
+                        <div className="box-cover-border" >
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 text-center">
+                                    <div className="box-info-video">
+                                        <h2>Align Your AI Models with Human Values</h2>
+                                        <p className="font-md color-grey-500">Build safer, more reliable AI systems with our scalable RLHF pipelines. From preference ranking to policy shaping, we provide the human feedback your models need to align with your safety and compliance requirements.</p>
+                                        {/* <p className="font-md color-grey-500 mt-20">Our expert teams deliver high-quality judgments at scale, creating continuous improvement loops that enhance model performance over time.</p> */}
+                                        <div className="mt-65 text-center">
+                                            <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
@@ -305,12 +327,7 @@ const RLHF = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2>Align Your AI Models with Human Values</h2>
-                                        <p className="font-md color-grey-500">Build safer, more reliable AI systems with our scalable RLHF pipelines. From preference ranking to policy shaping, we provide the human feedback your models need to align with your safety and compliance requirements.</p>
-                                        <p className="font-md color-grey-500 mt-20">Our expert teams deliver high-quality judgments at scale, creating continuous improvement loops that enhance model performance over time.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact</Link></div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>

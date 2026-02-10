@@ -1,3 +1,20 @@
+/* Force hand cursor for all Swiper sliders (grab on hover, grabbing on drag) */
+.swiper {
+  cursor: grab !important;
+  user-select: none !important;
+}
+.swiper * {
+  cursor: grab !important;
+}
+.swiper:active,
+.swiper.swiper-grabbing,
+.swiper:active * {
+  cursor: grabbing !important;
+}
+.swiper.swiper-grabbing,
+.swiper.swiper-grabbing * {
+  cursor: grabbing !important;
+}
 /***
  Theme Name: iori
  Description: Multipurpose Startup & SaaS HTML Template
@@ -11932,6 +11949,14 @@ body.mobile-menu-active {
     justify-content: center;
 }
 
+/* Remove decorative underline under CTA heading inside box-cover-border */
+.box-cover-border .box-info-video h2::after,
+.box-cover-border .box-info-video h2::before,
+.box-cover-border .box-info-video h2 + .w-24 {
+  display: none !important;
+  content: none !important;
+}
+
 @media (max-width: 991px) {
     .box-cover-border {
         min-height: 250px !important;
@@ -12035,6 +12060,26 @@ body.mobile-menu-active {
   margin-top: 8px;
   margin-bottom: 0;
   word-break: break-word;
+}
+
+/* Prevent global hover/active tab styles from coloring annotation cards */
+.swiper-annotation .annotation-card,
+.swiper-annotation .annotation-card:active,
+.swiper-annotation .annotation-card:focus,
+.swiper-annotation .annotation-card.active,
+.swiper-annotation .swiper-slide-active .annotation-card,
+.swiper-annotation .swiper-slide-active .annotation-card:active {
+  background-color: var(--color-white) !important;
+  color: var(--color-gray-800) !important;
+  box-shadow: none !important;
+}
+
+/* Add hover effect for user feedback */
+.swiper-annotation .annotation-card:hover,
+.swiper-annotation .swiper-slide-active .annotation-card:hover {
+  background-color: var(--color-white) !important;
+  box-shadow: 0 8px 24px rgba(11, 95, 255, 0.15) !important;
+  transform: translateY(-4px);
 }
 
 /* Light-blue style for non-active tabs when Annotations is selected */

@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import HeroSlider from '../components/slider/HeroSlider';
-import Tab from '../components/elements/Tab';
-import Offer from '../components/slider/Offer';
-import Brand from '../components/slider/Brand';
+import dynamic from 'next/dynamic';
+const HeroSlider = dynamic(() => import('../components/slider/HeroSlider'), { ssr: false });
+const Tab = dynamic(() => import('../components/elements/Tab'), { ssr: false });
+const Offer = dynamic(() => import('../components/slider/Offer'), { ssr: false });
+const Brand = dynamic(() => import('../components/slider/Brand'), { ssr: false });
 
 const HomePage3 = () => {
     const [isOpen, setOpen] = useState(false)
@@ -65,7 +66,6 @@ const HomePage3 = () => {
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
                                                 <h4 className="left-card-title">Data Collection</h4>
-                                                <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     Structured and compliant data sourcing tailored to domain, geography, and model requirements.
                                                 </p>
@@ -79,7 +79,6 @@ const HomePage3 = () => {
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
                                                 <h4 className="left-card-title">Data Annotation</h4>
-                                                <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     High-accuracy visual labeling delivered with defined schemas and quality assurance.
                                                 </p>
@@ -93,7 +92,6 @@ const HomePage3 = () => {
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
                                                 <h4 className="left-card-title">Supervised Fine-Tuning</h4>
-                                                <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     Expert-labeled datasets to improve task performance and model consistency.
                                                 </p>
@@ -109,7 +107,6 @@ const HomePage3 = () => {
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
                                                 <h4 className="left-card-title">HITL</h4>
-                                                <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     Human-in-the-loop workflows for review, exception handling, and continuous quality control.
                                                 </p>
@@ -123,7 +120,6 @@ const HomePage3 = () => {
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
                                                 <h4 className="left-card-title">RLHF</h4>
-                                                <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     Preference and feedback data to improve model alignment and response quality.
                                                 </p>
@@ -136,7 +132,6 @@ const HomePage3 = () => {
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
                                                 <h4 className="left-card-title">Red Teaming Services</h4>
-                                                <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     Systematic testing to identify safety gaps, failure modes, and edge cases.
                                                 </p>
@@ -150,7 +145,6 @@ const HomePage3 = () => {
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
                                                 <h4 className="left-card-title">AI Evals</h4>
-                                                <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     Ongoing evaluation and benchmarking across model versions and use cases.
                                                 </p>
@@ -166,7 +160,6 @@ const HomePage3 = () => {
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
                                                 <h4 className="left-card-title">MLOps</h4>
-                                                <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     Managed pipelines and monitoring for reliable training, deployment, and lifecycle control.
                                                 </p>
@@ -179,7 +172,6 @@ const HomePage3 = () => {
                                         <div className="left-aligned-card-wrapper">
                                             <div className="left-aligned-card-container">
                                                 <h4 className="left-card-title">DevOps</h4>
-                                                <div className="left-card-divider"></div>
                                                 <p className="left-card-description">
                                                     Secure and scalable infrastructure support for AI workloads in production environments.
                                                 </p>
@@ -198,7 +190,7 @@ const HomePage3 = () => {
                         <div className="mover-2" />
                     </div>
                 </section>
-                <section className="section mt-100 mb-50 bg-brand-1 pt-100 pb-100 bg-explore">
+                <section className="section mt-100 mb-100 bg-brand-1 pt-100 pb-100 bg-explore">
                     <div className="container">
                         <div className="text-center">
                             <span className="font-xl-bold color-white text-uppercase">explore network</span>
@@ -234,8 +226,8 @@ const HomePage3 = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-50 pb-50 bg-brand-1 partner-benefits">
-                    <div className="container">
+                <section className="section mt-100 mb-100 pt-100 pb-100 bg-brand-1 partner-benefits">
+                    <div className="container mt-75">
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
                                 <div className="box-core-value">
@@ -246,19 +238,19 @@ const HomePage3 = () => {
                             <div className="col-lg-4">
                                 <ul className="list-core-value">
                                    <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Deep Technical Capability</h5>
+                                        <h5 className="color-white mb-5"><img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0, display: 'inline-block', verticalAlign: 'middle'}} />Deep Technical Capability</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">Proven expertise across computer vision, large language models, and generative AI workflows</p>
                                         </div>
                                     </li> 
                                     <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Fully Governed Operations</h5>
+                                        <h5 className="color-white mb-5"><img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0, display: 'inline-block', verticalAlign: 'middle'}} />Fully Governed Operations</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">End-to-end service delivery with centralized management, accountability, and execution oversight.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Industry Aligned Expertise</h5>
+                                        <h5 className="color-white mb-5"><img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0, display: 'inline-block', verticalAlign: 'middle'}} />Industry Aligned Expertise</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">Practitioners with hands-on experience across domain-specific AI use cases and regulatory environments.</p>
                                         </div>
@@ -269,19 +261,19 @@ const HomePage3 = () => {
                                 <ul className="list-core-value">
                                     
                                     <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Centralized Innovation Teams</h5>
+                                        <h5 className="color-white mb-5"><img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0, display: 'inline-block', verticalAlign: 'middle'}} />Centralized Innovation Teams</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">Dedicated groups focused on process optimization, tooling efficiency, and continuous improvement.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Flexible Engagement Framework</h5>
+                                        <h5 className="color-white mb-5"><img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0, display: 'inline-block', verticalAlign: 'middle'}} />Flexible Engagement Framework</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">A modular service model combining expert networks, managed delivery, and scalable capacity.</p>
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-white mb-5 d-flex align-items-center"><svg className="benefit-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.12)"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>Operational Transparency</h5>
+                                        <h5 className="color-white mb-5"><img src="/assets/imgs/page/about/tick.svg" alt="Tick" style={{width: '30px', height: '30px', marginRight: '15px', marginTop: '3px', flexShrink: 0, display: 'inline-block', verticalAlign: 'middle'}} />Operational Transparency</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-white mb-20">Clear reporting on progress, quality metrics, throughput, and cost throughout the engagement.</p>
                                         </div>
@@ -293,21 +285,12 @@ const HomePage3 = () => {
                 </section>
                 <style jsx>{`
                     .partner-benefits {
-                        padding-top: 40px;
-                        padding-bottom: 40px;
                     }
                     .partner-benefits .box-core-value h3,
                     .partner-benefits .box-core-value p,
                     .partner-benefits .list-core-value h5,
                     .partner-benefits .list-core-value p {
                         color: #ffffff;
-                    }
-                    .benefit-icon {
-                        width: 36px;
-                        height: 36px;
-                        flex: 0 0 36px;
-                        margin-right: 12px;
-                        display: inline-block;
                     }
                     .partner-benefits .box-border-dashed {
                         border-top: 1px dashed rgba(255,255,255,0.15);
@@ -327,17 +310,12 @@ const HomePage3 = () => {
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border" >
-                            <div className="row align-items-center" style={{gap: '40px'}}>
-                                <div style={{flex: '0 0 auto', width: '420px'}}>
-                                    <div className="image-container" style={{width: '100%' , maxWidth: '430px'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="AI Data Services" style={{width: '100%', height: 'auto', display: 'block'}} />
-                                    </div>
-                                </div>
-                                <div style={{flex: '1'}}>
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 text-center">
                                     <div className="box-info-video">
                                         <h2 >Ready to Scale Your AI?</h2>
                                         <p className="font-md color-grey-500" >From data collection and annotation to model training and deployment, we provide end-to-end AI services tailored to your business needs. Whether you're building foundation models or deploying production AI systems, our expert teams deliver the quality and scale you need.</p>
-                                        <div className="box-button text-start mt-25"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Get a demo</Link></div>
+                                        <div className="box-button text-center mt-25"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Get a demo</Link></div>
                                     </div>
                                 </div>
                             </div>

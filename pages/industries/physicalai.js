@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import Link from 'next/link';
 import VideoSlider from '../../components/slider/VideoSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import Offer10 from '../../components/slider/Offer10';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
 
 const PhysicalAI = () => {
     const [isOpen, setOpen] = useState(false)
+
+    const cardItems = [{"title": "Data Annotation Services", "description": "2D & 3D Bounding Boxes, Segmentation, Pose Estimation & Keypoints, Video tracking for movement analysis, Sensor fusion annotation (LiDAR + Camera + Depth)", "img": "/assets/imgs/page/homepage6/human2.png", "alt": "Data Annotation Services"}, {"title": "Human-in-the-Loop (HITL)", "description": "Continuous quality checks during training, Edge-case handling with expert reviewers, Iterative refinement of datasets", "img": "/assets/imgs/page/homepage12/human2.png", "alt": "Human-in-the-Loop"}, {"title": "Reinforcement Learning with Human Feedback", "description": "Teaching robots preferred actions through feedback loops, Aligning machine responses with human expectations in physical tasks", "img": "/assets/imgs/page/homepage12/human2.png", "alt": "RLHF"}, {"title": "Supervised Fine-Tuning (SFT)", "description": "Adapting foundation models for task-specific use (industrial robots, healthcare assistants, AR/VR avatars), Scaling models to understand multimodal data (speech + movement + visual context)", "img": "/assets/imgs/page/homepage6/human2.png", "alt": "Supervised Fine-Tuning"}];
 
     // Slider data for Physical AI use cases
     const annotationItems = [
@@ -27,15 +30,15 @@ const PhysicalAI = () => {
             <Layout>
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-65 mb-100">
+                        <div className="mt-25 mb-100">
                             <div className="row align-items-center">
                                 <div className="col-lg-6 mb-20">
 
-                                    <h3 className="color-black-text mt-10">
+                                    <h3 className="color-black-text mt-10 mb-20">
                                         Physical AI Training Data for Robotics, Embodied Intelligence and Human–Robot Interaction
                                     </h3>
                                 </div>
-                                <div className="col-lg-6 mt-20">
+                                <div className="col-lg-6 mt-10 mb-20">
                                     <p className="font-lg color-black-text">
                                         High-precision annotations for human motion, object manipulation, force dynamics and 3D physical environments — powering next-gen robotics, industrial automation, warehouse systems and humanoid AI.
 
@@ -129,88 +132,7 @@ const PhysicalAI = () => {
 
                                                     {/* First Row of Cards - 4 in a row */}
                                                     <div className="row mt-45">
-                                                        <div className="col-lg-3">
-                                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                                                    <img 
-                                                                        src="/assets/imgs/page/homepage6/human2.png" 
-                                                                        alt="Data Annotation Services" 
-                                                                        className="image-showcase-photo-dynamic"
-                                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                                                    />
-                                                                </div>
-                                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                                                    <h4 className="color-brand-1 mb-15">Data Annotation Services</h4>
-                                                                    <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                                                        <li className="mb-8">2D & 3D Bounding Boxes, Segmentation</li>
-                                                                        <li className="mb-8">Pose Estimation & Keypoints</li>
-                                                                        <li className="mb-8">Video tracking for movement analysis</li>
-                                                                        <li className="mb-8">Sensor fusion annotation (LiDAR + Camera + Depth)</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div className="col-lg-3">
-                                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                                                    <img 
-                                                                        src="/assets/imgs/page/homepage12/human2.png" 
-                                                                        alt="Human-in-the-Loop" 
-                                                                        className="image-showcase-photo-dynamic"
-                                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                                                    />
-                                                                </div>
-                                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                                                    <h4 className="color-brand-1 mb-15">Human-in-the-Loop (HITL)</h4>
-                                                                    <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                                                        <li className="mb-8">Continuous quality checks during training</li>
-                                                                        <li className="mb-8">Edge-case handling with expert reviewers</li>
-                                                                        <li className="mb-8">Iterative refinement of datasets</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div className="col-lg-3">
-                                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                                                    <img 
-                                                                        src="/assets/imgs/page/homepage12/human2.png" 
-                                                                        alt="RLHF" 
-                                                                        className="image-showcase-photo-dynamic"
-                                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                                                    />
-                                                                </div>
-                                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                                                    <h4 className="color-brand-1 mb-15">Reinforcement Learning with Human Feedback</h4>
-                                                                    <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                                                        <li className="mb-8">Teaching robots "preferred" actions through feedback loops</li>
-                                                                        <li className="mb-8">Aligning machine responses with human expectations in physical tasks</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div className="col-lg-3">
-                                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                                                    <img 
-                                                                        src="/assets/imgs/page/homepage6/human2.png" 
-                                                                        alt="Supervised Fine-Tuning" 
-                                                                        className="image-showcase-photo-dynamic"
-                                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                                                    />
-                                                                </div>
-                                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                                                    <h4 className="color-brand-1 mb-15">Supervised Fine-Tuning (SFT)</h4>
-                                                                    <ul className="custom-bullets font-md color-black-text mb-15 pl-15">
-                                                                        <li className="mb-8">Adapting foundation models for task-specific use (industrial robots, healthcare assistants, AR/VR avatars)</li>
-                                                                        <li className="mb-8">Scaling models to understand multimodal data (speech + movement + visual context)</li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <CardSlider cards={cardItems} pageId="physicalai" />
                                                     </div>
                                                 </div>
                                             </section>
@@ -279,17 +201,13 @@ const PhysicalAI = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Build Intelligent Physical AI?</h2>
+
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Build Intelligent Physical AI?</h2>
                                         <p className="font-md color-grey-500">
                                             Let us help you create AI that doesn't just understand the digital world, but thrives in the physical one.</p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>

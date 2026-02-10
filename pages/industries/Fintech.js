@@ -3,10 +3,13 @@ import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import Link from 'next/link';
 
 const Fintech = () => {
     const [isOpen, setOpen] = useState(false)
+
+    const cardItems = [{"title": "Document OCR & KYC Extraction", "description": "Extract and structure data from identity documents.", "img": "/assets/images/industry/fin_claim.png", "alt": "Document OCR & KYC Extraction"}, {"title": "Check & Receipt Recognition", "description": "Annotate checks, receipts and payment documents.", "img": "/assets/image/Check & Receipt Recognition.webp", "alt": "Check & Receipt Recognition"}, {"title": "ID Verification Annotation", "description": "Label ID fields, photos and security features.", "img": "/assets/image/ID Verification Annotation.webp", "alt": "ID Verification Annotation"}, {"title": "Transaction Behavior Patterns", "description": "Classify transaction types and behavior sequences.", "img": "/assets/images/industry/fin_fraud.webp", "alt": "Transaction Behavior Patterns"}, {"title": "Fraud Trigger Visual Evidence", "description": "Tag visual indicators of fraudulent activity.", "img": "/assets/images/industry/fin_invoice.png", "alt": "Fraud Trigger Visual Evidence"}, {"title": "Signature Matching", "description": "Annotate signatures for verification models.", "img": "/assets/imgs/page/homepage6/human3.png", "alt": "Signature Matching"}, {"title": "Financial Form Classification", "description": "Classify form types and document categories.", "img": "/assets/imgs/page/homepage6/human1.png", "alt": "Financial Form Classification"}, {"title": "Bill/Invoice Structure Detection", "description": "Extract line items, totals and invoice fields.", "img": "/assets/imgs/page/homepage6/human2.png", "alt": "Bill/Invoice Structure Detection"}];
 
     // Slider data for Fintech annotation capabilities
     const annotationItems = [
@@ -94,16 +97,16 @@ const Fintech = () => {
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-100">
+                        <div className="mt-25 mb-100">
                         <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
                                 
                                         
                                
-                                <h3 className="color-black-text mt-10 mb-30">Training Data for Fintech Automation, <br />Fraud Detection and Financial Intelligence</h3>
+                                <h3 className="color-black-text mt-10 mb-20">Training Data for Fintech Automation, <br />Fraud Detection and Financial Intelligence</h3>
                                 </div>
                  
-                                <div className="col-lg-6 mt-40 mb-20">
+                                <div className="col-lg-6 mt-10 mb-20">
                                 <p className="font-lg color-black-text">
                                      High-quality annotations for documents, transactions, behavior patterns and identity verification — optimized for global financial systems.
 
@@ -131,157 +134,7 @@ const Fintech = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/fin_claim.png" 
-                                            alt="Document OCR & KYC Extraction" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Document OCR & KYC Extraction</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Extract and structure data from identity documents.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/Check & Receipt Recognition.webp" 
-                                            alt="Check & Receipt Recognition" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Check & Receipt Recognition</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Annotate checks, receipts and payment documents.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/image/ID Verification Annotation.webp" 
-                                            alt="ID Verification Annotation" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">ID Verification Annotation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Label ID fields, photos and security features.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/fin_fraud.webp" 
-                                            alt="Transaction Behavior Patterns" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Transaction Behavior Patterns</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Classify transaction types and behavior sequences.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/images/industry/fin_invoice.png" 
-                                            alt="Fraud Trigger Visual Evidence" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Fraud Trigger Visual Evidence</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Tag visual indicators of fraudulent activity.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human3.png" 
-                                            alt="Signature Matching" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Signature Matching</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Annotate signatures for verification models.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human1.png" 
-                                            alt="Financial Form Classification" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Financial Form Classification</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Classify form types and document categories.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img 
-                                            src="/assets/imgs/page/homepage6/human2.png" 
-                                            alt="Bill/Invoice Structure Detection" 
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Bill/Invoice Structure Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Extract line items, totals and invoice fields.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardSlider cards={cardItems} pageId="fintech" />
                         </div>
                     </div>
                 </section>
@@ -349,18 +202,13 @@ const Fintech = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Power Your Fintech AI?</h2>
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Power Your Fintech AI?</h2>
                                         <p className="font-md color-grey-500">
                                             Partner with us to get high-quality training data for fraud detection, KYC automation and financial intelligence.
                                         </p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>

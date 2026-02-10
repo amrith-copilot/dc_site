@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 import ImageSlider from '../components/slider/ImageSlider';
 import Offer3 from '../components/slider/Offer3';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+SwiperCore.use([Autoplay, Navigation]);
 
 const ImageAnno = () => {
     const [isOpen, setOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+    const swiperRef = useRef(null);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     return (
         <>
             <Layout>
@@ -40,8 +53,268 @@ const ImageAnno = () => {
                             </div>
                         </div>
 
-                        {/* First Row of Cards */}
-                        <div className="row mt-45">
+                        {/* Mobile Grid View - 2 Rows, 1 Column with Swiper */}
+                        {mounted && (
+                        <div className="mobile-card-grid d-lg-none">
+                            <div style={{position: 'relative', marginBottom: '20px'}}>
+                                <Swiper
+                                    ref={swiperRef}
+                                    modules={[Autoplay, Navigation]}
+                                    slidesPerView={1}
+                                    loop={true}
+                                    spaceBetween={20}
+                                    autoplay={{
+                                        delay: 3000,
+                                        disableOnInteraction: false,
+                                        pauseOnMouseEnter: false,
+                                        waitForTransition: true,
+                                        reverseDirection: false
+                                    }}
+                                    navigation={{
+                                        nextEl: '.swiper-button-next-cards',
+                                        prevEl: '.swiper-button-prev-cards',
+                                    }}
+                                    className="swiper-container"
+                                >
+                                    {/* First row card */}
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                            <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human1.png" 
+                                                    alt="Bounding Boxes" 
+                                                    className="image-showcase-photo-dynamic"
+                                                    style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                <h6 className="color-brand-1 mb-15">Image Annotation</h6>
+                                                <p className="font-sm color-grey-500">
+                                                    Pixel-accurate and object-level annotations for computer vision models across structured and unstructured imagery.
+                                                </p>
+                                                <ul className="font-sm color-grey-500 annotation-methods">
+                                                    <li>Bounding Boxes</li>
+                                                    <li>Polygons</li>
+                                                    <li>Semantic Segmentation</li>
+                                                    <li>Keypoints And Landmarks</li>
+                                                    <li>Lines, Splines And Contours</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    {/* Second row card */}
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                            <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human2.png" 
+                                                    alt="Image Segmentation" 
+                                                    className="image-showcase-photo-dynamic"
+                                                    style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                <h6 className="color-brand-1 mb-15">Video Annotation</h6>
+                                                <p className="font-sm color-grey-500">
+                                                    Frame-level and temporal annotations for motion-aware and sequence-based models.
+                                                </p>
+                                                <ul className="font-sm color-grey-500 annotation-methods">
+                                                    <li>Object tracking across frames</li>
+                                                    <li>Action and activity recognition</li>
+                                                    <li>Event detection with timestamps</li>
+                                                    <li>Frame-by-frame segmentation</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                            <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human3.png" 
+                                                    alt="Semantic Segmentation" 
+                                                    className="image-showcase-photo-dynamic"
+                                                    style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                <h6 className="color-brand-1 mb-15">Text Annotation </h6>
+                                                  <p className="font-sm color-grey-500">
+                                                    Structured labeling for training and evaluating NLP and language understanding models.
+                                                </p>
+                                                <ul className="font-sm color-grey-500 annotation-methods">
+                                                    <li>Named entity recognition</li>
+                                                    <li>Intent & slot labeling</li>
+                                                    <li>Relation extraction</li>
+                                                    <li>Document-level classification</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                            <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                                <img 
+                                                    src="assets/imgs/page/homepage6/human1.png" 
+                                                    alt="Depth & 3D" 
+                                                    className="image-showcase-photo-dynamic"
+                                                    style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                <h6 className="color-brand-1 mb-15">LLM Data Annotation & Evaluation</h6>
+                                                <p className="font-sm color-grey-500">Human-in-the-loop data creation and evaluation for large language models and generative systems.                                        </p>
+                                                <ul className="font-sm color-grey-500 annotation-methods">
+                                                    <li>Prompt–response labeling</li>
+                                                    <li>Preference ranking</li>
+                                                    <li>Instruction tuning datasets</li>
+                                                    <li>Safety, bias, and policy evaluation</li>
+                                                </ul>                  
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                            <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                                <img 
+                                                    src="assets/imgs/page/homepage12/human1.png" 
+                                                    alt="Cuboids" 
+                                                    className="image-showcase-photo-dynamic"
+                                                    style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                />
+                                            </div>
+                                            <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                <h6 className="color-brand-1 mb-15">Audio & Speech Annotation</h6>
+                                                <p className="font-sm color-grey-500"> Speech and audio labeling for ASR, TTS, and audio intelligence systems.</p>                                        <ul className="font-sm color-grey-500 annotation-methods">
+                                                    <li>Transcription (verbatim, clean, phonetic)</li>
+                                                    <li>Speaker diarization</li>
+                                                    <li>Intent and emotion tagging</li>
+                                                    <li>Noise and acoustic event labeling</li>
+                                                </ul>                  
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                            <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                                <img 
+                                                    src="assets/imgs/page/homepage12/human2.png" 
+                                                    alt="Key Points" 
+                                                    className="image-showcase-photo-dynamic"
+                                                    style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                />
+                                            </div>
+                                               <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                <h6 className="color-brand-1 mb-15">iDAR & Point Cloud Annotation</h6>
+                                                <p className="font-sm color-grey-500"> 3D annotation for spatial understanding in autonomous and robotics systems.</p>
+                                                <ul className="font-sm color-grey-500 annotation-methods">
+                                                    <li>3D bounding boxes</li>
+                                                    <li>Point-wise segmentation</li>
+                                                    <li>Object classification</li>
+                                                    <li>Sensor fusion (camera + LiDAR)</li>
+                                                </ul>                  
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                     <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                            <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                                <img 
+                                                    src="assets/imgs/page/homepage12/human3.png" 
+                                                    alt="Lines and splines" 
+                                                    className="image-showcase-photo-dynamic"
+                                                    style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                />
+                                            </div>
+                                               <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                <h6 className="color-brand-1 mb-15">Time-Series Annotation</h6>
+                                                <p className="font-sm color-grey-500">Labeling of sequential and sensor-based data for forecasting, anomaly detection, and monitoring models.</p>
+                                                <ul className="font-sm color-grey-500 annotation-methods">
+                                                    <li>Event tagging</li>
+                                                    <li>Anomaly labeling</li>
+                                                    <li>Change-point detection</li>
+                                                    <li>Window-based classification</li>
+                                                </ul>                  
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                     <SwiperSlide>
+                                        <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                            <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
+                                                <img 
+                                                    src="assets/imgs/page/homepage12/human1.png" 
+                                                    alt="Thermal & Multispectral" 
+                                                    className="image-showcase-photo-dynamic"
+                                                    style={{width: '100%', height: '100%', objectFit: 'cover'}}
+                                                />
+                                            </div>
+                                               <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
+                                                <h6 className="color-brand-1 mb-15">Multimodal Annotation </h6>
+                                                <p className="font-sm color-grey-500"> Cross-modal annotation where multiple data types must align. </p>
+                                                <ul className="font-sm color-grey-500 annotation-methods">
+                                                    <li>Image + text grounding</li>
+                                                    <li>Video + audio synchronization</li>
+                                                    <li>Sensor + visual data alignment</li>
+                                                    <li>Multimodal prompt-response datasets</li>
+                                                </ul>                  
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                </Swiper>
+
+                                {/* Slider Controls */}
+                                <div className="slider-controls-mobile" style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '20px', alignItems: 'center'}}>
+                                    <button 
+                                        className="swiper-button-prev-cards slider-btn"
+                                        style={{
+                                            background: '#f0f0f0',
+                                            border: 'none',
+                                            width: '40px',
+                                            height: '40px',
+                                            borderRadius: '50%',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '18px'
+                                        }}
+                                    >
+                                        ←
+                                    </button>
+                                    
+                                    <button 
+                                        className="swiper-button-next-cards slider-btn"
+                                        style={{
+                                            background: '#f0f0f0',
+                                            border: 'none',
+                                            width: '40px',
+                                            height: '40px',
+                                            borderRadius: '50%',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '18px'
+                                        }}
+                                    >
+                                        →
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        )}
+
+                        {/* Desktop Grid View */}
+                        <div className="desktop-card-grid d-none d-lg-block">
+                            {/* First Row of Cards */}
+                            <div className="row mt-45">
                             <div className="col-lg-3 col-md-6 mb-30">
                                 <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                                     <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
@@ -235,6 +508,7 @@ const ImageAnno = () => {
                                 </div>
                             </div> 
                         </div>
+                        </div>
                     </div>
                 </section>
                 {/* <section className="section mt-30 pb-50 bg-core-value">
@@ -339,6 +613,81 @@ const ImageAnno = () => {
                     @media (max-width: 991px) {
                         .image-showcase-content-dynamic { padding: 16px 14px; }
                         .image-showcase-content-dynamic h6 { font-size: 15px; }
+                    }
+
+                    /* Mobile Slider Styles */
+                    .mobile-card-grid {
+                        padding: 20px 15px 20px 0;
+                    }
+
+                    .mobile-card-grid .swiper-container {
+                        margin: 0 -15px;
+                        padding: 0 15px;
+                    }
+
+                    .mobile-card-grid .image-showcase-top-dynamic {
+                        width: 100% !important;
+                        height: 480px !important;
+                        overflow: hidden;
+                    }
+
+                    .mobile-card-grid .image-showcase-content-dynamic {
+                        padding: 14px 12px !important;
+                        max-height: 280px;
+                        overflow-y: auto;
+                    }
+
+                    .mobile-card-grid .image-showcase-content-dynamic h4,
+                    .mobile-card-grid .image-showcase-content-dynamic h6 {
+                        font-size: 14px !important;
+                        margin-bottom: 10px !important;
+                    }
+
+                    .mobile-card-grid .annotation-methods,
+                    .mobile-card-grid .custom-bullets {
+                        font-size: 12px !important;
+                        margin: 0 0 0 1rem !important;
+                        line-height: 1.4;
+                    }
+
+                    .mobile-card-grid .annotation-methods li,
+                    .mobile-card-grid .custom-bullets li {
+                        margin-bottom: 3px !important;
+                    }
+
+                    .mobile-card-grid .image-showcase-description-dynamic {
+                        font-size: 13px !important;
+                        line-height: 1.4;
+                    }
+
+                    .slider-controls-mobile {
+                        padding: 20px 0;
+                    }
+
+                    .slider-btn {
+                        transition: all 0.3s ease !important;
+                    }
+
+                    .slider-btn:hover {
+                        background: #265bda !important;
+                        color: #fff !important;
+                    }
+
+                    .swiper-button-prev-cards:after,
+                    .swiper-button-next-cards:after {
+                        display: none;
+                    }
+
+                    @media (min-width: 992px) {
+                        .mobile-card-grid {
+                            display: none !important;
+                        }
+                    }
+
+                    @media (max-width: 991px) {
+                        .desktop-card-grid {
+                            display: none !important;
+                        }
                     }
 
                     /* Partner benefits */
@@ -455,17 +804,12 @@ const ImageAnno = () => {
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 text-center">
                                     <div className="box-info-video">
                                         <h2>Ready to Validate Your AI?</h2>
                                         <p className="font-md color-grey-500">Let our workforce evaluate your model with precision and care.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up" href="#">Contact Us</Link></div>
+                                        <div className="box-button text-center mt-65"> <Link className="btn btn-brand-1 hover-up" href="#">Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>

@@ -4,10 +4,13 @@ import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
 import VideoSlider from '../../components/slider/VideoSlider';
 import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import CardSlider from '../../components/slider/CardSlider';
 import Link from 'next/link';
 
 const Insurance = () => {
     const [isOpen, setOpen] = useState(false)
+
+    const cardItems = [{"title": "Vehicle Exterior Damage Detection", "description": "High-precision visual detection of dents, scratches, and collision damage for faster auto-claim assessments across North America, Europe, and APAC.", "img": "/assets/images/industry/fin_damage.png", "alt": "Annotated image showing vehicle exterior damage detection for auto insurance claims"}, {"title": "Windshield Crack & Glass Damage Analysis", "description": "AI-powered crack and glass damage detection enabling accurate repair cost estimation for global auto insurance providers.", "img": "/assets/images/industry/media.png", "alt": "Annotated windshield crack detection for auto insurance analysis"}, {"title": "Property Roof Condition Assessment (Drone Imagery)", "description": "Drone-based roof damage analysis providing insurers with rapid, accurate assessments of hail, wind, and aging-related risks worldwide.", "img": "/assets/images/industry/doc_hand.png", "alt": "Annotated drone roof inspection for property insurance assessments"}, {"title": "Water/Flood Damage Segmentation in Homes", "description": "Automated visual mapping of flood and water damage patterns for faster claim validation in global flood-prone regions.", "img": "/assets/images/industry/doc_data.png", "alt": "Annotated water and flood damage detection for home insurance claims"}, {"title": "Fire & Smoke Damage Classification", "description": "Computer-vision–based detection of burn marks, soot, and fire patterns to accelerate property damage evaluation in international markets.", "img": "/assets/imgs/page/homepage6/human2.png", "alt": "Annotated fire and smoke damage classification for property insurance"}, {"title": "Vehicle Part Recognition for Repair Estimation", "description": "AI-driven identification of vehicle components to streamline repair planning for auto insurers across global repair networks.", "img": "/assets/imgs/page/homepage6/human3.png", "alt": "Annotated vehicle part recognition for insurance repair estimation"}];
 
     // Slider data for Insurance annotation capabilities
     const annotationItems = [
@@ -143,14 +146,14 @@ const Insurance = () => {
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
-                        <div className="mt-100 mb-10">
+                        <div className="mt-25 mb-10">
                             <div className="row align-items-start">
                                 <div className="col-lg-6 mb-20">
-                                    <h3 className="color-black-text mt-10">
+                                    <h3 className="color-black-text mt-10 mb-20">
                                         AI Training Data for Insurance Claims, Risk Assessment and Fraud Detection</h3>
                                 </div>
      
-                                <div className="col-lg-6 mt-10 mb-10">
+                                <div className="col-lg-6 mt-10 mb-20">
                                     <p className="font-lg color-black-text">
                                     High-quality annotations for claims imagery, damage scoring, document intelligence and risk analytics — optimized for insurers across North America, Europe and APAC.                                  
                                       </p> 
@@ -180,125 +183,7 @@ const Insurance = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img
-                                            src="/assets/images/industry/fin_damage.png"
-                                            alt="Annotated image showing vehicle exterior damage detection for auto insurance claims"
-                                            title="Annotated image showing vehicle exterior damage detection for auto insurance claims"
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Vehicle Exterior Damage Detection</h6>
-                                        <p className="font-sm color-grey-500">
-                                            High-precision visual detection of dents, scratches, and collision damage for faster auto-claim assessments across North America, Europe, and APAC.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img
-                                            src="/assets/images/industry/media.png"
-                                            alt="Annotated windshield crack detection for auto insurance analysis"
-                                            title="Annotated windshield crack detection for auto insurance analysis"
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Windshield Crack & Glass Damage Analysis</h6>
-                                        <p className="font-sm color-grey-500">
-                                            AI-powered crack and glass damage detection enabling accurate repair cost estimation for global auto insurance providers.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img
-                                            src="/assets/images/industry/doc_hand.png"
-                                            alt="Annotated drone roof inspection for property insurance assessments"
-                                            title="Annotated drone roof inspection for property insurance assessments"
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Property Roof Condition Assessment (Drone Imagery)</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Drone-based roof damage analysis providing insurers with rapid, accurate assessments of hail, wind, and aging-related risks worldwide.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img
-                                            src="/assets/images/industry/doc_data.png"
-                                            alt="Annotated water and flood damage detection for home insurance claims"
-                                            title="Annotated water and flood damage detection for home insurance claims"
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Water/Flood Damage Segmentation in Homes</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Automated visual mapping of flood and water damage patterns for faster claim validation in global flood-prone regions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img
-                                            src="/assets/imgs/page/homepage6/human2.png"
-                                            alt="Annotated fire and smoke damage classification for property insurance"
-                                            title="Annotated fire and smoke damage classification for property insurance"
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Fire & Smoke Damage Classification</h6>
-                                        <p className="font-sm color-grey-500">
-                                            Computer-vision–based detection of burn marks, soot, and fire patterns to accelerate property damage evaluation in international markets.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 mb-30">
-                                <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                    <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                        <img
-                                            src="/assets/imgs/page/homepage6/human3.png"
-                                            alt="Annotated vehicle part recognition for insurance repair estimation"
-                                            title="Annotated vehicle part recognition for insurance repair estimation"
-                                            className="image-showcase-photo-dynamic"
-                                            style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                        />
-                                    </div>
-                                    <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                        <h6 className="color-brand-1 mb-15">Vehicle Part Recognition for Repair Estimation</h6>
-                                        <p className="font-sm color-grey-500">
-                                            AI-driven identification of vehicle components to streamline repair planning for auto insurers across global repair networks.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <CardSlider cards={cardItems} pageId="insurance" />
                         </div>
                     </div>
                 </section>
@@ -366,18 +251,13 @@ const Insurance = () => {
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="/assets/imgs/page/homepage2/img-marketing.png" alt="ADAS Solutions" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
-                                        <h2 >Ready to Transform Your Insurance AI?</h2>
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Ready to Transform Your Insurance AI?</h2>
                                         <p className="font-md color-grey-500">
                                             Partner with us to get high-quality training data for smarter claims processing and fraud detection.
                                         </p>
-                                        <div className="box-button text-start mt-40">
+                                        <div className="box-button text-center mt-40">
                                             <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
                                         </div>
                                     </div>
@@ -391,3 +271,4 @@ const Insurance = () => {
 };
 
 export default Insurance;
+ 
