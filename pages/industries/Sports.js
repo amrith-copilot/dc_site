@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const Sports = () => {
@@ -87,6 +89,11 @@ const Sports = () => {
     ];
     return (
         <Layout>
+            <Head>
+                <title>Sports & Media Data Annotation Services | Video & AI Analytics | Dataclap</title>
+                <meta name="description" content="Dataclap delivers sports and media data annotation services for video analysis, player tracking, content indexing, and AI-powered media intelligence." />
+                <meta name="keywords" content="sports data annotation, media data labeling, video annotation services, player tracking annotation, sports analytics datasets, broadcast video labeling, AI for sports analytics, content indexing services, action recognition datasets, media AI training data" />
+            </Head>
            
                 {/* Hero Section */}
                 <section className="section banner-5">

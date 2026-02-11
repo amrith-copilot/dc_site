@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
+import Head from 'next/head';
 
 const Retail = () => {
     const [isOpen, setOpen] = useState(false)
@@ -71,7 +73,13 @@ const Retail = () => {
         }
     ];
     return (
-        <Layout>
+        <>
+            <Head>
+                <title>Retail Data Annotation Services | AI for E-commerce & Retail | Dataclap</title>
+                <meta name="description" content="Improve retail AI models with Dataclap’s data annotation services for product tagging, shelf analysis, demand forecasting, and personalization systems." />
+                <meta name="keywords" content="retail data annotation, ecommerce data labeling, product image annotation, retail AI training data, shelf image annotation" />
+            </Head>
+            <Layout>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -165,14 +173,14 @@ const Retail = () => {
                 </div>
             </div>
                 </section>
-                <div style={{marginTop: '-40px'}}></div>
+                <div style={{marginTop: '-10px'}}></div>
                 <AnnotationSlider
                     items={annotationItems}
                     title="Advanced Retail  Capabilities"
                     subtitle="Specialized labeling services for retail operations and store analytics"
                     navId="retail"
                 />
-                <div style={{marginTop: '-70px'}}></div>
+                <div style={{marginTop: '-50px'}}></div>
                 {/* CTA Section */}
                 <div className="retail-cta">
                    <section className="section mt-20 pt-30 pb-40">
@@ -197,16 +205,16 @@ const Retail = () => {
                 <style jsx>{`
                 @media (max-width: 992px) {
                     .retail-cta .box-cover-border {
-                        background: var(--color-primary-700) !important;
-                        color: #ffffff !important;
-                        border: none !important;
+                        background: var(--color-primary-100) !important;
+                        color: var(--text-primary) !important;
+                        border: 1px solid transparent !important;
                         box-shadow: none !important;
                         border-radius: 12px !important;
                         padding: 18px !important;
                     }
                     .retail-cta .box-info-video h2,
                     .retail-cta .box-info-video p {
-                        color: #ffffff !important;
+                        color: var(--text-primary) !important;
                     }
                     .retail-cta .image-container img {
                         filter: brightness(0.7) saturate(0.9) !important;
@@ -215,9 +223,17 @@ const Retail = () => {
                     }
                     /* invert button on mobile so it remains visible */
                     .retail-cta .btn-brand-1 {
-                        background: #ffffff !important;
-                        color: var(--color-primary-700) !important;
+                        background: var(--color-primary-700) !important;
+                        color: #ffffff !important;
                         border: none !important;
+                    }
+                    /* Hide any Swiper vertical/right pagination bullets on mobile for this page */
+                    .swiper-pagination,
+                    .swiper-group-1.right-pagination .swiper-pagination,
+                    .swiper-pagination.swiper-vertical {
+                        display: none !important;
+                        visibility: hidden !important;
+                        opacity: 0 !important;
                     }
                 }
                 `}</style>
@@ -225,7 +241,8 @@ const Retail = () => {
                 </div>
 
              
-        </Layout>
+            </Layout>
+        </>
     );
 };
 

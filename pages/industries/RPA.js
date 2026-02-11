@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const RPA = () => {
@@ -86,7 +88,13 @@ const RPA = () => {
         }
     ];
     return (
-        <Layout>
+        <>
+            <Head>
+                <title>RPA Data Annotation Services | Intelligent Automation Training Data | Dataclap</title>
+                <meta name="description" content="Dataclap provides RPA data annotation services to train intelligent automation systems, including document labeling, workflow tagging, and structured data extraction." />
+                <meta name="keywords" content="RPA data annotation, robotic process automation data labeling, automation training data, intelligent automation datasets, document annotation for RPA, business process data labeling, structured data extraction services, invoice annotation services, form data labeling, AI automation training data" />
+            </Head>
+            <Layout>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -213,6 +221,7 @@ const RPA = () => {
 
                
         </Layout>
+        </>
     );
 };
 

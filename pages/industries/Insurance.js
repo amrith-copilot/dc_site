@@ -2,9 +2,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const Insurance = () => {
@@ -138,9 +139,9 @@ const Insurance = () => {
     return (
         <Layout>
             <Head>
-                <title>Insurance — AI Training Data for Claims, Risk & Fraud Detection | DataClap</title>
-                <meta name="description" content="High-quality labeled data for insurance AI: claims imagery annotation, damage segmentation, document parsing, fraud pattern detection, and risk scoring. Scalable, privacy-aware annotation for insurers." />
-                <meta name="keywords" content="insurance AI, claims annotation, damage detection dataset, fraud detection training data, risk scoring annotation" />
+                <title>Insurance Data Annotation Services | AI for Claims & Risk | Dataclap</title>
+                <meta name="description" content="Dataclap provides insurance data annotation services for claims processing, underwriting, fraud detection, and document automation AI systems." />
+                <meta name="keywords" content="insurance data annotation, claims data labeling, insurance AI training data, underwriting data annotation, fraud detection datasets, policy document annotation, insurance OCR labeling, risk assessment datasets, financial document labeling, AI for insurance automation" />
             </Head>
            
                 {/* Hero Section */}

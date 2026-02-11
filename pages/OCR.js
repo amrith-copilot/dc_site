@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import ImageSlider from '../components/slider/ImageSlider';
-import Offer7 from '../components/slider/Offer7';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const ImageSlider = dynamic(() => import('../components/slider/ImageSlider'), { ssr: false });
+const Offer7 = dynamic(() => import('../components/slider/Offer7'), { ssr: false });
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
 import { Autoplay, Navigation } from 'swiper';
@@ -19,8 +21,36 @@ const OCR = () => {
     useEffect(() => {
         setMounted(true);
     }, []);
+    useEffect(() => {
+        if (!mounted) return;
+        let intervalId = null;
+
+        const start = () => {
+            if (typeof window === 'undefined') return;
+            if (window.innerWidth > 991) return;
+            if (!swiperRef.current) return;
+            if (typeof swiperRef.current.slideNext !== 'function') return;
+            if (intervalId) clearInterval(intervalId);
+            intervalId = setInterval(() => {
+                try { swiperRef.current.slideNext(); } catch (e) { /* ignore */ }
+            }, 3000);
+        };
+
+        const stop = () => {
+            if (intervalId) { clearInterval(intervalId); intervalId = null; }
+        };
+
+        start();
+        window.addEventListener('resize', start);
+        return () => { stop(); window.removeEventListener('resize', start); };
+    }, [mounted]);
     return (
         <>
+            <Head>
+                <title>OCR & Intelligent Document Processing (IDP) Services | Dataclap</title>
+                <meta name="description" content="Automate document workflows with Dataclap's OCR and IDP services. Extract, classify, and process structured and unstructured data with AI-powered automation." />
+                <meta name="keywords" content="OCR services, intelligent document processing, IDP solutions, document data extraction, AI document automation" />
+            </Head>
             <Layout>
                 <section className="section banner-5">
                     <div className="container">
@@ -275,17 +305,18 @@ const OCR = () => {
                             <div style={{position: 'relative', marginBottom: '20px'}}>
                                 <Swiper
                                     ref={swiperRef}
+                                    onSwiper={(s) => { swiperRef.current = s; }}
                                     modules={[Autoplay, Navigation]}
                                     slidesPerView={1}
                                     loop={true}
                                     spaceBetween={20}
-                                    autoplay={{
+                                    autoplay={typeof Autoplay !== 'undefined' ? {
                                         delay: 3000,
                                         disableOnInteraction: false,
                                         pauseOnMouseEnter: false,
                                         waitForTransition: true,
                                         reverseDirection: false
-                                    }}
+                                    } : false}
                                     navigation={{
                                         nextEl: '.swiper-button-next-cards',
                                         prevEl: '.swiper-button-prev-cards',
@@ -721,7 +752,7 @@ const OCR = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Advantages of adopting DevOps</h2>
+                                <h2 className="mt-20 mb-20" style={{ color: "#fff" }}>Advantages of adopting DevOps</h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
                                     Transform your software delivery with proven DevOps practices that accelerate innovation and improve quality.
                                 </p>
@@ -808,7 +839,7 @@ const OCR = () => {
                                         <div className="container">
                                             <div className="row">
                                                 <div className="col-lg-12 text-center">
-                                                    <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                                    <h2 className="color-brand-1  mt-20 mb-20">Industries We Serve</h2>
                                                     <p className="font-lg color-gray-500">
                                                         What makes us different from others? We give holistic solutions
                                                         <br className="d-none d-lg-block" />

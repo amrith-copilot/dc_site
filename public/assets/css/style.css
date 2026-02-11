@@ -187,7 +187,7 @@ TABLE CONTENT
 /* Industry cards: enforce consistent image sizing and cover crop */
 .image-showcase-top-dynamic {
   width: 100%;
-  height: 320px; /* mobile/default */
+  height: 480px; /* mobile/default set to 480px per request */
   overflow: hidden;
 }
 .image-showcase-photo-dynamic {
@@ -199,6 +199,173 @@ TABLE CONTENT
 @media (min-width: 992px) {
   .image-showcase-top-dynamic {
     height: 480px; /* desktop target used across industry pages */
+  }
+}
+
+/* Add consistent mobile spacing between sliders and CTA boxes across industry pages */
+@media (max-width: 768px) {
+  .swiper-group-1 {
+    margin-bottom: 28px !important;
+  }
+  .section .box-cover-border {
+    margin-top: 20px !important;
+  }
+  /* Remove all Swiper pagination bullets on mobile to avoid visual clutter */
+  .swiper-pagination {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  /* Mobile: style Swiper nav buttons as small white circles with thin border and black arrows */
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 44px !important;
+    height: 44px !important;
+    background: #ffffff !important;
+    border: 1px solid #eeeeee !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+    color: #000000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    top: auto !important;
+    bottom: 12px !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 18px !important;
+    color: #000000 !important;
+    opacity: 1 !important;
+  }
+
+  /* position prev/next near each other and centered horizontally */
+  .swiper-button-prev {
+    right: 72px !important;
+    left: auto !important;
+  }
+  .swiper-button-next {
+    right: 12px !important;
+    left: auto !important;
+  }
+}
+
+/* Strong override: hide any node with 'swiper-pagination' in its class name on mobile */
+@media (max-width: 992px) {
+  [class*="swiper-pagination"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
+
+/* Make CTA boxes use desktop appearance on mobile: light-blue background and primary button */
+@media (max-width: 768px) {
+  .section .box-cover-border {
+    background-color: var(--color-primary-100) !important;
+    border: 1px solid transparent !important;
+    color: var(--text-primary) !important;
+    box-shadow: none !important;
+  }
+  .section .box-cover-border .box-info-video h2,
+  .section .box-cover-border .box-info-video p {
+    color: var(--text-primary) !important;
+  }
+  .section .box-cover-border .box-button .btn,
+  .section .box-cover-border .box-button .btn-brand-1 {
+    background: var(--color-primary-700) !important;
+    color: #ffffff !important;
+    border-color: var(--color-primary-700) !important;
+  }
+}
+
+/* Hide vertical/right-side Swiper pagination bullets across pages on mobile */
+@media (max-width: 768px) {
+  .swiper-group-1.right-pagination .swiper-pagination,
+  .swiper-pagination.swiper-vertical {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
+
+/* Apply ADAS-style mobile/layout fixes across all industry pages */
+@media (max-width: 768px) {
+  .section.banner-5::before,
+  .section.banner-5::after {
+    background: transparent !important;
+    height: 0 !important;
+    display: none !important;
+  }
+
+  /* Remove borders/shadows and enforce full-width containers on small screens */
+  .section,
+  .container,
+  .box-cover-border,
+  .box-video-banner,
+  .box-radius-16,
+  .box-container {
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    overflow: visible !important;
+  }
+
+  /* Ensure full-width visual elements use available space on mobile */
+  .video-slider-wrapper,
+  .video-slider-container,
+  .box-info-video-banner,
+  .image-banner-5,
+  .card-small,
+  .card-plan,
+  .card-testimonial-list,
+  .box-info-video {
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* CTA box styling on mobile to match ADAS look */
+  .box-cover-border {
+    background-color: var(--color-primary-100) !important;
+    border: 1px solid transparent !important;
+    border-radius: 8px !important;
+    padding: 20px 10px !important;
+    overflow: hidden !important;
+    color: var(--text-primary) !important;
+  }
+  .box-cover-border .box-info-video h2,
+  .box-cover-border .box-info-video p {
+    color: var(--text-primary) !important;
+  }
+  .box-cover-border .box-button .btn,
+  .box-cover-border .box-button .btn-brand-1 {
+    background: var(--color-primary-700) !important;
+    color: #ffffff !important;
+    border-color: var(--color-primary-700) !important;
+  }
+
+  /* Small spacing adjustments to keep sliders and CTA visually close on mobile */
+  .cta-section {
+    margin-top: 20px !important;
+    padding-top: 12px !important;
+  }
+  .swiper-group-1 {
+    margin-bottom: 28px !important;
   }
 }
 
@@ -289,6 +456,59 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+}
+
+/* Final mobile override to ensure Swiper nav buttons use the circular white style
+   and show simple black arrows. This block is intentionally very specific and
+   placed late to override other plugin or component rules. */
+@media (max-width: 576px) {
+  .box-container-sw .swiper-button-prev,
+  .box-container-sw .swiper-button-next,
+  .swiper-group-1 .swiper-button-prev,
+  .swiper-group-1 .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex !important;
+    width: 44px !important;
+    height: 44px !important;
+    background: #ffffff !important;
+    background-image: none !important;
+    border: 1px solid #eeeeee !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+    color: #000000 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    top: auto !important;
+    bottom: 12px !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .swiper-button-prev::after {
+    content: '\2039' !important; /* ‹ */
+    font-size: 18px !important;
+    color: #000000 !important;
+    line-height: 1 !important;
+    opacity: 1 !important;
+  }
+  .swiper-button-next::after {
+    content: '\203A' !important; /* › */
+    font-size: 18px !important;
+    color: #000000 !important;
+    line-height: 1 !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-button-prev {
+    right: 72px !important;
+    left: auto !important;
+  }
+  .swiper-button-next {
+    right: 12px !important;
+    left: auto !important;
+  }
 }
 
 main {
@@ -520,6 +740,13 @@ h6 {
 
 .bg-brand-1 {
   background-color: var(--color-primary-700);
+}
+
+/* Ensure .bg-brand-1 remains brand blue on small screens (override rules that set white) */
+@media (max-width: 768px) {
+  .bg-brand-1 {
+    background-color: var(--color-primary-700) !important;
+  }
 }
 
 .bg-brand-2 {
@@ -9023,6 +9250,21 @@ footer.footer-4 {
 .partner-benefits .benefit-icon{width:36px;height:36px;margin-right:12px;flex-shrink:0;display:inline-block}
 .partner-benefits .box-border-dashed{border-bottom:1px dashed rgba(255,255,255,0.08);padding:14px;border-radius:8px}
 .partner-benefits .ticked{display:none}
+
+/* Mobile: reduced vertical spacing for service pages and sections */
+@media (max-width: 768px) {
+  .section { padding-top: 12px !important; padding-bottom: 12px !important; }
+  .section[class*="mt-"] { margin-top: 12px !important; }
+  .section[class*="mb-"] { margin-bottom: 12px !important; }
+  .mt-110, .mt-100, .mt-70, .mt-65, .mt-50 { margin-top: 12px !important; padding-top: 8px !important; }
+  .mb-100 { margin-bottom: 24px !important; }
+  .box-cover-border { padding-top: 8px !important; padding-bottom: 8px !important; }
+  .container { padding-left: 12px !important; padding-right: 12px !important; }
+  /* tighten common hero/banner spacing */
+  .mt-65 { margin-top: 20px !important; }
+  /* slightly reduce mobile image heights used by sliders */
+  .mobile-card-grid .image-showcase-top-dynamic { height: 480px !important; }
+}
 
 @media (max-width: 1550px) {
   .bg-faqs {

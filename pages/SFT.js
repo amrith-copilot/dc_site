@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
+import Head from 'next/head';
 import Link from 'next/link';
-import VideoSlider from '../components/slider/VideoSlider';
-import Tab2 from '../components/elements/tab2';
-import Offer6 from '../components/slider/Offer6';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const Tab2 = dynamic(() => import('../components/elements/tab2'), { ssr: false });
+const Offer6 = dynamic(() => import('../components/slider/Offer6'), { ssr: false });
 // Partner component not used on this page
-import Offer3 from '../components/slider/Offer3';
+const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 
 const SFT = () => {
     const [isOpen, setOpen] = useState(false)
@@ -15,7 +17,12 @@ const SFT = () => {
         setMounted(true);
     }, []);
     return (
-        <>
+        
+        <><Head>
+                <title>Supervised Fine-Tuning Services | Dataclap LLM & AI Model Optimization</title>
+                <meta name="description" content="Enhance model performance with Dataclap’s supervised fine-tuning services. Improve LLM accuracy, domain adaptation, and AI outputs with expert human-curated datasets." />
+                <meta name="keywords" content="supervised fine-tuning, LLM fine-tuning services, AI model fine-tuning, GPT fine-tuning services, custom AI model training, domain-specific LLM training" />
+            </Head>
             <Layout>
                 <style jsx global>{`
                     body, .sft-root, .sft-root * {
@@ -219,7 +226,7 @@ const SFT = () => {
                                         </div>
                                     </li>
                                     <li> <span className="ticked" />
-                                        <h5 className="color-brand-1 mb-5"></h5>
+                                        <h5 className="color-brand-1 mb-5">Embedded Guardrails:</h5>
                                         <div className="box-border-dashed">
                                             <p className="font-md color-grey-500 mb-20">
                                             Allows you to bake safety and compliance directly into the model’s weights rather than relying solely on external filters. </p>
@@ -364,7 +371,7 @@ const SFT = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
+                                <h2 className="mt-20 mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
                                     Understand how our specialized SFT approach enhances model alignment, reliability, and deployment speed.                                </p>
                             </div>
@@ -438,7 +445,7 @@ const SFT = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <h2 className="color-brand-1 mt-20 mb-20">Industries We Serve</h2>
                                 <p className="font-lg color-gray-500">
                                     What makes us different from others? We give holistic solutions
                                     <br className="d-none d-lg-block" />
@@ -455,7 +462,7 @@ const SFT = () => {
                         </div>
                     </div>
                 </section>
-                   <section className="section mt-50 pt-50 pb-40">
+                   <section className="section mt-20 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border" >
                             <div className="row justify-content-center">

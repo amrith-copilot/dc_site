@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const VoiceAI = () => {
@@ -78,7 +80,13 @@ const VoiceAI = () => {
         }
     ];
     return (
-        <Layout>
+        <>
+            <Head>
+                <title>Voice AI Data Annotation Services | Speech & Audio Labeling | Dataclap</title>
+                <meta name="description" content="Enhance speech recognition models with Dataclap’s voice AI annotation services including audio transcription, speech tagging, and NLP data labeling." />
+                <meta name="keywords" content="voice AI annotation, audio data labeling, speech recognition annotation, audio transcription services, NLP data annotation, speech-to-text training data, voice dataset collection, intent labeling services, multilingual audio annotation, conversational AI datasets" />
+            </Head>
+            <Layout>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -202,7 +210,8 @@ const VoiceAI = () => {
                         </div>
                     </div>
                 </section>
-        </Layout>
+            </Layout>
+        </>
     );
 };
 

@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import React, { useState, useEffect } from 'react';
-import Accordion from '../components/elements/Accordion';
+import dynamic from 'next/dynamic';
+const Accordion = dynamic(() => import('../components/elements/Accordion'), { ssr: false });
 import Layout from '../components/layout/Layout';
-import VideoSlider from '../components/slider/VideoSlider';
-import CalBooking from '../components/elements/CalBooking';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const CalBooking = dynamic(() => import('../components/elements/CalBooking'), { ssr: false });
 
 const ContactUs = () => {
     const [activeIndex, setActiveIndex] = useState(1);

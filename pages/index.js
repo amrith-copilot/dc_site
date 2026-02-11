@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
@@ -10,6 +10,9 @@ const Brand = dynamic(() => import('../components/slider/Brand'), { ssr: false }
 
 const HomePage3 = () => {
     const [isOpen, setOpen] = useState(false)
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => setMounted(true), []);
 
     const [pricing, setPricing] = useState(1);
 
@@ -29,8 +32,6 @@ const HomePage3 = () => {
                 <title>DATACLAP  | Enterprise Data Foundations & End-to-End AI Solutions</title>
                 <meta name="description" content="Accelerate your AI journey with DATACLAP. We provide enterprise-grade data collection, high-accuracy annotation, RLHF, and LLM evaluation services across 15+ industries. Scale your models with production-ready datasets and expert human-in-the-loop workflows." />
                 <meta name="keywords" content="Enterprise AI Solutions, Data Annotation Services, Supervised Fine-Tuning (SFT), RLHF Services, LLM Evaluation-as-a-Service, Computer Vision Data, AI Data Foundations" />
-                <meta property="og:title" content="DATACLAP  | Enterprise Data Foundations & End-to-End AI Solutions" />
-                <meta property="og:description" content="Accelerate your AI journey with DATACLAP. We provide enterprise-grade data collection, high-accuracy annotation, RLHF, and LLM evaluation services across 15+ industries. Scale your models with production-ready datasets and expert human-in-the-loop workflows." />
             </Head>
             <Layout>
                 <section className="section banner-11">
@@ -40,7 +41,6 @@ const HomePage3 = () => {
                                 <HeroSlider/>
                             </div>
                         </div>
-                        <div className="swiper-pagination right-pagination swiper-pagination-group-11" />
                     </div>
                 </section>
                 <section className="section mt-50 mb-200">
@@ -190,10 +190,10 @@ const HomePage3 = () => {
                         <div className="mover-2" />
                     </div>
                 </section>
-                <section className="section mt-100 mb-100 bg-brand-1 pt-100 pb-100 bg-explore">
+                <section className="section mt-10 mb-100 bg-brand-1 pt-50 pb-100 bg-explore">
                     <div className="container">
-                        <div className="text-center">
-                            <span className="font-xl-bold color-white text-uppercase">explore network</span>
+                        <div className="text-center mt-20 mb-20">
+                            <span className="font-xl-bold color-white text-uppercase ">explore network</span>
                             <h2 className="color-brand-2 mb-60 mt-15">
                                 Ready to capture every <br className="d-none d-lg-block" />wonderful
                                 moment
@@ -227,7 +227,7 @@ const HomePage3 = () => {
                     </div>
                 </section>
                 <section className="section mt-100 mb-100 pt-100 pb-100 bg-brand-1 partner-benefits">
-                    <div className="container mt-75">
+                    <div className="container mt-50">
                         <div className="row box-list-core-value">
                             <div className="col-lg-4 mb-70">
                                 <div className="box-core-value">

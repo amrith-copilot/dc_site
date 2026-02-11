@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Layout from "../../components/layout/Layout";
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
 import Link from 'next/link';
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 
 const MedicalAI = () => {
     const [isOpen, setOpen] = useState(false)
@@ -109,7 +112,7 @@ const MedicalAI = () => {
     useEffect(() => {
         const handleResize = () => {
             if (typeof window !== 'undefined') {
-                setCardsPerSlide(window.innerWidth <= 768 ? 2 : 4);
+                setCardsPerSlide(window.innerWidth <= 768 ? 1 : 4);
             }
         };
         handleResize();
@@ -143,7 +146,13 @@ const MedicalAI = () => {
         return cardItems.slice(start, start + cardsPerSlide);
     };
     return (
-        <Layout>
+        <>
+            <Head>
+                <title>Medical AI Data Annotation Services | Healthcare AI Training | Dataclap</title>
+                <meta name="description" content="Dataclap provides secure medical AI annotation services for radiology, pathology, and clinical data to power accurate healthcare AI models." />
+                <meta name="keywords" content="medical data annotation, healthcare AI annotation, medical image labeling, radiology image annotation, clinical data labeling" />
+            </Head>
+            <Layout>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -184,140 +193,9 @@ const MedicalAI = () => {
                                 Specialized annotation capabilities for healthcare and diagnostic AI systems
                             </p>
                         </div>
-                        <div className="row">
-                            {/* Desktop Grid (always show all) */}
-                            <div className="card-grid" style={{display: 'none', width: '100%'}}>
-                                <div className="row">
-                                    {cardItems.map((card, idx) => (
-                                        <div key={idx} className="col-lg-3 col-md-6 mb-30">
-                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '480px', overflow: 'hidden'}}>
-                                                    <img 
-                                                        src={card.img} 
-                                                        alt={card.alt} 
-                                                        className="image-showcase-photo-dynamic"
-                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                                    />
-                                                </div>
-                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                                    <h6 className="color-brand-1 mb-15">{card.title}</h6>
-                                                    <p className="font-sm color-grey-500">{card.description}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* Mobile Slider (2 rows × 1 col = 2 cards per slide with auto-slide) */}
-                            <div className="medical-card-slider" style={{display: 'none', flexDirection: 'column', width: '100%'}}>
-                                <div style={{display: 'grid', gridTemplateColumns: '1fr', gap: '20px', width: '100%'}}>
-                                    {getCurrentSlideCards().map((card, idx) => (
-                                        <div key={idx}>
-                                            <div className="image-showcase-card-dynamic" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                                                <div className="image-showcase-top-dynamic" style={{width: '100%', height: '250px', overflow: 'hidden'}}>
-                                                    <img 
-                                                        src={card.img} 
-                                                        alt={card.alt} 
-                                                        className="image-showcase-photo-dynamic"
-                                                        style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                                    />
-                                                </div>
-                                                <div className="image-showcase-content-dynamic" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                                                    <h6 className="color-brand-1 mb-15">{card.title}</h6>
-                                                    <p className="font-sm color-grey-500">{card.description}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                {/* Slider Navigation Controls */}
-                                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px', marginTop: '30px'}}>
-                                    <button 
-                                        onClick={handlePrevCardSlide}
-                                        style={{
-                                            width: '45px',
-                                            height: '45px',
-                                            borderRadius: '50%',
-                                            border: '2px solid black',
-                                            background: 'white',
-                                            color: 'black',
-                                            cursor: 'pointer',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            fontSize: '20px',
-                                            fontWeight: 'bold'
-                                        }}
-                                    >
-                                        ‹
-                                    </button>
-                                    
-                                    <div style={{display: 'flex', gap: '8px'}}>
-                                        {Array.from({ length: Math.ceil(cardItems.length / cardsPerSlide) }).map((_, idx) => (
-                                            <button
-                                                key={idx}
-                                                onClick={() => setCardSlideIndex(idx)}
-                                                style={{
-                                                    width: '12px',
-                                                    height: '12px',
-                                                    borderRadius: '50%',
-                                                    border: '1px solid black',
-                                                    background: idx === cardSlideIndex ? 'black' : 'white',
-                                                    cursor: 'pointer'
-                                                }}
-                                            />
-                                        ))}
-                                    </div>
-
-                                    <button 
-                                        onClick={handleNextCardSlide}
-                                        style={{
-                                            width: '45px',
-                                            height: '45px',
-                                            borderRadius: '50%',
-                                            border: '2px solid black',
-                                            background: 'white',
-                                            color: 'black',
-                                            cursor: 'pointer',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            fontSize: '20px',
-                                            fontWeight: 'bold'
-                                        }}
-                                    >
-                                        ›
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        <CardSlider cards={cardItems} pageId="medicalai" mobileCardsPerSlide={1} />
                     </div>
                 </section>
-
-                <style jsx>{`
-                    @media (min-width: 769px) {
-                        /* Show desktop grid on larger screens */
-                        .card-grid {
-                            display: block !important;
-                        }
-                        /* Hide mobile slider on larger screens */
-                        .medical-card-slider {
-                            display: none !important;
-                        }
-                    }
-                    @media (max-width: 768px) {
-                        /* Hide desktop grid on mobile */
-                        .card-grid {
-                            display: none !important;
-                        }
-                        /* Show mobile slider only on small screens */
-                        .medical-card-slider {
-                            display: flex !important;
-                        }
-                    }
-                `}</style>
                 
                  <section className="section mt-10 pb-0 bg-core-value">
             <div className="container">
@@ -399,7 +277,8 @@ const MedicalAI = () => {
                 </section>
 
                 
-        </Layout>
+            </Layout>
+        </>
     );
 };
 

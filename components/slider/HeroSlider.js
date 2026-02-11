@@ -9,8 +9,13 @@ SwiperCore.use([Autoplay, Navigation,Pagination]);
 const HeroSlider = () => {
     const router = useRouter();
     const [mounted, setMounted] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
         setMounted(true);
+        const check = () => setIsMobile(typeof window !== 'undefined' && window.innerWidth < 768);
+        check();
+        window.addEventListener('resize', check);
+        return () => window.removeEventListener('resize', check);
     }, []);
 
     const heroBackgroundStyle = {
@@ -53,7 +58,13 @@ const HeroSlider = () => {
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={30}
-                    pagination={{ el: '.hero-pagination', clickable: true }}
+                    pagination={{
+                        el: '.hero-pagination',
+                        clickable: true,
+                        dynamicBullets: false,
+                        allign: 'center',
+                        renderBullet: (index, className) => `<span class="${className}"></span>`
+                    }}
                     loop={true}
                     autoplay={{
                         delay: 5500,
@@ -283,7 +294,33 @@ const HeroSlider = () => {
                         </div>
                     </SwiperSlide>
                 </Swiper>
-                <div className="hero-pagination" />
+                <div
+                    className="hero-pagination"
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        gap: '12px',
+                        position: 'absolute',
+                        left: 0,
+                        right: 0,
+                        transform: 'none',
+                        bottom: isMobile ? '10px' : '40px',
+                        zIndex: 200,
+                        pointerEvents: 'auto'
+                    }}
+                />
+                <div className="hero-nav-style-3">
+                    <button className="swiper-button-prev-style-3" aria-label="Previous" type="button">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M18 12 H8 M12 6 L6 12 L12 18" stroke="#111" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </button>
+                    <button className="swiper-button-next-style-3" aria-label="Next" type="button">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M6 12 H16 M12 6 L18 12 L12 18" stroke="#111" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </button>
+                </div>
                 </>
                 ) : (
                     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
@@ -333,7 +370,21 @@ const HeroSlider = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hero-pagination" aria-hidden="true">
+                        <div
+                            className="hero-pagination"
+                            aria-hidden="true"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                gap: '12px',
+                                position: 'absolute',
+                                left: '50%',
+                                transform: 'translateX(-50%)',
+                                bottom: isMobile ? '80px' : '140px',
+                                zIndex: 200,
+                                pointerEvents: 'auto'
+                            }}
+                        >
                             <span className="swiper-pagination-bullet"></span>
                             <span className="swiper-pagination-bullet"></span>
                             <span className="swiper-pagination-bullet"></span>
@@ -343,25 +394,76 @@ const HeroSlider = () => {
                 )}
 
                 <style jsx>{`
-                    :global(.hero-pagination) {
+                        :global(.hero-pagination) {
                         position: relative;
-                        margin-top: -50px;
+                        margin-top: 0 !important;
                         display: flex !important;
                         justify-content: center !important;
                         gap: 8px !important;
                         z-index: 50 !important;
-                        transform: translateY(-8px) !important;
+                        transform: none !important;
+                    }
+                    /* Hide nav arrows site-wide for this hero slider */
+                    :global(.hero-nav-style-3),
+                    :global(.slider-nav-btn),
+                    :global(.swiper-button-prev-style-3),
+                    :global(.swiper-button-next-style-3),
+                    :global(.swiper-button-prev),
+                    :global(.swiper-button-next) {
+                        display: none !important;
+                        visibility: hidden !important;
+                        opacity: 0 !important;
                     }
                     /* Mobile adjustments: tighter paddings, smaller heading and nudge pagination */
                     @media (max-width: 767px) {
                         /* Place pagination absolutely so it's always above the CTA */
                         :global(.hero-pagination) {
+                        position: absolute !important;
+                        left: 0 !important;
+                        right: 0 !important;
+                        bottom: 140px !important;
+                        transform: none !important;
+                        margin: 0 !important;
+                        z-index: 120 !important;
+                    }
+                        /* hide nav arrows on mobile and force style of pagination dots */
+                        :global(.hero-nav-style-3) {
+                            display: none !important;
+                        }
+                        :global(.hero-pagination) {
+                            display: flex !important;
+                            justify-content: center !important;
+                            gap: 12px !important;
                             position: absolute !important;
-                            left: 50% !important;
-                            bottom: 180px !important;
-                            transform: translateX(-50%) !important;
-                            margin: 0 !important;
-                            z-index: 120 !important;
+                            left: 0 !important;
+                            right: 0 !important;
+                            transform: none !important;
+                            bottom: 10px !important;
+                            z-index: 9999 !important;
+                            pointer-events: auto !important;
+                        }
+                        :global(.hero-pagination .swiper-pagination-bullet) {
+                            display: inline-block !important;
+                            width: 12px !important;
+                            height: 12px !important;
+                            border-radius: 50% !important;
+                            background: rgba(16,88,255,0.18) !important;
+                            opacity: 1 !important;
+                            margin: 0 6px !important;
+                            visibility: visible !important;
+                            box-shadow: none !important;
+                        }
+                        :global(.hero-pagination .swiper-pagination-bullet-active) {
+                            background: #165eff !important;
+                            box-shadow: 0 0 0 4px rgba(22,94,255,0.08) !important;
+                            visibility: visible !important;
+                        }
+                        /* Ensure any global rules hiding .swiper-pagination are overridden on mobile */
+                        :global(.swiper-pagination),
+                        :global(.hero-pagination) {
+                            display: flex !important;
+                            visibility: visible !important;
+                            opacity: 1 !important;
                         }
                         :global(.banner-slide-11) {
                             padding-top: 20px !important;
@@ -384,6 +486,43 @@ const HeroSlider = () => {
                         }
                         :global(.banner-slide-11 .btn) {
                             padding: 8px 18px !important;
+                        }
+                        /* Override global rule that hides right-side pagination on mobile
+                           Force the desktop (right-side) pagination to display here */
+                        :global(.swiper-group-1.right-pagination .hero-pagination),
+                        :global(.swiper-group-1.right-pagination .swiper-pagination) {
+                            display: flex !important;
+                            visibility: visible !important;
+                            opacity: 1 !important;
+                            flex-direction: row !important;
+                            gap: 8px !important;
+                            left: 0 !important;
+                            right: 0 !important;
+                            transform: none !important;
+                            position: absolute !important;
+                            bottom: 140px !important;
+                            z-index: 150 !important;
+                        }
+                        :global(.swiper-group-1.right-pagination .swiper-pagination .swiper-pagination-bullet) {
+                            width: 10px !important;
+                            height: 10px !important;
+                            border-radius: 50% !important;
+                            background: rgba(11,95,255,0.15) !important;
+                        }
+                        :global(.swiper-group-1.right-pagination .swiper-pagination .swiper-pagination-bullet-active) {
+                            background: #1162ff !important;
+                        }
+                        /* hide any slider navigation buttons that might appear as arrow boxes */
+                        :global(.slider-nav-btn),
+                        :global(.swiper-button-prev-style-3),
+                        :global(.swiper-button-next-style-3),
+                        :global(.swiper-button-prev),
+                        :global(.swiper-button-next),
+                        :global(.swiper-button-prev-cards),
+                        :global(.swiper-button-next-cards) {
+                            display: none !important;
+                            visibility: hidden !important;
+                            opacity: 0 !important;
                         }
                     }
                     :global(.hero-pagination .swiper-pagination-bullet) {

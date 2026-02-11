@@ -37,6 +37,12 @@ const Offer10 = () => {
                     disableOnInteraction: false,
                     reverseDirection: false,
                 }}
+                // Improve stability on mobile to avoid blank/white flash between loops
+                preloadImages={true}
+                watchSlidesProgress={true}
+                observer={true}
+                observeParents={true}
+                updateOnWindowResize={true}
                 navigation={{
                     prevEl: ".offer10-prev",
                     nextEl: ".offer10-next",
@@ -147,10 +153,13 @@ const Offer10 = () => {
             <style jsx>{`
                 .swiper-annotation {
                     padding: 0 !important;
+                    background: transparent !important;
+                    overflow: hidden !important;
                 }
                 .swiper-annotation .swiper-slide {
                     display: flex;
                     align-items: stretch;
+                    min-height: 280px; /* keep slide height stable to avoid layout flashes */
                 }
                 .annotation-card {
                     height: 280px;

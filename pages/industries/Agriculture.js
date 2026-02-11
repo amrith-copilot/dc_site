@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const Agriculture = () => {
@@ -72,13 +73,13 @@ const Agriculture = () => {
         }
     ];
     return (
-        <Layout>
+        <>
             <Head>
-                <title>Agriculture — AI Training Data for Crop Intelligence | DataClap</title>
-                <meta name="description" content="High-accuracy annotation and training datasets for agriculture: crop health, weed detection, yield prediction, field mapping, and precision farming AI. Partner with DataClap for scalable, production-ready labeled data." />
-                <meta name="keywords" content="agriculture AI, crop health annotation, weed detection dataset, yield prediction data, field mapping, precision farming annotation" />
+                <title>Agriculture Data Annotation Services | AI for Smart Farming | Dataclap</title>
+                <meta name="description" content="Dataclap delivers agriculture data annotation services for crop monitoring, yield prediction, drone imagery labeling, and precision farming AI models." />
+                <meta name="keywords" content="agriculture data annotation, farm AI data labeling, crop image annotation, drone image labeling agriculture, precision farming datasets, plant disease detection labeling, satellite farm imagery annotation, agritech AI training data, yield prediction datasets, smart farming AI solutions" />
             </Head>
-           
+            <Layout>           
                 {/* Hero Section */}
                 <section className="section banner-5">
                     <div className="container">
@@ -205,6 +206,7 @@ const Agriculture = () => {
 
                 
         </Layout>
+        </>
     );
 };
 

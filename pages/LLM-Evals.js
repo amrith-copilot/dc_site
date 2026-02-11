@@ -2,24 +2,24 @@ import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import VideoSlider from '../components/slider/VideoSlider';
-import Tab from '../components/elements/Tab';
-import Tab1 from '../components/elements/Tab1';
-import Tab2 from '../components/elements/tab2';
-import Proccess from '../components/elements/Proccess';
-import Offer2 from '../components/slider/Offer2';
-import Offer3 from '../components/slider/Offer3';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const Tab = dynamic(() => import('../components/elements/Tab'), { ssr: false });
+const Tab1 = dynamic(() => import('../components/elements/Tab1'), { ssr: false });
+const Tab2 = dynamic(() => import('../components/elements/tab2'), { ssr: false });
+const Proccess = dynamic(() => import('../components/elements/Proccess'), { ssr: false });
+const Offer2 = dynamic(() => import('../components/slider/Offer2'), { ssr: false });
+const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 
 const LLMEvals = () => {
     const [isOpen, setOpen] = useState(false)
     return (
         <>  
             <Head>
-                <title>LLM Evaluation-as-a-Service | Professional AI & RAG Benchmarking</title>
-                <meta name="description" content="Stop guessing and start shipping. We provide decision-ready evaluations for LLMs, RAG pipelines, and Agents using your data. Get objective benchmarks, safety audits, and performance reports to deploy with confidence." />
-                <meta name="keywords" content="LLM Evaluation-as-a-Service, RAG Benchmarking, AI Agent Testing, Prompt Optimization, Model Comparison, AI Safety Audits, LLM-as-a-Judge" />
-                <meta property="og:title" content="LLM Evaluation-as-a-Service | Professional AI & RAG Benchmarking" />
-                <meta property="og:description" content="Stop guessing and start shipping. We provide decision-ready evaluations for LLMs, RAG pipelines, and Agents using your data. Get objective benchmarks, safety audits, and performance reports to deploy with confidence." />
+                <title>AI Evaluation Services | LLM Testing & Model Validation | Dataclap</title>
+                <meta name="description" content="Dataclap delivers AI evaluation services including LLM benchmarking, performance testing, accuracy validation, and human-based model assessments." />
+                <meta name="keywords" content="AI evaluation services, LLM evaluation, AI model validation, AI performance testing, LLM benchmarking" />
+             
             </Head>
             <Layout>
             <section className="section banner-5">
@@ -47,7 +47,7 @@ const LLMEvals = () => {
               <section className="section mt-100 mb-50 bg-brand-1 pt-100 pb-100 bg-explore">
                     <div className="container">
                         <div className="d-flex justify-content-center">
-                            <div className="text-center text-lg-start" style={{maxWidth: 920}}>
+                            <div className="text-center text-lg-start mt-20" style={{maxWidth: 920}}>
                                 <h1 className="font-xl-bold color-white text-uppercase text-center">Custom Evaluation Frameworks</h1>
                                 <h6 className="color-brand-2 mb-10 mt-15">
                                     Every AI architecture demands a unique validation strategy. We move beyond generic benchmarks to stress-test your specific models and RAG pipelines against your real-world data and custom performance requirements.
@@ -266,7 +266,7 @@ const LLMEvals = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>The Evaluation Journey</h2>
+                                <h2 className="mt-20 mb-20" style={{ color: "#fff" }}>The Evaluation Journey</h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
                                    Enterprise-Grade Validation Without the Engineering Overhead
                                     You shouldn’t have to divert your core team to build complex internal benchmarking tools. We provide the infrastructure, the expertise, and the objective analysis, combining high-speed automated judging with expert human oversight to deliver decision-ready insights.
@@ -324,11 +324,11 @@ const LLMEvals = () => {
                     </div>
                 </section>
                 
-              <section className="section mt-100">
+              <section className="section mt-20">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <h2 className="color-brand-1 mt-20 mb-20">Industries We Serve</h2>
                                 <p className="font-lg color-gray-500">
                                     Precision-engineered evaluations for high-stakes environments. We translate complex industry requirements into objective benchmarks, ensuring your AI solutions meet the specific safety, accuracy, and compliance standards of your sector.
                                 </p>
@@ -346,20 +346,15 @@ const LLMEvals = () => {
                 </section>
                     </div>
                 </section>
-                <section className="section mt-50 pt-50 pb-40">
+                <section className="section mt-20 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
+                            <div className="row align-items-center justify-content-center">
+                                <div className="col-12 col-lg-8 text-center mx-auto">
+                                    <div className="box-info-video text-center">
                                         <h2>Ready to Validate Your AI?</h2>
                                         <p className="font-md color-grey-500">Let our workforce evaluate your model with precision and care.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
+                                        <div className="box-button text-center mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>
@@ -502,13 +497,74 @@ function SliderBlock(){
 
     // Add dragging state for cursor
     const [isDragging, setIsDragging] = useState(false);
+    const dragStartX = React.useRef(null);
+    const dragCurrentX = React.useRef(null);
+    const pointerActive = React.useRef(false);
+    const dragged = React.useRef(false);
+    const SWIPE_THRESHOLD = 16; // require a larger movement before considering it a drag for click suppression
+
+    const onPointerDown = (e) => {
+        const x = e.clientX || (e.touches && e.touches[0].clientX);
+        dragStartX.current = x;
+        dragCurrentX.current = x;
+        pointerActive.current = true;
+        dragged.current = false;
+        setIsDragging(true);
+        if (typeof document !== 'undefined') {
+            document.body.style.userSelect = 'none';
+            document.body.style.webkitUserSelect = 'none';
+            document.body.style.msUserSelect = 'none';
+        }
+    };
+
+    const onPointerMove = (e) => {
+        if (!pointerActive.current) return;
+        const x = e.clientX || (e.touches && e.touches[0].clientX);
+        dragCurrentX.current = x;
+        const delta = Math.abs((dragCurrentX.current || 0) - (dragStartX.current || 0));
+        // only mark as dragged when movement exceeds a sensible threshold
+        if (delta > SWIPE_THRESHOLD) dragged.current = true;
+    };
+
+    const onPointerUp = (e) => {
+        if (!pointerActive.current) return;
+        pointerActive.current = false;
+        setIsDragging(false);
+        const endX = e.clientX || (e.changedTouches && e.changedTouches[0].clientX) || dragCurrentX.current;
+        const delta = (dragStartX.current || 0) - (endX || 0);
+        if (Math.abs(delta) > SWIPE_THRESHOLD) {
+            if (delta > 0) {
+                // swiped left
+                next();
+            } else {
+                // swiped right
+                prev();
+            }
+        }
+        dragStartX.current = null;
+        dragCurrentX.current = null;
+        dragged.current = false;
+        if (typeof document !== 'undefined') {
+            document.body.style.userSelect = '';
+            document.body.style.webkitUserSelect = '';
+            document.body.style.msUserSelect = '';
+        }
+    };
     return (
         <div style={{position: 'relative'}}>
             <div
-                style={{overflow: 'hidden', cursor: isDragging ? 'grabbing' : 'grab'}}
-                onMouseDown={() => setIsDragging(true)}
-                onMouseUp={() => setIsDragging(false)}
-                onMouseLeave={() => setIsDragging(false)}
+                style={{overflow: 'hidden', cursor: isDragging ? 'grabbing' : 'grab', touchAction: 'pan-y'}}
+                onPointerDown={onPointerDown}
+                onPointerMove={onPointerMove}
+                onPointerUp={onPointerUp}
+                onPointerCancel={onPointerUp}
+                onTouchStart={onPointerDown}
+                onTouchMove={onPointerMove}
+                onTouchEnd={onPointerUp}
+                onMouseDown={(e)=> { onPointerDown(e); }}
+                onMouseMove={(e)=> { onPointerMove(e); }}
+                onMouseUp={(e)=> { onPointerUp(e); }}
+                onMouseLeave={(e)=> { onPointerUp(e); }}
             >
                 <div style={trackStyle} onTransitionEnd={handleTransitionEnd}>
                     {slides.map((c, i) => {
@@ -519,7 +575,7 @@ function SliderBlock(){
                         return (
                         <div key={i} style={cardStyle}>
                             <div style={mergedInner} 
-                                onClick={()=> setSelectedCard(origIdx)}
+                                onClick={(e)=> { if (dragged.current) { e.preventDefault(); return; } setSelectedCard(origIdx); }}
                                 onMouseEnter={() => setHoveredCard(origIdx)}
                                 onMouseLeave={() => setHoveredCard(null)}
                             >
@@ -541,7 +597,7 @@ function SliderBlock(){
                 </div>
             </div>
 
-            <div style={{position: 'absolute', left: '50%', transform: 'translateX(-50%)', bottom: '-48px', display: 'flex', gap: '20px'}}>
+            <div style={{display: 'flex', justifyContent: 'center', marginTop: '18px', gap: '20px'}} className="pagination-controls">
                 <button onClick={prev} aria-label="prev" className="slider-nav-btn" style={{width: '40px', height: '40px', borderRadius: '50%', border: '1px solid #d1dae5', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#111827', fontWeight: 700, lineHeight: 1, padding: 0, transition: 'all 0.3s ease', fontSize: '22px'}}>
                     ←
                 </button>
@@ -549,6 +605,26 @@ function SliderBlock(){
                     →
                 </button>
             </div>
+            <style jsx>{`
+                @media (max-width: 768px) {
+                    /* Show pagination controls on mobile (override global hide) */
+                    .pagination-controls {
+                        display: flex !important;
+                        margin-top: 12px !important;
+                        gap: 12px !important;
+                        position: static !important;
+                        z-index: 1200 !important;
+                    }
+                    .pagination-controls .slider-nav-btn {
+                        display: flex !important;
+                        visibility: visible !important;
+                        opacity: 1 !important;
+                        width: 44px !important;
+                        height: 44px !important;
+                        font-size: 20px !important;
+                    }
+                }
+            `}</style>
         </div>
     );
 }

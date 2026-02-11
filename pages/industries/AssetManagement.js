@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const AssetManagement = () => {
@@ -25,9 +26,9 @@ const AssetManagement = () => {
     return (
         <Layout>
             <Head>
-                <title>Asset Management — AI Training Data & Predictive Maintenance | DataClap</title>
-                <meta name="description" content="AI-ready labeled data for asset management and predictive maintenance: defect detection, lifecycle tagging, sensor metadata, and geospatial mapping. Scalable annotation pipelines for reliable operational insights." />
-                <meta name="keywords" content="asset management AI, predictive maintenance data, defect detection annotation, asset lifecycle labeling, IoT sensor annotation" />
+                <title>Asset Management Data Annotation Services | AI for Finance | Dataclap</title>
+                <meta name="description" content="Power financial AI models with Dataclap’s asset management data annotation services for portfolio analytics, risk modeling, and predictive insights." />
+                <meta name="keywords" content="asset management data annotation, financial data labeling, investment AI datasets, portfolio analysis AI, risk modeling annotation, financial NLP annotation, stock market data labeling, quantitative finance datasets, AI for wealth management" />
             </Head>
            
                 {/* Hero Section */}

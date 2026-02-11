@@ -1,15 +1,89 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 
 const Tab = () => {
     const [activeIndex, setActiveIndex] = useState(1);
+    const touchStartX = useRef(null);
+    const touchEndX = useRef(null);
+
+    const SWIPE_THRESHOLD = 50; // pixels
+
+
+    const onTouchStart = (e) => {
+        const x = e.touches ? e.touches[0].clientX : e.clientX;
+        touchStartX.current = x;
+        touchEndX.current = null;
+        if (typeof document !== 'undefined') {
+            document.body.style.userSelect = 'none';
+            document.body.style.webkitUserSelect = 'none';
+            document.body.style.msUserSelect = 'none';
+        }
+    };
+
+    const onTouchMove = (e) => {
+        const x = e.touches ? e.touches[0].clientX : e.clientX;
+        touchEndX.current = x;
+    };
+
+    // Pointer / mouse support for desktop dragging
+    const onPointerDown = (e) => {
+        // normalize to same structure
+        const x = e.clientX;
+        touchStartX.current = x;
+        touchEndX.current = null;
+        if (typeof document !== 'undefined') {
+            document.body.style.userSelect = 'none';
+            document.body.style.webkitUserSelect = 'none';
+            document.body.style.msUserSelect = 'none';
+        }
+        // capture pointer to continue receiving move/up
+        if (e.target && e.target.setPointerCapture) {
+            try { e.target.setPointerCapture(e.pointerId); } catch (err) {}
+        }
+    };
+
+    const onPointerMove = (e) => {
+        touchEndX.current = e.clientX;
+    };
+
+    const onPointerUp = (e) => {
+        touchEndX.current = e.clientX;
+        onTouchEnd();
+        if (e.target && e.target.releasePointerCapture) {
+            try { e.target.releasePointerCapture(e.pointerId); } catch (err) {}
+        }
+    };
+
+    const onTouchEnd = () => {
+        if (touchStartX.current == null || touchEndX.current == null) return;
+        const delta = touchStartX.current - touchEndX.current;
+        if (delta > SWIPE_THRESHOLD) {
+            // left swipe -> next tab
+            setActiveIndex((prev) => Math.min(prev + 1, 4));
+        } else if (delta < -SWIPE_THRESHOLD) {
+            // right swipe -> previous tab
+            setActiveIndex((prev) => Math.max(prev - 1, 1));
+        }
+        touchStartX.current = null;
+        touchEndX.current = null;
+        if (typeof document !== 'undefined') {
+            document.body.style.userSelect = '';
+            document.body.style.webkitUserSelect = '';
+            document.body.style.msUserSelect = '';
+        }
+    };
 
     const handleOnClick = (index) => {
         setActiveIndex(index); // remove the curly braces
     };
     return (
         <div className="row mt-45 justify-content-center">
-            <div style={{maxWidth: '1100px', width: '100%'}}>
+            <div
+                style={{maxWidth: '1100px', width: '100%', touchAction: 'pan-y'}}
+                onTouchStart={onTouchStart}
+                onTouchMove={onTouchMove}
+                onTouchEnd={onTouchEnd}
+            >
                 <ul className="list-buttons list-buttons-circle nav nav-tabs" role="tablist" style={{display: 'flex', justifyContent: 'center', gap: '18px', listStyle: 'none', padding: '0 12px', margin: '24px 0 20px', flexWrap: 'wrap', overflowX: 'visible'}}>
                 <li onClick={() => handleOnClick(1)} style={{display: 'inline-block'}}>
                     <a className={activeIndex === 1 ? "active" : ""}>RAG & Search Quality</a>

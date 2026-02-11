@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import VideoSlider from '../components/slider/VideoSlider';
-import Offer8 from '../components/slider/Offer8';
-import Offer3 from '../components/slider/Offer3';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const Offer8 = dynamic(() => import('../components/slider/Offer8'), { ssr: false });
+const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 
 const SAP = () => {
     const [isOpen, setOpen] = useState(false)
     return (
         <>
+            <Head>
+                <title>AI Search & Personalization Solutions | Dataclap</title>
+                <meta name="description" content="Enhance user engagement with AI-powered search and personalization solutions. Dataclap delivers intelligent recommendation engines and custom search systems." />
+                <meta name="keywords" content="AI search solutions, AI personalization services, recommendation engine development, intelligent search systems, AI-driven personalization" />
+            </Head>
             <Layout>
             <section className="section banner-5">
                     <div className="container">
@@ -376,7 +383,7 @@ const SAP = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
+                                <h2 className="mt-20 mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
                                     Understand how our data collection approach improves model quality, compliance, and time-to-market.
                                 </p>
@@ -452,11 +459,11 @@ const SAP = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-100">
+                <section className="section mt-50">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <h2 className="color-brand-1 mt-20 mb-20">Industries We Serve</h2>
                                 <p className="font-lg color-gray-500">
                                     What makes us different from others? We give holistic solutions
                                     <br className="d-none d-lg-block" />
@@ -474,20 +481,15 @@ const SAP = () => {
                     </div>
                 </section>
 
-                <section className="section mt-50 pt-50 pb-40">
+                <section className="section mt-30 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
+                            <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-8">
                                     <div className="box-info-video">
                                         <h2 className="color-black-text mt-15 mb-20">Let’s make your search smarter and personalization sharper.</h2>
                                         <p className="font-md color-grey-500">Talk to us about building ML-ready processes that turn relevance into results.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
+                                        <div className="box-button text-center mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="#">Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>

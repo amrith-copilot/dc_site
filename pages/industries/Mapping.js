@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const Mapping = () => {
@@ -78,7 +80,13 @@ const Mapping = () => {
         }
     ];
     return (
-        <Layout>
+        <>
+            <Head>
+                <title>Mapping Data Annotation Services | AI Map Labeling Solutions | Dataclap</title>
+                <meta name="description" content="Accurate mapping annotation services for navigation, autonomous systems, and geolocation AI applications. High-quality labeled map datasets by Dataclap." />
+                <meta name="keywords" content="mapping data annotation, map labeling services, navigation data annotation, AI mapping solutions, geolocation data labeling" />
+            </Head>
+            <Layout>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -120,7 +128,7 @@ const Mapping = () => {
                             </p>
                         </div>
                         <div className="row">
-                            <CardSlider cards={cardItems} pageId="mapping" />
+                            <CardSlider cards={cardItems} pageId="mapping" mobileCardsPerSlide={1} />
                         </div>
                     </div>
                 </section>
@@ -204,7 +212,8 @@ const Mapping = () => {
                     </div>
                 </section>
 
-        </Layout>
+            </Layout>
+        </>
     );
 };
 

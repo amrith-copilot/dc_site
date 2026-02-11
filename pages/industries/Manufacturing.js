@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const Manufacturing = () => {
@@ -86,7 +88,13 @@ const Manufacturing = () => {
         }
     ];
     return (
-        <Layout>
+        <>
+            <Head>
+                <title>Manufacturing Data Annotation Services | Industrial AI Solutions | Dataclap</title>
+                <meta name="description" content="Improve quality control and automation with Dataclap’s manufacturing data annotation services for defect detection, robotics, and industrial AI systems." />
+                <meta name="keywords" content="manufacturing data annotation, industrial AI labeling, defect detection annotation, factory automation AI, quality inspection data labeling, robotics training data, machine vision annotation, predictive maintenance datasets, industrial computer vision, production line AI data" />
+            </Head>
+            <Layout>
            
                 {/* Hero Section */}
                 <section className="section banner-5">
@@ -271,7 +279,8 @@ const Manufacturing = () => {
                 </div>
             </div>
         </section>
-    </Layout>
+            </Layout>
+        </>
     );
 };
 export default Manufacturing; 

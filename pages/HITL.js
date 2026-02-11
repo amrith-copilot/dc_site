@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import VideoSlider from '../components/slider/VideoSlider';
-import Offer5 from '../components/slider/Offer5';
-import Offer3 from '../components/slider/Offer3';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const Offer5 = dynamic(() => import('../components/slider/Offer5'), { ssr: false });
+const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
 import { Autoplay, Navigation } from 'swiper';
@@ -20,6 +22,32 @@ const HITL = () => {
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    useEffect(() => {
+        if (!mounted) return;
+        let intervalId = null;
+
+        const start = () => {
+            if (typeof window === 'undefined') return;
+            // only enable fallback autoplay on mobile widths
+            if (window.innerWidth > 991) return;
+            if (!swiperRef.current) return;
+            if (typeof swiperRef.current.slideNext !== 'function') return;
+            if (intervalId) clearInterval(intervalId);
+            intervalId = setInterval(() => {
+                try { swiperRef.current.slideNext(); } catch (e) { /* ignore */ }
+            }, 3000);
+        };
+
+        const stop = () => {
+            if (intervalId) { clearInterval(intervalId); intervalId = null; }
+        };
+
+        start();
+        window.addEventListener('resize', start);
+
+        return () => { stop(); window.removeEventListener('resize', start); };
+    }, [mounted]);
     return (
         <Layout>
             <>
@@ -118,17 +146,18 @@ const HITL = () => {
                             <div style={{position: 'relative', marginBottom: '20px'}}>
                                 <Swiper
                                     ref={swiperRef}
+                                    onSwiper={(s) => { swiperRef.current = s; }}
                                     modules={[Autoplay, Navigation]}
                                     slidesPerView={1}
                                     loop={true}
                                     spaceBetween={20}
-                                    autoplay={{
+                                    autoplay={typeof Autoplay !== 'undefined' ? {
                                         delay: 3000,
                                         disableOnInteraction: false,
                                         pauseOnMouseEnter: false,
                                         waitForTransition: true,
                                         reverseDirection: false
-                                    }}
+                                    } : false}
                                     navigation={{
                                         nextEl: '.swiper-button-next-cards',
                                         prevEl: '.swiper-button-prev-cards',
@@ -525,7 +554,7 @@ const HITL = () => {
                 <section className="section mt-100">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-12 text-center">
+                            <div className="col-lg-12 text-center ">
                                 <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
                                 <p className="font-lg color-gray-500">
                                     What makes us different from others? We give holistic solutions
@@ -564,7 +593,7 @@ const HITL = () => {
                         </div>
                     </div>
                 </section> */}
-                <section className="section mt-50 pt-50 pb-40">
+                <section className="section mt-20 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row justify-content-center">
@@ -572,7 +601,7 @@ const HITL = () => {
                                     <div className="box-info-video">
                                         <h2>Deploy HITL safeguards in minutes.</h2>
                                         <p className="font-md color-grey-500">Get high-quality labeled data at scale with our Human-in-the-Loop annotation services. From pilot projects to production-scale pipelines, we deliver accurate annotations with guaranteed SLAs.</p>
-                                        <p className="font-md color-grey-500 mt-20">Our multi-pass workflow ensures every annotation meets your quality standards, so you can train better models faster.</p>
+                                        {/* <p className="font-md color-grey-500 mt-20">Our multi-pass workflow ensures every annotation meets your quality standards, so you can train better models faster.</p> */}
                                         <div className="box-button text-center mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact</Link></div>
                                     </div>
                                 </div>

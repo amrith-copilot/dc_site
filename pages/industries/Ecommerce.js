@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const Ecommerce = () => {
@@ -89,9 +90,9 @@ const Ecommerce = () => {
     return (
         <Layout>
             <Head>
-                <title>E-Commerce — AI Training Data for Product Vision & Search | DataClap</title>
-                <meta name="description" content="High-quality training data for e-commerce: product attribute tagging, SKU recognition, UGC filtering, and content moderation. Scalable annotation pipelines to improve search, personalization and conversion." />
-                <meta name="keywords" content="ecommerce AI, product image annotation, SKU recognition dataset, product attribute tagging, UGC filtering" />
+                <title>E-commerce & Content Data Annotation Services | Dataclap</title>
+                <meta name="description" content="Improve product search, recommendations, and content moderation with Dataclap’s e-commerce and content annotation services for images, text, and user-generated data." />
+                <meta name="keywords" content="ecommerce data annotation, product image labeling, content data annotation, catalog data labeling, AI for ecommerce training data, product categorization services, recommendation system datasets, UGC annotation services, retail content labeling, AI product tagging" />
             </Head>
            
                 {/* Hero Section */}

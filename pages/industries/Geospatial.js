@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const Geospatial = () => {
@@ -146,9 +147,9 @@ const Geospatial = () => {
     return (
         <Layout>
             <Head>
-                <title>Geospatial — Satellite & Aerial Training Data | DataClap</title>
-                <meta name="description" content="Geospatial training data and annotations for satellite and aerial imagery: land use, parcel mapping, elevation extraction, cloud masking, and crop classification. Scalable datasets for remote sensing ML workflows." />
-                <meta name="keywords" content="geospatial AI, satellite imagery annotation, parcel mapping dataset, land use classification, remote sensing training data" />
+                <title>Geospatial Data Annotation Services | GIS & Satellite Labeling | Dataclap</title>
+                <meta name="description" content="Dataclap offers geospatial annotation services for satellite imagery, GIS mapping, and remote sensing data to power location-based AI models." />
+                <meta name="keywords" content="geospatial data annotation, satellite image labeling, GIS data annotation, remote sensing annotation, map data labeling" />
             </Head>
            
                 {/* Hero Section */}

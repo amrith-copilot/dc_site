@@ -8,7 +8,9 @@ const pageAbout = () => {
     return (
         <>
             <Head>
-                <title>iori - About Us</title>
+                <title>About Dataclap | AI Data Annotation & Training Data Company</title>
+                <meta name="description" content="Dataclap is a leading AI training data and annotation company providing scalable, secure, and high-accuracy solutions for enterprise AI models." />
+                <meta name="keywords" content="Dataclap, Dataclap company, AI data annotation company, AI training data company, machine learning data services, AI solutions provider" />
             </Head>
             <Layout>
                 <section className="section pt-90 banner-about" >

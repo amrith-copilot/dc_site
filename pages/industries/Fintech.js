@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import Head from 'next/head';
-import VideoSlider from '../../components/slider/VideoSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Link from 'next/link';
 
 const Fintech = () => {
@@ -89,9 +90,9 @@ const Fintech = () => {
     return (
         <Layout>
             <Head>
-                <title>Fintech — AI Training Data for Financial Services | DataClap</title>
-                <meta name="description" content="Specialized training data for fintech AI: fraud detection, risk scoring, transaction classification, and document parsing. Scalable annotation for financial ML systems with privacy-aware workflows." />
-                <meta name="keywords" content="fintech AI, fraud detection dataset, risk scoring annotation, transaction classification, financial document parsing" />
+                <title>Fintech Data Annotation Services | AI Training Data for Finance | Dataclap</title>
+                <meta name="description" content="Dataclap provides fintech data annotation services for fraud detection, credit scoring, KYC automation, and financial document processing AI." />
+                <meta name="keywords" content="fintech data annotation, financial AI data labeling, fraud detection datasets, KYC data annotation, credit scoring AI training data, transaction data labeling, banking AI datasets, financial document annotation, AML data annotation, AI for financial services" />
             </Head>
            
                 {/* Hero Section */}

@@ -76,9 +76,9 @@ const ImageSlider = () => {
         
         {/* Overlay Controls */}
         <div className="slider-controls-overlay">
-          <button onClick={prevSlide} className="control-btn prev-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <button onClick={prevSlide} className="control-btn prev-btn" aria-label="Previous slide">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M18 12 H8 M12 6 L6 12 L12 18" stroke="#111" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
           
@@ -92,9 +92,9 @@ const ImageSlider = () => {
             ))}
           </div>
           
-          <button onClick={nextSlide} className="control-btn next-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <button onClick={nextSlide} className="control-btn next-btn" aria-label="Next slide">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 12 H16 M12 6 L18 12 L12 18" stroke="#111" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </div>
@@ -165,22 +165,22 @@ const ImageSlider = () => {
           height: 55px;
           border: none;
           border-radius: 50%;
-          background: transparent;
-          color: white;
+          background: #ffffff;
+          color: #111;
           cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: center;
           transition: all 0.3s ease;
-          backdrop-filter: blur(5px);
-          border: 2px solid rgba(255, 255, 255, 0.3);
+          box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+          border: 1px solid #e6e6e6;
+          padding: 0;
           box-sizing: border-box;
         }
 
         .control-btn:hover {
-          background: rgba(255, 255, 255, 0.2);
-          transform: scale(1.1);
-          border-color: rgba(255, 255, 255, 0.5);
+          transform: scale(1.05);
+          border-color: #dcdcdc;
         }
 
         .control-btn:active {

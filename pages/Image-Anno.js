@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
+import Head from 'next/head';
 import Link from 'next/link';
-import ImageSlider from '../components/slider/ImageSlider';
-import Offer3 from '../components/slider/Offer3';
+import dynamic from 'next/dynamic';
+const ImageSlider = dynamic(() => import('../components/slider/ImageSlider'), { ssr: false });
+const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
 import { Autoplay, Navigation } from 'swiper';
@@ -19,8 +21,27 @@ const ImageAnno = () => {
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    useEffect(() => {
+        let autoTimer;
+        if (mounted) {
+            autoTimer = setInterval(() => {
+                const s = swiperRef.current;
+                if (s && typeof s.slideNext === 'function') {
+                    try { s.slideNext(); } catch (e) { /* ignore */ }
+                }
+            }, 3000);
+        }
+        return () => {
+            if (autoTimer) clearInterval(autoTimer);
+        };
+    }, [mounted]);
     return (
-        <>
+        <><Head>
+                <title>Data Annotation Services | Dataclap AI Training Data Experts</title>
+                <meta name="description" content="Dataclap provides high-quality data annotation services for AI and ML models, including image, video, text, audio, and LLM labeling with scalable, accurate workflows." />
+                <meta name="keywords" content="data annotation services, AI data labeling, image annotation services, video annotation, text annotation services, audio data labeling, LLM data annotation, training data labeling" />
+            </Head>
             <Layout>
                 <section className="section banner-5">
                     <div className="container">
@@ -56,20 +77,21 @@ const ImageAnno = () => {
                         {/* Mobile Grid View - 2 Rows, 1 Column with Swiper */}
                         {mounted && (
                         <div className="mobile-card-grid d-lg-none">
-                            <div style={{position: 'relative', marginBottom: '20px'}}>
+                            <div style={{position: 'relative', marginBottom: '8px'}}>
                                 <Swiper
                                     ref={swiperRef}
+                                    onSwiper={(s) => { swiperRef.current = s; }}
                                     modules={[Autoplay, Navigation]}
                                     slidesPerView={1}
                                     loop={true}
                                     spaceBetween={20}
-                                    autoplay={{
+                                    autoplay={typeof Autoplay !== 'undefined' ? {
                                         delay: 3000,
                                         disableOnInteraction: false,
                                         pauseOnMouseEnter: false,
                                         waitForTransition: true,
                                         reverseDirection: false
-                                    }}
+                                    } : false}
                                     navigation={{
                                         nextEl: '.swiper-button-next-cards',
                                         prevEl: '.swiper-button-prev-cards',
@@ -269,8 +291,11 @@ const ImageAnno = () => {
                                     </SwiperSlide>
                                 </Swiper>
 
+                                {/* Auto-advance fallback: ensure mobile slides advance even if Swiper autoplay is paused */}
+                                {/* Uses a JS interval to call slideNext on the swiper instance while mounted */}
+
                                 {/* Slider Controls */}
-                                <div className="slider-controls-mobile" style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '20px', alignItems: 'center'}}>
+                                <div className="slider-controls-mobile" style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '8px', alignItems: 'center'}}>
                                     <button 
                                         className="swiper-button-prev-cards slider-btn"
                                         style={{
@@ -615,14 +640,14 @@ const ImageAnno = () => {
                         .image-showcase-content-dynamic h6 { font-size: 15px; }
                     }
 
-                    /* Mobile Slider Styles */
+                    /* Mobile Slider Styles (reduced whitespace) */
                     .mobile-card-grid {
-                        padding: 20px 15px 20px 0;
+                        padding: 12px 10px 12px 0;
                     }
 
                     .mobile-card-grid .swiper-container {
-                        margin: 0 -15px;
-                        padding: 0 15px;
+                        margin: 0 -10px;
+                        padding: 0 10px;
                     }
 
                     .mobile-card-grid .image-showcase-top-dynamic {
@@ -632,15 +657,15 @@ const ImageAnno = () => {
                     }
 
                     .mobile-card-grid .image-showcase-content-dynamic {
-                        padding: 14px 12px !important;
-                        max-height: 280px;
+                        padding: 12px 10px !important;
+                        max-height: 220px;
                         overflow-y: auto;
                     }
 
                     .mobile-card-grid .image-showcase-content-dynamic h4,
                     .mobile-card-grid .image-showcase-content-dynamic h6 {
                         font-size: 14px !important;
-                        margin-bottom: 10px !important;
+                        margin-bottom: 8px !important;
                     }
 
                     .mobile-card-grid .annotation-methods,
@@ -661,16 +686,27 @@ const ImageAnno = () => {
                     }
 
                     .slider-controls-mobile {
-                        padding: 20px 0;
+                        padding: 12px 0;
+                        margin-top: 8px;
                     }
 
                     .slider-btn {
-                        transition: all 0.3s ease !important;
+                        transition: all 0.2s ease !important;
+                        width: 36px !important;
+                        height: 36px !important;
+                        font-size: 16px !important;
                     }
 
-                    .slider-btn:hover {
-                        background: #265bda !important;
-                        color: #fff !important;
+                    /* Keep mobile slider buttons visually consistent; no color change on hover/click/focus */
+                    .slider-btn,
+                    .slider-btn:hover,
+                    .slider-btn:active,
+                    .slider-btn:focus {
+                        background: #f0f0f0 !important;
+                        color: #000 !important;
+                        box-shadow: none !important;
+                        transform: none !important;
+                        outline: none !important;
                     }
 
                     .swiper-button-prev-cards:after,
@@ -696,13 +732,19 @@ const ImageAnno = () => {
                     .partner-benefits .benefit-icon{width:36px;height:36px;margin-right:12px;flex-shrink:0;display:inline-block}
                     .partner-benefits .box-border-dashed{border-bottom:1px dashed rgba(255,255,255,0.08);padding:14px;border-radius:8px}
                     .partner-benefits .ticked{display:none}
+                    /* Reduce top spacing before the advantages and CTA sections on small screens */
+                    @media (max-width: 768px) {
+                        .section.mt-70 { margin-top: 20px !important; padding-top: 16px !important; padding-bottom: 24px !important; }
+                        .section.mt-50 { margin-top: 12px !important; padding-top: 12px !important; }
+                        .box-cover-border { padding-top: 8px !important; padding-bottom: 8px !important; }
+                    }
                 `}</style>
                
               <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
+                                <h2 className="mt-20 mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
                                     Understand how our data collection approach improves model quality, compliance, and time-to-market.
                                 </p>
@@ -782,7 +824,7 @@ const ImageAnno = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                                <h2 className="color-brand-1 mt-20 mb-20">Industries We Serve</h2>
                                 <p className="font-lg color-gray-500">
                                     What makes us different from others? We give holistic solutions
                                     <br className="d-none d-lg-block" />

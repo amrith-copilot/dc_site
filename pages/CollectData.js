@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
+import Head from 'next/head';
 import Link from 'next/link';
-import VideoSlider from '../components/slider/VideoSlider';
-import Offer10 from '../components/slider/Offer10';
-import Offer3 from '../components/slider/Offer3';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const Offer10 = dynamic(() => import('../components/slider/Offer10'), { ssr: false });
+const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 
 const ColectData = () => {
     const [isOpen, setOpen] = useState(false)
@@ -14,6 +16,11 @@ const ColectData = () => {
     }, []);
     return (
         <>
+            <Head>
+                <title>AI Data Collection Services | Data Capture & Scalable Data Gathering Solutions by DataClap</title>
+                <meta name="description" content="DataClap is your trusted partner for AI-ready data collection. With proven expertise, we deliver cost-effective data capture, gathering, and online collection services to power machine learning and computer vision projects." />
+                <meta name="keywords" content="AI-ready data collection, data capture, data gathering, online collection services" />
+            </Head>
             <Layout>
                 <div className="collectdata-root">
                     <style jsx global>{`
@@ -323,6 +330,139 @@ const ColectData = () => {
                             .cta-fullwidth h2{ font-size: 26px; }
                             .cta-fullwidth p{ font-size: 15px; }
                         }
+
+                        /* Advantages section mobile responsive */
+                        .section.mt-70.pt-60.pb-60.bg-brand-1 {
+                            padding-top: 40px !important;
+                            padding-bottom: 40px !important;
+                            width: 100%;
+                            display: block !important;
+                            visibility: visible !important;
+                        }
+
+                        @media (max-width: 768px) {
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 {
+                                padding-top: 30px !important;
+                                padding-bottom: 30px !important;
+                                width: 100vw !important;
+                                display: block !important;
+                                visibility: visible !important;
+                                overflow: visible;
+                                position: relative;
+                                left: 50%;
+                                right: 50%;
+                                margin-left: -50vw;
+                                margin-right: -50vw;
+                                background-color: #0017e3 !important;
+                                min-height: auto;
+                                opacity: 1;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .container {
+                                width: 100%;
+                                max-width: 100%;
+                                padding: 0 15px;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .row {
+                                width: 100%;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .col-lg-4.col-md-6 {
+                                flex: 0 0 50%;
+                                max-width: 50%;
+                                margin-bottom: 20px;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .card-feature-2 {
+                                padding: 20px !important;
+                                flex-direction: column;
+                                align-items: flex-start;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .card-feature-2 h5 {
+                                font-size: 16px;
+                                margin-bottom: 10px !important;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .card-feature-2 p {
+                                font-size: 14px;
+                                line-height: 1.5;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .card-feature-2 img {
+                                width: 26px !important;
+                                height: 26px !important;
+                                margin-right: 12px !important;
+                                margin-top: 2px !important;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .col-lg-12.text-center.mb-40 h2 {
+                                font-size: 24px;
+                                margin-bottom: 15px !important;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .col-lg-12.text-center.mb-40 p {
+                                font-size: 14px;
+                            }
+                        }
+
+                        @media (max-width: 480px) {
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 {
+                                padding-top: 25px !important;
+                                padding-bottom: 25px !important;
+                                width: 100vw !important;
+                                display: block !important;
+                                visibility: visible !important;
+                                background-color: #0017e3 !important;
+                                position: relative;
+                                left: 50%;
+                                right: 50%;
+                                margin-left: -50vw;
+                                margin-right: -50vw;
+                                overflow: visible;
+                                min-height: auto;
+                                opacity: 1;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .container {
+                                width: 100%;
+                                padding: 0 12px;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .col-lg-4.col-md-6 {
+                                flex: 0 0 100%;
+                                max-width: 100%;
+                                margin-bottom: 15px;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .card-feature-2 {
+                                padding: 16px !important;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .card-feature-2 h5 {
+                                font-size: 15px;
+                                margin-bottom: 8px !important;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .card-feature-2 p {
+                                font-size: 13px;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .card-feature-2 img {
+                                width: 22px !important;
+                                height: 22px !important;
+                                margin-right: 10px !important;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .col-lg-12.text-center.mb-40 h2 {
+                                font-size: 20px;
+                            }
+
+                            .section.mt-70.pt-60.pb-60.bg-brand-1 .col-lg-12.text-center.mb-40 p {
+                                font-size: 13px;
+                            }
+                        }
                     `}</style>
                 <section className="section banner-5">
                     <div className="container">
@@ -340,7 +480,7 @@ const ColectData = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="box-video-banner">
+                            <div className="box-video-banner box-video-banner-responsive">
                                 <VideoSlider />
                             </div>
                             
@@ -485,7 +625,7 @@ const ColectData = () => {
 
                     
                 </section>
-                <section className="section mt-70 pt-60 pb-60 bg-brand-1">
+                <section className="section mt-70 pt-60 pb-60 bg-brand-1" style={{ backgroundColor: '#0017e3' }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">

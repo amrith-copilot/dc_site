@@ -1,8 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+// HandSwiper overlay removed per request
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-SwiperCore.use([Autoplay, Navigation]);
+// Register Swiper modules only on the client to avoid server-side execution
+// that can trigger webpack/SSR issues.
+
 
 /**
  * Auto-adjusts text size based on content length and available space
@@ -38,11 +41,23 @@ const useAutoTextSize = () => {
  * @param {string} navId - Unique ID for navigation (default: 'annotation')
  */
 const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+        if (typeof window !== 'undefined' && SwiperCore && SwiperCore.use) {
+            SwiperCore.use([Autoplay, Navigation]);
+        }
+    }, []);
+    useEffect(() => setMounted(true), []);
     const prevClass = `${navId}-prev`;
     const nextClass = `${navId}-next`;
     const adjustTextSize = useAutoTextSize();
     const swiperRef = useRef(null);
     const containerRef = useRef(null);
+    // Touch / pointer swipe refs for manual fallback
+    const touchStartX = useRef(0);
+    const touchCurrentX = useRef(0);
+    const isDragging = useRef(false);
+    const SWIPE_THRESHOLD = 50; // px
     
     useEffect(() => {
         // Auto-adjust text sizes and then normalize card heights so all cards match the tallest
@@ -94,10 +109,84 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
         };
     }, [adjustTextSize, navId, items]);
 
+    // pagination removed; navigation arrows are used instead
+
+    // Attach fallback click handlers for prev/next nav buttons in case Swiper didn't wire them
+    useEffect(() => {
+        if (!containerRef.current || !swiperRef.current) return;
+        const prevBtn = containerRef.current.querySelector(`.${prevClass}`);
+        const nextBtn = containerRef.current.querySelector(`.${nextClass}`);
+        const listeners = [];
+
+        if (prevBtn) {
+            const onPrev = (e) => { e.preventDefault(); if (swiperRef.current && typeof swiperRef.current.slidePrev === 'function') swiperRef.current.slidePrev(); };
+            prevBtn.addEventListener('click', onPrev);
+            listeners.push([prevBtn, onPrev]);
+            prevBtn.style.cursor = 'pointer';
+        }
+
+        if (nextBtn) {
+            const onNext = (e) => { e.preventDefault(); if (swiperRef.current && typeof swiperRef.current.slideNext === 'function') swiperRef.current.slideNext(); };
+            nextBtn.addEventListener('click', onNext);
+            listeners.push([nextBtn, onNext]);
+            nextBtn.style.cursor = 'pointer';
+        }
+
+        return () => {
+            listeners.forEach(([el, fn]) => el.removeEventListener('click', fn));
+        };
+    }, [mounted, swiperRef.current]);
+
+    // render normally; component will be exported as client-only to avoid SSR hydration issues
+
     return (
         <>
-            <section className={`section mt-100 pt-60 pb-60 ${navId}`}>
-                <div className="container" ref={containerRef}>
+            <section className={`section mt-100 pt-60 pb-60 ${navId} swiper-group-1`}>
+                        <div
+                            className="container"
+                            ref={containerRef}
+                            style={{position: 'relative'}}
+                            onTouchStart={(e) => {
+                                const x = e.touches && e.touches[0] ? e.touches[0].clientX : 0;
+                                touchStartX.current = x;
+                                touchCurrentX.current = x;
+                                isDragging.current = true;
+                            }}
+                            onTouchMove={(e) => {
+                                if (!isDragging.current) return;
+                                touchCurrentX.current = e.touches && e.touches[0] ? e.touches[0].clientX : touchCurrentX.current;
+                            }}
+                            onTouchEnd={() => {
+                                if (!isDragging.current) return;
+                                const dx = touchCurrentX.current - touchStartX.current;
+                                if (Math.abs(dx) > SWIPE_THRESHOLD && swiperRef.current) {
+                                    if (dx < 0) swiperRef.current.slideNext(); else swiperRef.current.slidePrev();
+                                }
+                                isDragging.current = false;
+                                touchStartX.current = 0;
+                                touchCurrentX.current = 0;
+                            }}
+                            onPointerDown={(e) => {
+                                touchStartX.current = e.clientX;
+                                touchCurrentX.current = e.clientX;
+                                isDragging.current = true;
+                            }}
+                            onPointerMove={(e) => {
+                                if (!isDragging.current) return;
+                                touchCurrentX.current = e.clientX;
+                            }}
+                            onPointerUp={() => {
+                                if (!isDragging.current) return;
+                                const dx = touchCurrentX.current - touchStartX.current;
+                                if (Math.abs(dx) > SWIPE_THRESHOLD && swiperRef.current) {
+                                    if (dx < 0) swiperRef.current.slideNext(); else swiperRef.current.slidePrev();
+                                }
+                                isDragging.current = false;
+                                touchStartX.current = 0;
+                                touchCurrentX.current = 0;
+                            }}
+                        >
+                    {/* hand hint removed */}
                     <div className="row ">
                         <div className="col-lg-12 text-center">
                             <h2 className="color-brand-1 mb-20">{title}</h2>
@@ -106,9 +195,11 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     </div>
 
                     <Swiper
+                        onSwiper={(s) => { swiperRef.current = s; }}
                         slidesPerView={4}
                         spaceBetween={20}
                         loop={true}
+                        /* pagination disabled: using only navigation arrows */
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
@@ -151,17 +242,18 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     </Swiper>
 
                     <div className="annotation-nav">
-                        <div className={prevClass}>
-                            <svg width="26" height="26" fill="none" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        <button className={prevClass} aria-label="Previous slide" type="button">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M18 12 H8 M12 6 L6 12 L12 18" stroke="#111" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                        </div>
-                        <div className={nextClass}>
-                            <svg width="26" height="26" fill="none" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </button>
+                        <button className={nextClass} aria-label="Next slide" type="button">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M6 12 H16 M12 6 L18 12 L12 18" stroke="#111" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                        </div>
+                        </button>
                     </div>
+
                 </div>
             </section>
 
@@ -238,7 +330,6 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                     background: white !important;
                     box-shadow: 0 8px 24px rgba(11, 95, 255, 0.15) !important;
                     transform: translateY(-4px);
-                    color: white;
                 }
                 .annotation-nav {
                     display: flex;
@@ -248,21 +339,56 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                 }
                 .${prevClass},
                 .${nextClass} {
-                    width: 46px;
-                    height: 46px;
+                    width: 48px;
+                    height: 48px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     border-radius: 50%;
-                    background: white;
+                    background: #ffffff;
                     cursor: pointer;
                     transition: 0.2s ease;
-                    border: 1px solid var(--border-light);
+                    border: 1px solid #e6e6e6;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+                    padding: 0;
                 }
+                /* Prevent color/background changes on click/active/focus */
+                .${prevClass}:active,
+                .${nextClass}:active,
+                .${prevClass}.active,
+                .${nextClass}.active,
+                .${prevClass}:focus,
+                .${nextClass}:focus {
+                    background: white !important;
+                    color: #000 !important;
+                    border: 1px solid var(--border-light) !important;
+                    box-shadow: none !important;
+                    transform: none !important;
+                }
+                .${prevClass} svg, .${nextClass} svg { color: #000; width: 18px; height: 18px; }
                 .${prevClass}:hover,
                 .${nextClass}:hover {
                     transform: scale(1.1);
                     border: 1px solid var(--border-light);
+                }
+                /* Mobile: show arrow nav and keep right pagination available */
+                @media (max-width: 768px) {
+                    /* show arrow nav below the slider (not overlay) on mobile */
+                    .annotation-nav {
+                        display: flex !important;
+                        position: static !important;
+                        bottom: unset !important;
+                        left: unset !important;
+                        transform: none !important;
+                        gap: 16px;
+                        z-index: 1;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 18px;
+                        margin-bottom: 8px;
+                    }
+
+                    /* pagination removed: using arrow navigation only */
                 }
             `}</style>
         </>

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import VideoSlider from '../components/slider/VideoSlider';
-import Offer5 from '../components/slider/Offer5';
-import Offer3 from '../components/slider/Offer3';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const Offer5 = dynamic(() => import('../components/slider/Offer5'), { ssr: false });
+const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 
 const RLHF = () => {
     const [isOpen, setOpen] = useState(false)
@@ -12,6 +14,13 @@ const RLHF = () => {
         setMounted(true);
     }, []);
     return (
+          
+        <>
+        <Head>
+                <title>RLHF Services | Reinforcement Learning from Human Feedback | Dataclap</title>
+                <meta name="description" content="Dataclap provides RLHF services to align LLMs with human preferences through ranking, reward modeling, safety validation, and scalable human feedback workflows." />
+                <meta name="keywords" content="RLHF services, reinforcement learning from human feedback, LLM alignment services, human feedback training AI, reward model training, training data labeling" />
+            </Head>
         <Layout>
             <>
                 <section className="section banner-5">
@@ -202,7 +211,7 @@ const RLHF = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
+                                <h2 className="mt-20 mb-20" style={{ color: "#fff" }}>Our Advantages </h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
                                     Understand how our data collection approach improves model quality, compliance, and time-to-market.
                                 </p>
@@ -283,7 +292,7 @@ const RLHF = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
-                                <h2 className="color-brand-1 mb-20">Industries Supported & Real RLHF Use Cases</h2>
+                                <h2 className="color-brand-1 mt-20mb-20">Industries Supported & Real RLHF Use Cases</h2>
                                 <p className="font-lg color-gray-500">
                                     Real-world RLHF applications across diverse industries
                                     with expert judgment and continuous feedback loops.
@@ -299,7 +308,7 @@ const RLHF = () => {
                         </div>
                     </div>
                 </section>
-                         <section className="section mt-50 pt-50 pb-40">
+                         <section className="section mt-20 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border" >
                             <div className="row justify-content-center">
@@ -317,24 +326,10 @@ const RLHF = () => {
                         </div>
                     </div>
                 </section>
-                <section className="section mt-50 pt-50 pb-40">
-                    <div className="container">
-                        <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+               
             </>
         </Layout>
+        </>
     );
 };
 

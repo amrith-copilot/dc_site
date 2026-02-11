@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import ImageSlider from '../components/slider/ImageSlider';
-import Offer4 from '../components/slider/Offer4';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const ImageSlider = dynamic(() => import('../components/slider/ImageSlider'), { ssr: false });
+const Offer4 = dynamic(() => import('../components/slider/Offer4'), { ssr: false });
 import Knowledgebase2 from '../components/slider/KnowledgeBase2';
-import CWHITL from '../components/elements/CWHITL';
+const CWHITL = dynamic(() => import('../components/elements/CWHITL'), { ssr: false });
 
 const ContentMd = () => {
     const [isOpen, setOpen] = useState(false)
@@ -495,7 +497,7 @@ const IndustriesSection = () => (
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center">
-                        <h2 className="color-brand-1 mb-20">Industries We Serve</h2>
+                        <h2 className="color-brand-1 mt-20 mb-20">Industries We Serve</h2>
                         <p className="font-lg color-gray-500">
                             What makes us different from others? We give holistic solutions
                             <br className="d-none d-lg-block" />
@@ -517,17 +519,12 @@ const IndustriesSection = () => (
         <section className="section mt-50 pt-50 pb-40">
             <div className="container">
                 <div className="box-cover-border">
-                    <div className="row align-items-center">
-                        <div className="col-lg-4">
-                            <div className="image-container">
-                                <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="marketing" />
-                            </div>
-                        </div>
+                    <div className="row align-items-center justify-content-center">
                         <div className="col-lg-8">
                             <div className="box-info-video">
                                 <h2>Build Safer Digital Communities, Today.</h2>
                                 <p className="font-md color-grey-500"> Let us help you create an online environment that’s secure, inclusive, and trusted by your users.</p>
-                                <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
+                                <div className="box-button text-center mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                             </div>
                         </div>
                     </div>
@@ -539,6 +536,11 @@ const IndustriesSection = () => (
     // Final composed return using the smaller subcomponents
     return (
         <>
+            <Head>
+                <title>AI Content Moderation Services | Scalable Human Review | Dataclap</title>
+                <meta name="description" content="Ensure platform safety with Dataclap's AI content moderation services. We combine automated detection with human review to manage text, image, and video content." />
+                <meta name="keywords" content="content moderation services, AI content moderation, online content monitoring, human moderation services, UGC moderation" />
+            </Head>
             <Layout>
                 <Hero />
                 <ModerationTypes />

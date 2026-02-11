@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import VideoSlider from '../components/slider/VideoSlider';
-import Offer5 from '../components/slider/Offer5';
-import Offer3 from '../components/slider/Offer3';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const Offer5 = dynamic(() => import('../components/slider/Offer5'), { ssr: false });
+const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 
 const PHITL = () => {
     const [isOpen, setOpen] = useState(false)

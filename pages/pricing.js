@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import React, { useState } from 'react';
-import Accordion from '../components/elements/Accordion';
+import dynamic from 'next/dynamic';
+const Accordion = dynamic(() => import('../components/elements/Accordion'), { ssr: false });
 import Layout from '../components/layout/Layout';
 
 const pagePrice = () => {

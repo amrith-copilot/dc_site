@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Layout from "../../components/layout/Layout";
 import Link from 'next/link';
-import VideoSlider from '../../components/slider/VideoSlider';
-import CardSlider from '../../components/slider/CardSlider';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
 import Offer10 from '../../components/slider/Offer10';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
 
 const PhysicalAI = () => {
     const [isOpen, setOpen] = useState(false)
@@ -27,6 +29,11 @@ const PhysicalAI = () => {
 
     return (
         <>
+            <Head>
+                <title>Physical AI Data Annotation Services | Robotics & Edge AI | Dataclap</title>
+                <meta name="description" content="Dataclap delivers physical AI annotation services for robotics, IoT, edge AI, and real-world sensor data including video, LiDAR, and 3D point cloud labeling." />
+                <meta name="keywords" content="physical AI annotation, robotics data annotation, edge AI data labeling, sensor data annotation, 3D point cloud labeling, robot vision annotation, LiDAR data labeling, IoT dataset annotation, autonomous robotics training data, real-world AI datasets" />
+            </Head>
             <Layout>
                 <section className="section banner-5">
                     <div className="container">

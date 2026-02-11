@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
-import VideoSlider from '../components/slider/VideoSlider';
-import Offer5 from '../components/slider/Offer5';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
+const Offer5 = dynamic(() => import('../components/slider/Offer5'), { ssr: false });
 
 const DevOps = () => {
     const [isOpen, setOpen] = useState(false)
@@ -16,6 +18,11 @@ const DevOps = () => {
         <Layout>
             <div style={{ fontFamily: 'inherit' }}>
             <>
+                <Head>
+                    <title>DevOps Services for AI & ML Infrastructure | Dataclap</title>
+                    <meta name="description" content="Dataclap offers DevOps solutions to streamline AI infrastructure, automate workflows, optimize cloud environments, and accelerate model deployment." />
+                    <meta name="keywords" content="DevOps services, AI DevOps, ML infrastructure management, cloud DevOps solutions, DevOps automation" />
+                </Head>
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-65 mb-100">
@@ -154,13 +161,13 @@ const DevOps = () => {
                         </div>
                     </div>
                 </section>
-
+        
 
                   <section className="section mt-70 pt-60 pb-60 bg-brand-1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-40">
-                                <h2 className="mb-20" style={{ color: "#fff" }}>Advantages of adopting DevOps</h2>
+                                <h2 className="mt-20 mb-20" style={{ color: "#fff" }}>Advantages of adopting DevOps</h2>
                                 <p className="font-lg max-width-600 mx-auto" style={{ color: "#fff" }}>
                                     Transform your software delivery with proven DevOps practices that accelerate innovation and improve quality.
                                 </p>
@@ -384,17 +391,12 @@ const DevOps = () => {
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
+                            <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-8">
                                     <div className="box-info-video">
                                         <h2>Transform Your DEVOPS Development into Production-Ready Systems</h2>
                                         <p className="font-md color-grey-500">DevOps is the key to  systems that deliver consistent business value.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
+                                        <div className="box-button text-center mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>

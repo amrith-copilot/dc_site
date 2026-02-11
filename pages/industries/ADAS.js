@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Layout from "../../components/layout/Layout";
-import VideoSlider from '../../components/slider/VideoSlider';
-import CardSlider from '../../components/slider/CardSlider';
-import AnnotationSlider from '../../components/slider/AnnotationSlider';
+import dynamic from 'next/dynamic';
+const VideoSlider = dynamic(() => import('../../components/slider/VideoSlider'), { ssr: false });
+const CardSlider = dynamic(() => import('../../components/slider/CardSlider'), { ssr: false });
+const AnnotationSlider = dynamic(() => import('../../components/slider/AnnotationSlider'), { ssr: false });
 import Link from 'next/link';
 
 const ADAS = () => {
@@ -60,9 +61,9 @@ const ADAS = () => {
     return (
         <Layout>
             <Head>
-                <title>ADAS — High-Precision Training Data for Autonomous Mobility | DataClap</title>
-                <meta name="description" content="High-precision training data for ADAS and autonomous vehicles — lane detection, object tracking, LiDAR annotation, sensor fusion. Partner with DataClap for production-ready datasets and annotation workflows." />
-                <meta name="keywords" content="ADAS training data, autonomous vehicles, lane detection annotation, LiDAR annotation, object tracking, sensor fusion" />
+                <title>ADAS Data Annotation Services | Automotive AI Training Data | Dataclap</title>
+                <meta name="description" content="Dataclap provides high-precision ADAS data annotation services including bounding boxes, segmentation, and LiDAR labeling for autonomous driving and automotive AI systems." />
+                <meta name="keywords" content="ADAS data annotation, automotive AI annotation, autonomous vehicle data labeling, LiDAR annotation services, ADAS training data" />
             </Head>
 
             <div className="adas-page">
@@ -101,10 +102,10 @@ const ADAS = () => {
                                 Visually strong annotation capabilities for autonomous driving systems
                             </p>
                         </div>
-                        <CardSlider cards={cardItems} pageId="adas" />
+                        <CardSlider cards={cardItems} pageId="adas" mobileCardsPerSlide={1} />
                     </div>
                 </section>
-                <section className="section mt-10 pb-0 bg-core-value">
+            <section className="section mt-10 pb-0 bg-core-value">
             <div className="container">
                 <div className="row box-list-core-value">
                     <div className="col-lg-4 mb-70">
@@ -154,18 +155,16 @@ const ADAS = () => {
                 </div>
             </div>
                 </section>
-                <div style={{marginTop: '-40px'}}>
                 <AnnotationSlider
                     items={annotationItems}
                     title="Advanced Annotation Capabilities"
                     subtitle="Specialized labeling services for autonomous driving and ADAS systems"
                     navId="adas"
                 />
-                </div>
                 
 
                 {/* CTA Section */}
-                <section className="section mt-20 pt-30 pb-40">
+                <section className="section mt-10 pt-30 pb-40 cta-section">
                     <div className="container">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
@@ -256,13 +255,32 @@ const ADAS = () => {
                         border: none !important;
                         outline: none !important;
                     }
-                    /* restore CTA box styling to match desktop */
+                    /* make mobile CTA match desktop: light-blue background with primary button */
                     .adas-page .box-cover-border {
                         background-color: var(--color-primary-100) !important;
-                        border: 1px solid var(--color-gray-100) !important;
+                        border: 1px solid transparent !important;
                         border-radius: 8px !important;
                         padding: 25px 10px !important;
                         overflow: hidden !important;
+                        color: var(--text-primary) !important;
+                    }
+                    .adas-page .box-cover-border .box-info-video h2,
+                    .adas-page .box-cover-border .box-info-video p {
+                        color: var(--text-primary) !important;
+                    }
+                    .adas-page .box-cover-border .box-button .btn,
+                    .adas-page .box-cover-border .box-button .btn-brand-1 {
+                        background: var(--color-primary-700) !important;
+                        color: #ffffff !important;
+                        border-color: var(--color-primary-700) !important;
+                    }
+                    /* ensure a comfortable gap between annotation slider and CTA on mobile */
+                    .adas-page .cta-section {
+                        margin-top: 20px !important;
+                        padding-top: 12px !important;
+                    }
+                    .adas-page .swiper-group-1 {
+                        margin-bottom: 28px !important;
                     }
                 }
                 `}</style>
