@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 const Accordion = dynamic(() => import('../components/elements/Accordion'), { ssr: false });
 import Layout from '../components/layout/Layout';
-import dynamic from 'next/dynamic';
 const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
 const CalBooking = dynamic(() => import('../components/elements/CalBooking'), { ssr: false });
 
@@ -68,7 +67,7 @@ const ContactUs = () => {
             };
 
             // Append script to document head
-            document.head.appendChild(script);
+            document.head.appendChild(script);ś
         };
 
         // Function to create HubSpot form
@@ -83,7 +82,7 @@ const ContactUs = () => {
             }
         };
 
-        // Load the script
+        // Load the scriptś
         loadHubSpotScript();
 
         // Cleanup function (optional)

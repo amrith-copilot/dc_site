@@ -7,16 +7,16 @@ const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { 
 const Offer5 = dynamic(() => import('../components/slider/Offer5'), { ssr: false });
 const Offer3 = dynamic(() => import('../components/slider/Offer3'), { ssr: false });
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore from 'swiper';
 import { Autoplay, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-SwiperCore.use([Autoplay, Navigation]);
+// Using per-instance `modules` prop on Swiper components instead of global registration
 
 const HITL = () => {
     const [isOpen, setOpen] = useState(false)
     const [mounted, setMounted] = useState(false)
+    const [activeSlideIndex, setActiveSlideIndex] = useState(0)
     const swiperRef = useRef(null);
 
     useEffect(() => {
@@ -51,6 +51,12 @@ const HITL = () => {
     return (
         <Layout>
             <>
+                <Head>
+                    <title>HITL AI Services | Dataclap AI Data Annotation Experts</title>
+                    <meta name="description" content="Improve AI performance with Dataclap’s HITL services. We combine human expertise and automation to deliver accurate, scalable machine learning solutions." />
+                    <meta name="keywords" content="Human-in-the-Loop AI, HITL services, Dataclap, AI data annotation company, AI training data company, machine learning data services, human feedback for AI" />
+                    <meta name="robots" content="index, follow" />
+                </Head>
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-65 mb-100">
@@ -147,6 +153,7 @@ const HITL = () => {
                                 <Swiper
                                     ref={swiperRef}
                                     onSwiper={(s) => { swiperRef.current = s; }}
+                                    onSlideChange={(s) => setActiveSlideIndex(s.realIndex)}
                                     modules={[Autoplay, Navigation]}
                                     slidesPerView={1}
                                     loop={true}
@@ -266,41 +273,71 @@ const HITL = () => {
                                 </Swiper>
 
                                 {/* Slider Controls */}
-                                <div className="slider-controls-mobile" style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '20px', alignItems: 'center'}}>
-                                    <button 
-                                        className="swiper-button-prev-cards slider-btn"
+                                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px', marginTop: '20px'}}>
+                                    <button
+                                        className="swiper-button-prev-cards"
+                                        aria-label="Previous slide"
                                         style={{
-                                            background: '#f0f0f0',
-                                            border: 'none',
-                                            width: '40px',
-                                            height: '40px',
+                                            width: '48px',
+                                            height: '48px',
                                             borderRadius: '50%',
+                                            border: '1px solid #e6e6e6',
+                                            background: '#ffffff',
+                                            color: 'black',
                                             cursor: 'pointer',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center',
-                                            fontSize: '18px'
+                                            padding: 0,
+                                            boxShadow: '0 1px 3px rgba(0,0,0,0.06)'
                                         }}
                                     >
-                                        ←
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M18 12 H8 M12 6 L6 12 L12 18" stroke="#111" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
                                     </button>
-                                    
-                                    <button 
-                                        className="swiper-button-next-cards slider-btn"
+
+                                    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', minWidth: '80px'}}>
+                                        {Array.from({ length: 5 }).map((_, idx) => (
+                                            <button
+                                                key={idx}
+                                                onClick={() => swiperRef.current && swiperRef.current.slideToLoop(idx)}
+                                                aria-label={`Go to slide ${idx+1}`}
+                                                style={{
+                                                    width: '10px',
+                                                    height: '10px',
+                                                    borderRadius: '50%',
+                                                    border: '1px solid #d1d5db',
+                                                    background: idx === activeSlideIndex ? '#111827' : '#ffffff',
+                                                    cursor: 'pointer',
+                                                    padding: 0,
+                                                    boxSizing: 'border-box'
+                                                }}
+                                            />
+                                        ))}
+                                    </div>
+
+                                    <button
+                                        className="swiper-button-next-cards"
+                                        aria-label="Next slide"
                                         style={{
-                                            background: '#f0f0f0',
-                                            border: 'none',
-                                            width: '40px',
-                                            height: '40px',
+                                            width: '48px',
+                                            height: '48px',
                                             borderRadius: '50%',
+                                            border: '1px solid #e6e6e6',
+                                            background: '#ffffff',
+                                            color: 'black',
                                             cursor: 'pointer',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center',
-                                            fontSize: '18px'
+                                            padding: 0,
+                                            boxShadow: '0 1px 3px rgba(0,0,0,0.06)'
                                         }}
                                     >
-                                        →
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M6 12 H16 M12 6 L18 12 L12 18" stroke="#111" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
                                     </button>
                                 </div>
                             </div>

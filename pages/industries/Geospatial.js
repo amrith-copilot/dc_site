@@ -240,7 +240,7 @@ const Geospatial = () => {
                 </div>
             </div>
                 </section>
-                <div style={{marginTop: '-40px'}}></div>
+                <div style={{marginTop: '-10px'}}></div>
                 <AnnotationSlider
                     items={annotationItems}
                     title="Advanced Geospatial Annotation Capabilities"

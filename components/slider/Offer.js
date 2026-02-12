@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import SwiperCore, { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-SwiperCore.use([Autoplay, Navigation]);
 
 /**
  * Auto-adjusts text size based on content length and available space
@@ -144,7 +142,7 @@ const Offer = () => {
 
     return (
         <div className="offer1">
-            <Swiper
+            <Swiper modules={[Autoplay, Navigation]}
                 slidesPerView={4}
                 spaceBetween={16}
                 loop={true}

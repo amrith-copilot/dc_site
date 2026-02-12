@@ -606,17 +606,12 @@ const Partners = () => {
                 <section className="section mt-50 pt-50 pb-40">
                     <div className="container">
                         <div className="box-cover-border">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <div className="image-container" style={{width: '100%', maxWidth: '100%'}}>
-                                        <img className="d-block" src="assets/imgs/page/homepage2/img-marketing.png" alt="iori" style={{width: '100%', height: 'auto'}} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="box-info-video">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
                                         <h2 className="color-black-text mt-15 mb-20">Ready to Partner With Us?</h2>
                                         <p className="font-md color-grey-500">Join our partner ecosystem and unlock new revenue opportunities while delivering world-class AI solutions to your clients. Let's discuss how we can collaborate to accelerate your growth.</p>
-                                        <div className="box-button text-start mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
+                                        <div className="box-button text-center mt-65"> <Link className="btn btn-brand-1 hover-up font-md" href="/contact">Contact Us</Link></div>
                                     </div>
                                 </div>
                             </div>

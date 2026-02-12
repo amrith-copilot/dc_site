@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import SwiperCore, { Autoplay, Navigation,Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/components/pagination/pagination.min.css";
-
-SwiperCore.use([Autoplay, Navigation,Pagination]);
 
 const HeroSlider = () => {
     const router = useRouter();
@@ -55,7 +53,7 @@ const HeroSlider = () => {
                 <div style={gridOverlayStyle}></div>
                 {mounted ? (
                 <>
-                <Swiper
+                <Swiper modules={[Autoplay, Navigation, Pagination]}
                     slidesPerView={1}
                     spaceBetween={30}
                     pagination={{
@@ -89,15 +87,16 @@ const HeroSlider = () => {
                             paddingTop: '60px',
                             paddingBottom: '60px'
                         }}>
-                            <div className="container-fluid">
+                            <div className="container-fluid mt-30">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <p className="font-md mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Enterprise AI Solutions</p>
+                                        <p className="font-md  mt-30 mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Enterprise AI Solutions</p>
                                         <h1 className="mb-10 color-brand-1" style={{ 
                                             fontSize: 'clamp(2rem, 5vw, 3.5rem)', 
                                             fontWeight: 800, 
                                             lineHeight: 1.05, 
-                                            textAlign: 'center', // Center the title
+                                            textAlign: 'center', 
+                                            margintop: '0.9rem',
                                             marginBottom: '0.5rem', 
                                             minHeight: '120px', 
                                             display: 'flex', 
@@ -124,7 +123,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '25px' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Get Started</button>
                                         </div>
                                     </div>
                                 </div>
@@ -146,7 +145,7 @@ const HeroSlider = () => {
                             <div className="container-fluid">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <p className="font-md mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Post-Training Services</p>
+                                        <p className="font-md mt-30 mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Post-Training Services</p>
                                         <h1 className="mb-10 color-brand-1" style={{ 
                                             fontSize: 'clamp(2rem, 5vw, 3.5rem)', 
                                             fontWeight: 800, 
@@ -178,7 +177,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '45px' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Get Started</button>
                                         </div>
                                     </div>
                                 </div>
@@ -200,7 +199,7 @@ const HeroSlider = () => {
                             <div className="container-fluid">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <p className="font-md mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Infrastructure & Operations</p>
+                                        <p className="font-md  mt-30 mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Infrastructure & Operations</p>
                                         <h1 className="mb-10 color-brand-1" style={{ 
                                             fontSize: 'clamp(2rem, 5vw, 3.5rem)', 
                                             fontWeight: 800, 
@@ -232,7 +231,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Get Started</button>
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +253,7 @@ const HeroSlider = () => {
                             <div className="container-fluid">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <p className="font-md mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Expert Network</p>
+                                        <p className="font-md mt-30 mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Expert Network</p>
                                         <h1 className="mb-10 color-brand-1" style={{ 
                                             fontSize: 'clamp(2rem, 5vw, 3.5rem)', 
                                             fontWeight: 800, 
@@ -286,7 +285,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Get Started</button>
                                         </div>
                                     </div>
                                 </div>
@@ -338,7 +337,7 @@ const HeroSlider = () => {
                             <div className="container-fluid">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
-                                        <p className="font-md mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Enterprise AI Solutions</p>
+                                        <p className="font-md mt-30 mb-15 color-brand-1" style={{ fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.9rem', color: '#0b5bff' }}>Enterprise AI Solutions</p>
                                         <h1 className="mb-10 color-brand-1" style={{ 
                                             fontSize: 'clamp(2rem, 5vw, 3.5rem)', 
                                             fontWeight: 800, 
@@ -364,7 +363,7 @@ const HeroSlider = () => {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7 col-md-9 col-12">
                                         <div className="mt-30" style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
-                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/expert')}>Expert network</button>
+                                            <button className="btn btn-brand-1" style={{ width: 'auto', padding: '10px 30px' }} onClick={() => router.push('/contact')}>Get Started</button>
                                         </div>
                                     </div>
                                 </div>

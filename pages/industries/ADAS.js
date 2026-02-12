@@ -50,12 +50,12 @@ const ADAS = () => {
     const cardItems = [
         { title: "Lane & Road Marking Detection", description: "Identify lanes, edges and markings for lane-keeping and path planning.", img: "/assets/image/Lane & Road Marking Detection.webp", alt: "Lane Detection" },
         { title: "Vehicle / Pedestrian / Cyclist Detection", description: "Detect and classify all dynamic road users for collision avoidance.", img: "/assets/image/Vehicle  Pedestrian  Cyclist Detection.webp", alt: "Vehicle Detection" },
-        { title: "Traffic Light & Sign Recognition", description: "Label signal states and road signs for rule-based driving.", img: "/assets/images/industry/Traffic Light & Sign Recognition.png", alt: "Traffic Signs" },
-        { title: "Free-Space Segmentation", description: "Map drivable areas in complex environments.", img: "/assets/images/industry/Object Tracking.png", alt: "Free Space" },
-        { title: "LiDAR 3D Object Annotation", description: "Cluster and classify objects in point-clouds for long-range perception.", img: "/assets/images/industry/LiDAR 3D Object Annotation.jpeg", alt: "LiDAR Annotation" },
-        { title: "Object Tracking", description: "Track motion trajectories across video frames.", img: "/assets/images/industry/Object Tracking.png", alt: "Object Tracking" },
-        { title: "Road Surface Hazard Detection", description: "Spot potholes, debris and surface anomalies.", img: "/assets/images/industry/Road Surface Hazard Detection.png", alt: "Hazard Detection" },
-        { title: "Sensor Fusion Alignment", description: "Synchronize LiDAR–camera–radar for unified perception.", img: "/assets/images/industry/ADAS_cs.png", alt: "Sensor Fusion" },
+        { title: "Traffic Light & Sign Recognition", description: "Label signal states and road signs for rule-based driving.", img: "/assets/image/Traffic Light & Sign Recognition.webp", alt: "Traffic Signs" },
+        { title: "Free-Space Segmentation", description: "Map drivable areas in complex environments.", img: "/assets/image/Object Tracking.webp", alt: "Free Space" },
+        { title: "LiDAR 3D Object Annotation", description: "Cluster and classify objects in point-clouds for long-range perception.", img: "/assets/image/LiDAR 3D Object Annotation.webp", alt: "LiDAR Annotation" },
+        { title: "Object Tracking", description: "Track motion trajectories across video frames.", img: "/assets/image/Object Tracking.webp", alt: "Object Tracking" },
+        { title: "Road Surface Hazard Detection", description: "Spot potholes, debris and surface anomalies.", img: "/assets/image/Road Surface Hazard Detection.webp", alt: "Hazard Detection" },
+        { title: "Sensor Fusion Alignment", description: "Synchronize LiDAR–camera–radar for unified perception.", img: "/assets/image/Sensor Fusion Alignment .webp", alt: "Sensor Fusion" },
     ];
 
     return (

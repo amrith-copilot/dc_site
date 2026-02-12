@@ -1,8 +1,6 @@
 import React from 'react';
-import SwiperCore, { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-SwiperCore.use([Autoplay, Navigation]);
 
 const Knowledgebase2 = () => {
     return (
@@ -43,7 +41,7 @@ const Knowledgebase2 = () => {
                 }
             `}</style>
             
-            <Swiper
+            <Swiper modules={[Autoplay, Navigation]}
                 slidesPerView={3}
                 spaceBetween={30}
                 loop={true}

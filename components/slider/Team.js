@@ -1,8 +1,6 @@
 import React from 'react';
-import SwiperCore, { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-SwiperCore.use([Autoplay, Navigation]);
 const Team = () => {
 
     const data = [
@@ -47,7 +45,7 @@ const Team = () => {
 
     return (
         <>
-            <Swiper
+            <Swiper modules={[Autoplay, Navigation]}
                 slidesPerView={6}
                 spaceBetween={30}
                 loop={true}

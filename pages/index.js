@@ -286,6 +286,15 @@ const HomePage3 = () => {
                 <style jsx>{`
                     .partner-benefits {
                     }
+                        /* Adjust padding for Explore Network section on small screens */
+                        .bg-explore {
+                            padding-top: 28px !important;
+                            padding-bottom: 36px !important;
+                        }
+                        .bg-explore .text-center {
+                            padding-left: 12px !important;
+                            padding-right: 12px !important;
+                        }
                     .partner-benefits .box-core-value h3,
                     .partner-benefits .box-core-value p,
                     .partner-benefits .list-core-value h5,
@@ -322,6 +331,50 @@ const HomePage3 = () => {
                         </div>
                     </div>
                 </section>
+                <style jsx>{`
+                    @media (max-width: 768px) {
+                        /* Center hero slider content on mobile */
+                        .box-banner-home11,
+                        .box-banner-home11 .box-swiper,
+                        .box-banner-home11 .swiper-container {
+                            display: flex !important;
+                            align-items: center !important;
+                            justify-content: center !important;
+                            text-align: center !important;
+                        }
+
+                        /* Ensure pagination dots are centered at the bottom */
+                        .box-banner-home11 .swiper-container .swiper-pagination {
+                            position: relative !important;
+                            left: 50% !important;
+                            transform: translateX(-50%) !important;
+                            bottom: 0 !important;
+                            width: auto !important;
+                            display: flex !important;
+                            justify-content: center !important;
+                            margin-top: 18px !important;
+                        }
+
+                        .box-banner-home11 .swiper-container .swiper-pagination-bullet {
+                            margin: 0 6px !important;
+                        }
+
+                        /* Adjust vertical padding for the hero session on mobile */
+                        .box-banner-home11 .banner-slide-11,
+                        .box-banner-home11 .banner-slide-11 .banner-slide-11 {
+                            padding-top: 30px !important;
+                            padding-bottom: 32px !important;
+                        }
+
+                        /* Ensure the inner content has comfortable side padding */
+                        .box-banner-home11 .banner-slide-11 .col-lg-7,
+                        .box-banner-home11 .banner-slide-11 .col-md-9,
+                        .box-banner-home11 .banner-slide-11 .col-12 {
+                            padding-left: 14px !important;
+                            padding-right: 14px !important;
+                        }
+                    }
+                `}</style>
             </Layout>
 
         </>

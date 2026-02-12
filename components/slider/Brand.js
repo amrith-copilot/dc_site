@@ -1,8 +1,6 @@
 import React from 'react';
-import SwiperCore, { Autoplay, Navigation,Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-SwiperCore.use([Autoplay, Navigation,Pagination]);
 const Brand = () => {
 
     const data = [
@@ -19,7 +17,7 @@ const Brand = () => {
 
     return (
         <>
-            <Swiper
+            <Swiper modules={[Autoplay, Navigation, Pagination]}
                 slidesPerView={8}
                 spaceBetween={30}
                 loop={true}

@@ -3,6 +3,10 @@ import Head from 'next/head';
 import React from 'react';
 import Image from 'next/image';
 import Layout from '../components/layout/Layout';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Grid } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/grid';
 
 const pageAbout = () => {
     return (
@@ -85,380 +89,83 @@ const pageAbout = () => {
                               </div>
                         </div>
                         <div className="row align-items-start">
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/basicimage.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/cvat.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/argilla.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/roboflow.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/dataloop.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/diffgram.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/encord.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/labelbox.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/labelstudio.png" alt="iori" style={{ maxWidth: '60%', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/segments.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Superanno.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/supervisely.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/geti.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Voxel51.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Opencv.png" alt="iori" style={{maxWidth: '30%', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Grafana.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/helm.svg" alt="iori" style={{maxWidth: '30%', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Jenkins.svg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/JetBrains_TeamCity.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/labelbox.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/langflow.svg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/langfuse.svg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Maven.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Microsoft-Azure.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/minikube.jpg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/mistral.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/MScnd.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/n8n.png" alt="iori" style={{maxWidth: 'calc(70% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/New_Relic.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/nocodb.svg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/openai.svg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/OpenShift.svg" alt="iori" style={{maxWidth: '30%', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/OpenStack.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/payload.svg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/prometheus.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Puppet.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/python.png" alt="iori" style={{maxWidth: '30%', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Retool_logo.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/roboflow.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/segments.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/sonarsource.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Splunk.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/strapi.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Superanno.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/supervisely.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/synk.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/synopsys.webp" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/terraform.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/TerrascanTM.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/udeploy.png" alt="iori" style={{maxWidth: 'calc(30% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/vagrant.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/veracode.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Activepieces.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/akamai.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Anchore.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Ansible.png" alt="iori" style={{maxWidth: 'calc(30% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Appsmith.svg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/assure.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Automatisch.jpg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/aws.jpg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/awscp.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/bb.svg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Cloudflare.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/containerd.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Contrast.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/crew-ai.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/datadog.avif" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/directus.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/Docker.jpg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/flutterflow.webp" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/gitlab.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/VMware.jpg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/vultr.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/windmill.png" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-sm-4">
-                                <div className="card-team mb-30">
-                                    <div className="card-image"><img src="assets/images/tools/zapier.svg" alt="iori" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div>
-                                </div>
+                            <div className="col-12">
+                                <Swiper
+                                    modules={[Autoplay, Grid]}
+                                    grid={{ rows: 2, fill: 'row' }}
+                                    slidesPerView={6}
+                                    spaceBetween={20}
+                                    loop={true}
+                                    autoplay={{ delay: 2500, disableOnInteraction: false }}
+                                    breakpoints={{
+                                        320: { slidesPerView: 2 },
+                                        576: { slidesPerView: 3 },
+                                        768: { slidesPerView: 4 },
+                                        992: { slidesPerView: 6 },
+                                    }}
+                                    className="toolstack-swiper"
+                                >
+                                    {/* Row 1 */}
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/basicimage.png" alt="basic" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/cvat.png" alt="cvat" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/argilla.png" alt="argilla" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/roboflow.png" alt="roboflow" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/dataloop.png" alt="dataloop" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/diffgram.png" alt="diffgram" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/encord.png" alt="encord" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/labelbox.png" alt="labelbox" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/labelstudio.png" alt="labelstudio" style={{ maxWidth: '60%', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/segments.png" alt="segments" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Superanno.png" alt="superanno" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/supervisely.png" alt="supervisely" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/geti.png" alt="geti" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Voxel51.png" alt="voxel51" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Opencv.png" alt="opencv" style={{maxWidth: '30%', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Grafana.png" alt="grafana" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/helm.svg" alt="helm" style={{maxWidth: '30%', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Jenkins.svg" alt="jenkins" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/JetBrains_TeamCity.png" alt="teamcity" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/langflow.svg" alt="langflow" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/langfuse.svg" alt="langfuse" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Maven.png" alt="maven" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Microsoft-Azure.png" alt="azure" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/minikube.jpg" alt="minikube" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/mistral.png" alt="mistral" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/MScnd.png" alt="mscnd" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/n8n.png" alt="n8n" style={{maxWidth: 'calc(70% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/New_Relic.png" alt="newrelic" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/nocodb.svg" alt="nocodb" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/openai.svg" alt="openai" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/OpenShift.svg" alt="openshift" style={{maxWidth: '30%', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/OpenStack.png" alt="openstack" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/payload.svg" alt="payload" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/prometheus.png" alt="prometheus" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Puppet.png" alt="puppet" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/python.png" alt="python" style={{maxWidth: '30%', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Retool_logo.png" alt="retool" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/roboflow.png" alt="roboflow" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/sonarsource.png" alt="sonarsource" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Splunk.png" alt="splunk" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/strapi.png" alt="strapi" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/assure.png" alt="assure" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Automatisch.jpg" alt="automatisch" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/aws.jpg" alt="aws" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/awscp.png" alt="awscp" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/bb.svg" alt="bb" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Cloudflare.png" alt="cloudflare" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/containerd.png" alt="containerd" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Contrast.png" alt="contrast" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/crew-ai.png" alt="crew-ai" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/datadog.avif" alt="datadog" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/directus.png" alt="directus" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/Docker.jpg" alt="docker" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/flutterflow.webp" alt="flutterflow" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/gitlab.png" alt="gitlab" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/VMware.jpg" alt="vmware" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/vultr.png" alt="vultr" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/windmill.png" alt="windmill" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                    <SwiperSlide><div className="card-team mb-30"><div className="card-image"><img src="assets/images/tools/zapier.svg" alt="zapier" style={{maxWidth: 'calc(50% + 2px)', height: 'auto'}} /></div></div></SwiperSlide>
+                                </Swiper>
                             </div>
                         </div>
                     </div>

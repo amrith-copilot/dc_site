@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 // HandSwiper overlay removed per request
-import SwiperCore, { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Register Swiper modules only on the client to avoid server-side execution
@@ -40,13 +40,14 @@ const useAutoTextSize = () => {
  * @param {string} subtitle - Section subtitle/description
  * @param {string} navId - Unique ID for navigation (default: 'annotation')
  */
+// Register Swiper modules on the client synchronously so the Swiper
+// instance sees `autoplay` during the initial render. Doing this inside
+// a component effect can be too late (effect runs after first render).
+// Use the modern `modules` prop on the Swiper component instead of
+// calling SwiperCore.use(...) which can run into SSR/undefined issues.
+
 const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
     const [mounted, setMounted] = useState(false);
-    useEffect(() => {
-        if (typeof window !== 'undefined' && SwiperCore && SwiperCore.use) {
-            SwiperCore.use([Autoplay, Navigation]);
-        }
-    }, []);
     useEffect(() => setMounted(true), []);
     const prevClass = `${navId}-prev`;
     const nextClass = `${navId}-next`;
@@ -194,11 +195,12 @@ const AnnotationSlider = ({ items, title, subtitle, navId = 'annotation' }) => {
                         </div>
                     </div>
 
-                    <Swiper
+                    <Swiper modules={[Autoplay, Navigation]}
                         onSwiper={(s) => { swiperRef.current = s; }}
                         slidesPerView={4}
                         spaceBetween={20}
                         loop={true}
+                        loopedSlides={items.length}
                         /* pagination disabled: using only navigation arrows */
                         autoplay={{
                             delay: 2500,

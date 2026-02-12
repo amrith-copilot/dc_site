@@ -706,7 +706,7 @@ const ColectData = () => {
                     </div>
                 </section>
                 
-                <section className="section mt-100">
+                <section className="section mt-100 ">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
@@ -747,8 +747,8 @@ const ColectData = () => {
                     </div>
                 </section> */}
                 
-                    <section className="section mt-50 pt-50 pb-40">
-                    <div className="container">
+                    <section className="section mt-30 pt-30 pb-40">
+                    <div className="container mt-20">
                         <div className="box-cover-border" >
                             <div className="row justify-content-center">
                                 <div className="col-lg-8 text-center">

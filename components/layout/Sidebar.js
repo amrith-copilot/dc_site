@@ -142,7 +142,6 @@ const Sidebar = ({ openClass, handleRemove }) => {
                                                 <li><Link legacyBehavior href="/Search"><a onClick={handleRemove}>Search and Personalization</a></Link></li>
                                                 <li><Link legacyBehavior href="/OCR"><a onClick={handleRemove}>OCR / IDP</a></Link></li>
                                                 <li><Link legacyBehavior href="/GenAI"><a onClick={handleRemove}>Generative AI</a></Link></li>
-                                                <li><Link legacyBehavior href="/index-11"><a onClick={(e) => handleNavClick(e, '/index-11')}>Training as a Service</a></Link></li>
                                                 <li><Link legacyBehavior href="/Content-md"><a onClick={handleRemove}>Content Moderation</a></Link></li>
                                             </ul>
                                         </li>

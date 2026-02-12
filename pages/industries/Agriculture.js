@@ -50,25 +50,25 @@ const Agriculture = () => {
         { 
             title: "Field Boundary & Plot Mapping", 
             description: "Define plots, borders and management zones using aerial or satellite imagery.",
-            img: "/assets/image/agri_id_soy_beans.webp",
+            img: "/assets/image/Field Boundary & Plot Mapping.webp",
             alt: "Field Boundary & Plot Mapping"
         },
         { 
             title: "Autonomous Tractor Vision", 
             description: "Annotate obstacles, pathways and terrain features for safe navigation.",
-            img: "/assets/image/agri_pest.webp",
+            img: "/assets/image/Autonomous Tractor Vision.webp",
             alt: "Autonomous Tractor Vision"
         },
         { 
             title: "Multispectral Vegetation Index Labeling", 
             description: "Attach NDVI, NDRE and spectral signatures for advanced crop monitoring.",
-            img: "/assets/images/industry/aerospace.jpg",
+            img: "/assets/image/Multispectral Vegetation Index Labeling.webp",
             alt: "Multispectral Vegetation Index Labeling"
         },
         { 
             title: "Pest & Damage Spotting", 
             description: "Label insect damage, leaf holes and pest infestations at early onset.",
-            img: "/assets/imgs/page/homepage6/human2.png",
+            img: "/assets/image/Pest & Damage Spotting.webp",
             alt: "Pest & Damage Spotting"
         }
     ];

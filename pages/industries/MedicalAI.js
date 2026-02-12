@@ -98,14 +98,14 @@ const MedicalAI = () => {
 
     // Card data for the card grid slider
     const cardItems = [
-        { title: "Lesion & Tumor Segmentation", description: "Segment lesions, tumors and abnormal tissue regions.", img: "/assets/imgs/page/homepage6/human1.png", alt: "Lesion & Tumor Segmentation" },
+        { title: "Lesion & Tumor Segmentation", description: "Segment lesions, tumors and abnormal tissue regions.", img: "/assets/image/Lesion & Tumor Segmentation.webp", alt: "Lesion & Tumor Segmentation" },
         { title: "Organ & Structure Labeling", description: "Label anatomical organs and body structures.", img: "/assets/imgs/page/homepage6/human2.png", alt: "Organ & Structure Labeling" },
         { title: "Bone Fracture Detection", description: "Detect and classify bone fractures in X-rays.", img: "/assets/image/Bone Fracture Detection.webp", alt: "Bone Fracture Detection" },
         { title: "Ultrasound Anatomy Annotation", description: "Annotate anatomical features in ultrasound imagery.", img: "/assets/image/Ultrasound Anatomy Annotation.webp", alt: "Ultrasound Anatomy Annotation" },
         { title: "Pathology Cell Classification", description: "Classify cell types in pathology slides.", img: "/assets/image/Pathology Cell Classification.webp", alt: "Pathology Cell Classification" },
         { title: "Radiology Report Linking", description: "Link imaging findings to radiology reports.", img: "/assets/imgs/page/homepage6/human3.png", alt: "Radiology Report Linking" },
         { title: "Vitals & Waveform Event Detection", description: "Detect events in ECG, EEG and vital waveforms.", img: "/assets/imgs/page/homepage6/human1.png", alt: "Vitals & Waveform Event Detection" },
-        { title: "Surgical Video Action Recognition", description: "Recognize surgical actions and instrument usage.", img: "/assets/imgs/page/homepage6/human2.png", alt: "Surgical Video Action Recognition" },
+        { title: "Surgical Video Action Recognition", description: "Recognize surgical actions and instrument usage.", img: "/assets/image/Surgical Video Action Recognition.webp", alt: "Surgical Video Action Recognition" },
     ];
 
     // Handle window resize to update cardsPerSlide
@@ -247,7 +247,7 @@ const MedicalAI = () => {
                 </div>
             </div>
                 </section>
-                <div style={{marginTop: '-40px'}}></div>
+                <div style={{marginTop: '-100px'}}></div>
                 <AnnotationSlider
                     items={annotationItems}
                     title="Advanced Medical AI Capabilities"

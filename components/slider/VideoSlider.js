@@ -4,7 +4,7 @@ const VideoSlider = ({ caption }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const videoRefs = useRef([]);
   const containerRef = useRef(null);
-  
+
   const videos = [
     { id: 1, src: "/videos/video1.mp4" },
     { id: 2, src: "/videos/video2.mp4" },
@@ -55,13 +55,13 @@ const VideoSlider = ({ caption }) => {
   return (
     <div className="video-slider-wrapper">
       <div className="video-slider-container">
-        <div 
+        <div
           ref={containerRef}
           className="video-slides"
           style={{ width: `${videos.length * 100}%` }}
         >
           {videos.map((video, index) => (
-            <div 
+            <div
               key={video.id}
               className="video-slide"
               style={{ width: `${100 / videos.length}%` }}
@@ -77,7 +77,7 @@ const VideoSlider = ({ caption }) => {
             </div>
           ))}
         </div>
-        
+
         {/* Bottom overlay with caption and controls */}
         <div className="slider-bottom-overlay">
           {/* Caption text */}
@@ -118,7 +118,6 @@ const VideoSlider = ({ caption }) => {
         .video-slider-wrapper {
           width: 100%;
           max-width: 1200px;
-          margin: 0 auto;
           position: relative;
           padding: 0 20px;
         }
@@ -128,42 +127,56 @@ const VideoSlider = ({ caption }) => {
           height: 600px;
           overflow: hidden;
           border-radius: 20px;
-          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
           position: relative;
-          background: #000;
+          background: #ffffff;
         }
 
         .video-slides {
+          width: 350%;
+          display: flex;
           height: 100%;
           display: flex;
           transition: transform 0.5s ease-in-out;
         }
 
         .video-slide {
+          width: 100%;
           height: 100%;
           flex-shrink: 0;
           position: relative;
+          overflow: hidden;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .slider-video {
-          width: 100%;
-          height: 100%;
+          width: 110%;
+          height: 109%;
           object-fit: cover;
           display: block;
+          border-radius: 30px;
+          margin: 20px;
+          padding:20px;
         }
 
         .slider-bottom-overlay {
           position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
-          padding: 60px 40px 25px 40px;
-          z-index: 10;
+          bottom: 12px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: auto;
+          background: transparent;
+          padding: 0;
+          z-index: 30;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 20px;
+          gap: 10px;
+          pointer-events: none;
         }
 
         .slider-caption {
@@ -186,29 +199,29 @@ const VideoSlider = ({ caption }) => {
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 25px;
+          gap: 10px;
+          pointer-events: auto;
         }
 
         .control-btn {
-          width: 55px;
-          height: 55px;
+          width: 44px;
+          height: 44px;
           border: none;
           border-radius: 50%;
-          background: transparent;
+          background: rgba(60, 60, 60, 0.6);
           color: white;
           cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: center;
           transition: all 0.3s ease;
-          backdrop-filter: blur(5px);
-          border: 2px solid rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(4px);
+          border: 1.5px solid rgba(255, 255, 255, 0.15);
         }
 
         .control-btn:hover {
-          background: rgba(255, 255, 255, 0.2);
-          transform: scale(1.1);
-          border-color: rgba(255, 255, 255, 0.5);
+          background: rgba(60, 60, 60, 0.8);
+          transform: scale(1.08);
         }
 
         .control-btn:active {
@@ -217,34 +230,35 @@ const VideoSlider = ({ caption }) => {
 
         .slide-dots {
           display: flex;
-          gap: 12px;
+          gap: 8px;
+          align-items: center;
         }
 
         .dot {
-          width: 14px;
-          height: 14px;
+          width: 12px;
+          height: 12px;
           border: none;
           border-radius: 50%;
-          background: rgba(255, 255, 255, 0.5);
+          background: rgba(255, 255, 255, 0.45);
           cursor: pointer;
           transition: all 0.3s ease;
         }
 
         .dot:hover {
           background: rgba(255, 255, 255, 0.7);
-          transform: scale(1.2);
+          transform: scale(1.15);
         }
 
         .dot.active {
-          background: rgba(255, 255, 255, 0.9);
-          transform: scale(1.3);
+          background: rgba(255, 255, 255, 0.95);
+          transform: scale(1.2);
         }
 
         @media (max-width: 1024px) {
           .video-slider-wrapper {
             max-width: 1000px;
           }
-          
+
           .video-slider-container {
             height: 500px;
           }
@@ -258,20 +272,28 @@ const VideoSlider = ({ caption }) => {
 
           .video-slider-container {
             height: 400px;
+            border-radius: 18px;
+          }
+
+          .video-slide {
+            padding: 12px;
+          }
+
+          .slider-video {
+            border-radius: 14px;
           }
 
           .control-btn {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
           }
 
           .slider-bottom-overlay {
-            padding: 50px 25px 20px 25px;
-            gap: 15px;
+            bottom: 10px;
           }
 
           .slider-controls {
-            gap: 20px;
+            gap: 8px;
           }
 
           .slider-caption p {
@@ -282,20 +304,28 @@ const VideoSlider = ({ caption }) => {
         @media (max-width: 480px) {
           .video-slider-container {
             height: 300px;
+            border-radius: 16px;
+          }
+
+          .video-slide {
+            padding: 10px;
+          }
+
+          .slider-video {
+            border-radius: 12px;
           }
 
           .control-btn {
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
           }
 
           .slider-bottom-overlay {
-            padding: 40px 15px 15px 15px;
-            gap: 12px;
+            bottom: 8px;
           }
 
           .slider-controls {
-            gap: 15px;
+            gap: 6px;
           }
 
           .slider-caption p {
@@ -314,3 +344,4 @@ const VideoSlider = ({ caption }) => {
 };
 
 export default VideoSlider;
+

@@ -173,7 +173,7 @@ const Mapping = () => {
                                 </div>
                             </li>
                             <li> <span className="ticked" />
-                                <h5 className="color-brand-1 mb-5">Human-Centric</h5>
+                                <h5 className="color-brand-1 mb-20">Human-Centric</h5>
                                 <div className="box-border-dashed">
                                     <p className="font-md color-grey-500 mb-20">Expert moderators ensure nuanced understanding and fairness.</p>
                                 </div>
@@ -183,14 +183,14 @@ const Mapping = () => {
                 </div>
             </div>
                 </section>
-                <div style={{marginTop: '-40px'}}></div>
+                <div style={{marginTop: '-10px'}}></div>
                 <AnnotationSlider
                     items={annotationItems}
                     title="Advanced Mapping Annotation Capabilities"
                     subtitle="Specialized labeling services for navigation and spatial intelligence"
                     navId="mapping"
                 />
-                <div style={{marginTop: '-70px'}}></div>
+                <div style={{marginTop: '-50px'}}></div>
                 {/* CTA Section */}
                 <section className="section mt-20 pt-30 pb-40">
                     <div className="container">
