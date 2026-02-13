@@ -122,7 +122,7 @@ const SocialMedia = () => {
                         </div>
                             
                             {/* VideoSlider replaces the original video banner */}
-                            <div className="box-video-banner">
+                            <div className="box-video-banner mb-70">
                                 <VideoSlider
                                 caption={"Structured labeling of images, videos, text and interactions to power recommendation engines, content discovery and safety systems."}
                                 />

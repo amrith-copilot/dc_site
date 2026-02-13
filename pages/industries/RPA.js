@@ -168,7 +168,7 @@ const RPA = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 mb-70  ">
                         <ul className="list-core-value">
                             <li> <span className="ticked" />
                                 <h5 className="color-brand-1 mb-5">Flexible</h5>

@@ -52,6 +52,12 @@ const Footer = () => {
                                             <li><Link href="/industries/Mapping">Mapping</Link></li>
                                             <li><Link href="/industries/CustomerServices">Customer Services</Link></li>
                                             <li><Link href="/industries/SocialMedia">Social Media</Link></li>
+                                            <li><Link href="/industries/VoiceAI">Voice AI</Link></li>
+                                            <li><Link href="/industries/AssetManagement">Asset Management</Link></li>
+                                            <li><Link href="/industries/MedicalAI">Medical AI</Link></li>
+                                            <li><Link href="/industries/Fintech">Fintech</Link></li>
+                                            <li><Link href="/industries/Insurance">Insurance</Link></li>
+                                            <li><Link href="/industries/physicalai">Physical AI</Link></li>
                                         </ul>
                                     )}
                                 </div>
@@ -143,7 +149,7 @@ const Footer = () => {
                                         <li><Link href="/industries/RPA">RPA</Link></li>
                                         <li><Link href="/industries/Manufacturing">Manufacturing</Link></li>
                                         <li><Link href="/industries/Geospatial">Geospatial</Link></li>
-                                        <li><Link href="/industries/VoiceAI">VoiceAi</Link></li>
+                                        <li><Link href="/industries/VoiceAI">Voice Ai</Link></li>
                                         <li><Link href="/industries/SocialMedia">Social Media</Link></li>
                                         <li><Link href="/industries/AssetManagement">Asset Management</Link></li>
                                         <li><Link href="/industries/CustomerServices">E-Commerce and Content</Link></li>
@@ -156,13 +162,13 @@ const Footer = () => {
                                     <h5 className="column-title invisible">INDUSTRIES</h5>
                                     <ul className="footer-menu">
                                         <li><Link href="/industries/Agriculture">Agriculture</Link></li>
-                                        <li><Link href="/industries/MedicalAI">MedicalAi</Link></li>
+                                        <li><Link href="/industries/MedicalAI">Medical Ai</Link></li>
                                         <li><Link href="/industries/Fintech">Fintech</Link></li>
                                         <li><Link href="/industries/Sports">Sports &amp; Media</Link></li>
                                         <li><Link href="/industries/Retail">Retail</Link></li>
                                         <li><Link href="/industries/Mapping">Mapping</Link></li>
                                         <li><Link href="/industries/Insurance">Insurance</Link></li> 
-                                        <li><Link href="/industries/physicalai">PhysicalAi</Link></li>
+                                        <li><Link href="/industries/physicalai">Physical Ai</Link></li>
                                     </ul>
                                 </div>
 

@@ -203,7 +203,7 @@ const Manufacturing = () => {
         />
 
         
-                 <section className="section mt-10 pb-0 bg-core-value">
+                 {/* <section className="section mt-10 pb-0 bg-core-value">
             <div className="container">
                 <div className="row box-list-core-value">
                     <div className="col-lg-4 mb-70">
@@ -258,23 +258,26 @@ const Manufacturing = () => {
                     </div>
                 </div>
             </div>
-        </section>
-
-        
-                         <section className="section mt-0">
-            <div className=" bg-core-value">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="box-contact-form">
-                                <h2 className="color-white mb-30">Get Started Today</h2>
-                                <p className="font-lg color-white">Partner with us for high-quality labeled data</p>
+        </section> */}
+           <section className="section mt-20 pt-30 pb-40">
+                    <div className="container">
+                        <div className="box-cover-border">
+                            <div className="row align-items-center">
+                                <div className="col-lg-12">
+                                    <div className="box-info-video" style={{textAlign: 'center'}}>
+                                        <h2 style={{textAlign: 'center'}}>Get Started Today</h2>
+                                        <p className="font-md color-grey-500">
+                                            Partner with us to get high-quality training data for smarter claims processing and fraud detection.
+                                        </p>
+                                        <div className="box-button text-center mt-40">
+                                            <Link className="btn btn-brand-1 hover-up" href="/contact">Contact Us</Link>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
             </Layout>
         </>
     );

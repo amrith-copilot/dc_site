@@ -142,7 +142,7 @@ const PhysicalAI = () => {
                                             </section>
                                              
                  <section className="section mt-10 pb-0 bg-core-value">
-            <div className="container ">
+            <div className="container  mb-100">
                 <div className="row box-list-core-value">
                     <div className="col-lg-4 mb-70">
                         <div className="box-core-value">
@@ -191,7 +191,7 @@ const PhysicalAI = () => {
                 </div>
             </div>
                 </section>
-                <div style={{marginTop: '-40px'}}></div>
+                <div style={{marginTop: '-10px'}}></div>
 
                 <AnnotationSlider
                     items={annotationItems}

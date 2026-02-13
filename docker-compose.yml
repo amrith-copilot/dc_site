@@ -11,8 +11,8 @@ services:
       - PORT=3000
     restart: unless-stopped
     networks:
-      - app-net
+      - dev-network
 
 networks:
-  app-net:
+  dev-network:
     external: true
