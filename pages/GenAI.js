@@ -27,9 +27,9 @@ const GenAI = () => {
                                     </h1>
                                 </div>
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-md color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-md color-black-text" style={{ textAlign: 'left' }}>
                                         We deliver scalable annotation, instruction-tuning datasets, evaluation & H-in-the-Loop (HITL) services that make LLM and multimodal models safer, more accurate, and production ready.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                             

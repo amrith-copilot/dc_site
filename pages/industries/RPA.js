@@ -106,9 +106,9 @@ const RPA = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-10 mb-20">
-                                <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                      Annotations for document parsing, UI interactions, workflows and process agents — built for enterprises worldwide.
-                                 </p>
+                                 </h2>
                                 </div>
                              
                         </div>

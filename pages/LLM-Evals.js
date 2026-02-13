@@ -32,9 +32,9 @@ const LLMEvals = () => {
                                     </h1>
                                 </div>
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Quantify the performance of your LLMs, RAG systems, and Agents. Our rigorous evaluation framework ensures your AI solutions meet enterprise standards for accuracy and reliability.
-                                    </p>
+                                    </h2>
                             </div>
                             </div>
                             

@@ -33,9 +33,9 @@ const DevOps = () => {
                                     </h1>
                                 </div>
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Experience the power of automated workflows, seamless collaboration, and continuous innovation with enterprise-grade DevOps solutions. Transform your software delivery from months to minutes.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                             

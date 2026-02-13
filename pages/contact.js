@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 const Accordion = dynamic(() => import('../components/elements/Accordion'), { ssr: false });
 import Layout from '../components/layout/Layout';
 const VideoSlider = dynamic(() => import('../components/slider/VideoSlider'), { ssr: false });
-const CalBooking = dynamic(() => import('../components/elements/CalBooking'), { ssr: false });
+// CalBooking removed; using HubSpot Meetings embed instead
 
 const ContactUs = () => {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -92,6 +92,45 @@ const ContactUs = () => {
         };
     }, []);
 
+    // HubSpot Meetings embed - inject only on client to prevent SSR/CSR markup mismatch
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
+
+        const container = document.getElementById('hubspot-meetings-embed');
+        if (!container) return;
+
+        // Avoid injecting multiple times
+        if (container.dataset.injected === '1') return;
+
+        // Create the meetings div
+        const meetingsDiv = document.createElement('div');
+        meetingsDiv.className = 'meetings-iframe-container';
+        meetingsDiv.setAttribute('data-src', 'https://meetings.hubspot.com/sanjeev13?embed=true');
+
+        // Create the script element
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js';
+        script.async = true;
+
+        // Append elements
+        container.appendChild(meetingsDiv);
+        container.appendChild(script);
+
+        // Mark as injected
+        container.dataset.injected = '1';
+
+        // Cleanup on unmount
+        return () => {
+            try {
+                if (container) {
+                    container.innerHTML = '';
+                    delete container.dataset.injected;
+                }
+            } catch (e) {}
+        };
+    }, []);
+
     return (
         <>
             <Head>
@@ -149,7 +188,8 @@ const ContactUs = () => {
                                 <h2 className="color-brand-1 mb-15 text-center">Schedule a Meeting</h2>
                                 <p className="font-sm color-grey-500 text-center mb-40">Book a 30-minute call with our team to discuss your project needs.</p>
                                 <div className="box-calendar-container" style={{minHeight: '600px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)'}}>
-                                    <CalBooking />
+                                    {/* HubSpot Meetings embed (client-only injection to avoid SSR hydration mismatch) */}
+                                    <div id="hubspot-meetings-embed" />
                                 </div>
                             </div>
                         </div>

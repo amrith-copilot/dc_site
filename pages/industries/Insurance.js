@@ -156,9 +156,9 @@ const Insurance = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-10 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-quality annotations for claims imagery, damage scoring, document intelligence and risk analytics — optimized for insurers across North America, Europe and APAC.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                         </div>

@@ -32,9 +32,9 @@ const RedTeaming = () => {
                                     </h1>
                                 </div>
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         AI is powerful, but it's not perfect. Models can be tricked, biased, or produce unexpected results—sometimes with serious consequences. Our Red Teaming services are designed to challenge your AI like a real attacker or edge-case user would, helping you spot hidden risks before they reach customers or regulators.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                             

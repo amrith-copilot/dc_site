@@ -80,9 +80,9 @@ const SFT = () => {
                                     </h1>
                                 </div>
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Pre-trained AI models are powerful, but they’re also generic. They don’t naturally understand your industry, customers, or compliance requirements. Supervised Fine-Tuning (SFT) bridges this gap—taking a general model and refining it with high-quality, domain-specific examples so it performs reliably in real-world scenarios.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                             

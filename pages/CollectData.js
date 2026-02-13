@@ -475,9 +475,9 @@ const ColectData = () => {
                                 </h1>
                                 </div>
                                 <div className="col-lg-12 mb-70">
-                                    <p className="font-lg color-black-text">
+                                    <h2 className="font-lg color-black-text">
                                     From early prototypes to production-grade foundation models, we design and execute data collection programs that reduce bias, improve model performance, and accelerate time-to-deployment.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                             <div className="box-video-banner box-video-banner-responsive">

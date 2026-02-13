@@ -43,9 +43,9 @@ const AssetManagement = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-10 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-quality annotations for equipment inspection, defect detection, condition scoring and asset lifecycle intelligence — with structured labeling for images, video, IoT sensor streams and geospatial data. Built for Asset Management systems that detect faults early, reduce downtime and extend asset lifespan.
-                                    </p>
+                                    </h2>
                                 </div>
                              
                             </div>

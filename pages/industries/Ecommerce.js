@@ -105,9 +105,9 @@ const Ecommerce = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-10 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Accurate annotations for SKUs, attributes, content categorization and recommendations for global marketplaces.
-                                    </p>
+                                    </h2>
                                 </div>
                              
                         </div>

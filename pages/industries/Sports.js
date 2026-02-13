@@ -112,9 +112,9 @@ const Sports = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-10 mb-20">
-                                <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                      Accurate annotations for player tracking, event detection, motion analytics and content automation — used worldwide.
-                                 </p>
+                                 </h2>
                                 </div>
                              
                         </div>

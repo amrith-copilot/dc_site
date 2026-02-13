@@ -98,9 +98,9 @@ const VoiceAI = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-10 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-precision transcripts, speaker labels, acoustic features and intent tagging — built for global voice interfaces.
-                                    </p>
+                                    </h2>
                                 </div>
                              
                         </div>

@@ -164,9 +164,9 @@ const MedicalAI = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-20 mb-10">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-accuracy annotations for imaging, pathology, patient monitoring and clinical workflows — supporting healthcare systems globally.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
 

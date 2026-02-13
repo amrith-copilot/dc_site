@@ -78,9 +78,9 @@ const ADAS = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-20 mb-10">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Transform raw sensor feeds into reliable perception. Lane detection, Obstacle detection, Object tracking and more
-                                    </p>
+                                    </h2>
                                 </div>
                              
                             

@@ -25,9 +25,9 @@ const Partners = () => {
                                 <h1 className="color-brand-1 mt-20 mb-30">
                                     Amplify Your AI Capabilities
                                 </h1>
-                                <p className="font-lg color-grey-500 mb-35">
+                                <h2 className="font-lg color-grey-500 mb-35">
                                     A partnership program built for AI agencies, AI labs, and AI/ML platforms that want to extend their capabilities with scalable data annotation and Human In The Loop. Partners can refer, resell, or integrate our delivery pipelines and earn revenue through referral fees, revenue share, or white-label models.
-                                </p>
+                                </h2>
                                 <div className="mt-45">
                                     <Link className="btn btn-brand-1 hover-up mr-20" href="/contact">
                                         Become a Partner

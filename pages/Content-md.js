@@ -23,9 +23,9 @@ const ContentMd = () => {
                             </h1>
                         </div>
                         <div className="col-lg-12 mb-20">
-                            <p className="color-black-text font-lg">
+                            <h2 className="color-black-text font-lg">
                                 Deliver safer, trusted, and compliant user experiences with AI-powered and human-in-the-loop content moderation. From social media to marketplaces, gaming, and beyond—our solutions ensure your digital ecosystem stays secure, inclusive, and aligned with your brand values.
-                            </p>
+                            </h2>
                         </div>
                     </div>
                     

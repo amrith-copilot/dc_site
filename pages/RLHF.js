@@ -33,9 +33,9 @@ const RLHF = () => {
                                     </h1>
                                 </div>
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         We deliver scalable RLHF pipelines that pair human judgment with model training to align LLMs, vision-language systems, agents, and decision models. Our teams score, rank, and correct model outputs in real time, providing high-signal feedback aligned with your safety, compliance, and product requirements.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                             

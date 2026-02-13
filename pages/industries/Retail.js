@@ -91,9 +91,9 @@ const Retail = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-20 mb-10">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-accuracy annotations for shopper behavior, shelf intelligence, product detection and in-store automation optimized for retailers across North America, Europe and APAC.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
 

@@ -58,9 +58,9 @@ const MLOps = () => {
                                     </h1>
                                 </div>
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Turn your ML experiments into production powerhouses. Build, deploy, and scale AI solutions with confidence through automated pipelines and continuous monitoring.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                             

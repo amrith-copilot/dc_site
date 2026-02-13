@@ -27,9 +27,9 @@ const SAP = () => {
                                     </h1>
                                 </div>
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-md color-black-text">
+                                    <h2 className="font-md color-black-text">
                                         Modern digital platforms live and die by how quickly and accurately they can connect users with what they’re looking for. Whether it’s a product, a piece of content, or a recommendation, search relevance and personalization are at the heart of great user experiences. Our Search & Personalization Services combine data expertise, human-in-the-loop validation, and machine learning workflows to help you deliver results that feel intuitive, contextual, and personalized.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                             

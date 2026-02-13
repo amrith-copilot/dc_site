@@ -106,9 +106,9 @@ const Manufacturing = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-10 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-accuracy annotations for defect detection, assembly verification and robotic automation — trusted across factories in North America, Europe and APAC.
-                                    </p>
+                                    </h2>
                                 </div>
                              
                         </div>

@@ -101,10 +101,10 @@ const Mapping = () => {
                                 </div>
                  
                                 <div className="col-lg-12    mt-10 mb-20">
-                                <p className="font-lg color-black-text">
+                                <h2 className="font-lg color-black-text">
                                      Accurate annotations for road geometry, traffic elements, POI detection and map updates — optimized for global mapping systems.
 
-                                 </p>
+                                 </h2>
                                 </div>
                              
                         </div>

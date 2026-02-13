@@ -28,9 +28,9 @@ const Expert = () => {
                                 </div>
                                 
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-lg color-black-text">
+                                    <h2 className="font-lg color-black-text">
                                         Precision annotation powered by domain experts for training, validating, and aligning advanced AI systems. Built for LLMs, computer vision, multimodal models, and mission-critical AI workflows where accuracy, context, and judgment matter.
-                                    </p>
+                                    </h2>
                                        <div className="box-button text-end mt-10">
                                            <a className="btn btn-brand-1 hover-up font-md" href="https://experts.dataclap.digital/signin" target="_blank" rel="noopener noreferrer">Sign in</a>
                                        </div>

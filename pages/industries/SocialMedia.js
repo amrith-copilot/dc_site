@@ -114,9 +114,9 @@ const SocialMedia = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-10 mb-20">
-                                <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                      High-precision annotations for user behavior, visual content, sentiment and moderation — for global social platforms.
-                                 </p>
+                                 </h2>
                                 </div>
                              
                         </div>

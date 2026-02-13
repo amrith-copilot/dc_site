@@ -92,9 +92,9 @@ const Agriculture = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-10 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-accuracy annotations for crop health, yield prediction, weed detection, field mapping, autonomous agri-robotics, aerial imagery, ground sensors, machinery vision and multispectral data. Powering Agriculture AI systems that monitor fields, optimize inputs, automate harvesting and detect issues early.
-                                    </p>
+                                    </h2>
                                 </div>
                              
                             </div>

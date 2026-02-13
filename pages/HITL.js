@@ -69,9 +69,9 @@ const HITL = () => {
                                   
                                 </div>
                                 <div className="col-lg-12 mb-20">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         We combine skilled human reviewers with automated tooling to deliver high-quality labeled data for computer vision, NLP, audio, LiDAR and multimodal ML workflows — at scale and with guaranteed SLAs.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
                             

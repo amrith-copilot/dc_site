@@ -162,9 +162,9 @@ const Geospatial = () => {
                                 </div>
 
                                 <div className="col-lg-12 mt-20 mb-10">
-                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                    <h2 className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-accuracy annotations for satellite, drone and aerial imagery — supporting infrastructure planning, environmental monitoring and land-use analysis globally.
-                                    </p>
+                                    </h2>
                                 </div>
                             </div>
 
