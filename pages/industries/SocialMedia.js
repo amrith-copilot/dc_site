@@ -99,7 +99,7 @@ const SocialMedia = () => {
         <>
             <Head>
                 <title>Sports & Media Data Annotation Services | Video & AI Analytics | Dataclap</title>
-                <meta name="description" content="Dataclap delivers sports and media data annotation services for video analysis, player tracking, content indexing, and AI-powered media intelligence." />
+                <meta name="description" content="DATACLAP DIGITALdelivers sports and media data annotation services for video analysis, player tracking, content indexing, and AI-powered media intelligence." />
                 <meta name="keywords" content="sports data annotation, media data labeling, video annotation services, player tracking annotation, sports analytics datasets, broadcast video labeling, AI for sports analytics, content indexing services, action recognition datasets, media AI training data" />
             </Head>
             <Layout>
@@ -109,17 +109,13 @@ const SocialMedia = () => {
                     <div className="container">
                         <div className="mt-25 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                
-                                        
-                               
-                                <h3 className="color-black-text mt-10 mb-20">Training Data for Social Media AI, Content Understanding and Safety Models</h3>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10 mb-20">Training Data for Social Media AI, Content Understanding and Safety Models</h1>
                                 </div>
-                 
-                                <div className="col-lg-6 mt-10 mb-20">
-                                <p className="font-lg color-black-text">
-                                     High-precision annotations for user behavior, visual content, sentiment and moderation — for global social platforms.
 
+                                <div className="col-lg-12 mt-10 mb-20">
+                                <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                     High-precision annotations for user behavior, visual content, sentiment and moderation — for global social platforms.
                                  </p>
                                 </div>
                              

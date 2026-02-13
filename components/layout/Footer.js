@@ -143,8 +143,11 @@ const Footer = () => {
                                         <li><Link href="/industries/RPA">RPA</Link></li>
                                         <li><Link href="/industries/Manufacturing">Manufacturing</Link></li>
                                         <li><Link href="/industries/Geospatial">Geospatial</Link></li>
-                                        <li><Link href="/industries/CustomerServices">Customer Services</Link></li>
+                                        <li><Link href="/industries/VoiceAI">VoiceAi</Link></li>
                                         <li><Link href="/industries/SocialMedia">Social Media</Link></li>
+                                        <li><Link href="/industries/AssetManagement">Asset Management</Link></li>
+                                        <li><Link href="/industries/CustomerServices">E-Commerce and Content</Link></li>
+
                                     </ul>
                                 </div>
 
@@ -153,11 +156,13 @@ const Footer = () => {
                                     <h5 className="column-title invisible">INDUSTRIES</h5>
                                     <ul className="footer-menu">
                                         <li><Link href="/industries/Agriculture">Agriculture</Link></li>
-                                        <li><Link href="#">News &amp; Events</Link></li>
+                                        <li><Link href="/industries/MedicalAI">MedicalAi</Link></li>
+                                        <li><Link href="/industries/Fintech">Fintech</Link></li>
                                         <li><Link href="/industries/Sports">Sports &amp; Media</Link></li>
                                         <li><Link href="/industries/Retail">Retail</Link></li>
                                         <li><Link href="/industries/Mapping">Mapping</Link></li>
-                                        <li><Link href="#">Robotics</Link></li>
+                                        <li><Link href="/industries/Insurance">Insurance</Link></li> 
+                                        <li><Link href="/industries/physicalai">PhysicalAi</Link></li>
                                     </ul>
                                 </div>
 
@@ -210,10 +215,10 @@ const Footer = () => {
                                 <div className="footer-column resources-col">
                                     <h5 className="column-title">RESOURCES</h5>
                                     <ul className="footer-menu">
-                                        <li><Link href="/pricing">Pricing</Link></li>
+                                        {/* <li><Link href="/pricing">Pricing</Link></li> */}
                                         <li><Link href="/partners">Partners</Link></li>
                                         <li><Link href="/contact">Contact</Link></li>
-                                        <li><Link href="/careers">Careers</Link></li>  
+                                        <li><Link href="/career">Careers</Link></li>  
                                     </ul>
                                 </div>
                             </div>
@@ -244,7 +249,7 @@ const Footer = () => {
                                     </div>
                                     <div className="copyright">
                                         <span className="copyright-text" style={{ color: '#9b9b9b' }}>
-                                            © 2025-2026 DATACLAP DIGITAL. All rights reserved.
+                                            © 2025-2026 DATACLAP DIGITALDIGITAL. All rights reserved.
                                         </span>
                                     </div>
                                 </div>

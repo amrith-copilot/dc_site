@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 
@@ -6,6 +7,15 @@ const Partners = () => {
     const [isOpen, setOpen] = useState(false)
     return (
         <Layout>
+            <Head>
+                <title>Partners | Dataclap</title>
+                <meta name="description" content="Partner with Dataclap to extend AI capabilities with scalable data annotation, HITL, and white-label solutions for AI agencies, labs, and platforms." />
+                <meta name="keywords" content="partners, partner program, data annotation partners, white-label, referral, Dataclap" />
+                <meta property="og:title" content="Partners | Dataclap" />
+                <meta property="og:description" content="Partner with Dataclap to extend AI capabilities with scalable data annotation and Human-in-the-Loop workflows." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="/partners" />
+            </Head>
             <>
                 {/* Hero Section */}
                 <section className="section banner-5 pt-100 pb-100">

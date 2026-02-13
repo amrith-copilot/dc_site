@@ -91,8 +91,15 @@ const Sports = () => {
         <Layout>
             <Head>
                 <title>Sports & Media Data Annotation Services | Video & AI Analytics | Dataclap</title>
-                <meta name="description" content="Dataclap delivers sports and media data annotation services for video analysis, player tracking, content indexing, and AI-powered media intelligence." />
+                <meta name="description" content="DATACLAP DIGITAL delivers sports and media data annotation services for video analysis, player tracking, content indexing, and AI-powered media intelligence." />
                 <meta name="keywords" content="sports data annotation, media data labeling, video annotation services, player tracking annotation, sports analytics datasets, broadcast video labeling, AI for sports analytics, content indexing services, action recognition datasets, media AI training data" />
+                <link rel="canonical" href="/industries/Sports" />
+                <meta property="og:title" content="Sports & Media Data Annotation Services | Dataclap" />
+                <meta property="og:description" content="DATACLAP DIGITAL delivers sports and media data annotation services for video analysis, player tracking, content indexing, and AI-powered media intelligence." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="/industries/Sports" />
+                <meta property="og:image" content="/assets/imgs/industry/sports-hero.png" />
+                <meta name="twitter:card" content="summary_large_image" />
             </Head>
            
                 {/* Hero Section */}
@@ -100,17 +107,13 @@ const Sports = () => {
                     <div className="container">
                         <div className="mt-25 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                
-                                        
-                               
-                                <h3 className="color-black-text mt-10 mb-20">AI Training Data for Sports Analytics, Broadcast Automation and Athlete Performance</h3>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10 mb-20">AI Training Data for Sports Analytics, Broadcast Automation and Athlete Performance</h1>
                                 </div>
-                 
-                                <div className="col-lg-6 mt-10 mb-20">
-                                <p className="font-lg color-black-text">
-                                     Accurate annotations for player tracking, event detection, motion analytics and content automation — used worldwide.
 
+                                <div className="col-lg-12 mt-10 mb-20">
+                                <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                     Accurate annotations for player tracking, event detection, motion analytics and content automation — used worldwide.
                                  </p>
                                 </div>
                              

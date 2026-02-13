@@ -13,7 +13,7 @@ const SAP = () => {
         <>
             <Head>
                 <title>AI Search & Personalization Solutions | Dataclap</title>
-                <meta name="description" content="Enhance user engagement with AI-powered search and personalization solutions. Dataclap delivers intelligent recommendation engines and custom search systems." />
+                <meta name="description" content="Enhance user engagement with AI-powered search and personalization solutions. DATACLAP DIGITALdelivers intelligent recommendation engines and custom search systems." />
                 <meta name="keywords" content="AI search solutions, AI personalization services, recommendation engine development, intelligent search systems, AI-driven personalization" />
             </Head>
             <Layout>
@@ -21,12 +21,12 @@ const SAP = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
                                         Delivering Relevant Experiences, Every Time
-                                    </h2>
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
+                                <div className="col-lg-12 mb-20">
                                     <p className="font-md color-black-text">
                                         Modern digital platforms live and die by how quickly and accurately they can connect users with what they’re looking for. Whether it’s a product, a piece of content, or a recommendation, search relevance and personalization are at the heart of great user experiences. Our Search & Personalization Services combine data expertise, human-in-the-loop validation, and machine learning workflows to help you deliver results that feel intuitive, contextual, and personalized.
                                     </p>

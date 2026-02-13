@@ -56,15 +56,14 @@ const OCR = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-
-                                    <h3 className="color-black-text mt-10">
-                                    Scan → Extract → Validate → Deliver.
-                                </h3>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
+                                        Scan → Extract → Validate → Deliver.
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
-                                    We convert unstructured documents (scanned paper, multi-page PDFs, screenshots, photographs) into structured, usable data. That includes text extraction (printed & handwritten), table extraction (multi-page, nested tables), key–value pair capture, document classification, document verification and secure storage or push to your systems.
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        We convert unstructured documents (scanned paper, multi-page PDFs, screenshots, photographs) into structured, usable data. That includes text extraction (printed & handwritten), table extraction (multi-page, nested tables), key–value pair capture, document classification, document verification and secure storage or push to your systems.
                                     </p>
                                 </div>
                             </div>

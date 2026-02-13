@@ -91,7 +91,7 @@ const RPA = () => {
         <>
             <Head>
                 <title>RPA Data Annotation Services | Intelligent Automation Training Data | Dataclap</title>
-                <meta name="description" content="Dataclap provides RPA data annotation services to train intelligent automation systems, including document labeling, workflow tagging, and structured data extraction." />
+                <meta name="description" content="DATACLAP DIGITALprovides RPA data annotation services to train intelligent automation systems, including document labeling, workflow tagging, and structured data extraction." />
                 <meta name="keywords" content="RPA data annotation, robotic process automation data labeling, automation training data, intelligent automation datasets, document annotation for RPA, business process data labeling, structured data extraction services, invoice annotation services, form data labeling, AI automation training data" />
             </Head>
             <Layout>
@@ -101,17 +101,13 @@ const RPA = () => {
                     <div className="container">
                         <div className="mt-25 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                
-                                        
-                               
-                                <h3 className="color-black-text mt-10 mb-20">AI Training Data for Robotic Process Automation and Intelligent Workflows</h3>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10 mb-20">AI Training Data for Robotic Process Automation and Intelligent Workflows</h1>
                                 </div>
-                 
-                                <div className="col-lg-6 mt-10 mb-20">
-                                <p className="font-lg color-black-text">
-                                     Annotations for document parsing, UI interactions, workflows and process agents — built for enterprises worldwide.
 
+                                <div className="col-lg-12 mt-10 mb-20">
+                                <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                     Annotations for document parsing, UI interactions, workflows and process agents — built for enterprises worldwide.
                                  </p>
                                 </div>
                              

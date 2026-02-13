@@ -5,7 +5,7 @@ const PageHead = ({ headTitle }) => {
     return (
         <>
             <Head>
-                <title>{headTitle ? headTitle : 'DataClap Digital '}</title>
+                <title>{headTitle ? headTitle : 'DATACLAP DIGITALDIGITAL '}</title>
                 <link rel="icon" href="/assets/DataClap-icon.svg" type="image/svg+xml" />
             </Head>
         </>

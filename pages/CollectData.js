@@ -18,7 +18,7 @@ const ColectData = () => {
         <>
             <Head>
                 <title>AI Data Collection Services | Data Capture & Scalable Data Gathering Solutions by DataClap</title>
-                <meta name="description" content="DataClap is your trusted partner for AI-ready data collection. With proven expertise, we deliver cost-effective data capture, gathering, and online collection services to power machine learning and computer vision projects." />
+                <meta name="description" content="DATACLAP DIGITALis your trusted partner for AI-ready data collection. With proven expertise, we deliver cost-effective data capture, gathering, and online collection services to power machine learning and computer vision projects." />
                 <meta name="keywords" content="AI-ready data collection, data capture, data gathering, online collection services" />
             </Head>
             <Layout>
@@ -468,13 +468,13 @@ const ColectData = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
+                                <div className="col-lg-12 mb-20">
 
-                                   <h2 className="color-black-text mt-10">
+                                   <h1 className="color-black-text mt-10">
                                     Bespoke data collection for every model stage
-                                </h2>
+                                </h1>
                                 </div>
-                                <div className="col-lg-6 mb-70">
+                                <div className="col-lg-12 mb-70">
                                     <p className="font-lg color-black-text">
                                     From early prototypes to production-grade foundation models, we design and execute data collection programs that reduce bias, improve model performance, and accelerate time-to-deployment.
                                     </p>

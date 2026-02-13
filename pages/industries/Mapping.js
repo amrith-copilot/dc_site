@@ -93,14 +93,14 @@ const Mapping = () => {
                     <div className="container">
                         <div className="mt-25 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
+                                <div className="col-lg-12 mb-20">
                                 
                                         
                                
-                                <h3 className="color-black-text mt-10 mb-20">AI Training Data for Mapping, Navigation and Spatial Intelligence</h3>
+                                <h1 className="color-black-text lg mt-10 mb-20">AI Training Data for Mapping, Navigation and Spatial Intelligence</h1>
                                 </div>
                  
-                                <div className="col-lg-6 mt-10 mb-20">
+                                <div className="col-lg-12    mt-10 mb-20">
                                 <p className="font-lg color-black-text">
                                      Accurate annotations for road geometry, traffic elements, POI detection and map updates — optimized for global mapping systems.
 

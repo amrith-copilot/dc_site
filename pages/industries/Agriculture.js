@@ -76,7 +76,7 @@ const Agriculture = () => {
         <>
             <Head>
                 <title>Agriculture Data Annotation Services | AI for Smart Farming | Dataclap</title>
-                <meta name="description" content="Dataclap delivers agriculture data annotation services for crop monitoring, yield prediction, drone imagery labeling, and precision farming AI models." />
+                <meta name="description" content="DATACLAP DIGITALdelivers agriculture data annotation services for crop monitoring, yield prediction, drone imagery labeling, and precision farming AI models." />
                 <meta name="keywords" content="agriculture data annotation, farm AI data labeling, crop image annotation, drone image labeling agriculture, precision farming datasets, plant disease detection labeling, satellite farm imagery annotation, agritech AI training data, yield prediction datasets, smart farming AI solutions" />
             </Head>
             <Layout>           
@@ -85,15 +85,14 @@ const Agriculture = () => {
                     <div className="container">
                         <div className="mt-25 mb-100">
                             <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                    <h3 className="color-black-text mt-10">
-                                       Agriculture AI Training Data <br />for Crop Intelligence, Field Robotics <br /> and Precision Farming
-                                    </h3>
-                                    <h4 className="color-black-text mt-10 mb-20"></h4>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10 mb-20">
+                                        Agriculture AI Training Data for Crop Intelligence, Field Robotics and Precision Farming
+                                    </h1>
                                 </div>
-     
-                                <div className="col-lg-6  mt-10 mb-20">
-                                    <p className="font-lg color-black-text">
+
+                                <div className="col-lg-12 mt-10 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-accuracy annotations for crop health, yield prediction, weed detection, field mapping, autonomous agri-robotics, aerial imagery, ground sensors, machinery vision and multispectral data. Powering Agriculture AI systems that monitor fields, optimize inputs, automate harvesting and detect issues early.
                                     </p>
                                 </div>

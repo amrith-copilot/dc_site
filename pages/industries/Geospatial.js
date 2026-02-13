@@ -148,7 +148,7 @@ const Geospatial = () => {
         <Layout>
             <Head>
                 <title>Geospatial Data Annotation Services | GIS & Satellite Labeling | Dataclap</title>
-                <meta name="description" content="Dataclap offers geospatial annotation services for satellite imagery, GIS mapping, and remote sensing data to power location-based AI models." />
+                <meta name="description" content="DATACLAP DIGITALoffers geospatial annotation services for satellite imagery, GIS mapping, and remote sensing data to power location-based AI models." />
                 <meta name="keywords" content="geospatial data annotation, satellite image labeling, GIS data annotation, remote sensing annotation, map data labeling" />
             </Head>
            
@@ -156,20 +156,22 @@ const Geospatial = () => {
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-25 mb-100">
-                        <div className="row align-items-start">
-                                <div className="col-lg-6 mb-10">
-                                <h3 className="color-black-text mt-10 mb-20">Training Data for Geospatial Intelligence, Remote Sensing and Terrain Analytics</h3>
+                            <div className="row align-items-start">
+                                <div className="col-lg-12 mt-10 mb-10">
+                                    <h1 className="color-black-text">Training Data for Geospatial Intelligence, Remote Sensing and Terrain Analytics</h1>
                                 </div>
-                                <div className="col-lg-6 mt-10 mb-20">
-                                <p className="font-lg color-black-text">
-                                     High-accuracy annotations for satellite, drone and aerial imagery — supporting infrastructure planning, environmental monitoring and land-use analysis globally. </p>
+
+                                <div className="col-lg-12 mt-20 mb-10">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        High-accuracy annotations for satellite, drone and aerial imagery — supporting infrastructure planning, environmental monitoring and land-use analysis globally.
+                                    </p>
                                 </div>
-                        </div>
-                            
+                            </div>
+
                             {/* VideoSlider replaces the original video banner */}
                             <div className="box-video-banner">
                                 <VideoSlider
-                                caption={"Structured labeling for objects, terrain, vegetation, water bodies and built environments to power geospatial models used in agriculture, defense, climate and urban planning."}
+                                    caption={"Structured labeling for objects, terrain, vegetation, water bodies and built environments to power geospatial models used in agriculture, defense, climate and urban planning."}
                                 />
                             </div>
                         </div>

@@ -33,7 +33,13 @@ const Career = () => {
     return (
         <>
             <Head>
-                <title>Career</title>
+                <title>Careers | Dataclap</title>
+                <meta name="description" content="Explore career opportunities at Dataclap. Join our team working on AI data annotation, HITL, RLHF, and model evaluation to build production-grade AI systems." />
+                <meta name="keywords" content="careers, jobs, dataclap careers, AI jobs, data annotation jobs" />
+                <meta property="og:title" content="Careers | Dataclap" />
+                <meta property="og:description" content="Explore career opportunities at Dataclap and join our team building data annotation and AI evaluation solutions." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="/career" />
             </Head>
 
             <Layout>

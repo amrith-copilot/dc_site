@@ -38,8 +38,8 @@ const ImageAnno = () => {
     }, [mounted]);
     return (
         <><Head>
-                <title>Data Annotation Services | Dataclap AI Training Data Experts</title>
-                <meta name="description" content="Dataclap provides high-quality data annotation services for AI and ML models, including image, video, text, audio, and LLM labeling with scalable, accurate workflows." />
+                <title>Data Annotation Services | DATACLAP DIGITALAI Training Data Experts</title>
+                <meta name="description" content="DATACLAP DIGITALprovides high-quality data annotation services for AI and ML models, including image, video, text, audio, and LLM labeling with scalable, accurate workflows." />
                 <meta name="keywords" content="data annotation services, AI data labeling, image annotation services, video annotation, text annotation services, audio data labeling, LLM data annotation, training data labeling" />
             </Head>
             <Layout>
@@ -47,14 +47,14 @@ const ImageAnno = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">
-                                        Make the most of your data <br /> across every modality 
-                                    </h2>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
+                                        Make the most of your data across every modality
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
-                                     We provide high-quality data annotation across image, video, text, audio, LLM, LiDAR, and time-series data. Our workflows are built to support training, evaluation, and production deployment for modern AI systems.
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        We provide high-quality data annotation across image, video, text, audio, LLM, LiDAR, and time-series data. Our workflows are built to support training, evaluation, and production deployment for modern AI systems.
                                     </p>
                                 </div>
                             </div>

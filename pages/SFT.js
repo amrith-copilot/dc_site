@@ -19,7 +19,7 @@ const SFT = () => {
     return (
         
         <><Head>
-                <title>Supervised Fine-Tuning Services | Dataclap LLM & AI Model Optimization</title>
+                <title>Supervised Fine-Tuning Services | DATACLAP DIGITALLLM & AI Model Optimization</title>
                 <meta name="description" content="Enhance model performance with Dataclap’s supervised fine-tuning services. Improve LLM accuracy, domain adaptation, and AI outputs with expert human-curated datasets." />
                 <meta name="keywords" content="supervised fine-tuning, LLM fine-tuning services, AI model fine-tuning, GPT fine-tuning services, custom AI model training, domain-specific LLM training" />
             </Head>
@@ -74,13 +74,13 @@ const SFT = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
                                         Transform Pre-Trained AI Models Into Domain-Ready Solutions
-                                    </h2>
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Pre-trained AI models are powerful, but they’re also generic. They don’t naturally understand your industry, customers, or compliance requirements. Supervised Fine-Tuning (SFT) bridges this gap—taking a general model and refining it with high-quality, domain-specific examples so it performs reliably in real-world scenarios.
                                     </p>
                                 </div>

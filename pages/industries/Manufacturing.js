@@ -101,18 +101,14 @@ const Manufacturing = () => {
                     <div className="container">
                         <div className="mt-25 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                
-                                        
-                               
-                                <h3 className="color-black-text mt-10 mb-20">Training Data for Manufacturing Vision, Quality Control and Industrial Automation</h3>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10 mb-20">Training Data for Manufacturing Vision, Quality Control and Industrial Automation</h1>
                                 </div>
-                 
-                                <div className="col-lg-6 mt-10 mb-20">
-                                <p className="font-lg color-black-text">
-                                     High-accuracy annotations for defect detection, assembly verification and robotic automation — trusted across factories in North America, Europe and APAC.
 
-                                 </p>
+                                <div className="col-lg-12 mt-10 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        High-accuracy annotations for defect detection, assembly verification and robotic automation — trusted across factories in North America, Europe and APAC.
+                                    </p>
                                 </div>
                              
                         </div>

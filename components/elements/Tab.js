@@ -86,7 +86,7 @@ const Tab = () => {
                     <div className="box-tab-32">
                         <div className="row align-items-center">
                             <div className="col-xl-6 col-lg-5">
-                                <img className="bd-rd16" src="/assets/imgs/page/blog2/img1.png" alt="iori" />
+                                <img className="bd-rd16" src="assets\imgs\page\homepage10\home-LLM.webp" alt="iori" />
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="box-business-tab">
@@ -234,7 +234,7 @@ const Tab = () => {
                     <div className="box-tab-32">
                         <div className="row align-items-center">
                             <div className="col-xl-6 col-lg-5">
-                                <img className="bd-rd16" src="/assets/imgs/page/homepage10/img-tab.png" alt="iori" />
+                                <img className="bd-rd16" src="/assets/imgs/page/homepage10/home-Gen.webp" alt="iori" />
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="box-business-tab">
@@ -286,7 +286,7 @@ const Tab = () => {
                     <div className="box-tab-32">
                         <div className="row align-items-center">
                             <div className="col-xl-6 col-lg-5">
-                                <img className="bd-rd16" src="/assets/imgs/page/blog2/img1.png" alt="iori" />
+                                <img className="bd-rd16" src="/assets/imgs/page/homepage10/home-content.webp" alt="iori" />
                             </div>
                             <div className="col-xl-6 col-lg-7">
                                 <div className="box-business-tab">

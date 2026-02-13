@@ -31,37 +31,34 @@ const PhysicalAI = () => {
         <>
             <Head>
                 <title>Physical AI Data Annotation Services | Robotics & Edge AI | Dataclap</title>
-                <meta name="description" content="Dataclap delivers physical AI annotation services for robotics, IoT, edge AI, and real-world sensor data including video, LiDAR, and 3D point cloud labeling." />
+                <meta name="description" content="DATACLAP DIGITALdelivers physical AI annotation services for robotics, IoT, edge AI, and real-world sensor data including video, LiDAR, and 3D point cloud labeling." />
                 <meta name="keywords" content="physical AI annotation, robotics data annotation, edge AI data labeling, sensor data annotation, 3D point cloud labeling, robot vision annotation, LiDAR data labeling, IoT dataset annotation, autonomous robotics training data, real-world AI datasets" />
             </Head>
             <Layout>
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-25 mb-100">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6 mb-20">
-
-                                    <h3 className="color-black-text mt-10 mb-20">
-                                        Physical AI Training Data for Robotics, Embodied Intelligence and Human–Robot Interaction
-                                    </h3>
+                            <div className="row align-items-start">
+                                <div className="col-lg-12 mt-10 mb-10">
+                                    <h1 className="color-black-text">Physical AI Training Data for Robotics, Embodied Intelligence and Human–Robot Interaction</h1>
                                 </div>
-                                <div className="col-lg-6 mt-10 mb-20">
-                                    <p className="font-lg color-black-text">
-                                        High-precision annotations for human motion, object manipulation, force dynamics and 3D physical environments — powering next-gen robotics, industrial automation, warehouse systems and humanoid AI.
 
+                                <div className="col-lg-12 mt-20 mb-10">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        High-precision annotations for human motion, object manipulation, force dynamics and 3D physical environments — powering next-gen robotics, industrial automation, warehouse systems and humanoid AI.
                                     </p>
                                 </div>
                             </div>
-                            
+
                             {/* VideoSlider replaces the original video banner */}
-                                                        <div className="box-video-banner">
-                                                            <VideoSlider
-                                                            caption={"From robotics to AR/VR, we help train AI that understands, adapts, and interacts with the real world."}
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
+                            <div className="box-video-banner">
+                                <VideoSlider
+                                    caption={"From robotics to AR/VR, we help train AI that understands, adapts, and interacts with the real world."}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                                             <section className="section mt-100">
                                                 <div className="container">

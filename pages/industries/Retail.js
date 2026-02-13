@@ -85,25 +85,22 @@ const Retail = () => {
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-25 mb-100">
-                            <div className="row">
-                                <div className="col-12 mb-20">
-                                    <h3 className="color-black-text mt-10">
-                                        AI Training Data for Retail Vision,Store Analytics<br/> and Physical Commerce Automation
-                                    </h3>
-                                </div>
-                            </div>
                             <div className="row align-items-start">
-                                <div className="col-lg-6 mt-0 mb-20">
-                                    <p className="font-lg color-black-text">
-                                    High-accuracy annotations for shopper behavior, shelf intelligence, product detection and in-store automation <br />optimized for retailers across North America, Europe and APAC.
+                                <div className="col-lg-12 mt-10 mb-10">
+                                    <h1 className="color-black-text">AI Training Data for Retail Vision, Store Analytics and Physical Commerce Automation</h1>
+                                </div>
+
+                                <div className="col-lg-12 mt-20 mb-10">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        High-accuracy annotations for shopper behavior, shelf intelligence, product detection and in-store automation optimized for retailers across North America, Europe and APAC.
                                     </p>
                                 </div>
                             </div>
-                            
+
                             {/* VideoSlider replaces the original video banner */}
                             <div className="box-video-banner">
-                                <VideoSlider 
-                                caption={"Structured labeling for CCTV footage, in-store cameras, POS streams and product imagery. Powering Retail AI systems that improve store operations, prevent loss, optimize merchandising and enhance real-world shopper experiences."}
+                                <VideoSlider
+                                    caption={"Structured labeling for CCTV footage, in-store cameras, POS streams and product imagery. Powering Retail AI systems that improve store operations, prevent loss, optimize merchandising and enhance real-world shopper experiences."}
                                 />
                             </div>
                         </div>

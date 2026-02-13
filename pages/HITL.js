@@ -52,7 +52,7 @@ const HITL = () => {
         <Layout>
             <>
                 <Head>
-                    <title>HITL AI Services | Dataclap AI Data Annotation Experts</title>
+                    <title>HITL AI Services | DATACLAP DIGITALAI Data Annotation Experts</title>
                     <meta name="description" content="Improve AI performance with Dataclap’s HITL services. We combine human expertise and automation to deliver accurate, scalable machine learning solutions." />
                     <meta name="keywords" content="Human-in-the-Loop AI, HITL services, Dataclap, AI data annotation company, AI training data company, machine learning data services, human feedback for AI" />
                     <meta name="robots" content="index, follow" />
@@ -61,16 +61,15 @@ const HITL = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">
-                                        Annotation That Scales 
-                                    </h2>
-                                    <h4 className="color-black-text mb-20">
-                                        Accurate, auditable, and SLA-backed. 
-                                    </h4>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
+                                        Annotation That Scales Accurate, auditable, and SLA-backed.
+
+                                    </h1>
+                                  
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         We combine skilled human reviewers with automated tooling to deliver high-quality labeled data for computer vision, NLP, audio, LiDAR and multimodal ML workflows — at scale and with guaranteed SLAs.
                                     </p>
                                 </div>

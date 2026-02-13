@@ -68,7 +68,7 @@ const pageTerm = () => {
                     <p className="font-md color-grey-500 mb-30">
                         <strong>Data Processing Addendum</strong><br /><br />
 
-                        This Data Processing Addendum (this “DPA”) is incorporated into the Terms of Service located at https://dataclap.co/GDPR (the “Agreement”) between the undersigned customer (“Customer”) and DataClap (the “Company”). Capitalized but undefined terms used in this DPA will have the meanings assigned to those terms in the Agreement. In the course of providing the Service to Customer pursuant to the Agreement, the Company may Process Personal Data on behalf of Customer. The Company agrees to comply with the following provisions with respect to its Processing of Customer Personal Data (as such term is defined herein).<br /><br />
+                        This Data Processing Addendum (this “DPA”) is incorporated into the Terms of Service located at https://dataclap.co/GDPR (the “Agreement”) between the undersigned customer (“Customer”) and DATACLAP DIGITAL(the “Company”). Capitalized but undefined terms used in this DPA will have the meanings assigned to those terms in the Agreement. In the course of providing the Service to Customer pursuant to the Agreement, the Company may Process Personal Data on behalf of Customer. The Company agrees to comply with the following provisions with respect to its Processing of Customer Personal Data (as such term is defined herein).<br /><br />
 
                         <strong>1. DEFINITIONS</strong><br /><br />
 
@@ -276,7 +276,7 @@ const pageTerm = () => {
 
                         <strong>Tolerance policy</strong><br /><br />
 
-                        DataClap enforces strict adherence to security policies. Violations are treated seriously and may result in disciplinary action, up to and including termination, to minimize impact to service delivery and client data protection.
+                        DATACLAP DIGITALenforces strict adherence to security policies. Violations are treated seriously and may result in disciplinary action, up to and including termination, to minimize impact to service delivery and client data protection.
                     </p>
                 </>
             )
@@ -290,7 +290,16 @@ const pageTerm = () => {
     return (
         <>
             <Head>
-                <title>Terms and condition</title>
+                <title>Terms and Conditions | Dataclap</title>
+                <meta name="description" content="Read Dataclap's Terms and Conditions including privacy, GDPR, data processing, and security policies governing the use of our services." />
+                <meta name="keywords" content="terms and conditions, privacy policy, GDPR, data security, Dataclap" />
+                <link rel="canonical" href="/term-conditions" />
+                <meta property="og:title" content="Terms and Conditions | Dataclap" />
+                <meta property="og:description" content="Read Dataclap's Terms and Conditions including privacy, GDPR, data processing, and security policies." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="/term-conditions" />
+                <meta property="og:image" content="/assets/DC_Full_B.svg" />
+                <meta name="twitter:card" content="summary_large_image" />
             </Head>
 
             <Layout>

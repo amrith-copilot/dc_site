@@ -26,16 +26,15 @@ const RedTeaming = () => {
                         <div className="container">
                             <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-
-                                <h2 className="color-black-text mt-10">
-                                    Put Your AI to the Test <br />Before the World Does
-                                </h2>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
+                                        Put Your AI to the Test Before the World Does
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                <p className="font-lg color-black-text">
-                                   AI is powerful, but it’s not perfect. Models can be tricked, biased, or produce unexpected results—sometimes with serious consequences. Our Red Teaming services are designed to challenge your AI like a real attacker or edge-case user would, helping you spot hidden risks before they reach customers or regulators.
-                                </p>
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        AI is powerful, but it's not perfect. Models can be tricked, biased, or produce unexpected results—sometimes with serious consequences. Our Red Teaming services are designed to challenge your AI like a real attacker or edge-case user would, helping you spot hidden risks before they reach customers or regulators.
+                                    </p>
                                 </div>
                             </div>
                             
@@ -294,11 +293,11 @@ const RedTeaming = () => {
                     </div>
                 </section>
                 <section className="section mt-20 pt-50 pb-40">
-                    <div className="container">
+                    <div className="container text-center">
                         <div className="box-cover-border">
                             <div className="row align-items-center">
                               
-                                <div className="col-lg-8 text-center ">
+                                <div className="col-lg-8 text-center mx-auto">
                                     <div className="box-info-video">
                                         <h2>Make Your AI Safer, Smarter, and More Reliable</h2>
                                         <p className="font-md color-grey-500">Red Teaming is the difference between hoping your AI is safe and knowing it is. With us as your partner, you’ll deploy AI systems that are stronger, more trustworthy, and ready for real-world challenges.</p>

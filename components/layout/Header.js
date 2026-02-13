@@ -43,19 +43,20 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
     };
     
     useEffect(() => {
-        document.addEventListener("scroll", () => {
-            const scrollCheck = window.scrollY > 100
-            if (scrollCheck !== scroll) {
-                setScroll(scrollCheck)
-            }
-        })
-        
+        if (typeof window === 'undefined') return;
+        const onScroll = () => {
+            const scrollCheck = window.scrollY > 100;
+            setScroll(scrollCheck);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+
         return () => {
+            window.removeEventListener('scroll', onScroll);
             if (menuTimeoutRef.current) {
                 clearTimeout(menuTimeoutRef.current);
             }
         };
-    })
+    }, []);
     return (
         <>
             <header className={`${scroll ? "header sticky-bar stick" : "header sticky-bar"} ${addClass}`}>

@@ -17,7 +17,7 @@ const LLMEvals = () => {
         <>  
             <Head>
                 <title>AI Evaluation Services | LLM Testing & Model Validation | Dataclap</title>
-                <meta name="description" content="Dataclap delivers AI evaluation services including LLM benchmarking, performance testing, accuracy validation, and human-based model assessments." />
+                <meta name="description" content="DATACLAP DIGITALdelivers AI evaluation services including LLM benchmarking, performance testing, accuracy validation, and human-based model assessments." />
                 <meta name="keywords" content="AI evaluation services, LLM evaluation, AI model validation, AI performance testing, LLM benchmarking" />
              
             </Head>
@@ -26,15 +26,16 @@ const LLMEvals = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-center">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
                                         Eliminate Uncertainty in Your AI Development Lifecycle.
-                                    </h2>
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text ">
-                                       Quantify the performance of your LLMs, RAG systems, and Agents. Our rigorous evaluation framework ensures your AI solutions meet enterprise standards for accuracy and reliability.</p>
-                                </div>
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        Quantify the performance of your LLMs, RAG systems, and Agents. Our rigorous evaluation framework ensures your AI solutions meet enterprise standards for accuracy and reliability.
+                                    </p>
+                            </div>
                             </div>
                             
                             {/* VideoSlider replaces the original video banner */}

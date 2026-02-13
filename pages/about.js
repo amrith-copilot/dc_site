@@ -12,9 +12,18 @@ const pageAbout = () => {
     return (
         <>
             <Head>
-                <title>About Dataclap | AI Data Annotation & Training Data Company</title>
-                <meta name="description" content="Dataclap is a leading AI training data and annotation company providing scalable, secure, and high-accuracy solutions for enterprise AI models." />
-                <meta name="keywords" content="Dataclap, Dataclap company, AI data annotation company, AI training data company, machine learning data services, AI solutions provider" />
+                <title>About DATACLAP DIGITAL | AI Data Annotation & Training Data Company</title>
+                <meta name="description" content="DATACLAP DIGITAL is a leading AI training data and annotation company providing scalable, secure, and high-accuracy solutions for enterprise AI models." />
+                <meta name="keywords" content="Dataclap, DATACLAP DIGITAL, AI data annotation company, AI training data company, machine learning data services, AI solutions provider" />
+                <link rel="canonical" href="/about" />
+                <meta property="og:title" content="About DATACLAP DIGITAL | AI Data Annotation & Training Data Company" />
+                <meta property="og:description" content="DATACLAP DIGITAL provides precise, scalable data annotation and Human-in-the-Loop workflows to accelerate production-grade AI." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="/about" />
+                <meta property="og:image" content="/assets/imgs/page/about/hero.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="About DATACLAP DIGITAL | AI Data Annotation & Training Data Company" />
+                <meta name="twitter:description" content="DATACLAP DIGITAL provides precise, scalable data annotation and Human-in-the-Loop workflows to accelerate production-grade AI." />
             </Head>
             <Layout>
                 <section className="section pt-90 banner-about" >

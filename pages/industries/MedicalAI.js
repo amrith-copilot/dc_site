@@ -149,7 +149,7 @@ const MedicalAI = () => {
         <>
             <Head>
                 <title>Medical AI Data Annotation Services | Healthcare AI Training | Dataclap</title>
-                <meta name="description" content="Dataclap provides secure medical AI annotation services for radiology, pathology, and clinical data to power accurate healthcare AI models." />
+                <meta name="description" content="DATACLAP DIGITALprovides secure medical AI annotation services for radiology, pathology, and clinical data to power accurate healthcare AI models." />
                 <meta name="keywords" content="medical data annotation, healthcare AI annotation, medical image labeling, radiology image annotation, clinical data labeling" />
             </Head>
             <Layout>
@@ -158,27 +158,22 @@ const MedicalAI = () => {
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-25 mb-100">
-                        <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                
-                                        
-                               
-                                <h3 className="color-black-text mt-10 mb-20">Training Data for Medical AI, Diagnostics and Clinical Automation</h3>
+                            <div className="row align-items-start">
+                                <div className="col-lg-12 mt-10 mb-10">
+                                    <h1 className="color-black-text">Training Data for Medical AI, Diagnostics and Clinical Automation</h1>
                                 </div>
-                 
-                                <div className="col-lg-6 mt-10 mb-20">
-                                <p className="font-lg color-black-text">
-                                     High-accuracy annotations for imaging, pathology, patient monitoring and clinical workflows — supporting healthcare systems globally.
 
-                                 </p>
+                                <div className="col-lg-12 mt-20 mb-10">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        High-accuracy annotations for imaging, pathology, patient monitoring and clinical workflows — supporting healthcare systems globally.
+                                    </p>
                                 </div>
-                             
-                        </div>
-                            
+                            </div>
+
                             {/* VideoSlider replaces the original video banner */}
                             <div className="box-video-banner">
                                 <VideoSlider
-                                caption={"Precise labeling across MRI, CT, X-ray, ultrasound, vitals and clinical records to power detection, prediction and diagnostic automation."}
+                                    caption={"Precise labeling across MRI, CT, X-ray, ultrasound, vitals and clinical records to power detection, prediction and diagnostic automation."}
                                 />
                             </div>
                         </div>
@@ -247,7 +242,7 @@ const MedicalAI = () => {
                 </div>
             </div>
                 </section>
-                <div style={{marginTop: '-100px'}}></div>
+                <div style={{marginTop: '-10px'}}></div>
                 <AnnotationSlider
                     items={annotationItems}
                     title="Advanced Medical AI Capabilities"

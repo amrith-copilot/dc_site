@@ -100,18 +100,14 @@ const Ecommerce = () => {
                     <div className="container">
                         <div className="mt-25 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                
-                                        
-                               
-                                <h3 className="color-black-text mt-10 mb-20">AI Training Data for E-Commerce Search, Product Vision and Content Intelligence</h3>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10 mb-20">AI Training Data for E-Commerce Search, Product Vision and Content Intelligence</h1>
                                 </div>
-                 
-                                <div className="col-lg-6 mt-10 mb-20">
-                                <p className="font-lg color-black-text">
-                                     Accurate annotations for SKUs, attributes, content categorization and recommendations for global marketplaces.
 
-                                 </p>
+                                <div className="col-lg-12 mt-10 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        Accurate annotations for SKUs, attributes, content categorization and recommendations for global marketplaces.
+                                    </p>
                                 </div>
                              
                         </div>

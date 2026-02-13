@@ -16,13 +16,13 @@ const ContentMd = () => {
             <div className="container">
                 <div className="mt-65 mb-100">
                     <div className="row align-items-end">
-                        <div className="col-lg-6 mb-20">
+                        <div className="col-lg-12 mb-20">
 
-                            <h2 className="color-black-text mt-10">
-                                Safeguard Your Platform <br />with Scalable <br />Content Moderation
-                            </h2>
+                            <h1 className="color-black-text mt-10">
+                                Safeguard Your Platform with Scalable Content Moderation
+                            </h1>
                         </div>
-                        <div className="col-lg-6 mb-20">
+                        <div className="col-lg-12 mb-20">
                             <p className="color-black-text font-lg">
                                 Deliver safer, trusted, and compliant user experiences with AI-powered and human-in-the-loop content moderation. From social media to marketplaces, gaming, and beyond—our solutions ensure your digital ecosystem stays secure, inclusive, and aligned with your brand values.
                             </p>

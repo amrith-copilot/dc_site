@@ -140,7 +140,7 @@ const Insurance = () => {
         <Layout>
             <Head>
                 <title>Insurance Data Annotation Services | AI for Claims & Risk | Dataclap</title>
-                <meta name="description" content="Dataclap provides insurance data annotation services for claims processing, underwriting, fraud detection, and document automation AI systems." />
+                <meta name="description" content="DATACLAP DIGITALprovides insurance data annotation services for claims processing, underwriting, fraud detection, and document automation AI systems." />
                 <meta name="keywords" content="insurance data annotation, claims data labeling, insurance AI training data, underwriting data annotation, fraud detection datasets, policy document annotation, insurance OCR labeling, risk assessment datasets, financial document labeling, AI for insurance automation" />
             </Head>
            
@@ -149,16 +149,16 @@ const Insurance = () => {
                     <div className="container">
                         <div className="mt-25 mb-10">
                             <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                    <h3 className="color-black-text mt-10 mb-20">
-                                        AI Training Data for Insurance Claims, Risk Assessment and Fraud Detection</h3>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10 mb-20">
+                                        AI Training Data for Insurance Claims, Risk Assessment and Fraud Detection
+                                    </h1>
                                 </div>
-     
-                                <div className="col-lg-6 mt-10 mb-20">
-                                    <p className="font-lg color-black-text">
-                                    High-quality annotations for claims imagery, damage scoring, document intelligence and risk analytics — optimized for insurers across North America, Europe and APAC.                                  
-                                      </p> 
-                                    
+
+                                <div className="col-lg-12 mt-10 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        High-quality annotations for claims imagery, damage scoring, document intelligence and risk analytics — optimized for insurers across North America, Europe and APAC.
+                                    </p>
                                 </div>
                             </div>
                         </div>

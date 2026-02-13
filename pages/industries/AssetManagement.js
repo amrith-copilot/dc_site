@@ -36,15 +36,14 @@ const AssetManagement = () => {
                     <div className="container">
                         <div className="mt-25 mb-100">
                             <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                    <h4 className="color-black-text mt-10">
-                                       AI Training Data for Asset Management, Predictive Maintenance and Infrastructure Monitoring
-                                    </h4>
-                                    <h4 className="color-black-text mt-10 mb-20"></h4>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10 mb-20">
+                                        AI Training Data for Asset Management, Predictive Maintenance and Infrastructure Monitoring
+                                    </h1>
                                 </div>
-     
-                                <div className="col-lg-6  mt-10 mb-20">
-                                    <p className="font-lg color-black-text">
+
+                                <div className="col-lg-12 mt-10 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         High-quality annotations for equipment inspection, defect detection, condition scoring and asset lifecycle intelligence — with structured labeling for images, video, IoT sensor streams and geospatial data. Built for Asset Management systems that detect faults early, reduce downtime and extend asset lifespan.
                                     </p>
                                 </div>

@@ -62,7 +62,7 @@ const ADAS = () => {
         <Layout>
             <Head>
                 <title>ADAS Data Annotation Services | Automotive AI Training Data | Dataclap</title>
-                <meta name="description" content="Dataclap provides high-precision ADAS data annotation services including bounding boxes, segmentation, and LiDAR labeling for autonomous driving and automotive AI systems." />
+                <meta name="description" content="DATACLAP DIGITALprovides high-precision ADAS data annotation services including bounding boxes, segmentation, and LiDAR labeling for autonomous driving and automotive AI systems." />
                 <meta name="keywords" content="ADAS data annotation, automotive AI annotation, autonomous vehicle data labeling, LiDAR annotation services, ADAS training data" />
             </Head>
 
@@ -71,18 +71,18 @@ const ADAS = () => {
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-25 mb-100">
-                        <div className="row align-items-start">
-                                <div className="col-lg-6 mt-10 mb-10">                            
-                                <h3 className="color-black-text">High-Precision Training Data for 
-                                     <br />Smartand Autonomous Mobility</h3>
+                            <div className="row align-items-start">
+                                <div className="col-lg-12 mt-10 mb-10">
+                                    <h1 className="color-black-text">High-Precision Training Data for Smart and Autonomous Mobility</h1>
                                 </div>
-                                <div className="col-lg-6 mt-20 mb-10">
-                                <p className="font-lg color-black-text">
-                                     Transform raw sensor feeds into reliable perception.Lane detection, Obstacle detection, Object tracking and more
-                                 </p>
+                                </div>
+
+                                <div className="col-lg-12 mt-20 mb-10">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                        Transform raw sensor feeds into reliable perception. Lane detection, Obstacle detection, Object tracking and more
+                                    </p>
                                 </div>
                              
-                        </div>
                             
                             {/* VideoSlider replaces the original video banner */}
                             <div className="box-video-banner">

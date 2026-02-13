@@ -52,13 +52,13 @@ const MLOps = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
                                         ML Momentum
-                                    </h2>
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Turn your ML experiments into production powerhouses. Build, deploy, and scale AI solutions with confidence through automated pipelines and continuous monitoring.
                                     </p>
                                 </div>

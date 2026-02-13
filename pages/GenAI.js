@@ -21,13 +21,13 @@ const GenAI = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
                                         Build reliable, productive generative models with human expertise.
-                                    </h2>
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-md color-black-text">
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-md color-black-text" style={{ textAlign: 'left' }}>
                                         We deliver scalable annotation, instruction-tuning datasets, evaluation & H-in-the-Loop (HITL) services that make LLM and multimodal models safer, more accurate, and production ready.
                                     </p>
                                 </div>

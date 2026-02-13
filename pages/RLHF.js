@@ -18,7 +18,7 @@ const RLHF = () => {
         <>
         <Head>
                 <title>RLHF Services | Reinforcement Learning from Human Feedback | Dataclap</title>
-                <meta name="description" content="Dataclap provides RLHF services to align LLMs with human preferences through ranking, reward modeling, safety validation, and scalable human feedback workflows." />
+                <meta name="description" content="DATACLAP DIGITALprovides RLHF services to align LLMs with human preferences through ranking, reward modeling, safety validation, and scalable human feedback workflows." />
                 <meta name="keywords" content="RLHF services, reinforcement learning from human feedback, LLM alignment services, human feedback training AI, reward model training, training data labeling" />
             </Head>
         <Layout>
@@ -27,13 +27,13 @@ const RLHF = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
                                         Aligned Models Through Human-Driven Reinforcement
-                                    </h2>
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         We deliver scalable RLHF pipelines that pair human judgment with model training to align LLMs, vision-language systems, agents, and decision models. Our teams score, rank, and correct model outputs in real time, providing high-signal feedback aligned with your safety, compliance, and product requirements.
                                     </p>
                                 </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import Link from 'next/link';
 
@@ -7,16 +8,26 @@ const Expert = () => {
 
     return (
         <Layout>
+            <Head>
+                <title>Expert Data Annotation Services | Dataclap</title>
+                <meta name="description" content="Precision annotation powered by domain experts for training, validating, and aligning advanced AI systems. HITL, RLHF, Red Teaming, and high-precision labeling." />
+                <meta name="keywords" content="data annotation, expert annotation, HITL, RLHF, red teaming, MLOps, labeling" />
+                <meta property="og:title" content="Expert Data Annotation Services | Dataclap" />
+                <meta property="og:description" content="Precision annotation powered by domain experts for training, validating, and aligning advanced AI systems." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="/expert" />
+                <meta property="og:image" content="/assets/imgs/page/homepage9/img3.png" />
+            </Head>
             <>
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">Expert Data Annotation Services for High-Stakes AI</h2>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">Expert Data Annotation Services for High-Stakes AI</h1>
                                 </div>
                                 
-                                <div className="col-lg-6 mb-20">
+                                <div className="col-lg-12 mb-20">
                                     <p className="font-lg color-black-text">
                                         Precision annotation powered by domain experts for training, validating, and aligning advanced AI systems. Built for LLMs, computer vision, multimodal models, and mission-critical AI workflows where accuracy, context, and judgment matter.
                                     </p>
@@ -62,6 +73,9 @@ const Expert = () => {
                                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>Enterprise and research use cases
                                                         </li>
                                                     </ul>
+                                                </div>
+                                                <div className="mt-30 ml-0">
+                                                    <a className="btn btn-brand-1 hover-up font-md" href="https://experts.dataclap.digital/signin" target="_blank" rel="noopener noreferrer">Sign in</a>
                                                 </div>
                                             </div>
                                         </div>

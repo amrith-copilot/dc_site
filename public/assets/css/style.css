@@ -1427,6 +1427,28 @@ html {
 .btn.btn-submit-newsletter svg {
   color: var(--color-white);
 }
+
+/* Keep primary CTA buttons from changing color on hover (contact / Get a demo) */
+.btn.btn-brand-1.hover-up:hover,
+.btn.btn-brand-1.hover-up:focus {
+  background-color: var(--color-primary-700) !important;
+  color: var(--color-primary-100) !important;
+}
+.btn.btn-brand-1.hover-up:hover *,
+.btn.btn-brand-1.hover-up:focus * {
+  color: var(--color-primary-100) !important;
+}
+
+/* Same for full-width / full style variants */
+.btn.btn-brand-1-full.hover-up:hover,
+.btn.btn-brand-1-full.hover-up:focus {
+  background-color: var(--color-primary-700) !important;
+  color: var(--color-primary-100) !important;
+}
+.btn.btn-brand-1-full.hover-up:hover *,
+.btn.btn-brand-1-full.hover-up:focus * {
+  color: var(--color-primary-100) !important;
+}
 .btn.btn-submit-newsletter:hover {
   background-color: var(--color-primary-800);
 }
@@ -3479,7 +3501,7 @@ html {
 }
 .header .main-menu li ul li a {
   font-size: 14px;
-  color: var(--color-gray-900);
+  color: #007bff;
   position: relative;
   padding: 6px 22px 6px 22px;
   transition: 0.2s;
@@ -3487,9 +3509,14 @@ html {
 .header .main-menu li ul li a:hover {
   padding-left: 25px;
   transition: 0.2s;
+  color: #000000 !important;
 }
 .header .main-menu li ul li a.closer {
   padding: 8px 22px 8px 22px;
+}
+/* Company submenu border */
+.header .main-menu li > ul.sub-menu {
+  border-bottom: none !important;
 }
 .header .main-menu li ul li ul {
   top: 0px;
@@ -11779,7 +11806,7 @@ outline: none;
   color: var(--color-gray-900);
   margin: 0 0 15px 0;
   padding: 0 0 8px 0;
-  border-bottom: 2px solid var(--color-accent-teal-300);
+  border-bottom: 2px solid #007bff;
   font-family: "Manrope", sans-serif;
 }
 
@@ -11835,7 +11862,7 @@ outline: none;
 
 .header .main-menu li.services-mega-menu .mega-menu-column ul li a:hover {
   padding-left: 10px !important;
-  color: var(--color-accent-teal-500) !important;
+  color: #000000 !important;
   cursor: pointer !important;
 }
 
@@ -12359,3 +12386,8 @@ body.mobile-menu-active {
 .box-tab-32 .row.align-items-center {
   align-items: flex-start !important;
 }
+/* Main menu top-level hover color (Services / Industries / Company) */
+.header .main-menu > li > a:hover {
+  color: #007bff !important;
+}
+

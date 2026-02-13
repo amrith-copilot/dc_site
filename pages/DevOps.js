@@ -20,20 +20,20 @@ const DevOps = () => {
             <>
                 <Head>
                     <title>DevOps Services for AI & ML Infrastructure | Dataclap</title>
-                    <meta name="description" content="Dataclap offers DevOps solutions to streamline AI infrastructure, automate workflows, optimize cloud environments, and accelerate model deployment." />
+                    <meta name="description" content="DATACLAP DIGITALoffers DevOps solutions to streamline AI infrastructure, automate workflows, optimize cloud environments, and accelerate model deployment." />
                     <meta name="keywords" content="DevOps services, AI DevOps, ML infrastructure management, cloud DevOps solutions, DevOps automation" />
                 </Head>
                 <section className="section banner-5">
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10">
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
                                         Transform Your Software Delivery
-                                    </h2>
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Experience the power of automated workflows, seamless collaboration, and continuous innovation with enterprise-grade DevOps solutions. Transform your software delivery from months to minutes.
                                     </p>
                                 </div>

@@ -91,7 +91,7 @@ const Fintech = () => {
         <Layout>
             <Head>
                 <title>Fintech Data Annotation Services | AI Training Data for Finance | Dataclap</title>
-                <meta name="description" content="Dataclap provides fintech data annotation services for fraud detection, credit scoring, KYC automation, and financial document processing AI." />
+                <meta name="description" content="DATACLAP DIGITALprovides fintech data annotation services for fraud detection, credit scoring, KYC automation, and financial document processing AI." />
                 <meta name="keywords" content="fintech data annotation, financial AI data labeling, fraud detection datasets, KYC data annotation, credit scoring AI training data, transaction data labeling, banking AI datasets, financial document annotation, AML data annotation, AI for financial services" />
             </Head>
            
@@ -100,17 +100,13 @@ const Fintech = () => {
                     <div className="container">
                         <div className="mt-25 mb-100">
                         <div className="row align-items-start">
-                                <div className="col-lg-6 mb-20">
-                                
-                                        
-                               
-                                <h3 className="color-black-text mt-10 mb-20">Training Data for Fintech Automation, <br />Fraud Detection and Financial Intelligence</h3>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10 mb-20">Training Data for Fintech Automation, Fraud Detection and Financial Intelligence</h1>
                                 </div>
-                 
-                                <div className="col-lg-6 mt-10 mb-20">
-                                <p className="font-lg color-black-text">
-                                     High-quality annotations for documents, transactions, behavior patterns and identity verification — optimized for global financial systems.
 
+                                <div className="col-lg-12 mt-10 mb-20">
+                                <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
+                                     High-quality annotations for documents, transactions, behavior patterns and identity verification — optimized for global financial systems.
                                  </p>
                                 </div>
                              

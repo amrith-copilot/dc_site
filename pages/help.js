@@ -9,7 +9,16 @@ const Help = () => {
     return (
         <>
             <Head>
-                <title>Help Center</title>
+                <title>Help Center | Dataclap</title>
+                <meta name="description" content="Find answers in the Dataclap Help Center: documentation, FAQs, community forums, and support resources for data annotation, HITL, RLHF, and platform usage." />
+                <meta name="keywords" content="help center, support, documentation, FAQ, Dataclap, data annotation support" />
+                <link rel="canonical" href="/help" />
+                <meta property="og:title" content="Help Center | Dataclap" />
+                <meta property="og:description" content="Find answers and support resources for Dataclap's annotation and evaluation services: docs, FAQs, and community forums." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="/help" />
+                <meta property="og:image" content="/assets/imgs/page/help/banner1.png" />
+                <meta name="twitter:card" content="summary_large_image" />
             </Head>
 
             <Layout>

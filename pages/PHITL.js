@@ -17,14 +17,16 @@ const PHITL = () => {
                     <div className="container">
                         <div className="mt-65 mb-100">
                             <div className="row align-items-end">
-                                <div className="col-lg-6 mb-20">
-                                    <h2 className="color-black-text mt-10"> Human-in-the-Loop <br />AI Validation
-                                    </h2>
+                                <div className="col-lg-12 mb-20">
+                                    <h1 className="color-black-text mt-10">
+                                        Human-in-the-Loop AI Validation
+                                    </h1>
                                 </div>
-                                <div className="col-lg-6 mb-20">
-                                    <p className="font-lg color-black-text">
+                                <div className="col-lg-12 mb-20">
+                                    <p className="font-lg color-black-text" style={{ textAlign: 'left' }}>
                                         Insert expert human review and correction directly into live AI workflows before predictions, decisions, or actions are finalized.
-                                        Built for LLMs, computer vision, NLP, decision systems, and generative AI—scalable across industries and geographies.</p>
+                                        Built for LLMs, computer vision, NLP, decision systems, and generative AI—scalable across industries and geographies.
+                                    </p>
                                 </div>
                             </div>
                         </div>
