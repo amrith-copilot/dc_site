@@ -321,8 +321,6 @@ TABLE CONTENT
   }
 
   /* Ensure full-width visual elements use available space on mobile */
-  .video-slider-wrapper,
-  .video-slider-container,
   .box-info-video-banner,
   .image-banner-5,
   .card-small,
@@ -337,6 +335,18 @@ TABLE CONTENT
     padding-left: 0 !important;
     padding-right: 0 !important;
     overflow: visible !important;
+  }
+
+  /* Video slider needs overflow:hidden and border-radius to clip properly */
+  .video-slider-wrapper {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .video-slider-container {
+    max-width: 100% !important;
+    overflow: hidden !important;
   }
 
   /* CTA box styling on mobile to match ADAS look */

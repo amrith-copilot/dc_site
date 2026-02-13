@@ -119,7 +119,6 @@ const VideoSlider = ({ caption }) => {
           width: 100%;
           max-width: 1200px;
           position: relative;
-          padding: 0 20px;
         }
 
         .video-slider-container {
@@ -129,38 +128,29 @@ const VideoSlider = ({ caption }) => {
           border-radius: 20px;
           box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
           position: relative;
-          background: #ffffff;
+          background: #000;
         }
 
         .video-slides {
-          width: 350%;
           display: flex;
           height: 100%;
-          display: flex;
           transition: transform 0.5s ease-in-out;
+          will-change: transform;
         }
 
         .video-slide {
-          width: 100%;
           height: 100%;
           flex-shrink: 0;
           position: relative;
           overflow: hidden;
-          padding: 20px;
           box-sizing: border-box;
-          display: flex;
-          align-items: center;
-          justify-content: center;
         }
 
         .slider-video {
-          width: 110%;
-          height: 109%;
+          width: 100%;
+          height: 100%;
           object-fit: cover;
           display: block;
-          border-radius: 30px;
-          margin: 20px;
-          padding:20px;
         }
 
         .slider-bottom-overlay {
@@ -187,10 +177,8 @@ const VideoSlider = ({ caption }) => {
           color: rgba(255, 255, 255, 0.95);
           font-size: 16px;
           line-height: 1.7;
-          margin: 0;
           text-align: center;
           max-width: 900px;
-          margin: 0 auto;
           font-weight: 400;
           text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
@@ -275,14 +263,6 @@ const VideoSlider = ({ caption }) => {
             border-radius: 18px;
           }
 
-          .video-slide {
-            padding: 12px;
-          }
-
-          .slider-video {
-            border-radius: 14px;
-          }
-
           .control-btn {
             width: 40px;
             height: 40px;
@@ -305,14 +285,6 @@ const VideoSlider = ({ caption }) => {
           .video-slider-container {
             height: 300px;
             border-radius: 16px;
-          }
-
-          .video-slide {
-            padding: 10px;
-          }
-
-          .slider-video {
-            border-radius: 12px;
           }
 
           .control-btn {
