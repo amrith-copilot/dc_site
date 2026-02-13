@@ -1,18 +1,18 @@
 version: "3.8"
 services:
-  web:
-    build: .
-    image: dc_site:latest
-    container_name: dc-site-app
-    ports:
-      - "3090:3000"
-    environment:
-      - NODE_ENV=production
-      - PORT=3000
-    restart: unless-stopped
-    networks:
-      - app-net
+  web:
+    build: .
+    image: dc_site:latest
+    container_name: dc-site-app
+    ports:
+      - "3090:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    networks:
+      - app-net
 
 networks:
-  app-net:
-    external: true
+  app-net:
+    external: true
