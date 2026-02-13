@@ -3514,6 +3514,16 @@ html {
 .header .main-menu li ul li a.closer {
   padding: 8px 22px 8px 22px;
 }
+/* Ensure Company submenu matches Industries (mega-menu) link color & hover */
+.header .main-menu li > ul.sub-menu li a {
+  color: var(--color-primary-700) !important;
+  font-size: 14px;
+  padding: 6px 22px;
+}
+.header .main-menu li > ul.sub-menu li a:hover {
+  color: #000000 !important;
+  padding-left: 10px !important;
+}
 /* Company submenu border */
 .header .main-menu li > ul.sub-menu {
   border-bottom: none !important;
